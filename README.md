@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔥 FlashFire
 
-## Getting Started
+> **Intelligent Flashcards, Supercharged Spaced Repetition (SRS), and Technical Quiz Hub powered by Z.ai GLM 4.7 Flash & 5.3 Flash AI.**
 
-First, run the development server:
+[![Deployed on Cloudflare Pages](https://img.shields.io/badge/Deployed%20on-Cloudflare%20Pages-F38020?logo=cloudflare&logoColor=white)](https://flashfire.pages.dev)
+[![Next.js 16](https://img.shields.io/badge/Next.js-16.3-black?logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS 4](https://img.shields.io/badge/Tailwind-CSS%204-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
+[![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
 
+🚀 **Live Deployment:** [https://flashfire.pages.dev](https://flashfire.pages.dev)
+
+---
+
+## ✨ Features
+
+- 🧠 **Supercharged Spaced Repetition (SRS)**: Implements the SM-2 algorithm. If you miss a question during a quiz, it is automatically flagged as a lapse and moved into your high-priority Due Queue.
+- ⚡ **Z.ai GLM AI Explanations**:
+  - **Quick Explanation**: Powered by `glm-4.7-flash` for instant, 1-2 sentence insights upon selecting an answer.
+  - **Deep Concept Breakdown**: Powered by `glm-5.3-flash` for structured Markdown breakdowns covering *Core Concept*, *Option Analysis*, and *Key Takeaways / Mnemonics*.
+- 📚 **200 Real Accenture Technical MCQs**: Pre-loaded across 5 technical categories:
+  - MS Office & Productivity
+  - Computer Networks & Cybersecurity
+  - Pseudocode, C & Algorithms
+  - Cloud, Common Tech & Data Structures
+  - Agile, Testing & Enterprise IT
+- 📥 **Custom JSON Importer & Exporter**: Import your own question sets in intuitive JSON formats (both standard MCQ and front/back flashcards).
+- 🎨 **Modern Minimalist UI**: Built with Tailwind CSS v4, Framer Motion animations, KaTeX LaTeX math support, interactive Cloze deletions, Web Audio feedback, and full Light/Dark mode.
+- ☁️ **Cloudflare Edge Performance**: Deployed on Cloudflare Pages with edge serverless functions for ultra-low latency worldwide.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16 (App Router) + React 19
+- **Styling**: Tailwind CSS v4
+- **Edge Deployment**: Cloudflare Pages + Cloudflare Pages Functions
+- **AI Backend**: Z.ai GLM API (`glm-4.7-flash` & `glm-5.3-flash`)
+- **Icons & Animations**: Lucide React + Framer Motion + Canvas Confetti
+- **Math & Formatting**: KaTeX + Custom Markdown parser
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone and Install
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/arpanz/flashfire.git
+cd flashfire
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Configure Environment Variables
+Create `.env.local`:
+```env
+ZAI_API_KEY="your-z-ai-api-key"
+ZAI_BASE_URL="https://api.z.ai/api/paas/v4"
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ☁️ Deploying to Cloudflare Pages
 
-To learn more about Next.js, take a look at the following resources:
+1. **Build the static frontend:**
+   ```bash
+   npm run build
+   ```
+2. **Deploy with Wrangler:**
+   ```bash
+   npx wrangler pages deploy out --project-name=flashfire --branch=main
+   ```
+3. **Set your API Key secret:**
+   ```bash
+   echo -n "your-z-ai-key" | npx wrangler pages secret put ZAI_API_KEY --project-name=flashfire
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+MIT

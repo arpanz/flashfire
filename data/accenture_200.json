@@ -1,0 +1,1609 @@
+{
+  "title": "Accenture Freshers Technical Ability MCQs",
+  "description": "Compiled repeating technical-assessment questions for Accenture fresher hiring. Set 1 and Set 2 are non-overlapping.",
+  "total_questions": 200,
+  "sets": 2,
+  "topics": ["MS Office", "Networking", "Security", "Cloud", "Pseudocode"],
+  "questions": [
+    {
+      "id": 1,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Shortcut to bold selected text in Word?",
+      "options": { "A": "Ctrl+B", "B": "Ctrl+I", "C": "Ctrl+U", "D": "Ctrl+S" },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Excel function for the highest value in a range?",
+      "options": { "A": "MAX", "B": "HIGH", "C": "TOP", "D": "HIGHEST" },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Which Excel tab is used to create charts?",
+      "options": { "A": "Insert", "B": "Data", "C": "Formulas", "D": "Review" },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Intersection of a row and a column in Excel is called a:",
+      "options": { "A": "Cell", "B": "Box", "C": "Square", "D": "Unit" },
+      "answer": "A"
+    },
+    {
+      "id": 5,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Shortcut to print a document?",
+      "options": { "A": "Ctrl+P", "B": "Ctrl+A", "C": "Ctrl+C", "D": "Ctrl+Q" },
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Shortcut to close the active Word document?",
+      "options": { "A": "Ctrl+W", "B": "Ctrl+D", "C": "Shift+F", "D": "Ctrl+N" },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Shortcut for spell check in Word?",
+      "options": { "A": "F1", "B": "F2", "C": "F7", "D": "F9" },
+      "answer": "C"
+    },
+    {
+      "id": 8,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Default title of a new Word file?",
+      "options": { "A": "Doc1", "B": "Document1", "C": "Document", "D": "Doc" },
+      "answer": "B"
+    },
+    {
+      "id": 9,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Which is not a font style?",
+      "options": { "A": "Bold", "B": "Italics", "C": "Regular", "D": "Superscript" },
+      "answer": "D"
+    },
+    {
+      "id": 10,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Shortcut to insert a new slide in PowerPoint?",
+      "options": { "A": "Ctrl+M", "B": "Ctrl+N", "C": "Ctrl+F", "D": "Ctrl+S" },
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Effects used to introduce slides in PowerPoint are:",
+      "options": { "A": "Effect", "B": "Transitions", "C": "Slide animation", "D": "Custom animation" },
+      "answer": "B"
+    },
+    {
+      "id": 12,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Which file types can be added to a PowerPoint show?",
+      "options": { "A": ".jpg", "B": ".gif", "C": ".wav", "D": "All of the above" },
+      "answer": "D"
+    },
+    {
+      "id": 13,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Holding the left mouse button and moving an object on a slide is:",
+      "options": { "A": "Dragging", "B": "Moving", "C": "Highlighting", "D": "None" },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "App used for newsletters, flyers, and greeting cards?",
+      "options": { "A": "Word", "B": "Excel", "C": "Publisher", "D": "Access" },
+      "answer": "C"
+    },
+    {
+      "id": 15,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Which group is not on Excel's Insert tab?",
+      "options": { "A": "Charts", "B": "Text", "C": "Sort & Filter", "D": "Tables" },
+      "answer": "C"
+    },
+    {
+      "id": 16,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Function used to create a drop-down in Excel cells?",
+      "options": { "A": "Conditional Formatting", "B": "Data Validation", "C": "Pivot Table", "D": "Filter" },
+      "answer": "B"
+    },
+    {
+      "id": 17,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Macro-enabled Excel 2007+ workbook extension?",
+      "options": { "A": ".xlsm", "B": ".xlsx", "C": ".xlsb", "D": ".xltx" },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "In Excel, B8:B10 refers to:",
+      "options": { "A": "All cells from B8 to B10", "B": "Product of B8 and B10", "C": "Only B8 and B10", "D": "Column B only" },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "How do you stop automatic numbering in Word? I. Click Numbering again  II. Press Enter twice",
+      "options": { "A": "Neither", "B": "Only I", "C": "Both I and II", "D": "Only II" },
+      "answer": "C"
+    },
+    {
+      "id": 20,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Shortcut to select the entire document in Word?",
+      "options": { "A": "Ctrl+T", "B": "Ctrl+A", "C": "Ctrl+W", "D": "Ctrl+X" },
+      "answer": "B"
+    },
+    {
+      "id": 21,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "A link that jumps to another location in a document is a:",
+      "options": { "A": "Footer", "B": "Header", "C": "Hyperlink", "D": "Attachment" },
+      "answer": "C"
+    },
+    {
+      "id": 22,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Track Changes in Word is found under:",
+      "options": { "A": "Home", "B": "Insert", "C": "Review", "D": "View" },
+      "answer": "C"
+    },
+    {
+      "id": 23,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "In Excel, the small square at the bottom-right of the active cell is the:",
+      "options": { "A": "Formula bar", "B": "Fill handle", "C": "Name box", "D": "Status bar" },
+      "answer": "B"
+    },
+    {
+      "id": 24,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "A single Excel worksheet has how many columns (Excel 2007+)?",
+      "options": { "A": "256", "B": "1024", "C": "16384", "D": "1048576" },
+      "answer": "C"
+    },
+    {
+      "id": 25,
+      "set": 1,
+      "topic": "MS Office",
+      "question": "Outlook shortcut to create a new email?",
+      "options": { "A": "Ctrl+Shift+M", "B": "Ctrl+Shift+A", "C": "Ctrl+Shift+K", "D": "Ctrl+N" },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "set": 1,
+      "topic": "Networking",
+      "question": "VPN stands for:",
+      "options": { "A": "Virtual Private Network", "B": "Virtual Public Network", "C": "Verified Private Node", "D": "Virtual Protected Number" },
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "set": 1,
+      "topic": "Networking",
+      "question": "Attack that floods a network to disrupt service?",
+      "options": { "A": "Phishing", "B": "Spoofing", "C": "DDoS", "D": "MITM" },
+      "answer": "C"
+    },
+    {
+      "id": 28,
+      "set": 1,
+      "topic": "Networking",
+      "question": "Protocol commonly used for secure remote access / secure file transfer?",
+      "options": { "A": "HTTP", "B": "FTP", "C": "SSH", "D": "POP3" },
+      "answer": "C"
+    },
+    {
+      "id": 29,
+      "set": 1,
+      "topic": "Networking",
+      "question": "Main purpose of a firewall?",
+      "options": { "A": "Speed up browsing", "B": "Filter traffic using security rules", "C": "Assign IP addresses", "D": "Store passwords" },
+      "answer": "B"
+    },
+    {
+      "id": 30,
+      "set": 1,
+      "topic": "Networking",
+      "question": "OSI layer that routes packets between networks?",
+      "options": { "A": "Data Link", "B": "Network", "C": "Transport", "D": "Session" },
+      "answer": "B"
+    },
+    {
+      "id": 31,
+      "set": 1,
+      "topic": "Networking",
+      "question": "Which protocol is connectionless?",
+      "options": { "A": "TCP", "B": "FTP", "C": "UDP", "D": "HTTP" },
+      "answer": "C"
+    },
+    {
+      "id": 32,
+      "set": 1,
+      "topic": "Networking",
+      "question": "Most secure Wi-Fi protocol among common options?",
+      "options": { "A": "WEP", "B": "WPA", "C": "WPA2", "D": "WPA3" },
+      "answer": "D"
+    },
+    {
+      "id": 33,
+      "set": 1,
+      "topic": "Networking",
+      "question": "DNS mainly uses which transport protocol?",
+      "options": { "A": "TCP only", "B": "UDP (primarily)", "C": "ICMP", "D": "SMTP" },
+      "answer": "B"
+    },
+    {
+      "id": 34,
+      "set": 1,
+      "topic": "Networking",
+      "question": "Default HTTP and HTTPS ports?",
+      "options": { "A": "21 and 22", "B": "25 and 110", "C": "80 and 443", "D": "53 and 67" },
+      "answer": "C"
+    },
+    {
+      "id": 35,
+      "set": 1,
+      "topic": "Networking",
+      "question": "Device that forwards packets between different networks?",
+      "options": { "A": "Hub", "B": "Switch", "C": "Router", "D": "Repeater" },
+      "answer": "C"
+    },
+    {
+      "id": 36,
+      "set": 1,
+      "topic": "Networking",
+      "question": "DHCP is used to:",
+      "options": { "A": "Encrypt packets", "B": "Automatically assign IP addresses", "C": "Block malware", "D": "Compress files" },
+      "answer": "B"
+    },
+    {
+      "id": 37,
+      "set": 1,
+      "topic": "Networking",
+      "question": "MAC address operates at which OSI layer?",
+      "options": { "A": "Physical", "B": "Data Link", "C": "Network", "D": "Transport" },
+      "answer": "B"
+    },
+    {
+      "id": 38,
+      "set": 1,
+      "topic": "Networking",
+      "question": "SMTP is used for:",
+      "options": { "A": "Sending email", "B": "Browsing web pages", "C": "File transfer", "D": "Name resolution" },
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "set": 1,
+      "topic": "Networking",
+      "question": "NAT is used to:",
+      "options": { "A": "Convert domain names", "B": "Map private IPs to a public IP", "C": "Detect viruses", "D": "Create VLANs" },
+      "answer": "B"
+    },
+    {
+      "id": 40,
+      "set": 1,
+      "topic": "Networking",
+      "question": "IPv4 address size is:",
+      "options": { "A": "32 bits", "B": "64 bits", "C": "128 bits", "D": "16 bits" },
+      "answer": "A"
+    },
+    {
+      "id": 41,
+      "set": 1,
+      "topic": "Networking",
+      "question": "IPv6 address size is:",
+      "options": { "A": "32 bits", "B": "64 bits", "C": "128 bits", "D": "256 bits" },
+      "answer": "C"
+    },
+    {
+      "id": 42,
+      "set": 1,
+      "topic": "Networking",
+      "question": "A switch typically operates at:",
+      "options": { "A": "Layer 1", "B": "Layer 2", "C": "Layer 3", "D": "Layer 7" },
+      "answer": "B"
+    },
+    {
+      "id": 43,
+      "set": 1,
+      "topic": "Networking",
+      "question": "Ping uses which protocol?",
+      "options": { "A": "TCP", "B": "UDP", "C": "ICMP", "D": "ARP" },
+      "answer": "C"
+    },
+    {
+      "id": 44,
+      "set": 1,
+      "topic": "Networking",
+      "question": "Port 22 is associated with:",
+      "options": { "A": "FTP", "B": "SSH", "C": "HTTP", "D": "DNS" },
+      "answer": "B"
+    },
+    {
+      "id": 45,
+      "set": 1,
+      "topic": "Networking",
+      "question": "Which is a passive network security device (monitors, does not block by default)?",
+      "options": { "A": "Firewall that drops packets", "B": "IDS", "C": "IPS", "D": "UTM blocking gateway" },
+      "answer": "B"
+    },
+    {
+      "id": 46,
+      "set": 1,
+      "topic": "Security",
+      "question": "Authentication means:",
+      "options": { "A": "Granting permissions", "B": "Verifying identity", "C": "Encrypting disks", "D": "Backing up data" },
+      "answer": "B"
+    },
+    {
+      "id": 47,
+      "set": 1,
+      "topic": "Security",
+      "question": "Authorization means:",
+      "options": { "A": "Checking who you are", "B": "Checking what you are allowed to do", "C": "Scanning viruses", "D": "Assigning MAC addresses" },
+      "answer": "B"
+    },
+    {
+      "id": 48,
+      "set": 1,
+      "topic": "Security",
+      "question": "Difference between a virus and a Trojan?",
+      "options": { "A": "Virus replicates; Trojan typically does not", "B": "Same thing", "C": "Trojan always replicates", "D": "Virus never spreads" },
+      "answer": "A"
+    },
+    {
+      "id": 49,
+      "set": 1,
+      "topic": "Security",
+      "question": "Phishing is:",
+      "options": { "A": "Flooding a server", "B": "Tricking users to reveal credentials", "C": "Guessing Wi-Fi keys by brute force only", "D": "Splitting a network" },
+      "answer": "B"
+    },
+    {
+      "id": 50,
+      "set": 1,
+      "topic": "Security",
+      "question": "Packet-filtering firewall inspects:",
+      "options": { "A": "Application payload only", "B": "Header info such as IP/port", "C": "User passwords only", "D": "Disk files" },
+      "answer": "B"
+    },
+    {
+      "id": 51,
+      "set": 1,
+      "topic": "Security",
+      "question": "Stateful inspection firewalls track:",
+      "options": { "A": "Only MAC addresses", "B": "Active connections", "C": "Only DNS names", "D": "Printer queues" },
+      "answer": "B"
+    },
+    {
+      "id": 52,
+      "set": 1,
+      "topic": "Security",
+      "question": "Encapsulating Security Payload (ESP) in IPsec provides:",
+      "options": { "A": "Only name lookup", "B": "Confidentiality of payload (and often integrity)", "C": "Email delivery", "D": "DHCP leases" },
+      "answer": "B"
+    },
+    {
+      "id": 53,
+      "set": 1,
+      "topic": "Security",
+      "question": "In WPA2 4-way handshake, the key present on AP and clients is:",
+      "options": { "A": "Pairwise Transient Key", "B": "Pairwise Master Key", "C": "Group Temporal Key", "D": "Session cookie" },
+      "answer": "B"
+    },
+    {
+      "id": 54,
+      "set": 1,
+      "topic": "Security",
+      "question": "A security group in cloud typically is:",
+      "options": { "A": "A physical lock", "B": "A virtual firewall for instances", "C": "An email alias", "D": "A billing plan" },
+      "answer": "B"
+    },
+    {
+      "id": 55,
+      "set": 1,
+      "topic": "Security",
+      "question": "Encryption of data at rest mainly protects:",
+      "options": { "A": "Data stored on disk", "B": "Data only in RAM", "C": "DNS queries", "D": "Cable length" },
+      "answer": "A"
+    },
+    {
+      "id": 56,
+      "set": 1,
+      "topic": "Security",
+      "question": "Man-in-the-middle attack:",
+      "options": { "A": "Deletes backups", "B": "Intercepts communication between two parties", "C": "Overheats CPUs", "D": "Changes screen resolution" },
+      "answer": "B"
+    },
+    {
+      "id": 57,
+      "set": 1,
+      "topic": "Security",
+      "question": "Spoofing means:",
+      "options": { "A": "Compressing files", "B": "Faking identity (IP/MAC/email)", "C": "Defragmenting disks", "D": "Load balancing" },
+      "answer": "B"
+    },
+    {
+      "id": 58,
+      "set": 1,
+      "topic": "Security",
+      "question": "Which is not typically a firewall type listed in Accenture prep?",
+      "options": { "A": "Packet filtering", "B": "Proxy service", "C": "Stateful inspection", "D": "Spreadsheet filter" },
+      "answer": "D"
+    },
+    {
+      "id": 59,
+      "set": 1,
+      "topic": "Security",
+      "question": "Shared responsibility model in cloud means:",
+      "options": { "A": "Cloud vendor does everything", "B": "Customer does everything", "C": "Security duties are split between provider and customer", "D": "No one is responsible" },
+      "answer": "C"
+    },
+    {
+      "id": 60,
+      "set": 1,
+      "topic": "Security",
+      "question": "Best first control to block unauthorized network traffic?",
+      "options": { "A": "Screensaver", "B": "Firewall", "C": "Word spell-check", "D": "PowerPoint theme" },
+      "answer": "B"
+    },
+    {
+      "id": 61,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "IaaS gives control of:",
+      "options": { "A": "Only the app UI", "B": "OS, VMs, storage, and network config", "C": "Only email", "D": "Only office templates" },
+      "answer": "B"
+    },
+    {
+      "id": 62,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Gmail / Office 365 style delivery is mainly:",
+      "options": { "A": "IaaS", "B": "PaaS", "C": "SaaS", "D": "DaaS" },
+      "answer": "C"
+    },
+    {
+      "id": 63,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Most secure deployment model for highly sensitive data?",
+      "options": { "A": "Public", "B": "Private", "C": "Community", "D": "Hybrid (always)" },
+      "answer": "B"
+    },
+    {
+      "id": 64,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Sharing physical hardware with other organizations is typical of:",
+      "options": { "A": "Private cloud", "B": "Public cloud", "C": "On-prem exclusive rack", "D": "Air-gapped lab" },
+      "answer": "B"
+    },
+    {
+      "id": 65,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Payment model best for small businesses in cloud?",
+      "options": { "A": "pay-as-you-go", "B": "lifetime license only", "C": "hardware purchase", "D": "none" },
+      "answer": "A"
+    },
+    {
+      "id": 66,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Technology that runs multiple VMs on one physical server?",
+      "options": { "A": "Compilation", "B": "Virtualization", "C": "Pagination", "D": "Fragmentation" },
+      "answer": "B"
+    },
+    {
+      "id": 67,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "In PaaS, which is not a typical benefit / still often your job?",
+      "options": { "A": "Runtime managed", "B": "Middleware managed", "C": "Management of your data", "D": "Platform patching" },
+      "answer": "C"
+    },
+    {
+      "id": 68,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Instant scalability is a property of:",
+      "options": { "A": "Traditional data center", "B": "Cloud", "C": "Floppy disks", "D": "CRT monitors" },
+      "answer": "B"
+    },
+    {
+      "id": 69,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Who is usually responsible for hardware downtime in a company-owned data center?",
+      "options": { "A": "Cloud vendor", "B": "Owner/organization", "C": "ISP only", "D": "End user" },
+      "answer": "B"
+    },
+    {
+      "id": 70,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Major public cloud providers include:",
+      "options": { "A": "AWS", "B": "Azure", "C": "Google Cloud", "D": "All of these" },
+      "answer": "D"
+    },
+    {
+      "id": 71,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Cloud storage capacity is generally described as:",
+      "options": { "A": "Strictly limited like a USB", "B": "Effectively elastic/unlimited for practical use", "C": "Always 1 GB", "D": "Only email-sized" },
+      "answer": "B"
+    },
+    {
+      "id": 72,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Hypervisor is used to:",
+      "options": { "A": "Draw slides", "B": "Create and run virtual machines", "C": "Send SMTP mail", "D": "Check spelling" },
+      "answer": "B"
+    },
+    {
+      "id": 73,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "On-premises hardware vs remote rented hardware maps to:",
+      "options": { "A": "Data center vs cloud", "B": "SaaS vs Word", "C": "Switch vs hub", "D": "TCP vs UDP" },
+      "answer": "A"
+    },
+    {
+      "id": 74,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Client-server sharing requires:",
+      "options": { "A": "Security, compatibility, and mapping", "B": "Only a printer driver", "C": "Only Excel", "D": "No authentication ever" },
+      "answer": "A"
+    },
+    {
+      "id": 75,
+      "set": 1,
+      "topic": "Cloud",
+      "question": "Pay as you use / pay as you go contrasts with:",
+      "options": { "A": "Capex-heavy data centers", "B": "DNS", "C": "MAC flooding", "D": "Ctrl+B" },
+      "answer": "A"
+    },
+    {
+      "id": 76,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "word is a string. Loop for l = 0 to 0: print word[l]. What does it do?",
+      "options": { "A": "Last character", "B": "Increasing order", "C": "First character", "D": "Reverse string" },
+      "answer": "C"
+    },
+    {
+      "id": 77,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "x=10, y=16, z=3. if x>y then x=y else y=x; if z>y then z=y else y=z. Print x+y+z.",
+      "options": { "A": "13", "B": "12", "C": "16", "D": "20" },
+      "answer": "C"
+    },
+    {
+      "id": 78,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "x=8, y=6, z=4. Same min-style logic as previous. Print x+y+z.",
+      "options": { "A": "13", "B": "17", "C": "14", "D": "23" },
+      "answer": "C"
+    },
+    {
+      "id": 79,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "funn(x=9,y=7): z=2; y=y%z; x=x%z; return x+y",
+      "options": { "A": "2", "B": "3", "C": "17", "D": "5" },
+      "answer": "A"
+    },
+    {
+      "id": 80,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "p=3, q=8, r=1, sum=12. if p!=0 and sum==11 and q==4 and r!=0 print Success else Fail",
+      "options": { "A": "Success", "B": "Fail", "C": "Error", "D": "None" },
+      "answer": "B"
+    },
+    {
+      "id": 81,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "a=11, b=12. solve: if a<3 && b<4 return solve(a+1,b+1) else return a+b",
+      "options": { "A": "13", "B": "12", "C": "22", "D": "23" },
+      "answer": "D"
+    },
+    {
+      "id": 82,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "Uninitialized num (default 0), value=1; num = num >> 1; num = num + value; print num",
+      "options": { "A": "44", "B": "0", "C": "1", "D": "12" },
+      "answer": "C"
+    },
+    {
+      "id": 83,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "C-style for x from 1 to 11 with x = x + 2 inside, then print x",
+      "options": { "A": "11", "B": "10", "C": "12", "D": "13" },
+      "answer": "D"
+    },
+    {
+      "id": 84,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "m=1, j=1, a={0,1,0}; a[0]+=a[1]; a[1]+=a[2]; a[2]+=a[0]; if(a[0]) a[j]=5; m=m+a[j]; print m",
+      "options": { "A": "3", "B": "2", "C": "6", "D": "4" },
+      "answer": "C"
+    },
+    {
+      "id": 85,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "fun(k): if k>155 return; print k; fun(k+2); print k. Start k=150. Output?",
+      "options": { "A": "150 152 154", "B": "150 152 154 154 152 150", "C": "150", "D": "None" },
+      "answer": "B"
+    },
+    {
+      "id": 86,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "a={5,9,7,3,1}, b={2,4,6,8,10}; c[k]=a[k]-b[k]. Print c.",
+      "options": { "A": "7 13 13 11 11", "B": "3 5 1 -5 -9", "C": "-3 -5 -1 5 9", "D": "None" },
+      "answer": "B"
+    },
+    {
+      "id": 87,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "Nested: a=0..4, b=0..2, if a>b print \"A\". How many A?",
+      "options": { "A": "8", "B": "7", "C": "9", "D": "10" },
+      "answer": "C"
+    },
+    {
+      "id": 88,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "q=13; for p=1 to 4: r=q%p; p=p+5; q=p+r then r=q/5; print q, r",
+      "options": { "A": "6 4", "B": "1 3", "C": "7 2", "D": "6 1" },
+      "answer": "D"
+    },
+    {
+      "id": 89,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "x=259; if x==0 print 0 else if x%9==0 print 9 else print x%9",
+      "options": { "A": "8", "B": "16", "C": "7", "D": "9" },
+      "answer": "C"
+    },
+    {
+      "id": 90,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "a=12, b=25; a=(a+b)%2; b=a; a=a+b-13; print a,b",
+      "options": { "A": "-11 1", "B": "-12 0", "C": "11 22", "D": "37 24" },
+      "answer": "A"
+    },
+    {
+      "id": 91,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "a=b=c=4; if (a & (b^b) & c) a=a>>1; print a+b+c",
+      "options": { "A": "16", "B": "24", "C": "8", "D": "12" },
+      "answer": "D"
+    },
+    {
+      "id": 92,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "funn(a=10,b): if(0) recursive; a=a+a+a+a; return a",
+      "options": { "A": "40", "B": "30", "C": "44", "D": "0" },
+      "answer": "A"
+    },
+    {
+      "id": 93,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "x=2; if x==1 ... else print \"C\". Output?",
+      "options": { "A": "B C", "B": "C", "C": "A", "D": "B" },
+      "answer": "B"
+    },
+    {
+      "id": 94,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "m=9, n=6; m=m+1; n=n-1; m=m+n; if m>n print m else n",
+      "options": { "A": "5", "B": "6", "C": "10", "D": "15" },
+      "answer": "D"
+    },
+    {
+      "id": 95,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "f=6, g=9, sum=0; if g>f for n=f to n<g: sum+=n; print sum",
+      "options": { "A": "21", "B": "15", "C": "9", "D": "6" },
+      "answer": "A"
+    },
+    {
+      "id": 96,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "if a<b swap; if b!=0 return a + f(a,b-1); else 0. Call f(8,9).",
+      "options": { "A": "56", "B": "88", "C": "72", "D": "65" },
+      "answer": "C"
+    },
+    {
+      "id": 97,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "a=9, b=7, c=2; b%=c; a%=c; return a+b",
+      "options": { "A": "17", "B": "5", "C": "2", "D": "-5" },
+      "answer": "C"
+    },
+    {
+      "id": 98,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "number=2630; count digits != 0 that divide 2630.",
+      "options": { "A": "3", "B": "4", "C": "2", "D": "1" },
+      "answer": "A"
+    },
+    {
+      "id": 99,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "n=127 treated digit-wise as s += digit * 8^i (i from 0). Value of s?",
+      "options": { "A": "27", "B": "87", "C": "187", "D": "120" },
+      "answer": "B"
+    },
+    {
+      "id": 100,
+      "set": 1,
+      "topic": "Pseudocode",
+      "question": "a=30, b=60, c=90; if sum==180 and all nonzero print Success else Fail",
+      "options": { "A": "Success", "B": "None", "C": "Error", "D": "Fail" },
+      "answer": "A"
+    },
+    {
+      "id": 101,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Feature that converts a sentence to ALL CAPS or all small letters?",
+      "options": { "A": "Change Case", "B": "Font Color", "C": "Highlight", "D": "WordArt" },
+      "answer": "A"
+    },
+    {
+      "id": 102,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Which app was not in the first Microsoft Office suite?",
+      "options": { "A": "Word", "B": "Excel", "C": "PowerPoint", "D": "Access" },
+      "answer": "D"
+    },
+    {
+      "id": 103,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Mini Translator: (I) stays on until you turn it off (II) sends the whole document as you type.",
+      "options": { "A": "Only I", "B": "Only II", "C": "Both", "D": "Neither" },
+      "answer": "A"
+    },
+    {
+      "id": 104,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Classic Word underlines: green = contextual, blue = spelling, red = grammar. Which is true?",
+      "options": { "A": "I only", "B": "II only", "C": "All three", "D": "None" },
+      "answer": "D"
+    },
+    {
+      "id": 105,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Connection that jumps to another slide in this deck or another presentation?",
+      "options": { "A": "Bookmark", "B": "Hyperlink", "C": "Footer", "D": "Comment" },
+      "answer": "B"
+    },
+    {
+      "id": 106,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Accidentally deleted Outlook mail is first kept in:",
+      "options": { "A": "Inbox", "B": "Drafts", "C": "Sent Items", "D": "Deleted Items" },
+      "answer": "D"
+    },
+    {
+      "id": 107,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Key held to select non-adjacent words/phrases in Word?",
+      "options": { "A": "Alt", "B": "Shift", "C": "Ctrl", "D": "Tab" },
+      "answer": "C"
+    },
+    {
+      "id": 108,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Command Prompt: go two directories up from the current folder?",
+      "options": { "A": "cd .", "B": "cd ..", "C": "cd ..\\..", "D": "cd \\" },
+      "answer": "C"
+    },
+    {
+      "id": 109,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Word tool for synonyms?",
+      "options": { "A": "Spell Check", "B": "Thesaurus", "C": "Mail Merge", "D": "SmartArt" },
+      "answer": "B"
+    },
+    {
+      "id": 110,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Shortcut to open the Font dialog in Word?",
+      "options": { "A": "Ctrl+F", "B": "Ctrl+D", "C": "Ctrl+M", "D": "Ctrl+P" },
+      "answer": "B"
+    },
+    {
+      "id": 111,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Gutter margin is mainly for:",
+      "options": { "A": "Decoration", "B": "Binding", "C": "Alignment", "D": "Page numbering" },
+      "answer": "B"
+    },
+    {
+      "id": 112,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Shortcut to split the Word document window?",
+      "options": { "A": "Ctrl+S", "B": "Ctrl+Alt+S", "C": "Ctrl+Shift+S", "D": "Alt+S" },
+      "answer": "B"
+    },
+    {
+      "id": 113,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Macros in MS Office are typically written in:",
+      "options": { "A": "Java", "B": "Python", "C": "VBA", "D": "C++" },
+      "answer": "C"
+    },
+    {
+      "id": 114,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Merging several Excel cells keeps:",
+      "options": { "A": "All values concatenated", "B": "Last cell", "C": "First cell", "D": "Error always" },
+      "answer": "C"
+    },
+    {
+      "id": 115,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Key to edit the active Excel cell?",
+      "options": { "A": "F1", "B": "F2", "C": "F5", "D": "F12" },
+      "answer": "B"
+    },
+    {
+      "id": 116,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Four-headed arrow cursor in Excel is used to:",
+      "options": { "A": "Resize a cell", "B": "Select one cell", "C": "Move selected cells", "D": "Fill a series" },
+      "answer": "C"
+    },
+    {
+      "id": 117,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "AutoSum shortcut?",
+      "options": { "A": "Ctrl+A", "B": "Alt+=", "C": "Ctrl+S", "D": "Shift+=" },
+      "answer": "B"
+    },
+    {
+      "id": 118,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "PowerPoint view for file/print/share options?",
+      "options": { "A": "Normal", "B": "Slide Show", "C": "Outline", "D": "Backstage" },
+      "answer": "D"
+    },
+    {
+      "id": 119,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Start a slide show from the first slide?",
+      "options": { "A": "F2", "B": "F5", "C": "Ctrl+F5", "D": "Shift+F5" },
+      "answer": "B"
+    },
+    {
+      "id": 120,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Best view to rearrange many slides?",
+      "options": { "A": "Normal", "B": "Reading", "C": "Slide Sorter", "D": "Notes" },
+      "answer": "C"
+    },
+    {
+      "id": 121,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Collective design for fonts, colors, and effects across a document/deck?",
+      "options": { "A": "Highlight", "B": "Line spacing", "C": "Formatting only", "D": "Theme" },
+      "answer": "D"
+    },
+    {
+      "id": 122,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Tool that stores data in rows and columns for calculation?",
+      "options": { "A": "Spreadsheet", "B": "Presentation", "C": "Word processor", "D": "Browser" },
+      "answer": "A"
+    },
+    {
+      "id": 123,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "PowerPoint place that controls the layout of all slides at once?",
+      "options": { "A": "Slide Sorter", "B": "Slide Master", "C": "Notes Page", "D": "Handout Master only" },
+      "answer": "B"
+    },
+    {
+      "id": 124,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Shortcut to run macros dialog?",
+      "options": { "A": "Alt+F5", "B": "Alt+F6", "C": "Alt+F7", "D": "Alt+F8" },
+      "answer": "D"
+    },
+    {
+      "id": 125,
+      "set": 2,
+      "topic": "MS Office",
+      "question": "Start slide show from the current slide?",
+      "options": { "A": "F5", "B": "Shift+F5", "C": "Esc", "D": "F7" },
+      "answer": "B"
+    },
+    {
+      "id": 126,
+      "set": 2,
+      "topic": "Networking",
+      "question": "TCP is best described as:",
+      "options": { "A": "Connectionless and unreliable", "B": "Connection-oriented and reliable", "C": "Broadcast-only", "D": "Analog signaling" },
+      "answer": "B"
+    },
+    {
+      "id": 127,
+      "set": 2,
+      "topic": "Networking",
+      "question": "OSI Physical layer deals with:",
+      "options": { "A": "IP routing", "B": "Bits on the wire", "C": "Sessions", "D": "Encryption keys only" },
+      "answer": "B"
+    },
+    {
+      "id": 128,
+      "set": 2,
+      "topic": "Networking",
+      "question": "HTTP, FTP, and SMTP sit mainly at:",
+      "options": { "A": "Network", "B": "Transport", "C": "Data Link", "D": "Application" },
+      "answer": "D"
+    },
+    {
+      "id": 129,
+      "set": 2,
+      "topic": "Networking",
+      "question": "ARP maps:",
+      "options": { "A": "Domain to IP", "B": "IP to MAC", "C": "Port to process", "D": "URL to DNS" },
+      "answer": "B"
+    },
+    {
+      "id": 130,
+      "set": 2,
+      "topic": "Networking",
+      "question": "Default gateway is:",
+      "options": { "A": "The printer IP", "B": "Router IP used to leave the local subnet", "C": "MAC of a switch", "D": "DHCP lease time" },
+      "answer": "B"
+    },
+    {
+      "id": 131,
+      "set": 2,
+      "topic": "Networking",
+      "question": "Subnet mask 255.255.255.192 allows how many usable hosts?",
+      "options": { "A": "15", "B": "62", "C": "32", "D": "126" },
+      "answer": "B"
+    },
+    {
+      "id": 132,
+      "set": 2,
+      "topic": "Networking",
+      "question": "Typical Ethernet MTU size?",
+      "options": { "A": "64 bytes", "B": "512 bytes", "C": "1500 bytes", "D": "65535 bytes" },
+      "answer": "C"
+    },
+    {
+      "id": 133,
+      "set": 2,
+      "topic": "Networking",
+      "question": "A hub operates at:",
+      "options": { "A": "Layer 1", "B": "Layer 2", "C": "Layer 3", "D": "Layer 4" },
+      "answer": "A"
+    },
+    {
+      "id": 134,
+      "set": 2,
+      "topic": "Networking",
+      "question": "FTP control and data ports (classic)?",
+      "options": { "A": "20 and 21", "B": "22 and 23", "C": "25 and 110", "D": "53 and 80" },
+      "answer": "A"
+    },
+    {
+      "id": 135,
+      "set": 2,
+      "topic": "Networking",
+      "question": "Telnet default port?",
+      "options": { "A": "21", "B": "22", "C": "23", "D": "25" },
+      "answer": "C"
+    },
+    {
+      "id": 136,
+      "set": 2,
+      "topic": "Networking",
+      "question": "POP3 and IMAP ports?",
+      "options": { "A": "110 and 143", "B": "25 and 80", "C": "67 and 68", "D": "443 and 993" },
+      "answer": "A"
+    },
+    {
+      "id": 137,
+      "set": 2,
+      "topic": "Networking",
+      "question": "Private IPv4 ranges include:",
+      "options": { "A": "8.8.8.8", "B": "192.168.0.0/16", "C": "1.1.1.1", "D": "255.255.255.255" },
+      "answer": "B"
+    },
+    {
+      "id": 138,
+      "set": 2,
+      "topic": "Networking",
+      "question": "Loopback address?",
+      "options": { "A": "0.0.0.0", "B": "127.0.0.1", "C": "192.168.1.1", "D": "255.0.0.0" },
+      "answer": "B"
+    },
+    {
+      "id": 139,
+      "set": 2,
+      "topic": "Networking",
+      "question": "TCP three-way handshake order?",
+      "options": { "A": "ACK, SYN, FIN", "B": "SYN, SYN-ACK, ACK", "C": "FIN, ACK, SYN", "D": "RST, SYN, ACK" },
+      "answer": "B"
+    },
+    {
+      "id": 140,
+      "set": 2,
+      "topic": "Networking",
+      "question": "A switch vs a hub: the switch mainly:",
+      "options": { "A": "Shares one collision domain for all ports", "B": "Forwards using MAC and splits collision domains", "C": "Routes between WANs", "D": "Assigns public IPs" },
+      "answer": "B"
+    },
+    {
+      "id": 141,
+      "set": 2,
+      "topic": "Networking",
+      "question": "DHCP typically uses ports:",
+      "options": { "A": "53/54", "B": "67/68", "C": "80/443", "D": "20/21" },
+      "answer": "B"
+    },
+    {
+      "id": 142,
+      "set": 2,
+      "topic": "Networking",
+      "question": "nslookup is used to:",
+      "options": { "A": "Trace every hop's latency only", "B": "Query DNS records", "C": "Capture packets", "D": "Compress files" },
+      "answer": "B"
+    },
+    {
+      "id": 143,
+      "set": 2,
+      "topic": "Networking",
+      "question": "Star topology's center device is usually a:",
+      "options": { "A": "Terminator", "B": "Switch/hub", "C": "Modem only", "D": "Repeater chain" },
+      "answer": "B"
+    },
+    {
+      "id": 144,
+      "set": 2,
+      "topic": "Networking",
+      "question": "VLAN is used to:",
+      "options": { "A": "Replace DNS", "B": "Logically segment a LAN", "C": "Assign MAC to RAM", "D": "Encrypt disks" },
+      "answer": "B"
+    },
+    {
+      "id": 145,
+      "set": 2,
+      "topic": "Networking",
+      "question": "RDP default port?",
+      "options": { "A": "22", "B": "3389", "C": "8080", "D": "1433" },
+      "answer": "B"
+    },
+    {
+      "id": 146,
+      "set": 2,
+      "topic": "Security",
+      "question": "Malware that copies itself across networks without a host file?",
+      "options": { "A": "Virus", "B": "Trojan", "C": "Worm", "D": "Spyware" },
+      "answer": "C"
+    },
+    {
+      "id": 147,
+      "set": 2,
+      "topic": "Security",
+      "question": "Ransomware typically:",
+      "options": { "A": "Speeds the CPU", "B": "Encrypts files and demands payment", "C": "Fixes bugs", "D": "Updates BIOS" },
+      "answer": "B"
+    },
+    {
+      "id": 148,
+      "set": 2,
+      "topic": "Security",
+      "question": "CIA triad is:",
+      "options": { "A": "Cloud, Internet, Access", "B": "Confidentiality, Integrity, Availability", "C": "Cipher, Index, Auth", "D": "Cache, IP, ARP" },
+      "answer": "B"
+    },
+    {
+      "id": 149,
+      "set": 2,
+      "topic": "Security",
+      "question": "Hashing is mainly for:",
+      "options": { "A": "Hiding data so it can be decrypted with a key", "B": "Integrity / one-way fingerprint", "C": "Assigning IPs", "D": "Drawing charts" },
+      "answer": "B"
+    },
+    {
+      "id": 150,
+      "set": 2,
+      "topic": "Security",
+      "question": "AES is a:",
+      "options": { "A": "Hash only", "B": "Symmetric cipher", "C": "Routing protocol", "D": "Mail client" },
+      "answer": "B"
+    },
+    {
+      "id": 151,
+      "set": 2,
+      "topic": "Security",
+      "question": "RSA is typically:",
+      "options": { "A": "Symmetric only", "B": "Asymmetric (public/private keys)", "C": "A switch type", "D": "A subnet mask" },
+      "answer": "B"
+    },
+    {
+      "id": 152,
+      "set": 2,
+      "topic": "Security",
+      "question": "HTTPS uses:",
+      "options": { "A": "FTP", "B": "TLS/SSL over HTTP", "C": "SMTP", "D": "ICMP" },
+      "answer": "B"
+    },
+    {
+      "id": 153,
+      "set": 2,
+      "topic": "Security",
+      "question": "MFA means:",
+      "options": { "A": "One password only", "B": "Extra factor besides password", "C": "No login", "D": "MAC flooding" },
+      "answer": "B"
+    },
+    {
+      "id": 154,
+      "set": 2,
+      "topic": "Security",
+      "question": "IDS vs IPS: IPS additionally:",
+      "options": { "A": "Only logs", "B": "Can block/prevent the attack", "C": "Assigns DHCP", "D": "Draws slides" },
+      "answer": "B"
+    },
+    {
+      "id": 155,
+      "set": 2,
+      "topic": "Security",
+      "question": "SQL injection targets:",
+      "options": { "A": "PowerPoint themes", "B": "Database queries via untrusted input", "C": "HDMI cables", "D": "RAM clock" },
+      "answer": "B"
+    },
+    {
+      "id": 156,
+      "set": 2,
+      "topic": "Security",
+      "question": "Social engineering attacks:",
+      "options": { "A": "CPUs", "B": "People, not only packets", "C": "Fiber attenuation", "D": "Excel fill handle" },
+      "answer": "B"
+    },
+    {
+      "id": 157,
+      "set": 2,
+      "topic": "Security",
+      "question": "Least privilege means:",
+      "options": { "A": "Admin rights for everyone", "B": "Minimum access needed for the job", "C": "Open all ports", "D": "Share one password" },
+      "answer": "B"
+    },
+    {
+      "id": 158,
+      "set": 2,
+      "topic": "Security",
+      "question": "A digital certificate is issued by a:",
+      "options": { "A": "DHCP server", "B": "Certificate Authority", "C": "Hub", "D": "Thesaurus" },
+      "answer": "B"
+    },
+    {
+      "id": 159,
+      "set": 2,
+      "topic": "Security",
+      "question": "Brute-force attack:",
+      "options": { "A": "Tries many passwords", "B": "Floods DNS only", "C": "Paints slides", "D": "Merges cells" },
+      "answer": "A"
+    },
+    {
+      "id": 160,
+      "set": 2,
+      "topic": "Security",
+      "question": "Keylogger captures:",
+      "options": { "A": "Packets at Layer 3 only", "B": "Keystrokes", "C": "Subnet masks", "D": "Cloud regions" },
+      "answer": "B"
+    },
+    {
+      "id": 161,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "NIST cloud trait: use more/less resource as demand changes?",
+      "options": { "A": "Broad network access", "B": "Rapid elasticity", "C": "Measured service", "D": "Resource pooling" },
+      "answer": "B"
+    },
+    {
+      "id": 162,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Billing by actual use is:",
+      "options": { "A": "Resource pooling", "B": "Measured service", "C": "On-prem CAPEX only", "D": "Physical lock-in" },
+      "answer": "B"
+    },
+    {
+      "id": 163,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Cloud owned and used by one organization?",
+      "options": { "A": "Public", "B": "Private", "C": "Community", "D": "Multi-public" },
+      "answer": "B"
+    },
+    {
+      "id": 164,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Mix of public + private is:",
+      "options": { "A": "Community only", "B": "Hybrid", "C": "Bare metal only", "D": "Mainframe" },
+      "answer": "B"
+    },
+    {
+      "id": 165,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Amazon EC2 is mainly:",
+      "options": { "A": "SaaS", "B": "PaaS", "C": "IaaS", "D": "IDaaS" },
+      "answer": "C"
+    },
+    {
+      "id": 166,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Google App Engine / Heroku are mainly:",
+      "options": { "A": "IaaS", "B": "PaaS", "C": "SaaS", "D": "DaaS" },
+      "answer": "B"
+    },
+    {
+      "id": 167,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Salesforce / Dropbox-style apps are mainly:",
+      "options": { "A": "IaaS", "B": "PaaS", "C": "SaaS", "D": "Bare metal" },
+      "answer": "C"
+    },
+    {
+      "id": 168,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Least built-in security (you secure more yourself)?",
+      "options": { "A": "SaaS", "B": "PaaS", "C": "IaaS", "D": "All equal" },
+      "answer": "C"
+    },
+    {
+      "id": 169,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Most complete app + platform + hardware vendor model?",
+      "options": { "A": "IaaS", "B": "PaaS", "C": "SaaS", "D": "CaaS" },
+      "answer": "C"
+    },
+    {
+      "id": 170,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "SPI cloud models are:",
+      "options": { "A": "Switch, Port, IP", "B": "SaaS, PaaS, IaaS", "C": "SMTP, POP, IMAP", "D": "SYN, PSH, ACK" },
+      "answer": "B"
+    },
+    {
+      "id": 171,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Multi-tenancy means:",
+      "options": { "A": "One VM per planet", "B": "Many customers share the same platform, isolated logically", "C": "No isolation", "D": "Only USB sharing" },
+      "answer": "B"
+    },
+    {
+      "id": 172,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Hardware virtualized in the cloud is the core of:",
+      "options": { "A": "SaaS", "B": "IaaS", "C": "Thesaurus", "D": "Slide Master" },
+      "answer": "B"
+    },
+    {
+      "id": 173,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Google Workspace is an example of:",
+      "options": { "A": "IaaS", "B": "SaaS", "C": "Bare-metal colo", "D": "Layer-1 hub" },
+      "answer": "B"
+    },
+    {
+      "id": 174,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Main risk of depending on one cloud vendor's APIs?",
+      "options": { "A": "VLAN hopping", "B": "Vendor lock-in", "C": "Gutter margin", "D": "Fill handle" },
+      "answer": "B"
+    },
+    {
+      "id": 175,
+      "set": 2,
+      "topic": "Cloud",
+      "question": "Availability Zone is best described as:",
+      "options": { "A": "A Word style", "B": "Isolated data-center group inside a region", "C": "A MAC address", "D": "An Excel chart type" },
+      "answer": "B"
+    },
+    {
+      "id": 176,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "y = 5; print y << 3",
+      "options": { "A": "8", "B": "15", "C": "40", "D": "5" },
+      "answer": "C"
+    },
+    {
+      "id": 177,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "n = 10; print n << 2",
+      "options": { "A": "20", "B": "40", "C": "12", "D": "8" },
+      "answer": "B"
+    },
+    {
+      "id": 178,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "x = 7; print x >> 1",
+      "options": { "A": "3", "B": "14", "C": "6", "D": "8" },
+      "answer": "A"
+    },
+    {
+      "id": 179,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "a = 12; b = 5; print a & b",
+      "options": { "A": "17", "B": "13", "C": "4", "D": "9" },
+      "answer": "C"
+    },
+    {
+      "id": 180,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "a = 12; b = 5; print a | b",
+      "options": { "A": "4", "B": "9", "C": "13", "D": "17" },
+      "answer": "C"
+    },
+    {
+      "id": 181,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "a = 12; b = 5; print a ^ b",
+      "options": { "A": "4", "B": "9", "C": "13", "D": "17" },
+      "answer": "B"
+    },
+    {
+      "id": 182,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "for i = 1 to 5: if i % 2 == 0: continue; print i",
+      "options": { "A": "1 2 3 4 5", "B": "2 4", "C": "1 3 5", "D": "1 2 3" },
+      "answer": "C"
+    },
+    {
+      "id": 183,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "for i = 1 to 5: print i; if i == 3: break",
+      "options": { "A": "1 2 3 4 5", "B": "1 2 3", "C": "3 4 5", "D": "1 2" },
+      "answer": "B"
+    },
+    {
+      "id": 184,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "fact(n): if n <= 1 return 1 else return n * fact(n-1). print fact(5)",
+      "options": { "A": "15", "B": "60", "C": "120", "D": "24" },
+      "answer": "C"
+    },
+    {
+      "id": 185,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "fib(n): if n <= 1 return n else return fib(n-1)+fib(n-2). print fib(6)",
+      "options": { "A": "5", "B": "8", "C": "13", "D": "21" },
+      "answer": "B"
+    },
+    {
+      "id": 186,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "Swap without temp: a=4; b=9; a=a+b; b=a-b; a=a-b; print a, b",
+      "options": { "A": "4 9", "B": "9 4", "C": "13 4", "D": "9 13" },
+      "answer": "B"
+    },
+    {
+      "id": 187,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "s = 0; for i = 1 to 4: s = s + i * i; print s",
+      "options": { "A": "10", "B": "20", "C": "30", "D": "16" },
+      "answer": "C"
+    },
+    {
+      "id": 188,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "x = 27; c = 0; while x > 0: x = x // 10; c = c + 1; print c",
+      "options": { "A": "1", "B": "2", "C": "3", "D": "27" },
+      "answer": "C"
+    },
+    {
+      "id": 189,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "n = 121; r = 0; t = n; while t: r = r*10 + t%10; t = t//10. print r == n",
+      "options": { "A": "True", "B": "False", "C": "1210", "D": "Error" },
+      "answer": "A"
+    },
+    {
+      "id": 190,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "pow(a,b): r=1; for i=1 to b: r=r*a; return r. print pow(2,5)",
+      "options": { "A": "7", "B": "10", "C": "32", "D": "25" },
+      "answer": "C"
+    },
+    {
+      "id": 191,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "c=0; for i=1 to 3: for j=1 to 3: if i==j: c=c+1; print c",
+      "options": { "A": "3", "B": "6", "C": "9", "D": "1" },
+      "answer": "A"
+    },
+    {
+      "id": 192,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "a=8; b=3; print a % b + a / b (integer division)",
+      "options": { "A": "2", "B": "4", "C": "5", "D": "11" },
+      "answer": "B"
+    },
+    {
+      "id": 193,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "f(n): if n==0: return; print n; f(n-1); print n. f(2) output?",
+      "options": { "A": "2 1", "B": "2 1 1 2", "C": "1 2", "D": "2 2 1 1" },
+      "answer": "B"
+    },
+    {
+      "id": 194,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "x=15; y=0; while x: y = y + (x & 1); x = x >> 1; print y",
+      "options": { "A": "3", "B": "4", "C": "15", "D": "8" },
+      "answer": "B"
+    },
+    {
+      "id": 195,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "a={2,4,6,8}; s=0; for i=0 to 3: if a[i]%4==0: s=s+a[i]; print s",
+      "options": { "A": "20", "B": "12", "C": "8", "D": "4" },
+      "answer": "B"
+    },
+    {
+      "id": 196,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "gcd(a,b): while b: t=b; b=a%b; a=t; return a. print gcd(48,18)",
+      "options": { "A": "6", "B": "8", "C": "18", "D": "3" },
+      "answer": "A"
+    },
+    {
+      "id": 197,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "n=5; s=1; for i=1 to n: s=s*2; print s",
+      "options": { "A": "10", "B": "16", "C": "32", "D": "64" },
+      "answer": "C"
+    },
+    {
+      "id": 198,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "a=5; b=10; if a++ > 5: print a else print b (post-increment)",
+      "options": { "A": "5", "B": "6", "C": "10", "D": "11" },
+      "answer": "C"
+    },
+    {
+      "id": 199,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "a=3; print ++a + a++ (C left-to-right, typical Accenture expected)",
+      "options": { "A": "6", "B": "7", "C": "8", "D": "9" },
+      "answer": "C"
+    },
+    {
+      "id": 200,
+      "set": 2,
+      "topic": "Pseudocode",
+      "question": "isPrime(n): if n<2 return 0; for i=2 to n-1: if n%i==0 return 0; return 1. print isPrime(9), isPrime(11)",
+      "options": { "A": "1 1", "B": "0 1", "C": "1 0", "D": "0 0" },
+      "answer": "B"
+    }
+  ]
+}
