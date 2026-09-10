@@ -82,6 +82,7 @@ export const CodingArena: React.FC = () => {
 
   // Editor refs & state
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const gutterRef = useRef<HTMLDivElement>(null);
   const [copied, setCopied] = useState<boolean>(false);
   const [isRunning, setIsRunning] = useState<boolean>(false);
   const [testResults, setTestResults] = useState<TestResult[] | null>(null);
@@ -90,6 +91,13 @@ export const CodingArena: React.FC = () => {
   const [customResult, setCustomResult] = useState<string | null>(null);
   const [activeBottomTab, setActiveBottomTab] = useState<'tests' | 'custom' | 'console'>('tests');
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
+
+  // Synchronize gutter line numbers scrolling with textarea
+  const handleScroll = (e: React.UIEvent<HTMLTextAreaElement>) => {
+    if (gutterRef.current) {
+      gutterRef.current.scrollTop = e.currentTarget.scrollTop;
+    }
+  };
 
   // Frontend Live DOM Sandbox state for CODING-03
   const [domBoxVisible, setDomBoxVisible] = useState<boolean>(false);
@@ -510,7 +518,7 @@ export const CodingArena: React.FC = () => {
             </div>
 
             {/* Tab Contents */}
-            <div className="p-5 max-h-[620px] overflow-y-auto text-sm leading-relaxed">
+            <div className="p-5 max-h-[700px] overflow-y-auto text-sm leading-relaxed">
               {leftTab === 'problem' && (
                 <div className="space-y-4">
                   <div>
@@ -804,11 +812,18 @@ export const CodingArena: React.FC = () => {
             </div>
 
             {/* Code Input Area with Synchronized Line Numbers */}
-            <div className="relative flex font-mono text-[13px] leading-relaxed min-h-[340px] max-h-[460px] bg-zinc-950 overflow-hidden">
+            <div
+              className={`relative flex font-mono text-[13px] bg-zinc-950 border-b border-zinc-800/80 overflow-hidden ${
+                isFullscreen ? 'h-[520px]' : 'h-[380px]'
+              }`}
+            >
               {/* Line Numbers Gutter */}
-              <div className="select-none py-3.5 px-3 bg-zinc-900/50 border-r border-zinc-800/80 text-zinc-600 text-right font-mono text-xs w-11 flex-shrink-0">
-                {Array.from({ length: lineCount }).map((_, i) => (
-                  <div key={i} className="leading-[22px]">
+              <div
+                ref={gutterRef}
+                className="select-none py-3 px-3 bg-zinc-900/50 border-r border-zinc-800/80 text-zinc-600 text-right font-mono text-xs w-12 flex-shrink-0 h-full overflow-hidden"
+              >
+                {Array.from({ length: Math.max(lineCount, 35) }).map((_, i) => (
+                  <div key={i} className="h-[22px] leading-[22px]">
                     {i + 1}
                   </div>
                 ))}
@@ -820,11 +835,12 @@ export const CodingArena: React.FC = () => {
                 value={currentCode}
                 onChange={(e) => setCode(e.target.value)}
                 onKeyDown={handleKeyDown}
+                onScroll={handleScroll}
                 spellCheck={false}
                 autoCapitalize="off"
                 autoComplete="off"
                 placeholder="Write your exam solution here..."
-                className="w-full h-full py-3.5 px-4 bg-transparent text-zinc-100 resize-none outline-hidden focus:outline-hidden font-mono leading-[22px] overflow-y-auto"
+                className="flex-1 h-full py-3 px-4 bg-transparent text-zinc-100 resize-none outline-hidden focus:outline-hidden font-mono text-[13px] leading-[22px] overflow-y-auto"
                 style={{
                   tabSize: 2,
                 }}
