@@ -17,12 +17,12 @@
 - ⚡ **Z.ai GLM AI Explanations**:
   - **Quick Explanation**: Powered by `glm-4.7-flash` for instant, 1-2 sentence insights upon selecting an answer.
   - **Deep Concept Breakdown**: Powered by `glm-4.7-flash` for structured Markdown breakdowns covering *Core Concept*, *Option Analysis*, and *Key Takeaways / Mnemonics*.
-- 📚 **200 Real Accenture Technical MCQs**: Pre-loaded across 5 technical categories:
-  - MS Office & Productivity
-  - Computer Networks & Cybersecurity
-  - Pseudocode, C & Algorithms
-  - Cloud, Common Tech & Data Structures
-  - Agile, Testing & Enterprise IT
+- 📚 **467 Real Accenture Technical MCQs**: Pre-loaded across 5 technical categories:
+  - MS Office & Productivity (135 Questions)
+  - Computer Networks & Protocols (63 Questions)
+  - Cybersecurity & Defense (60 Questions)
+  - Cloud Computing & Virtualization (88 Questions)
+  - Pseudocode, Logic & Web Tech (121 Questions)
 - 📥 **Custom JSON Importer & Exporter**: Import your own question sets in intuitive JSON formats (both standard MCQ and front/back flashcards).
 - 🎨 **Modern Minimalist UI**: Built with Tailwind CSS v4, Framer Motion animations, KaTeX LaTeX math support, interactive Cloze deletions, Web Audio feedback, and full Light/Dark mode.
 - ☁️ **Cloudflare Edge Performance**: Deployed on Cloudflare Pages with edge serverless functions for ultra-low latency worldwide.

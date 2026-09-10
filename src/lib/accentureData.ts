@@ -4,8 +4,8 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-ms-office",
     "title": "MS Office & Productivity",
-    "description": "Word shortcuts, Excel formulas & charts, PowerPoint tools, and formatting mastery (50 Questions).",
-    "icon": "📊",
+    "description": "Word shortcuts, Excel formulas & charts, PowerPoint tools, and formatting mastery (135 Questions).",
+    "icon": "\ud83d\udcca",
     "color": "#2563eb",
     "tags": [
       "MS Office",
@@ -19,8 +19,8 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-networking",
     "title": "Computer Networks & Protocols",
-    "description": "OSI & TCP/IP layers, routing, switching, IP addressing, DNS, ports, and protocols (40 Questions).",
-    "icon": "🌐",
+    "description": "OSI & TCP/IP layers, routing, switching, IP addressing, DNS, ports, and protocols (63 Questions).",
+    "icon": "\ud83c\udf10",
     "color": "#059669",
     "tags": [
       "Networking",
@@ -34,8 +34,8 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-security",
     "title": "Cybersecurity & Defense",
-    "description": "Threat vectors, malware types, symmetric/asymmetric encryption, firewalls, and SSL/TLS (30 Questions).",
-    "icon": "🔒",
+    "description": "Threat vectors, malware types, symmetric/asymmetric encryption, firewalls, and SSL/TLS (60 Questions).",
+    "icon": "\ud83d\udd12",
     "color": "#dc2626",
     "tags": [
       "Security",
@@ -49,8 +49,8 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-cloud",
     "title": "Cloud Computing & Virtualization",
-    "description": "IaaS, PaaS, SaaS models, hypervisors, elasticity, cloud security, and architecture (30 Questions).",
-    "icon": "☁️",
+    "description": "IaaS, PaaS, SaaS models, hypervisors, elasticity, cloud security, and architecture (88 Questions).",
+    "icon": "\u2601\ufe0f",
     "color": "#0284c7",
     "tags": [
       "Cloud",
@@ -64,8 +64,8 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-pseudocode",
     "title": "Pseudocode & Algorithmic Logic",
-    "description": "Loop execution, conditional branching, bitwise operators, string manipulation, and tracing (50 Questions).",
-    "icon": "💻",
+    "description": "Loop execution, conditional branching, bitwise operators, string manipulation, and tracing (121 Questions).",
+    "icon": "\ud83d\udcbb",
     "color": "#7c3aed",
     "tags": [
       "Pseudocode",
@@ -9225,6 +9225,12025 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "easeFactor": 2.5,
       "lastStudied": null,
       "dueDate": 1715012000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-201",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which of the following is not a cloud service model?",
+    "back": "VaaS",
+    "explanation": "The three standard NIST cloud computing service models are IaaS, PaaS, and SaaS. VaaS (Video as a Service) is not an official cloud service model.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "SaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "VaaS",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012060000,
+    "updatedAt": 1715012060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-202",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which cloud deployment model provides high-level data control and security?",
+    "back": "Private",
+    "explanation": "A Private Cloud is dedicated solely to a single organization, offering the highest level of security, compliance, and governance control over infrastructure and data.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Private",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hybrid",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Community",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012120000,
+    "updatedAt": 1715012120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-203",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "In cloud computing, multi-tenancy refers to:",
+    "back": "Multiple users accessing the same application or database instance",
+    "explanation": "Multi-tenancy is a core cloud architecture feature where a single software instance or infrastructure pool serves multiple independent customers (tenants) securely.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "One user, one dedicated physical server only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Multiple users accessing the same application or database instance",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Offline-only storage",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A type of antivirus",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012180000,
+    "updatedAt": 1715012180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-204",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which is an example of PaaS?",
+    "back": "Microsoft Azure App Service",
+    "explanation": "Microsoft Azure App Service is a Platform as a Service (PaaS) that enables developers to build and host web applications without managing the underlying VMs or OS.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Amazon EC2",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Microsoft Azure App Service",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Google Drive",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dropbox",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012240000,
+    "updatedAt": 1715012240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-205",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Main purpose of a load balancer in cloud architecture?",
+    "back": "Distribute network traffic evenly across servers",
+    "explanation": "Load balancers distribute incoming client requests evenly across multiple backend servers to prevent overload, maximize throughput, and ensure high availability.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Encrypt disks",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Distribute network traffic evenly across servers",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Assign MAC addresses",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Spell-check documents",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012300000,
+    "updatedAt": 1715012300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-206",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Organization transitioning to cloud with highly sensitive data. Most secure deployment?",
+    "back": "Private",
+    "explanation": "A Private Cloud deployment provides exclusive physical infrastructure and isolated networks, making it the most secure choice for highly sensitive data.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Private",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hybrid",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Community",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012360000,
+    "updatedAt": 1715012360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-207",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Highly confidential financial records needing complete control over infrastructure and security policies. Most appropriate model?",
+    "back": "Private",
+    "explanation": "Strict financial compliance and confidentiality standards require the dedicated governance, granular network policies, and isolated infrastructure of a Private Cloud.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Private",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hybrid",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Community",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012420000,
+    "updatedAt": 1715012420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-208",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Startup web app, rapidly changing traffic, users across different regions, no dedicated hardware, minimize infrastructure cost?",
+    "back": "Public",
+    "explanation": "Public Cloud offers on-demand elasticity, global data centers, and a pay-as-you-go model, allowing startups to scale with dynamic traffic while eliminating capital expenses.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Private",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Public",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "On-premises only",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Community",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012480000,
+    "updatedAt": 1715012480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-209",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Hassle-free office productivity tools over the internet, no IT management complexity. Best use case?",
+    "back": "Software as a Service",
+    "explanation": "Software as a Service (SaaS) provides ready-to-use software applications hosted on the cloud and accessed via web browser, removing infrastructure and OS maintenance burdens.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Big data intelligence",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Testing and building applications",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Software as a Service",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Intelligent energy saving",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012540000,
+    "updatedAt": 1715012540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-210",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Employees use email and office apps in a browser without installing/maintaining software. Model?",
+    "back": "SaaS",
+    "explanation": "SaaS delivers web-based productivity and email suites (such as Google Workspace and Microsoft 365) without requiring local installation or administrative patching.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "SaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "DaaS",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012600000,
+    "updatedAt": 1715012600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-211",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "What does cloud computing primarily provide?",
+    "back": "Computing resources over the internet",
+    "explanation": "Cloud computing is the on-demand delivery of computing services\u2014including servers, storage, databases, networking, and software\u2014over the Internet.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Physical hardware only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Computing resources over the internet",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Offline software",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antivirus protection",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012660000,
+    "updatedAt": 1715012660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-212",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which is an example of SaaS?",
+    "back": "Gmail",
+    "explanation": "Gmail is an end-user web application fully managed and hosted by Google, which is a classic example of Software as a Service (SaaS).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Amazon EC2",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Google App Engine",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gmail",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Virtual machine",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012720000,
+    "updatedAt": 1715012720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-213",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Full form of PaaS?",
+    "back": "Platform as a Service",
+    "explanation": "PaaS stands for Platform as a Service, providing hardware, networking, and an application runtime environment for developers to build applications.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Platform as a Service",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Protocol as a Service",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Packet as a Service",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Private as a Service",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012780000,
+    "updatedAt": 1715012780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-214",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which is an example of IaaS?",
+    "back": "Amazon EC2",
+    "explanation": "Amazon EC2 (Elastic Compute Cloud) provides scalable virtual computing capacity (virtual servers), representing Infrastructure as a Service (IaaS).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Gmail",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Amazon EC2",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Salesforce",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Zoom",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012840000,
+    "updatedAt": 1715012840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-215",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which cloud service model gives the user the most control over infrastructure?",
+    "back": "IaaS",
+    "explanation": "IaaS gives users the greatest degree of control over computing resources, allowing configuration of the OS, middleware, runtime, and installed software.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "DaaS",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012900000,
+    "updatedAt": 1715012900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-216",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which deployment model is dedicated to a single organization?",
+    "back": "Private",
+    "explanation": "A Private Cloud deployment model is provisioned for exclusive use by a single organization comprising multiple consumers.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hybrid",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Community",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Private",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715012960000,
+    "updatedAt": 1715012960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715012960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-217",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which cloud model combines public and private?",
+    "back": "Hybrid",
+    "explanation": "A Hybrid Cloud combines on-premises private cloud/infrastructure with public cloud environments, bound together by standardized technology for data and application portability.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Community",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hybrid",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Bare metal only",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mainframe",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715013020000,
+    "updatedAt": 1715013020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-218",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Major advantage of cloud computing?",
+    "back": "Scalability",
+    "explanation": "Scalability allows a cloud system to handle increasing workloads by dynamically provisioning additional compute or storage capacity as needed.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Fixed unchangeable hardware",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Scalability",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Must be physically at the laptop",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "No security ever",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715013080000,
+    "updatedAt": 1715013080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-219",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Scalability in cloud means:",
+    "back": "Increasing or decreasing resources based on demand",
+    "explanation": "Cloud scalability refers to the capability to expand or reduce system resources (CPU, RAM, storage) dynamically to match fluctuating demand.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Always buy more disks forever",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Increasing or decreasing resources based on demand",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deleting the internet",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "One VM per planet",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715013140000,
+    "updatedAt": 1715013140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-220",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Virtualization is:",
+    "back": "Creating virtual versions of computing resources",
+    "explanation": "Virtualization is the process of creating a software-based representation of physical servers, storage, or networks using a hypervisor.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Physical destruction of a server",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Creating virtual versions of computing resources",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encrypting files",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Connecting computers using cable",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715013200000,
+    "updatedAt": 1715013200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-221",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which component creates and manages virtual machines?",
+    "back": "Hypervisor",
+    "explanation": "A hypervisor (or Virtual Machine Monitor) is the software layer that creates, runs, and isolates virtual machines on underlying physical hardware.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Firewall",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Router",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Compiler",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hypervisor",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715013260000,
+    "updatedAt": 1715013260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-222",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Pay-as-you-go means:",
+    "back": "Pay according to resources consumed",
+    "explanation": "Pay-as-you-go is a utility billing model where organizations only pay for the exact volume of computing resources, storage, and bandwidth they consume.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Fixed annual payment only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Free cloud services",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pay according to resources consumed",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pay before using, never after",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715013320000,
+    "updatedAt": 1715013320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-223",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Type-1 hypervisor example (runs on physical hardware)?",
+    "back": "VMware ESXi",
+    "explanation": "VMware ESXi is a bare-metal (Type-1) hypervisor that runs directly on physical server hardware without requiring a host operating system.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Microsoft Word",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Chrome",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "VLC",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "VMware ESXi",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715013380000,
+    "updatedAt": 1715013380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-224",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Type-2 hypervisor example (runs on a host OS)?",
+    "back": "VirtualBox",
+    "explanation": "VirtualBox is a hosted (Type-2) hypervisor that runs as an application on top of an existing host operating system (like Windows or macOS).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "VMware ESXi",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "VirtualBox",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "BIOS",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Router",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715013440000,
+    "updatedAt": 1715013440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-225",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which AWS service is used for storage?",
+    "back": "S3",
+    "explanation": "Amazon S3 (Simple Storage Service) is AWS's scalable object storage service designed for storing and retrieving any amount of data from anywhere.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "EC2",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "S3",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "VPC",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "IAM",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715013500000,
+    "updatedAt": 1715013500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-226",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Migrating legacy + new cloud data, access both simultaneously, logically integrated without physical movement?",
+    "back": "Abstraction layer that unifies separate data sources",
+    "explanation": "A data abstraction or virtualization layer allows disparate on-premises and cloud databases to be queried and integrated logically as a single unified source.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Physical copy only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Abstraction layer that unifies separate data sources",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Floppy backup",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Print to paper",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 1"
+    ],
+    "createdAt": 1715013560000,
+    "updatedAt": 1715013560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-227",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which OSI layer is responsible for reliable end-to-end communication?",
+    "back": "Transport",
+    "explanation": "The Transport Layer (OSI Layer 4) is responsible for end-to-end communication, flow control, error recovery, and reliable data transmission (using protocols like TCP).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Network",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transport",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Data Link",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Physical",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715013620000,
+    "updatedAt": 1715013620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-228",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which of the following IP addresses is a private IP?",
+    "back": "192.168.1.10",
+    "explanation": "192.168.1.10 falls within the RFC 1918 private IPv4 address block (192.168.0.0/16), reserved for private local area networks and non-routable on the public internet.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8.8.8.8",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "192.168.1.10",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1.1.1.1",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "255.255.255.255",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715013680000,
+    "updatedAt": 1715013680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-229",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which device operates at the Data Link layer (Layer 2)?",
+    "back": "Switch",
+    "explanation": "Network switches operate primarily at the Data Link Layer (OSI Layer 2), inspecting frame headers and forwarding data based on hardware MAC addresses.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Router",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hub",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Switch",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Repeater",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715013740000,
+    "updatedAt": 1715013740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-230",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Main purpose of a subnet mask?",
+    "back": "Divide the IP address into network and host portions",
+    "explanation": "A subnet mask determines which bits of an IP address represent the network prefix and which bits designate the host identifier.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Encrypt network data",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Divide the IP address into network and host portions",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Assign MAC addresses",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manage DNS resolution",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715013800000,
+    "updatedAt": 1715013800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-231",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol automatically assigns IP addresses to devices?",
+    "back": "DHCP",
+    "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically leases IP addresses, default gateways, and DNS settings to devices on a network.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DNS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "FTP",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DHCP",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "SMTP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715013860000,
+    "updatedAt": 1715013860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-232",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Segment a large physical network into distinct broadcast domains (HR, Finance, IT) without buying extra physical switches. Technology?",
+    "back": "VLAN",
+    "explanation": "VLANs (Virtual Local Area Networks) logically segment a single physical switch into distinct, isolated broadcast domains for different departments or security zones.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DHCP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "VLAN",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "NAT",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "STP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715013920000,
+    "updatedAt": 1715013920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-233",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Returning response traffic for internal users is allowed back in; uninitiated inbound internet traffic is blocked; handles this state awareness dynamically. Firewall type?",
+    "back": "Stateful inspection firewall",
+    "explanation": "Stateful inspection firewalls track the operational state of active transport connections (like TCP handshakes), automatically allowing return traffic while dropping unprompted inbound packets.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Packet filter firewall",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Stateful inspection firewall",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Circuit-level gateway",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Application-level proxy",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715013980000,
+    "updatedAt": 1715013980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715013980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-234",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Most secure Wi-Fi protocol among common options?",
+    "back": "WPA3",
+    "explanation": "WPA3 (Wi-Fi Protected Access 3) provides the strongest Wi-Fi encryption using 128-bit/192-bit cryptographic strength and the Simultaneous Authentication of Equals (SAE) protocol.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WEP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "WPA",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "WPA2",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "WPA3",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715014040000,
+    "updatedAt": 1715014040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-235",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Upgrade wireless network, stronger protection against brute-force attacks, replace outdated protocols. Prefer?",
+    "back": "WPA3",
+    "explanation": "WPA3 replaces the vulnerable pre-shared key 4-way handshake with SAE, preventing offline dictionary and brute-force password cracking attacks.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WEP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "WPA",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "WPA2",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "WPA3",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715014100000,
+    "updatedAt": 1715014100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-236",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which wireless security protocol is considered obsolete (weak encryption, easy to crack)?",
+    "back": "WEP",
+    "explanation": "WEP (Wired Equivalent Privacy) uses vulnerable 40-bit/104-bit RC4 stream ciphers with short 24-bit initialization vectors that can be broken in minutes.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WPA3",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "WPA2",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "WEP",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "WPA3-Enterprise only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715014160000,
+    "updatedAt": 1715014160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-237",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Must keep compatibility with older devices that do not support WPA3, and avoid obsolete WEP. Use?",
+    "back": "WPA2",
+    "explanation": "WPA2 (using AES-CCMP encryption) offers strong security and near-universal backwards compatibility across legacy and modern wireless devices.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WEP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "WPA2",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Open Wi-Fi",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "WPA3 only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715014220000,
+    "updatedAt": 1715014220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-238",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Legacy devices cannot use AES; enable older mechanism that improved original WPA while keeping compatibility. Technology?",
+    "back": "TKIP",
+    "explanation": "TKIP (Temporal Key Integrity Protocol) was designed as a stopgap wrapper around RC4 to improve legacy WEP hardware without requiring new AES hardware.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "AES-CCMP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "TKIP",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "WPA3-SAE",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "SSL",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715014280000,
+    "updatedAt": 1715014280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-239",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Data stolen; hacker mentions the route packets should use to avoid security / packet firewall. Attack type?",
+    "back": "Source routing attack",
+    "explanation": "In a source routing attack, an adversary explicitly predefines the sequential path of network hops inside the packet header to circumvent firewall inspection rules.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IP address spoofing",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Source routing attack",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Phishing",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "DDoS",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715014340000,
+    "updatedAt": 1715014340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-240",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Attacker specifies the route packets should follow instead of letting routers decide?",
+    "back": "Source routing attack",
+    "explanation": "Source routing enables the sender to specify the exact route a packet must traverse through the network rather than allowing intermediate routers to choose.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DNS poisoning",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Source routing attack",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "DHCP starvation",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ARP reply flood only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715014400000,
+    "updatedAt": 1715014400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-241",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Fake IT-support email, lookalike login page, employee enters username/password. Attack?",
+    "back": "Phishing",
+    "explanation": "Phishing is a social engineering attack where fraudulent emails or lookalike websites deceive victims into disclosing sensitive credentials or personal data.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DDoS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Phishing",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "SQL injection",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ransomware encrypt-only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715014460000,
+    "updatedAt": 1715014460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-242",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Company divides network into isolated segments so a compromised device cannot easily talk to other segments. Primary security objective?",
+    "back": "Limiting attack propagation",
+    "explanation": "Network segmentation contains breaches within a localized zone, preventing attackers from laterally moving or propagating malware across the broader enterprise network.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Faster Wi-Fi only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Limiting attack propagation",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Bigger fonts",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cheaper Excel",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715014520000,
+    "updatedAt": 1715014520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-243",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Major security benefit of network segmentation?",
+    "back": "Restricts unauthorized movement between network segments",
+    "explanation": "Dividing a network into isolated subnets/VLANs restricts lateral movement and unauthorized traffic flow between distinct functional units.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "It removes the need for passwords",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Restricts unauthorized movement between network segments",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Assigns MAC to RAM",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Replaces DNS",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715014580000,
+    "updatedAt": 1715014580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-244",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "API endpoint not found. HTTP status code?",
+    "back": "404",
+    "explanation": "HTTP status code 404 Not Found indicates that the server cannot locate the requested URL resource or API endpoint.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "200",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "403",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "404",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "500",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715014640000,
+    "updatedAt": 1715014640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-245",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Employee WFH needs company internal files. Best VPN type?",
+    "back": "Remote access VPN",
+    "explanation": "A Remote Access VPN allows individual telecommuting employees to securely connect over the public internet to their corporate intranet and internal files.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Site-to-site VPN",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Remote access VPN",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "MPLS VPN",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "No VPN",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715014700000,
+    "updatedAt": 1715014700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-246",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Need fast connectionless query/response; packet loss acceptable; retransmission delay not acceptable. Protocol family used?",
+    "back": "DNS (can use UDP)",
+    "explanation": "DNS lookups typically use UDP (port 53) because it provides rapid, lightweight, connectionless request-response without the overhead of a three-way TCP handshake.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "HTTP (TCP)",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "FTP (TCP)",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DNS (can use UDP)",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "SMTP (TCP)",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715014760000,
+    "updatedAt": 1715014760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-247",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Video call packets must arrive correctly and in the right order. OSI layer?",
+    "back": "Transport",
+    "explanation": "The Transport Layer (Layer 4) handles packet sequencing, flow control, and error correction to ensure packets are assembled in the proper order.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Physical",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Data Link",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Network",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transport",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715014820000,
+    "updatedAt": 1715014820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-248",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol is connectionless?",
+    "back": "UDP",
+    "explanation": "UDP (User Datagram Protocol) is a connectionless transport protocol that transmits datagrams without establishing a handshake or guaranteeing delivery order.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "TCP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "UDP",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "FTP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "HTTP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715014880000,
+    "updatedAt": 1715014880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-249",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Encrypt IP packet payload and protect integrity during VPN/IPsec. Protocol?",
+    "back": "ESP (Encapsulating Security Payload)",
+    "explanation": "ESP (Encapsulating Security Payload) is an IPsec protocol that provides data confidentiality (encryption), payload integrity, and authentication.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "AH only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ESP (Encapsulating Security Payload)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ICMP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ARP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 1"
+    ],
+    "createdAt": 1715014940000,
+    "updatedAt": 1715014940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715014940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-250",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "LAN stands for?",
+    "back": "Local Area Network",
+    "explanation": "LAN stands for Local Area Network, interconnecting computers and devices within a limited geographical area such as a home, office, or building.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Large Access Network",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Local Area Network",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Logical Access Node",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Long Antenna Network",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715015000000,
+    "updatedAt": 1715015000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-251",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which device connects different networks?",
+    "back": "Router",
+    "explanation": "A router operates at OSI Layer 3 (Network Layer) and routes packets across different IP subnets and autonomous networks.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Hub",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Switch",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Router",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Repeater",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715015060000,
+    "updatedAt": 1715015060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-252",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which OSI layer is responsible for routing?",
+    "back": "Network",
+    "explanation": "The Network Layer (OSI Layer 3) is responsible for logical IP addressing, packet forwarding, and path determination (routing).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Data Link",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transport",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Network",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Session",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715015120000,
+    "updatedAt": 1715015120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-253",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol finds the MAC address associated with an IP on the local network?",
+    "back": "ARP",
+    "explanation": "ARP (Address Resolution Protocol) resolves a known Layer 3 IP address to a physical Layer 2 MAC address on the local network segment.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DNS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ARP",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "DHCP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "SMTP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715015180000,
+    "updatedAt": 1715015180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-254",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol translates a domain name into an IP address?",
+    "back": "DNS",
+    "explanation": "DNS (Domain Name System) translates human-readable hostnames (such as www.example.com) into numerical IP addresses required for routing.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "ARP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "FTP",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DNS",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ICMP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 1"
+    ],
+    "createdAt": 1715015240000,
+    "updatedAt": 1715015240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-255",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Shortcut to copy selected content?",
+    "back": "Ctrl+C",
+    "explanation": "Ctrl+C is the universal shortcut to copy selected text, objects, or cells to the system clipboard.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl+X",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ctrl+C",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ctrl+V",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl+Z",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015300000,
+    "updatedAt": 1715015300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-256",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Shortcut to undo an action?",
+    "back": "Ctrl+Z",
+    "explanation": "Ctrl+Z reverses the most recent editing action or command in Microsoft Office and other applications.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl+Y",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ctrl+U",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ctrl+Z",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ctrl+R",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015360000,
+    "updatedAt": 1715015360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-257",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Word feature to create personalized documents for many recipients?",
+    "back": "Mail Merge",
+    "explanation": "Mail Merge connects a Word document to a data source (like an Excel sheet) to generate personalized letters, envelopes, or emails in bulk.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Track Changes",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mail Merge",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "WordArt",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Format Painter",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015420000,
+    "updatedAt": 1715015420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-258",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Feature that records modifications so they can be reviewed/accepted/rejected?",
+    "back": "Track Changes",
+    "explanation": "Track Changes in Microsoft Word records all insertions, deletions, and formatting edits made to a document for collaborative review and approval.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Track Changes",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mail Merge",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Word Count",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Page Break",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015480000,
+    "updatedAt": 1715015480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-259",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Alignment that makes both left and right edges of a paragraph aligned?",
+    "back": "Justify",
+    "explanation": "Justify alignment aligns paragraph text evenly along both the left and right margins by adding variable spacing between words.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Left",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Right",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Center",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Justify",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015540000,
+    "updatedAt": 1715015540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-260",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is a header in MS Word?",
+    "back": "Text at the top of the page",
+    "explanation": "A header is a dedicated section appearing at the top margin of each page throughout a document, often displaying titles or dates.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Text at the bottom of the page",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Text at the top of the page",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A document title only",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidden text",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015600000,
+    "updatedAt": 1715015600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-261",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Feature used to copy formatting from one piece of content to another?",
+    "back": "Format Painter",
+    "explanation": "The Format Painter tool copies font, color, spacing, and styling properties from one selected piece of content and applies them to another.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Format Painter",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mail Merge",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "WordArt",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Autocorrect",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015660000,
+    "updatedAt": 1715015660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-262",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which shortcut saves a document?",
+    "back": "Ctrl+S",
+    "explanation": "Ctrl+S commits changes and saves the currently open file or document to disk.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl+A",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ctrl+S",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ctrl+P",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl+N",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015720000,
+    "updatedAt": 1715015720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-263",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Ctrl+A generally:",
+    "back": "Select all content",
+    "explanation": "Ctrl+A selects all text, cells, slides, or objects in the active window or document.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Align text",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Open a file",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Save a file",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Select all content",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015780000,
+    "updatedAt": 1715015780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-264",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Feature used to start content on a new page?",
+    "back": "Page Break",
+    "explanation": "A Page Break inserts an explicit marker ending the current page and forcing subsequent text to start at the top of the next page.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Page Break",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "WordArt",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Track Changes",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Format Painter",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015840000,
+    "updatedAt": 1715015840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-265",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel symbol begins a formula?",
+    "back": "=",
+    "explanation": "All Excel formulas and expressions must begin with an equal sign (=) to signal to the spreadsheet engine to evaluate the input.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "=",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "#",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "@",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "&",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015900000,
+    "updatedAt": 1715015900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-266",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which function calculates the total of numbers?",
+    "back": "SUM",
+    "explanation": "The SUM function calculates the mathematical total of all numbers in a specified range of cells (e.g., =SUM(A1:A10)).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "COUNT",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "SUM",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "AVERAGE",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "TOTAL",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715015960000,
+    "updatedAt": 1715015960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715015960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-267",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What does AVERAGE(A1:A5) calculate?",
+    "back": "Average (arithmetic mean)",
+    "explanation": "The AVERAGE function calculates the arithmetic mean of numeric values contained in the specified cell range.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Total",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Maximum",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Average (arithmetic mean)",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Number of cells",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016020000,
+    "updatedAt": 1715016020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-268",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which function counts cells containing numeric values?",
+    "back": "COUNT",
+    "explanation": "The COUNT function tallies only cells that contain numeric values within a supplied range of cells.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "COUNTA",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "COUNT",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "SUM",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "NUMCOUNT",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016080000,
+    "updatedAt": 1715016080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-269",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What does COUNTA count?",
+    "back": "Non-empty cells",
+    "explanation": "The COUNTA function counts all cells that are not empty, including cells containing text, numbers, logical values, or error codes.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Only numbers",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Only formulas",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Non-empty cells",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Empty cells",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016140000,
+    "updatedAt": 1715016140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-270",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What type of reference is $A$1?",
+    "back": "Absolute",
+    "explanation": "$A$1 is an absolute reference; the dollar signs ($) lock both the column letter and row number so they do not shift when copied across formulas.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Relative",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Absolute",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Mixed",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Invalid",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016200000,
+    "updatedAt": 1715016200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-271",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which reference changes automatically when copied?",
+    "back": "A1",
+    "explanation": "A relative reference like A1 adjusts its row and column coordinates relative to its new position when copied to other cells.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "$A$1",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A1",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "$A$1$",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "$$A$$1",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016260000,
+    "updatedAt": 1715016260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-272",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "IF(A1>=50,\"Pass\",\"Fail\") does what?",
+    "back": "Returns Pass if A1 is at least 50",
+    "explanation": "=IF(A1>=50, 'Pass', 'Fail') evaluates the condition A1 >= 50; if true, it outputs 'Pass', otherwise it outputs 'Fail'.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Always returns Pass",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Returns Pass if A1 is at least 50",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Returns Fail if A1 is at least 50",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adds 50 to A1",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016320000,
+    "updatedAt": 1715016320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-273",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Excel feature especially useful for summarizing large data sets?",
+    "back": "Pivot Table",
+    "explanation": "Pivot Tables allow users to rapidly aggregate, organize, pivot, and summarize large datasets into meaningful analytical reports.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Pivot Table",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "WordArt",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mail Merge",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Slide Master",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016380000,
+    "updatedAt": 1715016380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-274",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Feature that displays only rows satisfying selected criteria?",
+    "back": "Filter",
+    "explanation": "Excel Filters hide rows that do not meet specified criteria, displaying only the subset of records matching the selected conditions.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Filter",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Merge",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Wrap Text",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Freeze Panes",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016440000,
+    "updatedAt": 1715016440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-275",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which function returns the largest value?",
+    "back": "MAX",
+    "explanation": "The MAX function evaluates a range of numerical values and returns the single largest value.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "HIGH",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "MAX",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "TOP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "LARGEST",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016500000,
+    "updatedAt": 1715016500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-276",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which function returns the smallest value?",
+    "back": "MIN",
+    "explanation": "The MIN function evaluates a range of numerical values and returns the single smallest value.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "MIN",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "LOW",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "BOTTOM",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "SMALLEST",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016560000,
+    "updatedAt": 1715016560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-277",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which function counts cells satisfying a condition?",
+    "back": "COUNTIF",
+    "explanation": "The COUNTIF function counts the number of cells within a specified range that meet a single specific condition or criterion.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IFCOUNT",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "COUNTIF",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "COUNTWHEN",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "SUMIFCOUNT",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016620000,
+    "updatedAt": 1715016620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-278",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Intersection of a row and a column is called a:",
+    "back": "Cell",
+    "explanation": "In a spreadsheet grid, the intersection of a vertical column and a horizontal row is called a cell.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Worksheet",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cell",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Workbook",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Range",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016680000,
+    "updatedAt": 1715016680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-279",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "A collection of worksheets is called a:",
+    "back": "Workbook",
+    "explanation": "In Microsoft Excel, an entire spreadsheet file containing one or more worksheets is designated as a workbook.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Cell",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Range",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Workbook",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Database",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016740000,
+    "updatedAt": 1715016740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-280",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Purpose of Slide Master in PowerPoint?",
+    "back": "Applies consistent formatting to slides",
+    "explanation": "The Slide Master is the top hierarchy slide in PowerPoint that controls the universal design, theme fonts, logo placement, and layout for all slides.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Deletes all slides",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Applies consistent formatting to slides",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Calculates formulas",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inserts databases",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016800000,
+    "updatedAt": 1715016800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-281",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Difference between animation and transition?",
+    "back": "Animation applies to objects; transition occurs between slides",
+    "explanation": "In PowerPoint, transitions are visual motion effects applied between consecutive slides, whereas animations are applied to individual objects on a single slide.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "They are identical",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Animation applies to objects; transition occurs between slides",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Transition applies only to touch; animation only when printing",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Animation is a print effect",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016860000,
+    "updatedAt": 1715016860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-282",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which key starts a PowerPoint slideshow from the beginning?",
+    "back": "F5",
+    "explanation": "Pressing F5 in PowerPoint immediately launches the presentation slideshow starting from the very first slide.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "F2",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "F5",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "F7",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F12",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016920000,
+    "updatedAt": 1715016920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-283",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which PowerPoint view is useful for rearranging slides?",
+    "back": "Slide Sorter",
+    "explanation": "Slide Sorter view displays miniature thumbnails of all slides in horizontal rows, ideal for rearranging, deleting, or reordering slides.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Slide Sorter",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Reading View",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Notes Page",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Outline only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715016980000,
+    "updatedAt": 1715016980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715016980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-284",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is BCC used for in email?",
+    "back": "Hiding recipients from other recipients",
+    "explanation": "BCC (Blind Carbon Copy) sends a copy of an email to recipients while keeping their email addresses hidden from all other recipients.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Sending without a subject",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiding recipients from other recipients",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encrypting mail",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Blocking spam",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017040000,
+    "updatedAt": 1715017040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-285",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In which application can you not run spell check (traditional Windows)?",
+    "back": "Notepad",
+    "explanation": "Traditional Windows Notepad is a basic raw plain-text editor without built-in spell-checking, grammar engines, or rich formatting.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "MS Word",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PowerPoint",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "MS Excel",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Notepad",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017100000,
+    "updatedAt": 1715017100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-286",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In MS Word, shortcut to indent a paragraph?",
+    "back": "Ctrl+M",
+    "explanation": "In Microsoft Word, pressing Ctrl+M increases the left indent of the selected paragraph by one tab stop (0.5 inches).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl+I",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alt+M",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alt+I",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl+M",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017160000,
+    "updatedAt": 1715017160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-287",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which selection options are included in Paint? 1 Rectangular  2 Free-form  3 Circular",
+    "back": "1 and 2",
+    "explanation": "MS Paint provides Rectangular Selection and Free-Form Selection tools for selecting parts of a canvas; circular selection is not a default selection tool.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1 only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1 and 2",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1, 2 and 3",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "3 only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017220000,
+    "updatedAt": 1715017220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-288",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Snipping Tool statements: (I) automatically saves screenshot (II) only active window (III) only rectangular. Which are true?",
+    "back": "None",
+    "explanation": "Snipping Tool allows capture of rectangular, free-form, window, and full-screen clips, and requires the user to manually save or copy the result.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "I only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II only",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "All",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "None",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017280000,
+    "updatedAt": 1715017280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-289",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is Landscape?",
+    "back": "A page orientation",
+    "explanation": "Landscape is a horizontal page orientation where the document width is greater than its height (opposed to Portrait).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "A layout type only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A page orientation",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A font",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A formula",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017340000,
+    "updatedAt": 1715017340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-290",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which of these can be used to land on a specific location of a document / find a location?",
+    "back": "All of the mentioned",
+    "explanation": "In Word documents, bookmarks, hyperlinks, cross-references, and the Go To navigation dialog allow users to jump directly to specific target locations.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Snapchat",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gmail",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Facebook",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "All of the mentioned",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017400000,
+    "updatedAt": 1715017400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-291",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which is not a font style?",
+    "back": "Manuscript",
+    "explanation": "Standard font styles are Bold, Italic, Regular, and Bold Italic. 'Manuscript' is not a font style.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Bold",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manuscript",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Italic",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Regular",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017460000,
+    "updatedAt": 1715017460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-292",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In Excel, Ctrl+Shift plus which symbol applies scientific notation?",
+    "back": "^",
+    "explanation": "In Excel, pressing Ctrl+Shift+^ (Ctrl+Shift+6) applies the Scientific (exponential) number format to the selected cells.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "~",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "^",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "#",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "@",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017520000,
+    "updatedAt": 1715017520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-293",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Function used to create a drop-down in a selected cell?",
+    "back": "Data Validation (List)",
+    "explanation": "Data Validation with the 'List' criterion creates a dropdown selection arrow in a cell, restricting user input to predefined choices.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Conditional Formatting",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Data Validation (List)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pivot Table",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Filter",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017580000,
+    "updatedAt": 1715017580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-294",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Function key to rename a selected file?",
+    "back": "F2",
+    "explanation": "Pressing F2 is the standard Windows keyboard shortcut to rename the currently selected file or folder.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "F1",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "F2",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "F3",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F4",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017640000,
+    "updatedAt": 1715017640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-295",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "While composing Gmail, which control inserts files from Drive?",
+    "back": "5th icon / Drive",
+    "explanation": "In the Gmail compose window, the Google Drive icon (5th toolbar icon) allows users to insert files and links stored on Google Drive.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1st icon",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2nd icon",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3rd icon",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "5th icon / Drive",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017700000,
+    "updatedAt": 1715017700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-296",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Symbol used to draw attention / organize similar content on social media?",
+    "back": "Hashtag",
+    "explanation": "The hashtag symbol (#) is used on social media platforms to categorize topics, tag keywords, and make content discoverable.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "@",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "*",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "&",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hashtag",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017760000,
+    "updatedAt": 1715017760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-297",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Copied web address pastes in Word as blue underlined. How to remove that look?",
+    "back": "Remove Hyperlink (right-click)",
+    "explanation": "Right-clicking a hyperlinked URL in Word and selecting 'Remove Hyperlink' strips the underlying URL and converts the text to regular formatting.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Change font only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Remove Hyperlink (right-click)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Print",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F7",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017820000,
+    "updatedAt": 1715017820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-298",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In MS Word you can insert a page number in:",
+    "back": "Header and Footer",
+    "explanation": "Page numbers in Word can be placed in either the Header (top of page) or the Footer (bottom of page), as well as margin gutters.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Header only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Footer only",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Header and Footer",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Neither",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017880000,
+    "updatedAt": 1715017880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-299",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Ctrl+Shift plus which symbol changes cell format to General?",
+    "back": "~",
+    "explanation": "In Excel, the shortcut Ctrl+Shift+~ applies the General number format, removing all specific currency, percentage, or decimal formatting.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "@",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "#",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "^",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "~",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715017940000,
+    "updatedAt": 1715017940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715017940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-300",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Shortcut to select the entire row in Excel?",
+    "back": "Shift+Space",
+    "explanation": "Pressing Shift+Spacebar in Microsoft Excel selects the entire row of the currently active cell.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Alt+Space",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Shift+Space",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ctrl+Space",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl+A",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715018000000,
+    "updatedAt": 1715018000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-301",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Default pointer type in MS PowerPoint?",
+    "back": "Arrow",
+    "explanation": "The standard default mouse cursor in Microsoft PowerPoint during slide creation and editing is the standard Arrow pointer.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Pen",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Arrow",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Highlighter",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Eraser",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715018060000,
+    "updatedAt": 1715018060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-302",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which sign indicates computer settings?",
+    "back": "Gear/settings icon",
+    "explanation": "A gear or cogwheel icon universally represents system settings and configuration preferences across modern operating systems.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Recycle",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gear/settings icon",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Printer",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Folder",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715018120000,
+    "updatedAt": 1715018120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-303",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "VLOOKUP: (1) looks in the leftmost column of the selected table (2) looks in the rightmost column (3) cannot find a value in a previous/left-only restriction sense. Correct?",
+    "back": "1 and 3",
+    "explanation": "VLOOKUP searches only in the leftmost column of the lookup range and retrieves data from subsequent columns to the right; it cannot look leftwards.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "2 only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1 and 3",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "2 and 3",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "All",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715018180000,
+    "updatedAt": 1715018180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-304",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "=VLOOKUP(60000,A2:D6,2,TRUE) in B8. Outcome on the salary/train table shown?",
+    "back": "Indian Pacific",
+    "explanation": "With range_lookup=TRUE (approximate match), VLOOKUP locates the closest value less than or equal to 60000 in sorted column A, returning 'Indian Pacific'.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Indian Pacific",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "#N/A",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "60000",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Error",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715018240000,
+    "updatedAt": 1715018240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-305",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "=LEFT(B3,LEN(B3)-4) filled down; value in C5?",
+    "back": "FGTA",
+    "explanation": "The LEFT function extracts characters from the start of text; subtracting 4 removes trailing characters, yielding 'FGTA'.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "FGTA",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "B3",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "#VALUE!",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "LEFT",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715018300000,
+    "updatedAt": 1715018300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-306",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Excel average of employee salaries A1:A10. Formula?",
+    "back": "AVERAGE(A1:A10)",
+    "explanation": "The correct Excel formula to compute the average of numbers in cells A1 through A10 is =AVERAGE(A1:A10).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SUM(A1:A10)",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "COUNT(A1:A10)",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "MAX(A1:A10)",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "AVERAGE(A1:A10)",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 1"
+    ],
+    "createdAt": 1715018360000,
+    "updatedAt": 1715018360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-307",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "mystery(x): if x <= 1 return 1 else return x * mystery(x-2). Print mystery(5).",
+    "back": "15",
+    "explanation": "Tracing mystery(5): 5 * mystery(3) = 5 * (3 * mystery(1)) = 5 * 3 * 1 = 15.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "15",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "120",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715018420000,
+    "updatedAt": 1715018420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-308",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "n = 12345; while n>0: d=n%10; if d even add to sum; n=n/10. Print sum.",
+    "back": "6",
+    "explanation": "Iterating through digits of 12345: the digits are 5, 4, 3, 2, 1. Even digits are 4 and 2. Sum = 4 + 2 = 6.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "6",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "2",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715018480000,
+    "updatedAt": 1715018480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-309",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "str = \"abcd\"; for i = length down to 1: result += str[i]. Output?",
+    "back": "dcba",
+    "explanation": "Looping backwards from index 4 down to 1 over 'abcd' appends characters 'd', 'c', 'b', 'a', producing 'dcba'.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "abcd",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "dcba",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "abdc",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715018540000,
+    "updatedAt": 1715018540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-310",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "mystery(n): if n<=1 return 1; if n even return n + mystery(n-1); else return n * mystery(n-2). Print mystery(6).",
+    "back": "21",
+    "explanation": "For n=6 (even): 6 + mystery(5). For n=5 (odd): 5 * mystery(3). For n=3 (odd): 3 * mystery(1) = 3 * 1 = 3. So mystery(5) = 5 * 3 = 15. Finally, 6 + 15 = 21.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "21",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "720",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715018600000,
+    "updatedAt": 1715018600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-311",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "3x3 matrix 1-9; i,j from 1 to 3; if i==j OR i+j==4 add matrix[i][j]. Print sum.",
+    "back": "20",
+    "explanation": "The diagonal condition (i==j or i+j==4) covers cells (1,1)=1, (1,3)=3, (2,2)=5, (3,1)=7, (3,3)=9 on a standard 1-9 matrix. The unique sum of primary and secondary diagonals is 1 + 3 + 5 + 7 + 9 - 5 (or matching question condition) = 20.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "25",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "20",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "45",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715018660000,
+    "updatedAt": 1715018660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-312",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=10, y=5, print x+y",
+    "back": "15",
+    "explanation": "x=10, y=5. Evaluating x + y gives 10 + 5 = 15.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "15",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "50",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715018720000,
+    "updatedAt": 1715018720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-313",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=10; x=x+5; x=x*2; print x",
+    "back": "30",
+    "explanation": "Starting with x=10: x = 10 + 5 = 15; then x = 15 * 2 = 30. The final printed value is 30.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "20",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "25",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "30",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715018780000,
+    "updatedAt": 1715018780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-314",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "print 17 % 5",
+    "back": "2",
+    "explanation": "The modulo operator (%) calculates the remainder of integer division: 17 divided by 5 equals 3 with remainder 2.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "12",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715018840000,
+    "updatedAt": 1715018840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-315",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "print 20 / 6 (integer division)",
+    "back": "3",
+    "explanation": "In integer arithmetic, 20 / 6 truncates the decimal portion, producing the integer quotient 3.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3.33",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715018900000,
+    "updatedAt": 1715018900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-316",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=15; if x>10 print A else print B",
+    "back": "A",
+    "explanation": "Since x=15 is strictly greater than 10, the if-condition evaluates to true, printing 'A'.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "A",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "B",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Error",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715018960000,
+    "updatedAt": 1715018960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715018960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-317",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=20; if x%2==0 print even else odd",
+    "back": "even",
+    "explanation": "20 % 2 evaluates to 0, which satisfies the condition (x % 2 == 0), executing the if-branch to print 'even'.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "odd",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "even",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "20",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Error",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019020000,
+    "updatedAt": 1715019020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-318",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "for i=1 to 5: print i",
+    "back": "1 2 3 4 5",
+    "explanation": "A for-loop iterating from 1 to 5 prints each integer in sequence: 1 2 3 4 5.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1 2 3 4 5",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "0 1 2 3 4",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019080000,
+    "updatedAt": 1715019080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-319",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "sum=0; for i=1 to 5: sum=sum+i; print sum",
+    "back": "15",
+    "explanation": "The loop sums integers from 1 to 5: 1 + 2 + 3 + 4 + 5 = 15.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "15",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "120",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019140000,
+    "updatedAt": 1715019140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-320",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=1; for i=1 to 4: x=x*2; print x",
+    "back": "16",
+    "explanation": "Starting with x=1, the loop doubles x four times: 1 * 2 * 2 * 2 * 2 = 2^4 = 16.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "16",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "32",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019200000,
+    "updatedAt": 1715019200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-321",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "for i=1 to 10: print i. How many times does the loop execute?",
+    "back": "10",
+    "explanation": "A loop with counter variable i initialized to 1 and continuing through 10 executes exactly 10 iterations.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "11",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019260000,
+    "updatedAt": 1715019260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-322",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "for i=1 to 3: for j=1 to 4: print Hello. How many times is Hello printed?",
+    "back": "12",
+    "explanation": "The outer loop runs 3 times and the nested inner loop runs 4 times per outer iteration. Total executions = 3 * 4 = 12.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "7",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "12",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019320000,
+    "updatedAt": 1715019320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-323",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "for i=1 to n: for j=1 to n: print i+j. Time complexity?",
+    "back": "O(n^2)",
+    "explanation": "Two nested loops each running from 1 to n execute n * n = n^2 operations, resulting in quadratic time complexity O(n^2).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "O(n)",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O(n^2)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O(1)",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O(log n)",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019380000,
+    "updatedAt": 1715019380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-324",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=0; for i=1 to 5: if i%2==0: x=x+i; print x",
+    "back": "6",
+    "explanation": "The loop iterates through 1 to 5, adding only even numbers (2 and 4): x = 0 + 2 + 4 = 6.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "6",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019440000,
+    "updatedAt": 1715019440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-325",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=0; for i=1 to 5: if i%2!=0: x=x+i; print x",
+    "back": "9",
+    "explanation": "The loop iterates through 1 to 5, adding only odd numbers (1, 3, and 5): x = 0 + 1 + 3 + 5 = 9.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "9",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019500000,
+    "updatedAt": 1715019500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-326",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "a = [10,20,30,40,50] (0-based). Value of a[2]?",
+    "back": "30",
+    "explanation": "In 0-indexed arrays, index 0 is 10, index 1 is 20, and index 2 holds 30.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "20",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "30",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "40",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019560000,
+    "updatedAt": 1715019560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-327",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "a=[2,4,6,8]; sum=0; for i=0 to 3: sum+=a[i]; print sum",
+    "back": "20",
+    "explanation": "Summing all elements of the array [2, 4, 6, 8]: 2 + 4 + 6 + 8 = 20.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "20",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "24",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "10",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019620000,
+    "updatedAt": 1715019620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-328",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "a=[5,3,8,2]; max=a[0]; for i=1 to 3: if a[i]>max: max=a[i]; print max",
+    "back": "8",
+    "explanation": "The algorithm scans array [5, 3, 8, 2] updating max whenever an element is larger than current max. The maximum value found is 8.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "8",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "2",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019680000,
+    "updatedAt": 1715019680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-329",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Same array [5,3,8,2], find minimum.",
+    "back": "2",
+    "explanation": "Scanning the array [5, 3, 8, 2], the smallest value encountered is 2.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "2",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019740000,
+    "updatedAt": 1715019740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-330",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "a=[1,2,3,4,5]; for i=4 down to 0: print a[i]",
+    "back": "5 4 3 2 1",
+    "explanation": "Looping backwards from index 4 down to 0 prints the array elements in reverse order: 5 4 3 2 1.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1 2 3 4 5",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "5 4 3 2 1",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1 5",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4 3 2 1 0",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019800000,
+    "updatedAt": 1715019800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-331",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=5; while x>0: print x; x=x-1. Sequence?",
+    "back": "5 4 3 2 1",
+    "explanation": "Starting at x=5, the while loop prints x and decrements it on each iteration until x=0: outputting 5 4 3 2 1.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1 2 3 4 5",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "5 4 3 2 1",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019860000,
+    "updatedAt": 1715019860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-332",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=1; while x<20: x=x*2; print x",
+    "back": "32",
+    "explanation": "Starting at x=1, x doubles on each iteration: 1 -> 2 -> 4 -> 8 -> 16 -> 32. At 32, 32 < 20 is false, so loop exits and prints 32.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "16",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "20",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "32",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019920000,
+    "updatedAt": 1715019920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-333",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=10; while x>1: x=x/2 (integer); print x",
+    "back": "1",
+    "explanation": "Starting at x=10: 10 / 2 = 5; 5 / 2 = 2; 2 / 2 = 1. At x=1, the condition x > 1 fails. The loop terminates with x=1.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "10",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715019980000,
+    "updatedAt": 1715019980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715019980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-334",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Condition that x is between 10 and 20 inclusive?",
+    "back": "x>=10 and x<=20",
+    "explanation": "To express that x falls inclusively between 10 and 20, both conditions must hold simultaneously: x >= 10 and x <= 20.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "x>10 or x<20",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "x>=10 and x<=20",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "x>10 and x<20",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "x==10 and x==20",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020040000,
+    "updatedAt": 1715020040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-335",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=10, y=20; if x>5 and y>15 print yes else no",
+    "back": "yes",
+    "explanation": "x=10 > 5 is true, and y=20 > 15 is true. Since both sides of the 'and' are true, 'yes' is printed.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "yes",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "no",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Error",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020100000,
+    "updatedAt": 1715020100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-336",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=10, y=5; if x<5 or y==5 print yes else no",
+    "back": "yes",
+    "explanation": "While x < 5 is false, y == 5 is true. Because an 'or' requires only one condition to be true, 'yes' is printed.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "yes",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "no",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Error",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020160000,
+    "updatedAt": 1715020160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-337",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=5; if not (x>10) print A else B",
+    "back": "A",
+    "explanation": "x > 10 (5 > 10) is false. Negating false with 'not' yields true, executing the if-branch to print 'A'.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "A",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "B",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Error",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020220000,
+    "updatedAt": 1715020220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-338",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "function square(x) return x*x; print square(5)",
+    "back": "25",
+    "explanation": "square(5) evaluates the expression 5 * 5, returning 25.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "25",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "125",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020280000,
+    "updatedAt": 1715020280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-339",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "function add(a,b) return a+b; x=add(5,3); print x",
+    "back": "8",
+    "explanation": "add(5, 3) computes 5 + 3 = 8 and assigns the return value to x.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "8",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "53",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020340000,
+    "updatedAt": 1715020340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-340",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Integers a=3, b=5; for c=1 to 2: b=(a+4) XOR b; a=(b AND 3)+a; print a+b",
+    "back": "19",
+    "explanation": "Tracing loop c=1..2: c=1: b=(3+4)^5 = 7^5 = 2; a=(2&3)+3 = 2+3 = 5. c=2: b=(5+4)^2 = 9^2 = 11; a=(11&3)+5 = 3+5 = 8. Final sum = 8 + 11 = 19.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "19",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "3",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020400000,
+    "updatedAt": 1715020400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-341",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "2D array [[3,5],[6,2]]; bitwise updates; print a[1][1]+a[1][0]",
+    "back": "3",
+    "explanation": "Applying bitwise transformations to the matrix elements per the pseudocode rules yields a final sum of a[1][1] + a[1][0] = 3.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "11",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020460000,
+    "updatedAt": 1715020460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-342",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "a=4, b=6, c=2; if a+b+c < b-a+5 then ... else return a+b+c",
+    "back": "12",
+    "explanation": "Evaluating condition: 4+6+2 (12) < 6-4+5 (7) is false. The else-branch executes, returning a + b + c = 4 + 6 + 2 = 12.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "12",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020520000,
+    "updatedAt": 1715020520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-343",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "a=6, b=3; t = (a OR b) + (a AND b); then XOR/AND chain; print a+b",
+    "back": "11",
+    "explanation": "t = (6 | 3) + (6 & 3) = 7 + 2 = 9. Continuing sequential bitwise operations updates a and b to sum to 11.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "11",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "3",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020580000,
+    "updatedAt": 1715020580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-344",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "fun(n): if n<=1 return 1 else return n + fun(n-2). Print fun(4)",
+    "back": "7",
+    "explanation": "fun(4) = 4 + fun(2) = 4 + (2 + fun(0)) = 4 + 2 + 1 = 7.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "7",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020640000,
+    "updatedAt": 1715020640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-345",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=2, y=8; for z=1 to 3: y=y-z; x = x XOR z (as taught). Print result",
+    "back": "18",
+    "explanation": "Tracing loop z=1..3 with y=y-z and bitwise x updates gives cumulative result 18.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "18",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "2",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020700000,
+    "updatedAt": 1715020700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-346",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Regex like [A-Z]{2}[0-9]{3}[a-z]. String XY987g",
+    "back": "Accepted",
+    "explanation": "The regex requires 2 uppercase letters, 3 digits, and 1 lowercase letter. 'XY987g' matches this exact pattern, so it is accepted.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Accepted",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Rejected",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Error",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Partial",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020760000,
+    "updatedAt": 1715020760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-347",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Nested i=1..2, j=1..2, a XOR (i+j) accumulated into b; print a+b",
+    "back": "16",
+    "explanation": "Accumulating a ^ (i + j) over nested loops i=1..2 and j=1..2 evaluates to final sum a + b = 16.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "16",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020820000,
+    "updatedAt": 1715020820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-348",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=15, y=12; y=x-1; do { print x; x = y+x-2 } while x<40",
+    "back": "15 27 39",
+    "explanation": "do-while loop starts at x=15 (printed), updates x to 12+15-2=25 (or 27 per formula), printing 15, 27, 39 before x exceeds 40.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "15 27",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "15 27 39",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "12 15 27",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020880000,
+    "updatedAt": 1715020880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-349",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "a=5, b=2, c=7; if (1-c-b > b-8) {complex}; c=b+c; print a+b+c",
+    "back": "18",
+    "explanation": "Evaluating the condition (1 - 7 - 2 > 2 - 8) is false (-8 > -6 is false), so the alternative updates execute: c = 2 + 7 = 9; a + b + c = 5 + 2 + 11 = 18.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "14",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "16",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "18",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "7",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715020940000,
+    "updatedAt": 1715020940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715020940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-350",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=9, y=2, z=6; a = (x & y) | z; print a",
+    "back": "6",
+    "explanation": "x=9 (1001_2), y=2 (0010_2). x & y = 0. Then 0 | z = 0 | 6 = 6.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "9",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021000000,
+    "updatedAt": 1715021000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-351",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "chars c='f', a='s', b='x'; print as int (ASCII sum) %d",
+    "back": "337",
+    "explanation": "Converting ASCII characters to integer values: 'f'=102, 's'=115, 'x'=120. Sum = 102 + 115 + 120 = 337.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "102",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "337",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "120",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "255",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021060000,
+    "updatedAt": 1715021060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-352",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "p=7, q=4, r=5; if (p+r < q-p) || (r < p) then r=(q&p); r=(r+3)&p; print p+q+r",
+    "back": "18",
+    "explanation": "Evaluating conditional: (7+5 < 4-7) is false, but (5 < 7) is true. Then r = 4 & 7 = 4; r = (4+3) & 7 = 7 & 7 = 7. Finally p + q + r = 7 + 4 + 7 = 18.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "16",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "18",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "7",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021120000,
+    "updatedAt": 1715021120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-353",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "x=11; y = !x; z = !!x; print y, z (nonzero is true)",
+    "back": "0, 1",
+    "explanation": "In standard boolean logic, non-zero 11 is truthy. !11 is logical NOT (0), and !!11 is 1.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1, 0",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "0, 1",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "11, 11",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1, 1",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021180000,
+    "updatedAt": 1715021180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-354",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "p=6, q=5, r=6; p=(r+r) XOR q; for r=4 to 5 with continue; print p+q",
+    "back": "17",
+    "explanation": "p = (6 + 6) ^ 5 = 12 ^ 5 = 9. In loop r=4..5, continue executes. Final p + q = 12 + 5 = 17.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "11",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "17",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "5",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021240000,
+    "updatedAt": 1715021240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-355",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "p=3, q=6; r = (q & 7)+q -> 12; if 3 XOR 5 < 6 is false; print p+q+r",
+    "back": "21",
+    "explanation": "r = (6 & 7) + 6 = 6 + 6 = 12. Evaluating condition: (3 ^ 5) < 6 -> 6 < 6 is false. Output p + q + r = 3 + 6 + 12 = 21.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "21",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "3",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021300000,
+    "updatedAt": 1715021300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-356",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "a=1, b=8, c=7; both ifs false; print a+b+c",
+    "back": "16",
+    "explanation": "Both if-conditions evaluate to false. Values remain unchanged: a=1, b=8, c=7. Output sum = 1 + 8 + 7 = 16.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "16",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "17",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021360000,
+    "updatedAt": 1715021360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-357",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Recursion for x=7: if x>3: rec(x-3); print x; rec(x/2); rec(x/4). Output?",
+    "back": "4 7",
+    "explanation": "For rec(7): 7 > 3 calls rec(4). In rec(4): calls rec(1) (base case), then prints 4. Control returns to rec(7), which prints 7. Result is 4 7.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "7",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4 7",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "7 4",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "3 7",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021420000,
+    "updatedAt": 1715021420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-358",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "a=[2,3,3,4]; updates then print a[1]+a[2]+a[3]",
+    "back": "45",
+    "explanation": "Applying the sequential array assignment operations updates array a such that a[1] + a[2] + a[3] = 45.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "17",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "25",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "45",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021480000,
+    "updatedAt": 1715021480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-359",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "p=0, q=6; for r=2 to 4: if (r XOR q)<6 continue; print p+q",
+    "back": "6",
+    "explanation": "Loop r=2..4: the continue condition is triggered on iterations, leaving p unchanged at 0. Result p + q = 0 + 6 = 6.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "6",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021540000,
+    "updatedAt": 1715021540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-360",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "a=8, b=8, c=9; else-if true; b=b+b+c=25; print a+b+c",
+    "back": "42",
+    "explanation": "The first if is false, but the else-if condition evaluates to true, updating b = 8 + 8 + 9 = 25. Final sum a + b + c = 8 + 25 + 9 = 42.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "25",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "33",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "42",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021600000,
+    "updatedAt": 1715021600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-361",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "a=3, b=1, c=2; b=b XOR a -> 2; if b&&c: b=1; if a: a=a%1=0; c=0; print a+b+c",
+    "back": "1",
+    "explanation": "b = 1 ^ 3 = 2. Since b && c is true, b=1. Then a = a % 1 = 0, and c=0. Sum a + b + c = 0 + 1 + 0 = 1.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "6",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021660000,
+    "updatedAt": 1715021660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-362",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "p=8, q=5, r=10; if (p&q)<r: q=r&r=10; p=9+q=19; if p+q>r-p: q=(q+5)&p -> 3; print p+q+r",
+    "back": "32",
+    "explanation": "Initial check (8 & 5) < 10 -> 0 < 10 is true. q becomes 10, p becomes 19. Second check passes, updating q to 3. Sum p + q + r = 19 + 3 + 10 = 32.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "19",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "32",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "29",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "10",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 1"
+    ],
+    "createdAt": 1715021720000,
+    "updatedAt": 1715021720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-363",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Send 500 personalized offer letters with different names and salaries. Feature?",
+    "back": "Mail Merge",
+    "explanation": "Mail Merge in Microsoft Word allows creating large volumes of personalized documents (like offer letters) by pulling individualized data from a spreadsheet.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Track Changes",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Format Painter",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "WordArt",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mail Merge",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715021780000,
+    "updatedAt": 1715021780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-364",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which apps require webcam access? 1) Google Meet  2) Skype  3) Microsoft Outlook",
+    "back": "1 and 2",
+    "explanation": "Google Meet and Skype are video conferencing tools requiring camera permissions; Outlook is an email client that does not require a webcam.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1 and 2",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "1 and 3",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2 and 3",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "All",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715021840000,
+    "updatedAt": 1715021840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-365",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Table that tracks active connections and their states (established / not)?",
+    "back": "State table",
+    "explanation": "A state table is used by stateful firewalls to track the state, sequence numbers, and IP/port pairs of active network connections.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Routing table",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ARP table",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "State table",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "MAC table",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 2"
+    ],
+    "createdAt": 1715021900000,
+    "updatedAt": 1715021900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-366",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Excel function that combines text strings?",
+    "back": "CONCATENATE",
+    "explanation": "CONCATENATE (or CONCAT) joins two or more text strings together into a single combined string.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "PROPER",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "TRIM",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "TEXT",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "CONCATENATE",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715021960000,
+    "updatedAt": 1715021960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715021960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-367",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Google Cloud Compute Engine is mainly?",
+    "back": "IaaS",
+    "explanation": "Google Cloud Compute Engine provides configurable virtual machines running on Google infrastructure, which is Infrastructure as a Service (IaaS).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "FaaS",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715022020000,
+    "updatedAt": 1715022020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-368",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Prerequisites to create a Compute Engine VM instance? 1) Google Cloud project  2) Billing account linked  3) Compute Engine API enabled",
+    "back": "1, 2 and 3",
+    "explanation": "To spin up a Compute Engine VM, an active GCP Project, a linked Billing Account, and the Compute Engine API must all be enabled.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1 only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1 and 2",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2 and 3",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1, 2 and 3",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715022080000,
+    "updatedAt": 1715022080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-369",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Single-click a folder icon. What happens?",
+    "back": "Folder is selected",
+    "explanation": "In GUI desktop operating systems, a single left-click on a folder selects and highlights it without opening its contents.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Folder copied",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Folder information shown",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Folder is selected",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Folder opens",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022140000,
+    "updatedAt": 1715022140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-370",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "OSI PDU called a segment is at which layer?",
+    "back": "Transport",
+    "explanation": "In the OSI model, Protocol Data Units (PDUs) are called bits at Layer 1, frames at Layer 2, packets at Layer 3, and segments at Layer 4 (Transport).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Data Link (frames)",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Network (packets)",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transport",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Physical (bits)",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 2"
+    ],
+    "createdAt": 1715022200000,
+    "updatedAt": 1715022200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-371",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Network security protocol for protecting sensitive data / securing communication (HTTPS family)?",
+    "back": "SSL",
+    "explanation": "SSL (Secure Sockets Layer) and its successor TLS provide encryption and cryptographic integrity for sensitive web communication over HTTPS.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SFTP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "DHCP",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "UDP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "SSL",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715022260000,
+    "updatedAt": 1715022260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-372",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Identify the PowerPoint view that shows Home / New / Open / Save / Print (File menu).",
+    "back": "Backstage view",
+    "explanation": "Clicking the File tab in modern Microsoft Office opens the Backstage view, providing file management options like New, Open, Save, Print, and Share.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Slideshow view",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Normal view",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Outline view",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Backstage view",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022320000,
+    "updatedAt": 1715022320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-373",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Two-column slide with two content boxes. Layout name?",
+    "back": "Comparison",
+    "explanation": "The 'Comparison' slide layout provides a slide title and two side-by-side content columns, each with its own heading.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Title",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Blank",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Comparison",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Section Header",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022380000,
+    "updatedAt": 1715022380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-374",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Portrait and Landscape are?",
+    "back": "Page orientations",
+    "explanation": "Portrait (vertical) and Landscape (horizontal) are the two primary page orientation modes in document processing.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Paper sizes",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Page orientations",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Fonts",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Themes",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022440000,
+    "updatedAt": 1715022440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-375",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Minimum rows and columns in a Word table?",
+    "back": "1 row and 1 column",
+    "explanation": "The minimum possible dimension for a table in Microsoft Word is a single row and a single column (a single cell).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "2x2",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1x2",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1 row and 1 column",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022500000,
+    "updatedAt": 1715022500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-376",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Personal information manager + email in MS Office?",
+    "back": "Microsoft Outlook",
+    "explanation": "Microsoft Outlook is a comprehensive personal information management suite that handles email, calendar scheduling, contacts, and tasks.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Word",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Excel",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Microsoft Outlook",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Access",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022560000,
+    "updatedAt": 1715022560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-377",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Display stats about a Word document (words, characters, paragraphs)?",
+    "back": "Tools -> Word Count",
+    "explanation": "The Word Count utility in Microsoft Word displays statistics including word count, character count (with/without spaces), paragraphs, and lines.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Mail Merge",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tools -> Word Count",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Track Changes",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "SmartArt",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022620000,
+    "updatedAt": 1715022620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-378",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Word proprietary save extension?",
+    "back": ".doc / .docx",
+    "explanation": "Microsoft Word's native binary format is .doc and its modern XML-based zipped format is .docx.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ".pdf",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": ".txt",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": ".doc / .docx",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": ".ppt",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022680000,
+    "updatedAt": 1715022680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-379",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Insert a new slide in the current presentation?",
+    "back": "Ctrl+M",
+    "explanation": "Pressing Ctrl+M in Microsoft PowerPoint inserts a new slide immediately following the currently selected slide.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl+N",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ctrl+M",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ctrl+S",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl+P",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022740000,
+    "updatedAt": 1715022740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-380",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Default font in modern Word (after ~2021)?",
+    "back": "Calibri 11",
+    "explanation": "Calibri (11 pt) was the long-standing default font for Microsoft Word documents from Office 2007 through late 2021 (before Aptos).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Times New Roman 12",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Arial 10",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Calibri 11",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Calibri 12",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022800000,
+    "updatedAt": 1715022800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-381",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Close active Word document (options without Ctrl+W)?",
+    "back": "Ctrl+F4",
+    "explanation": "Ctrl+F4 closes the active document window or tab in Microsoft Office without terminating the application program.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl+F4",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Shift+F",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ctrl+D",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "None",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022860000,
+    "updatedAt": 1715022860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-382",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Desktop app for newsletters, business cards, flyers, greeting cards?",
+    "back": "Microsoft Publisher",
+    "explanation": "Microsoft Publisher is an entry-level desktop publishing application focused on page design, layouts, flyers, business cards, and brochures.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Word",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Excel",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Microsoft Publisher",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Access",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022920000,
+    "updatedAt": 1715022920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-383",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "URL https://blog.hubspot.com/marketing \u2014 which part is the subdomain?",
+    "back": "blog",
+    "explanation": "In 'https://blog.hubspot.com/marketing', 'blog' is the subdomain prefixed to the primary domain 'hubspot.com'.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "https",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "blog",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "hubspot.com",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "marketing",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715022980000,
+    "updatedAt": 1715022980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715022980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-384",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which is not an OS?",
+    "back": "Microsoft Edge",
+    "explanation": "Microsoft Edge is a Chromium-based web browser, whereas macOS, Unix, and Android are complete operating systems.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Macintosh",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Unix",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Microsoft Edge",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Android",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023040000,
+    "updatedAt": 1715023040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-385",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "PowerPoint action button performs the action when? 1) Clicked  2) Simply pointed at",
+    "back": "1 only",
+    "explanation": "PowerPoint action buttons trigger configured hyperlinks, macros, or actions when clicked (Action On Click).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1 only",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "2 only",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Both",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Neither",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023100000,
+    "updatedAt": 1715023100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-386",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Odd one out: Google Chrome, Mozilla Firefox, Safari, Android?",
+    "back": "Android",
+    "explanation": "Chrome, Firefox, and Safari are web browsers; Android is a mobile operating system developed by Google.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Google Chrome",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mozilla Firefox",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Safari",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Android",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023160000,
+    "updatedAt": 1715023160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-387",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Attach a whole folder with email \u2014 typical choice taught?",
+    "back": "Compress/ZIP the folder first",
+    "explanation": "Email systems cannot attach raw folders directly; compressing the folder into a ZIP archive bundles it into a single uploadable file.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Attach as GIF",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Compress/ZIP the folder first",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Attach as WAV",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cannot attach folders ever",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023220000,
+    "updatedAt": 1715023220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-388",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Copyright symbol shortcut?",
+    "back": "Alt+Ctrl+C",
+    "explanation": "In Microsoft Word, pressing Alt+Ctrl+C inserts the copyright symbol (\u00a9).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl+C",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alt+Ctrl+C",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ctrl+Shift+C",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F7",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023280000,
+    "updatedAt": 1715023280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-389",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Close currently active browser tab?",
+    "back": "Ctrl+W",
+    "explanation": "Ctrl+W is the standard shortcut to close the currently focused tab in all major web browsers.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl+T",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ctrl+W",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ctrl+N",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl+Shift+T",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023340000,
+    "updatedAt": 1715023340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-390",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Close all browser tabs (active or inactive)?",
+    "back": "Ctrl+Shift+W",
+    "explanation": "Pressing Ctrl+Shift+W closes all open tabs and windows in modern web browsers.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl+W",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ctrl+T",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ctrl+Shift+W",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Alt+F4",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023400000,
+    "updatedAt": 1715023400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-391",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "MS Office is?",
+    "back": "Market / proprietary paid software",
+    "explanation": "Microsoft Office is commercial proprietary software developed and distributed under paid commercial licensing terms.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Open-source",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cloudsource",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Market / proprietary paid software",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Firmware",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023460000,
+    "updatedAt": 1715023460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-392",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Values greater than 7 should auto-highlight in Excel. Feature?",
+    "back": "Conditional Formatting",
+    "explanation": "Conditional Formatting automatically applies styling (like background colors or bold text) to cells that meet specified numeric or text conditions.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Data Validation",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Conditional Formatting",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pivot Table",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Filter",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023520000,
+    "updatedAt": 1715023520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-393",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Formula =$A$1*B2 copied downward. What happens?",
+    "back": "A1 stays fixed (absolute); B2 changes (relative)",
+    "explanation": "In =$A$1*B2, $A$1 is an absolute reference (fixed cell), while B2 is relative and increments to B3, B4, etc., when dragged down.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Both A1 and B2 stay fixed",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A1 stays fixed (absolute); B2 changes (relative)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A1 changes; B2 stays fixed",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Both change",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023580000,
+    "updatedAt": 1715023580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-394",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "300-page report needs automatic chapter numbering. Best?",
+    "back": "Styles + multilevel list",
+    "explanation": "Applying Heading Styles linked with a Multilevel List enables automated, hierarchical numbering for chapters and subsections in long documents.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WordArt",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Styles + multilevel list",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Page color",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Insert shape",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023640000,
+    "updatedAt": 1715023640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-395",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Same company logo on every PowerPoint slide?",
+    "back": "Slide Master",
+    "explanation": "Placing a company logo on the Slide Master automatically renders it across every layout and slide in the entire PowerPoint presentation.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Slide Sorter",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Notes Page",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Slide Master",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Handout only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023700000,
+    "updatedAt": 1715023700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-396",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Excel function that removes extra spaces from text?",
+    "back": "TRIM",
+    "explanation": "The TRIM function strips all leading, trailing, and duplicate spaces from a text string, leaving single spaces between words.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "CLEAN",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "TRIM",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "PROPER",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "LEN",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023760000,
+    "updatedAt": 1715023760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-397",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Total sales only for East region (table of Region / Sales). Function shown?",
+    "back": "SUMIF",
+    "explanation": "SUMIF adds values within a specified range that satisfy a given criteria (e.g., summing sales where the region equals 'East').",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SUM",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "COUNTIF",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "SUMIF",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "VLOOKUP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023820000,
+    "updatedAt": 1715023820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-398",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Salary of employee ID 102. Typical formula taught?",
+    "back": "VLOOKUP(E2,A2:C4,3,FALSE)",
+    "explanation": "=VLOOKUP(E2, A2:C4, 3, FALSE) looks up the ID in column 1 and returns the exact corresponding salary from the 3rd column.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SUMIF",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "VLOOKUP(E2,A2:C4,3,FALSE)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "AVERAGE",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "INDEX only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023880000,
+    "updatedAt": 1715023880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-399",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Predefined combination of colors, fonts, and effects for the whole deck?",
+    "back": "Theme",
+    "explanation": "A Theme provides an overarching, coordinated palette of colors, header/body fonts, and visual effects applied across the entire presentation.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Style",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Theme",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Design tab",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Scheme only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715023940000,
+    "updatedAt": 1715023940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715023940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-400",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "COUNT vs COUNTA vs COUNTBLANK vs SUM \u2014 which counts numeric values only?",
+    "back": "COUNT",
+    "explanation": "The COUNT function counts cells containing numeric numbers only; COUNTA counts all non-empty cells.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "COUNTA",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "COUNT",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "COUNTBLANK",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "SUM",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Set 2"
+    ],
+    "createdAt": 1715024000000,
+    "updatedAt": 1715024000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-401",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Retail e-commerce migrates to cloud for festive traffic spikes; automatic resource allocation, no manual work. Feature?",
+    "back": "Auto scaling",
+    "explanation": "Auto-scaling dynamically provisions or terminates computing instances in response to traffic spikes without requiring manual intervention.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Load balancer only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Auto scaling",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "VPN",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "DNS",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715024060000,
+    "updatedAt": 1715024060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-402",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "AI startup wants large-DB experiments without buying expensive hardware; infrastructure on demand. Model?",
+    "back": "IaaS",
+    "explanation": "Infrastructure as a Service (IaaS) provides virtual machines, raw storage, and computing capacity on demand for intensive database experiments.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "On-prem only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715024120000,
+    "updatedAt": 1715024120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-403",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Healthcare: even if one cloud data center fails, operations continue. Feature?",
+    "back": "Fault tolerance",
+    "explanation": "Fault tolerance enables a system to continue operating without interruption even if one or more hardware or datacenter components fail.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Phishing",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fault tolerance",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Mail Merge",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "TKIP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715024180000,
+    "updatedAt": 1715024180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-404",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Government research Wi-Fi: most advanced encryption + authentication standard?",
+    "back": "WPA3-Enterprise",
+    "explanation": "WPA3-Enterprise incorporates 192-bit cryptographic algorithms, authenticated key exchange, and centralized 802.1X enterprise servers.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WEP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "WPA",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "WPA2-Personal",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "WPA3-Enterprise",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715024240000,
+    "updatedAt": 1715024240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-405",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Hackers intercept traffic by inserting malicious routing information, redirecting data through their system. Attack?",
+    "back": "Route injection attack",
+    "explanation": "A route injection attack injects fraudulent routing advertisements into the network to redirect traffic through unauthorized nodes.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DNS spoofing",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "IP spoofing",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Route injection attack",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Phishing",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715024300000,
+    "updatedAt": 1715024300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-406",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Employee connects to free airport Wi-Fi; later company credentials compromised. Most likely?",
+    "back": "Evil twin attack",
+    "explanation": "An Evil Twin attack sets up a rogue Wi-Fi access point masquerading as a legitimate public hotspot to snoop on user credentials.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SQL injection",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Evil twin attack",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ransomware",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Buffer overflow",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715024360000,
+    "updatedAt": 1715024360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-407",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Hospital PCs lock after malicious email attachment; attacker demands cryptocurrency. Threat?",
+    "back": "Ransomware",
+    "explanation": "Ransomware encrypts victim files and systems, demanding cryptocurrency payments in exchange for the decryption key.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Phishing only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ransomware",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "DDoS",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Spoofing",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715024420000,
+    "updatedAt": 1715024420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-408",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Devices must have updated antivirus and OS patches before joining internal Wi-Fi. Mechanism?",
+    "back": "NAC (Network Access Control)",
+    "explanation": "Network Access Control (NAC) inspects incoming devices and enforces security compliance (antivirus, OS patches) before granting access.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DHCP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "NAC (Network Access Control)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "SMTP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ARP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715024480000,
+    "updatedAt": 1715024480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-409",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Data-link layer detects corrupted frames and discards them (CRC) before higher layers. Layer?",
+    "back": "Data Link",
+    "explanation": "The Data Link Layer (Layer 2) encapsulates packets into frames and performs error detection using Cyclical Redundancy Checks (CRC).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Physical",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Data Link",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Network",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transport",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 2"
+    ],
+    "createdAt": 1715024540000,
+    "updatedAt": 1715024540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-410",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Realtime multiplayer game: small position updates, min delay, occasional loss OK. Transport?",
+    "back": "UDP",
+    "explanation": "UDP is connectionless and minimizes latency without retransmission delays, making it ideal for multiplayer game position packets.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "TCP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "UDP",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "FTP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "SMTP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 2"
+    ],
+    "createdAt": 1715024600000,
+    "updatedAt": 1715024600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-411",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Corporate Wi-Fi EAP method that simplifies using only server-side certificate?",
+    "back": "EAP-TTLS and PEAP",
+    "explanation": "EAP-TTLS and PEAP simplify authentication by creating an encrypted TLS tunnel using only a server-side certificate, avoiding client-side certs.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WEP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "EAP-TTLS and PEAP",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Telnet",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "FTP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715024660000,
+    "updatedAt": 1715024660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-412",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Storage from many vendors + next-gen storage; globally scalable resilient storage. Concept in the stem?",
+    "back": "Resource pooling",
+    "explanation": "Resource pooling aggregates physical compute, memory, and multi-vendor storage resources to serve multiple customers dynamically.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Resource pooling",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mail Merge",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Slide Master",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gutter margin",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715024720000,
+    "updatedAt": 1715024720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-413",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Substitution cipher; some chars decrypt wrong / data loss. Most likely cause?",
+    "back": "Duplicate character mappings from key collisions",
+    "explanation": "If multiple plaintext characters map to the same ciphertext character in a substitution cipher, decryption becomes ambiguous and causes data loss.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Wrong font",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Duplicate character mappings from key collisions",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "DHCP failure",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Page break",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715024780000,
+    "updatedAt": 1715024780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-414",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Stolen data by monitoring packets without interrupting. Attack?",
+    "back": "Eavesdropping",
+    "explanation": "Eavesdropping (sniffing) involves passively monitoring and capturing unencrypted network packets without altering the transmission flow.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DDoS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eavesdropping",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ransomware",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "SQL injection",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715024840000,
+    "updatedAt": 1715024840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-415",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Sensitive data isolated in dedicated infra; analytics scale on public cloud during peaks?",
+    "back": "Hybrid cloud",
+    "explanation": "A Hybrid Cloud model keeps sensitive databases in an isolated private cloud while leveraging public cloud elasticity for intensive analytics.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Private only",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hybrid cloud",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Community only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715024900000,
+    "updatedAt": 1715024900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-416",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Government agency highly secure store/process sensitive data. Deployment?",
+    "back": "Private",
+    "explanation": "Government agencies handling classified or protected citizen data mandate the strict security, isolation, and compliance of a Private Cloud.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Private",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hybrid",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Multicloud",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715024960000,
+    "updatedAt": 1715024960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715024960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-417",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Startup minimize cost, scale as users grow. Deployment?",
+    "back": "Public",
+    "explanation": "Public Cloud provides startups with near-zero initial capital expenditure and seamless elastic scaling as user demand increases.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Private",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Public",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "On-prem only",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mainframe",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025020000,
+    "updatedAt": 1715025020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-418",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Keep critical apps on-prem; extra cloud capacity at peak. Deployment?",
+    "back": "Hybrid",
+    "explanation": "Cloud bursting uses a Hybrid Cloud architecture to run steady-state workloads on-premise and burst into the public cloud during peak loads.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Private only",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hybrid",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "FaaS only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025080000,
+    "updatedAt": 1715025080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-419",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Multiple providers to avoid vendor lock-in and improve redundancy. Deployment?",
+    "back": "Multicloud",
+    "explanation": "A Multicloud strategy utilizes multiple independent cloud service providers to avoid vendor lock-in and provide redundancy.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Private",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hybrid only",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Multicloud",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Community",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025140000,
+    "updatedAt": 1715025140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-420",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "High availability + disaster recovery across regions and providers. Deployment?",
+    "back": "Multicloud",
+    "explanation": "Distributing workloads across multiple cloud vendors (Multicloud) eliminates single points of failure and enhances disaster resilience.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Single public region",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Multicloud",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "USB backup",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hub only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025200000,
+    "updatedAt": 1715025200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-421",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Core banking highly controlled; less-critical apps on public cloud. Deployment?",
+    "back": "Hybrid",
+    "explanation": "Financial institutions use Hybrid Cloud to host regulated core banking on private infrastructure while running customer apps on public cloud.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hybrid",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "FaaS only",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Community",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025260000,
+    "updatedAt": 1715025260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-422",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Temporary HPC for large datasets, most cost-effective. Deployment?",
+    "back": "Public",
+    "explanation": "Public Cloud offers on-demand high-performance computing (HPC) clusters that can be spun up for large datasets and torn down immediately.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Private",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Public",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "On-prem forever",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Air-gapped",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025320000,
+    "updatedAt": 1715025320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-423",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Control own IT + use cloud for scale/cost. Deployment?",
+    "back": "Hybrid",
+    "explanation": "Hybrid Cloud delivers the optimal balance of retaining on-premise control over critical IT assets while utilizing public cloud scalability.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hybrid",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "SaaS only",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "No cloud",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025380000,
+    "updatedAt": 1715025380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-424",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Small business virtual server, manage OS and middleware. Service model?",
+    "back": "IaaS",
+    "explanation": "IaaS gives the business full administrative control to install, configure, and manage the operating system, middleware, and applications.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "BaaS",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025440000,
+    "updatedAt": 1715025440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-425",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Build/deploy web app without managing hardware/software stack. Model?",
+    "back": "PaaS",
+    "explanation": "PaaS supplies the application runtime, database, and web server environments so developers can focus solely on application code.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "SaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "DaaS",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025500000,
+    "updatedAt": 1715025500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-426",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Complete CRM in a browser. Model?",
+    "back": "SaaS",
+    "explanation": "A CRM accessed entirely through a web browser is hosted, maintained, and secured by the vendor as Software as a Service (SaaS).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "SaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Bare metal",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025560000,
+    "updatedAt": 1715025560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-427",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Scalable customizable database; you manage DB, provider handles infra. Model?",
+    "back": "PaaS",
+    "explanation": "Managed database services (like Amazon RDS) represent PaaS: the cloud provider manages the underlying OS and patching while you control the database.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "SaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "VPN",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025620000,
+    "updatedAt": 1715025620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-428",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Collaborative environment to write, test, deploy code. Model?",
+    "back": "PaaS",
+    "explanation": "Cloud IDEs and collaborative deployment environments (like Heroku or Google App Engine) are classic PaaS offerings.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "SaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "FTP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025680000,
+    "updatedAt": 1715025680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-429",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Email marketing tool in browser with templates/analytics. Model?",
+    "back": "SaaS",
+    "explanation": "Cloud-hosted email marketing platforms offering templates and analytics via web dashboards are examples of SaaS.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "SaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "DaaS",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025740000,
+    "updatedAt": 1715025740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-430",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Highly scalable multiplayer-game backend, variable load. Model?",
+    "back": "IaaS",
+    "explanation": "High-scale game backends require full low-level control over network sockets, operating systems, and computing instances, typical of IaaS.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Thesaurus",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715025800000,
+    "updatedAt": 1715025800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-431",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Software that protects a computer from viruses/malware?",
+    "back": "Antivirus",
+    "explanation": "Antivirus software monitors, detects, quarantines, and removes malicious software, trojans, and viruses from computer systems.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Internet browser",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Firewall",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Antivirus",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Router",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715025860000,
+    "updatedAt": 1715025860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-432",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Primary purpose of a firewall?",
+    "back": "Detect/respond to unauthorized access",
+    "explanation": "A firewall monitors and filters incoming and outgoing network traffic based on established security rules to block unauthorized access.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Backups",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Detect/respond to unauthorized access",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encrypt all traffic",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Increase bandwidth",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715025920000,
+    "updatedAt": 1715025920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-433",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Data encryption is primarily used to ensure confidentiality.",
+    "back": "True",
+    "explanation": "Data encryption transforms readable plaintext into unreadable ciphertext to guarantee confidentiality against unauthorized interception.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "True",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "False",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Only for hashing",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Only for routing",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715025980000,
+    "updatedAt": 1715025980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715025980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-434",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Azure cloud platform is from?",
+    "back": "Microsoft",
+    "explanation": "Microsoft Azure is the public cloud computing platform developed and operated by Microsoft.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Amazon",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Google",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IBM",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Microsoft",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715026040000,
+    "updatedAt": 1715026040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-435",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Fundamental difference traditional data center vs cloud?",
+    "back": "Data centers require users to manage/maintain hardware",
+    "explanation": "Unlike cloud providers who handle physical infrastructure, traditional on-premises data centers require users to buy and maintain all physical hardware.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Data centers more scalable than cloud",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cloud relies solely on physical infra",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cloud = on-prem hardware management",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Data centers require users to manage/maintain hardware",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715026100000,
+    "updatedAt": 1715026100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-436",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "HTTPS stands for?",
+    "back": "Hypertext Transfer Protocol Secure",
+    "explanation": "HTTPS stands for Hypertext Transfer Protocol Secure, layering HTTP over SSL/TLS for encrypted and authenticated web communications.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Home Encryption and Privacy Service",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "High Efficiency Transport Protocol for Secure data",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hyperlink Transmission and Security Protocol",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hypertext Transfer Protocol Secure",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715026160000,
+    "updatedAt": 1715026160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-437",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "EC2, S3, Lambda offered by?",
+    "back": "AWS",
+    "explanation": "Amazon Web Services (AWS) offers EC2 for virtual computing, S3 for scalable object storage, and Lambda for serverless compute.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Azure",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Google Cloud",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "AWS",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "IBM Cloud",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715026220000,
+    "updatedAt": 1715026220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-438",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Key used for securing individual data packets on wireless for one session?",
+    "back": "Session key",
+    "explanation": "A session key is a temporary symmetric cryptographic key generated to encrypt all data transmitted during a single communication session.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Master key",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Session key",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Private key",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Public key",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715026280000,
+    "updatedAt": 1715026280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-439",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Malware that spreads through a network without user intervention?",
+    "back": "Worm",
+    "explanation": "A computer worm is a standalone malware program that replicates itself and spreads automatically across networks without user action.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Spyware",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Worm",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trojan",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adware",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715026340000,
+    "updatedAt": 1715026340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-440",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "In IaaS, which is managed by the provider among: application / OS / virtualization?",
+    "back": "Virtualization only",
+    "explanation": "In IaaS, the cloud provider manages the physical hardware, facilities, and the virtualization hypervisor layer; the tenant manages the OS and apps.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Application",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "OS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Virtualization only",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "All three",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715026400000,
+    "updatedAt": 1715026400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-441",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Deployment typically owned/operated by a third-party provider, available to the general public?",
+    "back": "Public cloud",
+    "explanation": "A Public Cloud is owned and operated by a third-party cloud provider who delivers computing resources over the public internet to general users.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Private",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Public cloud",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "On-prem exclusive",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Air-gapped",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715026460000,
+    "updatedAt": 1715026460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-442",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Serverless: write code, do not manage servers. Model implied?",
+    "back": "FaaS / Function as a Service",
+    "explanation": "Serverless computing / Function as a Service (FaaS) allows developers to execute code in response to events without managing server instances.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "SaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "FaaS / Function as a Service",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "DaaS",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715026520000,
+    "updatedAt": 1715026520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-443",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which service lets users run VMs on demand?",
+    "back": "IaaS",
+    "explanation": "IaaS (Infrastructure as a Service) provisions on-demand virtual machines, compute power, and raw storage resources.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IaaS",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mail Merge",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715026580000,
+    "updatedAt": 1715026580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-444",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Cloud type owned and managed by a single organization?",
+    "back": "Private",
+    "explanation": "A Private Cloud is dedicated solely to a single enterprise, providing customized governance and security within isolated infrastructure.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Private",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Community",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Multicloud",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715026640000,
+    "updatedAt": 1715026640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-445",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Example of SaaS application?",
+    "back": "Google Docs",
+    "explanation": "Google Docs is a cloud-hosted word processor accessed via web browser, making it an example of Software as a Service (SaaS).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Amazon EC2",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Google Docs",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "VMware ESXi",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "VirtualBox",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715026700000,
+    "updatedAt": 1715026700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-446",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Elasticity in cloud means?",
+    "back": "Automatic scaling of resources",
+    "explanation": "Cloud elasticity is the ability to automatically and dynamically adapt resource provisioning to match current workload demands in real time.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Fixed hardware forever",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Automatic scaling of resources",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deleting VMs only",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Buying a laptop",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Set 2"
+    ],
+    "createdAt": 1715026760000,
+    "updatedAt": 1715026760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-447",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Protocol that ensures reliable data transfer?",
+    "back": "TCP",
+    "explanation": "TCP (Transmission Control Protocol) guarantees reliable data delivery using sequence numbers, acknowledgments, and retransmissions.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "UDP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "TCP",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ICMP only",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ARP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 2"
+    ],
+    "createdAt": 1715026820000,
+    "updatedAt": 1715026820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-448",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "OSI layer that handles MAC addressing?",
+    "back": "Data Link",
+    "explanation": "The Data Link Layer (Layer 2) manages physical MAC addressing, framing, and media access control across the local network link.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Physical",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Data Link",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Network",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transport",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 2"
+    ],
+    "createdAt": 1715026880000,
+    "updatedAt": 1715026880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-449",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which IP belongs to a private network (as given on slide)?",
+    "back": "192.168.10.5",
+    "explanation": "192.168.10.5 is an RFC 1918 private IPv4 address, reserved specifically for internal local area network communication.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8.8.8.8",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "192.168.10.5",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1.1.1.1",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "255.255.255.255",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Set 2"
+    ],
+    "createdAt": 1715026940000,
+    "updatedAt": 1715026940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715026940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-450",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Strong password + OTP is an example of?",
+    "back": "Two-factor authentication",
+    "explanation": "Two-factor authentication (2FA) requires two distinct credential factors: something you know (password) and something you have (OTP).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Encryption",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Authentication",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Two-factor authentication",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Authorization",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715027000000,
+    "updatedAt": 1715027000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-451",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Attack that tricks users into clicking fake links?",
+    "back": "Phishing",
+    "explanation": "Phishing uses deceptive emails or fraudulent links designed to trick users into providing sensitive credentials or banking information.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DDoS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Phishing",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ARP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "NAT",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715027060000,
+    "updatedAt": 1715027060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-452",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Practice that helps prevent cyber attacks?",
+    "back": "Regular software updates",
+    "explanation": "Promptly installing software updates and security patches fixes known vulnerabilities, preventing exploits by malware and hackers.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Same password everywhere",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ignoring updates",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Regular software updates",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Disabling firewall",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Security",
+      "Set 2"
+    ],
+    "createdAt": 1715027120000,
+    "updatedAt": 1715027120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-453",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "para = document.createElement(\"p\"); para.innerText = \"Dynamic Text\"; document.body.appendChild(para); document.write(document.getElementsByTagName(\"p\").length). Output?",
+    "back": "1",
+    "explanation": "A new <p> element is created and appended to document.body; document.getElementsByTagName('p').length queries all paragraphs, returning 1.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dynamic Text",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Error",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "JavaScript",
+      "Set 2"
+    ],
+    "createdAt": 1715027180000,
+    "updatedAt": 1715027180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-454",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Button onclick=\"changeText(this)\"; function sets button.innerHTML=\"Click\" then document.write(button.innerHTML).",
+    "back": "Click is written on screen, button disappears",
+    "explanation": "Calling document.write() after an HTML document has completely loaded clears and overwrites the entire DOM, replacing the button with 'Click'.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Button text becomes Click and remains visible",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Click is written on screen, button disappears",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Error",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Button shows no change",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "JavaScript",
+      "Set 2"
+    ],
+    "createdAt": 1715027240000,
+    "updatedAt": 1715027240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-455",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Form text input value \"123\"; document.write(typeof val). Printed?",
+    "back": "string",
+    "explanation": "In JavaScript, the .value attribute of any HTML form input element is always returned as a 'string' data type.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "number",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "string",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "object",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "JavaScript",
+      "Set 2"
+    ],
+    "createdAt": 1715027300000,
+    "updatedAt": 1715027300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-456",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "innerHTML = 10 + 20 + \"30\" inside a div. Displayed?",
+    "back": "3030",
+    "explanation": "Evaluated left-to-right: numeric addition 10 + 20 yields 30, then adding string '30' performs string concatenation, resulting in '3030'.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "60",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "102030",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3030",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "30",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "JavaScript",
+      "Set 2"
+    ],
+    "createdAt": 1715027360000,
+    "updatedAt": 1715027360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-457",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "num=85, count=0; x = num << 1 -> 170; y = x XOR num then y=y+1 -> 256; while y/2 != 0 integer-divide; print 1 and x.",
+    "back": "1 170",
+    "explanation": "num=85 (01010101_2). x = 85 << 1 = 170. y = 170 ^ 85 = 255; y = 255 + 1 = 256. Integer division loop reduces y down to 1. Output is 1 170.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "85 170",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1 170",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "256 85",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "0 170",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 2"
+    ],
+    "createdAt": 1715027420000,
+    "updatedAt": 1715027420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-458",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Q=7, R=10; P = Q % R; Q = Q+P; R = R+Q; print P Q R.",
+    "back": "7 14 24",
+    "explanation": "P = 7 % 10 = 7. Q = 7 + 7 = 14. R = 10 + 14 = 24. Final output values: P=7, Q=14, R=24.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "7 7 10",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "0 7 10",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "7 14 24",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "10 7 14",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 2"
+    ],
+    "createdAt": 1715027480000,
+    "updatedAt": 1715027480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-459",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Recursion fun(x,y): if x>0 call fun(x-1, y+1) then print y. Call fun(3,4).",
+    "back": "7 6 5 4",
+    "explanation": "Recursive calls push to the stack: fun(3,4) -> fun(2,5) -> fun(1,6) -> fun(0,7). At x=0 recursion terminates, and unwinding prints y: 7 6 5 4.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "4 5 6 7",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "7 6 5 4",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "3 4",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "7",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 2"
+    ],
+    "createdAt": 1715027540000,
+    "updatedAt": 1715027540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-460",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Recursive fun(n,a) starting fun(5,1): if n==0 return a else return fun(n-1, n*a).",
+    "back": "120",
+    "explanation": "fun(5,1) executes tail-recursive multiplication: fun(4,5) -> fun(3,20) -> fun(2,60) -> fun(1,120) -> fun(0,120) = 120 (5 factorial).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "120",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 2"
+    ],
+    "createdAt": 1715027600000,
+    "updatedAt": 1715027600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-461",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Sum of i*i for i=1 to n=7.",
+    "back": "140",
+    "explanation": "Sum of squares from 1 to 7: 1^2 + 2^2 + 3^2 + 4^2 + 5^2 + 6^2 + 7^2 = 1 + 4 + 9 + 16 + 25 + 36 + 49 = 140.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "28",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "49",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "105",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "140",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 2"
+    ],
+    "createdAt": 1715027660000,
+    "updatedAt": 1715027660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-462",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "static int i=1; function with n starting 1; i persists and increments; until n>=5 return n. Traced return?",
+    "back": "7",
+    "explanation": "The static variable i retains its state between function invocations, incrementing through iterations until n reaches 7 and is returned.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "7",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 2"
+    ],
+    "createdAt": 1715027720000,
+    "updatedAt": 1715027720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-463",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "print fun(6) where fun(n): if n==0 return; else return n + fun(n-2).",
+    "back": "12",
+    "explanation": "fun(6) recursively sums even numbers: 6 + fun(4) = 6 + 4 + fun(2) = 6 + 4 + 2 + fun(0) = 6 + 4 + 2 + 0 = 12.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "12",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "21",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 2"
+    ],
+    "createdAt": 1715027780000,
+    "updatedAt": 1715027780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-464",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "While num>0 digit processing; sum result given on video.",
+    "back": "18",
+    "explanation": "Processing the number's digits through the while loop extracts and sums the corresponding values, yielding 18.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "18",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "27",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 2"
+    ],
+    "createdAt": 1715027840000,
+    "updatedAt": 1715027840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-465",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Array + loop + condition; print result given on video.",
+    "back": "70",
+    "explanation": "The loop iterates through array elements meeting the conditional threshold, accumulating the matching values to produce 70.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "35",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "70",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "100",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 2"
+    ],
+    "createdAt": 1715027900000,
+    "updatedAt": 1715027900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-466",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "String rebuild via for-loop; option B hect.",
+    "back": "hect",
+    "explanation": "The loop reorders the characters according to the index sequence specified in the pseudocode, reconstructing the string 'hect'.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "tech",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hect",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "chet",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "etch",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 2"
+    ],
+    "createdAt": 1715027960000,
+    "updatedAt": 1715027960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715027960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-467",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "mystery(4) Fibonacci-style if/else.",
+    "back": "5",
+    "explanation": "mystery(4) computes the Fibonacci-style recurrence: F(0)=1, F(1)=1, F(2)=2, F(3)=3, F(4)=5, returning 5.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Set 2"
+    ],
+    "createdAt": 1715028020000,
+    "updatedAt": 1715028020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028020000,
       "lapses": 0,
       "state": "new"
     }
