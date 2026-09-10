@@ -158,7 +158,12 @@ export const storage = {
           initial.front !== c.front ||
           initial.codeLanguage !== c.codeLanguage;
 
-        if ((isDummy && initial.explanation) || needsCodeUpdate) {
+        const needsOptionsUpdate =
+          Boolean(initial.mcqOptions &&
+          initial.mcqOptions.some((o) => o.meaning) &&
+          (!c.mcqOptions || !c.mcqOptions.some((o) => o.meaning)));
+
+        if ((isDummy && initial.explanation) || needsCodeUpdate || needsOptionsUpdate) {
           needWrite = true;
           return {
             ...c,
