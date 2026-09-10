@@ -6,6 +6,8 @@ export interface MCQOption {
   id: string;
   text: string;
   isCorrect: boolean;
+  meaning?: string;
+  whyIncorrect?: string;
 }
 
 export interface Flashcard {

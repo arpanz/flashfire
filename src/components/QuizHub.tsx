@@ -18,12 +18,16 @@ import {
   Sparkles,
   FolderPlus,
   BookOpen,
+  ChevronDown,
+  ChevronUp,
+  Info,
 } from "lucide-react";
-import { Deck, Flashcard, Rating } from "../lib/types";
+import { Deck, Flashcard, Rating, MCQOption } from "../lib/types";
 import { calculateNextReview } from "../lib/srs";
 import { storage } from "../lib/storage";
 import { sounds } from "../lib/sound";
 import { getCookie, setCookie } from "../lib/cookies";
+import { resolveDistractorExplanation, getOptionBreakdown, getOptionMeaning } from "../lib/distractorEngine";
 import { DeckIcon } from "./DeckIcon";
 import { FormattedText } from "./FormattedText";
 import { CodeBlockView } from "./CodeBlockView";
@@ -41,7 +45,7 @@ interface QuizHubProps {
 interface QuizQuestion {
   card: Flashcard;
   prompt: string;
-  options: { id: string; text: string; isCorrect: boolean }[];
+  options: MCQOption[];
   explanation?: string;
   selectedOptionId?: string;
   isUserCorrect?: boolean;
@@ -150,6 +154,8 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   const [resultsFilter, setResultsFilter] = useState<"all" | "missed" | "correct">("all");
   const [savedDeckNotice, setSavedDeckNotice] = useState<string | null>(null);
 
+  // Distractor & Option Breakdown State
+  const [showAllOptionsBreakdown, setShowAllOptionsBreakdown] = useState<boolean>(false);
 
   // Timer countdown
   const [timeLeft, setTimeLeft] = useState<number>(timerSeconds);
@@ -235,7 +241,8 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       } catch (err) {
         console.warn("Explanation fetch fallback triggered:", err);
         const correctOpt = q.options.find((o) => o.isCorrect) || q.options[0];
-        const wrongOpts = q.options.filter((o) => !o.isCorrect);
+        const chosenOpt = chosenOptionId && chosenOptionId !== "none" ? q.options.find((o) => o.id === chosenOptionId) : null;
+        const isUserCorrect = chosenOpt?.isCorrect ?? false;
 
         let cleanFallback = q.explanation ? q.explanation.trim() : "";
         cleanFallback = cleanFallback
@@ -246,12 +253,24 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           cleanFallback = `**${correctOpt.text}** is the correct answer because it directly satisfies "${q.prompt.trim()}".`;
         }
 
+        let distractorText = "";
+        if (chosenOpt && !isUserCorrect) {
+          const distractor = resolveDistractorExplanation(q.prompt, chosenOpt, correctOpt);
+          distractorText = `### ❌ Why Your Choice Was Incorrect\n${distractor.whyIncorrect}\n\n`;
+        }
+
+        const breakdown = getOptionBreakdown(q.prompt, q.options);
+        const optionsListBullets = breakdown
+          .filter((b) => !b.isCorrect && (b.meaning || b.whyIncorrect))
+          .map((b) => `- **[${b.id}] ${b.text}**: ${b.meaning || b.whyIncorrect}`)
+          .join("\n");
+
         const fallbackText =
           mode === "deep"
-            ? `### 💡 Core Concept\n**[${correctOpt.id}] ${correctOpt.text}** is correct. ${cleanFallback}\n\n` +
-              `### 🎯 Why Other Options Don't Work\n` +
-              wrongOpts.map((o) => `- **[${o.id}] ${o.text}**: Does not satisfy this question's requirements.`).join("\n") +
-              `\n\n### ⚡ Quick Memory Trick\nAssociate **"${q.prompt.slice(0, 45).replace(/"/g, '')}..."** directly with **${correctOpt.text}**.`
+            ? distractorText +
+              `### 💡 Core Concept\n**[${correctOpt.id}] ${correctOpt.text}** is correct. ${cleanFallback}\n\n` +
+              (optionsListBullets ? `### 🎯 What Other Options Mean\n${optionsListBullets}\n\n` : "") +
+              `### ⚡ Quick Memory Trick\nAssociate **"${q.prompt.slice(0, 45).replace(/"/g, '')}..."** directly with **${correctOpt.text}**.`
             : cleanFallback;
 
         setQuestions((prev) =>
@@ -359,6 +378,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       setIsAiLoading(false);
       setIsDeepMode(false);
       setIsDeepLoading(false);
+      setShowAllOptionsBreakdown(false);
       setIsQuizActive(true);
       setTimeLeft(timerSeconds);
       questionStartTime.current = Date.now();
@@ -437,6 +457,8 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       const chosen = currentQ.options.find((o) => o.id === optionId);
       const isCorrect = chosen?.isCorrect || false;
       const initialRating: Rating = isCorrect ? (timeSpent < 6000 ? 4 : 3) : 1;
+
+      setShowAllOptionsBreakdown(!isCorrect);
 
       setQuestions((prev) => {
         const copy = [...prev];
@@ -586,6 +608,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       setIsAiLoading(false);
       setIsDeepMode(false);
       setIsDeepLoading(false);
+      setShowAllOptionsBreakdown(false);
       questionStartTime.current = Date.now();
       setTimeLeft(timerSeconds);
     } else {
@@ -1179,24 +1202,67 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                   </div>
                 )}
 
-                <div className="text-xs space-y-1.5 pl-5">
-                  <div className="text-emerald-700 dark:text-emerald-400 flex items-center gap-1">
+                <div className="text-xs space-y-2 pl-5">
+                  <div className="text-emerald-700 dark:text-emerald-400 flex items-center gap-1 font-medium">
                     <span className="font-semibold">Correct Answer:</span>
                     <span>{q.options.find((o) => o.isCorrect)?.text}</span>
                   </div>
-                  {!q.isUserCorrect && q.selectedOptionId && (
-                    <div className="text-rose-600 dark:text-rose-400">
-                      <span className="font-semibold">Your Selection:</span>{" "}
-                      <span className="line-through">{q.options.find((o) => o.id === q.selectedOptionId)?.text}</span>
-                    </div>
-                  )}
+
+                  {!q.isUserCorrect && q.selectedOptionId && (() => {
+                    const chosen = q.options.find((o) => o.id === q.selectedOptionId);
+                    const correct = q.options.find((o) => o.isCorrect);
+                    const distractor = chosen && correct ? resolveDistractorExplanation(q.prompt, chosen, correct) : null;
+                    return (
+                      <div className="space-y-1.5">
+                        <div className="text-rose-600 dark:text-rose-400 font-medium">
+                          <span className="font-semibold">Your Selection:</span>{" "}
+                          <span className="line-through">{chosen?.text}</span>
+                        </div>
+                        {distractor?.whyIncorrect && (
+                          <div className="p-2.5 rounded-lg bg-rose-50/80 dark:bg-rose-950/30 border border-rose-200/80 dark:border-rose-900/50 text-[11px] leading-relaxed text-rose-900 dark:text-rose-200">
+                            <span className="font-semibold text-rose-700 dark:text-rose-300">Why your choice was wrong:</span>{" "}
+                            <FormattedText text={distractor.whyIncorrect} />
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })()}
+
                   {q.explanation && (
-                    <div className="text-zinc-500 dark:text-zinc-400 italic">
-                      {q.explanation}
+                    <div className="text-zinc-600 dark:text-zinc-400 text-[11px] leading-relaxed italic bg-zinc-50 dark:bg-zinc-800/50 p-2 rounded-lg border border-zinc-100 dark:border-zinc-800">
+                      <FormattedText text={q.explanation} />
                     </div>
                   )}
+
+                  {/* Option Inspector in Review */}
+                  {q.options.length > 1 && (() => {
+                    const breakdown = getOptionBreakdown(q.prompt, q.options);
+                    const meaningfulCount = breakdown.filter((b) => !b.isCorrect && (b.meaning || b.whyIncorrect)).length;
+                    if (meaningfulCount === 0) return null;
+                    return (
+                      <details className="group pt-1">
+                        <summary className="text-[11px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 cursor-pointer list-none flex items-center gap-1 transition-colors">
+                          <Info className="w-3 h-3 text-blue-500 shrink-0" />
+                          <span>Inspect other options ({meaningfulCount} distractors)</span>
+                        </summary>
+                        <div className="mt-2 space-y-1.5 pl-2.5 border-l-2 border-zinc-200 dark:border-zinc-700">
+                          {breakdown.map((opt) => (
+                            <div key={opt.id} className="text-[11px] text-zinc-600 dark:text-zinc-400">
+                              <span className="font-semibold text-zinc-800 dark:text-zinc-200">
+                                [{opt.id}] {opt.text}:
+                              </span>{" "}
+                              {opt.isCorrect
+                                ? "Correct answer."
+                                : (opt.meaning || opt.whyIncorrect)}
+                            </div>
+                          ))}
+                        </div>
+                      </details>
+                    );
+                  })()}
+
                   {/* Category & Status on Card */}
-                  <div className="pt-1 flex flex-wrap items-center gap-2 text-[11px] text-zinc-400 font-mono">
+                  <div className="pt-1.5 flex flex-wrap items-center gap-2 text-[11px] text-zinc-400 font-mono">
                     <span className="px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 flex items-center gap-1">
                       <DeckIcon deckId={q.card.deckId} className="w-3 h-3" />
                       <span>{decks.find((d) => d.id === q.card.deckId)?.title || "Accenture Technical"}</span>
@@ -1486,14 +1552,47 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 </div>
               )}
 
+              {/* Targeted Misconception Callout: Why your choice is incorrect */}
+              {selectedOptionId && currentQ && (() => {
+                const chosen = currentQ.options.find((o) => o.id === selectedOptionId);
+                const correct = currentQ.options.find((o) => o.isCorrect) || currentQ.options[0];
+                if (!chosen || chosen.isCorrect || !correct) return null;
+                const distractor = resolveDistractorExplanation(currentQ.prompt, chosen, correct);
+                return (
+                  <div className="rounded-2xl border border-rose-200/90 dark:border-rose-900/60 bg-rose-50/80 dark:bg-rose-950/30 p-4 transition-all shadow-2xs">
+                    <div className="flex items-start gap-3">
+                      <div className="w-7 h-7 rounded-lg bg-rose-100 dark:bg-rose-900/60 flex items-center justify-center shrink-0 text-rose-600 dark:text-rose-400 font-bold">
+                        <XCircle className="w-4 h-4" />
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <div className="text-xs font-semibold uppercase tracking-wider text-rose-700 dark:text-rose-300">
+                          Why your choice ({chosen.text}) is incorrect
+                        </div>
+                        <div className="text-xs sm:text-sm mt-1 leading-relaxed text-rose-900 dark:text-rose-100 font-medium">
+                          <FormattedText text={distractor.whyIncorrect} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
+
               {/* Conceptual Explanation Box */}
               <div className="rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-800/40 p-4 transition-all">
                 {/* Header row */}
                 <div className="flex items-center justify-between gap-2 mb-2.5 pb-2 border-b border-zinc-200/60 dark:border-zinc-700/60 flex-wrap">
                   <div className="flex items-center gap-2">
-                    <Sparkles className="w-3.5 h-3.5 text-amber-500 fill-current" />
+                    {currentQ?.options.find((o) => o.id === selectedOptionId)?.isCorrect ? (
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                    ) : (
+                      <Sparkles className="w-3.5 h-3.5 text-amber-500 fill-current" />
+                    )}
                     <span className="text-xs font-semibold text-zinc-900 dark:text-zinc-100">
-                      {isDeepMode ? "Deep Concept Breakdown" : "Exam Concept & Explanation"}
+                      {isDeepMode
+                        ? "Deep Concept Breakdown"
+                        : currentQ?.options.find((o) => o.id === selectedOptionId)?.isCorrect
+                        ? "Correct Solution & Concept"
+                        : "Correct Answer & Concept"}
                     </span>
                   </div>
 
@@ -1568,6 +1667,81 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     />
                   </div>
                 )}
+
+                {/* Option Inspector: What other options mean */}
+                {currentQ && currentQ.options.length > 1 && (() => {
+                  const breakdown = getOptionBreakdown(currentQ.prompt, currentQ.options);
+                  const meaningfulCount = breakdown.filter((b) => !b.isCorrect && (b.meaning || b.whyIncorrect)).length;
+                  if (meaningfulCount === 0) return null;
+
+                  return (
+                    <div className="mt-3.5 pt-3 border-t border-zinc-200/60 dark:border-zinc-700/50">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          sounds.playSelect();
+                          setShowAllOptionsBreakdown((prev) => !prev);
+                        }}
+                        className="w-full flex items-center justify-between text-xs font-semibold text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 py-1 cursor-pointer transition-colors"
+                      >
+                        <span className="flex items-center gap-1.5">
+                          <Info className="w-3.5 h-3.5 text-blue-500" />
+                          <span>
+                            {showAllOptionsBreakdown
+                              ? "Hide option meanings & roles"
+                              : `What do the other options mean? (${meaningfulCount} distractors)`}
+                          </span>
+                        </span>
+                        {showAllOptionsBreakdown ? (
+                          <ChevronUp className="w-3.5 h-3.5" />
+                        ) : (
+                          <ChevronDown className="w-3.5 h-3.5" />
+                        )}
+                      </button>
+
+                      {showAllOptionsBreakdown && (
+                        <div className="mt-2.5 space-y-2">
+                          {breakdown.map((opt) => (
+                            <div
+                              key={opt.id}
+                              className={`p-2.5 rounded-xl border text-xs leading-relaxed transition-all ${
+                                opt.isCorrect
+                                  ? "border-emerald-200 dark:border-emerald-900/60 bg-emerald-50/60 dark:bg-emerald-950/20 text-emerald-950 dark:text-emerald-100"
+                                  : opt.id === selectedOptionId
+                                  ? "border-rose-200 dark:border-rose-900/60 bg-rose-50/60 dark:bg-rose-950/20 text-rose-950 dark:text-rose-100"
+                                  : "border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300"
+                              }`}
+                            >
+                              <div className="flex items-center justify-between gap-1.5 font-semibold">
+                                <span className="flex items-center gap-1.5">
+                                  <span className="font-mono text-[11px] px-1.5 py-0.2 rounded bg-zinc-100 dark:bg-zinc-800">
+                                    [{opt.id}]
+                                  </span>
+                                  <span>{opt.text}</span>
+                                </span>
+                                {opt.isCorrect && (
+                                  <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/40">
+                                    Correct Answer
+                                  </span>
+                                )}
+                                {opt.id === selectedOptionId && !opt.isCorrect && (
+                                  <span className="text-[10px] text-rose-600 dark:text-rose-400 font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-rose-100 dark:bg-rose-900/40">
+                                    Your Choice
+                                  </span>
+                                )}
+                              </div>
+                              {(opt.meaning || opt.whyIncorrect) && (
+                                <div className="mt-1 text-[11px] text-zinc-600 dark:text-zinc-400 leading-normal pl-6">
+                                  {opt.meaning || opt.whyIncorrect}
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Navigation & Next Button */}

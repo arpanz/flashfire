@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { resolveDistractorExplanation, getOptionBreakdown } from "@/lib/distractorEngine";
 
 interface ExplainRequestBody {
   question: string;
@@ -112,14 +113,17 @@ export async function POST(req: NextRequest) {
 
     if (mode === "deep") {
       systemPrompt =
-        "You are a friendly, clear technical tutor. Explain in simple, crystal-clear language that anyone can grasp quickly:\n" +
-        "### 💡 Simple Concept\nIn 2 simple sentences, explain the core idea of why the correct answer is right.\n\n" +
-        "### 🎯 Why Other Options Don't Work\n1 short, simple bullet point for each incorrect option.\n\n" +
+        "You are an insightful technical exam tutor. Explain clearly, simply, and concisely:\n" +
+        (chosenOpt && !isUserCorrect
+          ? "### ❌ Why Your Choice Was Incorrect\nIn 1-2 sentences, explain why the user's selected choice is wrong and what that option actually does or represents.\n\n"
+          : "") +
+        "### 💡 Core Concept\nIn 1-2 simple sentences, explain why the correct answer is right.\n\n" +
+        "### 🎯 What Other Options Mean\n1 short bullet point for each incorrect option explaining what it does or why it is a trap.\n\n" +
         "### ⚡ Quick Memory Trick\nA short 1-line rule or mnemonic to easily remember this.\n\n" +
         "RULES:\n" +
-        "- Keep it simple, clear, and strictly under 85 words total.\n" +
+        "- Keep it simple, clear, and under 95 words total.\n" +
         "- NEVER use Markdown tables or ASCII matrices. Use only bullet points and bold text.\n" +
-        "- NEVER repeat or echo the question, options, reasoning steps, or draft steps. Start directly with ### 💡 Simple Concept.";
+        "- NEVER repeat or echo the question, options, reasoning steps, or draft steps. Start directly with the section headers.";
 
       userPrompt =
         `Question: ${question}\n` +
@@ -129,9 +133,11 @@ export async function POST(req: NextRequest) {
         (fallbackExplanation ? `Context Details: ${fallbackExplanation}\n` : "");
     } else {
       systemPrompt =
-        "You are a concise exam tutor. In 1-2 punchy sentences, explain why the correct option is right. " +
-        "If the user chose incorrectly, briefly explain why. " +
-        "Keep it strictly under 45 words, direct, clear, and beginner-friendly.\n" +
+        "You are a concise exam tutor. " +
+        (chosenOpt && !isUserCorrect
+          ? `The user chose [${chosenOpt.id}] ${chosenOpt.text}. In 1 sentence explain why that choice is wrong and what it actually does, then state why the correct answer is right. `
+          : "In 1-2 punchy sentences, explain why the correct option is right. ") +
+        "Keep it strictly under 50 words, direct, clear, and beginner-friendly.\n" +
         "CRITICAL: Output ONLY the final explanation. Do NOT output any analysis, reasoning steps, drafting steps, or word counts. Never repeat the question or options. Start directly with the explanation.";
 
       userPrompt =
@@ -178,14 +184,30 @@ export async function POST(req: NextRequest) {
       }
 
       if (mode === "deep") {
-        const wrongOpts = options.filter((o) => !o.isCorrect);
+        let distractorSection = "";
+        if (chosenOpt && !isUserCorrect) {
+          const distractor = resolveDistractorExplanation(question, chosenOpt, correctOpt);
+          distractorSection = `### ❌ Why Your Choice Was Incorrect\n${distractor.whyIncorrect}\n\n`;
+        }
+
+        const breakdown = getOptionBreakdown(question, options);
+        const optionsListBullets = breakdown
+          .filter((b) => !b.isCorrect && (b.meaning || b.whyIncorrect))
+          .map((b) => `- **[${b.id}] ${b.text}**: ${b.meaning || b.whyIncorrect}`)
+          .join("\n");
+
         explanationText =
+          distractorSection +
           `### 💡 Core Concept\n**[${correctOpt.id}] ${correctOpt.text}** is correct. ${cleanFallback}\n\n` +
-          `### 🎯 Why Other Options Don't Work\n` +
-          wrongOpts.map((o) => `- **[${o.id}] ${o.text}**: Does not satisfy this question's requirements.`).join("\n") +
-          `\n\n### ⚡ Quick Memory Trick\nAssociate **"${question.slice(0, 45).replace(/"/g, '')}..."** directly with **${correctOpt.text}**.`;
+          (optionsListBullets ? `### 🎯 What Other Options Mean\n${optionsListBullets}\n\n` : "") +
+          `### ⚡ Quick Memory Trick\nAssociate **"${question.slice(0, 45).replace(/"/g, '')}..."** directly with **${correctOpt.text}**.`;
       } else {
-        explanationText = cleanFallback;
+        if (chosenOpt && !isUserCorrect) {
+          const distractor = resolveDistractorExplanation(question, chosenOpt, correctOpt);
+          explanationText = `❌ **[${chosenOpt.id}] ${chosenOpt.text}** is incorrect: ${distractor.meaning || distractor.whyIncorrect}\n\n✅ **Correct Answer:** ${cleanFallback}`;
+        } else {
+          explanationText = cleanFallback;
+        }
       }
       usedModel = "offline-fallback";
     }
