@@ -100,7 +100,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-1",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Shortcut to bold selected text in Word?",
+    "front": "Which keyboard shortcut is used to bold selected text in Microsoft Word?",
     "back": "Ctrl+B",
     "explanation": "Ctrl+B toggles bold styling on the selected text or toggles bold mode for newly typed characters.",
     "mcqOptions": [
@@ -149,7 +149,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-2",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Excel function for the highest value in a range?",
+    "front": "Which Excel function returns the highest numerical value in a range of cells?",
     "back": "MAX",
     "explanation": "The MAX function scans a range of numeric values and returns the single highest value among them.",
     "mcqOptions": [
@@ -247,7 +247,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-4",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Intersection of a row and a column in Excel is called a:",
+    "front": "What is the intersection of a row and a column in Microsoft Excel called?",
     "back": "Cell",
     "explanation": "In a spreadsheet grid, the intersection point of a vertical column and a horizontal row is called a cell.",
     "mcqOptions": [
@@ -296,7 +296,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-5",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Shortcut to print a document?",
+    "front": "Which keyboard shortcut is standardly used to print a document?",
     "back": "Ctrl+P",
     "explanation": "Ctrl+P is the standard shortcut across Microsoft Office and Windows applications to open the Print preview and dialog.",
     "mcqOptions": [
@@ -345,7 +345,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-6",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Shortcut to close the active Word document?",
+    "front": "Which keyboard shortcut closes the currently active document window in Word?",
     "back": "Ctrl+W",
     "explanation": "Ctrl+W closes the currently active document or workbook window without exiting the entire application.",
     "mcqOptions": [
@@ -394,7 +394,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-7",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Shortcut for spell check in Word?",
+    "front": "Which function key launches the Spelling & Grammar checker in Microsoft Word?",
     "back": "F7",
     "explanation": "Pressing F7 initiates the Spelling & Grammar proofing checker across the document in Word, Excel, and PowerPoint.",
     "mcqOptions": [
@@ -443,7 +443,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-8",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Default title of a new Word file?",
+    "front": "What is the default filename assigned to a newly created, unsaved Word document?",
     "back": "Document1",
     "explanation": "Document1 is the default temporary placeholder name assigned by Microsoft Word when creating a new blank document.",
     "mcqOptions": [
@@ -541,7 +541,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-10",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Shortcut to insert a new slide in PowerPoint?",
+    "front": "Which keyboard shortcut is used to insert a new slide into a PowerPoint presentation?",
     "back": "Ctrl+M",
     "explanation": "Ctrl+M inserts a new blank slide immediately after the active slide in PowerPoint (Ctrl+N creates an entirely new presentation).",
     "mcqOptions": [
@@ -590,7 +590,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-11",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Effects used to introduce slides in PowerPoint are:",
+    "front": "What are the motion effects used to introduce slides as they appear in PowerPoint called?",
     "back": "Transitions",
     "explanation": "Slide Transitions control visual motion when moving from one slide to another, while Animations apply motion to individual slide objects.",
     "mcqOptions": [
@@ -688,7 +688,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-13",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Holding the left mouse button and moving an object on a slide is:",
+    "front": "What is the action of holding down the left mouse button while moving an object called?",
     "back": "Dragging",
     "explanation": "Dragging is the operation of pressing and holding the primary mouse button while moving the cursor across the screen to reposition items.",
     "mcqOptions": [
@@ -737,7 +737,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-14",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "App used for newsletters, flyers, and greeting cards?",
+    "front": "Which Microsoft Office desktop application is designed for creating newsletters, flyers, and greeting cards?",
     "back": "Publisher",
     "explanation": "Microsoft Publisher is specifically designed for desktop publishing, page layout, newsletters, brochures, flyers, and greeting cards.",
     "mcqOptions": [
@@ -835,7 +835,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-16",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Function used to create a drop-down in Excel cells?",
+    "front": "Which Excel feature is used to configure an interactive drop-down list in a cell?",
     "back": "Data Validation",
     "explanation": "Data Validation allows you to restrict user input and generate convenient in-cell drop-down lists by specifying allowed values or list ranges.",
     "mcqOptions": [
@@ -884,7 +884,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-17",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Macro-enabled Excel 2007+ workbook extension?",
+    "front": "What is the standard file extension for a macro-enabled Microsoft Excel workbook?",
     "back": ".xlsm",
     "explanation": ".xlsm denotes an XML-based Excel workbook that contains VBA macros, whereas standard .xlsx files cannot store macro code for security.",
     "mcqOptions": [
@@ -933,7 +933,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-18",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "In Excel, B8:B10 refers to:",
+    "front": "In an Excel formula, what does the cell reference B8:B10 represent?",
     "back": "All cells from B8 to B10",
     "explanation": "The colon (:) is the range operator in Excel, signifying a contiguous range of cells from column B row 8 down to column B row 10.",
     "mcqOptions": [
@@ -1031,7 +1031,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-20",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Shortcut to select the entire document in Word?",
+    "front": "Which keyboard shortcut selects all text and content within a Microsoft Word document?",
     "back": "Ctrl+A",
     "explanation": "Ctrl+A selects all content, including text, tables, and objects, across the active document.",
     "mcqOptions": [
@@ -1080,7 +1080,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-21",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "A link that jumps to another location in a document is a:",
+    "front": "What is a link that navigates to another location, document, or webpage called?",
     "back": "Hyperlink",
     "explanation": "A Hyperlink allows readers to click and navigate directly to another webpage, external file, or internal bookmark/heading.",
     "mcqOptions": [
@@ -1129,7 +1129,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-22",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Track Changes in Word is found under:",
+    "front": "Under which ribbon tab is the Track Changes feature located in Microsoft Word?",
     "back": "Review",
     "explanation": "The Review tab houses collaboration and proofing tools including Track Changes, Comments, Compare, and Spelling/Grammar checks.",
     "mcqOptions": [
@@ -1178,7 +1178,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-23",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "In Excel, the small square at the bottom-right of the active cell is the:",
+    "front": "What is the small square located at the bottom-right corner of an active Excel cell called?",
     "back": "Fill handle",
     "explanation": "The Fill Handle is the small solid square in the bottom-right corner of the active cell, used to auto-fill formulas or data sequences.",
     "mcqOptions": [
@@ -1276,7 +1276,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-25",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Outlook shortcut to create a new email?",
+    "front": "Which keyboard shortcut is used to compose a new email message in Microsoft Outlook?",
     "back": "Ctrl+Shift+M",
     "explanation": "Ctrl+Shift+M is the dedicated global keyboard shortcut to open a new email compose window in Microsoft Outlook.",
     "mcqOptions": [
@@ -1325,7 +1325,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-26",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "VPN stands for:",
+    "front": "What does the network acronym VPN stand for?",
     "back": "Virtual Private Network",
     "explanation": "A Virtual Private Network (VPN) encrypts internet traffic and tunnels it through an intermediary server, masking IP and securing transmission.",
     "mcqOptions": [
@@ -1374,7 +1374,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-27",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Attack that floods a network to disrupt service?",
+    "front": "Which type of cyber attack floods a target server with traffic to disrupt legitimate access?",
     "back": "DDoS",
     "explanation": "A Distributed Denial of Service (DDoS) attack overwhelms target servers, switches, or bandwidth with flood traffic from multiple botnet nodes.",
     "mcqOptions": [
@@ -1423,7 +1423,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-28",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Protocol commonly used for secure remote access / secure file transfer?",
+    "front": "Which protocol is standardly used for encrypted remote command-line login and secure file transfer?",
     "back": "SSH",
     "explanation": "SSH (Secure Shell) provides encrypted remote command-line login and secure file transfer (SFTP/SCP) over port 22.",
     "mcqOptions": [
@@ -1472,7 +1472,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-29",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Main purpose of a firewall?",
+    "front": "What is the primary function of a network firewall?",
     "back": "Filter traffic using security rules",
     "explanation": "A firewall filters inbound and outbound network traffic based on predefined security rules to block unauthorized connections.",
     "mcqOptions": [
@@ -1521,7 +1521,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-30",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "OSI layer that routes packets between networks?",
+    "front": "Which OSI layer is responsible for logical IP addressing and packet routing between networks?",
     "back": "Network",
     "explanation": "The Network Layer (Layer 3 of OSI) handles logical addressing (IP addresses) and routes packets across distinct interconnected networks.",
     "mcqOptions": [
@@ -1619,7 +1619,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-32",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Most secure Wi-Fi protocol among common options?",
+    "front": "Among common Wi-Fi security standards, which protocol provides the strongest cryptographic protection?",
     "back": "WPA3",
     "explanation": "WPA3 provides stronger cryptographic protection with 192-bit security suite support and Protected Management Frames (PMF), replacing WPA2.",
     "mcqOptions": [
@@ -1668,7 +1668,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-33",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "DNS mainly uses which transport protocol?",
+    "front": "Which transport-layer protocol is primarily used by DNS for standard name lookup queries?",
     "back": "UDP (primarily)",
     "explanation": "DNS queries primarily use UDP on port 53 for fast resolution, falling back to TCP port 53 for zone transfers or responses exceeding 512 bytes.",
     "mcqOptions": [
@@ -1717,7 +1717,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-34",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Default HTTP and HTTPS ports?",
+    "front": "What are the default standard port numbers assigned to HTTP and HTTPS traffic?",
     "back": "80 and 443",
     "explanation": "HTTP unencrypted web traffic defaults to TCP port 80, whereas secure HTTPS traffic encrypted via TLS defaults to TCP port 443.",
     "mcqOptions": [
@@ -1766,7 +1766,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-35",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Device that forwards packets between different networks?",
+    "front": "Which network hardware device is responsible for forwarding packets across different IP subnets?",
     "back": "Router",
     "explanation": "A router is a Layer 3 device that inspects destination IP addresses to forward packets across different subnets and network boundaries.",
     "mcqOptions": [
@@ -1815,7 +1815,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-36",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "DHCP is used to:",
+    "front": "What is the primary role of the Dynamic Host Configuration Protocol (DHCP) in a network?",
     "back": "Automatically assign IP addresses",
     "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses, subnet masks, default gateways, and DNS servers to client devices on a network.",
     "mcqOptions": [
@@ -1864,7 +1864,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-37",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "MAC address operates at which OSI layer?",
+    "front": "At which layer of the OSI reference model do physical MAC addresses operate?",
     "back": "Data Link",
     "explanation": "MAC (Media Access Control) hardware addresses operate at Layer 2 (Data Link Layer) to deliver frames across the local physical segment.",
     "mcqOptions": [
@@ -1913,7 +1913,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-38",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "SMTP is used for:",
+    "front": "What is the primary function of the Simple Mail Transfer Protocol (SMTP)?",
     "back": "Sending email",
     "explanation": "SMTP (Simple Mail Transfer Protocol) on port 25 or 587 is used by email clients to send/push messages to mail servers.",
     "mcqOptions": [
@@ -1962,7 +1962,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-39",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "NAT is used to:",
+    "front": "What is the primary purpose of Network Address Translation (NAT)?",
     "back": "Map private IPs to a public IP",
     "explanation": "NAT (Network Address Translation) maps multiple private internal IP addresses to a single public IP address, conserving IPv4 addresses and adding basic security.",
     "mcqOptions": [
@@ -2011,7 +2011,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-40",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "IPv4 address size is:",
+    "front": "What is the standard length of an IPv4 address in bits?",
     "back": "32 bits",
     "explanation": "IPv4 addresses are 32 bits long, divided into 4 octets written in dotted-decimal format (providing ~4.3 billion total addresses).",
     "mcqOptions": [
@@ -2060,7 +2060,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-41",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "IPv6 address size is:",
+    "front": "What is the standard length of an IPv6 address in bits?",
     "back": "128 bits",
     "explanation": "IPv6 addresses are 128 bits long, expressed as 8 groups of 4 hexadecimal digits, resolving IPv4 address exhaustion.",
     "mcqOptions": [
@@ -2109,7 +2109,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-42",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "A switch typically operates at:",
+    "front": "At which OSI layer does a standard Layer 2 network switch operate?",
     "back": "Layer 2",
     "explanation": "Standard Ethernet switches operate at Layer 2 (Data Link Layer), using MAC address forwarding tables to switch frames directly to destination ports.",
     "mcqOptions": [
@@ -2207,7 +2207,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-44",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Port 22 is associated with:",
+    "front": "Which secure networking protocol standardly uses port 22?",
     "back": "SSH",
     "explanation": "Port 22 is the standard well-known TCP port assigned to SSH (Secure Shell) for encrypted remote administration.",
     "mcqOptions": [
@@ -2305,7 +2305,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-46",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Authentication means:",
+    "front": "In computer security, what does authentication specifically verify?",
     "back": "Verifying identity",
     "explanation": "Authentication verifies the identity of a user or system (answering 'Who are you?'), usually via passwords, tokens, or biometrics.",
     "mcqOptions": [
@@ -2354,7 +2354,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-47",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Authorization means:",
+    "front": "In computer security access control, what does authorization determine?",
     "back": "Checking what you are allowed to do",
     "explanation": "Authorization determines the permissions and resources a verified user is permitted to access (answering 'What are you allowed to do?').",
     "mcqOptions": [
@@ -2452,7 +2452,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-49",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Phishing is:",
+    "front": "Which statement best defines a phishing attack?",
     "back": "Tricking users to reveal credentials",
     "explanation": "Phishing is a social engineering attack that masquerades as a trusted entity to trick victims into divulging credentials, financial details, or personal data.",
     "mcqOptions": [
@@ -2501,7 +2501,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-50",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Packet-filtering firewall inspects:",
+    "front": "What header information does a stateless packet-filtering firewall inspect?",
     "back": "Header info such as IP/port",
     "explanation": "Packet-filtering firewalls inspect Layer 3 and Layer 4 packet header attributes (source/destination IP, protocol, and port numbers) against rule sets.",
     "mcqOptions": [
@@ -2550,7 +2550,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-51",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Stateful inspection firewalls track:",
+    "front": "What key state information do stateful inspection firewalls maintain to filter packets?",
     "back": "Active connections",
     "explanation": "Stateful inspection firewalls maintain a state table tracking the context and sequence of active two-way network connections.",
     "mcqOptions": [
@@ -2599,7 +2599,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-52",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Encapsulating Security Payload (ESP) in IPsec provides:",
+    "front": "What security services does the Encapsulating Security Payload (ESP) provide in IPsec?",
     "back": "Confidentiality of payload (and often integrity)",
     "explanation": "ESP provides data confidentiality (encryption), integrity, authentication, and anti-replay protection for IP payloads.",
     "mcqOptions": [
@@ -2697,7 +2697,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-54",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "A security group in cloud typically is:",
+    "front": "In cloud environments, how does a virtual security group primarily function?",
     "back": "A virtual firewall for instances",
     "explanation": "A security group acts as a virtual, stateful firewall controlling inbound and outbound traffic at the virtual instance level.",
     "mcqOptions": [
@@ -2746,7 +2746,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-55",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Encryption of data at rest mainly protects:",
+    "front": "What threat does encryption of data at rest primarily protect against?",
     "back": "Data stored on disk",
     "explanation": "Encryption at rest safeguards static data stored on physical disks, databases, or object storage against unauthorized physical or offline access.",
     "mcqOptions": [
@@ -2795,7 +2795,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-56",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Man-in-the-middle attack:",
+    "front": "What occurs during a Man-in-the-Middle (MitM) cyber attack?",
     "back": "Intercepts communication between two parties",
     "explanation": "A MitM attack occurs when an adversary secretly relays, intercepts, or alters communications between two unsuspecting parties who believe they are communicating directly.",
     "mcqOptions": [
@@ -2844,7 +2844,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-57",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Spoofing means:",
+    "front": "In network and information security, what does spoofing refer to?",
     "back": "Faking identity (IP/MAC/email)",
     "explanation": "Spoofing is the practice of disguising communication from an unknown source as being from a known, trusted source by faking IP, MAC, or email addresses.",
     "mcqOptions": [
@@ -2942,7 +2942,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-59",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Shared responsibility model in cloud means:",
+    "front": "What does the cloud Shared Responsibility Model delineate between provider and customer?",
     "back": "Security duties are split between provider and customer",
     "explanation": "In cloud computing, security obligations are divided: the cloud provider manages 'security OF the cloud' (hardware/infrastructure), while the customer handles 'security IN the cloud' (data, OS, configurations).",
     "mcqOptions": [
@@ -3040,7 +3040,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-61",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "IaaS gives control of:",
+    "front": "In an Infrastructure as a Service (IaaS) cloud model, what layer does the customer manage?",
     "back": "OS, VMs, storage, and network config",
     "explanation": "IaaS (Infrastructure as a Service) provides virtualized compute, storage, and networking resources where users install and manage their own OS, middleware, and applications.",
     "mcqOptions": [
@@ -3383,7 +3383,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-68",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Instant scalability is a property of:",
+    "front": "Rapid elasticity and on-demand scalability are defining characteristics of which computing paradigm?",
     "back": "Cloud",
     "explanation": "Cloud computing features rapid elasticity, allowing computing capacity, memory, and storage to scale up or down on-demand within seconds.",
     "mcqOptions": [
@@ -3481,7 +3481,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-70",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Major public cloud providers include:",
+    "front": "Which of the following are recognized as major hyperscale public cloud providers?",
     "back": "All of these",
     "explanation": "Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) comprise the top global hyperscale public cloud providers.",
     "mcqOptions": [
@@ -3530,7 +3530,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-71",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Cloud storage capacity is generally described as:",
+    "front": "How is storage capacity typically characterized in public cloud environments?",
     "back": "Effectively elastic/unlimited for practical use",
     "explanation": "Cloud storage offers virtually unlimited, elastic capacity that automatically scales dynamically to match data volume without manual disk provisioning.",
     "mcqOptions": [
@@ -6643,7 +6643,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-133",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "A hub operates at:",
+    "front": "At which OSI layer does a legacy network hub operate?",
     "back": "Layer 1",
     "explanation": "A standard hub operates at Layer 1 (Physical Layer) of the OSI model, broadcasting all incoming electrical signals to all other ports without packet inspection.",
     "mcqOptions": [
@@ -6839,7 +6839,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-137",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Private IPv4 ranges include:",
+    "front": "Which of the following IP address blocks are designated as private IPv4 ranges under RFC 1918?",
     "back": "192.168.0.0/16",
     "explanation": "RFC 1918 defines private address spaces: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16.",
     "mcqOptions": [
@@ -6986,7 +6986,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-140",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "A switch vs a hub: the switch mainly:",
+    "front": "How does a network switch fundamentally differ in operation from a network hub?",
     "back": "Forwards using MAC and splits collision domains",
     "explanation": "A switch works at Layer 2 using MAC address tables to direct frames only to the designated port, creating dedicated collision domains per port.",
     "mcqOptions": [
@@ -7035,7 +7035,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-141",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "DHCP typically uses ports:",
+    "front": "Which UDP ports are standardly used by DHCP client and server communications?",
     "back": "67/68",
     "explanation": "DHCP utilizes UDP port 67 for the server to listen for requests and UDP port 68 for clients to receive configuration responses.",
     "mcqOptions": [
@@ -7084,7 +7084,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-142",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "nslookup is used to:",
+    "front": "What is the primary administrative use of the nslookup network utility command?",
     "back": "Query DNS records",
     "explanation": "The nslookup utility sends queries directly to DNS servers to resolve domain names to IP addresses or inspect DNS records.",
     "mcqOptions": [
@@ -7133,7 +7133,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-143",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Star topology's center device is usually a:",
+    "front": "In a standard star network topology, what central device connects all surrounding endpoints?",
     "back": "Switch/hub",
     "explanation": "In a star topology, all network nodes connect individually to a central concentrating device such as a network switch or hub.",
     "mcqOptions": [
@@ -7182,7 +7182,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-144",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "VLAN is used to:",
+    "front": "What is the primary function of creating Virtual LANs (VLANs) on network switches?",
     "back": "Logically segment a LAN",
     "explanation": "A Virtual Local Area Network (VLAN) groups physical switch ports into logically isolated broadcast domains regardless of physical location.",
     "mcqOptions": [
@@ -7329,7 +7329,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-147",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Ransomware typically:",
+    "front": "What is the characteristic behavior of ransomware malware once it executes on a host?",
     "back": "Encrypts files and demands payment",
     "explanation": "Ransomware covertly encrypts the victim's critical data files and demands a cryptocurrency ransom in exchange for the decryption key.",
     "mcqOptions": [
@@ -7378,7 +7378,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-148",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "CIA triad is:",
+    "front": "What three foundational pillars comprise the CIA security triad?",
     "back": "Confidentiality, Integrity, Availability",
     "explanation": "The CIA triad forms the cornerstone of information security: Confidentiality (secrecy), Integrity (accuracy), and Availability (accessibility).",
     "mcqOptions": [
@@ -7427,7 +7427,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-149",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Hashing is mainly for:",
+    "front": "What is the primary cryptographic purpose of a cryptographic hash function?",
     "back": "Integrity / one-way fingerprint",
     "explanation": "Cryptographic hashing algorithms generate a fixed-size, irreversible digest of data to verify integrity and detect tampering.",
     "mcqOptions": [
@@ -7476,7 +7476,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-150",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "AES is a:",
+    "front": "What category of cryptographic algorithm is the Advanced Encryption Standard (AES)?",
     "back": "Symmetric cipher",
     "explanation": "AES (Advanced Encryption Standard) is a symmetric block cipher approved by NIST using keys of 128, 192, or 256 bits.",
     "mcqOptions": [
@@ -7525,7 +7525,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-151",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "RSA is typically:",
+    "front": "What category of cryptographic algorithm is the RSA cryptosystem?",
     "back": "Asymmetric (public/private keys)",
     "explanation": "RSA is an asymmetric cryptographic algorithm relying on the mathematical difficulty of factoring large composite integers into two prime factors.",
     "mcqOptions": [
@@ -7574,7 +7574,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-152",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "HTTPS uses:",
+    "front": "Which cryptographic protocol does HTTPS use to encrypt web communications?",
     "back": "TLS/SSL over HTTP",
     "explanation": "HTTPS encapsulates standard HTTP application traffic within a secure Transport Layer Security (TLS/SSL) encrypted tunnel over port 443.",
     "mcqOptions": [
@@ -7623,7 +7623,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-153",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "MFA means:",
+    "front": "What does Multi-Factor Authentication (MFA) require from a user during authentication?",
     "back": "Extra factor besides password",
     "explanation": "Multi-Factor Authentication requires two or more distinct authentication categories: something you know (password), something you have (phone/token), or something you are (biometrics).",
     "mcqOptions": [
@@ -7672,7 +7672,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-154",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "IDS vs IPS: IPS additionally:",
+    "front": "Compared to an Intrusion Detection System (IDS), what additional capability does an IPS provide?",
     "back": "Can block/prevent the attack",
     "explanation": "While an IDS only detects and logs alerts, an IPS (Intrusion Prevention System) sits in-line on the network to actively block or drop malicious packets in real time.",
     "mcqOptions": [
@@ -7721,7 +7721,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-155",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "SQL injection targets:",
+    "front": "What backend component does a SQL injection attack specifically target and manipulate?",
     "back": "Database queries via untrusted input",
     "explanation": "SQL injection (SQLi) occurs when unsanitized user input is directly concatenated into database queries. Attackers exploit this vulnerability to execute arbitrary SQL commands, bypassing authentication and accessing or modifying sensitive backend database records.",
     "mcqOptions": [
@@ -7770,7 +7770,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-156",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Social engineering attacks:",
+    "front": "How do social engineering attacks exploit organizational security?",
     "back": "People, not only packets",
     "explanation": "Social engineering exploits human psychology (trust, urgency, fear) rather than technical software bugs to manipulate people into breaking security procedures.",
     "mcqOptions": [
@@ -7819,7 +7819,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-157",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Least privilege means:",
+    "front": "What does the principle of least privilege dictate regarding user permissions?",
     "back": "Minimum access needed for the job",
     "explanation": "The principle of least privilege mandates granting users and processes only the absolute minimum permissions necessary to perform their assigned functions.",
     "mcqOptions": [
@@ -7868,7 +7868,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-158",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "A digital certificate is issued by a:",
+    "front": "Which trusted entity issues and digitally signs public key SSL/TLS certificates?",
     "back": "Certificate Authority",
     "explanation": "A Certificate Authority (CA) acts as a trusted third-party organization that cryptographically validates identities and issues digital X.509 certificates.",
     "mcqOptions": [
@@ -7917,7 +7917,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-159",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Brute-force attack:",
+    "front": "How does an attacker attempt to crack passwords during a brute-force attack?",
     "back": "Tries many passwords",
     "explanation": "A brute-force attack systematically generates and attempts every possible combination of characters until the correct password or key is found.",
     "mcqOptions": [
@@ -7966,7 +7966,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-160",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Keylogger captures:",
+    "front": "What specific user activity does keylogger spyware surreptitiously record?",
     "back": "Keystrokes",
     "explanation": "A keylogger is spyware designed to covertly record every keystroke entered on a keyboard to capture passwords, messages, and sensitive inputs.",
     "mcqOptions": [
@@ -8064,7 +8064,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-162",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Billing by actual use is:",
+    "front": "What cloud pricing model bills customers strictly based on actual consumed resources?",
     "back": "Measured service",
     "explanation": "Measured service automatically meters and controls cloud resource consumption, allowing utility-based pay-as-you-go billing.",
     "mcqOptions": [
@@ -8162,7 +8162,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-164",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Mix of public + private is:",
+    "front": "Which cloud deployment model blends on-premises private infrastructure with public cloud capacity?",
     "back": "Hybrid",
     "explanation": "A hybrid cloud infrastructure combines two or more distinct cloud models (private, community, or public) bound together by standardized technology for data and application portability.",
     "mcqOptions": [
@@ -8211,7 +8211,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-165",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Amazon EC2 is mainly:",
+    "front": "Which cloud service model does Amazon Elastic Compute Cloud (EC2) represent?",
     "back": "IaaS",
     "explanation": "Amazon Elastic Compute Cloud (EC2) provides resizable compute capacity via virtual servers, making it a hallmark IaaS offering.",
     "mcqOptions": [
@@ -8260,7 +8260,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-166",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Google App Engine / Heroku are mainly:",
+    "front": "Google App Engine and Heroku are classic examples of which cloud computing service model?",
     "back": "PaaS",
     "explanation": "Google App Engine and Heroku provide managed application platforms where developers deploy code without managing servers, classifying them as PaaS.",
     "mcqOptions": [
@@ -8309,7 +8309,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-167",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Salesforce / Dropbox-style apps are mainly:",
+    "front": "Ready-to-use cloud applications like Salesforce and Dropbox represent which service model?",
     "back": "SaaS",
     "explanation": "Salesforce and Dropbox deliver complete, ready-to-use software applications over the internet to end users, classifying them as SaaS.",
     "mcqOptions": [
@@ -8456,7 +8456,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-170",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "SPI cloud models are:",
+    "front": "In cloud terminology, what three service layers does the SPI acronym refer to?",
     "back": "SaaS, PaaS, IaaS",
     "explanation": "The fundamental SPI cloud service delivery models defined by NIST are SaaS (Software), PaaS (Platform), and IaaS (Infrastructure).",
     "mcqOptions": [
@@ -8505,7 +8505,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-171",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Multi-tenancy means:",
+    "front": "What does the architectural concept of multi-tenancy mean in cloud computing?",
     "back": "Many customers share the same platform, isolated logically",
     "explanation": "Multi-tenancy is an architectural model where a single instance of a software application serves multiple distinct customer groups (tenants) while logically isolating their data.",
     "mcqOptions": [
@@ -8554,7 +8554,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-172",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Hardware virtualized in the cloud is the core of:",
+    "front": "Providing virtualized hardware resources on-demand forms the foundation of which service model?",
     "back": "IaaS",
     "explanation": "Virtualizing raw compute, networking, and block storage infrastructure forms the architectural foundation of Infrastructure as a Service (IaaS).",
     "mcqOptions": [
@@ -8603,7 +8603,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-173",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Google Workspace is an example of:",
+    "front": "Google Workspace is an example of which cloud service delivery model?",
     "back": "SaaS",
     "explanation": "Google Workspace (Docs, Sheets, Gmail) provides cloud-hosted productivity software accessible via web browsers, exemplifying SaaS.",
     "mcqOptions": [
@@ -8701,7 +8701,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-175",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Availability Zone is best described as:",
+    "front": "In cloud architecture, how is an Availability Zone (AZ) best described?",
     "back": "Isolated data-center group inside a region",
     "explanation": "An Availability Zone consists of one or more discrete, redundant data centers located within a geographic region, engineered with independent power, cooling, and networking.",
     "mcqOptions": [
@@ -10148,7 +10148,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-203",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "In cloud computing, multi-tenancy refers to:",
+    "front": "In cloud computing architecture, how is multi-tenancy defined?",
     "back": "Multiple users accessing the same application or database instance",
     "explanation": "Multi-tenancy is a core cloud architecture feature where a single software instance or infrastructure pool serves multiple independent customers (tenants) securely.",
     "mcqOptions": [
@@ -10246,7 +10246,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-205",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Main purpose of a load balancer in cloud architecture?",
+    "front": "What is the primary role of a load balancer in cloud application architecture?",
     "back": "Distribute network traffic evenly across servers",
     "explanation": "Load balancers distribute incoming client requests evenly across multiple backend servers to prevent overload, maximize throughput, and ensure high availability.",
     "mcqOptions": [
@@ -10295,7 +10295,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-206",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Organization transitioning to cloud with highly sensitive data. Most secure deployment?",
+    "front": "An organization with highly sensitive data is transitioning to the cloud. Which deployment model provides the highest security?",
     "back": "Private",
     "explanation": "A Private Cloud deployment provides exclusive physical infrastructure and isolated networks, making it the most secure choice for highly sensitive data.",
     "mcqOptions": [
@@ -10344,7 +10344,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-207",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Highly confidential financial records needing complete control over infrastructure and security policies. Most appropriate model?",
+    "front": "Which cloud deployment model is best for financial records requiring absolute control over infrastructure?",
     "back": "Private",
     "explanation": "Strict financial compliance and confidentiality standards require the dedicated governance, granular network policies, and isolated infrastructure of a Private Cloud.",
     "mcqOptions": [
@@ -10442,7 +10442,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-209",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Hassle-free office productivity tools over the internet, no IT management complexity. Best use case?",
+    "front": "When an organization adopts web-based productivity tools to avoid managing server infrastructure, which cloud model is used?",
     "back": "Software as a Service",
     "explanation": "Software as a Service (SaaS) provides ready-to-use software applications hosted on the cloud and accessed via web browser, removing infrastructure and OS maintenance burdens.",
     "mcqOptions": [
@@ -10491,7 +10491,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-210",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Employees use email and office apps in a browser without installing/maintaining software. Model?",
+    "front": "When employees access office suites and email directly via a browser without local software maintenance, which cloud model is this?",
     "back": "SaaS",
     "explanation": "SaaS delivers web-based productivity and email suites (such as Google Workspace and Microsoft 365) without requiring local installation or administrative patching.",
     "mcqOptions": [
@@ -10932,7 +10932,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-219",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Scalability in cloud means:",
+    "front": "What does scalability mean in the context of cloud infrastructure?",
     "back": "Increasing or decreasing resources based on demand",
     "explanation": "Cloud scalability refers to the capability to expand or reduce system resources (CPU, RAM, storage) dynamically to match fluctuating demand.",
     "mcqOptions": [
@@ -10981,7 +10981,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-220",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Virtualization is:",
+    "front": "How is virtualization technology defined in cloud data centers?",
     "back": "Creating virtual versions of computing resources",
     "explanation": "Virtualization is the process of creating a software-based representation of physical servers, storage, or networks using a hypervisor.",
     "mcqOptions": [
@@ -11079,7 +11079,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-222",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Pay-as-you-go means:",
+    "front": "What does the pay-as-you-go billing model mean in cloud computing?",
     "back": "Pay according to resources consumed",
     "explanation": "Pay-as-you-go is a utility billing model where organizations only pay for the exact volume of computing resources, storage, and bandwidth they consume.",
     "mcqOptions": [
@@ -11471,7 +11471,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-230",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Main purpose of a subnet mask?",
+    "front": "What is the primary purpose of a subnet mask in IP networking?",
     "back": "Divide the IP address into network and host portions",
     "explanation": "A subnet mask determines which bits of an IP address represent the network prefix and which bits designate the host identifier.",
     "mcqOptions": [
@@ -11569,7 +11569,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-232",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Segment a large physical network into distinct broadcast domains (HR, Finance, IT) without buying extra physical switches. Technology?",
+    "front": "Which technology allows an administrator to split a physical network into isolated broadcast domains without extra switches?",
     "back": "VLAN",
     "explanation": "VLANs (Virtual Local Area Networks) logically segment a single physical switch into distinct, isolated broadcast domains for different departments or security zones.",
     "mcqOptions": [
@@ -11618,7 +11618,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-233",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Returning response traffic for internal users is allowed back in; uninitiated inbound internet traffic is blocked; handles this state awareness dynamically. Firewall type?",
+    "front": "Which type of firewall dynamically tracks active connections to allow return traffic while blocking unsolicited inbound requests?",
     "back": "Stateful inspection firewall",
     "explanation": "Stateful inspection firewalls track the operational state of active transport connections (like TCP handshakes), automatically allowing return traffic while dropping unprompted inbound packets.",
     "mcqOptions": [
@@ -11667,7 +11667,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-234",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Most secure Wi-Fi protocol among common options?",
+    "front": "Among common Wi-Fi security protocols, which standard provides the most robust cryptographic protection?",
     "back": "WPA3",
     "explanation": "WPA3 (Wi-Fi Protected Access 3) provides the strongest Wi-Fi encryption using 128-bit/192-bit cryptographic strength and the Simultaneous Authentication of Equals (SAE) protocol.",
     "mcqOptions": [
@@ -11716,7 +11716,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-235",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Upgrade wireless network, stronger protection against brute-force attacks, replace outdated protocols. Prefer?",
+    "front": "When upgrading a wireless network for stronger protection against offline dictionary attacks, which protocol should be chosen?",
     "back": "WPA3",
     "explanation": "WPA3 replaces the vulnerable pre-shared key 4-way handshake with SAE, preventing offline dictionary and brute-force password cracking attacks.",
     "mcqOptions": [
@@ -11814,7 +11814,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-237",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Must keep compatibility with older devices that do not support WPA3, and avoid obsolete WEP. Use?",
+    "front": "To secure Wi-Fi while supporting legacy devices that lack WPA3 support, which protocol is recommended?",
     "back": "WPA2",
     "explanation": "WPA2 (using AES-CCMP encryption) offers strong security and near-universal backwards compatibility across legacy and modern wireless devices.",
     "mcqOptions": [
@@ -11863,7 +11863,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-238",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Legacy devices cannot use AES; enable older mechanism that improved original WPA while keeping compatibility. Technology?",
+    "front": "Which legacy encryption protocol was introduced in WPA as a temporary upgrade over WEP for hardware lacking AES support?",
     "back": "TKIP",
     "explanation": "TKIP (Temporal Key Integrity Protocol) was designed as a stopgap wrapper around RC4 to improve legacy WEP hardware without requiring new AES hardware.",
     "mcqOptions": [
@@ -11912,7 +11912,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-239",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Data stolen; hacker mentions the route packets should use to avoid security / packet firewall. Attack type?",
+    "front": "An attacker injects routing options into IP headers so packets bypass security filters along an arbitrary path. Which attack is this?",
     "back": "Source routing attack",
     "explanation": "In a source routing attack, an adversary explicitly predefines the sequential path of network hops inside the packet header to circumvent firewall inspection rules.",
     "mcqOptions": [
@@ -12010,7 +12010,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-241",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Fake IT-support email, lookalike login page, employee enters username/password. Attack?",
+    "front": "An employee receives a fake IT-support email leading to a lookalike login page and enters their credentials. Which type of attack is this?",
     "back": "Phishing",
     "explanation": "Phishing is a social engineering attack where fraudulent emails or lookalike websites deceive victims into disclosing sensitive credentials or personal data.",
     "mcqOptions": [
@@ -12059,7 +12059,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-242",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Company divides network into isolated segments so a compromised device cannot easily talk to other segments. Primary security objective?",
+    "front": "A company divides its internal network into isolated zones so an infected device cannot communicate with other segments. What is the primary security objective?",
     "back": "Limiting attack propagation",
     "explanation": "Network segmentation contains breaches within a localized zone, preventing attackers from laterally moving or propagating malware across the broader enterprise network.",
     "mcqOptions": [
@@ -12157,7 +12157,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-244",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "API endpoint not found. HTTP status code?",
+    "front": "When a client requests an API endpoint or web resource that cannot be found on the server, which HTTP status code is returned?",
     "back": "404",
     "explanation": "HTTP status code 404 Not Found indicates that the server cannot locate the requested URL resource or API endpoint.",
     "mcqOptions": [
@@ -12206,7 +12206,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-245",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Employee WFH needs company internal files. Best VPN type?",
+    "front": "Which type of VPN is most appropriate for individual employees working from home who need secure access to internal company resources?",
     "back": "Remote access VPN",
     "explanation": "A Remote Access VPN allows individual telecommuting employees to securely connect over the public internet to their corporate intranet and internal files.",
     "mcqOptions": [
@@ -12255,7 +12255,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-246",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Need fast connectionless query/response; packet loss acceptable; retransmission delay not acceptable. Protocol family used?",
+    "front": "Which transport protocol is best suited for fast, connectionless transmission where low latency is critical and packet retransmissions are unacceptable?",
     "back": "DNS (can use UDP)",
     "explanation": "DNS lookups typically use UDP (port 53) because it provides rapid, lightweight, connectionless request-response without the overhead of a three-way TCP handshake.",
     "mcqOptions": [
@@ -12304,7 +12304,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-247",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Video call packets must arrive correctly and in the right order. OSI layer?",
+    "front": "Which OSI layer ensures end-to-end data transfer, flow control, and correct segment sequencing during real-time streaming?",
     "back": "Transport",
     "explanation": "The Transport Layer (Layer 4) handles packet sequencing, flow control, and error correction to ensure packets are assembled in the proper order.",
     "mcqOptions": [
@@ -12402,7 +12402,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-249",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Encrypt IP packet payload and protect integrity during VPN/IPsec. Protocol?",
+    "front": "Which IPsec protocol encrypts the packet payload to provide confidentiality and authentication across VPN tunnels?",
     "back": "ESP (Encapsulating Security Payload)",
     "explanation": "ESP (Encapsulating Security Payload) is an IPsec protocol that provides data confidentiality (encryption), payload integrity, and authentication.",
     "mcqOptions": [
@@ -12696,7 +12696,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-255",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Shortcut to copy selected content?",
+    "front": "Which keyboard shortcut copies the selected text or object to the clipboard?",
     "back": "Ctrl+C",
     "explanation": "Ctrl+C is the universal shortcut to copy selected text, objects, or cells to the system clipboard.",
     "mcqOptions": [
@@ -12745,7 +12745,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-256",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Shortcut to undo an action?",
+    "front": "Which keyboard shortcut is standardly used to undo the most recent action?",
     "back": "Ctrl+Z",
     "explanation": "Ctrl+Z reverses the most recent editing action or command in Microsoft Office and other applications.",
     "mcqOptions": [
@@ -13088,7 +13088,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-263",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Ctrl+A generally:",
+    "front": "What action does the Ctrl+A keyboard shortcut perform in most applications?",
     "back": "Select all content",
     "explanation": "Ctrl+A selects all text, cells, slides, or objects in the active window or document.",
     "mcqOptions": [
@@ -13529,7 +13529,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-272",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "IF(A1>=50,\"Pass\",\"Fail\") does what?",
+    "front": "In Microsoft Excel, what does the formula =IF(A1>=50, 'Pass', 'Fail') evaluate and return?",
     "back": "Returns Pass if A1 is at least 50",
     "explanation": "=IF(A1>=50, 'Pass', 'Fail') evaluates the condition A1 >= 50; if true, it outputs 'Pass', otherwise it outputs 'Fail'.",
     "mcqOptions": [
@@ -13823,7 +13823,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-278",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Intersection of a row and a column is called a:",
+    "front": "In a spreadsheet, what is the intersection of a row and a column called?",
     "back": "Cell",
     "explanation": "In a spreadsheet grid, the intersection of a vertical column and a horizontal row is called a cell.",
     "mcqOptions": [
@@ -13872,7 +13872,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-279",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "A collection of worksheets is called a:",
+    "front": "In Microsoft Excel, what is a single file containing a collection of worksheets called?",
     "back": "Workbook",
     "explanation": "In Microsoft Excel, an entire spreadsheet file containing one or more worksheets is designated as a workbook.",
     "mcqOptions": [
@@ -14558,7 +14558,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-293",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Function used to create a drop-down in a selected cell?",
+    "front": "Which Excel feature is used to add a drop-down selection list inside a cell?",
     "back": "Data Validation (List)",
     "explanation": "Data Validation with the 'List' criterion creates a dropdown selection arrow in a cell, restricting user input to predefined choices.",
     "mcqOptions": [
@@ -14803,7 +14803,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-298",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "In MS Word you can insert a page number in:",
+    "front": "In Microsoft Word, where can page numbers be placed within a document?",
     "back": "Header and Footer",
     "explanation": "Page numbers in Word can be placed in either the Header (top of page) or the Footer (bottom of page), as well as margin gutters.",
     "mcqOptions": [
@@ -14901,7 +14901,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-300",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Shortcut to select the entire row in Excel?",
+    "front": "Which keyboard shortcut selects an entire row in Microsoft Excel?",
     "back": "Shift+Space",
     "explanation": "Pressing Shift+Spacebar in Microsoft Excel selects the entire row of the currently active cell.",
     "mcqOptions": [
@@ -15048,7 +15048,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-303",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "VLOOKUP: (1) looks in the leftmost column of the selected table (2) looks in the rightmost column (3) cannot find a value in a previous/left-only restriction sense. Correct?",
+    "front": "Regarding the behavior and restrictions of the Excel VLOOKUP function, which statements are accurate?",
     "back": "1 and 3",
     "explanation": "VLOOKUP searches only in the leftmost column of the lookup range and retrieves data from subsequent columns to the right; it cannot look leftwards.",
     "mcqOptions": [
@@ -15195,7 +15195,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-306",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Excel average of employee salaries A1:A10. Formula?",
+    "front": "Which Excel formula calculates the arithmetic average of salaries in the range A1 through A10?",
     "back": "AVERAGE(A1:A10)",
     "explanation": "The correct Excel formula to compute the average of numbers in cells A1 through A10 is =AVERAGE(A1:A10).",
     "mcqOptions": [
@@ -18100,7 +18100,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-363",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Send 500 personalized offer letters with different names and salaries. Feature?",
+    "front": "Which Microsoft Word feature allows you to generate personalized letters for 500 recipients using data from a spreadsheet?",
     "back": "Mail Merge",
     "explanation": "Mail Merge in Microsoft Word allows creating large volumes of personalized documents (like offer letters) by pulling individualized data from a spreadsheet.",
     "mcqOptions": [
@@ -18247,7 +18247,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-366",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Excel function that combines text strings?",
+    "front": "Which Excel function is used to join or concatenate multiple text strings together?",
     "back": "CONCATENATE",
     "explanation": "CONCATENATE (or CONCAT) joins two or more text strings together into a single combined string.",
     "mcqOptions": [
@@ -18394,7 +18394,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-369",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Single-click a folder icon. What happens?",
+    "front": "What happens when you single-click a file or folder icon in Windows Explorer?",
     "back": "Folder is selected",
     "explanation": "In GUI desktop operating systems, a single left-click on a folder selects and highlights it without opening its contents.",
     "mcqOptions": [
@@ -18590,7 +18590,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-373",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Two-column slide with two content boxes. Layout name?",
+    "front": "In Microsoft PowerPoint, what is the slide layout called that features two separate side-by-side content placeholders?",
     "back": "Comparison",
     "explanation": "The 'Comparison' slide layout provides a slide title and two side-by-side content columns, each with its own heading.",
     "mcqOptions": [
@@ -19521,7 +19521,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-392",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Values greater than 7 should auto-highlight in Excel. Feature?",
+    "front": "Which Excel feature automatically changes cell formatting when values meet a criteria, such as being greater than 7?",
     "back": "Conditional Formatting",
     "explanation": "Conditional Formatting automatically applies styling (like background colors or bold text) to cells that meet specified numeric or text conditions.",
     "mcqOptions": [
@@ -19570,7 +19570,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-393",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Formula =$A$1*B2 copied downward. What happens?",
+    "front": "When the formula =$A$1*B2 in Excel is copied downward into subsequent rows, how do the cell references change?",
     "back": "A1 stays fixed (absolute); B2 changes (relative)",
     "explanation": "In =$A$1*B2, $A$1 is an absolute reference (fixed cell), while B2 is relative and increments to B3, B4, etc., when dragged down.",
     "mcqOptions": [
@@ -19619,7 +19619,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-394",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "300-page report needs automatic chapter numbering. Best?",
+    "front": "Which Microsoft Word feature is best used to maintain automatic, consistent chapter numbering across a large 300-page report?",
     "back": "Styles + multilevel list",
     "explanation": "Applying Heading Styles linked with a Multilevel List enables automated, hierarchical numbering for chapters and subsections in long documents.",
     "mcqOptions": [
@@ -19717,7 +19717,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-396",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Excel function that removes extra spaces from text?",
+    "front": "Which Excel function removes all leading, trailing, and duplicate spaces from a text string?",
     "back": "TRIM",
     "explanation": "The TRIM function strips all leading, trailing, and duplicate spaces from a text string, leaving single spaces between words.",
     "mcqOptions": [
@@ -19766,7 +19766,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-397",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Total sales only for East region (table of Region / Sales). Function shown?",
+    "front": "Which Excel function is used to sum values based on a single condition, such as totaling sales only for the East region?",
     "back": "SUMIF",
     "explanation": "SUMIF adds values within a specified range that satisfy a given criteria (e.g., summing sales where the region equals 'East').",
     "mcqOptions": [
@@ -19815,7 +19815,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-398",
     "deckId": "deck-ms-office",
     "type": "mcq",
-    "front": "Salary of employee ID 102. Typical formula taught?",
+    "front": "Which function is standardly used in Excel to look up and return an employee's salary given their employee ID?",
     "back": "VLOOKUP(E2,A2:C4,3,FALSE)",
     "explanation": "=VLOOKUP(E2, A2:C4, 3, FALSE) looks up the ID in column 1 and returns the exact corresponding salary from the 3rd column.",
     "mcqOptions": [
@@ -19962,7 +19962,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-401",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Retail e-commerce migrates to cloud for festive traffic spikes; automatic resource allocation, no manual work. Feature?",
+    "front": "An e-commerce site migrates to the cloud to dynamically scale resources during peak shopping seasons without manual provisioning. Which cloud feature is this?",
     "back": "Auto scaling",
     "explanation": "Auto-scaling dynamically provisions or terminates computing instances in response to traffic spikes without requiring manual intervention.",
     "mcqOptions": [
@@ -20011,7 +20011,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-402",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "AI startup wants large-DB experiments without buying expensive hardware; infrastructure on demand. Model?",
+    "front": "An AI startup needs virtual servers and storage on-demand for model training without purchasing physical hardware. Which cloud service model should they use?",
     "back": "IaaS",
     "explanation": "Infrastructure as a Service (IaaS) provides virtual machines, raw storage, and computing capacity on demand for intensive database experiments.",
     "mcqOptions": [
@@ -20060,7 +20060,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-403",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Healthcare: even if one cloud data center fails, operations continue. Feature?",
+    "front": "A hospital cloud architecture ensures clinical applications continue operating even if an entire data center experiences an outage. Which cloud capability is this?",
     "back": "Fault tolerance",
     "explanation": "Fault tolerance enables a system to continue operating without interruption even if one or more hardware or datacenter components fail.",
     "mcqOptions": [
@@ -20158,7 +20158,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-405",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Hackers intercept traffic by inserting malicious routing information, redirecting data through their system. Attack?",
+    "front": "Attackers poison routing tables to intercept and reroute network traffic through their own system. Which cyber attack is this?",
     "back": "Route injection attack",
     "explanation": "A route injection attack injects fraudulent routing advertisements into the network to redirect traffic through unauthorized nodes.",
     "mcqOptions": [
@@ -20207,7 +20207,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-406",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Employee connects to free airport Wi-Fi; later company credentials compromised. Most likely?",
+    "front": "An employee connects to an unencrypted public airport Wi-Fi, and their corporate credentials are subsequently stolen. What is the most likely attack method?",
     "back": "Evil twin attack",
     "explanation": "An Evil Twin attack sets up a rogue Wi-Fi access point masquerading as a legitimate public hotspot to snoop on user credentials.",
     "mcqOptions": [
@@ -20256,7 +20256,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-407",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Hospital PCs lock after malicious email attachment; attacker demands cryptocurrency. Threat?",
+    "front": "A hospital's computers are locked and encrypted after an employee opens an infected email attachment, and the attacker demands cryptocurrency. Which type of malware is this?",
     "back": "Ransomware",
     "explanation": "Ransomware encrypts victim files and systems, demanding cryptocurrency payments in exchange for the decryption key.",
     "mcqOptions": [
@@ -20305,7 +20305,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-408",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Devices must have updated antivirus and OS patches before joining internal Wi-Fi. Mechanism?",
+    "front": "Which security mechanism inspects device health (such as OS patches and active antivirus) before granting access to the corporate network?",
     "back": "NAC (Network Access Control)",
     "explanation": "Network Access Control (NAC) inspects incoming devices and enforces security compliance (antivirus, OS patches) before granting access.",
     "mcqOptions": [
@@ -20354,7 +20354,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-409",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Data-link layer detects corrupted frames and discards them (CRC) before higher layers. Layer?",
+    "front": "Which OSI layer uses Cyclic Redundancy Checks (CRC) to detect corrupted frames and discard them before passing data upward?",
     "back": "Data Link",
     "explanation": "The Data Link Layer (Layer 2) encapsulates packets into frames and performs error detection using Cyclical Redundancy Checks (CRC).",
     "mcqOptions": [
@@ -20403,7 +20403,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-410",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "Realtime multiplayer game: small position updates, min delay, occasional loss OK. Transport?",
+    "front": "A real-time multiplayer game requires minimal latency where occasional dropped packets are acceptable. Which transport protocol should it use?",
     "back": "UDP",
     "explanation": "UDP is connectionless and minimizes latency without retransmission delays, making it ideal for multiplayer game position packets.",
     "mcqOptions": [
@@ -20501,7 +20501,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-412",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Storage from many vendors + next-gen storage; globally scalable resilient storage. Concept in the stem?",
+    "front": "Abstracting physical storage across multiple hardware vendors into a globally scalable, unified storage tier is known as:",
     "back": "Resource pooling",
     "explanation": "Resource pooling aggregates physical compute, memory, and multi-vendor storage resources to serve multiple customers dynamically.",
     "mcqOptions": [
@@ -20550,7 +20550,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-413",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Substitution cipher; some chars decrypt wrong / data loss. Most likely cause?",
+    "front": "During a monoalphabetic substitution cipher decryption, certain characters decrypt into incorrect symbols. What is the most likely cause?",
     "back": "Duplicate character mappings from key collisions",
     "explanation": "If multiple plaintext characters map to the same ciphertext character in a substitution cipher, decryption becomes ambiguous and causes data loss.",
     "mcqOptions": [
@@ -20599,7 +20599,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-414",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Stolen data by monitoring packets without interrupting. Attack?",
+    "front": "An attacker captures sensitive network data by passively capturing packets without disrupting active traffic. What type of attack is this?",
     "back": "Eavesdropping",
     "explanation": "Eavesdropping (sniffing) involves passively monitoring and capturing unencrypted network packets without altering the transmission flow.",
     "mcqOptions": [
@@ -20697,7 +20697,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-416",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Government agency highly secure store/process sensitive data. Deployment?",
+    "front": "A government agency needs a dedicated cloud environment to store and process sensitive data with isolated infrastructure. Which deployment model should it adopt?",
     "back": "Private",
     "explanation": "Government agencies handling classified or protected citizen data mandate the strict security, isolation, and compliance of a Private Cloud.",
     "mcqOptions": [
@@ -20746,7 +20746,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-417",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Startup minimize cost, scale as users grow. Deployment?",
+    "front": "A bootstrapped startup wants zero upfront hardware expenses and the ability to scale resources on-demand. Which cloud deployment model is most suitable?",
     "back": "Public",
     "explanation": "Public Cloud provides startups with near-zero initial capital expenditure and seamless elastic scaling as user demand increases.",
     "mcqOptions": [
@@ -20795,7 +20795,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-418",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Keep critical apps on-prem; extra cloud capacity at peak. Deployment?",
+    "front": "An organization runs its sensitive core workloads in an on-premises data center while bursting to the public cloud during peak traffic. Which deployment model is this?",
     "back": "Hybrid",
     "explanation": "Cloud bursting uses a Hybrid Cloud architecture to run steady-state workloads on-premise and burst into the public cloud during peak loads.",
     "mcqOptions": [
@@ -20844,7 +20844,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-419",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Multiple providers to avoid vendor lock-in and improve redundancy. Deployment?",
+    "front": "Deploying application workloads across multiple independent public cloud providers (e.g., AWS and Azure) to prevent vendor lock-in is known as:",
     "back": "Multicloud",
     "explanation": "A Multicloud strategy utilizes multiple independent cloud service providers to avoid vendor lock-in and provide redundancy.",
     "mcqOptions": [
@@ -20893,7 +20893,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-420",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "High availability + disaster recovery across regions and providers. Deployment?",
+    "front": "Which deployment strategy leverages multiple cloud providers and geographic regions to maximize high availability and disaster resilience?",
     "back": "Multicloud",
     "explanation": "Distributing workloads across multiple cloud vendors (Multicloud) eliminates single points of failure and enhances disaster resilience.",
     "mcqOptions": [
@@ -20942,7 +20942,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-421",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Core banking highly controlled; less-critical apps on public cloud. Deployment?",
+    "front": "A commercial bank maintains its core ledger on private infrastructure while deploying marketing portals to the public cloud. What deployment model is this?",
     "back": "Hybrid",
     "explanation": "Financial institutions use Hybrid Cloud to host regulated core banking on private infrastructure while running customer apps on public cloud.",
     "mcqOptions": [
@@ -20991,7 +20991,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-422",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Temporary HPC for large datasets, most cost-effective. Deployment?",
+    "front": "Which cloud model provides the most cost-effective solution for running temporary, short-lived high-performance computing (HPC) simulations?",
     "back": "Public",
     "explanation": "Public Cloud offers on-demand high-performance computing (HPC) clusters that can be spun up for large datasets and torn down immediately.",
     "mcqOptions": [
@@ -21040,7 +21040,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-423",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Control own IT + use cloud for scale/cost. Deployment?",
+    "front": "Which cloud deployment model balances on-premises control over legacy assets with public cloud scalability?",
     "back": "Hybrid",
     "explanation": "Hybrid Cloud delivers the optimal balance of retaining on-premise control over critical IT assets while utilizing public cloud scalability.",
     "mcqOptions": [
@@ -21089,7 +21089,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-424",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Small business virtual server, manage OS and middleware. Service model?",
+    "front": "A company provisions virtual machines in the cloud and configures its own operating systems and middleware. Which cloud service model is this?",
     "back": "IaaS",
     "explanation": "IaaS gives the business full administrative control to install, configure, and manage the operating system, middleware, and applications.",
     "mcqOptions": [
@@ -21138,7 +21138,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-425",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Build/deploy web app without managing hardware/software stack. Model?",
+    "front": "A software development team deploys code directly into a cloud-managed application runtime without configuring servers or OS patches. Which model is this?",
     "back": "PaaS",
     "explanation": "PaaS supplies the application runtime, database, and web server environments so developers can focus solely on application code.",
     "mcqOptions": [
@@ -21187,7 +21187,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-426",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Complete CRM in a browser. Model?",
+    "front": "An organization uses a complete customer relationship management application hosted and managed entirely online by a third party. Which cloud service model is this?",
     "back": "SaaS",
     "explanation": "A CRM accessed entirely through a web browser is hosted, maintained, and secured by the vendor as Software as a Service (SaaS).",
     "mcqOptions": [
@@ -21236,7 +21236,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-427",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Scalable customizable database; you manage DB, provider handles infra. Model?",
+    "front": "Developers utilize a cloud-managed database service where the provider handles backups and hardware while the team manages the database schema. Which service model is this?",
     "back": "PaaS",
     "explanation": "Managed database services (like Amazon RDS) represent PaaS: the cloud provider manages the underlying OS and patching while you control the database.",
     "mcqOptions": [
@@ -21285,7 +21285,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-428",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Collaborative environment to write, test, deploy code. Model?",
+    "front": "Which cloud computing service model provides developers with a pre-configured, managed runtime environment to build, test, and deploy applications?",
     "back": "PaaS",
     "explanation": "Cloud IDEs and collaborative deployment environments (like Heroku or Google App Engine) are classic PaaS offerings.",
     "mcqOptions": [
@@ -21334,7 +21334,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-429",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Email marketing tool in browser with templates/analytics. Model?",
+    "front": "A marketing team uses a web-based email campaign tool with built-in analytics and templates without installing any software. Which cloud model is this?",
     "back": "SaaS",
     "explanation": "Cloud-hosted email marketing platforms offering templates and analytics via web dashboards are examples of SaaS.",
     "mcqOptions": [
@@ -21383,7 +21383,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-430",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Highly scalable multiplayer-game backend, variable load. Model?",
+    "front": "A game studio uses a managed cloud platform that automatically scales containerized backend logic to handle fluctuating player counts. Which model is this?",
     "back": "IaaS",
     "explanation": "High-scale game backends require full low-level control over network sockets, operating systems, and computing instances, typical of IaaS.",
     "mcqOptions": [
@@ -21726,7 +21726,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-437",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "EC2, S3, Lambda offered by?",
+    "front": "Which major cloud provider offers the EC2, S3, and Lambda computing services?",
     "back": "AWS",
     "explanation": "Amazon Web Services (AWS) offers EC2 for virtual computing, S3 for scalable object storage, and Lambda for serverless compute.",
     "mcqOptions": [
@@ -21971,7 +21971,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-442",
     "deckId": "deck-cloud",
     "type": "mcq",
-    "front": "Serverless: write code, do not manage servers. Model implied?",
+    "front": "In cloud computing, what execution model allows developers to execute code in response to events without provisioning or managing any servers?",
     "back": "FaaS / Function as a Service",
     "explanation": "Serverless computing / Function as a Service (FaaS) allows developers to execute code in response to events without managing server instances.",
     "mcqOptions": [
@@ -22265,7 +22265,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-448",
     "deckId": "deck-networking",
     "type": "mcq",
-    "front": "OSI layer that handles MAC addressing?",
+    "front": "Which layer of the OSI model handles physical MAC addressing and frame delivery?",
     "back": "Data Link",
     "explanation": "The Data Link Layer (Layer 2) manages physical MAC addressing, framing, and media access control across the local network link.",
     "mcqOptions": [
@@ -22412,7 +22412,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-451",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "Attack that tricks users into clicking fake links?",
+    "front": "Which form of social engineering tricks users into clicking fraudulent links or providing credentials via deceptive messages?",
     "back": "Phishing",
     "explanation": "Phishing uses deceptive emails or fraudulent links designed to trick users into providing sensitive credentials or banking information.",
     "mcqOptions": [
@@ -26533,7 +26533,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-533",
     "deckId": "deck-security",
     "type": "mcq",
-    "front": "An attack that overwhelms a target server or network with excessive flood traffic to exhaust resources and deny access to legitimate users is called a:",
+    "front": "What is a cyber attack that floods a target server with excessive traffic to deny service to legitimate users called?",
     "back": "Denial of Service (DoS / DDoS) Attack",
     "explanation": "DoS/DDoS attacks flood target bandwidth, socket tables, or CPU queues (e.g., SYN floods, UDP amplification) to knock services offline.",
     "mcqOptions": [
