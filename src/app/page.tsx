@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Deck, Flashcard, StudyStats, DailyActivity } from '../lib/types';
 import { storage } from '../lib/storage';
+import { sounds } from '../lib/sound';
 import { Navbar } from '../components/Navbar';
 import { DeckManager } from '../components/DeckManager';
 import { CardBrowser } from '../components/CardBrowser';
@@ -270,31 +271,37 @@ export default function Home() {
         onClose={() => setIsShortcutsOpen(false)}
       />
 
-      {/* Dark Cal.com Brand Footer (Signature Closing Surface) */}
-      <footer className="w-full bg-[#101010] text-[#a1a1aa] border-t border-zinc-800 mt-16 py-12 px-4">
+      {/* Footer */}
+      <footer className="w-full bg-zinc-100 dark:bg-[#101010] text-zinc-600 dark:text-[#a1a1aa] border-t border-zinc-200 dark:border-zinc-800 mt-16 py-12 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <span className="text-xl">⚡</span>
             <div>
-              <div className="text-white font-semibold text-sm tracking-tight">Flashfire</div>
+              <div className="text-zinc-900 dark:text-white font-semibold text-sm tracking-tight">Flashfire</div>
               <div className="text-xs text-zinc-500">Spaced repetition, FSRS & tactile active recall.</div>
             </div>
           </div>
 
           <div className="flex items-center gap-6 text-xs">
             <button
-              onClick={() => setIsShortcutsOpen(true)}
-              className="hover:text-white transition-colors"
+              onClick={() => {
+                sounds.playSelect();
+                setIsShortcutsOpen(true);
+              }}
+              className="hover:text-zinc-900 dark:hover:text-white transition-colors cursor-pointer"
             >
               Shortcuts
             </button>
             <button
-              onClick={() => setIsImportExportOpen(true)}
-              className="hover:text-white transition-colors"
+              onClick={() => {
+                sounds.playSelect();
+                setIsImportExportOpen(true);
+              }}
+              className="hover:text-zinc-900 dark:hover:text-white transition-colors cursor-pointer"
             >
               Backup & Restore
             </button>
-            <span className="text-zinc-600">Built with Cal.com Design System & Next.js</span>
+            <span className="text-zinc-400 dark:text-zinc-600">Built with Cal.com Design System & Next.js</span>
           </div>
         </div>
       </footer>

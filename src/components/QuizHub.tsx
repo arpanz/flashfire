@@ -18,7 +18,6 @@ import {
   Sparkles,
   FolderPlus,
   BookOpen,
-  Code2,
 } from "lucide-react";
 import { Deck, Flashcard, Rating } from "../lib/types";
 import { calculateNextReview } from "../lib/srs";
@@ -28,7 +27,6 @@ import { getCookie, setCookie } from "../lib/cookies";
 import { DeckIcon } from "./DeckIcon";
 import { FormattedText } from "./FormattedText";
 import { CodeBlockView } from "./CodeBlockView";
-import { ScratchpadModal } from "./ScratchpadModal";
 
 interface QuizHubProps {
   decks: Deck[];
@@ -152,8 +150,6 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   const [resultsFilter, setResultsFilter] = useState<"all" | "missed" | "correct">("all");
   const [savedDeckNotice, setSavedDeckNotice] = useState<string | null>(null);
 
-  // Scratchpad State
-  const [isScratchpadOpen, setIsScratchpadOpen] = useState<boolean>(false);
 
   // Timer countdown
   const [timeLeft, setTimeLeft] = useState<number>(timerSeconds);
@@ -1110,7 +1106,10 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             {/* Filter Buttons */}
             <div className="flex items-center gap-1.5 bg-zinc-100 dark:bg-zinc-800 p-1 rounded-xl text-xs font-medium">
               <button
-                onClick={() => setResultsFilter("all")}
+                onClick={() => {
+                  sounds.playSelect();
+                  setResultsFilter("all");
+                }}
                 className={`px-2.5 py-1 rounded-lg transition-colors cursor-pointer ${
                   resultsFilter === "all"
                     ? "bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 shadow-xs"
@@ -1120,7 +1119,10 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 All ({questions.length})
               </button>
               <button
-                onClick={() => setResultsFilter("missed")}
+                onClick={() => {
+                  sounds.playSelect();
+                  setResultsFilter("missed");
+                }}
                 className={`px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1 cursor-pointer ${
                   resultsFilter === "missed"
                     ? "bg-white dark:bg-zinc-900 text-rose-600 dark:text-rose-400 shadow-xs font-semibold"
@@ -1131,7 +1133,10 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 Missed ({missedQuestions.length})
               </button>
               <button
-                onClick={() => setResultsFilter("correct")}
+                onClick={() => {
+                  sounds.playSelect();
+                  setResultsFilter("correct");
+                }}
                 className={`px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1 cursor-pointer ${
                   resultsFilter === "correct"
                     ? "bg-white dark:bg-zinc-900 text-emerald-600 dark:text-emerald-400 shadow-xs font-semibold"
@@ -1280,22 +1285,6 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             Score: {score}
           </div>
 
-          {/* Scratchpad Button */}
-          <button
-            onClick={() => {
-              sounds.playSelect();
-              setIsScratchpadOpen((prev) => !prev);
-            }}
-            title="Open Live Code & Tracing Scratchpad"
-            className={`px-2.5 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer ${
-              isScratchpadOpen
-                ? 'bg-blue-600 text-white shadow-xs'
-                : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-            }`}
-          >
-            <Code2 className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Scratchpad</span>
-          </button>
 
           <span className="text-xs font-mono text-zinc-400">
             {currentIndex + 1}/{questions.length}
@@ -1598,12 +1587,6 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           )}
         </AnimatePresence>
       </div>
-
-      {/* Floating Coding & Tracing Scratchpad */}
-      <ScratchpadModal
-        isOpen={isScratchpadOpen}
-        onClose={() => setIsScratchpadOpen(false)}
-      />
     </div>
   );
 };

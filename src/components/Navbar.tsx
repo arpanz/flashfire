@@ -93,7 +93,10 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* Center Pill-in-Pill Nav (Cal.com signature component) */}
         <nav className="flex items-center p-1 rounded-xl bg-zinc-100/80 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-xs font-medium">
           <button
-            onClick={() => onSelectTab('quiz')}
+            onClick={() => {
+              sounds.playSelect();
+              onSelectTab('quiz');
+            }}
             className={`px-3.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
               currentTab === 'quiz'
                 ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-semibold'
@@ -105,7 +108,10 @@ export const Navbar: React.FC<NavbarProps> = ({
           </button>
 
           <button
-            onClick={() => onSelectTab('decks')}
+            onClick={() => {
+              sounds.playSelect();
+              onSelectTab('decks');
+            }}
             className={`px-3.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
               currentTab === 'decks'
                 ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-semibold'
@@ -117,7 +123,10 @@ export const Navbar: React.FC<NavbarProps> = ({
           </button>
 
           <button
-            onClick={() => onSelectTab('revision')}
+            onClick={() => {
+              sounds.playSelect();
+              onSelectTab('revision');
+            }}
             className={`px-3.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
               currentTab === 'revision'
                 ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-semibold'
@@ -129,7 +138,10 @@ export const Navbar: React.FC<NavbarProps> = ({
           </button>
 
           <button
-            onClick={() => onSelectTab('cards')}
+            onClick={() => {
+              sounds.playSelect();
+              onSelectTab('cards');
+            }}
             className={`px-3.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
               currentTab === 'cards'
                 ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-semibold'
@@ -141,7 +153,10 @@ export const Navbar: React.FC<NavbarProps> = ({
           </button>
 
           <button
-            onClick={() => onSelectTab('analytics')}
+            onClick={() => {
+              sounds.playSelect();
+              onSelectTab('analytics');
+            }}
             className={`px-3.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
               currentTab === 'analytics'
                 ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-semibold'
@@ -188,7 +203,10 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Import / Export */}
           <button
-            onClick={onOpenImportExport}
+            onClick={() => {
+              sounds.playSelect();
+              onOpenImportExport();
+            }}
             title="Import or Export Decks"
             className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
           >
@@ -197,7 +215,10 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Shortcuts Info */}
           <button
-            onClick={onOpenShortcuts}
+            onClick={() => {
+              sounds.playSelect();
+              onOpenShortcuts();
+            }}
             title="Keyboard Shortcuts (?)"
             className="hidden sm:flex p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
           >
