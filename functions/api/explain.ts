@@ -127,10 +127,8 @@ export async function onRequestPost(context: { request: Request; env: Env }) {
 
     let systemPrompt = "";
     let userPrompt = "";
-    const primaryModel = mode === "deep" ? "glm-5.3-flash" : "glm-4.7-flash";
-    const backupModels = mode === "deep" 
-      ? ["glm-4.7-flash", "glm-4.5-flash"] 
-      : ["glm-4.5-flash", "glm-5.3-flash"];
+    const primaryModel = "glm-4.7-flash";
+    const backupModels = ["glm-4.5-flash"];
     const maxTokens = mode === "deep" ? 600 : 250;
 
     if (mode === "deep") {

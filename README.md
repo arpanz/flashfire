@@ -1,6 +1,6 @@
 # 🔥 FlashFire
 
-> **Intelligent Flashcards, Supercharged Spaced Repetition (SRS), and Technical Quiz Hub powered by Z.ai GLM 4.7 Flash & 5.3 Flash AI.**
+> **Intelligent Flashcards, Supercharged Spaced Repetition (SRS), and Technical Quiz Hub powered by Z.ai GLM 4.7 Flash AI.**
 
 [![Deployed on Cloudflare Pages](https://img.shields.io/badge/Deployed%20on-Cloudflare%20Pages-F38020?logo=cloudflare&logoColor=white)](https://flashfire.pages.dev)
 [![Next.js 16](https://img.shields.io/badge/Next.js-16.3-black?logo=next.js)](https://nextjs.org/)
@@ -16,7 +16,7 @@
 - 🧠 **Supercharged Spaced Repetition (SRS)**: Implements the SM-2 algorithm. If you miss a question during a quiz, it is automatically flagged as a lapse and moved into your high-priority Due Queue.
 - ⚡ **Z.ai GLM AI Explanations**:
   - **Quick Explanation**: Powered by `glm-4.7-flash` for instant, 1-2 sentence insights upon selecting an answer.
-  - **Deep Concept Breakdown**: Powered by `glm-5.3-flash` for structured Markdown breakdowns covering *Core Concept*, *Option Analysis*, and *Key Takeaways / Mnemonics*.
+  - **Deep Concept Breakdown**: Powered by `glm-4.7-flash` for structured Markdown breakdowns covering *Core Concept*, *Option Analysis*, and *Key Takeaways / Mnemonics*.
 - 📚 **200 Real Accenture Technical MCQs**: Pre-loaded across 5 technical categories:
   - MS Office & Productivity
   - Computer Networks & Cybersecurity
@@ -34,7 +34,7 @@
 - **Framework**: Next.js 16 (App Router) + React 19
 - **Styling**: Tailwind CSS v4
 - **Edge Deployment**: Cloudflare Pages + Cloudflare Pages Functions
-- **AI Backend**: Z.ai GLM API (`glm-4.7-flash` & `glm-5.3-flash`)
+- **AI Backend**: Z.ai GLM API (`glm-4.7-flash`)
 - **Icons & Animations**: Lucide React + Framer Motion + Canvas Confetti
 - **Math & Formatting**: KaTeX + Custom Markdown parser
 

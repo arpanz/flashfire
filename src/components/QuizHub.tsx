@@ -82,7 +82,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   } | null>(null);
   const questionStartTime = useRef<number>(Date.now());
 
-  // AI Explanation State (Z.ai GLM Flash: 4.7 Flash quick & 5.3 Flash deep dive)
+  // AI Explanation State (Z.ai GLM 4.7 Flash)
   const [quickExplanation, setQuickExplanation] = useState<string | null>(null);
   const [deepExplanation, setDeepExplanation] = useState<string | null>(null);
   const [aiModelUsed, setAiModelUsed] = useState<string | null>(null);
@@ -112,7 +112,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
     }
   }, [initialDeckId]);
 
-  // Fetch AI explanation via GLM (4.7 Flash for quick, 5.3 Flash for deep breakdown)
+  // Fetch AI explanation via GLM (4.7 Flash)
   const fetchAiExplanation = useCallback(
     async (q: QuizQuestion, chosenOptionId: string | null | undefined, mode: "quick" | "deep", force = false) => {
       const targetCardId = q.card.id;
@@ -1177,7 +1177,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 </div>
               )}
 
-              {/* AI Explanation Box (Powered by Z.ai GLM 4.7 Flash & 5.3 Flash) */}
+              {/* AI Explanation Box (Powered by Z.ai GLM 4.7 Flash) */}
               <div className="rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-800/40 p-4 transition-all">
                 {/* Header row */}
                 <div className="flex items-center justify-between gap-2 mb-2.5 pb-2 border-b border-zinc-200/60 dark:border-zinc-700/60 flex-wrap">
@@ -1194,7 +1194,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     ) : (
                       <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-200/80 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-medium">
                         {isDeepMode
-                          ? (deepModelUsed || currentQ?.deepModel || "GLM 5.3 Flash")
+                          ? (deepModelUsed || currentQ?.deepModel || "GLM 4.7 Flash")
                           : (aiModelUsed || currentQ?.quickModel || "GLM 4.7 Flash")}
                       </span>
                     )}
@@ -1223,7 +1223,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                         if (!currentQ) return;
                         if (currentQ.deepExplanation && currentQ.deepModel !== "offline-fallback") {
                           setDeepExplanation(currentQ.deepExplanation);
-                          setDeepModelUsed(currentQ.deepModel || "GLM 5.3 Flash");
+                          setDeepModelUsed(currentQ.deepModel || "GLM 4.7 Flash");
                           setIsDeepMode(true);
                         } else {
                           fetchAiExplanation(currentQ, selectedOptionId, "deep");
@@ -1240,7 +1240,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                       ) : (
                         <>
                           <BookOpen className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-                          <span>Deeper Explanation (GLM 5.3)</span>
+                          <span>Deeper Explanation</span>
                         </>
                       )}
                     </button>
@@ -1261,7 +1261,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                   <div className="py-2.5 space-y-2 animate-pulse">
                     <div className="flex items-center gap-2 text-xs text-amber-600 dark:text-amber-400 font-medium">
                       <Sparkles className="w-3.5 h-3.5 animate-spin" />
-                      <span>GLM 5.3 Flash is generating full technical breakdown & memory tips...</span>
+                      <span>GLM 4.7 Flash is generating full technical breakdown & memory tips...</span>
                     </div>
                     <div className="h-3.5 bg-zinc-200 dark:bg-zinc-700 rounded-md w-3/4"></div>
                     <div className="h-3 bg-zinc-200 dark:bg-zinc-700 rounded-md w-full"></div>
