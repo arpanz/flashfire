@@ -14,6 +14,7 @@ import {
 import { Deck, Flashcard } from '../lib/types';
 import { storage } from '../lib/storage';
 import { FormattedText } from './FormattedText';
+import { DeckIcon } from './DeckIcon';
 
 interface CardBrowserProps {
   decks: Deck[];
@@ -90,7 +91,7 @@ export const CardBrowser: React.FC<CardBrowserProps> = ({
 
   const getDeckName = (deckId: string) => {
     const d = decks.find((item) => item.id === deckId);
-    return d ? `${d.icon} ${d.title}` : 'Unknown';
+    return d ? d.title : 'Unknown';
   };
 
   return (
@@ -138,7 +139,7 @@ export const CardBrowser: React.FC<CardBrowserProps> = ({
           <option value="all">All Decks ({cards.length})</option>
           {decks.map((d) => (
             <option key={d.id} value={d.id}>
-              {d.icon} {d.title}
+              {d.title}
             </option>
           ))}
         </select>
@@ -184,8 +185,9 @@ export const CardBrowser: React.FC<CardBrowserProps> = ({
                       <span className="text-[11px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
                         {card.type}
                       </span>
-                      <span className="text-xs text-zinc-500 font-medium">
-                        {getDeckName(card.deckId)}
+                      <span className="text-xs text-zinc-500 font-medium flex items-center gap-1.5">
+                        <DeckIcon deckId={card.deckId} className="w-3.5 h-3.5" />
+                        <span>{getDeckName(card.deckId)}</span>
                       </span>
                       <span className={`text-[10px] font-semibold uppercase px-2 py-0.5 rounded-full ${stateColors[card.srs.state]}`}>
                         {card.srs.state}

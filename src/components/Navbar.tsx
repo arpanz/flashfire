@@ -11,8 +11,12 @@ import {
   CreditCard,
   Download,
   HelpCircle,
+  Sun,
+  Moon,
+  Zap,
 } from 'lucide-react';
 import { sounds } from '../lib/sound';
+import { getCookie, setCookie } from '../lib/cookies';
 
 interface NavbarProps {
   currentTab: 'decks' | 'cards' | 'quiz' | 'analytics';
@@ -30,9 +34,17 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenShortcuts,
 }) => {
   const [isMuted, setIsMuted] = useState<boolean>(false);
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
 
   useEffect(() => {
     setIsMuted(sounds.isMuted());
+    const savedTheme = getCookie('flashfire_theme') || localStorage.getItem('flashfire_theme') || 'dark';
+    setTheme(savedTheme as 'dark' | 'light');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   }, []);
 
   const handleToggleSound = () => {
@@ -40,16 +52,32 @@ export const Navbar: React.FC<NavbarProps> = ({
     setIsMuted(muted);
   };
 
+  const handleToggleTheme = () => {
+    sounds.playSelect();
+    const nextTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(nextTheme);
+    if (nextTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    localStorage.setItem('flashfire_theme', nextTheme);
+    setCookie('flashfire_theme', nextTheme, 365);
+  };
+
   return (
     <header className="sticky top-0 z-40 w-full bg-white/85 dark:bg-zinc-950/85 backdrop-blur-md border-b border-zinc-200/80 dark:border-zinc-800">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
-        {/* Brand */}
+        {/* Brand - Click refreshes page */}
         <div
-          onClick={() => onSelectTab('quiz')}
-          className="flex items-center gap-2 cursor-pointer select-none group"
+          onClick={() => {
+            window.location.href = '/';
+          }}
+          title="Click to refresh FlashFire"
+          className="flex items-center gap-2.5 cursor-pointer select-none group"
         >
-          <div className="w-8 h-8 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 flex items-center justify-center font-bold text-base shadow-xs group-hover:scale-105 transition-transform">
-            ⚡
+          <div className="w-8 h-8 rounded-xl bg-zinc-900 dark:bg-zinc-800 border border-zinc-800 text-amber-400 flex items-center justify-center font-bold text-base shadow-xs group-hover:scale-105 transition-transform">
+            <Zap className="w-4 h-4 fill-current text-amber-500" />
           </div>
           <div>
             <span className="font-semibold text-base tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
@@ -130,6 +158,19 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
           >
             {isMuted ? <VolumeX className="w-4 h-4 text-zinc-400" /> : <Volume2 className="w-4 h-4" />}
+          </button>
+
+          {/* Theme Toggle (Light / Dark Mode) */}
+          <button
+            onClick={handleToggleTheme}
+            title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+          >
+            {theme === 'dark' ? (
+              <Sun className="w-4 h-4 text-amber-400" />
+            ) : (
+              <Moon className="w-4 h-4 text-zinc-700" />
+            )}
           </button>
 
           {/* Import / Export */}

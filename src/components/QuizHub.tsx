@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback, useRef, useMemo } from "react"
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
 import {
+  Check,
   HelpCircle,
   Play,
   CheckCircle2,
@@ -17,13 +18,14 @@ import {
   Sparkles,
   FolderPlus,
   BookOpen,
-  Lightbulb,
   Code2,
 } from "lucide-react";
 import { Deck, Flashcard, Rating } from "../lib/types";
-import { calculateNextReview, getDueCards } from "../lib/srs";
+import { calculateNextReview } from "../lib/srs";
 import { storage } from "../lib/storage";
 import { sounds } from "../lib/sound";
+import { getCookie, setCookie } from "../lib/cookies";
+import { DeckIcon } from "./DeckIcon";
 import { FormattedText } from "./FormattedText";
 import { CodeBlockView } from "./CodeBlockView";
 import { ScratchpadModal } from "./ScratchpadModal";
@@ -43,10 +45,19 @@ interface QuizQuestion {
   explanation?: string;
   selectedOptionId?: string;
   isUserCorrect?: boolean;
+  userRating?: Rating;
   quickExplanation?: string;
   deepExplanation?: string;
-  quickModel?: string;
-  deepModel?: string;
+}
+
+// Graceful Fisher-Yates shuffle algorithm
+function shuffleArray<T>(items: T[]): T[] {
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
 }
 
 export const QuizHub: React.FC<QuizHubProps> = ({
@@ -56,12 +67,50 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   onExit,
   onStartStudy,
 }) => {
-  // Setup Configuration State
-  const [selectedDeckId, setSelectedDeckId] = useState<string>(initialDeckId || "all");
-  const [questionCount, setQuestionCount] = useState<number>(10);
-  const [isTimed, setIsTimed] = useState<boolean>(false);
-  const [timerSeconds] = useState<number>(20);
-  const [syncWithSRS, setSyncWithSRS] = useState<boolean>(true);
+  // Setup Configuration State with Cookies Persistence
+  const [selectedDeckIds, setSelectedDeckIds] = useState<string[]>(() => {
+    if (initialDeckId && initialDeckId !== "all") return [initialDeckId];
+    const saved = getCookie("flashfire_quiz_categories");
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      } catch {}
+    }
+    return decks.map((d) => d.id);
+  });
+
+  const [questionCount, setQuestionCount] = useState<number>(() => {
+    const saved = getCookie("flashfire_quiz_count");
+    if (saved) {
+      const num = parseInt(saved, 10);
+      if (!isNaN(num)) return num;
+    }
+    return 10;
+  });
+
+  // Default timed is ON (true)
+  const [isTimed, setIsTimed] = useState<boolean>(() => {
+    const saved = getCookie("flashfire_quiz_timed");
+    if (saved !== null) return saved === "true";
+    return true;
+  });
+
+  const [timerSeconds, setTimerSeconds] = useState<number>(() => {
+    const saved = getCookie("flashfire_quiz_seconds");
+    if (saved) {
+      const num = parseInt(saved, 10);
+      if ([15, 20, 30, 45, 60].includes(num)) return num;
+    }
+    return 30;
+  });
+
+  // Default syncWithSRS is OFF (false)
+  const [syncWithSRS, setSyncWithSRS] = useState<boolean>(() => {
+    const saved = getCookie("flashfire_quiz_srs");
+    if (saved !== null) return saved === "true";
+    return false;
+  });
 
   // Active Quiz State
   const [isQuizActive, setIsQuizActive] = useState<boolean>(false);
@@ -85,17 +134,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   } | null>(null);
   const questionStartTime = useRef<number>(Date.now());
 
-  // AI Explanation State (Z.ai GLM 4.7 Flash)
+  // Explanation State
   const [quickExplanation, setQuickExplanation] = useState<string | null>(null);
   const [deepExplanation, setDeepExplanation] = useState<string | null>(null);
-  const [aiModelUsed, setAiModelUsed] = useState<string | null>(null);
-  const [deepModelUsed, setDeepModelUsed] = useState<string | null>(null);
   const [isAiLoading, setIsAiLoading] = useState<boolean>(false);
   const [isDeepMode, setIsDeepMode] = useState<boolean>(false);
   const [isDeepLoading, setIsDeepLoading] = useState<boolean>(false);
 
-  // In-memory token-efficient cache for AI responses
-  const aiCacheRef = useRef<Map<string, { explanation: string; model: string }>>(new Map());
+  // In-memory token-efficient cache for explanations
+  const aiCacheRef = useRef<Map<string, { explanation: string }>>(new Map());
 
   // Results Screen State
   const [resultsFilter, setResultsFilter] = useState<"all" | "missed" | "correct">("all");
@@ -108,17 +155,14 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   const [timeLeft, setTimeLeft] = useState<number>(timerSeconds);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Number of cards currently due for SRS review
-  const dueCardsCount = useMemo(() => getDueCards(cards).length, [cards]);
-
   // If initialDeckId changes
   useEffect(() => {
-    if (initialDeckId) {
-      setSelectedDeckId(initialDeckId);
+    if (initialDeckId && initialDeckId !== "all") {
+      setSelectedDeckIds([initialDeckId]);
     }
   }, [initialDeckId]);
 
-  // Fetch AI explanation via GLM (4.7 Flash)
+  // Fetch explanation
   const fetchAiExplanation = useCallback(
     async (q: QuizQuestion, chosenOptionId: string | null | undefined, mode: "quick" | "deep", force = false) => {
       const targetCardId = q.card.id;
@@ -131,11 +175,9 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         if (activeQuestionIdRef.current === targetCardId) {
           if (mode === "deep") {
             setDeepExplanation(cached.explanation);
-            setDeepModelUsed(cached.model);
             setIsDeepMode(true);
           } else {
             setQuickExplanation(cached.explanation);
-            setAiModelUsed(cached.model);
           }
         }
         return;
@@ -166,11 +208,8 @@ export const QuizHub: React.FC<QuizHubProps> = ({
 
         const data = await res.json();
         if (data.success && data.explanation) {
-          if (data.model !== "offline-fallback") {
-            aiCacheRef.current.set(cacheKey, { explanation: data.explanation, model: data.model });
-          }
+          aiCacheRef.current.set(cacheKey, { explanation: data.explanation });
 
-          // Update question in questions list
           setQuestions((prev) =>
             prev.map((item) => {
               if (item.card.id !== targetCardId) return item;
@@ -178,27 +217,22 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 ...item,
                 quickExplanation: mode === "quick" ? data.explanation : item.quickExplanation,
                 deepExplanation: mode === "deep" ? data.explanation : item.deepExplanation,
-                quickModel: mode === "quick" ? data.model : item.quickModel,
-                deepModel: mode === "deep" ? data.model : item.deepModel,
               };
             })
           );
 
-          // ONLY update active view if the user is STILL on this card
           if (activeQuestionIdRef.current === targetCardId) {
             if (mode === "deep") {
               setDeepExplanation(data.explanation);
-              setDeepModelUsed(data.model);
             } else {
               setQuickExplanation(data.explanation);
-              setAiModelUsed(data.model);
             }
           }
         } else {
           throw new Error(data.error || "Failed to generate explanation");
         }
       } catch (err) {
-        console.warn("AI explanation fetch failed, using fallback:", err);
+        console.warn("Explanation fetch fallback triggered:", err);
         const correctOpt = q.options.find((o) => o.isCorrect) || q.options[0];
         const wrongOpts = q.options.filter((o) => !o.isCorrect);
 
@@ -219,8 +253,6 @@ export const QuizHub: React.FC<QuizHubProps> = ({
               `\n\n### ⚡ Quick Memory Trick\nAssociate **"${q.prompt.slice(0, 45).replace(/"/g, '')}..."** directly with **${correctOpt.text}**.`
             : cleanFallback;
 
-        const fallbackModel = "offline-fallback";
-
         setQuestions((prev) =>
           prev.map((item) => {
             if (item.card.id !== targetCardId) return item;
@@ -228,8 +260,6 @@ export const QuizHub: React.FC<QuizHubProps> = ({
               ...item,
               quickExplanation: mode === "quick" ? fallbackText : item.quickExplanation,
               deepExplanation: mode === "deep" ? fallbackText : item.deepExplanation,
-              quickModel: mode === "quick" ? fallbackModel : item.quickModel,
-              deepModel: mode === "deep" ? fallbackModel : item.deepModel,
             };
           })
         );
@@ -237,10 +267,8 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         if (activeQuestionIdRef.current === targetCardId) {
           if (mode === "deep") {
             setDeepExplanation(fallbackText);
-            setDeepModelUsed(fallbackModel);
           } else {
             setQuickExplanation(fallbackText);
-            setAiModelUsed(fallbackModel);
           }
         }
       } finally {
@@ -256,41 +284,36 @@ export const QuizHub: React.FC<QuizHubProps> = ({
     []
   );
 
-  // Build Quiz Questions
+  // Build and Shuffle Quiz Questions
   const startQuiz = useCallback(
-    (deckFilter = selectedDeckId, count = questionCount) => {
+    (customCategoryIds = selectedDeckIds, count = questionCount) => {
+      sounds.playSelect();
       let pool: Flashcard[] = [];
 
-      if (deckFilter === "due") {
-        pool = getDueCards(cards);
-      } else if (deckFilter === "all") {
-        pool = [...cards];
-      } else {
-        pool = cards.filter((c) => c.deckId === deckFilter);
-      }
+      const activeCategoryIds =
+        customCategoryIds.length === 0 ? decks.map((d) => d.id) : customCategoryIds;
+      pool = cards.filter((c) => activeCategoryIds.includes(c.deckId));
 
-      if (pool.length === 0) return;
+      if (pool.length === 0) pool = [...cards];
 
-      // Shuffle pool
-      pool = pool.sort(() => Math.random() - 0.5);
+      // Graceful Fisher-Yates shuffle across selected categories
+      pool = shuffleArray(pool);
       const selectedPool = count === -1 ? pool : pool.slice(0, Math.min(count, pool.length));
 
       const generated: QuizQuestion[] = [];
 
       selectedPool.forEach((card) => {
-        // If card has options configured
         if (card.mcqOptions && card.mcqOptions.length >= 2) {
           generated.push({
             card,
             prompt: card.front,
-            options: [...card.mcqOptions],
+            options: shuffleArray([...card.mcqOptions]),
             explanation: card.explanation || card.back,
           });
         } else {
-          // Auto-generate 3 plausible distractors from other cards
-          const distractors = cards
-            .filter((c) => c.id !== card.id && c.back.trim().length > 0)
-            .sort(() => Math.random() - 0.5)
+          const distractors = shuffleArray(
+            cards.filter((c) => c.id !== card.id && c.back.trim().length > 0)
+          )
             .slice(0, 3)
             .map((c, idx) => ({
               id: `distractor-${idx}`,
@@ -299,12 +322,11 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             }));
 
           const cleanBack = card.back.replace(/\$\$(.*?)\$\$/g, "$1");
-          const options = [
+          const options = shuffleArray([
             { id: "correct", text: cleanBack, isCorrect: true },
             ...distractors,
-          ].sort(() => Math.random() - 0.5);
+          ]);
 
-          // Strip cloze masks in prompt so question makes sense
           const cleanPrompt = card.front.replace(/\{\{c\d+::(.*?)(?:::.*?)?\}\}/g, "______");
 
           generated.push({
@@ -329,8 +351,6 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       setResultsFilter("all");
       setQuickExplanation(null);
       setDeepExplanation(null);
-      setAiModelUsed(null);
-      setDeepModelUsed(null);
       setIsAiLoading(false);
       setIsDeepMode(false);
       setIsDeepLoading(false);
@@ -338,10 +358,58 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       setTimeLeft(timerSeconds);
       questionStartTime.current = Date.now();
     },
-    [cards, selectedDeckId, questionCount, timerSeconds]
+    [cards, selectedDeckIds, decks, questionCount, timerSeconds]
   );
 
-  // Handle Option Selection with SRS & Auto AI Explanation
+  // Self-Rate Handler (Requirement 12: what user forgot / found hard / easy)
+  const handleUserSelfRate = useCallback(
+    (rating: Rating) => {
+      const currentQ = questions[currentIndex];
+      if (!currentQ) return;
+
+      sounds.playRate(rating);
+
+      setQuestions((prev) => {
+        const copy = [...prev];
+        copy[currentIndex] = {
+          ...copy[currentIndex],
+          userRating: rating,
+        };
+        return copy;
+      });
+
+      if (syncWithSRS) {
+        const srsUpdate = calculateNextReview(currentQ.card, rating, Date.now());
+        const updatedCard: Flashcard = {
+          ...currentQ.card,
+          srs: srsUpdate,
+          updatedAt: Date.now(),
+        };
+
+        storage.saveCard(updatedCard);
+        storage.addReviewLog({
+          id: `log-quiz-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+          cardId: currentQ.card.id,
+          deckId: currentQ.card.deckId,
+          timestamp: Date.now(),
+          rating,
+          timeSpentMs: Date.now() - questionStartTime.current,
+          intervalBefore: currentQ.card.srs.interval,
+          intervalAfter: srsUpdate.interval,
+        });
+
+        setLastSrsStatus({
+          isLapse: rating === 1,
+          interval: srsUpdate.interval,
+          reps: srsUpdate.reps,
+          lapses: srsUpdate.lapses,
+        });
+      }
+    },
+    [questions, currentIndex, syncWithSRS]
+  );
+
+  // Handle Option Selection
   const handleSelectOption = useCallback(
     (optionId: string) => {
       if (isAnswered) return;
@@ -356,88 +424,58 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       const timeSpent = Date.now() - questionStartTime.current;
       const chosen = currentQ.options.find((o) => o.id === optionId);
       const isCorrect = chosen?.isCorrect || false;
+      const initialRating: Rating = isCorrect ? (timeSpent < 6000 ? 4 : 3) : 1;
 
-      // Update question history
       setQuestions((prev) => {
         const copy = [...prev];
         copy[currentIndex] = {
           ...copy[currentIndex],
           selectedOptionId: optionId,
           isUserCorrect: isCorrect,
+          userRating: initialRating,
         };
         return copy;
       });
 
-      // 1. Spaced Repetition (SRS) Integration
+      // Spaced Repetition (SRS) Integration if turned on
       if (syncWithSRS) {
-        if (!isCorrect) {
-          // WRONG ANSWER: Register a Lapse (Rating 1 - Again)
-          const srsUpdate = calculateNextReview(currentQ.card, 1, Date.now());
-          const updatedCard: Flashcard = {
-            ...currentQ.card,
-            srs: srsUpdate,
-            updatedAt: Date.now(),
-          };
+        const srsUpdate = calculateNextReview(currentQ.card, initialRating, Date.now());
+        const updatedCard: Flashcard = {
+          ...currentQ.card,
+          srs: srsUpdate,
+          updatedAt: Date.now(),
+        };
 
-          storage.saveCard(updatedCard);
-          storage.addReviewLog({
-            id: `log-quiz-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
-            cardId: currentQ.card.id,
-            deckId: currentQ.card.deckId,
-            timestamp: Date.now(),
-            rating: 1,
-            timeSpentMs: timeSpent,
-            intervalBefore: currentQ.card.srs.interval,
-            intervalAfter: srsUpdate.interval,
-          });
+        storage.saveCard(updatedCard);
+        storage.addReviewLog({
+          id: `log-quiz-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+          cardId: currentQ.card.id,
+          deckId: currentQ.card.deckId,
+          timestamp: Date.now(),
+          rating: initialRating,
+          timeSpentMs: timeSpent,
+          intervalBefore: currentQ.card.srs.interval,
+          intervalAfter: srsUpdate.interval,
+        });
 
-          setLastSrsStatus({
-            isLapse: true,
-            interval: srsUpdate.interval,
-            reps: srsUpdate.reps,
-            lapses: srsUpdate.lapses,
-          });
-        } else {
-          // CORRECT ANSWER: Advance spaced repetition interval (Rating 3 or 4)
-          const rating: Rating = timeSpent < 6000 ? 4 : 3;
-          const srsUpdate = calculateNextReview(currentQ.card, rating, Date.now());
-          const updatedCard: Flashcard = {
-            ...currentQ.card,
-            srs: srsUpdate,
-            updatedAt: Date.now(),
-          };
-
-          storage.saveCard(updatedCard);
-          storage.addReviewLog({
-            id: `log-quiz-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
-            cardId: currentQ.card.id,
-            deckId: currentQ.card.deckId,
-            timestamp: Date.now(),
-            rating,
-            timeSpentMs: timeSpent,
-            intervalBefore: currentQ.card.srs.interval,
-            intervalAfter: srsUpdate.interval,
-          });
-
-          setLastSrsStatus({
-            isLapse: false,
-            interval: srsUpdate.interval,
-            reps: srsUpdate.reps,
-            lapses: srsUpdate.lapses,
-          });
-        }
+        setLastSrsStatus({
+          isLapse: !isCorrect,
+          interval: srsUpdate.interval,
+          reps: srsUpdate.reps,
+          lapses: srsUpdate.lapses,
+        });
       }
 
-      // 2. Fetch Auto AI Explanation (GLM 4.7 Flash)
+      // Fetch auto explanation
       fetchAiExplanation(currentQ, optionId, "quick");
 
       if (isCorrect) {
-        sounds.playSuccess();
+        sounds.playCorrect();
         setScore((s) => s + 1);
         setStreak((str) => str + 1);
         storage.recordActivity(true);
       } else {
-        sounds.playError();
+        sounds.playIncorrect();
         setStreak(0);
         storage.recordActivity(false);
       }
@@ -445,14 +483,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
     [isAnswered, questions, currentIndex, syncWithSRS, fetchAiExplanation]
   );
 
-  // Time-out handler with SRS Lapse & AI explanation
+  // Time-out handler
   const handleTimeOut = useCallback(() => {
     if (isAnswered) return;
+
     const currentQ = questions[currentIndex];
     if (!currentQ) return;
 
     setIsAnswered(true);
-    sounds.playError();
+    sounds.playIncorrect();
     setStreak(0);
     storage.recordActivity(false);
     if (timerRef.current) clearInterval(timerRef.current);
@@ -463,6 +502,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         copy[currentIndex] = {
           ...copy[currentIndex],
           isUserCorrect: false,
+          userRating: 1,
         };
       }
       return copy;
@@ -520,6 +560,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
 
   // Next Question
   const handleNext = useCallback(() => {
+    sounds.playSelect();
     if (currentIndex + 1 < questions.length) {
       const nextIdx = currentIndex + 1;
       const nextQ = questions[nextIdx];
@@ -530,8 +571,6 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       setLastSrsStatus(null);
       setQuickExplanation(nextQ?.quickExplanation || null);
       setDeepExplanation(nextQ?.deepExplanation || null);
-      setAiModelUsed(nextQ?.quickModel || null);
-      setDeepModelUsed(nextQ?.deepModel || null);
       setIsAiLoading(false);
       setIsDeepMode(false);
       setIsDeepLoading(false);
@@ -539,7 +578,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       setTimeLeft(timerSeconds);
     } else {
       setIsFinished(true);
-      sounds.playSuccess();
+      sounds.playComplete();
       confetti({
         particleCount: 120,
         spread: 80,
@@ -586,7 +625,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
     setSavedDeckNotice(`Saved "${newDeck.title}" with ${missed.length} cards to your Decks!`);
   }, [questions]);
 
-  // Keyboard navigation (1-4 or A-D to select, Space/Enter to advance)
+  // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!isQuizActive || isFinished) return;
@@ -610,7 +649,19 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           handleSelectOption(currentQ.options[optIdx].id);
         }
       } else {
-        if (e.key === " " || e.key === "Enter") {
+        if (e.key === "1") {
+          e.preventDefault();
+          handleUserSelfRate(1);
+        } else if (e.key === "2") {
+          e.preventDefault();
+          handleUserSelfRate(2);
+        } else if (e.key === "3") {
+          e.preventDefault();
+          handleUserSelfRate(3);
+        } else if (e.key === "4") {
+          e.preventDefault();
+          handleUserSelfRate(4);
+        } else if (e.key === " " || e.key === "Enter") {
           e.preventDefault();
           handleNext();
         }
@@ -619,19 +670,20 @@ export const QuizHub: React.FC<QuizHubProps> = ({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isQuizActive, isFinished, isAnswered, questions, currentIndex, handleSelectOption, handleNext]);
+  }, [isQuizActive, isFinished, isAnswered, questions, currentIndex, handleSelectOption, handleUserSelfRate, handleNext]);
 
   const currentQ = questions[currentIndex] || null;
 
+  // Total matching cards for the selected categories
+  const totalSelectedCards = useMemo(() => {
+    if (selectedDeckIds.length === 0 || selectedDeckIds.length === decks.length) {
+      return cards.length;
+    }
+    return cards.filter((c) => selectedDeckIds.includes(c.deckId)).length;
+  }, [cards, selectedDeckIds, decks]);
+
   // ================= 1. SETUP / HUB SCREEN =================
   if (!isQuizActive) {
-    const availableCardCount =
-      selectedDeckId === "due"
-        ? dueCardsCount
-        : selectedDeckId === "all"
-        ? cards.length
-        : cards.filter((c) => c.deckId === selectedDeckId).length;
-
     return (
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Top Header */}
@@ -643,37 +695,108 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             Quiz Arena
           </h1>
           <p className="text-zinc-500 text-sm">
-            Test your active recall with multiple-choice questions, instant explanations powered by Z.ai GLM Flash, and intelligent spaced repetition scheduling.
+            Test your active recall across multiple categories with randomized multiple-choice questions, instant conceptual explanations, and adaptive recall ratings.
           </p>
         </div>
 
         {/* Configuration Card */}
-        <div className="max-w-xl mx-auto rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 p-6 sm:p-8 shadow-xs space-y-6">
-          {/* Deck Selection */}
+        <div className="max-w-2xl mx-auto rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 p-6 sm:p-8 shadow-xs space-y-6">
+          {/* Category Multi-Select Grid */}
           <div>
-            <label className="block text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-2">
-              Select Deck / Topic
-            </label>
-            <select
-              value={selectedDeckId}
-              onChange={(e) => setSelectedDeckId(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm font-medium text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-1 focus:ring-zinc-900"
-            >
-              <option value="all">⚡ All Questions Combined ({cards.length} cards)</option>
-              {dueCardsCount > 0 && (
-                <option value="due">
-                  🚨 Due for Spaced Repetition Review ({dueCardsCount} cards)
-                </option>
-              )}
-              {decks.map((d) => {
-                const count = cards.filter((c) => c.deckId === d.id).length;
+            <div className="flex items-center justify-between gap-2 mb-2.5">
+              <label className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
+                Select Quiz Categories ({selectedDeckIds.length} of {decks.length} selected)
+              </label>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    sounds.playSelect();
+                    const allIds = decks.map((d) => d.id);
+                    setSelectedDeckIds(allIds);
+                    setCookie("flashfire_quiz_categories", JSON.stringify(allIds), 365);
+                  }}
+                  className="text-xs text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 font-medium transition-colors cursor-pointer"
+                >
+                  Select All
+                </button>
+                <span className="text-zinc-300 dark:text-zinc-700">•</span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    sounds.playSelect();
+                    setSelectedDeckIds([]);
+                    setCookie("flashfire_quiz_categories", JSON.stringify([]), 365);
+                  }}
+                  className="text-xs text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 font-medium transition-colors cursor-pointer"
+                >
+                  Clear All
+                </button>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {decks.map((deck) => {
+                const isSelected = selectedDeckIds.includes(deck.id);
+                const deckCardsCount = cards.filter((c) => c.deckId === deck.id).length;
+
                 return (
-                  <option key={d.id} value={d.id}>
-                    {d.icon} {d.title} ({count} cards)
-                  </option>
+                  <button
+                    key={deck.id}
+                    type="button"
+                    onClick={() => {
+                      sounds.playSelect();
+                      const next = isSelected
+                        ? selectedDeckIds.filter((id) => id !== deck.id)
+                        : [...selectedDeckIds, deck.id];
+                      setSelectedDeckIds(next);
+                      setCookie("flashfire_quiz_categories", JSON.stringify(next), 365);
+                    }}
+                    className={`p-3.5 rounded-xl border text-left transition-all flex items-center justify-between group cursor-pointer ${
+                      isSelected
+                        ? "bg-zinc-900 dark:bg-zinc-100 border-zinc-900 dark:border-zinc-100 text-white dark:text-zinc-900 shadow-xs"
+                        : "bg-white dark:bg-zinc-800/80 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 dark:hover:border-zinc-600"
+                    }`}
+                  >
+                    <div className="flex items-center gap-3 min-w-0">
+                      <div
+                        className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${
+                          isSelected
+                            ? "bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-900"
+                            : "bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 group-hover:text-zinc-900 dark:group-hover:text-zinc-100"
+                        }`}
+                      >
+                        <DeckIcon deckId={deck.id} className="w-4 h-4" />
+                      </div>
+                      <div className="min-w-0">
+                        <div className="text-xs font-semibold truncate leading-tight">
+                          {deck.title}
+                        </div>
+                        <div
+                          className={`text-[11px] mt-0.5 ${
+                            isSelected
+                              ? "text-zinc-300 dark:text-zinc-600"
+                              : "text-zinc-400 dark:text-zinc-500"
+                          }`}
+                        >
+                          {deckCardsCount} questions
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      className={`w-5 h-5 rounded-md border flex items-center justify-center shrink-0 ml-2 transition-all ${
+                        isSelected
+                          ? "bg-white dark:bg-zinc-900 border-transparent text-zinc-900 dark:text-white"
+                          : "border-zinc-300 dark:border-zinc-600 bg-transparent"
+                      }`}
+                    >
+                      {isSelected && <Check className="w-3.5 h-3.5 stroke-[3]" />}
+                    </div>
+                  </button>
                 );
               })}
-            </select>
+            </div>
           </div>
 
           {/* Question Count Pills */}
@@ -686,20 +809,83 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 <button
                   key={cnt}
                   type="button"
-                  onClick={() => setQuestionCount(cnt)}
-                  className={`py-2.5 rounded-xl border text-xs font-semibold transition-all ${
+                  onClick={() => {
+                    sounds.playSelect();
+                    setQuestionCount(cnt);
+                    setCookie("flashfire_quiz_count", String(cnt), 365);
+                  }}
+                  className={`py-2.5 rounded-xl border text-xs font-semibold transition-all cursor-pointer ${
                     questionCount === cnt
                       ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 border-zinc-900 dark:border-zinc-100 shadow-xs"
                       : "bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400"
                   }`}
                 >
-                  {cnt === -1 ? "All" : `${cnt} Qs`}
+                  {cnt === -1 ? "All Available" : `${cnt} Questions`}
                 </button>
               ))}
             </div>
           </div>
 
-          {/* SRS Sync Toggle */}
+          {/* Timed Mode Toggle & Duration (Enabled by default) */}
+          <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800 space-y-3">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
+                  <Timer className="w-4 h-4 text-zinc-500" />
+                  Timed Sprint
+                </div>
+                <div className="text-xs text-zinc-400 mt-0.5">
+                  Animated visual timer per question for high-speed recall training
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  sounds.playSelect();
+                  const next = !isTimed;
+                  setIsTimed(next);
+                  setCookie("flashfire_quiz_timed", String(next), 365);
+                }}
+                className={`w-12 h-7 rounded-full transition-colors relative p-0.5 shrink-0 ml-3 cursor-pointer ${
+                  isTimed ? "bg-zinc-900 dark:bg-zinc-100" : "bg-zinc-200 dark:bg-zinc-700"
+                }`}
+              >
+                <div
+                  className={`w-6 h-6 rounded-full bg-white dark:bg-zinc-900 transition-transform ${
+                    isTimed ? "translate-x-5" : "translate-x-0"
+                  }`}
+                />
+              </button>
+            </div>
+
+            {isTimed && (
+              <div className="flex items-center justify-between gap-3 pt-1">
+                <span className="text-xs text-zinc-500 font-medium">Timer duration:</span>
+                <div className="grid grid-cols-4 gap-1.5">
+                  {[15, 30, 45, 60].map((sec) => (
+                    <button
+                      key={sec}
+                      type="button"
+                      onClick={() => {
+                        sounds.playSelect();
+                        setTimerSeconds(sec);
+                        setCookie("flashfire_quiz_seconds", String(sec), 365);
+                      }}
+                      className={`px-3 py-1.5 rounded-lg border text-xs font-mono font-semibold transition-all cursor-pointer ${
+                        timerSeconds === sec
+                          ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 border-zinc-900 dark:border-zinc-100"
+                          : "bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400"
+                      }`}
+                    >
+                      {sec}s
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* SRS Sync Toggle (Default disabled) */}
           <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between">
             <div>
               <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
@@ -707,13 +893,18 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 Sync with Spaced Repetition (SRS)
               </div>
               <div className="text-xs text-zinc-400 mt-0.5">
-                Missed questions are flagged as lapses & due immediately for review
+                Update card repetition intervals automatically based on your quiz answers
               </div>
             </div>
             <button
               type="button"
-              onClick={() => setSyncWithSRS(!syncWithSRS)}
-              className={`w-12 h-7 rounded-full transition-colors relative p-0.5 shrink-0 ml-3 ${
+              onClick={() => {
+                sounds.playSelect();
+                const next = !syncWithSRS;
+                setSyncWithSRS(next);
+                setCookie("flashfire_quiz_srs", String(next), 365);
+              }}
+              className={`w-12 h-7 rounded-full transition-colors relative p-0.5 shrink-0 ml-3 cursor-pointer ${
                 syncWithSRS ? "bg-zinc-900 dark:bg-zinc-100" : "bg-zinc-200 dark:bg-zinc-700"
               }`}
             >
@@ -725,41 +916,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             </button>
           </div>
 
-          {/* Mode Toggle (Standard vs Timed) */}
-          <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between">
-            <div>
-              <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
-                <Timer className="w-4 h-4 text-zinc-500" />
-                Timed Sprint (20s / question)
-              </div>
-              <div className="text-xs text-zinc-400 mt-0.5">
-                Answer against a countdown timer for higher recall pressure
-              </div>
-            </div>
-            <button
-              type="button"
-              onClick={() => setIsTimed(!isTimed)}
-              className={`w-12 h-7 rounded-full transition-colors relative p-0.5 shrink-0 ml-3 ${
-                isTimed ? "bg-zinc-900 dark:bg-zinc-100" : "bg-zinc-200 dark:bg-zinc-700"
-              }`}
-            >
-              <div
-                className={`w-6 h-6 rounded-full bg-white dark:bg-zinc-900 transition-transform ${
-                  isTimed ? "translate-x-5" : "translate-x-0"
-                }`}
-              />
-            </button>
-          </div>
-
           {/* Start Button */}
           <div className="pt-2">
             <button
               onClick={() => startQuiz()}
-              disabled={availableCardCount === 0}
-              className="w-full py-3.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all flex items-center justify-center gap-2 disabled:opacity-40 shadow-xs active:scale-98"
+              disabled={totalSelectedCards === 0}
+              className="w-full py-3.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all flex items-center justify-center gap-2 disabled:opacity-40 shadow-xs active:scale-98 cursor-pointer"
             >
               <Play className="w-4 h-4 fill-current" />
-              <span>Start Quiz ({availableCardCount} cards available)</span>
+              <span>Start Quiz ({totalSelectedCards} questions ready)</span>
             </button>
           </div>
         </div>
@@ -771,7 +936,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   if (isFinished) {
     const accuracy = questions.length > 0 ? Math.round((score / questions.length) * 100) : 100;
     const grade =
-      accuracy >= 90 ? "Master" : accuracy >= 75 ? "Great Recall" : accuracy >= 50 ? "Keep Practicing" : "Needs Review";
+      accuracy >= 90 ? "Mastery" : accuracy >= 75 ? "Great Recall" : accuracy >= 50 ? "Keep Practicing" : "Needs Review";
 
     const missedQuestions = questions.filter((q) => !q.isUserCorrect);
     const correctQuestions = questions.filter((q) => q.isUserCorrect);
@@ -825,7 +990,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           </div>
         </div>
 
-        {/* SRS Recovery Banner (Triggered when user missed questions) */}
+        {/* Missed Questions Recovery Banner */}
         {missedQuestions.length > 0 && (
           <div className="mb-8 p-5 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-left shadow-xs">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -835,13 +1000,13 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
-                    <span>{missedQuestions.length} Questions Queued for Spaced Repetition</span>
+                    <span>{missedQuestions.length} Questions Missed</span>
                     <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-700 dark:text-amber-300">
-                      High Priority
+                      Focus Review
                     </span>
                   </h4>
                   <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-0.5 leading-relaxed">
-                    These questions were automatically logged as lapses with intervals reset to 0d. They are ready right now for active recall flashcard review.
+                    Review these missed questions in 3D interactive flashcards or save them as a focused study deck.
                   </p>
                 </div>
               </div>
@@ -850,13 +1015,14 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 {onStartStudy && (
                   <button
                     onClick={() => {
+                      sounds.playSelect();
                       const fallbackDeck =
-                        decks.find((d) => d.id === selectedDeckId) ||
+                        decks.find((d) => selectedDeckIds.includes(d.id)) ||
                         decks[0] || {
                           id: "deck-review",
                           title: "Quiz Mistakes Review",
                           description: "Focused session",
-                          icon: "🔥",
+                          icon: "🎯",
                           color: "#111111",
                           tags: ["Review"],
                           createdAt: Date.now(),
@@ -864,15 +1030,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                         };
                       onStartStudy(fallbackDeck, "srs", missedCards, `Review ${missedCards.length} Quiz Mistakes`);
                     }}
-                    className="px-4 py-2 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold text-xs hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center gap-1.5 shadow-xs"
+                    className="px-4 py-2 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold text-xs hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center gap-1.5 shadow-xs cursor-pointer"
                   >
                     <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                    Review Mistakes in 3D Cards
+                    Review in 3D Cards
                   </button>
                 )}
                 <button
                   onClick={handleSaveMissedAsDeck}
-                  className="px-3.5 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-medium text-xs hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors flex items-center gap-1.5"
+                  className="px-3.5 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-medium text-xs hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors flex items-center gap-1.5 cursor-pointer"
                 >
                   <FolderPlus className="w-3.5 h-3.5" />
                   Save as Deck
@@ -893,21 +1059,24 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
           <button
             onClick={() => startQuiz()}
-            className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2 shadow-xs"
+            className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2 shadow-xs cursor-pointer"
           >
             <RotateCcw className="w-4 h-4" />
             Try Again
           </button>
           <button
-            onClick={() => setIsQuizActive(false)}
-            className="w-full sm:w-auto px-6 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-medium text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
+            onClick={() => {
+              sounds.playSelect();
+              setIsQuizActive(false);
+            }}
+            className="w-full sm:w-auto px-6 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-medium text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
           >
             Configure New Quiz
           </button>
           {onExit && (
             <button
               onClick={onExit}
-              className="w-full sm:w-auto px-6 py-2.5 rounded-xl text-zinc-500 hover:text-zinc-900 text-sm font-medium transition-colors"
+              className="w-full sm:w-auto px-6 py-2.5 rounded-xl text-zinc-500 hover:text-zinc-900 text-sm font-medium transition-colors cursor-pointer"
             >
               Exit to Decks
             </button>
@@ -918,7 +1087,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         <div className="rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-6 shadow-xs">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-zinc-100 dark:border-zinc-800">
             <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
-              <span>Detailed Question Review</span>
+              <span>Question Review</span>
               <span className="text-xs font-normal text-zinc-400">({questions.length} items)</span>
             </h3>
 
@@ -926,7 +1095,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             <div className="flex items-center gap-1.5 bg-zinc-100 dark:bg-zinc-800 p-1 rounded-xl text-xs font-medium">
               <button
                 onClick={() => setResultsFilter("all")}
-                className={`px-2.5 py-1 rounded-lg transition-colors ${
+                className={`px-2.5 py-1 rounded-lg transition-colors cursor-pointer ${
                   resultsFilter === "all"
                     ? "bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 shadow-xs"
                     : "text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200"
@@ -936,7 +1105,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
               </button>
               <button
                 onClick={() => setResultsFilter("missed")}
-                className={`px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1 ${
+                className={`px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1 cursor-pointer ${
                   resultsFilter === "missed"
                     ? "bg-white dark:bg-zinc-900 text-rose-600 dark:text-rose-400 shadow-xs font-semibold"
                     : "text-zinc-500 hover:text-rose-600"
@@ -947,7 +1116,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
               </button>
               <button
                 onClick={() => setResultsFilter("correct")}
-                className={`px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1 ${
+                className={`px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1 cursor-pointer ${
                   resultsFilter === "correct"
                     ? "bg-white dark:bg-zinc-900 text-emerald-600 dark:text-emerald-400 shadow-xs font-semibold"
                     : "text-zinc-500 hover:text-emerald-600"
@@ -967,14 +1136,6 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     <span className="text-zinc-400 font-mono text-xs mr-2">{i + 1}.</span>
                     <FormattedText text={q.prompt} />
                   </div>
-                  {q.card.codeSnippet && (
-                    <div className="my-2 max-w-xl">
-                      <CodeBlockView
-                        code={q.card.codeSnippet}
-                        language={q.card.codeLanguage || "pseudocode"}
-                      />
-                    </div>
-                  )}
                   <div className="flex items-center gap-2 shrink-0">
                     {q.isUserCorrect ? (
                       <span className="inline-flex items-center gap-1 text-xs font-semibold text-emerald-600 bg-emerald-50 dark:bg-emerald-950/50 px-2 py-0.5 rounded-full">
@@ -987,6 +1148,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     )}
                   </div>
                 </div>
+
+                {q.card.codeSnippet && (
+                  <div className="my-2 max-w-xl">
+                    <CodeBlockView
+                      code={q.card.codeSnippet}
+                      language={q.card.codeLanguage || "pseudocode"}
+                    />
+                  </div>
+                )}
 
                 <div className="text-xs space-y-1.5 pl-5">
                   <div className="text-emerald-700 dark:text-emerald-400 flex items-center gap-1">
@@ -1004,18 +1174,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                       {q.explanation}
                     </div>
                   )}
-                  {/* SRS Status on Card */}
+                  {/* Category & Status on Card */}
                   <div className="pt-1 flex flex-wrap items-center gap-2 text-[11px] text-zinc-400 font-mono">
-                    <span className="px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
-                      Deck: {decks.find((d) => d.id === q.card.deckId)?.title || "Accenture Technical"}
+                    <span className="px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 flex items-center gap-1">
+                      <DeckIcon deckId={q.card.deckId} className="w-3 h-3" />
+                      <span>{decks.find((d) => d.id === q.card.deckId)?.title || "Accenture Technical"}</span>
                     </span>
-                    {!q.isUserCorrect ? (
-                      <span className="px-2 py-0.5 rounded-md bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-400 border border-rose-200 dark:border-rose-900/60 font-semibold flex items-center gap-1">
-                        <Zap className="w-3 h-3" /> Due for Review Now (Lapses: {q.card.srs.lapses || 1})
-                      </span>
-                    ) : (
-                      <span className="px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-900/60 font-semibold flex items-center gap-1">
-                        ✓ Next Review: {q.card.srs.interval}d (Reps: {q.card.srs.reps || 1})
+                    {q.userRating && (
+                      <span className="px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-medium">
+                        Rating: {q.userRating === 1 ? "Forgot" : q.userRating === 2 ? "Hard" : q.userRating === 3 ? "Good" : "Easy"}
                       </span>
                     )}
                   </div>
@@ -1034,8 +1201,11 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       {/* Top Header Bar */}
       <div className="flex items-center justify-between gap-4 mb-4">
         <button
-          onClick={() => setIsQuizActive(false)}
-          className="text-xs font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors flex items-center gap-1.5"
+          onClick={() => {
+            sounds.playSelect();
+            setIsQuizActive(false);
+          }}
+          className="text-xs font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors flex items-center gap-1.5 cursor-pointer"
         >
           ← Quit Quiz
         </button>
@@ -1049,16 +1219,42 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             </div>
           )}
 
-          {/* Timed Counter */}
+          {/* Timed Circular / Glowing Progress Countdown */}
           {isTimed && (
             <div
-              className={`flex items-center gap-1 text-xs font-mono font-semibold px-2.5 py-1 rounded-full border ${
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-full border text-xs font-mono font-semibold shadow-xs transition-colors ${
                 timeLeft <= 5
-                  ? "bg-rose-50 text-rose-600 border-rose-200 dark:bg-rose-950/40 dark:border-rose-800 animate-pulse"
-                  : "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700"
+                  ? "bg-rose-50 text-rose-600 border-rose-300 dark:bg-rose-950/50 dark:border-rose-800 animate-pulse"
+                  : timeLeft <= 10
+                  ? "bg-amber-50 text-amber-700 border-amber-300 dark:bg-amber-950/40 dark:border-amber-800"
+                  : "bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200 border-zinc-200 dark:border-zinc-700"
               }`}
             >
-              <Timer className="w-3.5 h-3.5" />
+              <div className="relative w-3.5 h-3.5 flex items-center justify-center">
+                <svg className="w-3.5 h-3.5 -rotate-90" viewBox="0 0 20 20">
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="8"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    className="opacity-25"
+                  />
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="8"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeDasharray={2 * Math.PI * 8}
+                    strokeDashoffset={2 * Math.PI * 8 * (1 - timeLeft / timerSeconds)}
+                    strokeLinecap="round"
+                    className="transition-all duration-1000 ease-linear"
+                  />
+                </svg>
+              </div>
               <span>{timeLeft}s</span>
             </div>
           )}
@@ -1070,7 +1266,10 @@ export const QuizHub: React.FC<QuizHubProps> = ({
 
           {/* Scratchpad Button */}
           <button
-            onClick={() => setIsScratchpadOpen((prev) => !prev)}
+            onClick={() => {
+              sounds.playSelect();
+              setIsScratchpadOpen((prev) => !prev);
+            }}
             title="Open Live Code & Tracing Scratchpad"
             className={`px-2.5 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer ${
               isScratchpadOpen
@@ -1096,16 +1295,17 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         />
       </div>
 
-      {/* Question Card (Cal.com style) */}
+      {/* Question Card */}
       <div className="p-6 sm:p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 shadow-sm mb-6">
         <div className="flex items-center justify-between gap-2 mb-2">
-          <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400">
-            Question {currentIndex + 1}
+          <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400 flex items-center gap-1.5">
+            <DeckIcon deckId={currentQ?.card.deckId || ""} className="w-3.5 h-3.5" />
+            <span>Question {currentIndex + 1}</span>
           </div>
           {syncWithSRS && (
             <div className="flex items-center gap-1 text-[11px] font-medium text-zinc-400">
               <Zap className="w-3 h-3 text-amber-500" />
-              <span>SRS Synced</span>
+              <span>SRS Active</span>
             </div>
           )}
         </div>
@@ -1149,7 +1349,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 key={opt.id}
                 disabled={isAnswered}
                 onClick={() => handleSelectOption(opt.id)}
-                className={`p-3.5 rounded-xl border text-sm text-left transition-all flex items-center justify-between shadow-xs ${btnStyle}`}
+                className={`p-3.5 rounded-xl border text-sm text-left transition-all flex items-center justify-between shadow-xs cursor-pointer ${btnStyle}`}
               >
                 <div className="flex items-center gap-3">
                   <span className="w-6 h-6 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-mono font-medium flex items-center justify-center shrink-0">
@@ -1170,15 +1370,82 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           })}
         </div>
 
-        {/* Answer Explanation & Real-time SRS Status Box */}
+        {/* Answer Explanation & Recall Rating */}
         <AnimatePresence>
           {isAnswered && (
             <motion.div
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 space-y-3"
+              className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 space-y-4"
             >
-              {/* SRS Real-time Feedback Pill */}
+              {/* Recall Self-Rating Controls (Requirement 12: Forgot / Hard / Good / Easy) */}
+              <div className="p-3.5 rounded-xl bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700/80 space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="font-semibold text-zinc-800 dark:text-zinc-200 flex items-center gap-1.5">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                    Rate your recall for this question:
+                  </span>
+                  <span className="text-[11px] text-zinc-400">
+                    Keys <kbd className="px-1 py-0.2 bg-zinc-200 dark:bg-zinc-700 rounded font-mono text-[10px]">1</kbd>–<kbd className="px-1 py-0.2 bg-zinc-200 dark:bg-zinc-700 rounded font-mono text-[10px]">4</kbd>
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-4 gap-2">
+                  <button
+                    type="button"
+                    onClick={() => handleUserSelfRate(1)}
+                    className={`py-2 px-1 rounded-lg border text-xs font-medium transition-all flex flex-col items-center justify-center cursor-pointer ${
+                      currentQ?.userRating === 1
+                        ? "bg-rose-600 text-white border-rose-600 shadow-xs"
+                        : "border-rose-200 dark:border-rose-900/60 bg-white dark:bg-zinc-900 text-rose-700 dark:text-rose-300 hover:bg-rose-50 dark:hover:bg-rose-950/40"
+                    }`}
+                  >
+                    <span className="font-semibold">Forgot</span>
+                    <span className="text-[10px] opacity-75 font-mono">Reset</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => handleUserSelfRate(2)}
+                    className={`py-2 px-1 rounded-lg border text-xs font-medium transition-all flex flex-col items-center justify-center cursor-pointer ${
+                      currentQ?.userRating === 2
+                        ? "bg-amber-600 text-white border-amber-600 shadow-xs"
+                        : "border-amber-200 dark:border-amber-900/60 bg-white dark:bg-zinc-900 text-amber-700 dark:text-amber-300 hover:bg-amber-50 dark:hover:bg-amber-950/40"
+                    }`}
+                  >
+                    <span className="font-semibold">Hard</span>
+                    <span className="text-[10px] opacity-75 font-mono">Tricky</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => handleUserSelfRate(3)}
+                    className={`py-2 px-1 rounded-lg border text-xs font-medium transition-all flex flex-col items-center justify-center cursor-pointer ${
+                      currentQ?.userRating === 3
+                        ? "bg-blue-600 text-white border-blue-600 shadow-xs"
+                        : "border-blue-200 dark:border-blue-900/60 bg-white dark:bg-zinc-900 text-blue-700 dark:text-blue-300 hover:bg-blue-50 dark:hover:bg-blue-950/40"
+                    }`}
+                  >
+                    <span className="font-semibold">Good</span>
+                    <span className="text-[10px] opacity-75 font-mono">Solid</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => handleUserSelfRate(4)}
+                    className={`py-2 px-1 rounded-lg border text-xs font-medium transition-all flex flex-col items-center justify-center cursor-pointer ${
+                      currentQ?.userRating === 4
+                        ? "bg-emerald-600 text-white border-emerald-600 shadow-xs"
+                        : "border-emerald-200 dark:border-emerald-900/60 bg-white dark:bg-zinc-900 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40"
+                    }`}
+                  >
+                    <span className="font-semibold">Easy</span>
+                    <span className="text-[10px] opacity-75 font-mono">Mastered</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* SRS Real-time Feedback Pill (If SRS is enabled) */}
               {syncWithSRS && lastSrsStatus && (
                 <div
                   className={`p-3 rounded-xl border text-xs flex items-center justify-between gap-2 ${
@@ -1196,11 +1463,11 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     <span>
                       {lastSrsStatus.isLapse ? (
                         <>
-                          <strong>Moved to Spaced Repetition Due Queue:</strong> Lapse recorded (interval reset to 0d).
+                          <strong>Queued for Spaced Repetition Review:</strong> Interval reset to 0d.
                         </>
                       ) : (
                         <>
-                          <strong>SRS Mastery Advanced:</strong> Next review in{" "}
+                          <strong>SRS Interval Advanced:</strong> Next review in{" "}
                           {lastSrsStatus.interval === 0 ? "< 10m" : `${lastSrsStatus.interval}d`} (Reps: {lastSrsStatus.reps}).
                         </>
                       )}
@@ -1214,53 +1481,25 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 </div>
               )}
 
-              {/* AI Explanation Box (Powered by Z.ai GLM 4.7 Flash) */}
+              {/* Conceptual Explanation Box */}
               <div className="rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-800/40 p-4 transition-all">
                 {/* Header row */}
                 <div className="flex items-center justify-between gap-2 mb-2.5 pb-2 border-b border-zinc-200/60 dark:border-zinc-700/60 flex-wrap">
-                  <div className="flex items-center gap-1.5 flex-wrap">
+                  <div className="flex items-center gap-2">
                     <Sparkles className="w-3.5 h-3.5 text-amber-500 fill-current" />
                     <span className="text-xs font-semibold text-zinc-900 dark:text-zinc-100">
                       {isDeepMode ? "Deep Concept Breakdown" : "Exam Concept & Explanation"}
                     </span>
-                    {(isDeepMode ? (deepModelUsed || currentQ?.deepModel) : (aiModelUsed || currentQ?.quickModel)) === "offline-fallback" ? (
-                      <span className="inline-flex items-center gap-1 text-[10px] font-medium px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60">
-                        <Lightbulb className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
-                        Smart Baseline
-                      </span>
-                    ) : (
-                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-200/80 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-medium">
-                        {isDeepMode
-                          ? (deepModelUsed || currentQ?.deepModel || "GLM 4.7 Flash")
-                          : (aiModelUsed || currentQ?.quickModel || "GLM 4.7 Flash")}
-                      </span>
-                    )}
-
-                    {/* Quick Retry AI button if currently showing offline fallback */}
-                    {((isDeepMode ? (deepModelUsed || currentQ?.deepModel) : (aiModelUsed || currentQ?.quickModel)) === "offline-fallback") && (
-                      <button
-                        onClick={() => {
-                          if (!currentQ) return;
-                          fetchAiExplanation(currentQ, selectedOptionId, isDeepMode ? "deep" : "quick", true);
-                        }}
-                        disabled={isAiLoading || isDeepLoading}
-                        className="text-[10px] text-amber-700 dark:text-amber-300 hover:text-amber-800 dark:hover:text-amber-200 underline flex items-center gap-0.5 ml-1 disabled:opacity-50 cursor-pointer"
-                        title="Re-query Z.ai GLM"
-                      >
-                        <RotateCcw className={`w-2.5 h-2.5 ${(isAiLoading || isDeepLoading) ? "animate-spin" : ""}`} />
-                        <span>{(isAiLoading || isDeepLoading) ? "Connecting..." : "Retry AI"}</span>
-                      </button>
-                    )}
                   </div>
 
                   {/* Deeper / Quick Explanation Toggle Button */}
                   {!isDeepMode ? (
                     <button
                       onClick={() => {
+                        sounds.playSelect();
                         if (!currentQ) return;
-                        if (currentQ.deepExplanation && currentQ.deepModel !== "offline-fallback") {
+                        if (currentQ.deepExplanation) {
                           setDeepExplanation(currentQ.deepExplanation);
-                          setDeepModelUsed(currentQ.deepModel || "GLM 4.7 Flash");
                           setIsDeepMode(true);
                         } else {
                           fetchAiExplanation(currentQ, selectedOptionId, "deep");
@@ -1282,14 +1521,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                       )}
                     </button>
                   ) : (
-                    <div className="flex items-center gap-2">
-                      <button
-                        onClick={() => setIsDeepMode(false)}
-                        className="text-[11px] text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 font-medium transition-colors px-2 py-0.5 rounded hover:bg-zinc-200/60 dark:hover:bg-zinc-700/50 cursor-pointer"
-                      >
-                        Show Quick Summary
-                      </button>
-                    </div>
+                    <button
+                      onClick={() => {
+                        sounds.playSelect();
+                        setIsDeepMode(false);
+                      }}
+                      className="text-[11px] text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 font-medium transition-colors px-2 py-0.5 rounded hover:bg-zinc-200/60 dark:hover:bg-zinc-700/50 cursor-pointer"
+                    >
+                      Show Quick Summary
+                    </button>
                   )}
                 </div>
 
@@ -1298,7 +1538,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                   <div className="py-2.5 space-y-2 animate-pulse">
                     <div className="flex items-center gap-2 text-xs text-amber-600 dark:text-amber-400 font-medium">
                       <Sparkles className="w-3.5 h-3.5 animate-spin" />
-                      <span>GLM 4.7 Flash is generating full technical breakdown & memory tips...</span>
+                      <span>Generating conceptual breakdown & memory tips...</span>
                     </div>
                     <div className="h-3.5 bg-zinc-200 dark:bg-zinc-700 rounded-md w-3/4"></div>
                     <div className="h-3 bg-zinc-200 dark:bg-zinc-700 rounded-md w-full"></div>
@@ -1307,7 +1547,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 ) : !isDeepMode && isAiLoading && !quickExplanation && !currentQ?.quickExplanation ? (
                   <div className="flex items-center gap-2 py-2 text-xs text-zinc-500 animate-pulse">
                     <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-spin" />
-                    <span>Analyzing with GLM 4.7 Flash...</span>
+                    <span>Analyzing concept...</span>
                   </div>
                 ) : (
                   <div className="text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">
@@ -1332,7 +1572,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 </span>
                 <button
                   onClick={handleNext}
-                  className="px-6 py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center gap-1.5 shadow-xs"
+                  className="px-6 py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center gap-1.5 shadow-xs cursor-pointer"
                 >
                   <span>{currentIndex + 1 < questions.length ? "Next Question" : "View Summary"}</span>
                   <ArrowRight className="w-4 h-4" />

@@ -18,6 +18,7 @@ import {
 import { Deck, Flashcard } from '../lib/types';
 import { storage } from '../lib/storage';
 import { getDueCards } from '../lib/srs';
+import { DeckIcon } from './DeckIcon';
 
 interface DeckManagerProps {
   decks: Deck[];
@@ -136,8 +137,8 @@ export const DeckManager: React.FC<DeckManagerProps> = ({
               <div>
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <div className="flex items-center gap-3">
-                    <span className="w-11 h-11 rounded-xl bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-xl shadow-inner shrink-0">
-                      {deck.icon}
+                    <span className="w-11 h-11 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 flex items-center justify-center shadow-inner shrink-0">
+                      <DeckIcon deckId={deck.id} className="w-5 h-5 text-zinc-700 dark:text-zinc-300" />
                     </span>
                     <div>
                       <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100 line-clamp-1">

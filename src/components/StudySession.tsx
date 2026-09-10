@@ -231,7 +231,7 @@ export const StudySession: React.FC<StudySessionProps> = ({
           <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-3">Recall Breakdown</div>
           <div className="grid grid-cols-4 gap-2 text-center text-xs">
             <div className="p-2 rounded-lg bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 font-medium">
-              Again: {ratedStats.again}
+              Forgot: {ratedStats.again}
             </div>
             <div className="p-2 rounded-lg bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 font-medium">
               Hard: {ratedStats.hard}
@@ -334,13 +334,13 @@ export const StudySession: React.FC<StudySessionProps> = ({
             animate={{ opacity: 1, y: 0 }}
             className="w-full max-w-2xl grid grid-cols-4 gap-2 sm:gap-3"
           >
-            {/* Rating 1: Again */}
+            {/* Rating 1: Forgot */}
             <button
               onClick={() => handleRate(1)}
               className="group p-3 rounded-xl border border-rose-200 dark:border-rose-900/60 bg-white dark:bg-zinc-900 hover:bg-rose-50 dark:hover:bg-rose-950/40 text-rose-700 dark:text-rose-300 transition-all flex flex-col items-center justify-center shadow-xs active:scale-95"
             >
               <div className="text-xs font-semibold flex items-center gap-1">
-                <span>Again</span>
+                <span>Forgot</span>
                 <kbd className="text-[10px] px-1 py-0.2 rounded bg-rose-100 dark:bg-rose-900/60 font-mono">1</kbd>
               </div>
               <span className="text-[11px] text-rose-500/80 font-mono mt-0.5">
