@@ -10,7 +10,7 @@ const STORAGE_KEYS = {
   STATS: 'flashfire_stats_v6',
 };
 
-// Initial Pre-loaded Decks & Cards: 587 Real Accenture Technical MCQs across 6 Modules
+// Initial Pre-loaded Decks & Cards: 596 Real Accenture Technical MCQs across 6 Modules
 const INITIAL_DECKS: Deck[] = ACCENTURE_DECKS;
 const INITIAL_CARDS: Flashcard[] = ACCENTURE_CARDS;
 

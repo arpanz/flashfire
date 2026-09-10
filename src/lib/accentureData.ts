@@ -64,7 +64,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-pseudocode",
     "title": "Pseudocode & Algorithmic Logic",
-    "description": "Loop execution, conditional branching, bitwise operators, string manipulation, and tracing (133 Questions).",
+    "description": "Loop execution, conditional branching, bitwise operators, string manipulation, and tracing (139 Questions).",
     "icon": "\ud83d\udcbb",
     "color": "#7c3aed",
     "tags": [
@@ -79,7 +79,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-web",
     "title": "Web Technologies & Frontend",
-    "description": "HTML5 semantics, CSS layout & flexbox, JavaScript DOM manipulation, closures, and SQL (27 Questions).",
+    "description": "HTML5 semantics, CSS layout & flexbox, JavaScript DOM manipulation, closures, and SQL (30 Questions).",
     "icon": "\u26a1",
     "color": "#0ea5e9",
     "tags": [
@@ -26951,6 +26951,426 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "easeFactor": 2.5,
       "lastStudied": null,
       "dueDate": 1715035220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-588",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed for arr[1], arr[4], and arr[7] after executing the index transformation loop?",
+    "back": "21, 43, 88",
+    "explanation": "Step-by-step tracing:\n- At i=1: arr[1] = 24 - ((1 mod 7)*3) = 24 - 3 = 21. 1 mod 11 != 0, so arr[1] = 21.\n- At i=4: arr[4] = 55 - ((4 mod 7)*3) = 55 - 12 = 43. 4 mod 11 != 0, so arr[4] = 43.\n- At i=7: arr[7] = 88 - ((7 mod 7)*3) = 88 - 0 = 88. 7 mod 11 != 0, so arr[7] = 88.\nOutput is: 21, 43, 88.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "21, 43, 88",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "24, 42, 77",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "21, 55, 88",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "18, 43, 85",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Arrays",
+      "Modulo Arithmetic"
+    ],
+    "createdAt": 1715036000000,
+    "updatedAt": 1715036000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715036000000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "Integer arr[8] = {15, 24, 33, 42, 55, 66, 77, 88}\nfor (Integer i = 0 to 7)\n    arr[i] = arr[i] - ((i mod 7) * 3)\n    if (i mod 11 == 0)\n        arr[i] = arr[i] + ((i / 11) * 2)\n    end if\nend for\nPrint arr[1], arr[4], arr[7]",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-589",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be the complete resulting array after applying the index transformation rules to nums = [15, 24, 33, 42, 55, 66, 77, 88]?",
+    "back": "[15, 21, 27, 33, 43, 51, 59, 88]",
+    "explanation": "Applying nums[i] -= (i % 7) * 3 and if i % 11 == 0, adding (i // 11) * 2:\n- i=0: 15 - 0 + 0 = 15\n- i=1: 24 - 3 = 21\n- i=2: 33 - 6 = 27\n- i=3: 42 - 9 = 33\n- i=4: 55 - 12 = 43\n- i=5: 66 - 15 = 51\n- i=6: 77 - 18 = 59\n- i=7: 88 - 0 = 88\nResult: [15, 21, 27, 33, 43, 51, 59, 88].",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "[15, 21, 27, 33, 43, 51, 59, 88]",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "[15, 24, 30, 36, 42, 48, 54, 88]",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "[15, 21, 24, 30, 40, 50, 60, 88]",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "[12, 18, 24, 30, 42, 52, 62, 70]",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Arrays",
+      "Transformation"
+    ],
+    "createdAt": 1715036060000,
+    "updatedAt": 1715036060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715036060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-590",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What is the optimal time and auxiliary space complexity to perform index-based array transformations on an array of size N in-place?",
+    "back": "O(N) Time and O(1) Auxiliary Space",
+    "explanation": "A single linear traversal from i = 0 to N - 1 updates each element in-place with constant-time arithmetic expressions, running in O(N) linear time and requiring O(1) auxiliary space without extra memory allocations.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "O(N) Time and O(1) Auxiliary Space",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O(N log N) Time and O(N) Auxiliary Space",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O(N^2) Time and O(1) Auxiliary Space",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O(N) Time and O(N) Auxiliary Space",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Complexity Analysis",
+      "Algorithms"
+    ],
+    "createdAt": 1715036120000,
+    "updatedAt": 1715036120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715036120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-591",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What is the SMALLEST positive integer whose decimal digits sum up to 20?",
+    "back": "299",
+    "explanation": "To minimize the positive integer:\n1. Minimize the number of digits by maximizing digits to 9: ceil(20 / 9) = 3 digits.\n2. Place maximum digits (9) at the least significant positions: 20 - 9 = 11; 11 - 9 = 2.\n3. The remaining value 2 is placed at the leading position, producing 299 (2 + 9 + 9 = 20). Any smaller number has sum < 20.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "299",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "389",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "479",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1199",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Greedy",
+      "Number Theory"
+    ],
+    "createdAt": 1715036180000,
+    "updatedAt": 1715036180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715036180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-592",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be returned by the greedy function findSmallestNumber(112) for target digit sum N = 112?",
+    "back": "\"4999999999999\"",
+    "explanation": "112 / 9 = 12 with remainder 4 (12 * 9 + 4 = 112).\nPlacing twelve 9s at the least significant places and 4 at the leading position yields the minimal integer: 4 followed by twelve 9s = \"4999999999999\".",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "\"4999999999999\" (4 followed by twelve 9s)",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "\"9999999999994\"",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "\"1129999999999\"",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "\"8888888888888\"",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Greedy",
+      "Algorithms"
+    ],
+    "createdAt": 1715036240000,
+    "updatedAt": 1715036240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715036240000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "function findSmallestNumber(Integer N)\n    String digits = \"\"\n    while (N > 9)\n        digits = digits + \"9\"\n        N = N - 9\n    end while\n    digits = digits + String(N)\n    return reverse(digits)\nend function\n\nPrint findSmallestNumber(112)",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-593",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Why is greedy placement of '9' at the least significant positions optimal to minimize a number with a given digit sum N?",
+    "back": "It minimizes the total digit count and minimizes the leading most-significant digit",
+    "explanation": "A number with fewer digits is strictly smaller than any number with more digits. Maximizing digits to 9 from the right ensures the total number of digits is minimized (ceil(N/9)) and the smallest non-zero remainder forms the most significant leading digit.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "It minimizes the total digit count and minimizes the leading most-significant digit",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "It guarantees the number is divisible by 9",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "It converts decimal numbers directly into binary strings",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It prevents 32-bit floating-point precision loss",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Greedy",
+      "Logic"
+    ],
+    "createdAt": 1715036300000,
+    "updatedAt": 1715036300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715036300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-594",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which JavaScript function correctly toggles the display style of targetBox between hidden and visible?",
+    "back": "Checks target.style.display and toggles between \"block\" and \"none\"",
+    "explanation": "To toggle visibility cleanly using vanilla JavaScript: inspect target.style.display; if it is \"none\" or empty string, set it to \"block\"; otherwise set it to \"none\".",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Checks target.style.display and toggles between \"block\" and \"none\"",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "document.getElementById(\"targetBox\").toggle()",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "target.style.visibility = !target.style.visibility",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "document.body.removeChild(targetBox)",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web",
+      "JavaScript",
+      "DOM"
+    ],
+    "createdAt": 1715036360000,
+    "updatedAt": 1715036360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715036360000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "function toggleVisibility() {\n    const target = document.getElementById(\"targetBox\");\n    if (target.style.display === \"none\" || target.style.display === \"\") {\n        target.style.display = \"block\";\n    } else {\n        target.style.display = \"none\";\n    }\n}",
+    "codeLanguage": "javascript"
+  },
+  {
+    "id": "card-acc-595",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS declaration correctly sets the background color of all elements with class \"container\" to #f4f4f4?",
+    "back": ".container { background-color: #f4f4f4; }",
+    "explanation": "The period (.) designates a class selector in CSS. `.container { background-color: #f4f4f4; }` targets elements with class=\"container\" and assigns the background color.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ".container { background-color: #f4f4f4; }",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "#container { background-color: #f4f4f4; }",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "container { bg-color: #f4f4f4; }",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": ".container { color: #f4f4f4; }",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web",
+      "CSS",
+      "Styling"
+    ],
+    "createdAt": 1715036420000,
+    "updatedAt": 1715036420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715036420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-596",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML markup correctly adds the class \"new\" to a button element that triggers toggleVisibility()?",
+    "back": "<button class=\"new\" onclick=\"toggleVisibility()\">Toggle Details</button>",
+    "explanation": "In HTML, classes are assigned via the `class` attribute (unlike JSX `className`), and inline click handlers use `onclick=\"toggleVisibility()\"`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<button class=\"new\" onclick=\"toggleVisibility()\">Toggle Details</button>",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "<button classname=\"new\" click=\"toggleVisibility()\">Toggle Details</button>",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "<button new onpress=\"toggleVisibility()\">Toggle Details</button>",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "<button class=\"new\" trigger=\"toggleVisibility()\">Toggle Details</button>",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "DOM"
+    ],
+    "createdAt": 1715036480000,
+    "updatedAt": 1715036480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715036480000,
       "lapses": 0,
       "state": "new"
     }

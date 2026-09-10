@@ -553,11 +553,10 @@ export const QuizHub: React.FC<QuizHubProps> = ({
     const missed = questions.filter((q) => !q.isUserCorrect).map((q) => q.card);
     if (missed.length === 0) return;
 
-    const dateStr = new Date().toLocaleDateString(undefined, { month: "short", day: "numeric" });
     const newDeckId = `deck-mistakes-${Date.now()}`;
     const newDeck: Deck = {
       id: newDeckId,
-      title: `Quiz Mistakes (${dateStr})`,
+      title: `Quiz Mistakes Review`,
       description: `Targeted review deck containing ${missed.length} questions missed during quiz testing.`,
       icon: "🎯",
       color: "#dc2626",
@@ -646,33 +645,6 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           <p className="text-zinc-500 text-sm">
             Test your active recall with multiple-choice questions, instant explanations powered by Z.ai GLM Flash, and intelligent spaced repetition scheduling.
           </p>
-        </div>
-
-        {/* Exam Coding Callout Banner */}
-        <div className="max-w-xl mx-auto mb-6 p-4 rounded-2xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200/80 dark:border-blue-800/60 flex items-center justify-between gap-3 shadow-2xs">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0">
-              <Code2 className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="text-xs font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
-                <span>Accenture Coding Assessment</span>
-                <span className="px-1.5 py-0.2 rounded text-[10px] uppercase font-mono bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-semibold">
-                  Exam Ready
-                </span>
-              </div>
-              <p className="text-[11px] text-zinc-600 dark:text-zinc-400 mt-0.5">
-                Practice Shift 1 & 2 array transformations, smallest sum greedy algorithms, and DOM tasks in the Coding Arena.
-              </p>
-            </div>
-          </div>
-          <button
-            type="button"
-            onClick={() => setIsScratchpadOpen(true)}
-            className="px-3 py-1.5 rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-xs font-semibold text-zinc-800 dark:text-zinc-200 hover:border-zinc-400 shrink-0 transition-colors shadow-2xs cursor-pointer"
-          >
-            Scratchpad
-          </button>
         </div>
 
         {/* Configuration Card */}
