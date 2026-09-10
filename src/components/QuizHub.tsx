@@ -1181,7 +1181,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                             .map((opt) => (
                               <div key={opt.id} className="text-[11px] text-zinc-600 dark:text-zinc-400">
                                 <span className="font-semibold text-zinc-800 dark:text-zinc-200">
-                                  [{opt.id}] {opt.text}:
+                                  [{opt.id}] <FormattedText text={opt.text} as="span" className="inline text-inherit font-semibold" />:
                                 </span>{" "}
                                 <FormattedText text={opt.isCorrect ? "Correct answer." : (opt.meaning || "")} />
                               </div>
@@ -1338,7 +1338,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                   "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-200 font-medium";
               } else if (isSelected && !opt.isCorrect) {
                 btnStyle =
-                  "border-rose-400 bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-200 line-through";
+                  "border-rose-400 bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-200 font-medium";
               } else {
                 btnStyle =
                   "border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-400 opacity-60";
@@ -1358,7 +1358,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                       ? opt.id.toUpperCase()
                       : String.fromCharCode(65 + idx)}
                   </span>
-                  <span>{opt.text}</span>
+                  <FormattedText text={opt.text} as="span" className="inline text-sm leading-normal text-inherit" />
                 </div>
                 {isAnswered && opt.isCorrect && (
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 ml-2" />
@@ -1563,7 +1563,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                                     <span className="font-mono text-[11px] px-1.5 py-0.2 rounded bg-zinc-100 dark:bg-zinc-800">
                                       [{opt.id}]
                                     </span>
-                                    <span>{opt.text}</span>
+                                    <FormattedText text={opt.text} as="span" className="inline text-inherit font-semibold" />
                                   </span>
                                   {opt.isCorrect && (
                                     <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/40">

@@ -9,6 +9,7 @@ interface FormattedTextProps {
   isCloze?: boolean;
   clozeRevealed?: boolean;
   onRevealCloze?: () => void;
+  as?: 'div' | 'span';
 }
 
 export const FormattedText: React.FC<FormattedTextProps> = ({
@@ -17,96 +18,39 @@ export const FormattedText: React.FC<FormattedTextProps> = ({
   isCloze = false,
   clozeRevealed = false,
   onRevealCloze,
+  as = 'div',
 }) => {
   const content = useMemo(() => {
     if (!text) return null;
 
+    const tokens: string[] = [];
     let processed = text;
 
-    // Handle Cloze Deletion: {{c1::hidden text}} or {{c2::text::hint}}
+    // 1. Handle Cloze Deletion: {{c1::hidden text}} or {{c2::text::hint}}
     if (isCloze) {
       if (!clozeRevealed) {
-        // Replace cloze with interactive mask pill
         processed = processed.replace(/\{\{c\d+::(.*?)(?:::.*?)?\}\}/g, () => {
-          return `<span class="inline-flex items-center px-2 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 font-mono text-xs border border-dashed border-zinc-400 dark:border-zinc-600 cursor-pointer select-none hover:border-zinc-800 transition-colors">[ ··· ]</span>`;
+          const idx = tokens.length;
+          tokens.push(
+            `<span class="inline-flex items-center px-2 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 font-mono text-xs border border-dashed border-zinc-400 dark:border-zinc-600 cursor-pointer select-none hover:border-zinc-800 transition-colors">[ ··· ]</span>`
+          );
+          return `%%%FT_TOKEN_${idx}%%%`;
         });
       } else {
-        // Reveal cloze with highlighted badge
         processed = processed.replace(/\{\{c\d+::(.*?)(?:::.*?)?\}\}/g, (_match, val) => {
-          return `<span class="inline-flex items-center px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 font-semibold border border-emerald-300 dark:border-emerald-700">${val}</span>`;
+          const idx = tokens.length;
+          const esc = val.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          tokens.push(
+            `<span class="inline-flex items-center px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 font-semibold border border-emerald-300 dark:border-emerald-700">${esc}</span>`
+          );
+          return `%%%FT_TOKEN_${idx}%%%`;
         });
       }
     }
 
-    // Process KaTeX math formulas:
-    // Block math: $$ ... $$
-    processed = processed.replace(/\$\$([\s\S]*?)\$\$/g, (_match, math) => {
-      try {
-        return `<div class="my-2 py-1 overflow-x-auto text-center">${katex.renderToString(math.trim(), {
-          displayMode: true,
-          throwOnError: false,
-        })}</div>`;
-      } catch {
-        return math;
-      }
-    });
-
-    // Inline math: $ ... $
-    processed = processed.replace(/\$(.*?)\$/g, (_match, math) => {
-      try {
-        return katex.renderToString(math.trim(), {
-          displayMode: false,
-          throwOnError: false,
-        });
-      } catch {
-        return math;
-      }
-    });
-
-    // Process Markdown Tables:
-    processed = processed.replace(
-      /((?:\|[^\r\n]+\|\r?\n)(?:\|[^\r\n-]*-[^\r\n]*\|\r?\n)(?:\|[^\r\n]+\|(?:\r?\n|$))+)/g,
-      (tableBlock) => {
-        const rows = tableBlock.trim().split(/\r?\n/);
-        if (rows.length < 2) return tableBlock;
-
-        const parseRow = (rowStr: string) => {
-          return rowStr
-            .split('|')
-            .slice(1, -1)
-            .map((c) => c.trim());
-        };
-
-        const headerCells = parseRow(rows[0]);
-        const bodyRows = rows.slice(2).map(parseRow);
-
-        const headerHtml = `<thead><tr class="bg-zinc-100/90 dark:bg-zinc-800/90 border-b border-zinc-200 dark:border-zinc-700">${headerCells
-          .map(
-            (c) =>
-              `<th class="px-2.5 py-1.5 text-left font-semibold text-zinc-900 dark:text-zinc-100 text-xs">${c}</th>`
-          )
-          .join('')}</tr></thead>`;
-
-        const bodyHtml = `<tbody>${bodyRows
-          .map(
-            (r, i) =>
-              `<tr class="${
-                i % 2 === 0 ? 'bg-transparent' : 'bg-zinc-50/60 dark:bg-zinc-800/30'
-              } border-b border-zinc-100 dark:border-zinc-800/60">${r
-                .map(
-                  (c) =>
-                    `<td class="px-2.5 py-1.5 text-zinc-700 dark:text-zinc-300 text-xs leading-normal">${c}</td>`
-                )
-                .join('')}</tr>`
-          )
-          .join('')}</tbody>`;
-
-        return `<div class="my-2.5 overflow-x-auto rounded-xl border border-zinc-200 dark:border-zinc-700/80 shadow-2xs"><table class="w-full border-collapse">${headerHtml}${bodyHtml}</table></div>`;
-      }
-    );
-
-    // Process Fenced Code Blocks: ```lang ... ```
+    // 2. Fenced Code Blocks: ```lang ... ```
     processed = processed.replace(/```([a-zA-Z0-9_-]*)\r?\n([\s\S]*?)```/g, (_match, lang, code) => {
+      const idx = tokens.length;
       const displayLang = (lang || 'code').toUpperCase();
       const rawLines = code.trimEnd().split(/\r?\n/);
       
@@ -163,30 +107,130 @@ export const FormattedText: React.FC<FormattedTextProps> = ({
         })
         .join('');
 
-      return `<div class="w-full my-3 rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-950 shadow-xl text-left font-mono select-text"><div class="flex items-center justify-between px-3.5 py-2 bg-zinc-900/90 border-b border-zinc-800/80"><div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56] inline-block"></span><span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] inline-block"></span><span class="w-2.5 h-2.5 rounded-full bg-[#27c93f] inline-block"></span><span class="ml-2 text-[10px] font-semibold text-zinc-400 tracking-wider uppercase">${displayLang}</span></div></div><div class="p-3.5 overflow-x-auto text-xs sm:text-[13px] leading-relaxed"><table class="w-full border-collapse"><tbody>${linesHtml}</tbody></table></div></div>`;
+      tokens.push(
+        `<div class="w-full my-3 rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-950 shadow-xl text-left font-mono select-text"><div class="flex items-center justify-between px-3.5 py-2 bg-zinc-900/90 border-b border-zinc-800/80"><div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56] inline-block"></span><span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] inline-block"></span><span class="w-2.5 h-2.5 rounded-full bg-[#27c93f] inline-block"></span><span class="ml-2 text-[10px] font-semibold text-zinc-400 tracking-wider uppercase">${displayLang}</span></div></div><div class="p-3.5 overflow-x-auto text-xs sm:text-[13px] leading-relaxed"><table class="w-full border-collapse"><tbody>${linesHtml}</tbody></table></div></div>`
+      );
+      return `%%%FT_TOKEN_${idx}%%%`;
     });
 
-    // Markdown Blockquotes: > quote
-    processed = processed.replace(/^>\s+(.*$)/gim, '<div class="pl-2.5 border-l-2 border-amber-500 my-1.5 text-zinc-600 dark:text-zinc-300 italic text-xs">$1</div>');
+    // 3. Block Math: $$ ... $$
+    processed = processed.replace(/\$\$([\s\S]*?)\$\$/g, (_match, math) => {
+      const idx = tokens.length;
+      try {
+        tokens.push(
+          `<div class="my-2 py-1 overflow-x-auto text-center">${katex.renderToString(math.trim(), {
+            displayMode: true,
+            throwOnError: false,
+          })}</div>`
+        );
+      } catch {
+        const esc = math.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        tokens.push(`<div>${esc}</div>`);
+      }
+      return `%%%FT_TOKEN_${idx}%%%`;
+    });
 
-    // Markdown Headings: ### and ##
+    // 4. Inline Math: $ ... $
+    processed = processed.replace(/\$(.*?)\$/g, (_match, math) => {
+      const idx = tokens.length;
+      try {
+        tokens.push(
+          katex.renderToString(math.trim(), {
+            displayMode: false,
+            throwOnError: false,
+          })
+        );
+      } catch {
+        const esc = math.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        tokens.push(`<span>${esc}</span>`);
+      }
+      return `%%%FT_TOKEN_${idx}%%%`;
+    });
+
+    // 5. Safely escape ALL remaining raw HTML characters before markdown parsing
+    processed = processed
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+
+    // 6. Markdown Tables
+    processed = processed.replace(
+      /((?:\|[^\r\n]+\|\r?\n)(?:\|[^\r\n-]*-[^\r\n]*\|\r?\n)(?:\|[^\r\n]+\|(?:\r?\n|$))+)/g,
+      (tableBlock) => {
+        const rows = tableBlock.trim().split(/\r?\n/);
+        if (rows.length < 2) return tableBlock;
+
+        const parseRow = (rowStr: string) => {
+          return rowStr
+            .split('|')
+            .slice(1, -1)
+            .map((c) => c.trim());
+        };
+
+        const headerCells = parseRow(rows[0]);
+        const bodyRows = rows.slice(2).map(parseRow);
+
+        const headerHtml = `<thead><tr class="bg-zinc-100/90 dark:bg-zinc-800/90 border-b border-zinc-200 dark:border-zinc-700">${headerCells
+          .map(
+            (c) =>
+              `<th class="px-2.5 py-1.5 text-left font-semibold text-zinc-900 dark:text-zinc-100 text-xs">${c}</th>`
+          )
+          .join('')}</tr></thead>`;
+
+        const bodyHtml = `<tbody>${bodyRows
+          .map(
+            (r, i) =>
+              `<tr class="${
+                i % 2 === 0 ? 'bg-transparent' : 'bg-zinc-50/60 dark:bg-zinc-800/30'
+              } border-b border-zinc-100 dark:border-zinc-800/60">${r
+                .map(
+                  (c) =>
+                    `<td class="px-2.5 py-1.5 text-zinc-700 dark:text-zinc-300 text-xs leading-normal">${c}</td>`
+                )
+                .join('')}</tr>`
+          )
+          .join('')}</tbody>`;
+
+        return `<div class="my-2.5 overflow-x-auto rounded-xl border border-zinc-200 dark:border-zinc-700/80 shadow-2xs"><table class="w-full border-collapse">${headerHtml}${bodyHtml}</table></div>`;
+      }
+    );
+
+    // 7. Markdown Blockquotes: > quote (matching &gt; since > was escaped)
+    processed = processed.replace(/^&gt;\s+(.*$)/gim, '<div class="pl-2.5 border-l-2 border-amber-500 my-1.5 text-zinc-600 dark:text-zinc-300 italic text-xs">$1</div>');
+
+    // 8. Markdown Headings: ### and ##
     processed = processed.replace(/^###\s+(.*$)/gim, '<h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 mt-3 mb-1 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 inline-block"></span>$1</h4>');
     processed = processed.replace(/^##\s+(.*$)/gim, '<h3 class="text-sm font-bold text-zinc-900 dark:text-zinc-100 mt-3 mb-1.5">$1</h3>');
 
-    // Bullet points: - item or * item
+    // 9. Bullet points: - item or * item
     processed = processed.replace(/^[*-]\s+(.*$)/gim, '<div class="flex items-start gap-2 my-1 pl-1 text-zinc-700 dark:text-zinc-300"><span class="text-amber-500 font-bold leading-none mt-1 shrink-0">•</span><span>$1</span></div>');
 
-    // Basic inline markdown: `code`, **bold**, *italic*
+    // 10. Inline markdown: `code` (already escaped!), **bold**, *italic*
     processed = processed.replace(/`([^`]+)`/g, '<code class="px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 font-mono text-xs border border-zinc-200 dark:border-zinc-700">$1</code>');
     processed = processed.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
     processed = processed.replace(/\*([^*]+)\*/g, '<em>$1</em>');
 
-    // Clean remaining regular newlines (avoid double-breaking around block elements)
+    // 11. Clean remaining regular newlines
     processed = processed.replace(/(<\/h[34]>|<\/div>|<\/table>)\n+/gi, '$1');
     processed = processed.replace(/\n+/g, '<br/>');
 
+    // 12. Restore protected tokens
+    tokens.forEach((tokenHtml, i) => {
+      processed = processed.replace(`%%%FT_TOKEN_${i}%%%`, tokenHtml);
+    });
+
     return processed;
   }, [text, isCloze, clozeRevealed]);
+
+  if (as === 'span') {
+    return (
+      <span
+        className={`inline text-inherit leading-relaxed ${className}`}
+        onClick={onRevealCloze}
+        dangerouslySetInnerHTML={{ __html: content || '' }}
+      />
+    );
+  }
 
   return (
     <div

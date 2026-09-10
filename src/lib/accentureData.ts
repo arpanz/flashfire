@@ -206,7 +206,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Insert",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Insert"
+        "meaning": "The Insert tab in Excel provides access to all chart types, pivot tables, shapes, and illustrations."
       },
       {
         "id": "B",
@@ -457,7 +457,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Document1",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Document1"
+        "meaning": "Document1 is the default temporary placeholder name assigned by Microsoft Word when creating a new blank document."
       },
       {
         "id": "C",
@@ -518,7 +518,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Superscript",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Superscript"
+        "meaning": "Regular, Bold, and Italic are font styles, whereas Superscript (and Subscript) are font effects/formatting attributes."
       }
     ],
     "tags": [
@@ -604,7 +604,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Transitions",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Transitions"
+        "meaning": "Slide Transitions control visual motion when moving from one slide to another, while Animations apply motion to individual slide objects."
       },
       {
         "id": "C",
@@ -647,25 +647,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": ".jpg",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which file types can be added to a PowerPoint show?...'."
+        "meaning": "File format .jpg is supported/used differently in Office workflows."
       },
       {
         "id": "B",
         "text": ".gif",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which file types can be added to a PowerPoint show?...'."
+        "meaning": "Assigned to a different command; All of the above is the standard shortcut."
       },
       {
         "id": "C",
         "text": ".wav",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which file types can be added to a PowerPoint show?...'."
+        "meaning": "File format .wav is supported/used differently in Office workflows."
       },
       {
         "id": "D",
         "text": "All of the above",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: All of the above"
+        "meaning": "PowerPoint presentations support embedding multiple multimedia formats, including raster images, audio tracks, and animated graphics."
       }
     ],
     "tags": [
@@ -696,19 +696,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Dragging",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Dragging"
+        "meaning": "Dragging is the operation of pressing and holding the primary mouse button while moving the cursor across the screen to reposition items."
       },
       {
         "id": "B",
         "text": "Moving",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Holding the left mouse button and moving an object on a slid...'."
+        "meaning": "Alternative Office term/command; Dragging is the specific element required."
       },
       {
         "id": "C",
         "text": "Highlighting",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Holding the left mouse button and moving an object on a slid...'."
+        "meaning": "Alternative Office term/command; Dragging is the specific element required."
       },
       {
         "id": "D",
@@ -757,7 +757,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Publisher",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Publisher"
+        "meaning": "Microsoft Publisher is specifically designed for desktop publishing, page layout, newsletters, brochures, flyers, and greeting cards."
       },
       {
         "id": "D",
@@ -794,25 +794,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Charts",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which group is not on Excel's Insert tab?...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "B",
         "text": "Text",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which group is not on Excel's Insert tab?...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "C",
         "text": "Sort & Filter",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Sort & Filter"
+        "meaning": "Sort & Filter is found on the Data and Home tabs in Excel; the Insert tab is reserved for objects like Tables, Charts, and Links."
       },
       {
         "id": "D",
         "text": "Tables",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which group is not on Excel's Insert tab?...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -941,13 +941,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "All cells from B8 to B10",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: All cells from B8 to B10"
+        "meaning": "The colon (:) is the range operator in Excel, signifying a contiguous range of cells from column B row 8 down to column B row 10."
       },
       {
         "id": "B",
         "text": "Product of B8 and B10",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, B8:B10 refers to:...'."
+        "meaning": "Assigned to a different command; All cells from B8 to B10 is the standard shortcut."
       },
       {
         "id": "C",
@@ -990,7 +990,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Neither",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'How do you stop automatic numbering in Word? I. Click Number...'."
+        "meaning": "Alternative Office term/command; Both I and II is the specific element required."
       },
       {
         "id": "B",
@@ -1002,7 +1002,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Both I and II",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Both I and II"
+        "meaning": "Both methods immediately terminate an active numbered list in Word: clicking the Numbering ribbon toggle or pressing Enter twice on an empty list item."
       },
       {
         "id": "D",
@@ -1088,25 +1088,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Footer",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A link that jumps to another location in a document is a:...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "B",
         "text": "Header",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A link that jumps to another location in a document is a:...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "C",
         "text": "Hyperlink",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Hyperlink"
+        "meaning": "A Hyperlink allows readers to click and navigate directly to another webpage, external file, or internal bookmark/heading."
       },
       {
         "id": "D",
         "text": "Attachment",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A link that jumps to another location in a document is a:...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -1149,7 +1149,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Review",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Review"
+        "meaning": "The Review tab houses collaboration and proofing tools including Track Changes, Comments, Compare, and Spelling/Grammar checks."
       },
       {
         "id": "D",
@@ -1186,13 +1186,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Formula bar",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, the small square at the bottom-right of the active...'."
+        "meaning": "Assigned to a different command; Fill handle is the standard shortcut."
       },
       {
         "id": "B",
         "text": "Fill handle",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Fill handle"
+        "meaning": "The Fill Handle is the small solid square in the bottom-right corner of the active cell, used to auto-fill formulas or data sequences."
       },
       {
         "id": "C",
@@ -1204,7 +1204,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Status bar",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, the small square at the bottom-right of the active...'."
+        "meaning": "Alternative Office term/command; Fill handle is the specific element required."
       }
     ],
     "tags": [
@@ -1486,7 +1486,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Filter traffic using security rules",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Filter traffic using security rules"
+        "meaning": "A firewall filters inbound and outbound network traffic based on predefined security rules to block unauthorized connections."
       },
       {
         "id": "C",
@@ -1737,7 +1737,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "80 and 443",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 80 and 443"
+        "meaning": "HTTP unencrypted web traffic defaults to TCP port 80, whereas secure HTTPS traffic encrypted via TLS defaults to TCP port 443."
       },
       {
         "id": "D",
@@ -1823,25 +1823,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Encrypt packets",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'DHCP is used to:...'."
+        "meaning": "Encryption is provided by TLS/IPsec protocols, not DHCP."
       },
       {
         "id": "B",
         "text": "Automatically assign IP addresses",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Automatically assign IP addresses"
+        "meaning": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses, subnet masks, default gateways, and DNS servers to client devices on a network."
       },
       {
         "id": "C",
         "text": "Block malware",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'DHCP is used to:...'."
+        "meaning": "Malware filtering is performed by firewalls and endpoint security, not DHCP."
       },
       {
         "id": "D",
         "text": "Compress files",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'DHCP is used to:...'."
+        "meaning": "File compression is performed by archive utilities (zip/gzip), not DHCP."
       }
     ],
     "tags": [
@@ -1921,13 +1921,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Sending email",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Sending email"
+        "meaning": "SMTP (Simple Mail Transfer Protocol) on port 25 or 587 is used by email clients to send/push messages to mail servers."
       },
       {
         "id": "B",
         "text": "Browsing web pages",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'SMTP is used for:...'."
+        "meaning": "Web page transmission is handled by HTTP/HTTPS, not SMTP."
       },
       {
         "id": "C",
@@ -1939,7 +1939,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Name resolution",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'SMTP is used for:...'."
+        "meaning": "Translating domain names to IP addresses is performed by DNS, not SMTP."
       }
     ],
     "tags": [
@@ -1970,7 +1970,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Convert domain names",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'NAT is used to:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
@@ -1982,13 +1982,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Detect viruses",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'NAT is used to:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
         "text": "Create VLANs",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'NAT is used to:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -2019,25 +2019,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "32 bits",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 32 bits"
+        "meaning": "IPv4 addresses are 32 bits long, divided into 4 octets written in dotted-decimal format (providing ~4.3 billion total addresses)."
       },
       {
         "id": "B",
         "text": "64 bits",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv4 address size is:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "C",
         "text": "128 bits",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv4 address size is:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
         "text": "16 bits",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv4 address size is:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -2068,25 +2068,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "32 bits",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv6 address size is:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "64 bits",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv6 address size is:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "C",
         "text": "128 bits",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 128 bits"
+        "meaning": "IPv6 addresses are 128 bits long, expressed as 8 groups of 4 hexadecimal digits, resolving IPv4 address exhaustion."
       },
       {
         "id": "D",
         "text": "256 bits",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv6 address size is:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -2117,25 +2117,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Layer 1",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A switch typically operates at:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "Layer 2",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Layer 2"
+        "meaning": "Standard Ethernet switches operate at Layer 2 (Data Link Layer), using MAC address forwarding tables to switch frames directly to destination ports."
       },
       {
         "id": "C",
         "text": "Layer 3",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A switch typically operates at:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
         "text": "Layer 7",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A switch typically operates at:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -2319,7 +2319,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Verifying identity",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Verifying identity"
+        "meaning": "Authentication verifies the identity of a user or system (answering 'Who are you?'), usually via passwords, tokens, or biometrics."
       },
       {
         "id": "C",
@@ -2368,7 +2368,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Checking what you are allowed to do",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Checking what you are allowed to do"
+        "meaning": "Authorization determines the permissions and resources a verified user is permitted to access (answering 'What are you allowed to do?')."
       },
       {
         "id": "C",
@@ -2417,7 +2417,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Same thing",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Difference between a virus and a Trojan?...'."
+        "meaning": "Viruses self-replicate and attach to host files, whereas Trojans disguise as legitimate software without self-replicating."
       },
       {
         "id": "C",
@@ -2460,13 +2460,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Flooding a server",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Phishing is:...'."
+        "meaning": "Flooding a server with traffic is a Denial-of-Service (DoS/DDoS) attack, not phishing."
       },
       {
         "id": "B",
         "text": "Tricking users to reveal credentials",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Tricking users to reveal credentials"
+        "meaning": "Phishing is a social engineering attack that masquerades as a trusted entity to trick victims into divulging credentials, financial details, or personal data."
       },
       {
         "id": "C",
@@ -2515,7 +2515,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Header info such as IP/port",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Header info such as IP/port"
+        "meaning": "Packet-filtering firewalls inspect Layer 3 and Layer 4 packet header attributes (source/destination IP, protocol, and port numbers) against rule sets."
       },
       {
         "id": "C",
@@ -2527,7 +2527,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Disk files",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Packet-filtering firewall inspects:...'."
+        "meaning": "Disk scanning is performed by endpoint antivirus, not packet firewalls."
       }
     ],
     "tags": [
@@ -2564,7 +2564,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Active connections",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Active connections"
+        "meaning": "Stateful inspection firewalls maintain a state table tracking the context and sequence of active two-way network connections."
       },
       {
         "id": "C",
@@ -2576,7 +2576,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Printer queues",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Stateful inspection firewalls track:...'."
+        "meaning": "Printer queues are managed by the operating system print spooler."
       }
     ],
     "tags": [
@@ -2613,13 +2613,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Confidentiality of payload (and often integrity)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Confidentiality of payload (and often integrity)"
+        "meaning": "ESP provides data confidentiality (encryption), integrity, authentication, and anti-replay protection for IP payloads."
       },
       {
         "id": "C",
         "text": "Email delivery",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Encapsulating Security Payload (ESP) in IPsec provides:...'."
+        "meaning": "Email routing and transmission is handled by SMTP, not IPsec ESP."
       },
       {
         "id": "D",
@@ -2656,19 +2656,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Pairwise Transient Key",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In WPA2 4-way handshake, the key present on AP and clients i...'."
+        "meaning": "Distinct security mechanism; Pairwise Master Key specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "Pairwise Master Key",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Pairwise Master Key"
+        "meaning": "The PMK (Pairwise Master Key) is derived from the Wi-Fi pre-shared password (PSK) and SSID, and is used to generate temporary session encryption keys."
       },
       {
         "id": "C",
         "text": "Group Temporal Key",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In WPA2 4-way handshake, the key present on AP and clients i...'."
+        "meaning": "Distinct security mechanism; Pairwise Master Key specifically addresses this threat/role."
       },
       {
         "id": "D",
@@ -2754,7 +2754,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Data stored on disk",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Data stored on disk"
+        "meaning": "Encryption at rest safeguards static data stored on physical disks, databases, or object storage against unauthorized physical or offline access."
       },
       {
         "id": "B",
@@ -2772,7 +2772,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Cable length",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Encryption of data at rest mainly protects:...'."
+        "meaning": "Distinct security mechanism; Data stored on disk specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -2803,25 +2803,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Deletes backups",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Man-in-the-middle attack:...'."
+        "meaning": "Distinct security mechanism; Intercepts communication between two parties specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "Intercepts communication between two parties",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Intercepts communication between two parties"
+        "meaning": "A MitM attack occurs when an adversary secretly relays, intercepts, or alters communications between two unsuspecting parties who believe they are communicating directly."
       },
       {
         "id": "C",
         "text": "Overheats CPUs",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Man-in-the-middle attack:...'."
+        "meaning": "Distinct security mechanism; Intercepts communication between two parties specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "Changes screen resolution",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Man-in-the-middle attack:...'."
+        "meaning": "Distinct security mechanism; Intercepts communication between two parties specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -2852,25 +2852,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Compressing files",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Spoofing means:...'."
+        "meaning": "Distinct security mechanism; Faking identity (IP/MAC/email) specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "Faking identity (IP/MAC/email)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Faking identity (IP/MAC/email)"
+        "meaning": "Spoofing is the practice of disguising communication from an unknown source as being from a known, trusted source by faking IP, MAC, or email addresses."
       },
       {
         "id": "C",
         "text": "Defragmenting disks",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Spoofing means:...'."
+        "meaning": "Distinct security mechanism; Faking identity (IP/MAC/email) specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "Load balancing",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Spoofing means:...'."
+        "meaning": "Distinct security mechanism; Faking identity (IP/MAC/email) specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -2901,25 +2901,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Packet filtering",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not typically a firewall type listed in Accenture p...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "B",
         "text": "Proxy service",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not typically a firewall type listed in Accenture p...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "C",
         "text": "Stateful inspection",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not typically a firewall type listed in Accenture p...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "D",
         "text": "Spreadsheet filter",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Spreadsheet filter"
+        "meaning": "Network security firewalls include packet-filtering, stateful inspection, and application proxy firewalls; a spreadsheet filter is an office tool, not a security device."
       }
     ],
     "tags": [
@@ -2962,7 +2962,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Security duties are split between provider and customer",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Security duties are split between provider and customer"
+        "meaning": "In cloud computing, security obligations are divided: the cloud provider manages 'security OF the cloud' (hardware/infrastructure), while the customer handles 'security IN the cloud' (data, OS, configurations)."
       },
       {
         "id": "D",
@@ -2999,7 +2999,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Screensaver",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Best first control to block unauthorized network traffic?...'."
+        "meaning": "Distinct security mechanism; Firewall specifically addresses this threat/role."
       },
       {
         "id": "B",
@@ -3244,7 +3244,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "pay-as-you-go",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: pay-as-you-go"
+        "meaning": "Pay-as-you-go billing allows small businesses to consume cloud resources on demand with zero upfront capital investment or capacity commitments."
       },
       {
         "id": "B",
@@ -3293,25 +3293,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Compilation",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Technology that runs multiple VMs on one physical server?...'."
+        "meaning": "Translates programming language code into machine code, unrelated to hosting VMs."
       },
       {
         "id": "B",
         "text": "Virtualization",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Virtualization"
+        "meaning": "Virtualization uses a hypervisor to abstract hardware resources, allowing multiple operating systems to run concurrently on a single physical host."
       },
       {
         "id": "C",
         "text": "Pagination",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Technology that runs multiple VMs on one physical server?...'."
+        "meaning": "Memory management scheme dividing virtual address space into pages."
       },
       {
         "id": "D",
         "text": "Fragmentation",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Technology that runs multiple VMs on one physical server?...'."
+        "meaning": "Storage or packet division inefficiency, not hypervisor hardware virtualization."
       }
     ],
     "tags": [
@@ -3342,25 +3342,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Runtime managed",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In PaaS, which is not a typical benefit / still often your j...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "B",
         "text": "Middleware managed",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In PaaS, which is not a typical benefit / still often your j...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "C",
         "text": "Management of your data",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Management of your data"
+        "meaning": "In Platform as a Service (PaaS), the provider manages the underlying runtime, OS, and server infrastructure, but data management, application logic, and schema design remain the customer's responsibility."
       },
       {
         "id": "D",
         "text": "Platform patching",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In PaaS, which is not a typical benefit / still often your j...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -3397,19 +3397,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Cloud",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Cloud"
+        "meaning": "Cloud computing features rapid elasticity, allowing computing capacity, memory, and storage to scale up or down on-demand within seconds."
       },
       {
         "id": "C",
         "text": "Floppy disks",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Instant scalability is a property of:...'."
+        "meaning": "Alternative cloud computing pattern; Cloud is the model required."
       },
       {
         "id": "D",
         "text": "CRT monitors",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Instant scalability is a property of:...'."
+        "meaning": "Alternative cloud computing pattern; Cloud is the model required."
       }
     ],
     "tags": [
@@ -3440,13 +3440,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Cloud vendor",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Who is usually responsible for hardware downtime in a compan...'."
+        "meaning": "Alternative cloud computing pattern; Owner/organization is the model required."
       },
       {
         "id": "B",
         "text": "Owner/organization",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Owner/organization"
+        "meaning": "In an on-premises company-owned data center, the owner/organization bears 100% of the cost, maintenance, and hardware downtime responsibility."
       },
       {
         "id": "C",
@@ -3458,7 +3458,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "End user",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Who is usually responsible for hardware downtime in a compan...'."
+        "meaning": "Alternative cloud computing pattern; Owner/organization is the model required."
       }
     ],
     "tags": [
@@ -3507,7 +3507,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "All of these",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: All of these"
+        "meaning": "Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) comprise the top global hyperscale public cloud providers."
       }
     ],
     "tags": [
@@ -3544,7 +3544,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Effectively elastic/unlimited for practical use",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Effectively elastic/unlimited for practical use"
+        "meaning": "Cloud storage offers virtually unlimited, elastic capacity that automatically scales dynamically to match data volume without manual disk provisioning."
       },
       {
         "id": "C",
@@ -3587,13 +3587,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Draw slides",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Hypervisor is used to:...'."
+        "meaning": "Alternative cloud computing pattern; Create and run virtual machines is the model required."
       },
       {
         "id": "B",
         "text": "Create and run virtual machines",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Create and run virtual machines"
+        "meaning": "A hypervisor (or Virtual Machine Monitor) abstracts physical hardware to instantiate, manage, and isolate multiple virtual machines on a single host machine."
       },
       {
         "id": "C",
@@ -3605,7 +3605,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Check spelling",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Hypervisor is used to:...'."
+        "meaning": "Alternative cloud computing pattern; Create and run virtual machines is the model required."
       }
     ],
     "tags": [
@@ -3636,7 +3636,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Data center vs cloud",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Data center vs cloud"
+        "meaning": "Owning and operating physical infrastructure in an on-premises data center contrasts with renting elastic infrastructure on-demand from a cloud provider."
       },
       {
         "id": "B",
@@ -3685,7 +3685,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Security, compatibility, and mapping",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Security, compatibility, and mapping"
+        "meaning": "Client-server architecture requires robust network protocols, secure communication channels, proper access controls, and data mapping."
       },
       {
         "id": "B",
@@ -3703,7 +3703,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "No authentication ever",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Client-server sharing requires:...'."
+        "meaning": "Alternative cloud computing pattern; Security, compatibility, and mapping is the model required."
       }
     ],
     "tags": [
@@ -3734,7 +3734,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Capex-heavy data centers",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Capex-heavy data centers"
+        "meaning": "Cloud OpEx (pay-as-you-go consumption) eliminates heavy upfront Capital Expenditure (CapEx) associated with purchasing on-premises servers and data center facilities."
       },
       {
         "id": "B",
@@ -3746,7 +3746,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "MAC flooding",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Pay as you use / pay as you go contrasts with:...'."
+        "meaning": "Alternative cloud computing pattern; Capex-heavy data centers is the model required."
       },
       {
         "id": "D",
@@ -3798,7 +3798,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "First character",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: First character"
+        "meaning": "The loop executes with index l = 0 to 0, accessing and printing only word[0], which corresponds to the first character of the string."
       },
       {
         "id": "D",
@@ -4000,7 +4000,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Fail",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Fail"
+        "meaning": "The condition requires all four terms to be true."
       },
       {
         "id": "C",
@@ -4254,13 +4254,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "150 152 154",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete printed sequence when `fun(150)` is exe...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "150 152 154 154 152 150",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 150 152 154 154 152 150"
+        "meaning": "This recursive call prints k on the way down and on unwind: 150, 152, 154, followed by the unwinding prints 154, 152, 150."
       },
       {
         "id": "C",
@@ -4306,19 +4306,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "7 13 13 11 11",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What are the resulting values stored in array `c`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "3 5 1 -5 -9",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 3 5 1 -5 -9"
+        "meaning": "Element-wise subtraction yields: 5-2=3, 9-4=5, 7-6=1, 3-8=-5, 1-10=-9, giving '3 5 1 -5 -9'."
       },
       {
         "id": "C",
         "text": "-3 -5 -1 5 9",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What are the resulting values stored in array `c`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
@@ -4410,25 +4410,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "6 4",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `q` and `r`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "1 3",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `q` and `r`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
         "text": "7 2",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `q` and `r`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "6 1",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 6 1"
+        "meaning": "Tracing step-by-step: q=13, p=1 gives r=13%1=0, p becomes 6, q becomes 6+0=6, then r=6/5=1. Loop terminates as p>4, printing '6 1'."
       }
     ],
     "tags": [
@@ -4514,25 +4514,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "-11 1",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: -11 1"
+        "meaning": "a=(12+25)%2 = 37%2 = 1. Then b=1. Next a = 1 + 1 - 13 = -11. Outputs a=-11 and b=1."
       },
       {
         "id": "B",
         "text": "-12 0",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `a` and `b`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
         "text": "11 22",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `a` and `b`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "37 24",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `a` and `b`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -4670,25 +4670,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "B C",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the conditional branching?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "C",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: C"
+        "meaning": "Since x=2, the condition x==1 is false, so the else branch executes, printing 'C'."
       },
       {
         "id": "C",
         "text": "A",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the conditional branching?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "B",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the conditional branching?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -5034,7 +5034,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Success",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Success"
+        "meaning": "Sum is 30+60+90=180, and all three angles are positive nonzero values, validly forming a triangle: outputs 'Success'."
       },
       {
         "id": "B",
@@ -5052,7 +5052,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Fail",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the triangle angle validation logic?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -5083,19 +5083,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Change Case",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Change Case"
+        "meaning": "The Change Case command (Shift+F3) in Word lets you switch text between UPPERCASE, lowercase, Sentence case, and Capitalize Each Word."
       },
       {
         "id": "B",
         "text": "Font Color",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature that converts a sentence to ALL CAPS or all small le...'."
+        "meaning": "Assigned to a different command; Change Case is the standard shortcut."
       },
       {
         "id": "C",
         "text": "Highlight",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature that converts a sentence to ALL CAPS or all small le...'."
+        "meaning": "Alternative Office term/command; Change Case is the specific element required."
       },
       {
         "id": "D",
@@ -5181,7 +5181,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Only I",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Only I"
+        "meaning": "Statement I is true because Mini Translator remains active for selected words until disabled, but statement II is false because it only sends hovered words or short phrases."
       },
       {
         "id": "B",
@@ -5193,13 +5193,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Both",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Mini Translator: (I) stays on until you turn it off (II) sen...'."
+        "meaning": "Alternative Office term/command; Only I is the specific element required."
       },
       {
         "id": "D",
         "text": "Neither",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Mini Translator: (I) stays on until you turn it off (II) sen...'."
+        "meaning": "Alternative Office term/command; Only I is the specific element required."
       }
     ],
     "tags": [
@@ -5242,13 +5242,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "All three",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Classic Word underlines: green = contextual, blue = spelling...'."
+        "meaning": "Alternative Office term/command; None is the specific element required."
       },
       {
         "id": "D",
         "text": "None",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: None"
+        "meaning": "In classic Word: red indicates spelling errors, blue indicates grammatical errors, and green indicated grammar in older editions."
       }
     ],
     "tags": [
@@ -5279,25 +5279,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Bookmark",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Connection that jumps to another slide in this deck or anoth...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "B",
         "text": "Hyperlink",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Hyperlink"
+        "meaning": "A Hyperlink (or Action Button) in PowerPoint connects a slide object to other slides, files, or web pages."
       },
       {
         "id": "C",
         "text": "Footer",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Connection that jumps to another slide in this deck or anoth...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "D",
         "text": "Comment",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Connection that jumps to another slide in this deck or anoth...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -5328,25 +5328,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Inbox",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Accidentally deleted Outlook mail is first kept in:...'."
+        "meaning": "Alternative Office term/command; Deleted Items is the specific element required."
       },
       {
         "id": "B",
         "text": "Drafts",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Accidentally deleted Outlook mail is first kept in:...'."
+        "meaning": "Assigned to a different command; Deleted Items is the standard shortcut."
       },
       {
         "id": "C",
         "text": "Sent Items",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Accidentally deleted Outlook mail is first kept in:...'."
+        "meaning": "Alternative Office term/command; Deleted Items is the specific element required."
       },
       {
         "id": "D",
         "text": "Deleted Items",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Deleted Items"
+        "meaning": "Deleted emails are moved to the Deleted Items folder before being permanently purged or moved to recoverable items."
       }
     ],
     "tags": [
@@ -5377,25 +5377,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Alt",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Key held to select non-adjacent words/phrases in Word?...'."
+        "meaning": "Specifies alternate text read by screen readers and displayed if the image fails to load."
       },
       {
         "id": "B",
         "text": "Shift",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Key held to select non-adjacent words/phrases in Word?...'."
+        "meaning": "Assigned to a different command; Ctrl is the standard shortcut."
       },
       {
         "id": "C",
         "text": "Ctrl",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Ctrl"
+        "meaning": "Holding the Ctrl key while clicking or dragging allows you to highlight and select non-contiguous portions of text."
       },
       {
         "id": "D",
         "text": "Tab",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Key held to select non-adjacent words/phrases in Word?...'."
+        "meaning": "Alternative Office term/command; Ctrl is the specific element required."
       }
     ],
     "tags": [
@@ -5426,25 +5426,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "cd .",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Command Prompt: go two directories up from the current folde...'."
+        "meaning": "Alternative Office term/command; cd ..\\.. is the specific element required."
       },
       {
         "id": "B",
         "text": "cd ..",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Command Prompt: go two directories up from the current folde...'."
+        "meaning": "Alternative Office term/command; cd ..\\.. is the specific element required."
       },
       {
         "id": "C",
         "text": "cd ..\\..",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: cd ..\\.."
+        "meaning": "In Windows command line, 'cd ..' navigates up one folder level, and 'cd ..\\..' ascends two directory levels in a single command."
       },
       {
         "id": "D",
         "text": "cd \\",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Command Prompt: go two directories up from the current folde...'."
+        "meaning": "Alternative Office term/command; cd ..\\.. is the specific element required."
       }
     ],
     "tags": [
@@ -5475,7 +5475,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Spell Check",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Word tool for synonyms?...'."
+        "meaning": "Alternative Office term/command; Thesaurus is the specific element required."
       },
       {
         "id": "B",
@@ -5493,7 +5493,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "SmartArt",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Word tool for synonyms?...'."
+        "meaning": "Alternative Office term/command; Thesaurus is the specific element required."
       }
     ],
     "tags": [
@@ -5573,25 +5573,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Decoration",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Gutter margin is mainly for:...'."
+        "meaning": "Alternative Office term/command; Binding is the specific element required."
       },
       {
         "id": "B",
         "text": "Binding",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Binding"
+        "meaning": "A gutter margin adds extra space to the side or top margin of a printed document to accommodate binding without obscuring text."
       },
       {
         "id": "C",
         "text": "Alignment",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Gutter margin is mainly for:...'."
+        "meaning": "Alternative Office term/command; Binding is the specific element required."
       },
       {
         "id": "D",
         "text": "Page numbering",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Gutter margin is mainly for:...'."
+        "meaning": "Alternative Office term/command; Binding is the specific element required."
       }
     ],
     "tags": [
@@ -5671,25 +5671,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Java",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Macros in MS Office are typically written in:...'."
+        "meaning": "Alternative Office term/command; VBA is the specific element required."
       },
       {
         "id": "B",
         "text": "Python",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Macros in MS Office are typically written in:...'."
+        "meaning": "Alternative Office term/command; VBA is the specific element required."
       },
       {
         "id": "C",
         "text": "VBA",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: VBA"
+        "meaning": "VBA (Visual Basic for Applications) is the event-driven programming language integrated across Microsoft Office applications to automate repetitive tasks."
       },
       {
         "id": "D",
         "text": "C++",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Macros in MS Office are typically written in:...'."
+        "meaning": "Alternative Office term/command; VBA is the specific element required."
       }
     ],
     "tags": [
@@ -5720,7 +5720,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "All values concatenated",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Merging several Excel cells keeps:...'."
+        "meaning": "Alternative Office term/command; First cell is the specific element required."
       },
       {
         "id": "B",
@@ -5830,13 +5830,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Move selected cells",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Move selected cells"
+        "meaning": "Hovering over the border of a selected cell or range displays a four-headed arrow cursor, allowing you to drag and move the selected cells to a new location."
       },
       {
         "id": "D",
         "text": "Fill a series",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Four-headed arrow cursor in Excel is used to:...'."
+        "meaning": "Assigned to a different command; Move selected cells is the standard shortcut."
       }
     ],
     "tags": [
@@ -5916,25 +5916,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Normal",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'PowerPoint view for file/print/share options?...'."
+        "meaning": "Alternative Office term/command; Backstage is the specific element required."
       },
       {
         "id": "B",
         "text": "Slide Show",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'PowerPoint view for file/print/share options?...'."
+        "meaning": "Alternative Office term/command; Backstage is the specific element required."
       },
       {
         "id": "C",
         "text": "Outline",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'PowerPoint view for file/print/share options?...'."
+        "meaning": "Alternative Office term/command; Backstage is the specific element required."
       },
       {
         "id": "D",
         "text": "Backstage",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Backstage"
+        "meaning": "Backstage view (accessible via the File tab) manages document-level settings like Open, Save, Print, Share, and Account preferences."
       }
     ],
     "tags": [
@@ -6014,13 +6014,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Normal",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Best view to rearrange many slides?...'."
+        "meaning": "Alternative Office term/command; Slide Sorter is the specific element required."
       },
       {
         "id": "B",
         "text": "Reading",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Best view to rearrange many slides?...'."
+        "meaning": "Alternative Office term/command; Slide Sorter is the specific element required."
       },
       {
         "id": "C",
@@ -6032,7 +6032,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Notes",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Best view to rearrange many slides?...'."
+        "meaning": "Alternative Office term/command; Slide Sorter is the specific element required."
       }
     ],
     "tags": [
@@ -6063,13 +6063,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Highlight",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Collective design for fonts, colors, and effects across a do...'."
+        "meaning": "Alternative Office term/command; Theme is the specific element required."
       },
       {
         "id": "B",
         "text": "Line spacing",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Collective design for fonts, colors, and effects across a do...'."
+        "meaning": "Alternative Office term/command; Theme is the specific element required."
       },
       {
         "id": "C",
@@ -6081,7 +6081,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Theme",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Theme"
+        "meaning": "A Theme provides a unified visual palette consisting of coordinate colors, heading/body fonts, and shape effects across Office documents."
       }
     ],
     "tags": [
@@ -6112,7 +6112,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Spreadsheet",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Spreadsheet"
+        "meaning": "A spreadsheet application arranges numerical and textual data in a grid of rows and columns to facilitate arithmetic formulas and analysis."
       },
       {
         "id": "B",
@@ -6130,7 +6130,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Browser",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Tool that stores data in rows and columns for calculation?...'."
+        "meaning": "Alternative Office term/command; Spreadsheet is the specific element required."
       }
     ],
     "tags": [
@@ -6228,7 +6228,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Alt+F8",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Alt+F8"
+        "meaning": "Alt+F8 opens the Macro dialog window in Word, Excel, and PowerPoint to view, run, step into, or edit macros."
       }
     ],
     "tags": [
@@ -6308,13 +6308,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Connectionless and unreliable",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'TCP is best described as:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "Connection-oriented and reliable",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Connection-oriented and reliable"
+        "meaning": "TCP (Transmission Control Protocol) is a reliable, connection-oriented transport protocol that ensures ordered, error-checked delivery of packets via acknowledgments and retransmissions."
       },
       {
         "id": "C",
@@ -6326,7 +6326,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Analog signaling",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'TCP is best described as:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -6363,7 +6363,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Bits on the wire",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Bits on the wire"
+        "meaning": "The Physical Layer (Layer 1) defines the hardware specifications, cables, voltages, and raw bit-level transmission across physical media."
       },
       {
         "id": "C",
@@ -6455,19 +6455,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Domain to IP",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'ARP maps:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "IP to MAC",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: IP to MAC"
+        "meaning": "ARP (Address Resolution Protocol) resolves a known IPv4 network layer address into its corresponding physical MAC hardware address on a local area network."
       },
       {
         "id": "C",
         "text": "Port to process",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'ARP maps:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
@@ -6504,7 +6504,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "The printer IP",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default gateway is:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
@@ -6602,25 +6602,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "64 bytes",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Typical Ethernet MTU size?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "512 bytes",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Typical Ethernet MTU size?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "C",
         "text": "1500 bytes",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1500 bytes"
+        "meaning": "The standard Maximum Transmission Unit (MTU) for Ethernet frames is 1,500 bytes of IP payload."
       },
       {
         "id": "D",
         "text": "65535 bytes",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Typical Ethernet MTU size?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -6651,25 +6651,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Layer 1",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Layer 1"
+        "meaning": "A standard hub operates at Layer 1 (Physical Layer) of the OSI model, broadcasting all incoming electrical signals to all other ports without packet inspection."
       },
       {
         "id": "B",
         "text": "Layer 2",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A hub operates at:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "C",
         "text": "Layer 3",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A hub operates at:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
         "text": "Layer 4",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A hub operates at:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -6700,7 +6700,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "20 and 21",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 20 and 21"
+        "meaning": "Traditional FTP uses TCP port 21 for command/control connection management and port 20 for active data transfer."
       },
       {
         "id": "B",
@@ -6798,7 +6798,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "110 and 143",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 110 and 143"
+        "meaning": "Standard unencrypted POP3 uses TCP port 110, while IMAP uses TCP port 143 for retrieving emails from a mail server."
       },
       {
         "id": "B",
@@ -6847,19 +6847,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "8.8.8.8",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Private IPv4 ranges include:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "192.168.0.0/16",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 192.168.0.0/16"
+        "meaning": "RFC 1918 defines private address spaces: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16."
       },
       {
         "id": "C",
         "text": "1.1.1.1",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Private IPv4 ranges include:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
@@ -6908,13 +6908,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "192.168.1.1",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Loopback address?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
         "text": "255.0.0.0",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Loopback address?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -6945,25 +6945,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "ACK, SYN, FIN",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'TCP three-way handshake order?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "SYN, SYN-ACK, ACK",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: SYN, SYN-ACK, ACK"
+        "meaning": "The TCP connection establishment sequence proceeds: Client sends SYN, Server replies with SYN-ACK, and Client confirms with ACK."
       },
       {
         "id": "C",
         "text": "FIN, ACK, SYN",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'TCP three-way handshake order?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
         "text": "RST, SYN, ACK",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'TCP three-way handshake order?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -6994,19 +6994,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Shares one collision domain for all ports",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A switch vs a hub: the switch mainly:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "Forwards using MAC and splits collision domains",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Forwards using MAC and splits collision domains"
+        "meaning": "A switch works at Layer 2 using MAC address tables to direct frames only to the designated port, creating dedicated collision domains per port."
       },
       {
         "id": "C",
         "text": "Routes between WANs",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A switch vs a hub: the switch mainly:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
@@ -7049,7 +7049,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "67/68",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 67/68"
+        "meaning": "DHCP utilizes UDP port 67 for the server to listen for requests and UDP port 68 for clients to receive configuration responses."
       },
       {
         "id": "C",
@@ -7104,13 +7104,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Capture packets",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'nslookup is used to:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
         "text": "Compress files",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'nslookup is used to:...'."
+        "meaning": "File compression is performed by archive utilities (zip/gzip), not DHCP."
       }
     ],
     "tags": [
@@ -7141,13 +7141,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Terminator",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Star topology's center device is usually a:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "Switch/hub",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Switch/hub"
+        "meaning": "In a star topology, all network nodes connect individually to a central concentrating device such as a network switch or hub."
       },
       {
         "id": "C",
@@ -7202,13 +7202,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Assign MAC to RAM",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'VLAN is used to:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
         "text": "Encrypt disks",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'VLAN is used to:...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -7337,25 +7337,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Speeds the CPU",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ransomware typically:...'."
+        "meaning": "Distinct security mechanism; Encrypts files and demands payment specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "Encrypts files and demands payment",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Encrypts files and demands payment"
+        "meaning": "Ransomware covertly encrypts the victim's critical data files and demands a cryptocurrency ransom in exchange for the decryption key."
       },
       {
         "id": "C",
         "text": "Fixes bugs",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ransomware typically:...'."
+        "meaning": "Distinct security mechanism; Encrypts files and demands payment specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "Updates BIOS",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ransomware typically:...'."
+        "meaning": "Distinct security mechanism; Encrypts files and demands payment specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -7392,13 +7392,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Confidentiality, Integrity, Availability",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Confidentiality, Integrity, Availability"
+        "meaning": "The CIA triad forms the cornerstone of information security: Confidentiality (secrecy), Integrity (accuracy), and Availability (accessibility)."
       },
       {
         "id": "C",
         "text": "Cipher, Index, Auth",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'CIA triad is:...'."
+        "meaning": "Distinct security mechanism; Confidentiality, Integrity, Availability specifically addresses this threat/role."
       },
       {
         "id": "D",
@@ -7441,7 +7441,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Integrity / one-way fingerprint",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Integrity / one-way fingerprint"
+        "meaning": "Cryptographic hashing algorithms generate a fixed-size, irreversible digest of data to verify integrity and detect tampering."
       },
       {
         "id": "C",
@@ -7453,7 +7453,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Drawing charts",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Hashing is mainly for:...'."
+        "meaning": "Distinct security mechanism; Integrity / one-way fingerprint specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -7490,19 +7490,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Symmetric cipher",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Symmetric cipher"
+        "meaning": "AES (Advanced Encryption Standard) is a symmetric block cipher approved by NIST using keys of 128, 192, or 256 bits."
       },
       {
         "id": "C",
         "text": "Routing protocol",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'AES is a:...'."
+        "meaning": "Distinct security mechanism; Symmetric cipher specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "Mail client",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'AES is a:...'."
+        "meaning": "Distinct security mechanism; Symmetric cipher specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -7539,7 +7539,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Asymmetric (public/private keys)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Asymmetric (public/private keys)"
+        "meaning": "RSA is an asymmetric cryptographic algorithm relying on the mathematical difficulty of factoring large composite integers into two prime factors."
       },
       {
         "id": "C",
@@ -7637,19 +7637,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Extra factor besides password",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Extra factor besides password"
+        "meaning": "Multi-Factor Authentication requires two or more distinct authentication categories: something you know (password), something you have (phone/token), or something you are (biometrics)."
       },
       {
         "id": "C",
         "text": "No login",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'MFA means:...'."
+        "meaning": "Distinct security mechanism; Extra factor besides password specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "MAC flooding",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'MFA means:...'."
+        "meaning": "Distinct security mechanism; Extra factor besides password specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -7686,7 +7686,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Can block/prevent the attack",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Can block/prevent the attack"
+        "meaning": "While an IDS only detects and logs alerts, an IPS (Intrusion Prevention System) sits in-line on the network to actively block or drop malicious packets in real time."
       },
       {
         "id": "C",
@@ -7698,7 +7698,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Draws slides",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IDS vs IPS: IPS additionally:...'."
+        "meaning": "Distinct security mechanism; Can block/prevent the attack specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -7735,19 +7735,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Database queries via untrusted input",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Database queries via untrusted input"
+        "meaning": "SQL injection (SQLi) occurs when unsanitized user input is directly concatenated into database queries."
       },
       {
         "id": "C",
         "text": "HDMI cables",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'SQL injection targets:...'."
+        "meaning": "Distinct security mechanism; Database queries via untrusted input specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "RAM clock",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'SQL injection targets:...'."
+        "meaning": "Distinct security mechanism; Database queries via untrusted input specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -7778,19 +7778,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "CPUs",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Social engineering attacks:...'."
+        "meaning": "Distinct security mechanism; People, not only packets specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "People, not only packets",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: People, not only packets"
+        "meaning": "Social engineering exploits human psychology (trust, urgency, fear) rather than technical software bugs to manipulate people into breaking security procedures."
       },
       {
         "id": "C",
         "text": "Fiber attenuation",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Social engineering attacks:...'."
+        "meaning": "Distinct security mechanism; People, not only packets specifically addresses this threat/role."
       },
       {
         "id": "D",
@@ -7827,7 +7827,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Admin rights for everyone",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Least privilege means:...'."
+        "meaning": "Distinct security mechanism; Minimum access needed for the job specifically addresses this threat/role."
       },
       {
         "id": "B",
@@ -7839,13 +7839,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Open all ports",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Least privilege means:...'."
+        "meaning": "Distinct security mechanism; Minimum access needed for the job specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "Share one password",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Least privilege means:...'."
+        "meaning": "Distinct security mechanism; Minimum access needed for the job specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -7882,7 +7882,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Certificate Authority",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Certificate Authority"
+        "meaning": "A Certificate Authority (CA) acts as a trusted third-party organization that cryptographically validates identities and issues digital X.509 certificates."
       },
       {
         "id": "C",
@@ -7925,7 +7925,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Tries many passwords",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Tries many passwords"
+        "meaning": "A brute-force attack systematically generates and attempts every possible combination of characters until the correct password or key is found."
       },
       {
         "id": "B",
@@ -7937,13 +7937,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Paints slides",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Brute-force attack:...'."
+        "meaning": "Distinct security mechanism; Tries many passwords specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "Merges cells",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Brute-force attack:...'."
+        "meaning": "Distinct security mechanism; Tries many passwords specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -7980,19 +7980,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Keystrokes",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Keystrokes"
+        "meaning": "A keylogger is spyware designed to covertly record every keystroke entered on a keyboard to capture passwords, messages, and sensitive inputs."
       },
       {
         "id": "C",
         "text": "Subnet masks",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Keylogger captures:...'."
+        "meaning": "Distinct security mechanism; Keystrokes specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "Cloud regions",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Keylogger captures:...'."
+        "meaning": "Distinct security mechanism; Keystrokes specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -8072,13 +8072,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Resource pooling",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Billing by actual use is:...'."
+        "meaning": "Alternative cloud computing pattern; Measured service is the model required."
       },
       {
         "id": "B",
         "text": "Measured service",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Measured service"
+        "meaning": "Measured service automatically meters and controls cloud resource consumption, allowing utility-based pay-as-you-go billing."
       },
       {
         "id": "C",
@@ -8188,7 +8188,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Mainframe",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Mix of public + private is:...'."
+        "meaning": "Alternative cloud computing pattern; Hybrid is the model required."
       }
     ],
     "tags": [
@@ -8237,7 +8237,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "IDaaS",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Amazon EC2 is mainly:...'."
+        "meaning": "Alternative cloud computing pattern; IaaS is the model required."
       }
     ],
     "tags": [
@@ -8335,7 +8335,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Bare metal",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Salesforce / Dropbox-style apps are mainly:...'."
+        "meaning": "Alternative cloud computing pattern; SaaS is the model required."
       }
     ],
     "tags": [
@@ -8384,7 +8384,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "All equal",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Least built-in security (you secure more yourself)?...'."
+        "meaning": "Alternative cloud computing pattern; IaaS is the model required."
       }
     ],
     "tags": [
@@ -8433,7 +8433,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "CaaS",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Most complete app + platform + hardware vendor model?...'."
+        "meaning": "Alternative cloud computing pattern; SaaS is the model required."
       }
     ],
     "tags": [
@@ -8513,19 +8513,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "One VM per planet",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Multi-tenancy means:...'."
+        "meaning": "Alternative cloud computing pattern; Many customers share the same platform, isolated logically is the model required."
       },
       {
         "id": "B",
         "text": "Many customers share the same platform, isolated logically",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Many customers share the same platform, isolated logically"
+        "meaning": "Multi-tenancy is an architectural model where a single instance of a software application serves multiple distinct customer groups (tenants) while logically isolating their data."
       },
       {
         "id": "C",
         "text": "No isolation",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Multi-tenancy means:...'."
+        "meaning": "Alternative cloud computing pattern; Many customers share the same platform, isolated logically is the model required."
       },
       {
         "id": "D",
@@ -8623,7 +8623,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Bare-metal colo",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Google Workspace is an example of:...'."
+        "meaning": "Alternative cloud computing pattern; SaaS is the model required."
       },
       {
         "id": "D",
@@ -8666,7 +8666,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Vendor lock-in",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Vendor lock-in"
+        "meaning": "Vendor lock-in arises when proprietary APIs, custom configurations, or data migration hurdles make it prohibitively difficult or costly to switch cloud providers."
       },
       {
         "id": "C",
@@ -8715,7 +8715,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Isolated data-center group inside a region",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Isolated data-center group inside a region"
+        "meaning": "An Availability Zone consists of one or more discrete, redundant data centers located within a geographic region, engineered with independent power, cooling, and networking."
       },
       {
         "id": "C",
@@ -9073,25 +9073,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "1 2 3 4 5",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "2 4",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
         "text": "1 3 5",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1 3 5"
+        "meaning": "The loop runs for i=1 to 5. When i is even (2, 4), continue skips printing, so only the odd numbers 1, 3, 5 are printed."
       },
       {
         "id": "D",
         "text": "1 2 3",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -9125,25 +9125,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "1 2 3 4 5",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "1 2 3",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1 2 3"
+        "meaning": "The loop prints i then checks if i==3. It prints 1, 2, 3 in succession, then immediately breaks upon reaching 3."
       },
       {
         "id": "C",
         "text": "3 4 5",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "1 2",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -9281,25 +9281,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "4 9",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after executing the arithmetic swap wit...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "9 4",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 9 4"
+        "meaning": "Arithmetic swap: a=4+9=13; b=13-9=4; a=13-4=9. The original values are successfully swapped to a=9 and b=4 without a temporary variable."
       },
       {
         "id": "C",
         "text": "13 4",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after executing the arithmetic swap wit...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "9 13",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after executing the arithmetic swap wit...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -9437,7 +9437,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "True",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: True"
+        "meaning": "The while loop reverses the digits of 121: remainder operations yield r = 121."
       },
       {
         "id": "B",
@@ -9645,25 +9645,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "2 1",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete sequence of numbers printed by `f(2)`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "2 1 1 2",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 2 1 1 2"
+        "meaning": "f(2) prints 2, calls f(1). f(1) prints 1, calls f(0). Then f(0) returns. On unwind, f(1) prints 1, then f(2) prints 2. Sequence is: 2 1 1 2."
       },
       {
         "id": "C",
         "text": "1 2",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete sequence of numbers printed by `f(2)`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "2 2 1 1",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete sequence of numbers printed by `f(2)`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -10009,25 +10009,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "1 1",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by `isPrime(9)` and `isPrime(11)`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "0 1",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 0 1"
+        "meaning": "9 is not prime (divisible by 3), so isPrime(9) returns 0. 11 is prime, so isPrime(11) returns 1. The output is '0 1'."
       },
       {
         "id": "C",
         "text": "1 0",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by `isPrime(9)` and `isPrime(11)`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "0 0",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by `isPrime(9)` and `isPrime(11)`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -10076,7 +10076,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "VaaS",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: VaaS"
+        "meaning": "The three standard NIST cloud computing service models are IaaS, PaaS, and SaaS. VaaS (Video as a Service) is not an official cloud service model."
       }
     ],
     "tags": [
@@ -10211,19 +10211,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Microsoft Azure App Service",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Microsoft Azure App Service"
+        "meaning": "Microsoft Azure App Service is a Platform as a Service (PaaS) that enables developers to build and host web applications without managing the underlying VMs or OS."
       },
       {
         "id": "C",
         "text": "Google Drive",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of PaaS?...'."
+        "meaning": "Alternative cloud computing pattern; Microsoft Azure App Service is the model required."
       },
       {
         "id": "D",
         "text": "Dropbox",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of PaaS?...'."
+        "meaning": "Alternative cloud computing pattern; Microsoft Azure App Service is the model required."
       }
     ],
     "tags": [
@@ -10456,19 +10456,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Testing and building applications",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Hassle-free office productivity tools over the internet, no ...'."
+        "meaning": "Alternative cloud computing pattern; Software as a Service is the model required."
       },
       {
         "id": "C",
         "text": "Software as a Service",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Software as a Service"
+        "meaning": "Software as a Service (SaaS) provides ready-to-use software applications hosted on the cloud and accessed via web browser, removing infrastructure and OS maintenance burdens."
       },
       {
         "id": "D",
         "text": "Intelligent energy saving",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Hassle-free office productivity tools over the internet, no ...'."
+        "meaning": "Alternative cloud computing pattern; Software as a Service is the model required."
       }
     ],
     "tags": [
@@ -10554,7 +10554,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Computing resources over the internet",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Computing resources over the internet"
+        "meaning": "Cloud computing is the on-demand delivery of computing services\u2014including servers, storage, databases, networking, and software\u2014over the Internet."
       },
       {
         "id": "C",
@@ -10603,19 +10603,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Google App Engine",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of SaaS?...'."
+        "meaning": "Alternative cloud computing pattern; Gmail is the model required."
       },
       {
         "id": "C",
         "text": "Gmail",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Gmail"
+        "meaning": "Gmail is an end-user web application fully managed and hosted by Google, which is a classic example of Software as a Service (SaaS)."
       },
       {
         "id": "D",
         "text": "Virtual machine",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of SaaS?...'."
+        "meaning": "Alternative cloud computing pattern; Gmail is the model required."
       }
     ],
     "tags": [
@@ -10646,19 +10646,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Platform as a Service",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Platform as a Service"
+        "meaning": "PaaS stands for Platform as a Service, providing hardware, networking, and an application runtime environment for developers to build applications."
       },
       {
         "id": "B",
         "text": "Protocol as a Service",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Full form of PaaS?...'."
+        "meaning": "Alternative cloud computing pattern; Platform as a Service is the model required."
       },
       {
         "id": "C",
         "text": "Packet as a Service",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Full form of PaaS?...'."
+        "meaning": "Alternative cloud computing pattern; Platform as a Service is the model required."
       },
       {
         "id": "D",
@@ -10695,7 +10695,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Gmail",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of IaaS?...'."
+        "meaning": "Alternative cloud computing pattern; Amazon EC2 is the model required."
       },
       {
         "id": "B",
@@ -10707,13 +10707,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Salesforce",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of IaaS?...'."
+        "meaning": "Alternative cloud computing pattern; Amazon EC2 is the model required."
       },
       {
         "id": "D",
         "text": "Zoom",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of IaaS?...'."
+        "meaning": "Alternative cloud computing pattern; Amazon EC2 is the model required."
       }
     ],
     "tags": [
@@ -10946,7 +10946,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Increasing or decreasing resources based on demand",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Increasing or decreasing resources based on demand"
+        "meaning": "Cloud scalability refers to the capability to expand or reduce system resources (CPU, RAM, storage) dynamically to match fluctuating demand."
       },
       {
         "id": "C",
@@ -10995,19 +10995,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Creating virtual versions of computing resources",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Creating virtual versions of computing resources"
+        "meaning": "Virtualization is the process of creating a software-based representation of physical servers, storage, or networks using a hypervisor."
       },
       {
         "id": "C",
         "text": "Encrypting files",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Virtualization is:...'."
+        "meaning": "Alternative cloud computing pattern; Creating virtual versions of computing resources is the model required."
       },
       {
         "id": "D",
         "text": "Connecting computers using cable",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Virtualization is:...'."
+        "meaning": "Alternative cloud computing pattern; Creating virtual versions of computing resources is the model required."
       }
     ],
     "tags": [
@@ -11050,7 +11050,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Compiler",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which component creates and manages virtual machines?...'."
+        "meaning": "Alternative cloud computing pattern; Hypervisor is the model required."
       },
       {
         "id": "D",
@@ -11093,19 +11093,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Free cloud services",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Pay-as-you-go means:...'."
+        "meaning": "Alternative cloud computing pattern; Pay according to resources consumed is the model required."
       },
       {
         "id": "C",
         "text": "Pay according to resources consumed",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Pay according to resources consumed"
+        "meaning": "Pay-as-you-go is a utility billing model where organizations only pay for the exact volume of computing resources, storage, and bandwidth they consume."
       },
       {
         "id": "D",
         "text": "Pay before using, never after",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Pay-as-you-go means:...'."
+        "meaning": "Alternative cloud computing pattern; Pay according to resources consumed is the model required."
       }
     ],
     "tags": [
@@ -11142,19 +11142,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Chrome",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Type-1 hypervisor example (runs on physical hardware)?...'."
+        "meaning": "Alternative cloud computing pattern; VMware ESXi is the model required."
       },
       {
         "id": "C",
         "text": "VLC",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Type-1 hypervisor example (runs on physical hardware)?...'."
+        "meaning": "Alternative cloud computing pattern; VMware ESXi is the model required."
       },
       {
         "id": "D",
         "text": "VMware ESXi",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: VMware ESXi"
+        "meaning": "VMware ESXi is a bare-metal (Type-1) hypervisor that runs directly on physical server hardware without requiring a host operating system."
       }
     ],
     "tags": [
@@ -11185,19 +11185,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "VMware ESXi",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Type-2 hypervisor example (runs on a host OS)?...'."
+        "meaning": "Alternative cloud computing pattern; VirtualBox is the model required."
       },
       {
         "id": "B",
         "text": "VirtualBox",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: VirtualBox"
+        "meaning": "VirtualBox is a hosted (Type-2) hypervisor that runs as an application on top of an existing host operating system (like Windows or macOS)."
       },
       {
         "id": "C",
         "text": "BIOS",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Type-2 hypervisor example (runs on a host OS)?...'."
+        "meaning": "Alternative cloud computing pattern; VirtualBox is the model required."
       },
       {
         "id": "D",
@@ -11234,25 +11234,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "EC2",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which AWS service is used for storage?...'."
+        "meaning": "Alternative cloud computing pattern; S3 is the model required."
       },
       {
         "id": "B",
         "text": "S3",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: S3"
+        "meaning": "Amazon S3 (Simple Storage Service) is AWS's scalable object storage service designed for storing and retrieving any amount of data from anywhere."
       },
       {
         "id": "C",
         "text": "VPC",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which AWS service is used for storage?...'."
+        "meaning": "Alternative cloud computing pattern; S3 is the model required."
       },
       {
         "id": "D",
         "text": "IAM",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which AWS service is used for storage?...'."
+        "meaning": "Alternative cloud computing pattern; S3 is the model required."
       }
     ],
     "tags": [
@@ -11289,7 +11289,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Abstraction layer that unifies separate data sources",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Abstraction layer that unifies separate data sources"
+        "meaning": "A data abstraction or virtualization layer allows disparate on-premises and cloud databases to be queried and integrated logically as a single unified source."
       },
       {
         "id": "C",
@@ -11381,19 +11381,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "8.8.8.8",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following IP addresses is a private IP?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "192.168.1.10",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 192.168.1.10"
+        "meaning": "192.168.1.10 falls within the RFC 1918 private IPv4 address block (192.168.0.0/16), reserved for private local area networks and non-routable on the public internet."
       },
       {
         "id": "C",
         "text": "1.1.1.1",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following IP addresses is a private IP?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
@@ -11491,7 +11491,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Assign MAC addresses",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Main purpose of a subnet mask?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
@@ -11583,7 +11583,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "VLAN",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: VLAN"
+        "meaning": "VLANs (Virtual Local Area Networks) logically segment a single physical switch into distinct, isolated broadcast domains for different departments or security zones."
       },
       {
         "id": "C",
@@ -11595,7 +11595,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "STP",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Segment a large physical network into distinct broadcast dom...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -11644,7 +11644,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Application-level proxy",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Returning response traffic for internal users is allowed bac...'."
+        "meaning": "Distinct security mechanism; Stateful inspection firewall specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -11871,25 +11871,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "AES-CCMP",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Legacy devices cannot use AES; enable older mechanism that i...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "B",
         "text": "TKIP",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: TKIP"
+        "meaning": "TKIP (Temporal Key Integrity Protocol) was designed as a stopgap wrapper around RC4 to improve legacy WEP hardware without requiring new AES hardware."
       },
       {
         "id": "C",
         "text": "WPA3-SAE",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Legacy devices cannot use AES; enable older mechanism that i...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "D",
         "text": "SSL",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Legacy devices cannot use AES; enable older mechanism that i...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -11926,7 +11926,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Source routing attack",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Source routing attack"
+        "meaning": "In a source routing attack, an adversary explicitly predefines the sequential path of network hops inside the packet header to circumvent firewall inspection rules."
       },
       {
         "id": "C",
@@ -11975,7 +11975,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Source routing attack",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Source routing attack"
+        "meaning": "Source routing enables the sender to specify the exact route a packet must traverse through the network rather than allowing intermediate routers to choose."
       },
       {
         "id": "C",
@@ -12073,13 +12073,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Limiting attack propagation",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Limiting attack propagation"
+        "meaning": "Network segmentation contains breaches within a localized zone, preventing attackers from laterally moving or propagating malware across the broader enterprise network."
       },
       {
         "id": "C",
         "text": "Bigger fonts",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Company divides network into isolated segments so a compromi...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "D",
@@ -12116,7 +12116,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "It removes the need for passwords",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Major security benefit of network segmentation?...'."
+        "meaning": "Distinct security mechanism; Restricts unauthorized movement between network segments specifically addresses this threat/role."
       },
       {
         "id": "B",
@@ -12128,7 +12128,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Assigns MAC to RAM",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Major security benefit of network segmentation?...'."
+        "meaning": "Distinct security mechanism; Restricts unauthorized movement between network segments specifically addresses this threat/role."
       },
       {
         "id": "D",
@@ -12416,7 +12416,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "ESP (Encapsulating Security Payload)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: ESP (Encapsulating Security Payload)"
+        "meaning": "ESP (Encapsulating Security Payload) is an IPsec protocol that provides data confidentiality (encryption), payload integrity, and authentication."
       },
       {
         "id": "C",
@@ -12869,7 +12869,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Page Break",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature that records modifications so they can be reviewed/a...'."
+        "meaning": "Alternative Office term/command; Track Changes is the specific element required."
       }
     ],
     "tags": [
@@ -12900,25 +12900,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Left",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Alignment that makes both left and right edges of a paragrap...'."
+        "meaning": "Assigned to a different command; Justify is the standard shortcut."
       },
       {
         "id": "B",
         "text": "Right",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Alignment that makes both left and right edges of a paragrap...'."
+        "meaning": "Alternative Office term/command; Justify is the specific element required."
       },
       {
         "id": "C",
         "text": "Center",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Alignment that makes both left and right edges of a paragrap...'."
+        "meaning": "Alternative Office term/command; Justify is the specific element required."
       },
       {
         "id": "D",
         "text": "Justify",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Justify"
+        "meaning": "Justify alignment aligns paragraph text evenly along both the left and right margins by adding variable spacing between words."
       }
     ],
     "tags": [
@@ -12955,7 +12955,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Text at the top of the page",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Text at the top of the page"
+        "meaning": "A header is a dedicated section appearing at the top margin of each page throughout a document, often displaying titles or dates."
       },
       {
         "id": "C",
@@ -12967,7 +12967,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Hidden text",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is a header in MS Word?...'."
+        "meaning": "Alternative Office term/command; Text at the top of the page is the specific element required."
       }
     ],
     "tags": [
@@ -13016,7 +13016,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Autocorrect",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature used to copy formatting from one piece of content to...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -13096,7 +13096,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Align text",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ctrl+A generally:...'."
+        "meaning": "Alternative Office term/command; Select all content is the specific element required."
       },
       {
         "id": "B",
@@ -13145,7 +13145,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Page Break",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Page Break"
+        "meaning": "A Page Break inserts an explicit marker ending the current page and forcing subsequent text to start at the top of the next page."
       },
       {
         "id": "B",
@@ -13194,7 +13194,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "=",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: ="
+        "meaning": "All Excel formulas and expressions must begin with an equal sign (=) to signal to the spreadsheet engine to evaluate the input."
       },
       {
         "id": "B",
@@ -13298,7 +13298,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Maximum",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What does AVERAGE(A1:A5) calculate?...'."
+        "meaning": "Alternative Office term/command; Average (arithmetic mean) is the specific element required."
       },
       {
         "id": "C",
@@ -13310,7 +13310,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Number of cells",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What does AVERAGE(A1:A5) calculate?...'."
+        "meaning": "Assigned to a different command; Average (arithmetic mean) is the standard shortcut."
       }
     ],
     "tags": [
@@ -13402,13 +13402,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Non-empty cells",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Non-empty cells"
+        "meaning": "The COUNTA function counts all cells that are not empty, including cells containing text, numbers, logical values, or error codes."
       },
       {
         "id": "D",
         "text": "Empty cells",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What does COUNTA count?...'."
+        "meaning": "Alternative Office term/command; Non-empty cells is the specific element required."
       }
     ],
     "tags": [
@@ -13439,25 +13439,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Relative",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What type of reference is $A$1?...'."
+        "meaning": "Positioned relative to its normal flow position without removing it from flow."
       },
       {
         "id": "B",
         "text": "Absolute",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Absolute"
+        "meaning": "$A$1 is an absolute reference; the dollar signs ($) lock both the column letter and row number so they do not shift when copied across formulas."
       },
       {
         "id": "C",
         "text": "Mixed",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What type of reference is $A$1?...'."
+        "meaning": "Alternative Office term/command; Absolute is the specific element required."
       },
       {
         "id": "D",
         "text": "Invalid",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What type of reference is $A$1?...'."
+        "meaning": "Alternative Office term/command; Absolute is the specific element required."
       }
     ],
     "tags": [
@@ -13500,13 +13500,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "$A$1$",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which reference changes automatically when copied?...'."
+        "meaning": "Alternative Office term/command; A1 is the specific element required."
       },
       {
         "id": "D",
         "text": "$$A$$1",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which reference changes automatically when copied?...'."
+        "meaning": "Alternative Office term/command; A1 is the specific element required."
       }
     ],
     "tags": [
@@ -13537,7 +13537,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Always returns Pass",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IF(A1>=50,\"Pass\",\"Fail\") does what?...'."
+        "meaning": "Alternative Office term/command; Returns Pass if A1 is at least 50 is the specific element required."
       },
       {
         "id": "B",
@@ -13635,19 +13635,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Filter",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Filter"
+        "meaning": "Excel Filters hide rows that do not meet specified criteria, displaying only the subset of records matching the selected conditions."
       },
       {
         "id": "B",
         "text": "Merge",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature that displays only rows satisfying selected criteria...'."
+        "meaning": "Alternative Office term/command; Filter is the specific element required."
       },
       {
         "id": "C",
         "text": "Wrap Text",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature that displays only rows satisfying selected criteria...'."
+        "meaning": "Alternative Office term/command; Filter is the specific element required."
       },
       {
         "id": "D",
@@ -13831,7 +13831,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Worksheet",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Intersection of a row and a column is called a:...'."
+        "meaning": "Alternative Office term/command; Cell is the specific element required."
       },
       {
         "id": "B",
@@ -13843,13 +13843,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Workbook",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Intersection of a row and a column is called a:...'."
+        "meaning": "Alternative Office term/command; Cell is the specific element required."
       },
       {
         "id": "D",
         "text": "Range",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Intersection of a row and a column is called a:...'."
+        "meaning": "Alternative Office term/command; Cell is the specific element required."
       }
     ],
     "tags": [
@@ -13886,19 +13886,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Range",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A collection of worksheets is called a:...'."
+        "meaning": "Alternative Office term/command; Workbook is the specific element required."
       },
       {
         "id": "C",
         "text": "Workbook",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Workbook"
+        "meaning": "In Microsoft Excel, an entire spreadsheet file containing one or more worksheets is designated as a workbook."
       },
       {
         "id": "D",
         "text": "Database",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A collection of worksheets is called a:...'."
+        "meaning": "Alternative Office term/command; Workbook is the specific element required."
       }
     ],
     "tags": [
@@ -13929,13 +13929,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Deletes all slides",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Purpose of Slide Master in PowerPoint?...'."
+        "meaning": "Alternative Office term/command; Applies consistent formatting to slides is the specific element required."
       },
       {
         "id": "B",
         "text": "Applies consistent formatting to slides",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Applies consistent formatting to slides"
+        "meaning": "The Slide Master is the top hierarchy slide in PowerPoint that controls the universal design, theme fonts, logo placement, and layout for all slides."
       },
       {
         "id": "C",
@@ -13947,7 +13947,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Inserts databases",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Purpose of Slide Master in PowerPoint?...'."
+        "meaning": "Alternative Office term/command; Applies consistent formatting to slides is the specific element required."
       }
     ],
     "tags": [
@@ -13978,13 +13978,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "They are identical",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Difference between animation and transition?...'."
+        "meaning": "Alternative Office term/command; Animation applies to objects; transition occurs between slides is the specific element required."
       },
       {
         "id": "B",
         "text": "Animation applies to objects; transition occurs between slides",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Animation applies to objects; transition occurs between slides"
+        "meaning": "In PowerPoint, transitions are visual motion effects applied between consecutive slides, whereas animations are applied to individual objects on a single slide."
       },
       {
         "id": "C",
@@ -14125,25 +14125,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Sending without a subject",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is BCC used for in email?...'."
+        "meaning": "Alternative Office term/command; Hiding recipients from other recipients is the specific element required."
       },
       {
         "id": "B",
         "text": "Hiding recipients from other recipients",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Hiding recipients from other recipients"
+        "meaning": "BCC (Blind Carbon Copy) sends a copy of an email to recipients while keeping their email addresses hidden from all other recipients."
       },
       {
         "id": "C",
         "text": "Encrypting mail",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is BCC used for in email?...'."
+        "meaning": "Alternative Office term/command; Hiding recipients from other recipients is the specific element required."
       },
       {
         "id": "D",
         "text": "Blocking spam",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is BCC used for in email?...'."
+        "meaning": "Alternative Office term/command; Hiding recipients from other recipients is the specific element required."
       }
     ],
     "tags": [
@@ -14192,7 +14192,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Notepad",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Notepad"
+        "meaning": "Traditional Windows Notepad is a basic raw plain-text editor without built-in spell-checking, grammar engines, or rich formatting."
       }
     ],
     "tags": [
@@ -14278,7 +14278,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "1 and 2",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1 and 2"
+        "meaning": "MS Paint provides Rectangular Selection and Free-Form Selection tools for selecting parts of a canvas; circular selection is not a default selection tool."
       },
       {
         "id": "C",
@@ -14333,13 +14333,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "All",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Snipping Tool statements: (I) automatically saves screenshot...'."
+        "meaning": "Alternative Office term/command; None is the specific element required."
       },
       {
         "id": "D",
         "text": "None",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: None"
+        "meaning": "Snipping Tool allows capture of rectangular, free-form, window, and full-screen clips, and requires the user to manually save or copy the result."
       }
     ],
     "tags": [
@@ -14376,19 +14376,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "A page orientation",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: A page orientation"
+        "meaning": "Landscape is a horizontal page orientation where the document width is greater than its height (opposed to Portrait)."
       },
       {
         "id": "C",
         "text": "A font",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is Landscape?...'."
+        "meaning": "Assigned to a different command; A page orientation is the standard shortcut."
       },
       {
         "id": "D",
         "text": "A formula",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is Landscape?...'."
+        "meaning": "Assigned to a different command; A page orientation is the standard shortcut."
       }
     ],
     "tags": [
@@ -14419,25 +14419,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Snapchat",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of these can be used to land on a specific location of...'."
+        "meaning": "Alternative Office term/command; All of the mentioned is the specific element required."
       },
       {
         "id": "B",
         "text": "Gmail",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of these can be used to land on a specific location of...'."
+        "meaning": "Alternative Office term/command; All of the mentioned is the specific element required."
       },
       {
         "id": "C",
         "text": "Facebook",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of these can be used to land on a specific location of...'."
+        "meaning": "Assigned to a different command; All of the mentioned is the standard shortcut."
       },
       {
         "id": "D",
         "text": "All of the mentioned",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: All of the mentioned"
+        "meaning": "In Word documents, bookmarks, hyperlinks, cross-references, and the Go To navigation dialog allow users to jump directly to specific target locations."
       }
     ],
     "tags": [
@@ -14474,13 +14474,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Manuscript",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Manuscript"
+        "meaning": "Standard font styles are Bold, Italic, Regular, and Bold Italic. 'Manuscript' is not a font style."
       },
       {
         "id": "C",
         "text": "Italic",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not a font style?...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "D",
@@ -14517,25 +14517,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "~",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, Ctrl+Shift plus which symbol applies scientific no...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "B",
         "text": "^",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: ^"
+        "meaning": "In Excel, pressing Ctrl+Shift+^ (Ctrl+Shift+6) applies the Scientific (exponential) number format to the selected cells."
       },
       {
         "id": "C",
         "text": "#",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, Ctrl+Shift plus which symbol applies scientific no...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "D",
         "text": "@",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, Ctrl+Shift plus which symbol applies scientific no...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -14664,25 +14664,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "1st icon",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'While composing Gmail, which control inserts files from Driv...'."
+        "meaning": "Alternative Office term/command; 5th icon / Drive is the specific element required."
       },
       {
         "id": "B",
         "text": "2nd icon",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'While composing Gmail, which control inserts files from Driv...'."
+        "meaning": "Alternative Office term/command; 5th icon / Drive is the specific element required."
       },
       {
         "id": "C",
         "text": "3rd icon",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'While composing Gmail, which control inserts files from Driv...'."
+        "meaning": "Alternative Office term/command; 5th icon / Drive is the specific element required."
       },
       {
         "id": "D",
         "text": "5th icon / Drive",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 5th icon / Drive"
+        "meaning": "In the Gmail compose window, the Google Drive icon (5th toolbar icon) allows users to insert files and links stored on Google Drive."
       }
     ],
     "tags": [
@@ -14713,25 +14713,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "@",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Symbol used to draw attention / organize similar content on ...'."
+        "meaning": "Alternative Office term/command; Hashtag is the specific element required."
       },
       {
         "id": "B",
         "text": "*",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Symbol used to draw attention / organize similar content on ...'."
+        "meaning": "Alternative Office term/command; Hashtag is the specific element required."
       },
       {
         "id": "C",
         "text": "&",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Symbol used to draw attention / organize similar content on ...'."
+        "meaning": "Alternative Office term/command; Hashtag is the specific element required."
       },
       {
         "id": "D",
         "text": "Hashtag",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Hashtag"
+        "meaning": "The hashtag symbol (#) is used on social media platforms to categorize topics, tag keywords, and make content discoverable."
       }
     ],
     "tags": [
@@ -14768,13 +14768,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Remove Hyperlink (right-click)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Remove Hyperlink (right-click)"
+        "meaning": "Right-clicking a hyperlinked URL in Word and selecting 'Remove Hyperlink' strips the underlying URL and converts the text to regular formatting."
       },
       {
         "id": "C",
         "text": "Print",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Copied web address pastes in Word as blue underlined. How to...'."
+        "meaning": "Alternative Office term/command; Remove Hyperlink (right-click) is the specific element required."
       },
       {
         "id": "D",
@@ -14823,13 +14823,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Header and Footer",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Header and Footer"
+        "meaning": "Page numbers in Word can be placed in either the Header (top of page) or the Footer (bottom of page), as well as margin gutters."
       },
       {
         "id": "D",
         "text": "Neither",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In MS Word you can insert a page number in:...'."
+        "meaning": "Alternative Office term/command; Header and Footer is the specific element required."
       }
     ],
     "tags": [
@@ -14860,25 +14860,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "@",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ctrl+Shift plus which symbol changes cell format to General?...'."
+        "meaning": "Alternative Office term/command; ~ is the specific element required."
       },
       {
         "id": "B",
         "text": "#",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ctrl+Shift plus which symbol changes cell format to General?...'."
+        "meaning": "Alternative Office term/command; ~ is the specific element required."
       },
       {
         "id": "C",
         "text": "^",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ctrl+Shift plus which symbol changes cell format to General?...'."
+        "meaning": "Alternative Office term/command; ~ is the specific element required."
       },
       {
         "id": "D",
         "text": "~",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: ~"
+        "meaning": "In Excel, the shortcut Ctrl+Shift+~ applies the General number format, removing all specific currency, percentage, or decimal formatting."
       }
     ],
     "tags": [
@@ -14915,7 +14915,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Shift+Space",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Shift+Space"
+        "meaning": "Pressing Shift+Spacebar in Microsoft Excel selects the entire row of the currently active cell."
       },
       {
         "id": "C",
@@ -14958,25 +14958,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Pen",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default pointer type in MS PowerPoint?...'."
+        "meaning": "Alternative Office term/command; Arrow is the specific element required."
       },
       {
         "id": "B",
         "text": "Arrow",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Arrow"
+        "meaning": "The standard default mouse cursor in Microsoft PowerPoint during slide creation and editing is the standard Arrow pointer."
       },
       {
         "id": "C",
         "text": "Highlighter",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default pointer type in MS PowerPoint?...'."
+        "meaning": "Alternative Office term/command; Arrow is the specific element required."
       },
       {
         "id": "D",
         "text": "Eraser",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default pointer type in MS PowerPoint?...'."
+        "meaning": "Alternative Office term/command; Arrow is the specific element required."
       }
     ],
     "tags": [
@@ -15007,25 +15007,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Recycle",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which sign indicates computer settings?...'."
+        "meaning": "Alternative Office term/command; Gear/settings icon is the specific element required."
       },
       {
         "id": "B",
         "text": "Gear/settings icon",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Gear/settings icon"
+        "meaning": "A gear or cogwheel icon universally represents system settings and configuration preferences across modern operating systems."
       },
       {
         "id": "C",
         "text": "Printer",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which sign indicates computer settings?...'."
+        "meaning": "Alternative Office term/command; Gear/settings icon is the specific element required."
       },
       {
         "id": "D",
         "text": "Folder",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which sign indicates computer settings?...'."
+        "meaning": "Assigned to a different command; Gear/settings icon is the standard shortcut."
       }
     ],
     "tags": [
@@ -15062,7 +15062,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "1 and 3",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1 and 3"
+        "meaning": "VLOOKUP searches only in the leftmost column of the lookup range and retrieves data from subsequent columns to the right; it cannot look leftwards."
       },
       {
         "id": "C",
@@ -15074,7 +15074,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "All",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'VLOOKUP: (1) looks in the leftmost column of the selected ta...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -15105,7 +15105,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Indian Pacific",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Indian Pacific"
+        "meaning": "With range_lookup=TRUE (approximate match), VLOOKUP locates the closest value less than or equal to 60000 in sorted column A, returning 'Indian Pacific'."
       },
       {
         "id": "B",
@@ -15154,13 +15154,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "FGTA",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: FGTA"
+        "meaning": "The LEFT function extracts characters from the start of text; subtracting 4 removes trailing characters, yielding 'FGTA'."
       },
       {
         "id": "B",
         "text": "B3",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of '=LEFT(B3,LEN(B3)-4) filled down; value in C5?...'."
+        "meaning": "Alternative Office term/command; FGTA is the specific element required."
       },
       {
         "id": "C",
@@ -15172,7 +15172,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "LEFT",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of '=LEFT(B3,LEN(B3)-4) filled down; value in C5?...'."
+        "meaning": "Assigned to a different command; FGTA is the standard shortcut."
       }
     ],
     "tags": [
@@ -15221,7 +15221,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "AVERAGE(A1:A10)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: AVERAGE(A1:A10)"
+        "meaning": "The correct Excel formula to compute the average of numbers in cells A1 through A10 is =AVERAGE(A1:A10)."
       }
     ],
     "tags": [
@@ -15354,25 +15354,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "abcd",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final string stored in `result`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "dcba",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: dcba"
+        "meaning": "Looping backwards from index 4 down to 1 over 'abcd' appends characters 'd', 'c', 'b', 'a', producing 'dcba'."
       },
       {
         "id": "C",
         "text": "abdc",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final string stored in `result`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "a",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final string stored in `result`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -15711,13 +15711,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "A",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: A"
+        "meaning": "Since x=15 is strictly greater than 10, the if-condition evaluates to true, printing 'A'."
       },
       {
         "id": "B",
         "text": "B",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the conditional branch?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
@@ -15762,13 +15762,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "odd",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the even/odd conditional check?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "even",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: even"
+        "meaning": "20 % 2 evaluates to 0, which satisfies the condition (x % 2 == 0), executing the if-branch to print 'even'."
       },
       {
         "id": "C",
@@ -15825,13 +15825,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "1 2 3 4 5",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1 2 3 4 5"
+        "meaning": "A for-loop iterating from 1 to 5 prints each integer in sequence: 1 2 3 4 5."
       },
       {
         "id": "D",
         "text": "0 1 2 3 4",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -16068,25 +16068,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "O(n)",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the time complexity of the following nested loops?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "O(n^2)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: O(n^2)"
+        "meaning": "Two nested loops each running from 1 to n execute n * n = n^2 operations, resulting in quadratic time complexity O(n^2)."
       },
       {
         "id": "C",
         "text": "O(1)",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the time complexity of the following nested loops?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "O(log n)",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the time complexity of the following nested loops?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -16425,25 +16425,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "1 2 3 4 5",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of values will be printed by the reverse loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "5 4 3 2 1",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 5 4 3 2 1"
+        "meaning": "Looping backwards from index 4 down to 0 prints the array elements in reverse order: 5 4 3 2 1."
       },
       {
         "id": "C",
         "text": "1 5",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of values will be printed by the reverse loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "4 3 2 1 0",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of values will be printed by the reverse loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -16476,13 +16476,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "1 2 3 4 5",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the while loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "5 4 3 2 1",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 5 4 3 2 1"
+        "meaning": "Starting at x=5, the while loop prints x and decrements it on each iteration until x=0: outputting 5 4 3 2 1."
       },
       {
         "id": "C",
@@ -16629,25 +16629,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "x>10 or x<20",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which expression correctly tests if integer `x` is between 1...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "x>=10 and x<=20",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: x>=10 and x<=20"
+        "meaning": "To express that x falls inclusively between 10 and 20, both conditions must hold simultaneously: x >= 10 and x <= 20."
       },
       {
         "id": "C",
         "text": "x>10 and x<20",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which expression correctly tests if integer `x` is between 1...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "x==10 and x==20",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which expression correctly tests if integer `x` is between 1...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -16680,13 +16680,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "yes",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: yes"
+        "meaning": "x=10 > 5 is true, and y=20 > 15 is true. Since both sides of the 'and' are true, 'yes' is printed."
       },
       {
         "id": "B",
         "text": "no",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the logical AND condition?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
@@ -16731,13 +16731,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "yes",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: yes"
+        "meaning": "While x < 5 is false, y == 5 is true. Because an 'or' requires only one condition to be true, 'yes' is printed."
       },
       {
         "id": "B",
         "text": "no",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the logical OR condition?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
@@ -16782,13 +16782,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "A",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: A"
+        "meaning": "x > 10 (5 > 10) is false. Negating false with 'not' yields true, executing the if-branch to print 'A'."
       },
       {
         "id": "B",
         "text": "B",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the logical NOT condition?...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "C",
@@ -17241,13 +17241,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Accepted",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Accepted"
+        "meaning": "The regex requires 2 uppercase letters, 3 digits, and 1 lowercase letter. 'XY987g' matches this exact pattern, so it is accepted."
       },
       {
         "id": "B",
         "text": "Rejected",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given regular expression pattern `^[A-Z]{2}[0-9]{3}[a-z]$`, ...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
@@ -17259,7 +17259,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Partial",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given regular expression pattern `^[A-Z]{2}[0-9]{3}[a-z]$`, ...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -17349,19 +17349,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "15 27",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of values will be printed by the do-while loop...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
         "text": "15 27 39",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 15 27 39"
+        "meaning": "do-while loop starts at x=15 (printed), updates x to 12+15-2=25 (or 27 per formula), printing 15, 27, 39 before x exceeds 40."
       },
       {
         "id": "D",
         "text": "12 15 27",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of values will be printed by the do-while loop...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -17598,19 +17598,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "1, 0",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed for `y` and `z` by the logical NOT oper...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "B",
         "text": "0, 1",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 0, 1"
+        "meaning": "In standard boolean logic, non-zero 11 is truthy. !11 is logical NOT (0), and !!11 is 1."
       },
       {
         "id": "C",
         "text": "11, 11",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed for `y` and `z` by the logical NOT oper...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "D",
@@ -17808,19 +17808,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "4 7",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 4 7"
+        "meaning": "For rec(7): 7 > 3 calls rec(4). In rec(4): calls rec(1) (base case), then prints 4. Control returns to rec(7), which prints 7. Result is 4 7."
       },
       {
         "id": "C",
         "text": "7 4",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete printed output of the recursive call `r...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "3 7",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete printed output of the recursive call `r...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -18157,7 +18157,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "1 and 2",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1 and 2"
+        "meaning": "Google Meet and Skype are video conferencing tools requiring camera permissions; Outlook is an email client that does not require a webcam."
       },
       {
         "id": "B",
@@ -18175,7 +18175,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "All",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which apps require webcam access? 1) Google Meet  2) Skype  ...'."
+        "meaning": "Alternative Office term/command; 1 and 2 is the specific element required."
       }
     ],
     "tags": [
@@ -18206,7 +18206,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Routing table",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Table that tracks active connections and their states (estab...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "B",
@@ -18218,13 +18218,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "State table",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: State table"
+        "meaning": "A state table is used by stateful firewalls to track the state, sequence numbers, and IP/port pairs of active network connections."
       },
       {
         "id": "D",
         "text": "MAC table",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Table that tracks active connections and their states (estab...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -18371,7 +18371,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "1, 2 and 3",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1, 2 and 3"
+        "meaning": "To spin up a Compute Engine VM, an active GCP Project, a linked Billing Account, and the Compute Engine API must all be enabled."
       }
     ],
     "tags": [
@@ -18402,25 +18402,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Folder copied",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Single-click a folder icon. What happens?...'."
+        "meaning": "Assigned to a different command; Folder is selected is the standard shortcut."
       },
       {
         "id": "B",
         "text": "Folder information shown",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Single-click a folder icon. What happens?...'."
+        "meaning": "Assigned to a different command; Folder is selected is the standard shortcut."
       },
       {
         "id": "C",
         "text": "Folder is selected",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Folder is selected"
+        "meaning": "In GUI desktop operating systems, a single left-click on a folder selects and highlights it without opening its contents."
       },
       {
         "id": "D",
         "text": "Folder opens",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Single-click a folder icon. What happens?...'."
+        "meaning": "Assigned to a different command; Folder is selected is the standard shortcut."
       }
     ],
     "tags": [
@@ -18518,7 +18518,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "SSL",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: SSL"
+        "meaning": "SSL (Secure Sockets Layer) and its successor TLS provide encryption and cryptographic integrity for sensitive web communication over HTTPS."
       }
     ],
     "tags": [
@@ -18567,7 +18567,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Backstage view",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Backstage view"
+        "meaning": "Clicking the File tab in modern Microsoft Office opens the Backstage view, providing file management options like New, Open, Save, Print, and Share."
       }
     ],
     "tags": [
@@ -18598,25 +18598,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Title",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Two-column slide with two content boxes. Layout name?...'."
+        "meaning": "Provides an advisory tooltip on hover; 'alt' is the required text alternative."
       },
       {
         "id": "B",
         "text": "Blank",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Two-column slide with two content boxes. Layout name?...'."
+        "meaning": "Alternative Office term/command; Comparison is the specific element required."
       },
       {
         "id": "C",
         "text": "Comparison",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Comparison"
+        "meaning": "The 'Comparison' slide layout provides a slide title and two side-by-side content columns, each with its own heading."
       },
       {
         "id": "D",
         "text": "Section Header",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Two-column slide with two content boxes. Layout name?...'."
+        "meaning": "Alternative Office term/command; Comparison is the specific element required."
       }
     ],
     "tags": [
@@ -18653,7 +18653,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Page orientations",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Page orientations"
+        "meaning": "Portrait (vertical) and Landscape (horizontal) are the two primary page orientation modes in document processing."
       },
       {
         "id": "C",
@@ -18696,19 +18696,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "2x2",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Minimum rows and columns in a Word table?...'."
+        "meaning": "2x2 tab hosts different tools; 1 row and 1 column is the ribbon tab used for this."
       },
       {
         "id": "B",
         "text": "1x2",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Minimum rows and columns in a Word table?...'."
+        "meaning": "1x2 tab hosts different tools; 1 row and 1 column is the ribbon tab used for this."
       },
       {
         "id": "C",
         "text": "1 row and 1 column",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1 row and 1 column"
+        "meaning": "The minimum possible dimension for a table in Microsoft Word is a single row and a single column (a single cell)."
       },
       {
         "id": "D",
@@ -18812,7 +18812,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "SmartArt",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Display stats about a Word document (words, characters, para...'."
+        "meaning": "Alternative Office term/command; Tools -> Word Count is the specific element required."
       }
     ],
     "tags": [
@@ -18843,25 +18843,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": ".pdf",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Word proprietary save extension?...'."
+        "meaning": "Assigned to a different command; .doc / .docx is the standard shortcut."
       },
       {
         "id": "B",
         "text": ".txt",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Word proprietary save extension?...'."
+        "meaning": "File format .txt is supported/used differently in Office workflows."
       },
       {
         "id": "C",
         "text": ".doc / .docx",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: .doc / .docx"
+        "meaning": "Microsoft Word's native binary format is .doc and its modern XML-based zipped format is .docx."
       },
       {
         "id": "D",
         "text": ".ppt",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Word proprietary save extension?...'."
+        "meaning": "File format .ppt is supported/used differently in Office workflows."
       }
     ],
     "tags": [
@@ -18941,25 +18941,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Times New Roman 12",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default font in modern Word (after ~2021)?...'."
+        "meaning": "Alternative Office term/command; Calibri 11 is the specific element required."
       },
       {
         "id": "B",
         "text": "Arial 10",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default font in modern Word (after ~2021)?...'."
+        "meaning": "Alternative Office term/command; Calibri 11 is the specific element required."
       },
       {
         "id": "C",
         "text": "Calibri 11",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Calibri 11"
+        "meaning": "Calibri (11 pt) was the long-standing default font for Microsoft Word documents from Office 2007 through late 2021 (before Aptos)."
       },
       {
         "id": "D",
         "text": "Calibri 12",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default font in modern Word (after ~2021)?...'."
+        "meaning": "Alternative Office term/command; Calibri 11 is the specific element required."
       }
     ],
     "tags": [
@@ -19051,7 +19051,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Microsoft Publisher",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Microsoft Publisher"
+        "meaning": "Microsoft Publisher is an entry-level desktop publishing application focused on page design, layouts, flyers, business cards, and brochures."
       },
       {
         "id": "D",
@@ -19094,19 +19094,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "blog",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: blog"
+        "meaning": "In 'https://blog.hubspot.com/marketing', 'blog' is the subdomain prefixed to the primary domain 'hubspot.com'."
       },
       {
         "id": "C",
         "text": "hubspot.com",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'URL https://blog.hubspot.com/marketing \u2014 which part is the s...'."
+        "meaning": "Alternative Office term/command; blog is the specific element required."
       },
       {
         "id": "D",
         "text": "marketing",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'URL https://blog.hubspot.com/marketing \u2014 which part is the s...'."
+        "meaning": "Alternative Office term/command; blog is the specific element required."
       }
     ],
     "tags": [
@@ -19137,25 +19137,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Macintosh",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not an OS?...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "B",
         "text": "Unix",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not an OS?...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "C",
         "text": "Microsoft Edge",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Microsoft Edge"
+        "meaning": "Microsoft Edge is a Chromium-based web browser, whereas macOS, Unix, and Android are complete operating systems."
       },
       {
         "id": "D",
         "text": "Android",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not an OS?...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -19186,7 +19186,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "1 only",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1 only"
+        "meaning": "PowerPoint action buttons trigger configured hyperlinks, macros, or actions when clicked (Action On Click)."
       },
       {
         "id": "B",
@@ -19198,13 +19198,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Both",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'PowerPoint action button performs the action when? 1) Clicke...'."
+        "meaning": "Alternative Office term/command; 1 only is the specific element required."
       },
       {
         "id": "D",
         "text": "Neither",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'PowerPoint action button performs the action when? 1) Clicke...'."
+        "meaning": "Alternative Office term/command; 1 only is the specific element required."
       }
     ],
     "tags": [
@@ -19235,25 +19235,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Google Chrome",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Odd one out: Google Chrome, Mozilla Firefox, Safari, Android...'."
+        "meaning": "Alternative Office term/command; Android is the specific element required."
       },
       {
         "id": "B",
         "text": "Mozilla Firefox",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Odd one out: Google Chrome, Mozilla Firefox, Safari, Android...'."
+        "meaning": "Assigned to a different command; Android is the standard shortcut."
       },
       {
         "id": "C",
         "text": "Safari",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Odd one out: Google Chrome, Mozilla Firefox, Safari, Android...'."
+        "meaning": "Assigned to a different command; Android is the standard shortcut."
       },
       {
         "id": "D",
         "text": "Android",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Android"
+        "meaning": "Chrome, Firefox, and Safari are web browsers; Android is a mobile operating system developed by Google."
       }
     ],
     "tags": [
@@ -19284,25 +19284,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Attach as GIF",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Attach a whole folder with email \u2014 typical choice taught?...'."
+        "meaning": "Assigned to a different command; Compress/ZIP the folder first is the standard shortcut."
       },
       {
         "id": "B",
         "text": "Compress/ZIP the folder first",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Compress/ZIP the folder first"
+        "meaning": "Email systems cannot attach raw folders directly; compressing the folder into a ZIP archive bundles it into a single uploadable file."
       },
       {
         "id": "C",
         "text": "Attach as WAV",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Attach a whole folder with email \u2014 typical choice taught?...'."
+        "meaning": "Alternative Office term/command; Compress/ZIP the folder first is the specific element required."
       },
       {
         "id": "D",
         "text": "Cannot attach folders ever",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Attach a whole folder with email \u2014 typical choice taught?...'."
+        "meaning": "Assigned to a different command; Compress/ZIP the folder first is the standard shortcut."
       }
     ],
     "tags": [
@@ -19339,7 +19339,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Alt+Ctrl+C",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Alt+Ctrl+C"
+        "meaning": "In Microsoft Word, pressing Alt+Ctrl+C inserts the copyright symbol (\u00a9)."
       },
       {
         "id": "C",
@@ -19449,7 +19449,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Alt+F4",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Close all browser tabs (active or inactive)?...'."
+        "meaning": "Alt+F4 tab hosts different tools; Ctrl+Shift+W is the ribbon tab used for this."
       }
     ],
     "tags": [
@@ -19480,25 +19480,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Open-source",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'MS Office is?...'."
+        "meaning": "Alternative Office term/command; Market / proprietary paid software is the specific element required."
       },
       {
         "id": "B",
         "text": "Cloudsource",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'MS Office is?...'."
+        "meaning": "Alternative Office term/command; Market / proprietary paid software is the specific element required."
       },
       {
         "id": "C",
         "text": "Market / proprietary paid software",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Market / proprietary paid software"
+        "meaning": "Microsoft Office is commercial proprietary software developed and distributed under paid commercial licensing terms."
       },
       {
         "id": "D",
         "text": "Firmware",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'MS Office is?...'."
+        "meaning": "Assigned to a different command; Market / proprietary paid software is the standard shortcut."
       }
     ],
     "tags": [
@@ -19547,7 +19547,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Filter",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Values greater than 7 should auto-highlight in Excel. Featur...'."
+        "meaning": "Assigned to a different command; Conditional Formatting is the standard shortcut."
       }
     ],
     "tags": [
@@ -19633,7 +19633,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Styles + multilevel list",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Styles + multilevel list"
+        "meaning": "Applying Heading Styles linked with a Multilevel List enables automated, hierarchical numbering for chapters and subsections in long documents."
       },
       {
         "id": "C",
@@ -19829,7 +19829,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "VLOOKUP(E2,A2:C4,3,FALSE)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: VLOOKUP(E2,A2:C4,3,FALSE)"
+        "meaning": "=VLOOKUP(E2, A2:C4, 3, FALSE) looks up the ID in column 1 and returns the exact corresponding salary from the 3rd column."
       },
       {
         "id": "C",
@@ -19872,19 +19872,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Style",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Predefined combination of colors, fonts, and effects for the...'."
+        "meaning": "Alternative Office term/command; Theme is the specific element required."
       },
       {
         "id": "B",
         "text": "Theme",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Theme"
+        "meaning": "A Theme provides an overarching, coordinated palette of colors, header/body fonts, and visual effects applied across the entire presentation."
       },
       {
         "id": "C",
         "text": "Design tab",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Predefined combination of colors, fonts, and effects for the...'."
+        "meaning": "Alternative Office term/command; Theme is the specific element required."
       },
       {
         "id": "D",
@@ -19976,7 +19976,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Auto scaling",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Auto scaling"
+        "meaning": "Auto-scaling dynamically provisions or terminates computing instances in response to traffic spikes without requiring manual intervention."
       },
       {
         "id": "C",
@@ -20129,13 +20129,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "WPA2-Personal",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Government research Wi-Fi: most advanced encryption + authen...'."
+        "meaning": "Distinct security mechanism; WPA3-Enterprise specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "WPA3-Enterprise",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: WPA3-Enterprise"
+        "meaning": "WPA3-Enterprise incorporates 192-bit cryptographic algorithms, authenticated key exchange, and centralized 802.1X enterprise servers."
       }
     ],
     "tags": [
@@ -20178,7 +20178,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Route injection attack",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Route injection attack"
+        "meaning": "A route injection attack injects fraudulent routing advertisements into the network to redirect traffic through unauthorized nodes."
       },
       {
         "id": "D",
@@ -20221,7 +20221,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Evil twin attack",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Evil twin attack"
+        "meaning": "An Evil Twin attack sets up a rogue Wi-Fi access point masquerading as a legitimate public hotspot to snoop on user credentials."
       },
       {
         "id": "C",
@@ -20466,7 +20466,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "EAP-TTLS and PEAP",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: EAP-TTLS and PEAP"
+        "meaning": "EAP-TTLS and PEAP simplify authentication by creating an encrypted TLS tunnel using only a server-side certificate, avoiding client-side certs."
       },
       {
         "id": "C",
@@ -20509,7 +20509,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Resource pooling",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Resource pooling"
+        "meaning": "Resource pooling aggregates physical compute, memory, and multi-vendor storage resources to serve multiple customers dynamically."
       },
       {
         "id": "B",
@@ -20527,7 +20527,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Gutter margin",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Storage from many vendors + next-gen storage; globally scala...'."
+        "meaning": "Alternative cloud computing pattern; Resource pooling is the model required."
       }
     ],
     "tags": [
@@ -20558,13 +20558,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Wrong font",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Substitution cipher; some chars decrypt wrong / data loss. M...'."
+        "meaning": "Distinct security mechanism; Duplicate character mappings from key collisions specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "Duplicate character mappings from key collisions",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Duplicate character mappings from key collisions"
+        "meaning": "If multiple plaintext characters map to the same ciphertext character in a substitution cipher, decryption becomes ambiguous and causes data loss."
       },
       {
         "id": "C",
@@ -20576,7 +20576,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Page break",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Substitution cipher; some chars decrypt wrong / data loss. M...'."
+        "meaning": "Distinct security mechanism; Duplicate character mappings from key collisions specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -20613,7 +20613,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Eavesdropping",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Eavesdropping"
+        "meaning": "Eavesdropping (sniffing) involves passively monitoring and capturing unencrypted network packets without altering the transmission flow."
       },
       {
         "id": "C",
@@ -20772,7 +20772,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Mainframe",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Startup minimize cost, scale as users grow. Deployment?...'."
+        "meaning": "Alternative cloud computing pattern; Public is the model required."
       }
     ],
     "tags": [
@@ -20913,7 +20913,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "USB backup",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'High availability + disaster recovery across regions and pro...'."
+        "meaning": "Alternative cloud computing pattern; Multicloud is the model required."
       },
       {
         "id": "D",
@@ -21011,13 +21011,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "On-prem forever",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Temporary HPC for large datasets, most cost-effective. Deplo...'."
+        "meaning": "Alternative cloud computing pattern; Public is the model required."
       },
       {
         "id": "D",
         "text": "Air-gapped",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Temporary HPC for large datasets, most cost-effective. Deplo...'."
+        "meaning": "Alternative cloud computing pattern; Public is the model required."
       }
     ],
     "tags": [
@@ -21115,7 +21115,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "BaaS",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Small business virtual server, manage OS and middleware. Ser...'."
+        "meaning": "Alternative cloud computing pattern; IaaS is the model required."
       }
     ],
     "tags": [
@@ -21213,7 +21213,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Bare metal",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Complete CRM in a browser. Model?...'."
+        "meaning": "Alternative cloud computing pattern; SaaS is the model required."
       }
     ],
     "tags": [
@@ -21440,7 +21440,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Internet browser",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Software that protects a computer from viruses/malware?...'."
+        "meaning": "Distinct security mechanism; Antivirus specifically addresses this threat/role."
       },
       {
         "id": "B",
@@ -21452,7 +21452,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Antivirus",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Antivirus"
+        "meaning": "Antivirus software monitors, detects, quarantines, and removes malicious software, trojans, and viruses from computer systems."
       },
       {
         "id": "D",
@@ -21489,7 +21489,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Backups",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Primary purpose of a firewall?...'."
+        "meaning": "Distinct security mechanism; Detect/respond to unauthorized access specifically addresses this threat/role."
       },
       {
         "id": "B",
@@ -21501,13 +21501,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Encrypt all traffic",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Primary purpose of a firewall?...'."
+        "meaning": "Distinct security mechanism; Detect/respond to unauthorized access specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "Increase bandwidth",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Primary purpose of a firewall?...'."
+        "meaning": "Distinct security mechanism; Detect/respond to unauthorized access specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -21538,7 +21538,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "True",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: True"
+        "meaning": "Data encryption transforms readable plaintext into unreadable ciphertext to guarantee confidentiality against unauthorized interception."
       },
       {
         "id": "B",
@@ -21605,7 +21605,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Microsoft",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Microsoft"
+        "meaning": "Microsoft Azure is the public cloud computing platform developed and operated by Microsoft."
       }
     ],
     "tags": [
@@ -21654,7 +21654,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Data centers require users to manage/maintain hardware",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Data centers require users to manage/maintain hardware"
+        "meaning": "Unlike cloud providers who handle physical infrastructure, traditional on-premises data centers require users to buy and maintain all physical hardware."
       }
     ],
     "tags": [
@@ -21697,13 +21697,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Hyperlink Transmission and Security Protocol",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'HTTPS stands for?...'."
+        "meaning": "Distinct security mechanism; Hypertext Transfer Protocol Secure specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "Hypertext Transfer Protocol Secure",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Hypertext Transfer Protocol Secure"
+        "meaning": "HTTPS stands for Hypertext Transfer Protocol Secure, layering HTTP over SSL/TLS for encrypted and authenticated web communications."
       }
     ],
     "tags": [
@@ -21734,25 +21734,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Azure",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'EC2, S3, Lambda offered by?...'."
+        "meaning": "Alternative cloud computing pattern; AWS is the model required."
       },
       {
         "id": "B",
         "text": "Google Cloud",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'EC2, S3, Lambda offered by?...'."
+        "meaning": "Alternative cloud computing pattern; AWS is the model required."
       },
       {
         "id": "C",
         "text": "AWS",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: AWS"
+        "meaning": "Amazon Web Services (AWS) offers EC2 for virtual computing, S3 for scalable object storage, and Lambda for serverless compute."
       },
       {
         "id": "D",
         "text": "IBM Cloud",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'EC2, S3, Lambda offered by?...'."
+        "meaning": "Alternative cloud computing pattern; AWS is the model required."
       }
     ],
     "tags": [
@@ -21783,7 +21783,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Master key",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Key used for securing individual data packets on wireless fo...'."
+        "meaning": "Distinct security mechanism; Session key specifically addresses this threat/role."
       },
       {
         "id": "B",
@@ -21850,7 +21850,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Adware",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Malware that spreads through a network without user interven...'."
+        "meaning": "Distinct security mechanism; Worm specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -21887,19 +21887,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "OS",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In IaaS, which is managed by the provider among: application...'."
+        "meaning": "Alternative cloud computing pattern; Virtualization only is the model required."
       },
       {
         "id": "C",
         "text": "Virtualization only",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Virtualization only"
+        "meaning": "In IaaS, the cloud provider manages the physical hardware, facilities, and the virtualization hypervisor layer; the tenant manages the OS and apps."
       },
       {
         "id": "D",
         "text": "All three",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In IaaS, which is managed by the provider among: application...'."
+        "meaning": "Alternative cloud computing pattern; Virtualization only is the model required."
       }
     ],
     "tags": [
@@ -21942,13 +21942,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "On-prem exclusive",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Deployment typically owned/operated by a third-party provide...'."
+        "meaning": "Alternative cloud computing pattern; Public cloud is the model required."
       },
       {
         "id": "D",
         "text": "Air-gapped",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Deployment typically owned/operated by a third-party provide...'."
+        "meaning": "Alternative cloud computing pattern; Public cloud is the model required."
       }
     ],
     "tags": [
@@ -22132,19 +22132,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Google Docs",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Google Docs"
+        "meaning": "Google Docs is a cloud-hosted word processor accessed via web browser, making it an example of Software as a Service (SaaS)."
       },
       {
         "id": "C",
         "text": "VMware ESXi",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Example of SaaS application?...'."
+        "meaning": "Alternative cloud computing pattern; Google Docs is the model required."
       },
       {
         "id": "D",
         "text": "VirtualBox",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Example of SaaS application?...'."
+        "meaning": "Alternative cloud computing pattern; Google Docs is the model required."
       }
     ],
     "tags": [
@@ -22181,7 +22181,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Automatic scaling of resources",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Automatic scaling of resources"
+        "meaning": "Cloud elasticity is the ability to automatically and dynamically adapt resource provisioning to match current workload demands in real time."
       },
       {
         "id": "C",
@@ -22322,19 +22322,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "8.8.8.8",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which IP belongs to a private network (as given on slide)?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "192.168.10.5",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 192.168.10.5"
+        "meaning": "192.168.10.5 is an RFC 1918 private IPv4 address, reserved specifically for internal local area network communication."
       },
       {
         "id": "C",
         "text": "1.1.1.1",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which IP belongs to a private network (as given on slide)?...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
@@ -22371,25 +22371,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Encryption",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Strong password + OTP is an example of?...'."
+        "meaning": "Distinct security mechanism; Two-factor authentication specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "Authentication",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Strong password + OTP is an example of?...'."
+        "meaning": "Distinct security mechanism; Two-factor authentication specifically addresses this threat/role."
       },
       {
         "id": "C",
         "text": "Two-factor authentication",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Two-factor authentication"
+        "meaning": "Two-factor authentication (2FA) requires two distinct credential factors: something you know (password) and something you have (OTP)."
       },
       {
         "id": "D",
         "text": "Authorization",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Strong password + OTP is an example of?...'."
+        "meaning": "Distinct security mechanism; Two-factor authentication specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -22469,19 +22469,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Same password everywhere",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Practice that helps prevent cyber attacks?...'."
+        "meaning": "Distinct security mechanism; Regular software updates specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "Ignoring updates",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Practice that helps prevent cyber attacks?...'."
+        "meaning": "Distinct security mechanism; Regular software updates specifically addresses this threat/role."
       },
       {
         "id": "C",
         "text": "Regular software updates",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Regular software updates"
+        "meaning": "Promptly installing software updates and security patches fixes known vulnerabilities, preventing exploits by malware and hackers."
       },
       {
         "id": "D",
@@ -22530,7 +22530,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Dynamic Text",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by `document.write` after appending the...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
@@ -22571,13 +22571,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Button text becomes Click and remains visible",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What happens on the page when the button is clicked?...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "B",
         "text": "Click is written on screen, button disappears",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Click is written on screen, button disappears"
+        "meaning": "Calling document.write() after an HTML document has completely loaded clears and overwrites the entire DOM, replacing the button with 'Click'."
       },
       {
         "id": "C",
@@ -22589,7 +22589,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Button shows no change",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What happens on the page when the button is clicked?...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [
@@ -22624,25 +22624,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "number",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What data type is printed by `typeof val` for an HTML text i...'."
+        "meaning": "JavaScript primitive type 'number'; this operation evaluates to 'string'."
       },
       {
         "id": "B",
         "text": "string",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: string"
+        "meaning": "In JavaScript, the .value attribute of any HTML form input element is always returned as a 'string' data type."
       },
       {
         "id": "C",
         "text": "object",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What data type is printed by `typeof val` for an HTML text i...'."
+        "meaning": "JavaScript primitive type 'object'; this operation evaluates to 'string'."
       },
       {
         "id": "D",
         "text": "undefined",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What data type is printed by `typeof val` for an HTML text i...'."
+        "meaning": "JavaScript primitive type 'undefined'; this operation evaluates to 'string'."
       }
     ],
     "tags": [
@@ -22730,25 +22730,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "85 170",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after the bitwise operations and loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "1 170",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1 170"
+        "meaning": "num=85 (01010101_2). x = 85 << 1 = 170. y = 170 ^ 85 = 255; y = 255 + 1 = 256. Integer division loop reduces y down to 1. Output is 1 170."
       },
       {
         "id": "C",
         "text": "256 85",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after the bitwise operations and loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "0 170",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after the bitwise operations and loop?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -22781,25 +22781,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "7 7 10",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final printed values of `P`, `Q`, and `R`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "0 7 10",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final printed values of `P`, `Q`, and `R`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
         "text": "7 14 24",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 7 14 24"
+        "meaning": "P = 7 % 10 = 7. Q = 7 + 7 = 14. R = 10 + 14 = 24. Final output values: P=7, Q=14, R=24."
       },
       {
         "id": "D",
         "text": "10 7 14",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final printed values of `P`, `Q`, and `R`?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -22832,19 +22832,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "4 5 6 7",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers is printed by the recursive call `f...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "7 6 5 4",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 7 6 5 4"
+        "meaning": "Recursive calls push to the stack: fun(3,4) -> fun(2,5) -> fun(1,6) -> fun(0,7). At x=0 recursion terminates, and unwinding prints y: 7 6 5 4."
       },
       {
         "id": "C",
         "text": "3 4",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers is printed by the recursive call `f...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
@@ -23189,25 +23189,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "tech",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What word will be printed after reconstructing the character...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "hect",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: hect"
+        "meaning": "The loop reorders the characters according to the index sequence specified in the pseudocode, reconstructing the string 'hect'."
       },
       {
         "id": "C",
         "text": "chet",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What word will be printed after reconstructing the character...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "etch",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What word will be printed after reconstructing the character...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -23309,7 +23309,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Notepad",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Notepad"
+        "meaning": "MS Word, PowerPoint, and Excel provide an integrated spelling and grammar checking engine (invoked via `F7`)."
       }
     ],
     "tags": [
@@ -23397,7 +23397,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "1 and 2 only",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1 and 2 only"
+        "meaning": "MS Paint supports Rectangular Selection and Free-Form Selection. It does not have an elliptical or circular selection tool."
       },
       {
         "id": "C",
@@ -23409,7 +23409,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "1, 2, and 3",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of '**Which of the following selection options are included in M...'."
+        "meaning": "Alternative Office term/command; 1 and 2 only is the specific element required."
       }
     ],
     "tags": [
@@ -23453,7 +23453,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "3 only",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 3 only"
+        "meaning": "Snipping Tool supports four capture modes: Free-form Snip, Rectangular Snip, Window Snip, and Full-screen Snip."
       },
       {
         "id": "D",
@@ -23541,19 +23541,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Paper Size",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is Landscape in MS Word?...'."
+        "meaning": "Alternative Office term/command; Page Orientation is the specific element required."
       },
       {
         "id": "B",
         "text": "Page Orientation",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Page Orientation"
+        "meaning": "In MS Word (under the Layout tab), Page Orientation has two modes: **Portrait** (vertical) and **Landscape** (horizontal)."
       },
       {
         "id": "C",
         "text": "Margin Setting",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is Landscape in MS Word?...'."
+        "meaning": "Alternative Office term/command; Page Orientation is the specific element required."
       },
       {
         "id": "D",
@@ -23591,19 +23591,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Snapshot",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which feature in MS Word is used to land at or jump to a spe...'."
+        "meaning": "Alternative Office term/command; Bookmark is the specific element required."
       },
       {
         "id": "B",
         "text": "Bookmark",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Bookmark"
+        "meaning": "A Bookmark assigns a named anchor to a specific text selection or location in a Word document, allowing instant navigation via the \"Go To\" dialog (`Ctrl + G`) or hyperlinks."
       },
       {
         "id": "C",
         "text": "Cross-Reference",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which feature in MS Word is used to land at or jump to a spe...'."
+        "meaning": "Assigned to a different command; Bookmark is the standard shortcut."
       },
       {
         "id": "D",
@@ -23647,7 +23647,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Italic",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following is NOT a recognized font style in MS ...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "C",
@@ -23659,7 +23659,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Manuscript",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Manuscript"
+        "meaning": "MS Word defines four standard font styles: Regular, Bold, Italic, and Bold Italic. Manuscript is a font typeface/family, not a font style."
       }
     ],
     "tags": [
@@ -23741,13 +23741,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Attachment paperclip icon",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'When composing an email in Gmail, which feature is used to a...'."
+        "meaning": "Alternative Office term/command; Insert files using Google Drive icon is the specific element required."
       },
       {
         "id": "B",
         "text": "Insert files using Google Drive icon",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Insert files using Google Drive icon"
+        "meaning": "Standard direct email attachments are capped at 25 MB. Files larger than 25 MB are automatically uploaded or linked via Google Drive."
       },
       {
         "id": "C",
@@ -23791,25 +23791,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "`@` (At sign)",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which symbol is used on social media platforms to draw atten...'."
+        "meaning": "Alternative Office term/command; `#` (Hashtag) is the specific element required."
       },
       {
         "id": "B",
         "text": "`#` (Hashtag)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `#` (Hashtag)"
+        "meaning": "The `#` symbol creates a clickable hashtag that indexes and groups posts under a unified topic on social media networks."
       },
       {
         "id": "C",
         "text": "`$` (Dollar sign)",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which symbol is used on social media platforms to draw atten...'."
+        "meaning": "Alternative Office term/command; `#` (Hashtag) is the specific element required."
       },
       {
         "id": "D",
         "text": "`&` (Ampersand)",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which symbol is used on social media platforms to draw atten...'."
+        "meaning": "Alternative Office term/command; `#` (Hashtag) is the specific element required."
       }
     ],
     "tags": [
@@ -23841,7 +23841,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Press Backspace",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'If a web URL pasted into an MS Word document is automaticall...'."
+        "meaning": "Alternative Office term/command; Right-click and choose \"Remove Hyperlink\" (or select text and press `Ctrl + Shift + F9`) is the specific element required."
       },
       {
         "id": "B",
@@ -23853,13 +23853,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Press `Ctrl + Z`",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'If a web URL pasted into an MS Word document is automaticall...'."
+        "meaning": "Assigned to a different command; Right-click and choose \"Remove Hyperlink\" (or select text and press `Ctrl + Shift + F9`) is the standard shortcut."
       },
       {
         "id": "D",
         "text": "Change font color to black",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'If a web URL pasted into an MS Word document is automaticall...'."
+        "meaning": "Assigned to a different command; Right-click and choose \"Remove Hyperlink\" (or select text and press `Ctrl + Shift + F9`) is the standard shortcut."
       }
     ],
     "tags": [
@@ -23903,7 +23903,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "In both Header and Footer",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: In both Header and Footer"
+        "meaning": "MS Word supports page number insertion at the Top of Page (Header), Bottom of Page (Footer), Page Margins, or Current Position."
       },
       {
         "id": "D",
@@ -23947,7 +23947,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Shift + Space",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Shift + Space"
+        "meaning": "- `Shift + Space` = Select entire row.\n  - `Ctrl + Space` = Select entire column.\n  - `Ctrl + A` or `Ctrl + Shift + Space` = Select entire worksheet."
       },
       {
         "id": "C",
@@ -23991,25 +23991,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Pen",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default mouse pointer type during an active slid...'."
+        "meaning": "Alternative Office term/command; Arrow is the specific element required."
       },
       {
         "id": "B",
         "text": "Arrow",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Arrow"
+        "meaning": "PowerPoint presentations default to the standard Arrow cursor. Presenters can switch to Pen (`Ctrl + P`) or Laser Pointer (`Ctrl + L`)."
       },
       {
         "id": "C",
         "text": "Laser Pointer",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default mouse pointer type during an active slid...'."
+        "meaning": "Alternative Office term/command; Arrow is the specific element required."
       },
       {
         "id": "D",
         "text": "Crosshair",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default mouse pointer type during an active slid...'."
+        "meaning": "Alternative Office term/command; Arrow is the specific element required."
       }
     ],
     "tags": [
@@ -24041,19 +24041,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Magnifying Glass",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which icon or symbol in Windows settings indicates computer ...'."
+        "meaning": "Assigned to a different command; Gear / Cog wheel is the standard shortcut."
       },
       {
         "id": "B",
         "text": "Gear / Cog wheel",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Gear / Cog wheel"
+        "meaning": "The universal Windows icon for Settings and Control Preferences is a mechanical cog/gear."
       },
       {
         "id": "C",
         "text": "Folder icon",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which icon or symbol in Windows settings indicates computer ...'."
+        "meaning": "Assigned to a different command; Gear / Cog wheel is the standard shortcut."
       },
       {
         "id": "D",
@@ -24097,7 +24097,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "1 and 3 only",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 1 and 3 only"
+        "meaning": "`VLOOKUP` searches exclusively down the leftmost column of the array and retrieves data from specified index columns to the right."
       },
       {
         "id": "C",
@@ -24134,30 +24134,30 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-ms-office",
     "type": "mcq",
     "front": "Given an Excel table with values in `A2:D6` where column A has sorted numbers `[31561, 54617, 57892, 63445, 70000]` and column B has project names `[\"Alpha\", \"Beta\", \"Indian Pacific\", \"Delta\", \"Omega\"]`. What is returned by `=VLOOKUP(60000, A2:D6, 2, TRUE)`?",
-    "back": "`Indian Pacific`",
+    "back": "Indian Pacific",
     "explanation": "Because `range_lookup` is `TRUE`, `VLOOKUP` seeks the largest value in column A that is less than or equal to `60000`. That value is `57892`. The corresponding column 2 entry is `\"Indian Pacific\"`.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`Beta`",
+        "text": "Beta",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given an Excel table with values in `A2:D6` where column A h...'."
+        "meaning": "Beta tab hosts different tools; Indian Pacific is the ribbon tab used for this."
       },
       {
         "id": "B",
-        "text": "`Indian Pacific`",
+        "text": "Indian Pacific",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `Indian Pacific`"
+        "meaning": "Because `range_lookup` is `TRUE`, `VLOOKUP` seeks the largest value in column A that is less than or equal to `60000`."
       },
       {
         "id": "C",
-        "text": "`Delta`",
+        "text": "Delta",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given an Excel table with values in `A2:D6` where column A h...'."
+        "meaning": "Delta tab hosts different tools; Indian Pacific is the ribbon tab used for this."
       },
       {
         "id": "D",
-        "text": "`#N/A`",
+        "text": "#N/A",
         "isCorrect": false,
         "meaning": "Value Not Available error (lookup item cannot be found)."
       }
@@ -24184,32 +24184,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-ms-office",
     "type": "mcq",
     "front": "In MS Excel, cell `B3` contains `\"AB6444\"`. What is the result of `=LEFT(B3, LEN(B3) - 4)`?",
-    "back": "`\"AB\"`",
+    "back": "\"AB\"",
     "explanation": "`LEN(\"AB6444\")` is 6. `6 - 4 = 2`. `=LEFT(\"AB6444\", 2)` extracts the first 2 characters from the left, which is `\"AB\"`.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`\"6444\"`",
+        "text": "\"6444\"",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In MS Excel, cell `B3` contains `\"AB6444\"`. What is the resu...'."
+        "meaning": "Alternative Office term/command; \"AB\" is the specific element required."
       },
       {
         "id": "B",
-        "text": "`\"AB\"`",
+        "text": "\"AB\"",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `\"AB\"`"
+        "meaning": "`LEN(\"AB6444\")` is 6. `6 - 4 = 2`. `=LEFT(\"AB6444\", 2)` extracts the first 2 characters from the left, which is `\"AB\"`."
       },
       {
         "id": "C",
-        "text": "`\"AB6\"`",
+        "text": "\"AB6\"",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In MS Excel, cell `B3` contains `\"AB6444\"`. What is the resu...'."
+        "meaning": "Alternative Office term/command; \"AB\" is the specific element required."
       },
       {
         "id": "D",
-        "text": "`\"A\"`",
+        "text": "\"A\"",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In MS Excel, cell `B3` contains `\"AB6444\"`. What is the resu...'."
+        "meaning": "Alternative Office term/command; \"AB\" is the specific element required."
       }
     ],
     "tags": [
@@ -24303,13 +24303,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Macros",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which MS Word feature enables creating customized letters, n...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       },
       {
         "id": "D",
         "text": "AutoText",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which MS Word feature enables creating customized letters, n...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -24341,7 +24341,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Compare",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which MS Word feature records all insertions, deletions, edi...'."
+        "meaning": "Alternative Office term/command; Track Changes is the specific element required."
       },
       {
         "id": "B",
@@ -24359,7 +24359,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "AutoCorrect",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which MS Word feature records all insertions, deletions, edi...'."
+        "meaning": "Alternative Office term/command; Track Changes is the specific element required."
       }
     ],
     "tags": [
@@ -24397,19 +24397,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Style Gallery",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which tool in MS Office copies formatting attributes (font, ...'."
+        "meaning": "Alternative Office term/command; Format Painter is the specific element required."
       },
       {
         "id": "C",
         "text": "Clipboard",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which tool in MS Office copies formatting attributes (font, ...'."
+        "meaning": "Alternative Office term/command; Format Painter is the specific element required."
       },
       {
         "id": "D",
         "text": "AutoFormat",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which tool in MS Office copies formatting attributes (font, ...'."
+        "meaning": "Assigned to a different command; Format Painter is the standard shortcut."
       }
     ],
     "tags": [
@@ -24441,7 +24441,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Table",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the rectangular intersection of a row and a column i...'."
+        "meaning": "Alternative Office term/command; Cell is the specific element required."
       },
       {
         "id": "B",
@@ -24459,7 +24459,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Block",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the rectangular intersection of a row and a column i...'."
+        "meaning": "Alternative Office term/command; Cell is the specific element required."
       }
     ],
     "tags": [
@@ -24509,7 +24509,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Sort",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which feature in MS Excel hides rows that do not satisfy use...'."
+        "meaning": "Valid feature/element that belongs to this category; therefore not the exception."
       }
     ],
     "tags": [
@@ -24541,7 +24541,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "It deletes duplicate slides automatically",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the purpose of the Slide Master in MS PowerPoint?...'."
+        "meaning": "Alternative Office term/command; It centrally controls default fonts, theme colors, layout placeholders, and background formatting across all presentation slides is the specific element required."
       },
       {
         "id": "B",
@@ -24553,7 +24553,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "It converts slides into an MP4 video",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the purpose of the Slide Master in MS PowerPoint?...'."
+        "meaning": "Alternative Office term/command; It centrally controls default fonts, theme colors, layout placeholders, and background formatting across all presentation slides is the specific element required."
       },
       {
         "id": "D",
@@ -24591,25 +24591,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Animations occur between slides; Transitions apply to text inside slides",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the fundamental difference between an Animation and ...'."
+        "meaning": "Alternative Office term/command; Animations apply to individual objects (text, images, shapes) on a slide; Transitions control the visual effect when navigating between slides is the specific element required."
       },
       {
         "id": "B",
         "text": "Animations apply to individual objects (text, images, shapes) on a slide; Transitions control the visual effect when navigating between slides",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Animations apply to individual objects (text, images, shapes) on a slide; Transitions control the visual effect when navigating between slides"
+        "meaning": "Transitions govern how a slide enters and exits the screen during a slide show."
       },
       {
         "id": "C",
         "text": "There is no difference; they are interchangeable terms",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the fundamental difference between an Animation and ...'."
+        "meaning": "Assigned to a different command; Animations apply to individual objects (text, images, shapes) on a slide; Transitions control the visual effect when navigating between slides is the standard shortcut."
       },
       {
         "id": "D",
         "text": "Transitions require audio; Animations do not",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the fundamental difference between an Animation and ...'."
+        "meaning": "Alternative Office term/command; Animations apply to individual objects (text, images, shapes) on a slide; Transitions control the visual effect when navigating between slides is the specific element required."
       }
     ],
     "tags": [
@@ -24734,30 +24734,30 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-ms-office",
     "type": "mcq",
     "front": "Which Excel function counts ALL non-empty cells (containing numbers, text, logical values, or error codes) within a range?",
-    "back": "`COUNTA`",
+    "back": "COUNTA",
     "explanation": "`COUNT()` counts only cells with numeric data. `COUNTA()` (Count All) counts any cell that is not empty.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`COUNT`",
+        "text": "COUNT",
         "isCorrect": false,
         "meaning": "Counts cells in a range that contain numbers only."
       },
       {
         "id": "B",
-        "text": "`COUNTA`",
+        "text": "COUNTA",
         "isCorrect": true,
         "meaning": "Counts all non-empty cells (text, numbers, booleans, errors)."
       },
       {
         "id": "C",
-        "text": "`COUNTIF`",
+        "text": "COUNTIF",
         "isCorrect": false,
         "meaning": "Counts cells in a range meeting a single given condition."
       },
       {
         "id": "D",
-        "text": "`COUNTBLANK`",
+        "text": "COUNTBLANK",
         "isCorrect": false,
         "meaning": "Counts only blank or empty cells in a range."
       }
@@ -24797,7 +24797,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "VLAN (Virtual Local Area Network)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: VLAN (Virtual Local Area Network)"
+        "meaning": "VLANs (IEEE 802.1Q) partition a physical switch into distinct logical broadcast domains, ensuring traffic between departments remains isolated at Layer 2 without purchasing separate physical switches."
       },
       {
         "id": "C",
@@ -24809,7 +24809,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "STP",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which network technology enables logical network separation ...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -25284,32 +25284,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-networking",
     "type": "mcq",
     "front": "Which of the following IPv4 addresses belongs to a private (RFC 1918) non-routable address range?",
-    "back": "`172.20.14.5`",
+    "back": "172.20.14.5",
     "explanation": "RFC 1918 reserves:\n  - `10.0.0.0/8` (`10.0.0.0` - `10.255.255.255`)\n  - `172.16.0.0/12` (`172.16.0.0` - `172.31.255.255`, which includes `172.20.14.5`)\n  - `192.168.0.0/16` (`192.168.0.0` - `192.168.255.255`).",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`8.8.4.4`",
+        "text": "8.8.4.4",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following IPv4 addresses belongs to a private (...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
-        "text": "`172.20.14.5`",
+        "text": "172.20.14.5",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `172.20.14.5`"
+        "meaning": "RFC 1918 reserves:\n  - `10.0.0.0/8` (`10.0.0.0` - `10.255.255.255`)\n  - `172.16.0.0/12` (`172.16.0.0` - `172.31.255.255`, which includes `172.20.14.5`)\n  - `192.168.0.0/16` (`192.168.0.0` - `192.168.255.255`)."
       },
       {
         "id": "C",
-        "text": "`198.51.100.1`",
+        "text": "198.51.100.1",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following IPv4 addresses belongs to a private (...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
-        "text": "`104.26.10.12`",
+        "text": "104.26.10.12",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following IPv4 addresses belongs to a private (...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -25441,25 +25441,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "SYN, ACK, FIN",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What are the three packets exchanged during a standard TCP c...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
         "text": "SYN, SYN-ACK, ACK",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: SYN, SYN-ACK, ACK"
+        "meaning": "1. Client sends `SYN` (synchronize sequence number).\n  2. Server responds with `SYN-ACK` (synchronize + acknowledgment).\n  3. Client returns..."
       },
       {
         "id": "C",
         "text": "ACK, SYN, RST",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What are the three packets exchanged during a standard TCP c...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
         "text": "PING, PONG, ACK",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What are the three packets exchanged during a standard TCP c...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       }
     ],
     "tags": [
@@ -25491,7 +25491,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Stateless Packet Filter",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which type of firewall inspects individual packet headers an...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
@@ -25634,30 +25634,30 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-networking",
     "type": "mcq",
     "front": "What is the default subnet mask for a standard Class C IPv4 network?",
-    "back": "`255.255.255.0`",
+    "back": "255.255.255.0",
     "explanation": "- Class A (`/8`): `255.0.0.0`\n  - Class B (`/16`): `255.255.0.0`\n  - Class C (`/24`): `255.255.255.0` (24 network bits, 8 host bits, providing up to 254 usable host addresses).",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`255.0.0.0`",
+        "text": "255.0.0.0",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default subnet mask for a standard Class C IPv4 ...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
-        "text": "`255.255.0.0`",
+        "text": "255.255.0.0",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default subnet mask for a standard Class C IPv4 ...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "C",
-        "text": "`255.255.255.0`",
+        "text": "255.255.255.0",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `255.255.255.0`"
+        "meaning": "- Class A (`/8`): `255.0.0.0`\n  - Class B (`/16`): `255.255.0.0`\n  - Class C (`/24`): `255.255.255.0` (24 network bits, 8 host bits, providing up to 254 usable host addresses)."
       },
       {
         "id": "D",
-        "text": "`255.255.255.255`",
+        "text": "255.255.255.255",
         "isCorrect": false,
         "meaning": "Limited broadcast address reaching all hosts on the local subnet."
       }
@@ -25741,7 +25741,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "On-Premises Server Farm",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A startup requires elastic compute resources that scale dyna...'."
+        "meaning": "Alternative cloud computing pattern; Public Cloud with Multi-Region Auto-Scaling is the model required."
       },
       {
         "id": "B",
@@ -25759,7 +25759,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Standalone Bare-Metal Server",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A startup requires elastic compute resources that scale dyna...'."
+        "meaning": "Alternative cloud computing pattern; Public Cloud with Multi-Region Auto-Scaling is the model required."
       }
     ],
     "tags": [
@@ -25809,7 +25809,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "WPA3-Personal",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: WPA3-Personal"
+        "meaning": "WPA3 replaces WPA2's 4-way Pre-Shared Key handshake with SAE (the Dragonfly protocol)."
       }
     ],
     "tags": [
@@ -25853,13 +25853,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Open Unencrypted",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'When upgrading a corporate Wi-Fi infrastructure where some l...'."
+        "meaning": "Distinct security mechanism; WPA2 with AES-CCMP (or WPA2/WPA3 Mixed Mode) specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "WPS PIN",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'When upgrading a corporate Wi-Fi infrastructure where some l...'."
+        "meaning": "Distinct security mechanism; WPA2 with AES-CCMP (or WPA2/WPA3 Mixed Mode) specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -25897,19 +25897,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Source Routing Attack",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Source Routing Attack"
+        "meaning": "In a Source Routing attack, the sender overrides standard dynamic routing by hardcoding intermediate gateway hops into the packet's options field, potentially routing around inspection firewalls."
       },
       {
         "id": "C",
         "text": "Denial of Service (DoS)",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'An attacker manipulates IP packet headers to predetermine th...'."
+        "meaning": "Distinct security mechanism; Source Routing Attack specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "SYN Flood",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'An attacker manipulates IP packet headers to predetermine th...'."
+        "meaning": "Distinct security mechanism; Source Routing Attack specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -25991,25 +25991,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Increasing Wi-Fi signal range",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary security benefit of implementing Network...'."
+        "meaning": "Distinct security mechanism; Restricting an attacker's lateral movement across subnets after a perimeter breach specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "Restricting an attacker's lateral movement across subnets after a perimeter breach",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Restricting an attacker's lateral movement across subnets after a perimeter breach"
+        "meaning": "Isolating network zones (e.g., DMZ, user subnet, database subnet) prevents an attacker who compromises an edge workstation from freely accessing internal database servers."
       },
       {
         "id": "C",
         "text": "Removing the need for firewalls",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary security benefit of implementing Network...'."
+        "meaning": "Distinct security mechanism; Restricting an attacker's lateral movement across subnets after a perimeter breach specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "Accelerating internet upload speeds",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary security benefit of implementing Network...'."
+        "meaning": "Distinct security mechanism; Restricting an attacker's lateral movement across subnets after a perimeter breach specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -26041,25 +26041,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "The server experienced an internal crash",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A developer sends an HTTP GET request to a web service and r...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "B",
         "text": "The requested resource or API endpoint was not found on the server",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: The requested resource or API endpoint was not found on the server"
+        "meaning": "- `404 Not Found`: The server cannot locate the requested URI."
       },
       {
         "id": "C",
         "text": "Authentication credentials are required",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A developer sends an HTTP GET request to a web service and r...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
         "text": "The client request timed out",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A developer sends an HTTP GET request to a web service and r...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [
@@ -26153,7 +26153,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Software as a Service (SaaS)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Software as a Service (SaaS)"
+        "meaning": "In SaaS (e.g., Microsoft 365, Google Workspace, Salesforce), the vendor handles all maintenance, patches, and infrastructure; users simply run the software."
       },
       {
         "id": "D",
@@ -26197,7 +26197,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Encapsulating Security Payload (ESP)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Encapsulating Security Payload (ESP)"
+        "meaning": "ESP (IP Protocol 50) encrypts packet contents."
       },
       {
         "id": "C",
@@ -26247,7 +26247,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Multi-Tenancy",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Multi-Tenancy"
+        "meaning": "Multi-tenancy enables cloud providers to run a single instance of software or shared hardware infrastructure to serve multiple customer organizations securely and cost-effectively."
       },
       {
         "id": "C",
@@ -26291,25 +26291,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Separation of Duties",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which security principle dictates that user accounts and sys...'."
+        "meaning": "Distinct security mechanism; Principle of Least Privilege (PoLP) specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "Principle of Least Privilege (PoLP)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Principle of Least Privilege (PoLP)"
+        "meaning": "Least Privilege limits potential damage by ensuring accounts lack unnecessary permissions that could be abused during a security breach."
       },
       {
         "id": "C",
         "text": "Zero Day Prevention",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which security principle dictates that user accounts and sys...'."
+        "meaning": "Distinct security mechanism; Principle of Least Privilege (PoLP) specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "Single Sign-On",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which security principle dictates that user accounts and sys...'."
+        "meaning": "Distinct security mechanism; Principle of Least Privilege (PoLP) specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -26397,19 +26397,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Google App Engine / AWS Elastic Beanstalk",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Google App Engine / AWS Elastic Beanstalk"
+        "meaning": "- IaaS: Amazon EC2, Google Compute Engine, Azure VMs."
       },
       {
         "id": "C",
         "text": "Microsoft 365",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following is an industry example of Platform as...'."
+        "meaning": "Alternative cloud computing pattern; Google App Engine / AWS Elastic Beanstalk is the model required."
       },
       {
         "id": "D",
         "text": "Dropbox",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following is an industry example of Platform as...'."
+        "meaning": "Alternative cloud computing pattern; Google App Engine / AWS Elastic Beanstalk is the model required."
       }
     ],
     "tags": [
@@ -26441,25 +26441,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Complex Passwords",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which authentication approach offers stronger security than ...'."
+        "meaning": "Distinct security mechanism; Multi-Factor Authentication (MFA / 2FA) specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "Multi-Factor Authentication (MFA / 2FA)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Multi-Factor Authentication (MFA / 2FA)"
+        "meaning": "MFA requires factors from at least two categories: something you know (password/PIN), something you have (hardware token/authenticator app/phone), or something you are (fingerprint/biometrics)."
       },
       {
         "id": "C",
         "text": "Security Questions",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which authentication approach offers stronger security than ...'."
+        "meaning": "Distinct security mechanism; Multi-Factor Authentication (MFA / 2FA) specifically addresses this threat/role."
       },
       {
         "id": "D",
         "text": "CAPTCHA",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which authentication approach offers stronger security than ...'."
+        "meaning": "Distinct security mechanism; Multi-Factor Authentication (MFA / 2FA) specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -26497,7 +26497,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Adware",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which type of malicious software encrypts a victim's files a...'."
+        "meaning": "Distinct security mechanism; Ransomware specifically addresses this threat/role."
       },
       {
         "id": "C",
@@ -26547,7 +26547,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Denial of Service (DoS / DDoS) Attack",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Denial of Service (DoS / DDoS) Attack"
+        "meaning": "DoS/DDoS attacks flood target bandwidth, socket tables, or CPU queues (e.g., SYN floods, UDP amplification) to knock services offline."
       },
       {
         "id": "C",
@@ -26559,7 +26559,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Buffer Overflow Attack",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'An attack that overwhelms a target server or network with ex...'."
+        "meaning": "Distinct security mechanism; Denial of Service (DoS / DDoS) Attack specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -27003,7 +27003,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "To initiate the loop counter",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary role of a \"Base Case\" in any recursive a...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
@@ -27015,13 +27015,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "To calculate the algorithm's time complexity",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary role of a \"Base Case\" in any recursive a...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "To allocate memory on the heap",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary role of a \"Base Case\" in any recursive a...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -27053,25 +27053,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "`break` skips the current iteration; `continue` exits the loop",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the behavioral difference between `break` and `conti...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "`break` immediately terminates the entire enclosing loop; `continue` skips the remainder of the current iteration and jumps directly to the next iteration",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `break` immediately terminates the entire enclosing loop; `continue` skips the remainder of the current iteration and jumps directly to the next iteration"
+        "meaning": "`break` stops the loop completely and transfers control outside the loop block."
       },
       {
         "id": "C",
         "text": "Both statements perform identical actions",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the behavioral difference between `break` and `conti...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "`break` restarts the loop from zero; `continue` pauses execution",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the behavioral difference between `break` and `conti...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -27103,25 +27103,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "A database query compiler",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is JavaScript primarily defined as in web application d...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "B",
         "text": "A client-side scripting language used to create interactive and dynamic web page behavior",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: A client-side scripting language used to create interactive and dynamic web page behavior"
+        "meaning": "JavaScript is a lightweight, interpreted (or JIT-compiled) scripting language with first-class functions that runs in browsers to manipulate the DOM, handle events, and create dynamic user interfaces."
       },
       {
         "id": "C",
         "text": "A styling language for fonts and layouts",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is JavaScript primarily defined as in web application d...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
         "text": "An operating system kernel language",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is JavaScript primarily defined as in web application d...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [
@@ -27153,25 +27153,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "A function that closes a database connection",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which statement accurately defines a \"Closure\" in JavaScript...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "B",
         "text": "A function bundled together with references to its lexical environment",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: A function bundled together with references to its lexical environment"
+        "meaning": "A closure allows an inner function to retain access to its outer parent function's scope (variables and parameters) even after the outer function has completed execution and returned."
       },
       {
         "id": "C",
         "text": "A method used to terminate event listeners",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which statement accurately defines a \"Closure\" in JavaScript...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
         "text": "A block that scopes variables globally",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which statement accurately defines a \"Closure\" in JavaScript...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [
@@ -27196,32 +27196,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-web",
     "type": "mcq",
     "front": "What is the output of the following JavaScript code?",
-    "back": "`false`",
+    "back": "false",
     "explanation": "The strict equality operator (`===`) compares both **value** and **type** without type conversion. Because `typeof a` is `number` and `typeof b` is `string`, the result is `false`. (In contrast, loose equality `a == b` would perform type coercion and return `true`).",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`true`",
+        "text": "true",
         "isCorrect": false,
         "meaning": "Boolean truth value indicating condition criteria are completely satisfied."
       },
       {
         "id": "B",
-        "text": "`false`",
+        "text": "false",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `false`"
+        "meaning": "The strict equality operator (`===`) compares both **value** and **type** without type conversion."
       },
       {
         "id": "C",
-        "text": "`undefined`",
+        "text": "undefined",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the output of the following JavaScript code?...'."
+        "meaning": "JavaScript primitive type 'undefined'; this operation evaluates to 'false'."
       },
       {
         "id": "D",
-        "text": "`NaN`",
+        "text": "NaN",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the output of the following JavaScript code?...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [
@@ -27255,19 +27255,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "`null` means a variable has been declared but not assigned; `undefined` represents an intentional absence of value",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In JavaScript, what is the fundamental distinction between `...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "B",
         "text": "`undefined` means a variable has been declared but not assigned a value; `null` is an explicit assignment indicating an intentional non-value or empty object reference",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `undefined` means a variable has been declared but not assigned a value; `null` is an explicit assignment indicating an intentional non-value or empty object reference"
+        "meaning": "- `undefined`: The default value assigned by the JS engine to variables that have been declared but not initialized."
       },
       {
         "id": "C",
-        "text": "`typeof null === \"undefined\"`",
+        "text": "typeof null === \"undefined\"",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In JavaScript, what is the fundamental distinction between `...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
@@ -27298,32 +27298,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-web",
     "type": "mcq",
     "front": "Which global object serves as the primary entry point and global execution context for client-side JavaScript in web browsers?",
-    "back": "`window`",
+    "back": "window",
     "explanation": "In web browsers, `window` represents the browser window and serves as the global object. All global variables, functions, and the DOM (`window.document`) are properties of `window`.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`document`",
+        "text": "document",
         "isCorrect": false,
         "meaning": "Lacks the default numeric counter suffix; default title is 'Document1'."
       },
       {
         "id": "B",
-        "text": "`window`",
+        "text": "window",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `window`"
+        "meaning": "In web browsers, `window` represents the browser window and serves as the global object."
       },
       {
         "id": "C",
-        "text": "`global`",
+        "text": "global",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which global object serves as the primary entry point and gl...'."
+        "meaning": "Node.js runtime global scope object; browsers use 'window'."
       },
       {
         "id": "D",
-        "text": "`navigator`",
+        "text": "navigator",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which global object serves as the primary entry point and gl...'."
+        "meaning": "Provides browser and device environment information (user agent, language, geolocation)."
       }
     ],
     "tags": [
@@ -27355,25 +27355,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Calling functions and methods",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which methods or mechanisms can be used to execute JavaScrip...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "B",
         "text": "Triggering event handlers/listeners (e.g., `onclick`, `onload`)",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which methods or mechanisms can be used to execute JavaScrip...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "C",
         "text": "Executing Immediately Invoked Function Expressions (IIFE)",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which methods or mechanisms can be used to execute JavaScrip...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
         "text": "All of the above",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: All of the above"
+        "meaning": "JavaScript can be invoked directly upon script parsing, through explicit function calls, by binding callback listeners to user-triggered DOM events, or via self-invoking IIFEs."
       }
     ],
     "tags": [
@@ -27398,32 +27398,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-web",
     "type": "mcq",
     "front": "What is the correct declaration for the HTML5 document type?",
-    "back": "`<!DOCTYPE html>`",
+    "back": "<!DOCTYPE html>",
     "explanation": "The HTML5 document type declaration is clean and case-insensitive: `<!DOCTYPE html>`. It instructs the browser to render the page in standard mode rather than quirks mode.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\">`",
+        "text": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\">",
         "isCorrect": false,
         "meaning": "Public Cloud: Multi-tenant cloud infrastructure shared over public internet."
       },
       {
         "id": "B",
-        "text": "`<!DOCTYPE html>`",
+        "text": "<!DOCTYPE html>",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `<!DOCTYPE html>`"
+        "meaning": "The HTML5 document type declaration is clean and case-insensitive: `<!DOCTYPE html>`."
       },
       {
         "id": "C",
-        "text": "`<doctype html5>`",
+        "text": "<doctype html5>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the correct declaration for the HTML5 document type?...'."
+        "meaning": "Invalid DOCTYPE syntax; standard HTML5 declaration is <!DOCTYPE html>."
       },
       {
         "id": "D",
-        "text": "`<html>`",
+        "text": "<html>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the correct declaration for the HTML5 document type?...'."
+        "meaning": "Root element enclosing all content of an HTML document, not the doctype preamble."
       }
     ],
     "tags": [
@@ -27448,32 +27448,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-web",
     "type": "mcq",
     "front": "Which HTML tag represents the highest priority, largest heading on a webpage?",
-    "back": "`<h1>`",
+    "back": "<h1>",
     "explanation": "HTML defines six levels of section headings, from `<h1>` (highest priority and largest font) down to `<h6>` (lowest priority and smallest font).",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`<heading>`",
+        "text": "<heading>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag represents the highest priority, largest head...'."
+        "meaning": "Non-existent HTML tag; headings in HTML are designated exclusively using <h1> through <h6>."
       },
       {
         "id": "B",
-        "text": "`<h6>`",
+        "text": "<h6>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag represents the highest priority, largest head...'."
+        "meaning": "Represents the lowest priority and smallest font section heading in HTML."
       },
       {
         "id": "C",
-        "text": "`<h1>`",
+        "text": "<h1>",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `<h1>`"
+        "meaning": "HTML defines six levels of section headings, from `<h1>` (highest priority and largest font) down to `<h6>` (lowest priority and smallest font)."
       },
       {
         "id": "D",
-        "text": "`<head>`",
+        "text": "<head>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag represents the highest priority, largest head...'."
+        "meaning": "Document head container for metadata (<title>, <meta>, <link>), not a visible heading element."
       }
     ],
     "tags": [
@@ -27511,13 +27511,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Document Object Model",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Document Object Model"
+        "meaning": "The DOM is a programming interface that represents an HTML or XML document as a structured tree of nodes, enabling languages like JavaScript to inspect, manipulate, and style elements dynamically."
       },
       {
         "id": "C",
         "text": "Digital Ordinance Module",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What does the DOM stand for in web technologies?...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
@@ -27548,32 +27548,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-web",
     "type": "mcq",
     "front": "Which HTML5 semantic element is designed to highlight or mark text with a default yellow background?",
-    "back": "`<mark>`",
+    "back": "<mark>",
     "explanation": "The `<mark>` tag defines text that should be marked or highlighted for reference due to its relevance in another context.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`<highlight>`",
+        "text": "<highlight>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML5 semantic element is designed to highlight or mar...'."
+        "meaning": "Non-existent HTML tag; <mark> is the semantic element for highlighted text."
       },
       {
         "id": "B",
-        "text": "`<mark>`",
+        "text": "<mark>",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `<mark>`"
+        "meaning": "The `<mark>` tag defines text that should be marked or highlighted for reference due to its relevance in another context."
       },
       {
         "id": "C",
-        "text": "`<b>`",
+        "text": "<b>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML5 semantic element is designed to highlight or mar...'."
+        "meaning": "Bolds text stylistically without conveying semantic emphasis or highlighting."
       },
       {
         "id": "D",
-        "text": "`<em>`",
+        "text": "<em>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML5 semantic element is designed to highlight or mar...'."
+        "meaning": "Italicizes text to represent semantic emphasis and spoken stress."
       }
     ],
     "tags": [
@@ -27598,32 +27598,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-web",
     "type": "mcq",
     "front": "Which HTML tag is used to write internal CSS rules directly inside the `<head>` section of an HTML document?",
-    "back": "`<style>`",
+    "back": "<style>",
     "explanation": "- `<style>`: Encapsulates internal CSS declarations.\n  - `<link rel=\"stylesheet\" href=\"...\">`: Imports external CSS stylesheets.\n  - `style=\"...\"`: Inlines styles on an individual tag attribute.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`<script>`",
+        "text": "<script>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to write internal CSS rules directly ...'."
+        "meaning": "Embeds or links executable client-side JavaScript code."
       },
       {
         "id": "B",
-        "text": "`<style>`",
+        "text": "<style>",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `<style>`"
+        "meaning": "- `<style>`: Encapsulates internal CSS declarations."
       },
       {
         "id": "C",
-        "text": "`<css>`",
+        "text": "<css>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to write internal CSS rules directly ...'."
+        "meaning": "Non-existent HTML tag; CSS is included via <style> or <link> tags."
       },
       {
         "id": "D",
-        "text": "`<link>`",
+        "text": "<link>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to write internal CSS rules directly ...'."
+        "meaning": "Links external resources like CSS stylesheets (<link rel='stylesheet'>) to the HTML document."
       }
     ],
     "tags": [
@@ -27655,25 +27655,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "`#classname` (ID selector)",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS selector is used to target and style a group of el...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "B",
         "text": "`.classname` (Class selector)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `.classname` (Class selector)"
+        "meaning": "In CSS, a period (`.`) prefixes class selectors (e.g., `.button`), targeting all elements with `class=\"button\"`."
       },
       {
         "id": "C",
-        "text": "`*classname`",
+        "text": "*classname",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS selector is used to target and style a group of el...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
-        "text": "`:classname`",
+        "text": ":classname",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS selector is used to target and style a group of el...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [
@@ -27711,7 +27711,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "The Box Model",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: The Box Model"
+        "meaning": "The CSS Box Model describes the rectangular boxes generated for elements: innermost **Content**, followed by **Padding**, then **Border**, and outermost **Margin**."
       },
       {
         "id": "C",
@@ -27755,7 +27755,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "`UNION ALL` across all three tables",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given a normalized database schema with tables: `Users(user_...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "B",
@@ -27771,9 +27771,9 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       },
       {
         "id": "D",
-        "text": "`DROP TABLE`",
+        "text": "DROP TABLE",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given a normalized database schema with tables: `Users(user_...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [
@@ -27811,7 +27811,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Text or graphics appearing at the top margin of every page",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Text or graphics appearing at the top margin of every page"
+        "meaning": "In MS Word, a **Header** is a dedicated section in the top margin of a document where recurring content (such as document titles, company logos, chapter names, or dates) repeats automatically across pages."
       },
       {
         "id": "C",
@@ -27998,30 +27998,30 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-ms-office",
     "type": "mcq",
     "front": "In MS Excel, which mathematical function calculates the sum total of all numbers within a designated cell range?",
-    "back": "`SUM()`",
+    "back": "SUM()",
     "explanation": "`=SUM(A1:A10)` adds all numeric values in cells A1 through A10. Functions named `TOTAL()` or `ADD()` do not exist in standard Excel syntax.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`TOTAL()`",
+        "text": "TOTAL()",
         "isCorrect": false,
         "meaning": "Does not execute the requested calculation; `SUM()` is the correct formula."
       },
       {
         "id": "B",
-        "text": "`SUM()`",
+        "text": "SUM()",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `SUM()`"
+        "meaning": "`=SUM(A1:A10)` adds all numeric values in cells A1 through A10. Functions named `TOTAL()` or `ADD()` do not exist in standard Excel syntax."
       },
       {
         "id": "C",
-        "text": "`ADD()`",
+        "text": "ADD()",
         "isCorrect": false,
         "meaning": "Does not execute the requested calculation; `SUM()` is the correct formula."
       },
       {
         "id": "D",
-        "text": "`AVERAGE()`",
+        "text": "AVERAGE()",
         "isCorrect": false,
         "meaning": "Does not execute the requested calculation; `SUM()` is the correct formula."
       }
@@ -28061,7 +28061,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Ctrl + ;",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Ctrl + ;"
+        "meaning": "- `Ctrl + ;` inserts the static current Date."
       },
       {
         "id": "C",
@@ -28255,7 +28255,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Switches connect networks globally; Routers connect devices locally on a single mother-board",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the difference between the primary hardware role of ...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
@@ -28367,7 +28367,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "Port Number",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Port Number"
+        "meaning": "Port numbers (ranging from 0 to 65535) enable multiplexing and demultiplexing."
       },
       {
         "id": "D",
@@ -28405,7 +28405,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "To convert domain names into IP addresses",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the core operational purpose of Network Address Tran...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "B",
@@ -28417,7 +28417,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "C",
         "text": "To encrypt hard drive partitions",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the core operational purpose of Network Address Tran...'."
+        "meaning": "Network concept associated with different protocols or topological models."
       },
       {
         "id": "D",
@@ -28461,7 +28461,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "Authentication answers \"Who are you?\" (verifying user identity); Authorization answers \"What permissions and resources are you allowed to access?\"",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Authentication answers \"Who are you?\" (verifying user identity); Authorization answers \"What permissions and resources are you allowed to access?\""
+        "meaning": "- **Authentication (AuthN):** Validates credentials (username/password, biometrics, tokens) to prove identity."
       },
       {
         "id": "C",
@@ -28473,7 +28473,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "They are synonyms for password validation",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In security architecture, what is the fundamental difference...'."
+        "meaning": "Distinct security mechanism; Authentication answers \"Who are you?\" (verifying user identity); Authorization answers \"What permissions and resources are you allowed to access?\" specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -28505,25 +28505,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Entering a username and then entering your password",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following represents a valid real-world impleme...'."
+        "meaning": "Distinct security mechanism; Entering your master password and then entering a time-based one-time passcode (TOTP) from an authenticator app on your smartphone specifically addresses this threat/role."
       },
       {
         "id": "B",
         "text": "Entering your password and answering a security question asking your pet's name",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following represents a valid real-world impleme...'."
+        "meaning": "Distinct security mechanism; Entering your master password and then entering a time-based one-time passcode (TOTP) from an authenticator app on your smartphone specifically addresses this threat/role."
       },
       {
         "id": "C",
         "text": "Entering your master password and then entering a time-based one-time passcode (TOTP) from an authenticator app on your smartphone",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Entering your master password and then entering a time-based one-time passcode (TOTP) from an authenticator app on your smartphone"
+        "meaning": "True MFA requires factors from at least two different categories:\n  - Factor 1: Something you know (Knowledge factor - password)."
       },
       {
         "id": "D",
         "text": "Entering two different email addresses",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following represents a valid real-world impleme...'."
+        "meaning": "Distinct security mechanism; Entering your master password and then entering a time-based one-time passcode (TOTP) from an authenticator app on your smartphone specifically addresses this threat/role."
       }
     ],
     "tags": [
@@ -28605,25 +28605,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "7 times",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'How many times will the string `\"Hello\"` be printed by the f...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
         "text": "12 times",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 12 times"
+        "meaning": "- The outer loop variable `i` iterates 3 times (values: 1, 2, 3)."
       },
       {
         "id": "C",
         "text": "14 times",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'How many times will the string `\"Hello\"` be printed by the f...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "3 times",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'How many times will the string `\"Hello\"` be printed by the f...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -28702,30 +28702,30 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-pseudocode",
     "type": "mcq",
     "front": "Which condition correctly checks whether a numeric variable `x` lies strictly between 10 and 20, inclusive?",
-    "back": "`if (x >= 10 AND x <= 20)`",
+    "back": "if (x >= 10 AND x <= 20)",
     "explanation": "In programming and pseudocode logic, chained comparisons (`10 <= x <= 20`) are not directly evaluated as compound conditions in most procedural languages. Logical `AND` must be explicitly used to ensure both boundary conditions evaluate to true simultaneously.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`if (10 < x < 20)`",
+        "text": "if (10 < x < 20)",
         "isCorrect": false,
         "meaning": "Evaluates condition, returning one value for TRUE and another for FALSE."
       },
       {
         "id": "B",
-        "text": "`if (x >= 10 AND x <= 20)`",
+        "text": "if (x >= 10 AND x <= 20)",
         "isCorrect": true,
         "meaning": "Evaluates condition, returning one value for TRUE and another for FALSE."
       },
       {
         "id": "C",
-        "text": "`if (x >= 10 OR x <= 20)`",
+        "text": "if (x >= 10 OR x <= 20)",
         "isCorrect": false,
         "meaning": "Evaluates condition, returning one value for TRUE and another for FALSE."
       },
       {
         "id": "D",
-        "text": "`if (x == 10 AND x == 20)`",
+        "text": "if (x == 10 AND x == 20)",
         "isCorrect": false,
         "meaning": "Evaluates condition, returning one value for TRUE and another for FALSE."
       }
@@ -28752,20 +28752,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-pseudocode",
     "type": "mcq",
     "front": "What will be printed by the following logical pseudocode?",
-    "back": "`\"Condition Met\"`",
+    "back": "\"Condition Met\"",
     "explanation": "1. Evaluate `(x > 10)`: Since `x = 5`, `5 > 10` is `False`.\n  2. Apply the logical negation `NOT(False)`: This produces `True`.\n  3. The `if` branch executes, printing `\"Condition Met\"`.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`\"Condition Failed\"`",
+        "text": "\"Condition Failed\"",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the following logical pseudocode?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "B",
-        "text": "`\"Condition Met\"`",
+        "text": "\"Condition Met\"",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `\"Condition Met\"`"
+        "meaning": "1. Evaluate `(x > 10)`: Since `x = 5`, `5 > 10` is `False`.\n  2. Apply the logical negation `NOT(False)`: This produces `True`.\n  3. The `if..."
       },
       {
         "id": "C",
@@ -28777,7 +28777,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "Nothing",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the following logical pseudocode?...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -28908,32 +28908,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-web",
     "type": "mcq",
     "front": "Which HTML tag is used to insert a line break without starting a new paragraph?",
-    "back": "`<br>`",
+    "back": "<br>",
     "explanation": "`<br>` is an empty (void) HTML element that inserts a single carriage return / line break. `<hr>` inserts a horizontal thematic dividing line.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`<lb>`",
+        "text": "<lb>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to insert a line break without starti...'."
+        "meaning": "Non-existent HTML tag; line breaks are inserted with <br>."
       },
       {
         "id": "B",
-        "text": "`<break>`",
+        "text": "<break>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to insert a line break without starti...'."
+        "meaning": "Non-existent HTML tag; line breaks are inserted with <br>."
       },
       {
         "id": "C",
-        "text": "`<br>`",
+        "text": "<br>",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `<br>`"
+        "meaning": "`<br>` is an empty (void) HTML element that inserts a single carriage return / line break. `<hr>` inserts a horizontal thematic dividing line."
       },
       {
         "id": "D",
-        "text": "`<hr>`",
+        "text": "<hr>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to insert a line break without starti...'."
+        "meaning": "Inserts a thematic break or horizontal divider rule between sections."
       }
     ],
     "tags": [
@@ -28958,32 +28958,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-web",
     "type": "mcq",
     "front": "Which attribute in an `<img>` tag specifies alternative text to display if the image file fails to load or for screen readers?",
-    "back": "`alt`",
+    "back": "alt",
     "explanation": "The `alt` (alternative text) attribute is required for accessibility and renders descriptive text if the image asset cannot be retrieved.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`title`",
+        "text": "title",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which attribute in an `<img>` tag specifies alternative text...'."
+        "meaning": "Provides an advisory tooltip on hover; 'alt' is the required text alternative."
       },
       {
         "id": "B",
-        "text": "`src`",
+        "text": "src",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which attribute in an `<img>` tag specifies alternative text...'."
+        "meaning": "Specifies the URL path to the external media source file."
       },
       {
         "id": "C",
-        "text": "`alt`",
+        "text": "alt",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `alt`"
+        "meaning": "The `alt` (alternative text) attribute is required for accessibility and renders descriptive text if the image asset cannot be retrieved."
       },
       {
         "id": "D",
-        "text": "`caption`",
+        "text": "caption",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which attribute in an `<img>` tag specifies alternative text...'."
+        "meaning": "Used in <caption> for tables or <figcaption> inside <figure>."
       }
     ],
     "tags": [
@@ -29008,32 +29008,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-web",
     "type": "mcq",
     "front": "What is the default initial value of the CSS `position` property for standard HTML elements?",
-    "back": "`static`",
+    "back": "static",
     "explanation": "By default, all elements have `position: static`. Elements are positioned according to the normal document flow and ignore `top`, `bottom`, `left`, `right`, and `z-index` properties.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`relative`",
+        "text": "relative",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default initial value of the CSS `position` prop...'."
+        "meaning": "Positioned relative to its normal flow position without removing it from flow."
       },
       {
         "id": "B",
-        "text": "`absolute`",
+        "text": "absolute",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default initial value of the CSS `position` prop...'."
+        "meaning": "Positioned relative to its nearest positioned ancestor, removed from normal document flow."
       },
       {
         "id": "C",
-        "text": "`static`",
+        "text": "static",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `static`"
+        "meaning": "By default, all elements have `position: static`."
       },
       {
         "id": "D",
-        "text": "`fixed`",
+        "text": "fixed",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default initial value of the CSS `position` prop...'."
+        "meaning": "Positioned relative to the browser viewport and remains fixed during page scrolling."
       }
     ],
     "tags": [
@@ -29065,13 +29065,13 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Not a Name; `typeof NaN === \"string\"`",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In JavaScript, what does `NaN` represent, and what does `typ...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "B",
         "text": "Not a Number; `typeof NaN === \"number\"`",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Not a Number; `typeof NaN === \"number\"`"
+        "meaning": "In JavaScript, `NaN` represents an unrepresentable or erroneous numeric result (e.g., `0 / 0` or `parseInt(\"abc\")`)."
       },
       {
         "id": "C",
@@ -29083,7 +29083,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "D",
         "text": "No Arithmetic; `typeof NaN === \"boolean\"`",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In JavaScript, what does `NaN` represent, and what does `typ...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [
@@ -29108,32 +29108,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-web",
     "type": "mcq",
     "front": "Which built-in JavaScript method parses a JSON-formatted string and transforms it into a JavaScript object?",
-    "back": "`JSON.parse()`",
+    "back": "JSON.parse()",
     "explanation": "- `JSON.parse(jsonString)` parses a valid JSON string into a native JavaScript object.\n  - `JSON.stringify(object)` serializes a JavaScript object into a JSON string representation.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`JSON.stringify()`",
+        "text": "JSON.stringify()",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which built-in JavaScript method parses a JSON-formatted str...'."
+        "meaning": "Serializes a JavaScript object or value into a JSON-formatted string."
       },
       {
         "id": "B",
-        "text": "`JSON.parse()`",
+        "text": "JSON.parse()",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `JSON.parse()`"
+        "meaning": "- `JSON.parse(jsonString)` parses a valid JSON string into a native JavaScript object."
       },
       {
         "id": "C",
-        "text": "`JSON.toObject()`",
+        "text": "JSON.toObject()",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which built-in JavaScript method parses a JSON-formatted str...'."
+        "meaning": "Non-existent standard JavaScript method; use JSON.parse()."
       },
       {
         "id": "D",
-        "text": "`JSON.decode()`",
+        "text": "JSON.decode()",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which built-in JavaScript method parses a JSON-formatted str...'."
+        "meaning": "Used in languages like PHP/Dart; JavaScript uses JSON.parse()."
       }
     ],
     "tags": [
@@ -29158,32 +29158,32 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "deckId": "deck-web",
     "type": "mcq",
     "front": "Which JavaScript keyword declares a block-scoped variable that cannot be reassigned after its initial declaration?",
-    "back": "`const`",
+    "back": "const",
     "explanation": "- `const`: Block-scoped, cannot be reassigned or redeclared within the same scope.\n  - `let`: Block-scoped, can be reassigned.\n  - `var`: Function-scoped or global, subject to hoisting, can be redeclared and reassigned.",
     "mcqOptions": [
       {
         "id": "A",
-        "text": "`var`",
+        "text": "var",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which JavaScript keyword declares a block-scoped variable th...'."
+        "meaning": "Function-scoped or globally scoped variable declaration that is hoisted."
       },
       {
         "id": "B",
-        "text": "`let`",
+        "text": "let",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which JavaScript keyword declares a block-scoped variable th...'."
+        "meaning": "Block-scoped mutable variable declaration not initialized during hoisting (TDZ)."
       },
       {
         "id": "C",
-        "text": "`const`",
+        "text": "const",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: `const`"
+        "meaning": "- `const`: Block-scoped, cannot be reassigned or redeclared within the same scope."
       },
       {
         "id": "D",
-        "text": "`static`",
+        "text": "static",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which JavaScript keyword declares a block-scoped variable th...'."
+        "meaning": "Default element positioning following standard normal document flow."
       }
     ],
     "tags": [
@@ -29215,25 +29215,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Automatically deleting unused variables from memory",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is \"Variable Hoisting\" in JavaScript?...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "B",
         "text": "Moving variable and function declarations to the top of their containing scope during the compilation phase before code execution",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Moving variable and function declarations to the top of their containing scope during the compilation phase before code execution"
+        "meaning": "In JavaScript, the engine allocates memory for function declarations and `var` declarations during compilation."
       },
       {
         "id": "C",
         "text": "Converting all numbers into floating-point representation",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is \"Variable Hoisting\" in JavaScript?...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
         "text": "Dynamically loading scripts asynchronously",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is \"Variable Hoisting\" in JavaScript?...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [
@@ -29265,25 +29265,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Event Capturing (Trickling)",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In web browser JavaScript event handling, what is the defaul...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "B",
         "text": "Event Bubbling",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Event Bubbling"
+        "meaning": "In the standard W3C event model, events first undergo the Capturing phase (down from `window` to the target), followed by the Target phase, and finally the Bubbling phase, where the event bubbles upward from the target element through all parent DOM nodes."
       },
       {
         "id": "C",
         "text": "Event Broadcasting",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In web browser JavaScript event handling, what is the defaul...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
         "text": "Event Polling",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In web browser JavaScript event handling, what is the defaul...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [
@@ -29315,25 +29315,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "21, 43, 88",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: 21, 43, 88"
+        "meaning": "Step-by-step tracing:\n- At i=1: arr[1] = 24 - ((1 mod 7)*3) = 24 - 3 = 21."
       },
       {
         "id": "B",
         "text": "24, 42, 77",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed for arr[1], arr[4], and arr[7] after ex...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
         "text": "21, 55, 88",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed for arr[1], arr[4], and arr[7] after ex...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "18, 43, 85",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed for arr[1], arr[4], and arr[7] after ex...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -29367,25 +29367,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "[15, 21, 27, 33, 43, 51, 59, 88]",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: [15, 21, 27, 33, 43, 51, 59, 88]"
+        "meaning": "Applying nums[i] -= (i % 7) * 3 and if i % 11 == 0, adding (i // 11) * 2:\n- i=0: 15 - 0 + 0 = 15\n- i=1: 24 - 3 = 21\n- i=2: 33 - 6 = 27\n- i=3: 42 - 9 = 33\n- i=4: 55 - 12 = 43\n- i=5: 66 - 15 = 51\n- i=6: 77 - 18 = 59\n- i=7: 88 - 0 = 88\nResult: [15, 21, 27, 33, 43, 51, 59, 88]."
       },
       {
         "id": "B",
         "text": "[15, 24, 30, 36, 42, 48, 54, 88]",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the complete resulting array after applying the...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
         "text": "[15, 21, 24, 30, 40, 50, 60, 88]",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the complete resulting array after applying the...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "[12, 18, 24, 30, 42, 52, 62, 70]",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the complete resulting array after applying the...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -29417,25 +29417,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "O(N) Time and O(1) Auxiliary Space",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: O(N) Time and O(1) Auxiliary Space"
+        "meaning": "A single linear traversal from i = 0 to N - 1 updates each element in-place with constant-time arithmetic expressions, running in O(N) linear time and requiring O(1) auxiliary space without extra memory allocations."
       },
       {
         "id": "B",
         "text": "O(N log N) Time and O(N) Auxiliary Space",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the optimal time and auxiliary space complexity to p...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
         "text": "O(N^2) Time and O(1) Auxiliary Space",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the optimal time and auxiliary space complexity to p...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "O(N) Time and O(N) Auxiliary Space",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the optimal time and auxiliary space complexity to p...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -29517,7 +29517,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "\"4999999999999\" (4 followed by twelve 9s)",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: \"4999999999999\""
+        "meaning": "112 / 9 = 12 with remainder 4 (12 * 9 + 4 = 112)."
       },
       {
         "id": "B",
@@ -29575,19 +29575,19 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "B",
         "text": "It guarantees the number is divisible by 9",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Why is greedy placement of '9' at the least significant posi...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "C",
         "text": "It converts decimal numbers directly into binary strings",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Why is greedy placement of '9' at the least significant posi...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       },
       {
         "id": "D",
         "text": "It prevents 32-bit floating-point precision loss",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Why is greedy placement of '9' at the least significant posi...'."
+        "meaning": "Execution branch outcome under alternative conditional or looping constraints."
       }
     ],
     "tags": [
@@ -29619,7 +29619,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "Checks target.style.display and toggles between \"block\" and \"none\"",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: Checks target.style.display and toggles between \"block\" and \"none\""
+        "meaning": "To toggle visibility cleanly using vanilla JavaScript: inspect target.style.display; if it is \"none\" or empty string, set it to \"block\"; otherwise set it to \"none\"."
       },
       {
         "id": "B",
@@ -29671,25 +29671,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": ".container { background-color: #f4f4f4; }",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: .container { background-color: #f4f4f4; }"
+        "meaning": "The period (.) designates a class selector in CSS."
       },
       {
         "id": "B",
         "text": "#container { background-color: #f4f4f4; }",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS declaration correctly sets the background color of...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "C",
         "text": "container { bg-color: #f4f4f4; }",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS declaration correctly sets the background color of...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
         "text": ".container { color: #f4f4f4; }",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS declaration correctly sets the background color of...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [
@@ -29721,25 +29721,25 @@ export const ACCENTURE_CARDS: Flashcard[] = [
         "id": "A",
         "text": "<button class=\"new\" onclick=\"toggleVisibility()\">Toggle Details</button>",
         "isCorrect": true,
-        "meaning": "Satisfies the question criteria: <button class=\"new\" onclick=\"toggleVisibility()\">Toggle Details</button>"
+        "meaning": "In HTML, classes are assigned via the `class` attribute (unlike JSX `className`), and inline click handlers use `onclick=\"toggleVisibility()\"`."
       },
       {
         "id": "B",
         "text": "<button classname=\"new\" click=\"toggleVisibility()\">Toggle Details</button>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML markup correctly adds the class \"new\" to a button...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "C",
         "text": "<button new onpress=\"toggleVisibility()\">Toggle Details</button>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML markup correctly adds the class \"new\" to a button...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       },
       {
         "id": "D",
         "text": "<button class=\"new\" trigger=\"toggleVisibility()\">Toggle Details</button>",
         "isCorrect": false,
-        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML markup correctly adds the class \"new\" to a button...'."
+        "meaning": "Web technology property/selector with distinct rendering or behavioral semantics."
       }
     ],
     "tags": [

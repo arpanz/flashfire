@@ -158,7 +158,18 @@ export const storage = {
           initial.front !== c.front ||
           initial.codeLanguage !== c.codeLanguage;
 
+        const hasStaleOrGeneric = Boolean(
+          c.mcqOptions &&
+          c.mcqOptions.some((o) =>
+            o.meaning?.includes('does not satisfy the requirements') ||
+            o.meaning?.includes('Satisfies the question criteria') ||
+            (o.text?.startsWith('`') && o.text?.endsWith('`'))
+          )
+        );
+
         const needsOptionsUpdate =
+          hasStaleOrGeneric ||
+          initial.back !== c.back ||
           Boolean(initial.mcqOptions &&
           initial.mcqOptions.some((o) => o.meaning) &&
           (!c.mcqOptions || !c.mcqOptions.some((o) => o.meaning)));

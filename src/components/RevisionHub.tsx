@@ -647,7 +647,7 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
                                           <span className="font-mono text-[10px] px-1 py-0.2 rounded bg-zinc-100 dark:bg-zinc-800">
                                             [{opt.id}]
                                           </span>
-                                          <span>{opt.text}</span>
+                                          <FormattedText text={opt.text} as="span" className="inline text-inherit font-medium" />
                                         </span>
                                         {opt.isCorrect && (
                                           <span className="text-[10px] uppercase font-bold text-emerald-600 dark:text-emerald-400 px-1.5 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/40">
