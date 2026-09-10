@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Volume2, Lightbulb, CheckCircle2, XCircle, Code, Eye } from 'lucide-react';
 import { Flashcard } from '../lib/types';
 import { FormattedText } from './FormattedText';
+import { CodeBlockView } from './CodeBlockView';
 import { sounds } from '../lib/sound';
 
 interface CardFlipperProps {
@@ -134,19 +135,11 @@ export const CardFlipper: React.FC<CardFlipperProps> = ({
 
             {/* Code Snippet if present */}
             {card.codeSnippet && (
-              <div
-                className="w-full mt-4 text-left rounded-xl bg-zinc-950 p-4 border border-zinc-800 shadow-inner overflow-x-auto"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <div className="flex items-center justify-between pb-2 mb-2 border-b border-zinc-800 text-[11px] font-mono text-zinc-400">
-                  <span className="flex items-center gap-1.5">
-                    <Code className="w-3.5 h-3.5 text-zinc-500" />
-                    {card.codeLanguage || 'code'}
-                  </span>
-                </div>
-                <pre className="text-xs sm:text-sm font-mono text-zinc-200 leading-relaxed overflow-x-auto">
-                  <code>{card.codeSnippet}</code>
-                </pre>
+              <div className="w-full mt-3" onClick={(e) => e.stopPropagation()}>
+                <CodeBlockView
+                  code={card.codeSnippet}
+                  language={card.codeLanguage || 'pseudocode'}
+                />
               </div>
             )}
 

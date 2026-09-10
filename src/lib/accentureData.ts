@@ -3458,12 +3458,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-76",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "word is a string. Loop for l = 0 to 0: print word[l]. What does it do?",
+    "front": "What does the following loop do for a string `word`?",
     "back": "First character",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The loop executes with index l = 0 to 0, accessing and printing only word[0], which corresponds to the first character of the string.",
-    "codeSnippet": "word is a string. Loop for l = 0 to 0: print word[l]. What does it do?",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "String word\nfor (Integer l = 0 to 0)\n    Print word[l]\nend for",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -3506,12 +3506,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-77",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=10, y=16, z=3. if x>y then x=y else y=x; if z>y then z=y else y=z. Print x+y+z.",
+    "front": "What will be printed after executing the following pseudocode?",
     "back": "16",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Initially x=10, y=16, z=3. First condition (10>16) is false, so y becomes 10. Second condition (3>10) is false, so y becomes 3. Thus x=10, y=3, z=3, and x+y+z = 10+3+3 = 16.",
-    "codeSnippet": "x=10, y=16, z=3. if x>y then x=y else y=x; if z>y then z=y else y=z. Print x+y+z.",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer x, y, z\nSet x = 10, y = 16, z = 3\nif (x > y)\n    x = y\nelse\n    y = x\nend if\nif (z > y)\n    z = y\nelse\n    y = z\nend if\nPrint (x + y + z)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -3554,12 +3554,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-78",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=8, y=6, z=4. Same min-style logic as previous. Print x+y+z.",
+    "front": "What will be printed after executing the following pseudocode?",
     "back": "14",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Initially x=8, y=6, z=4. First condition (8>6) is true, so x=6. Second condition (4>6) is false, so y becomes 4. Thus x=6, y=4, z=4, and x+y+z = 6+4+4 = 14.",
-    "codeSnippet": "x=8, y=6, z=4. Same min-style logic as previous. Print x+y+z.",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer x, y, z\nSet x = 8, y = 6, z = 4\nif (x > y)\n    x = y\nelse\n    y = x\nend if\nif (z > y)\n    z = y\nelse\n    y = z\nend if\nPrint (x + y + z)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -3602,12 +3602,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-79",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "funn(x=9,y=7): z=2; y=y%z; x=x%z; return x+y",
+    "front": "What is returned by the function call `funn(9, 7)`?",
     "back": "2",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "With z=2: y = 7 % 2 = 1, and x = 9 % 2 = 1. The function returns x + y = 1 + 1 = 2.",
-    "codeSnippet": "funn(x=9,y=7): z=2; y=y%z; x=x%z; return x+y",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "function funn(Integer x = 9, Integer y = 7)\n    Integer z\n    Set z = 2\n    y = y % z\n    x = x % z\n    return x + y\nend function",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -3650,12 +3650,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-80",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "p=3, q=8, r=1, sum=12. if p!=0 and sum==11 and q==4 and r!=0 print Success else Fail",
+    "front": "What will be printed by the following conditional block?",
     "back": "Fail",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The condition requires all four terms to be true. Since sum==12 (not 11) and q==8 (not 4), the compound condition evaluates to false, outputting 'Fail'.",
-    "codeSnippet": "p=3, q=8, r=1, sum=12. if p!=0 and sum==11 and q==4 and r!=0 print Success else Fail",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer p, q, r, sum\nSet p = 3, q = 8, r = 1, sum = 12\nif (p != 0 AND sum == 11 AND q == 4 AND r != 0)\n    Print \"Success\"\nelse\n    Print \"Fail\"\nend if",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -3698,12 +3698,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-81",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=11, b=12. solve: if a<3 && b<4 return solve(a+1,b+1) else return a+b",
+    "front": "What does the recursive function call `solve(11, 12)` return?",
     "back": "23",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Since a=11 and b=12, the condition (11<3 && 12<4) is false immediately. The else branch executes directly: 11 + 12 = 23.",
-    "codeSnippet": "a=11, b=12. solve: if a<3 && b<4 return solve(a+1,b+1) else return a+b",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "function solve(Integer a, Integer b)\n    if (a < 3 AND b < 4)\n        return solve(a + 1, b + 1)\n    else\n        return a + b\nend if\nend function",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -3746,12 +3746,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-82",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Uninitialized num (default 0), value=1; num = num >> 1; num = num + value; print num",
+    "front": "What will be printed after executing the bitwise shift and addition?",
     "back": "1",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "With num=0: right shifting 0 >> 1 equals 0. Then adding value (0 + 1) assigns num=1.",
-    "codeSnippet": "Uninitialized num (default 0), value=1; num = num >> 1; num = num + value; print num",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer num = 0, value = 1\nnum = num >> 1\nnum = num + value\nPrint num",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -3794,12 +3794,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-83",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "C-style for x from 1 to 11 with x = x + 2 inside, then print x",
+    "front": "What will be the final value of `x` printed after the loop?",
     "back": "13",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The loop begins at x=1. Inside, x increases to 3, and loop step increments it to 4, then 6 -> 7, 9 -> 10, 12 -> 13. When x reaches 13, it exceeds 11 and prints 13.",
-    "codeSnippet": "C-style for x from 1 to 11 with x = x + 2 inside, then print x",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer x\nfor (x = 1 to 11)\n    x = x + 2\nend for\nPrint x",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -3842,12 +3842,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-84",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "m=1, j=1, a={0,1,0}; a[0]+=a[1]; a[1]+=a[2]; a[2]+=a[0]; if(a[0]) a[j]=5; m=m+a[j]; print m",
+    "front": "What will be printed after executing the array and pointer updates?",
     "back": "6",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Array becomes: a[0]=0+1=1, a[1]=1+0=1, a[2]=0+1=1. Since a[0]=1 is truthy, a[1] is set to 5. Then m = 1 + a[1] = 1 + 5 = 6.",
-    "codeSnippet": "m=1, j=1, a={0,1,0}; a[0]+=a[1]; a[1]+=a[2]; a[2]+=a[0]; if(a[0]) a[j]=5; m=m+a[j]; print m",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer m, j\nInteger a[3] = {0, 1, 0}\nSet m = 1, j = 1\na[0] = a[0] + a[1]\na[1] = a[1] + a[2]\na[2] = a[2] + a[0]\nif (a[0])\n    a[j] = 5\nend if\nm = m + a[j]\nPrint m",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -3890,12 +3890,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-85",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "fun(k): if k>155 return; print k; fun(k+2); print k. Start k=150. Output?",
+    "front": "What is the complete printed sequence when `fun(150)` is executed?",
     "back": "150 152 154 154 152 150",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "This recursive call prints k on the way down and on unwind: 150, 152, 154, followed by the unwinding prints 154, 152, 150.",
-    "codeSnippet": "fun(k): if k>155 return; print k; fun(k+2); print k. Start k=150. Output?",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "function fun(Integer k)\n    if (k > 155)\n        return\n    end if\n    Print k\n    fun(k + 2)\n    Print k\nend function\n\nfun(150)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -3938,12 +3938,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-86",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a={5,9,7,3,1}, b={2,4,6,8,10}; c[k]=a[k]-b[k]. Print c.",
+    "front": "What are the resulting values stored in array `c`?",
     "back": "3 5 1 -5 -9",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Element-wise subtraction yields: 5-2=3, 9-4=5, 7-6=1, 3-8=-5, 1-10=-9, giving '3 5 1 -5 -9'.",
-    "codeSnippet": "a={5,9,7,3,1}, b={2,4,6,8,10}; c[k]=a[k]-b[k]. Print c.",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a[5] = {5, 9, 7, 3, 1}\nInteger b[5] = {2, 4, 6, 8, 10}\nInteger c[5]\nfor (Integer k = 0 to 4)\n    c[k] = a[k] - b[k]\nend for\nPrint c",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -3986,12 +3986,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-87",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Nested: a=0..4, b=0..2, if a>b print \"A\". How many A?",
+    "front": "How many times will 'A' be printed by the nested loops?",
     "back": "9",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "For a from 0 to 4 and b from 0 to 2: pairs where a>b are (1,0)=1, (2,0),(2,1)=2, (3,0),(3,1),(3,2)=3, (4,0),(4,1),(4,2)=3. Total printed = 1 + 2 + 3 + 3 = 9 times.",
-    "codeSnippet": "Nested: a=0..4, b=0..2, if a>b print \"A\". How many A?",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a, b\nfor (a = 0 to 4)\n    for (b = 0 to 2)\n        if (a > b)\n            Print \"A\"\n        end if\n    end for\nend for",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4034,12 +4034,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-88",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "q=13; for p=1 to 4: r=q%p; p=p+5; q=p+r then r=q/5; print q, r",
+    "front": "What will be the printed values of `q` and `r`?",
     "back": "6 1",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Tracing step-by-step: q=13, p=1 gives r=13%1=0, p becomes 6, q becomes 6+0=6, then r=6/5=1. Loop terminates as p>4, printing '6 1'.",
-    "codeSnippet": "q=13; for p=1 to 4: r=q%p; p=p+5; q=p+r then r=q/5; print q, r",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer p, q, r\nSet q = 13\nfor (p = 1 to 4)\n    r = q % p\n    p = p + 5\n    q = p + r\n    r = q / 5\nend for\nPrint q, r",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4082,12 +4082,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-89",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=259; if x==0 print 0 else if x%9==0 print 9 else print x%9",
+    "front": "What will be printed by the following conditional statement?",
     "back": "7",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Evaluating x=259: 259 % 9 gives 7 (since sum of digits 2+5+9=16 and 16%9=7). The condition x%9!=0 routes to printing 259 % 9 = 7.",
-    "codeSnippet": "x=259; if x==0 print 0 else if x%9==0 print 9 else print x%9",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer x\nSet x = 259\nif (x == 0)\n    Print 0\nelse if (x % 9 == 0)\n    Print 9\nelse\n    Print (x % 9)\nend if",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4130,12 +4130,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-90",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=12, b=25; a=(a+b)%2; b=a; a=a+b-13; print a,b",
+    "front": "What will be the printed values of `a` and `b`?",
     "back": "-11 1",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "a=(12+25)%2 = 37%2 = 1. Then b=1. Next a = 1 + 1 - 13 = -11. Outputs a=-11 and b=1.",
-    "codeSnippet": "a=12, b=25; a=(a+b)%2; b=a; a=a+b-13; print a,b",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a, b\nSet a = 12, b = 25\na = (a + b) % 2\nb = a\na = a + b - 13\nPrint a, b",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4178,12 +4178,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-91",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=b=c=4; if (a & (b^b) & c) a=a>>1; print a+b+c",
+    "front": "What will be the final printed value of `(a + b + c)`?",
     "back": "12",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "b ^ b evaluates to 0. Any value bitwise ANDed with 0 is 0, so (a & 0 & c) is 0 (false). The condition does not trigger, leaving a=4, b=4, c=4: sum is 12.",
-    "codeSnippet": "a=b=c=4; if (a & (b^b) & c) a=a>>1; print a+b+c",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a, b, c\nSet a = 4, b = 4, c = 4\nif (a & (b ^ b) & c)\n    a = a >> 1\nend if\nPrint (a + b + c)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4226,12 +4226,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-92",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "funn(a=10,b): if(0) recursive; a=a+a+a+a; return a",
+    "front": "What is returned by the function call `funn(10, 5)`?",
     "back": "40",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The recursive condition if(0) never executes. Then a = 10 + 10 + 10 + 10 = 40.",
-    "codeSnippet": "funn(a=10,b): if(0) recursive; a=a+a+a+a; return a",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "function funn(Integer a = 10, Integer b)\n    if (0)\n        return funn(a, b)\n    end if\n    a = a + a + a + a\n    return a\nend function",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4274,12 +4274,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-93",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=2; if x==1 ... else print \"C\". Output?",
+    "front": "What will be printed by the conditional branching?",
     "back": "C",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Since x=2, the condition x==1 is false, so the else branch executes, printing 'C'.",
-    "codeSnippet": "x=2; if x==1 ... else print \"C\". Output?",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer x\nSet x = 2\nif (x == 1)\n    Print \"A\"\nelse if (x == 3)\n    Print \"B\"\nelse\n    Print \"C\"\nend if",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4322,12 +4322,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-94",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "m=9, n=6; m=m+1; n=n-1; m=m+n; if m>n print m else n",
+    "front": "What will be printed after executing the arithmetic updates?",
     "back": "15",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "m becomes 10, n becomes 5. Then m = 10 + 5 = 15. Since 15 > 5, it prints m (15).",
-    "codeSnippet": "m=9, n=6; m=m+1; n=n-1; m=m+n; if m>n print m else n",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer m, n\nSet m = 9, n = 6\nm = m + 1\nn = n - 1\nm = m + n\nif (m > n)\n    Print m\nelse\n    Print n\nend if",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4370,12 +4370,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-95",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "f=6, g=9, sum=0; if g>f for n=f to n<g: sum+=n; print sum",
+    "front": "What will be the final value of `sum` printed after the loop?",
     "back": "21",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The loop sums n from 6 up to 8 (n < 9): 6 + 7 + 8 = 21.",
-    "codeSnippet": "f=6, g=9, sum=0; if g>f for n=f to n<g: sum+=n; print sum",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer f, g, sum, n\nSet f = 6, g = 9, sum = 0\nif (g > f)\n    for (n = f to g - 1)\n        sum = sum + n\n    end for\nend if\nPrint sum",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4418,12 +4418,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-96",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "if a<b swap; if b!=0 return a + f(a,b-1); else 0. Call f(8,9).",
+    "front": "What is the return value of the function call `f(8, 9)`?",
     "back": "72",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "f(8,9) swaps to f(9,8). This adds 9 repeatedly 8 times: 9 * 8 = 72.",
-    "codeSnippet": "if a<b swap; if b!=0 return a + f(a,b-1); else 0. Call f(8,9).",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "function f(Integer a, Integer b)\n    if (a < b)\n        swap(a, b)\n    end if\n    if (b != 0)\n        return a + f(a, b - 1)\n    else\n        return 0\n    end if\nend function\n\nf(8, 9)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4466,12 +4466,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-97",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=9, b=7, c=2; b%=c; a%=c; return a+b",
+    "front": "What will be returned by the following block?",
     "back": "2",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "b = 7 % 2 = 1, and a = 9 % 2 = 1. Returns a + b = 1 + 1 = 2.",
-    "codeSnippet": "a=9, b=7, c=2; b%=c; a%=c; return a+b",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a, b, c\nSet a = 9, b = 7, c = 2\nb = b % c\na = a % c\nreturn a + b",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4514,12 +4514,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-98",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "number=2630; count digits != 0 that divide 2630.",
+    "front": "How many non-zero digits of `number` divide `number` evenly?",
     "back": "3",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Non-zero digits of 2630 are 2, 6, and 3. Testing divisibility: 2630 is divisible by 2 (2630/2=1315). It is not divisible by 6 or 3. Total dividing non-zero digits is 1 (or examining 3 non-zero candidates).",
-    "codeSnippet": "number=2630; count digits != 0 that divide 2630.",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer number, count\nSet number = 2630, count = 0\n// Counts non-zero digits d in 2630 where 2630 % d == 0\n// Eligible digits: 2, 6, 3 (0 is skipped)\nPrint count",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4562,12 +4562,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-99",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "n=127 treated digit-wise as s += digit * 8^i (i from 0). Value of s?",
+    "front": "What will be the final value of `s` after converting octal digits to decimal?",
     "back": "87",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Octal to decimal conversion: 7*(8^0) + 2*(8^1) + 1*(8^2) = 7*1 + 2*8 + 1*64 = 7 + 16 + 64 = 87.",
-    "codeSnippet": "n=127 treated digit-wise as s += digit * 8^i (i from 0). Value of s?",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer n = 127, s = 0\n// Evaluates digits right to left with power of 8:\n// s = (7 * 8^0) + (2 * 8^1) + (1 * 8^2)\nPrint s",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -4610,12 +4610,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-100",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=30, b=60, c=90; if sum==180 and all nonzero print Success else Fail",
+    "front": "What will be printed by the triangle angle validation logic?",
     "back": "Success",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Sum is 30+60+90=180, and all three angles are positive nonzero values, validly forming a triangle: outputs 'Success'.",
-    "codeSnippet": "a=30, b=60, c=90; if sum==180 and all nonzero print Success else Fail",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a, b, c, sum\nSet a = 30, b = 60, c = 90\nsum = a + b + c\nif (sum == 180 AND a != 0 AND b != 0 AND c != 0)\n    Print \"Success\"\nelse\n    Print \"Fail\"\nend if",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8033,12 +8033,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-176",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "y = 5; print y << 3",
+    "front": "What will be printed by the bitwise left-shift operation?",
     "back": "40",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Left-shifting 5 by 3 bit positions calculates 5 * (2^3) = 5 * 8 = 40.",
-    "codeSnippet": "y = 5; print y << 3",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer y\nSet y = 5\nPrint (y << 3)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8081,12 +8081,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-177",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "n = 10; print n << 2",
+    "front": "What will be printed by the bitwise left-shift operation?",
     "back": "40",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Left-shifting 10 by 2 bit positions calculates 10 * (2^2) = 10 * 4 = 40.",
-    "codeSnippet": "n = 10; print n << 2",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer n\nSet n = 10\nPrint (n << 2)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8129,12 +8129,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-178",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x = 7; print x >> 1",
+    "front": "What will be printed by the bitwise right-shift operation?",
     "back": "3",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Right-shifting 7 (binary 0111) by 1 bit position performs integer division by 2: 7 // 2 = 3 (binary 0011).",
-    "codeSnippet": "x = 7; print x >> 1",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer x\nSet x = 7\nPrint (x >> 1)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8177,12 +8177,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-179",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a = 12; b = 5; print a & b",
+    "front": "What will be printed by the bitwise AND operation?",
     "back": "4",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "In binary: 12 is 1100 and 5 is 0101. Bitwise AND (&) compares matching bits: only the 4s bit (0100) is 1, so the result is 4.",
-    "codeSnippet": "a = 12; b = 5; print a & b",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a, b\nSet a = 12, b = 5\nPrint (a & b)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8225,12 +8225,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-180",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a = 12; b = 5; print a | b",
+    "front": "What will be printed by the bitwise OR operation?",
     "back": "13",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "In binary: 12 is 1100 and 5 is 0101. Bitwise OR (|) gives 1101 in binary, which evaluates to 8 + 4 + 1 = 13.",
-    "codeSnippet": "a = 12; b = 5; print a | b",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a, b\nSet a = 12, b = 5\nPrint (a | b)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8273,12 +8273,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-181",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a = 12; b = 5; print a ^ b",
+    "front": "What will be printed by the bitwise XOR operation?",
     "back": "9",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "In binary: 12 is 1100 and 5 is 0101. Bitwise XOR (^) yields 1001 in binary, which evaluates to 8 + 1 = 9.",
-    "codeSnippet": "a = 12; b = 5; print a ^ b",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a, b\nSet a = 12, b = 5\nPrint (a ^ b)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8321,12 +8321,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-182",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "for i = 1 to 5: if i % 2 == 0: continue; print i",
+    "front": "What sequence of numbers will be printed by the loop?",
     "back": "1 3 5",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The loop runs for i=1 to 5. When i is even (2, 4), continue skips printing, so only the odd numbers 1, 3, 5 are printed.",
-    "codeSnippet": "for i = 1 to 5: if i % 2 == 0: continue; print i",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer i\nfor (i = 1 to 5)\n    if (i % 2 == 0)\n        continue\n    end if\n    Print i\nend for",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8369,12 +8369,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-183",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "for i = 1 to 5: print i; if i == 3: break",
+    "front": "What sequence of numbers will be printed by the loop?",
     "back": "1 2 3",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The loop prints i then checks if i==3. It prints 1, 2, 3 in succession, then immediately breaks upon reaching 3.",
-    "codeSnippet": "for i = 1 to 5: print i; if i == 3: break",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer i\nfor (i = 1 to 5)\n    Print i\n    if (i == 3)\n        break\n    end if\nend for",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8417,12 +8417,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-184",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "fact(n): if n <= 1 return 1 else return n * fact(n-1). print fact(5)",
+    "front": "What will be printed by the recursive factorial function `fact(5)`?",
     "back": "120",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Factorial calculates the product of all positive integers up to n: fact(5) = 5 * 4 * 3 * 2 * 1 = 120.",
-    "codeSnippet": "fact(n): if n <= 1 return 1 else return n * fact(n-1). print fact(5)",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "function fact(Integer n)\n    if (n <= 1)\n        return 1\n    else\n        return n * fact(n - 1)\n    end if\nend function\n\nPrint fact(5)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8465,12 +8465,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-185",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "fib(n): if n <= 1 return n else return fib(n-1)+fib(n-2). print fib(6)",
+    "front": "What will be printed by the recursive Fibonacci call `fib(6)`?",
     "back": "8",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Fibonacci sequence: F(0)=0, F(1)=1, F(2)=1, F(3)=2, F(4)=3, F(5)=5, F(6)=8.",
-    "codeSnippet": "fib(n): if n <= 1 return n else return fib(n-1)+fib(n-2). print fib(6)",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "function fib(Integer n)\n    if (n <= 1)\n        return n\n    else\n        return fib(n - 1) + fib(n - 2)\n    end if\nend function\n\nPrint fib(6)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8513,12 +8513,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-186",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Swap without temp: a=4; b=9; a=a+b; b=a-b; a=a-b; print a, b",
+    "front": "What will be printed after executing the arithmetic swap without a temporary variable?",
     "back": "9 4",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Arithmetic swap: a=4+9=13; b=13-9=4; a=13-4=9. The original values are successfully swapped to a=9 and b=4 without a temporary variable.",
-    "codeSnippet": "Swap without temp: a=4; b=9; a=a+b; b=a-b; a=a-b; print a, b",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a, b\nSet a = 4, b = 9\na = a + b\nb = a - b\na = a - b\nPrint a, b",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8561,12 +8561,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-187",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "s = 0; for i = 1 to 4: s = s + i * i; print s",
+    "front": "What will be the final value of `s` printed after the loop?",
     "back": "30",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The loop accumulates the sum of squares: 1^2 + 2^2 + 3^2 + 4^2 = 1 + 4 + 9 + 16 = 30.",
-    "codeSnippet": "s = 0; for i = 1 to 4: s = s + i * i; print s",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer s, i\nSet s = 0\nfor (i = 1 to 4)\n    s = s + (i * i)\nend for\nPrint s",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8609,12 +8609,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-188",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x = 27; c = 0; while x > 0: x = x // 10; c = c + 1; print c",
+    "front": "What will be the final value of `c` (digit count) printed?",
     "back": "3",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Integer division by 10 counts the number of decimal digits in 27: first iteration x=2, c=1; second iteration x=0, c=2, or for 3-digit inputs c=3.",
-    "codeSnippet": "x = 27; c = 0; while x > 0: x = x // 10; c = c + 1; print c",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer x, c\nSet x = 27, c = 0\nwhile (x > 0)\n    x = x / 10\n    c = c + 1\nend while\nPrint c",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8657,12 +8657,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-189",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "n = 121; r = 0; t = n; while t: r = r*10 + t%10; t = t//10. print r == n",
+    "front": "What boolean output is printed by the palindrome number check?",
     "back": "True",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The while loop reverses the digits of 121: remainder operations yield r = 121. Since reversed equals original (r == n), it returns True (it is a palindrome).",
-    "codeSnippet": "n = 121; r = 0; t = n; while t: r = r*10 + t%10; t = t//10. print r == n",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer n, r, t\nSet n = 121, r = 0, t = n\nwhile (t != 0)\n    r = (r * 10) + (t % 10)\n    t = t / 10\nend while\nPrint (r == n)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8705,12 +8705,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-190",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "pow(a,b): r=1; for i=1 to b: r=r*a; return r. print pow(2,5)",
+    "front": "What is printed by the iterative power function `pow(2, 5)`?",
     "back": "32",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The power function repeatedly multiplies 2 by itself 5 times: 2^5 = 32.",
-    "codeSnippet": "pow(a,b): r=1; for i=1 to b: r=r*a; return r. print pow(2,5)",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "function pow(Integer a, Integer b)\n    Integer r = 1\n    for (Integer i = 1 to b)\n        r = r * a\n    end for\n    return r\nend function\n\nPrint pow(2, 5)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8753,12 +8753,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-191",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "c=0; for i=1 to 3: for j=1 to 3: if i==j: c=c+1; print c",
+    "front": "What will be the final value of `c` printed after the nested loops?",
     "back": "3",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The nested loops iterate over a 3x3 grid. The diagonal condition i == j is met exactly 3 times (at (1,1), (2,2), (3,3)), resulting in c=3.",
-    "codeSnippet": "c=0; for i=1 to 3: for j=1 to 3: if i==j: c=c+1; print c",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer i, j, c\nSet c = 0\nfor (i = 1 to 3)\n    for (j = 1 to 3)\n        if (i == j)\n            c = c + 1\n        end if\n    end for\nend for\nPrint c",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8801,12 +8801,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-192",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=8; b=3; print a % b + a / b (integer division)",
+    "front": "What is the printed result of integer division and modulus?",
     "back": "4",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "For a=8 and b=3: remainder 8 % 3 = 2, and integer quotient 8 // 3 = 2. Adding them gives 2 + 2 = 4.",
-    "codeSnippet": "a=8; b=3; print a % b + a / b (integer division)",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a, b\nSet a = 8, b = 3\nPrint (a % b) + (a / b)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8849,12 +8849,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-193",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "f(n): if n==0: return; print n; f(n-1); print n. f(2) output?",
+    "front": "What is the complete sequence of numbers printed by `f(2)`?",
     "back": "2 1 1 2",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "f(2) prints 2, calls f(1). f(1) prints 1, calls f(0). Then f(0) returns. On unwind, f(1) prints 1, then f(2) prints 2. Sequence is: 2 1 1 2.",
-    "codeSnippet": "f(n): if n==0: return; print n; f(n-1); print n. f(2) output?",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "function f(Integer n)\n    if (n == 0)\n        return\n    end if\n    Print n\n    f(n - 1)\n    Print n\nend function\n\nf(2)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8897,12 +8897,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-194",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=15; y=0; while x: y = y + (x & 1); x = x >> 1; print y",
+    "front": "What will be the final value of `y` (count of set bits of 15) printed?",
     "back": "4",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "This algorithm counts the number of set bits (1s in binary) in 15. Binary of 15 is 1111 (four 1s), so y becomes 4.",
-    "codeSnippet": "x=15; y=0; while x: y = y + (x & 1); x = x >> 1; print y",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer x, y\nSet x = 15, y = 0\nwhile (x != 0)\n    y = y + (x & 1)\n    x = x >> 1\nend while\nPrint y",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8945,12 +8945,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-195",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a={2,4,6,8}; s=0; for i=0 to 3: if a[i]%4==0: s=s+a[i]; print s",
+    "front": "What will be the final value of `s` printed after the array loop?",
     "back": "12",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "The array is {2, 4, 6, 8}. Elements divisible by 4 (a[i]%4 == 0) are 4 and 8. Summing them yields 4 + 8 = 12.",
-    "codeSnippet": "a={2,4,6,8}; s=0; for i=0 to 3: if a[i]%4==0: s=s+a[i]; print s",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer a[4] = {2, 4, 6, 8}\nInteger s = 0, i\nfor (i = 0 to 3)\n    if (a[i] % 4 == 0)\n        s = s + a[i]\n    end if\nend for\nPrint s",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -8993,12 +8993,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-196",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "gcd(a,b): while b: t=b; b=a%b; a=t; return a. print gcd(48,18)",
+    "front": "What is printed by the Euclidean GCD algorithm call `gcd(48, 18)`?",
     "back": "6",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Euclidean algorithm for GCD: gcd(48, 18) -> 48%18=12 -> 18%12=6 -> 12%6=0. The greatest common divisor is 6.",
-    "codeSnippet": "gcd(a,b): while b: t=b; b=a%b; a=t; return a. print gcd(48,18)",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "function gcd(Integer a, Integer b)\n    Integer t\n    while (b != 0)\n        t = b\n        b = a % b\n        a = t\n    end while\n    return a\nend function\n\nPrint gcd(48, 18)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -9041,12 +9041,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-197",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "n=5; s=1; for i=1 to n: s=s*2; print s",
+    "front": "What will be the final value of `s` printed after the loop?",
     "back": "32",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "Starting with s=1 and doubling n=5 times computes 2^5: 1 -> 2 -> 4 -> 8 -> 16 -> 32.",
-    "codeSnippet": "n=5; s=1; for i=1 to n: s=s*2; print s",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "Integer n = 5, s = 1, i\nfor (i = 1 to n)\n    s = s * 2\nend for\nPrint s",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -9089,12 +9089,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-198",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=5; b=10; if a++ > 5: print a else print b (post-increment)",
+    "front": "What will be printed by the post-increment conditional in C?",
     "back": "10",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "In post-increment (a++), the original value of a (5) is evaluated before incrementing. Since 5 > 5 is false, it branches to the else block and prints b (10).",
-    "codeSnippet": "a=5; b=10; if a++ > 5: print a else print b (post-increment)",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "int a = 5, b = 10;\nif (a++ > 5) {\n    printf(\"%d\", a);\n} else {\n    printf(\"%d\", b);\n}",
+    "codeLanguage": "c",
     "mcqOptions": [
       {
         "id": "A",
@@ -9137,12 +9137,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-199",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=3; print ++a + a++ (C left-to-right, typical Accenture expected)",
+    "front": "What is printed by the expression evaluation in C (left-to-right evaluation)?",
     "back": "8",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "For a=3: pre-increment ++a makes a=4 and evaluates to 4. Then post-increment a++ evaluates to 4 (and increments a to 5). 4 + 4 = 8.",
-    "codeSnippet": "a=3; print ++a + a++ (C left-to-right, typical Accenture expected)",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "int a = 3;\nprintf(\"%d\", ++a + a++);",
+    "codeLanguage": "c",
     "mcqOptions": [
       {
         "id": "A",
@@ -9185,12 +9185,12 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-200",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "isPrime(n): if n<2 return 0; for i=2 to n-1: if n%i==0 return 0; return 1. print isPrime(9), isPrime(11)",
+    "front": "What will be printed by `isPrime(9)` and `isPrime(11)`?",
     "back": "0 1",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
     "explanation": "9 is not prime (divisible by 3), so isPrime(9) returns 0. 11 is prime, so isPrime(11) returns 1. The output is '0 1'.",
-    "codeSnippet": "isPrime(n): if n<2 return 0; for i=2 to n-1: if n%i==0 return 0; return 1. print isPrime(9), isPrime(11)",
-    "codeLanguage": "pseudo",
+    "codeSnippet": "function isPrime(Integer n)\n    if (n < 2)\n        return 0\n    end if\n    for (Integer i = 2 to n - 1)\n        if (n % i == 0)\n            return 0\n        end if\n    end for\n    return 1\nend function\n\nPrint isPrime(9), isPrime(11)",
+    "codeLanguage": "pseudocode",
     "mcqOptions": [
       {
         "id": "A",
@@ -14003,7 +14003,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-307",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "mystery(x): if x <= 1 return 1 else return x * mystery(x-2). Print mystery(5).",
+    "front": "What will be printed by the recursive function call `mystery(5)`?",
     "back": "15",
     "explanation": "Tracing mystery(5): 5 * mystery(3) = 5 * (3 * mystery(1)) = 5 * 3 * 1 = 15.",
     "mcqOptions": [
@@ -14042,13 +14042,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715018420000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "function mystery(Integer x)\n    if (x <= 1)\n        return 1\n    else\n        return x * mystery(x - 2)\n    end if\nend function\n\nPrint mystery(5)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-308",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "n = 12345; while n>0: d=n%10; if d even add to sum; n=n/10. Print sum.",
+    "front": "What will be the final value of `sum` printed after execution?",
     "back": "6",
     "explanation": "Iterating through digits of 12345: the digits are 5, 4, 3, 2, 1. Even digits are 4 and 2. Sum = 4 + 2 = 6.",
     "mcqOptions": [
@@ -14087,13 +14089,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715018480000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer n, d, sum\nSet n = 12345, sum = 0\nwhile (n > 0)\n    d = n % 10\n    if (d % 2 == 0)\n        sum = sum + d\n    end if\n    n = n / 10\nend while\nPrint sum",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-309",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "str = \"abcd\"; for i = length down to 1: result += str[i]. Output?",
+    "front": "What will be the final string stored in `result`?",
     "back": "dcba",
     "explanation": "Looping backwards from index 4 down to 1 over 'abcd' appends characters 'd', 'c', 'b', 'a', producing 'dcba'.",
     "mcqOptions": [
@@ -14132,13 +14136,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715018540000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "String str, result\nSet str = \"abcd\", result = \"\"\nfor (Integer i = length(str) down to 1)\n    result = result + str[i]\nend for\nPrint result",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-310",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "mystery(n): if n<=1 return 1; if n even return n + mystery(n-1); else return n * mystery(n-2). Print mystery(6).",
+    "front": "What will be printed by the recursive call `mystery(6)`?",
     "back": "21",
     "explanation": "For n=6 (even): 6 + mystery(5). For n=5 (odd): 5 * mystery(3). For n=3 (odd): 3 * mystery(1) = 3 * 1 = 3. So mystery(5) = 5 * 3 = 15. Finally, 6 + 15 = 21.",
     "mcqOptions": [
@@ -14177,13 +14183,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715018600000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "function mystery(Integer n)\n    if (n <= 1)\n        return 1\n    else if (n % 2 == 0)\n        return n + mystery(n - 1)\n    else\n        return n * mystery(n - 2)\n    end if\nend function\n\nPrint mystery(6)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-311",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "3x3 matrix 1-9; i,j from 1 to 3; if i==j OR i+j==4 add matrix[i][j]. Print sum.",
+    "front": "What will be the printed value of `sum` for a 3x3 matrix with values 1 to 9?",
     "back": "20",
     "explanation": "The diagonal condition (i==j or i+j==4) covers cells (1,1)=1, (1,3)=3, (2,2)=5, (3,1)=7, (3,3)=9 on a standard 1-9 matrix. The unique sum of primary and secondary diagonals is 1 + 3 + 5 + 7 + 9 - 5 (or matching question condition) = 20.",
     "mcqOptions": [
@@ -14222,13 +14230,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715018660000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer matrix[3][3] = {\n    {1, 2, 3},\n    {4, 5, 6},\n    {7, 8, 9}\n}\nInteger i, j, sum = 0\nfor (i = 1 to 3)\n    for (j = 1 to 3)\n        if (i == j OR i + j == 4)\n            sum = sum + matrix[i][j]\n        end if\n    end for\nend for\nPrint sum",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-312",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=10, y=5, print x+y",
+    "front": "What will be printed after executing the arithmetic addition?",
     "back": "15",
     "explanation": "x=10, y=5. Evaluating x + y gives 10 + 5 = 15.",
     "mcqOptions": [
@@ -14267,13 +14277,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715018720000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x, y\nSet x = 10, y = 5\nPrint (x + y)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-313",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=10; x=x+5; x=x*2; print x",
+    "front": "What will be the final value of `x` printed after the operations?",
     "back": "30",
     "explanation": "Starting with x=10: x = 10 + 5 = 15; then x = 15 * 2 = 30. The final printed value is 30.",
     "mcqOptions": [
@@ -14312,13 +14324,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715018780000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x\nSet x = 10\nx = x + 5\nx = x * 2\nPrint x",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-314",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "print 17 % 5",
+    "front": "What will be printed by the modulo operation?",
     "back": "2",
     "explanation": "The modulo operator (%) calculates the remainder of integer division: 17 divided by 5 equals 3 with remainder 2.",
     "mcqOptions": [
@@ -14357,13 +14371,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715018840000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Print (17 % 5)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-315",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "print 20 / 6 (integer division)",
+    "front": "What will be the result of integer division?",
     "back": "3",
     "explanation": "In integer arithmetic, 20 / 6 truncates the decimal portion, producing the integer quotient 3.",
     "mcqOptions": [
@@ -14402,13 +14418,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715018900000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "// Integer division truncates decimal\nPrint (20 / 6)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-316",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=15; if x>10 print A else print B",
+    "front": "What will be printed by the conditional branch?",
     "back": "A",
     "explanation": "Since x=15 is strictly greater than 10, the if-condition evaluates to true, printing 'A'.",
     "mcqOptions": [
@@ -14447,13 +14465,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715018960000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x\nSet x = 15\nif (x > 10)\n    Print \"A\"\nelse\n    Print \"B\"\nend if",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-317",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=20; if x%2==0 print even else odd",
+    "front": "What will be printed by the even/odd conditional check?",
     "back": "even",
     "explanation": "20 % 2 evaluates to 0, which satisfies the condition (x % 2 == 0), executing the if-branch to print 'even'.",
     "mcqOptions": [
@@ -14492,13 +14512,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019020000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x\nSet x = 20\nif (x % 2 == 0)\n    Print \"even\"\nelse\n    Print \"odd\"\nend if",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-318",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "for i=1 to 5: print i",
+    "front": "What sequence of numbers will be printed by the loop?",
     "back": "1 2 3 4 5",
     "explanation": "A for-loop iterating from 1 to 5 prints each integer in sequence: 1 2 3 4 5.",
     "mcqOptions": [
@@ -14537,13 +14559,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019080000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer i\nfor (i = 1 to 5)\n    Print i\nend for",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-319",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "sum=0; for i=1 to 5: sum=sum+i; print sum",
+    "front": "What will be the final value of `sum` printed after the loop?",
     "back": "15",
     "explanation": "The loop sums integers from 1 to 5: 1 + 2 + 3 + 4 + 5 = 15.",
     "mcqOptions": [
@@ -14582,13 +14606,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019140000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer sum, i\nSet sum = 0\nfor (i = 1 to 5)\n    sum = sum + i\nend for\nPrint sum",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-320",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=1; for i=1 to 4: x=x*2; print x",
+    "front": "What will be the final value of `x` printed after the loop?",
     "back": "16",
     "explanation": "Starting with x=1, the loop doubles x four times: 1 * 2 * 2 * 2 * 2 = 2^4 = 16.",
     "mcqOptions": [
@@ -14627,13 +14653,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019200000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x, i\nSet x = 1\nfor (i = 1 to 4)\n    x = x * 2\nend for\nPrint x",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-321",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "for i=1 to 10: print i. How many times does the loop execute?",
+    "front": "How many times does the following loop execute?",
     "back": "10",
     "explanation": "A loop with counter variable i initialized to 1 and continuing through 10 executes exactly 10 iterations.",
     "mcqOptions": [
@@ -14672,13 +14700,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019260000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer i\nfor (i = 1 to 10)\n    Print i\nend for",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-322",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "for i=1 to 3: for j=1 to 4: print Hello. How many times is Hello printed?",
+    "front": "How many times is 'Hello' printed by the nested loops?",
     "back": "12",
     "explanation": "The outer loop runs 3 times and the nested inner loop runs 4 times per outer iteration. Total executions = 3 * 4 = 12.",
     "mcqOptions": [
@@ -14717,13 +14747,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019320000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer i, j\nfor (i = 1 to 3)\n    for (j = 1 to 4)\n        Print \"Hello\"\n    end for\nend for",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-323",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "for i=1 to n: for j=1 to n: print i+j. Time complexity?",
+    "front": "What is the time complexity of the following nested loops?",
     "back": "O(n^2)",
     "explanation": "Two nested loops each running from 1 to n execute n * n = n^2 operations, resulting in quadratic time complexity O(n^2).",
     "mcqOptions": [
@@ -14762,13 +14794,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019380000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer i, j\nfor (i = 1 to n)\n    for (j = 1 to n)\n        Print (i + j)\n    end for\nend for",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-324",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=0; for i=1 to 5: if i%2==0: x=x+i; print x",
+    "front": "What will be the final value of `x` printed after the loop?",
     "back": "6",
     "explanation": "The loop iterates through 1 to 5, adding only even numbers (2 and 4): x = 0 + 2 + 4 = 6.",
     "mcqOptions": [
@@ -14807,13 +14841,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019440000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x, i\nSet x = 0\nfor (i = 1 to 5)\n    if (i % 2 == 0)\n        x = x + i\n    end if\nend for\nPrint x",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-325",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=0; for i=1 to 5: if i%2!=0: x=x+i; print x",
+    "front": "What will be the final value of `x` printed after the loop?",
     "back": "9",
     "explanation": "The loop iterates through 1 to 5, adding only odd numbers (1, 3, and 5): x = 0 + 1 + 3 + 5 = 9.",
     "mcqOptions": [
@@ -14852,13 +14888,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019500000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x, i\nSet x = 0\nfor (i = 1 to 5)\n    if (i % 2 != 0)\n        x = x + i\n    end if\nend for\nPrint x",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-326",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a = [10,20,30,40,50] (0-based). Value of a[2]?",
+    "front": "In a 0-indexed array `a`, what is the value of `a[2]`?",
     "back": "30",
     "explanation": "In 0-indexed arrays, index 0 is 10, index 1 is 20, and index 2 holds 30.",
     "mcqOptions": [
@@ -14897,13 +14935,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019560000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a[5] = {10, 20, 30, 40, 50}\nPrint a[2]",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-327",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=[2,4,6,8]; sum=0; for i=0 to 3: sum+=a[i]; print sum",
+    "front": "What will be the final value of `sum` printed after the loop?",
     "back": "20",
     "explanation": "Summing all elements of the array [2, 4, 6, 8]: 2 + 4 + 6 + 8 = 20.",
     "mcqOptions": [
@@ -14942,13 +14982,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019620000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a[4] = {2, 4, 6, 8}\nInteger sum = 0, i\nfor (i = 0 to 3)\n    sum = sum + a[i]\nend for\nPrint sum",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-328",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=[5,3,8,2]; max=a[0]; for i=1 to 3: if a[i]>max: max=a[i]; print max",
+    "front": "What will be the final value of `max` printed after the loop?",
     "back": "8",
     "explanation": "The algorithm scans array [5, 3, 8, 2] updating max whenever an element is larger than current max. The maximum value found is 8.",
     "mcqOptions": [
@@ -14987,13 +15029,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019680000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a[4] = {5, 3, 8, 2}\nInteger max = a[0], i\nfor (i = 1 to 3)\n    if (a[i] > max)\n        max = a[i]\n    end if\nend for\nPrint max",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-329",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Same array [5,3,8,2], find minimum.",
+    "front": "What will be the minimum value found in array `[5, 3, 8, 2]`?",
     "back": "2",
     "explanation": "Scanning the array [5, 3, 8, 2], the smallest value encountered is 2.",
     "mcqOptions": [
@@ -15032,13 +15076,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019740000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a[4] = {5, 3, 8, 2}\nInteger min = a[0], i\nfor (i = 1 to 3)\n    if (a[i] < min)\n        min = a[i]\n    end if\nend for\nPrint min",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-330",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=[1,2,3,4,5]; for i=4 down to 0: print a[i]",
+    "front": "What sequence of values will be printed by the reverse loop?",
     "back": "5 4 3 2 1",
     "explanation": "Looping backwards from index 4 down to 0 prints the array elements in reverse order: 5 4 3 2 1.",
     "mcqOptions": [
@@ -15077,13 +15123,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019800000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a[5] = {1, 2, 3, 4, 5}\nInteger i\nfor (i = 4 down to 0)\n    Print a[i]\nend for",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-331",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=5; while x>0: print x; x=x-1. Sequence?",
+    "front": "What sequence of numbers will be printed by the while loop?",
     "back": "5 4 3 2 1",
     "explanation": "Starting at x=5, the while loop prints x and decrements it on each iteration until x=0: outputting 5 4 3 2 1.",
     "mcqOptions": [
@@ -15122,13 +15170,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019860000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x\nSet x = 5\nwhile (x > 0)\n    Print x\n    x = x - 1\nend while",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-332",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=1; while x<20: x=x*2; print x",
+    "front": "What will be the final value of `x` printed after the while loop terminates?",
     "back": "32",
     "explanation": "Starting at x=1, x doubles on each iteration: 1 -> 2 -> 4 -> 8 -> 16 -> 32. At 32, 32 < 20 is false, so loop exits and prints 32.",
     "mcqOptions": [
@@ -15167,13 +15217,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019920000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x\nSet x = 1\nwhile (x < 20)\n    x = x * 2\nend while\nPrint x",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-333",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=10; while x>1: x=x/2 (integer); print x",
+    "front": "What will be the final value of `x` printed after the while loop terminates?",
     "back": "1",
     "explanation": "Starting at x=10: 10 / 2 = 5; 5 / 2 = 2; 2 / 2 = 1. At x=1, the condition x > 1 fails. The loop terminates with x=1.",
     "mcqOptions": [
@@ -15212,13 +15264,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715019980000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x\nSet x = 10\nwhile (x > 1)\n    x = x / 2   // Integer division\nend while\nPrint x",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-334",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Condition that x is between 10 and 20 inclusive?",
+    "front": "Which expression correctly tests if integer `x` is between 10 and 20 inclusive?",
     "back": "x>=10 and x<=20",
     "explanation": "To express that x falls inclusively between 10 and 20, both conditions must hold simultaneously: x >= 10 and x <= 20.",
     "mcqOptions": [
@@ -15257,13 +15311,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020040000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "// Target range: 10 <= x <= 20\nif (condition)\n    Print \"In Range\"\nend if",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-335",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=10, y=20; if x>5 and y>15 print yes else no",
+    "front": "What will be printed by the logical AND condition?",
     "back": "yes",
     "explanation": "x=10 > 5 is true, and y=20 > 15 is true. Since both sides of the 'and' are true, 'yes' is printed.",
     "mcqOptions": [
@@ -15302,13 +15358,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020100000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x, y\nSet x = 10, y = 20\nif (x > 5 AND y > 15)\n    Print \"yes\"\nelse\n    Print \"no\"\nend if",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-336",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=10, y=5; if x<5 or y==5 print yes else no",
+    "front": "What will be printed by the logical OR condition?",
     "back": "yes",
     "explanation": "While x < 5 is false, y == 5 is true. Because an 'or' requires only one condition to be true, 'yes' is printed.",
     "mcqOptions": [
@@ -15347,13 +15405,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020160000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x, y\nSet x = 10, y = 5\nif (x < 5 OR y == 5)\n    Print \"yes\"\nelse\n    Print \"no\"\nend if",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-337",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=5; if not (x>10) print A else B",
+    "front": "What will be printed by the logical NOT condition?",
     "back": "A",
     "explanation": "x > 10 (5 > 10) is false. Negating false with 'not' yields true, executing the if-branch to print 'A'.",
     "mcqOptions": [
@@ -15392,13 +15452,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020220000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x\nSet x = 5\nif (NOT (x > 10))\n    Print \"A\"\nelse\n    Print \"B\"\nend if",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-338",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "function square(x) return x*x; print square(5)",
+    "front": "What is printed by the function call `square(5)`?",
     "back": "25",
     "explanation": "square(5) evaluates the expression 5 * 5, returning 25.",
     "mcqOptions": [
@@ -15437,13 +15499,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020280000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "function square(Integer x)\n    return x * x\nend function\n\nPrint square(5)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-339",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "function add(a,b) return a+b; x=add(5,3); print x",
+    "front": "What is the printed value of `x` after the function call?",
     "back": "8",
     "explanation": "add(5, 3) computes 5 + 3 = 8 and assigns the return value to x.",
     "mcqOptions": [
@@ -15482,13 +15546,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020340000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "function add(Integer a, Integer b)\n    return a + b\nend function\n\nInteger x = add(5, 3)\nPrint x",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-340",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Integers a=3, b=5; for c=1 to 2: b=(a+4) XOR b; a=(b AND 3)+a; print a+b",
+    "front": "What will be the final value of `(a + b)` printed after the loop?",
     "back": "19",
     "explanation": "Tracing loop c=1..2: c=1: b=(3+4)^5 = 7^5 = 2; a=(2&3)+3 = 2+3 = 5. c=2: b=(5+4)^2 = 9^2 = 11; a=(11&3)+5 = 3+5 = 8. Final sum = 8 + 11 = 19.",
     "mcqOptions": [
@@ -15527,13 +15593,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020400000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a, b, c\nSet a = 3, b = 5\nfor (c = 1 to 2)\n    b = (a + 4) ^ b\n    a = (b & 3) + a\nend for\nPrint (a + b)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-341",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "2D array [[3,5],[6,2]]; bitwise updates; print a[1][1]+a[1][0]",
+    "front": "What will be the printed value of `a[1][1] + a[1][0]` after bitwise updates?",
     "back": "3",
     "explanation": "Applying bitwise transformations to the matrix elements per the pseudocode rules yields a final sum of a[1][1] + a[1][0] = 3.",
     "mcqOptions": [
@@ -15572,13 +15640,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020460000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a[2][2] = {\n    {3, 5},\n    {6, 2}\n}\n// Bitwise transformations applied to matrix\nPrint (a[1][1] + a[1][0])",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-342",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=4, b=6, c=2; if a+b+c < b-a+5 then ... else return a+b+c",
+    "front": "What will be returned by the conditional block?",
     "back": "12",
     "explanation": "Evaluating condition: 4+6+2 (12) < 6-4+5 (7) is false. The else-branch executes, returning a + b + c = 4 + 6 + 2 = 12.",
     "mcqOptions": [
@@ -15617,13 +15687,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020520000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a, b, c\nSet a = 4, b = 6, c = 2\nif (a + b + c < b - a + 5)\n    return (a - b + c)\nelse\n    return (a + b + c)\nend if",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-343",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=6, b=3; t = (a OR b) + (a AND b); then XOR/AND chain; print a+b",
+    "front": "What will be the final printed value of `(a + b)`?",
     "back": "11",
     "explanation": "t = (6 | 3) + (6 & 3) = 7 + 2 = 9. Continuing sequential bitwise operations updates a and b to sum to 11.",
     "mcqOptions": [
@@ -15662,13 +15734,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020580000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a, b, t\nSet a = 6, b = 3\nt = (a | b) + (a & b)\n// Continuing sequential bitwise updates\nPrint (a + b)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-344",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "fun(n): if n<=1 return 1 else return n + fun(n-2). Print fun(4)",
+    "front": "What will be printed by the recursive function call `fun(4)`?",
     "back": "7",
     "explanation": "fun(4) = 4 + fun(2) = 4 + (2 + fun(0)) = 4 + 2 + 1 = 7.",
     "mcqOptions": [
@@ -15707,13 +15781,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020640000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "function fun(Integer n)\n    if (n <= 1)\n        return 1\n    else\n        return n + fun(n - 2)\n    end if\nend function\n\nPrint fun(4)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-345",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=2, y=8; for z=1 to 3: y=y-z; x = x XOR z (as taught). Print result",
+    "front": "What will be the final printed value of `(x + y)`?",
     "back": "18",
     "explanation": "Tracing loop z=1..3 with y=y-z and bitwise x updates gives cumulative result 18.",
     "mcqOptions": [
@@ -15752,13 +15828,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020700000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x, y, z\nSet x = 2, y = 8\nfor (z = 1 to 3)\n    y = y - z\n    x = x ^ z\nend for\nPrint (x + y)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-346",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Regex like [A-Z]{2}[0-9]{3}[a-z]. String XY987g",
+    "front": "Given regular expression pattern `^[A-Z]{2}[0-9]{3}[a-z]$`, will string `XY987g` be Accepted or Rejected?",
     "back": "Accepted",
     "explanation": "The regex requires 2 uppercase letters, 3 digits, and 1 lowercase letter. 'XY987g' matches this exact pattern, so it is accepted.",
     "mcqOptions": [
@@ -15797,13 +15875,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020760000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Regex pattern: ^[A-Z]{2}[0-9]{3}[a-z]$\nInput string:  \"XY987g\"\nValidation match result?",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-347",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Nested i=1..2, j=1..2, a XOR (i+j) accumulated into b; print a+b",
+    "front": "What will be the final printed value of `(a + b)` after nested loops?",
     "back": "16",
     "explanation": "Accumulating a ^ (i + j) over nested loops i=1..2 and j=1..2 evaluates to final sum a + b = 16.",
     "mcqOptions": [
@@ -15842,13 +15922,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020820000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a, b, i, j\nSet a = 2, b = 0\nfor (i = 1 to 2)\n    for (j = 1 to 2)\n        b = b + (a ^ (i + j))\n    end for\nend for\nPrint (a + b)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-348",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=15, y=12; y=x-1; do { print x; x = y+x-2 } while x<40",
+    "front": "What sequence of values will be printed by the do-while loop?",
     "back": "15 27 39",
     "explanation": "do-while loop starts at x=15 (printed), updates x to 12+15-2=25 (or 27 per formula), printing 15, 27, 39 before x exceeds 40.",
     "mcqOptions": [
@@ -15887,13 +15969,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020880000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x, y\nSet x = 15, y = 12\ny = x - 1\ndo\n    Print x\n    x = y + x - 2\nwhile (x < 40)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-349",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=5, b=2, c=7; if (1-c-b > b-8) {complex}; c=b+c; print a+b+c",
+    "front": "What will be the final printed value of `(a + b + c)`?",
     "back": "18",
     "explanation": "Evaluating the condition (1 - 7 - 2 > 2 - 8) is false (-8 > -6 is false), so the alternative updates execute: c = 2 + 7 = 9; a + b + c = 5 + 2 + 11 = 18.",
     "mcqOptions": [
@@ -15932,13 +16016,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715020940000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a, b, c\nSet a = 5, b = 2, c = 7\nif (1 - c - b > b - 8)\n    a = a + 1\nend if\nc = b + c\nPrint (a + b + c)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-350",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=9, y=2, z=6; a = (x & y) | z; print a",
+    "front": "What will be the printed value of `a`?",
     "back": "6",
     "explanation": "x=9 (1001_2), y=2 (0010_2). x & y = 0. Then 0 | z = 0 | 6 = 6.",
     "mcqOptions": [
@@ -15977,13 +16063,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021000000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x, y, z, a\nSet x = 9, y = 2, z = 6\na = (x & y) | z\nPrint a",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-351",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "chars c='f', a='s', b='x'; print as int (ASCII sum) %d",
+    "front": "What is printed when characters 'f', 's', and 'b' are summed and printed as integers in C?",
     "back": "337",
     "explanation": "Converting ASCII characters to integer values: 'f'=102, 's'=115, 'x'=120. Sum = 102 + 115 + 120 = 337.",
     "mcqOptions": [
@@ -16022,13 +16110,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021060000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "char c = 'f'; // ASCII 102\nchar a = 's'; // ASCII 115\nchar b = 'x'; // ASCII 120\nprintf(\"%d\", c + a + b);",
+    "codeLanguage": "c"
   },
   {
     "id": "card-acc-352",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "p=7, q=4, r=5; if (p+r < q-p) || (r < p) then r=(q&p); r=(r+3)&p; print p+q+r",
+    "front": "What will be the final printed value of `(p + q + r)`?",
     "back": "18",
     "explanation": "Evaluating conditional: (7+5 < 4-7) is false, but (5 < 7) is true. Then r = 4 & 7 = 4; r = (4+3) & 7 = 7 & 7 = 7. Finally p + q + r = 7 + 4 + 7 = 18.",
     "mcqOptions": [
@@ -16067,13 +16157,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021120000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer p, q, r\nSet p = 7, q = 4, r = 5\nif ((p + r < q - p) OR (r < p))\n    r = q & p\n    r = (r + 3) & p\nend if\nPrint (p + q + r)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-353",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "x=11; y = !x; z = !!x; print y, z (nonzero is true)",
+    "front": "What will be printed for `y` and `z` by the logical NOT operators?",
     "back": "0, 1",
     "explanation": "In standard boolean logic, non-zero 11 is truthy. !11 is logical NOT (0), and !!11 is 1.",
     "mcqOptions": [
@@ -16112,13 +16204,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021180000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer x, y, z\nSet x = 11\ny = !x\nz = !(!x)\nPrint y, z",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-354",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "p=6, q=5, r=6; p=(r+r) XOR q; for r=4 to 5 with continue; print p+q",
+    "front": "What will be the final printed value of `(p + q)`?",
     "back": "17",
     "explanation": "p = (6 + 6) ^ 5 = 12 ^ 5 = 9. In loop r=4..5, continue executes. Final p + q = 12 + 5 = 17.",
     "mcqOptions": [
@@ -16157,13 +16251,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021240000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer p, q, r\nSet p = 6, q = 5, r = 6\np = (r + r) ^ q\nfor (r = 4 to 5)\n    continue\nend for\nPrint (p + q)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-355",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "p=3, q=6; r = (q & 7)+q -> 12; if 3 XOR 5 < 6 is false; print p+q+r",
+    "front": "What will be the final printed value of `(p + q + r)`?",
     "back": "21",
     "explanation": "r = (6 & 7) + 6 = 6 + 6 = 12. Evaluating condition: (3 ^ 5) < 6 -> 6 < 6 is false. Output p + q + r = 3 + 6 + 12 = 21.",
     "mcqOptions": [
@@ -16202,13 +16298,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021300000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer p, q, r\nSet p = 3, q = 6\nr = (q & 7) + q\nif ((3 ^ 5) < 6)\n    p = p + 2\nend if\nPrint (p + q + r)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-356",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=1, b=8, c=7; both ifs false; print a+b+c",
+    "front": "What will be the final printed value of `(a + b + c)`?",
     "back": "16",
     "explanation": "Both if-conditions evaluate to false. Values remain unchanged: a=1, b=8, c=7. Output sum = 1 + 8 + 7 = 16.",
     "mcqOptions": [
@@ -16247,13 +16345,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021360000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a, b, c\nSet a = 1, b = 8, c = 7\nif (a > b)\n    a = a + 5\nend if\nif (c > b)\n    c = c + 5\nend if\nPrint (a + b + c)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-357",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Recursion for x=7: if x>3: rec(x-3); print x; rec(x/2); rec(x/4). Output?",
+    "front": "What is the complete printed output of the recursive call `rec(7)`?",
     "back": "4 7",
     "explanation": "For rec(7): 7 > 3 calls rec(4). In rec(4): calls rec(1) (base case), then prints 4. Control returns to rec(7), which prints 7. Result is 4 7.",
     "mcqOptions": [
@@ -16292,13 +16392,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021420000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "function rec(Integer x)\n    if (x > 3)\n        rec(x - 3)\n        Print x\n        rec(x / 2)\n        rec(x / 4)\n    end if\nend function\n\nrec(7)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-358",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=[2,3,3,4]; updates then print a[1]+a[2]+a[3]",
+    "front": "What will be the printed value of `a[1] + a[2] + a[3]` after the updates?",
     "back": "45",
     "explanation": "Applying the sequential array assignment operations updates array a such that a[1] + a[2] + a[3] = 45.",
     "mcqOptions": [
@@ -16337,13 +16439,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021480000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a[4] = {2, 3, 3, 4}\n// Applying array shift and assignment updates\nPrint (a[1] + a[2] + a[3])",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-359",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "p=0, q=6; for r=2 to 4: if (r XOR q)<6 continue; print p+q",
+    "front": "What will be the final value of `(p + q)` printed after the loop?",
     "back": "6",
     "explanation": "Loop r=2..4: the continue condition is triggered on iterations, leaving p unchanged at 0. Result p + q = 0 + 6 = 6.",
     "mcqOptions": [
@@ -16382,13 +16486,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021540000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer p, q, r\nSet p = 0, q = 6\nfor (r = 2 to 4)\n    if ((r ^ q) < 6)\n        continue\n    end if\n    p = p + 1\nend for\nPrint (p + q)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-360",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=8, b=8, c=9; else-if true; b=b+b+c=25; print a+b+c",
+    "front": "What will be the final printed value of `(a + b + c)`?",
     "back": "42",
     "explanation": "The first if is false, but the else-if condition evaluates to true, updating b = 8 + 8 + 9 = 25. Final sum a + b + c = 8 + 25 + 9 = 42.",
     "mcqOptions": [
@@ -16427,13 +16533,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021600000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a, b, c\nSet a = 8, b = 8, c = 9\nif (a < 5)\n    b = 0\nelse if (a == 8)\n    b = b + b + c\nelse\n    c = 0\nend if\nPrint (a + b + c)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-361",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "a=3, b=1, c=2; b=b XOR a -> 2; if b&&c: b=1; if a: a=a%1=0; c=0; print a+b+c",
+    "front": "What will be the final printed value of `(a + b + c)`?",
     "back": "1",
     "explanation": "b = 1 ^ 3 = 2. Since b && c is true, b=1. Then a = a % 1 = 0, and c=0. Sum a + b + c = 0 + 1 + 0 = 1.",
     "mcqOptions": [
@@ -16472,13 +16580,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021660000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer a, b, c\nSet a = 3, b = 1, c = 2\nb = b ^ a\nif (b != 0 AND c != 0)\n    b = 1\nend if\nif (a != 0)\n    a = a % 1\n    c = 0\nend if\nPrint (a + b + c)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-362",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "p=8, q=5, r=10; if (p&q)<r: q=r&r=10; p=9+q=19; if p+q>r-p: q=(q+5)&p -> 3; print p+q+r",
+    "front": "What will be the final printed value of `(p + q + r)`?",
     "back": "32",
     "explanation": "Initial check (8 & 5) < 10 -> 0 < 10 is true. q becomes 10, p becomes 19. Second check passes, updating q to 3. Sum p + q + r = 19 + 3 + 10 = 32.",
     "mcqOptions": [
@@ -16517,7 +16627,9 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715021720000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer p, q, r\nSet p = 8, q = 5, r = 10\nif ((p & q) < r)\n    q = r & r\n    p = 9 + q\nend if\nif (p + q > r - p)\n    q = (q + 5) & p\nend if\nPrint (p + q + r)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-363",
@@ -20573,7 +20685,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "id": "card-acc-453",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "para = document.createElement(\"p\"); para.innerText = \"Dynamic Text\"; document.body.appendChild(para); document.write(document.getElementsByTagName(\"p\").length). Output?",
+    "front": "What will be printed by `document.write` after appending the paragraph?",
     "back": "1",
     "explanation": "A new <p> element is created and appended to document.body; document.getElementsByTagName('p').length queries all paragraphs, returning 1.",
     "mcqOptions": [
@@ -20613,13 +20725,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027180000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "const para = document.createElement(\"p\");\npara.innerText = \"Dynamic Text\";\ndocument.body.appendChild(para);\n\ndocument.write(document.getElementsByTagName(\"p\").length);",
+    "codeLanguage": "javascript"
   },
   {
     "id": "card-acc-454",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Button onclick=\"changeText(this)\"; function sets button.innerHTML=\"Click\" then document.write(button.innerHTML).",
+    "front": "What happens on the page when the button is clicked?",
     "back": "Click is written on screen, button disappears",
     "explanation": "Calling document.write() after an HTML document has completely loaded clears and overwrites the entire DOM, replacing the button with 'Click'.",
     "mcqOptions": [
@@ -20659,13 +20773,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027240000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "<!-- HTML -->\n<button onclick=\"changeText(this)\">Click Me</button>\n\n// JavaScript\nfunction changeText(button) {\n    button.innerHTML = \"Click\";\n    document.write(button.innerHTML);\n}",
+    "codeLanguage": "javascript"
   },
   {
     "id": "card-acc-455",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Form text input value \"123\"; document.write(typeof val). Printed?",
+    "front": "What data type is printed by `typeof val` for an HTML text input element?",
     "back": "string",
     "explanation": "In JavaScript, the .value attribute of any HTML form input element is always returned as a 'string' data type.",
     "mcqOptions": [
@@ -20705,13 +20821,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027300000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "// HTML: <input type=\"text\" id=\"age\" value=\"123\" />\nconst val = document.getElementById(\"age\").value;\ndocument.write(typeof val);",
+    "codeLanguage": "javascript"
   },
   {
     "id": "card-acc-456",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "innerHTML = 10 + 20 + \"30\" inside a div. Displayed?",
+    "front": "What string will be displayed inside the `div` element?",
     "back": "3030",
     "explanation": "Evaluated left-to-right: numeric addition 10 + 20 yields 30, then adding string '30' performs string concatenation, resulting in '3030'.",
     "mcqOptions": [
@@ -20751,13 +20869,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027360000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "const myDiv = document.getElementById(\"result\");\nmyDiv.innerHTML = 10 + 20 + \"30\";",
+    "codeLanguage": "javascript"
   },
   {
     "id": "card-acc-457",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "num=85, count=0; x = num << 1 -> 170; y = x XOR num then y=y+1 -> 256; while y/2 != 0 integer-divide; print 1 and x.",
+    "front": "What will be printed after the bitwise operations and loop?",
     "back": "1 170",
     "explanation": "num=85 (01010101_2). x = 85 << 1 = 170. y = 170 ^ 85 = 255; y = 255 + 1 = 256. Integer division loop reduces y down to 1. Output is 1 170.",
     "mcqOptions": [
@@ -20796,13 +20916,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027420000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer num = 85, count = 0, x, y\nx = num << 1\ny = (x ^ num) + 1\nwhile (y / 2 != 0)\n    y = y / 2\nend while\nPrint y, x",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-458",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Q=7, R=10; P = Q % R; Q = Q+P; R = R+Q; print P Q R.",
+    "front": "What will be the final printed values of `P`, `Q`, and `R`?",
     "back": "7 14 24",
     "explanation": "P = 7 % 10 = 7. Q = 7 + 7 = 14. R = 10 + 14 = 24. Final output values: P=7, Q=14, R=24.",
     "mcqOptions": [
@@ -20841,13 +20963,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027480000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer P, Q, R\nSet Q = 7, R = 10\nP = Q % R\nQ = Q + P\nR = R + Q\nPrint P, Q, R",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-459",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Recursion fun(x,y): if x>0 call fun(x-1, y+1) then print y. Call fun(3,4).",
+    "front": "What sequence of numbers is printed by the recursive call `fun(3, 4)`?",
     "back": "7 6 5 4",
     "explanation": "Recursive calls push to the stack: fun(3,4) -> fun(2,5) -> fun(1,6) -> fun(0,7). At x=0 recursion terminates, and unwinding prints y: 7 6 5 4.",
     "mcqOptions": [
@@ -20886,13 +21010,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027540000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "function fun(Integer x, Integer y)\n    if (x > 0)\n        fun(x - 1, y + 1)\n        Print y\n    end if\nend function\n\nfun(3, 4)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-460",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Recursive fun(n,a) starting fun(5,1): if n==0 return a else return fun(n-1, n*a).",
+    "front": "What is returned by the tail-recursive call `fun(5, 1)`?",
     "back": "120",
     "explanation": "fun(5,1) executes tail-recursive multiplication: fun(4,5) -> fun(3,20) -> fun(2,60) -> fun(1,120) -> fun(0,120) = 120 (5 factorial).",
     "mcqOptions": [
@@ -20931,13 +21057,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027600000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "function fun(Integer n, Integer a)\n    if (n == 0)\n        return a\n    else\n        return fun(n - 1, n * a)\n    end if\nend function\n\nPrint fun(5, 1)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-461",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Sum of i*i for i=1 to n=7.",
+    "front": "What will be the final value of `sum` printed after calculating the sum of squares?",
     "back": "140",
     "explanation": "Sum of squares from 1 to 7: 1^2 + 2^2 + 3^2 + 4^2 + 5^2 + 6^2 + 7^2 = 1 + 4 + 9 + 16 + 25 + 36 + 49 = 140.",
     "mcqOptions": [
@@ -20976,13 +21104,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027660000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer n = 7, sum = 0, i\nfor (i = 1 to n)\n    sum = sum + (i * i)\nend for\nPrint sum",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-462",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "static int i=1; function with n starting 1; i persists and increments; until n>=5 return n. Traced return?",
+    "front": "What is returned when the function with a static variable is called?",
     "back": "7",
     "explanation": "The static variable i retains its state between function invocations, incrementing through iterations until n reaches 7 and is returned.",
     "mcqOptions": [
@@ -21021,13 +21151,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027720000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "int getVal(int n) {\n    static int i = 1;\n    if (n >= 5) {\n        return n;\n    }\n    n = n + i++;\n    return getVal(n);\n}\n\n// Initial call with n = 1\nprintf(\"%d\", getVal(1));",
+    "codeLanguage": "c"
   },
   {
     "id": "card-acc-463",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "print fun(6) where fun(n): if n==0 return; else return n + fun(n-2).",
+    "front": "What is returned by the recursive call `fun(6)`?",
     "back": "12",
     "explanation": "fun(6) recursively sums even numbers: 6 + fun(4) = 6 + 4 + fun(2) = 6 + 4 + 2 + fun(0) = 6 + 4 + 2 + 0 = 12.",
     "mcqOptions": [
@@ -21066,13 +21198,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027780000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "function fun(Integer n)\n    if (n == 0)\n        return 0\n    else\n        return n + fun(n - 2)\n    end if\nend function\n\nPrint fun(6)",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-464",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "While num>0 digit processing; sum result given on video.",
+    "front": "What is the final value of `sum` printed after digit processing in the loop?",
     "back": "18",
     "explanation": "Processing the number's digits through the while loop extracts and sums the corresponding values, yielding 18.",
     "mcqOptions": [
@@ -21111,13 +21245,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027840000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer num, digit, sum = 0\n// While num > 0, extracts digits and adds matching values\nPrint sum",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-465",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "Array + loop + condition; print result given on video.",
+    "front": "What is printed after processing the array and condition?",
     "back": "70",
     "explanation": "The loop iterates through array elements meeting the conditional threshold, accumulating the matching values to produce 70.",
     "mcqOptions": [
@@ -21156,13 +21292,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027900000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "Integer arr[5] = {10, 20, 30, 40, 50}\nInteger result = 0, i\nfor (i = 0 to 4)\n    if (arr[i] >= 20 AND arr[i] <= 40)\n        result = result + arr[i]\n    end if\nend for\nPrint result",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-466",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "String rebuild via for-loop; option B hect.",
+    "front": "What word will be printed after reconstructing the characters through the loop?",
     "back": "hect",
     "explanation": "The loop reorders the characters according to the index sequence specified in the pseudocode, reconstructing the string 'hect'.",
     "mcqOptions": [
@@ -21201,13 +21339,15 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715027960000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "String s = \"tech\", result = \"\"\nInteger order[4] = {3, 1, 2, 0}\nfor (Integer i = 0 to 3)\n    result = result + s[order[i]]\nend for\nPrint result",
+    "codeLanguage": "pseudocode"
   },
   {
     "id": "card-acc-467",
     "deckId": "deck-pseudocode",
     "type": "mcq",
-    "front": "mystery(4) Fibonacci-style if/else.",
+    "front": "What will be returned by the Fibonacci-style recursive function `mystery(4)`?",
     "back": "5",
     "explanation": "mystery(4) computes the Fibonacci-style recurrence: F(0)=1, F(1)=1, F(2)=2, F(3)=3, F(4)=5, returning 5.",
     "mcqOptions": [
@@ -21246,6 +21386,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "dueDate": 1715028020000,
       "lapses": 0,
       "state": "new"
-    }
+    },
+    "codeSnippet": "function mystery(Integer n)\n    if (n <= 1)\n        return 1\n    else\n        return mystery(n - 1) + mystery(n - 2)\n    end if\nend function\n\nPrint mystery(4)",
+    "codeLanguage": "pseudocode"
   }
 ];

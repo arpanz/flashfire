@@ -105,6 +105,36 @@ export const FormattedText: React.FC<FormattedTextProps> = ({
       }
     );
 
+    // Process Fenced Code Blocks: ```lang ... ```
+    processed = processed.replace(/```([a-zA-Z0-9_-]*)\r?\n([\s\S]*?)```/g, (_match, lang, code) => {
+      const displayLang = (lang || 'code').toUpperCase();
+      const rawLines = code.trimEnd().split(/\r?\n/);
+      
+      const linesHtml = rawLines
+        .map((line: string, i: number) => {
+          let escaped = line
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+
+          if (/^\s*(\/\/|#)/.test(escaped)) {
+            escaped = `<span class="text-zinc-500 italic">${escaped}</span>`;
+          } else {
+            escaped = escaped.replace(/(["'])(.*?)\1/g, '<span class="text-amber-400 dark:text-amber-300">$&</span>');
+            escaped = escaped.replace(/\b(if|else|then|end if|endif|while|end while|for|to|down to|do|return|function|def|break|continue)\b/gi, '<span class="text-pink-400 font-semibold">$1</span>');
+            escaped = escaped.replace(/\b(Integer|String|Boolean|Array|Set|let|const|var|static int|int|char|float|void)\b/g, '<span class="text-purple-400 font-semibold">$1</span>');
+            escaped = escaped.replace(/\b(Print|print|document\.write|console\.log)\b/g, '<span class="text-sky-400 font-semibold">$1</span>');
+            escaped = escaped.replace(/\b(AND|OR|XOR|NOT|MOD)\b/g, '<span class="text-cyan-400 font-bold">$1</span>');
+            escaped = escaped.replace(/\b(\d+)\b/g, '<span class="text-emerald-400 font-mono">$1</span>');
+          }
+
+          return `<tr><td class="w-7 pr-3 text-right select-none font-mono text-zinc-600 text-xs align-top border-r border-zinc-800">${i + 1}</td><td class="pl-3 text-zinc-200 font-mono whitespace-pre align-top">${escaped || '&nbsp;'}</td></tr>`;
+        })
+        .join('');
+
+      return `<div class="w-full my-3 rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-950 shadow-xl text-left font-mono select-text"><div class="flex items-center justify-between px-3.5 py-2 bg-zinc-900/90 border-b border-zinc-800/80"><div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56] inline-block"></span><span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] inline-block"></span><span class="w-2.5 h-2.5 rounded-full bg-[#27c93f] inline-block"></span><span class="ml-2 text-[10px] font-semibold text-zinc-400 tracking-wider uppercase">${displayLang}</span></div></div><div class="p-3.5 overflow-x-auto text-xs sm:text-[13px] leading-relaxed"><table class="w-full border-collapse"><tbody>${linesHtml}</tbody></table></div></div>`;
+    });
+
     // Markdown Blockquotes: > quote
     processed = processed.replace(/^>\s+(.*$)/gim, '<div class="pl-2.5 border-l-2 border-amber-500 my-1.5 text-zinc-600 dark:text-zinc-300 italic text-xs">$1</div>');
 

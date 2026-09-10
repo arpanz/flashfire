@@ -24,6 +24,7 @@ import { calculateNextReview, getDueCards } from "../lib/srs";
 import { storage } from "../lib/storage";
 import { sounds } from "../lib/sound";
 import { FormattedText } from "./FormattedText";
+import { CodeBlockView } from "./CodeBlockView";
 
 interface QuizHubProps {
   decks: Deck[];
@@ -962,6 +963,14 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     <span className="text-zinc-400 font-mono text-xs mr-2">{i + 1}.</span>
                     <FormattedText text={q.prompt} />
                   </div>
+                  {q.card.codeSnippet && (
+                    <div className="my-2 max-w-xl">
+                      <CodeBlockView
+                        code={q.card.codeSnippet}
+                        language={q.card.codeLanguage || "pseudocode"}
+                      />
+                    </div>
+                  )}
                   <div className="flex items-center gap-2 shrink-0">
                     {q.isUserCorrect ? (
                       <span className="inline-flex items-center gap-1 text-xs font-semibold text-emerald-600 bg-emerald-50 dark:bg-emerald-950/50 px-2 py-0.5 rounded-full">
@@ -1083,9 +1092,19 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           )}
         </div>
 
-        <div className="text-lg sm:text-xl font-medium text-zinc-900 dark:text-zinc-100 leading-relaxed mb-6">
+        <div className="text-lg sm:text-xl font-medium text-zinc-900 dark:text-zinc-100 leading-relaxed mb-4">
           {currentQ && <FormattedText text={currentQ.prompt} />}
         </div>
+
+        {/* Code Snippet View */}
+        {currentQ?.card.codeSnippet && (
+          <div className="mb-6">
+            <CodeBlockView
+              code={currentQ.card.codeSnippet}
+              language={currentQ.card.codeLanguage || "pseudocode"}
+            />
+          </div>
+        )}
 
         {/* Options */}
         <div className="flex flex-col gap-2.5">

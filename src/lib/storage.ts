@@ -4,10 +4,10 @@ import { Deck, Flashcard, CardType, MCQOption, ReviewLog, DailyActivity, StudySt
 import { ACCENTURE_DECKS, ACCENTURE_CARDS } from './accentureData';
 
 const STORAGE_KEYS = {
-  DECKS: 'flashfire_decks_v4',
-  CARDS: 'flashfire_cards_v4',
-  LOGS: 'flashfire_review_logs_v4',
-  STATS: 'flashfire_stats_v4',
+  DECKS: 'flashfire_decks_v5',
+  CARDS: 'flashfire_cards_v5',
+  LOGS: 'flashfire_review_logs_v5',
+  STATS: 'flashfire_stats_v5',
 };
 
 // Initial Pre-loaded Decks & Cards: 467 Real Accenture Technical MCQs
@@ -32,6 +32,7 @@ export const storage = {
     let raw = localStorage.getItem(STORAGE_KEYS.DECKS);
     if (!raw) {
       const legacy =
+        localStorage.getItem('flashfire_decks_v4') ||
         localStorage.getItem('flashfire_decks_v3') ||
         localStorage.getItem('flashfire_decks_v2') ||
         localStorage.getItem('flashfire_decks');
@@ -107,9 +108,10 @@ export const storage = {
     let raw = localStorage.getItem(STORAGE_KEYS.CARDS);
     let needWrite = false;
 
-    // Migrate from v3, v2, or v1 if v4 is not yet created
+    // Migrate from v4, v3, v2, or v1 if v5 is not yet created
     if (!raw) {
       const legacy =
+        localStorage.getItem('flashfire_cards_v4') ||
         localStorage.getItem('flashfire_cards_v3') ||
         localStorage.getItem('flashfire_cards_v2') ||
         localStorage.getItem('flashfire_cards');
@@ -129,7 +131,7 @@ export const storage = {
       const initialMap = new Map<string, Flashcard>();
       INITIAL_CARDS.forEach((c) => initialMap.set(c.id, c));
 
-      // Auto-migrate existing cards with refreshed content/explanations
+      // Auto-migrate existing cards with refreshed content, segmented front, and codeSnippets
       const existingIds = new Set<string>();
       const enrichedCards = cards.map((c) => {
         existingIds.add(c.id);
@@ -143,13 +145,20 @@ export const storage = {
           c.explanation.includes('specifically satisfies the technical criteria') ||
           (c.explanation.length < 50 && initial.explanation && initial.explanation.length > c.explanation.length);
 
-        if (isDummy && initial.explanation) {
+        const needsCodeUpdate =
+          initial.codeSnippet !== c.codeSnippet ||
+          initial.front !== c.front ||
+          initial.codeLanguage !== c.codeLanguage;
+
+        if ((isDummy && initial.explanation) || needsCodeUpdate) {
           needWrite = true;
           return {
             ...c,
-            explanation: initial.explanation,
+            explanation: initial.explanation || c.explanation,
             front: initial.front || c.front,
             back: initial.back || c.back,
+            codeSnippet: initial.codeSnippet,
+            codeLanguage: initial.codeLanguage,
             mcqOptions: initial.mcqOptions && initial.mcqOptions.length ? initial.mcqOptions : c.mcqOptions,
           };
         }
@@ -167,6 +176,7 @@ export const storage = {
       if (needWrite) {
         localStorage.setItem(STORAGE_KEYS.CARDS, JSON.stringify(enrichedCards));
         try {
+          localStorage.removeItem('flashfire_cards_v4');
           localStorage.removeItem('flashfire_cards_v3');
           localStorage.removeItem('flashfire_cards_v2');
           localStorage.removeItem('flashfire_cards');
@@ -207,6 +217,7 @@ export const storage = {
     let raw = localStorage.getItem(STORAGE_KEYS.LOGS);
     if (!raw) {
       const legacy =
+        localStorage.getItem('flashfire_review_logs_v4') ||
         localStorage.getItem('flashfire_review_logs_v3') ||
         localStorage.getItem('flashfire_review_logs_v2') ||
         localStorage.getItem('flashfire_review_logs');
@@ -245,6 +256,7 @@ export const storage = {
     let raw = localStorage.getItem(STORAGE_KEYS.STATS);
     if (!raw) {
       const legacy =
+        localStorage.getItem('flashfire_stats_v4') ||
         localStorage.getItem('flashfire_stats_v3') ||
         localStorage.getItem('flashfire_stats_v2') ||
         localStorage.getItem('flashfire_stats');
