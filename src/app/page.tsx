@@ -133,7 +133,7 @@ export default function Home() {
       />
 
       {/* Main View Area */}
-      <main className="flex-1">
+      <main className="flex-1 pb-20 md:pb-0">
         {activeStudy ? (
           <StudySession
             deck={activeStudy.deck}
@@ -272,7 +272,7 @@ export default function Home() {
       />
 
       {/* Footer */}
-      <footer className="w-full bg-zinc-100 dark:bg-[#101010] text-zinc-600 dark:text-[#a1a1aa] border-t border-zinc-200 dark:border-zinc-800 mt-16 py-12 px-4">
+      <footer className="w-full bg-zinc-100 dark:bg-[#101010] text-zinc-600 dark:text-[#a1a1aa] border-t border-zinc-200 dark:border-zinc-800 mt-16 py-10 pb-24 md:pb-12 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <span className="text-xl">⚡</span>

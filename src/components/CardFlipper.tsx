@@ -68,16 +68,16 @@ export const CardFlipper: React.FC<CardFlipperProps> = ({
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto [perspective:1400px] select-none my-4">
+    <div className="w-full max-w-2xl mx-auto [perspective:1400px] select-none my-2 sm:my-4">
       <motion.div
-        className="relative w-full min-h-[380px] sm:min-h-[420px] rounded-2xl cursor-pointer [transform-style:preserve-3d] transition-shadow duration-300 hover:shadow-xl"
+        className="relative w-full min-h-[340px] sm:min-h-[420px] rounded-2xl cursor-pointer [transform-style:preserve-3d] transition-shadow duration-300 hover:shadow-xl"
         animate={{ rotateY: isFlipped ? 180 : 0 }}
         transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
         onClick={handleFlipClick}
       >
         {/* ================= FRONT SIDE ================= */}
         <div
-          className="absolute inset-0 w-full h-full rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 p-6 sm:p-8 flex flex-col justify-between shadow-sm [backface-visibility:hidden]"
+          className="absolute inset-0 w-full h-full rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 p-4 sm:p-6 md:p-8 flex flex-col justify-between shadow-sm [backface-visibility:hidden] overflow-y-auto"
         >
           {/* Top Bar */}
           <div className="flex items-center justify-between gap-2 border-b border-zinc-100 dark:border-zinc-800 pb-3">
@@ -191,13 +191,14 @@ export const CardFlipper: React.FC<CardFlipperProps> = ({
           {/* Bottom Flip Indicator */}
           <div className="flex items-center justify-center gap-2 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs text-zinc-400">
             <Eye className="w-3.5 h-3.5" />
-            <span>Click card or press <kbd className="px-1.5 py-0.5 bg-zinc-100 dark:bg-zinc-800 rounded border border-zinc-200 dark:border-zinc-700 font-mono text-[10px]">Space</kbd> to flip</span>
+            <span className="sm:hidden">Tap card to flip</span>
+            <span className="hidden sm:inline">Click card or press <kbd className="px-1.5 py-0.5 bg-zinc-100 dark:bg-zinc-800 rounded border border-zinc-200 dark:border-zinc-700 font-mono text-[10px]">Space</kbd> to flip</span>
           </div>
         </div>
 
         {/* ================= BACK SIDE ================= */}
         <div
-          className="absolute inset-0 w-full h-full rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 p-6 sm:p-8 flex flex-col justify-between shadow-sm [transform:rotateY(180deg)] [backface-visibility:hidden]"
+          className="absolute inset-0 w-full h-full rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 p-4 sm:p-6 md:p-8 flex flex-col justify-between shadow-sm [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-y-auto"
         >
           {/* Top Bar */}
           <div className="flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 pb-3">
@@ -208,7 +209,7 @@ export const CardFlipper: React.FC<CardFlipperProps> = ({
             <button
               onClick={(e) => speakText(card.back, e)}
               title="Pronounce back text (R)"
-              className="p-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+              className="p-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors cursor-pointer"
             >
               <Volume2 className="w-3.5 h-3.5" />
             </button>
@@ -217,7 +218,7 @@ export const CardFlipper: React.FC<CardFlipperProps> = ({
           {/* Answer Body */}
           <div className="my-auto py-4 flex flex-col justify-center items-center text-center">
             {/* Answer Text */}
-            <div className="text-lg sm:text-xl font-medium tracking-tight text-zinc-900 dark:text-zinc-100 max-w-xl mx-auto leading-relaxed">
+            <div className="text-base sm:text-lg md:text-xl font-medium tracking-tight text-zinc-900 dark:text-zinc-100 max-w-xl mx-auto leading-relaxed">
               <FormattedText text={card.back} />
             </div>
 
@@ -231,7 +232,7 @@ export const CardFlipper: React.FC<CardFlipperProps> = ({
                       opt.isCorrect
                         ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-300 dark:border-emerald-700 text-emerald-900 dark:text-emerald-200'
                         : selectedMCQOption === opt.id
-                        ? 'bg-rose-50 dark:bg-rose-950/40 border-rose-300 dark:border-rose-700 text-rose-900 dark:text-rose-200 line-through opacity-70'
+                        ? 'bg-rose-50 dark:bg-rose-950/40 border-rose-300 dark:border-rose-700 text-rose-900 dark:text-rose-200 opacity-80'
                         : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-500 opacity-60'
                     }`}
                   >

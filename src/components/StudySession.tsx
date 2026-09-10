@@ -211,25 +211,25 @@ export const StudySession: React.FC<StudySessionProps> = ({
         </p>
 
         {/* Metric Cards */}
-        <div className="grid grid-cols-3 gap-3 mb-8">
-          <div className="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xs">
-            <div className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">{totalRated}</div>
-            <div className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Cards Reviewed</div>
+        <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-6 sm:mb-8">
+          <div className="p-3 sm:p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xs">
+            <div className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100">{totalRated}</div>
+            <div className="text-[11px] sm:text-xs text-zinc-500 dark:text-zinc-400 mt-1">Cards Reviewed</div>
           </div>
-          <div className="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xs">
-            <div className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">{accuracy}%</div>
-            <div className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Retention Rate</div>
+          <div className="p-3 sm:p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xs">
+            <div className="text-xl sm:text-2xl font-bold text-emerald-600 dark:text-emerald-400">{accuracy}%</div>
+            <div className="text-[11px] sm:text-xs text-zinc-500 dark:text-zinc-400 mt-1">Retention Rate</div>
           </div>
-          <div className="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xs">
-            <div className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">{minutesSpent}m</div>
-            <div className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Time Spent</div>
+          <div className="p-3 sm:p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xs">
+            <div className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100">{minutesSpent}m</div>
+            <div className="text-[11px] sm:text-xs text-zinc-500 dark:text-zinc-400 mt-1">Time Spent</div>
           </div>
         </div>
 
         {/* Rating Breakdown Bar */}
-        <div className="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 mb-8 text-left">
+        <div className="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 mb-6 sm:mb-8 text-left">
           <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-3">Recall Breakdown</div>
-          <div className="grid grid-cols-4 gap-2 text-center text-xs">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs">
             <div className="p-2 rounded-lg bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 font-medium">
               Forgot: {ratedStats.again}
             </div>
@@ -245,32 +245,32 @@ export const StudySession: React.FC<StudySessionProps> = ({
           </div>
         </div>
 
-        {/* Action Buttons (Cal.com pill style) */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+        {/* Action Buttons */}
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2.5 sm:gap-3 w-full">
           <button
             onClick={handleRestart}
-            className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2"
+            className="w-full sm:w-auto px-5 py-3 sm:py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2 min-h-[44px]"
           >
             <RotateCcw className="w-4 h-4" />
             Study Again
           </button>
           <button
             onClick={onSwitchToMatch}
-            className="w-full sm:w-auto px-5 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 font-medium text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors flex items-center justify-center gap-2"
+            className="w-full sm:w-auto px-5 py-3 sm:py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 font-medium text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors flex items-center justify-center gap-2 min-h-[44px]"
           >
             <Gamepad2 className="w-4 h-4" />
             Play Speed Match
           </button>
           <button
             onClick={onSwitchToQuiz}
-            className="w-full sm:w-auto px-5 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 font-medium text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors flex items-center justify-center gap-2"
+            className="w-full sm:w-auto px-5 py-3 sm:py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 font-medium text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors flex items-center justify-center gap-2 min-h-[44px]"
           >
             <ListOrdered className="w-4 h-4" />
             Take Quiz
           </button>
           <button
             onClick={onBack}
-            className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 text-sm font-medium transition-colors"
+            className="w-full sm:w-auto px-5 py-3 sm:py-2.5 rounded-xl text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 text-sm font-medium transition-colors flex items-center justify-center min-h-[44px]"
           >
             Back to Decks
           </button>
@@ -282,28 +282,28 @@ export const StudySession: React.FC<StudySessionProps> = ({
   const progressPercent = queue.length > 0 ? Math.round(((currentIndex) / queue.length) * 100) : 0;
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-6">
+    <div className="max-w-3xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
       {/* Top Header Bar */}
-      <div className="flex items-center justify-between gap-4 mb-4">
+      <div className="flex items-center justify-between gap-2 sm:gap-4 mb-3 sm:mb-4 flex-wrap sm:flex-nowrap">
         <button
           onClick={onBack}
-          className="text-xs font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 flex items-center gap-1.5 transition-colors"
+          className="text-xs font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 flex items-center gap-1.5 transition-colors min-h-[36px]"
         >
           ← Exit Session
         </button>
 
         <div className="flex items-center gap-2">
-          <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">
+          <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 truncate max-w-[180px] sm:max-w-none">
             {sessionTitle || (mode === 'srs' ? 'Spaced Repetition' : 'Cram Mode')}
           </span>
-          <span className="text-xs text-zinc-400 font-mono">
+          <span className="text-xs text-zinc-400 font-mono shrink-0">
             {currentIndex + 1} of {queue.length}
           </span>
         </div>
       </div>
 
       {/* Animated Progress Bar */}
-      <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden mb-6">
+      <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden mb-4 sm:mb-6">
         <motion.div
           className="h-full bg-zinc-900 dark:bg-zinc-100 rounded-full"
           initial={{ width: 0 }}
@@ -327,23 +327,23 @@ export const StudySession: React.FC<StudySessionProps> = ({
       )}
 
       {/* Bottom Rating Controls (When Flipped) */}
-      <div className="mt-6 min-h-[72px] flex items-center justify-center">
+      <div className="mt-5 sm:mt-6 min-h-[64px] sm:min-h-[72px] flex items-center justify-center">
         {isFlipped ? (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="w-full max-w-2xl grid grid-cols-4 gap-2 sm:gap-3"
+            className="w-full max-w-2xl grid grid-cols-4 gap-1.5 sm:gap-3"
           >
             {/* Rating 1: Forgot */}
             <button
               onClick={() => handleRate(1)}
-              className="group p-3 rounded-xl border border-rose-200 dark:border-rose-900/60 bg-white dark:bg-zinc-900 hover:bg-rose-50 dark:hover:bg-rose-950/40 text-rose-700 dark:text-rose-300 transition-all flex flex-col items-center justify-center shadow-xs active:scale-95"
+              className="group p-2 sm:p-3 rounded-xl border border-rose-200 dark:border-rose-900/60 bg-white dark:bg-zinc-900 hover:bg-rose-50 dark:hover:bg-rose-950/40 text-rose-700 dark:text-rose-300 transition-all flex flex-col items-center justify-center shadow-xs active:scale-95 min-h-[50px]"
             >
               <div className="text-xs font-semibold flex items-center gap-1">
                 <span>Forgot</span>
-                <kbd className="text-[10px] px-1 py-0.2 rounded bg-rose-100 dark:bg-rose-900/60 font-mono">1</kbd>
+                <kbd className="hidden sm:inline text-[10px] px-1 py-0.2 rounded bg-rose-100 dark:bg-rose-900/60 font-mono">1</kbd>
               </div>
-              <span className="text-[11px] text-rose-500/80 font-mono mt-0.5">
+              <span className="text-[10px] sm:text-[11px] text-rose-500/80 font-mono mt-0.5">
                 {intervalPreviews?.[1] || '<10m'}
               </span>
             </button>
@@ -351,13 +351,13 @@ export const StudySession: React.FC<StudySessionProps> = ({
             {/* Rating 2: Hard */}
             <button
               onClick={() => handleRate(2)}
-              className="group p-3 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-white dark:bg-zinc-900 hover:bg-amber-50 dark:hover:bg-amber-950/40 text-amber-700 dark:text-amber-300 transition-all flex flex-col items-center justify-center shadow-xs active:scale-95"
+              className="group p-2 sm:p-3 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-white dark:bg-zinc-900 hover:bg-amber-50 dark:hover:bg-amber-950/40 text-amber-700 dark:text-amber-300 transition-all flex flex-col items-center justify-center shadow-xs active:scale-95 min-h-[50px]"
             >
               <div className="text-xs font-semibold flex items-center gap-1">
                 <span>Hard</span>
-                <kbd className="text-[10px] px-1 py-0.2 rounded bg-amber-100 dark:bg-amber-900/60 font-mono">2</kbd>
+                <kbd className="hidden sm:inline text-[10px] px-1 py-0.2 rounded bg-amber-100 dark:bg-amber-900/60 font-mono">2</kbd>
               </div>
-              <span className="text-[11px] text-amber-500/80 font-mono mt-0.5">
+              <span className="text-[10px] sm:text-[11px] text-amber-500/80 font-mono mt-0.5">
                 {intervalPreviews?.[2] || '1d'}
               </span>
             </button>
@@ -365,13 +365,13 @@ export const StudySession: React.FC<StudySessionProps> = ({
             {/* Rating 3: Good */}
             <button
               onClick={() => handleRate(3)}
-              className="group p-3 rounded-xl border border-blue-200 dark:border-blue-900/60 bg-white dark:bg-zinc-900 hover:bg-blue-50 dark:hover:bg-blue-950/40 text-blue-700 dark:text-blue-300 transition-all flex flex-col items-center justify-center shadow-xs active:scale-95"
+              className="group p-2 sm:p-3 rounded-xl border border-blue-200 dark:border-blue-900/60 bg-white dark:bg-zinc-900 hover:bg-blue-50 dark:hover:bg-blue-950/40 text-blue-700 dark:text-blue-300 transition-all flex flex-col items-center justify-center shadow-xs active:scale-95 min-h-[50px]"
             >
               <div className="text-xs font-semibold flex items-center gap-1">
                 <span>Good</span>
-                <kbd className="text-[10px] px-1 py-0.2 rounded bg-blue-100 dark:bg-blue-900/60 font-mono">3</kbd>
+                <kbd className="hidden sm:inline text-[10px] px-1 py-0.2 rounded bg-blue-100 dark:bg-blue-900/60 font-mono">3</kbd>
               </div>
-              <span className="text-[11px] text-blue-500/80 font-mono mt-0.5">
+              <span className="text-[10px] sm:text-[11px] text-blue-500/80 font-mono mt-0.5">
                 {intervalPreviews?.[3] || '3d'}
               </span>
             </button>
@@ -379,13 +379,13 @@ export const StudySession: React.FC<StudySessionProps> = ({
             {/* Rating 4: Easy */}
             <button
               onClick={() => handleRate(4)}
-              className="group p-3 rounded-xl border border-emerald-200 dark:border-emerald-900/60 bg-white dark:bg-zinc-900 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 transition-all flex flex-col items-center justify-center shadow-xs active:scale-95"
+              className="group p-2 sm:p-3 rounded-xl border border-emerald-200 dark:border-emerald-900/60 bg-white dark:bg-zinc-900 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 transition-all flex flex-col items-center justify-center shadow-xs active:scale-95 min-h-[50px]"
             >
               <div className="text-xs font-semibold flex items-center gap-1">
                 <span>Easy</span>
-                <kbd className="text-[10px] px-1 py-0.2 rounded bg-emerald-100 dark:bg-emerald-900/60 font-mono">4</kbd>
+                <kbd className="hidden sm:inline text-[10px] px-1 py-0.2 rounded bg-emerald-100 dark:bg-emerald-900/60 font-mono">4</kbd>
               </div>
-              <span className="text-[11px] text-emerald-500/80 font-mono mt-0.5">
+              <span className="text-[10px] sm:text-[11px] text-emerald-500/80 font-mono mt-0.5">
                 {intervalPreviews?.[4] || '6d'}
               </span>
             </button>
@@ -396,10 +396,10 @@ export const StudySession: React.FC<StudySessionProps> = ({
               sounds.playFlip();
               setIsFlipped(true);
             }}
-            className="px-8 py-3 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm shadow-sm hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all flex items-center gap-2 active:scale-98"
+            className="w-full sm:w-auto px-8 py-3.5 sm:py-3 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm shadow-sm hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all flex items-center justify-center gap-2 active:scale-98 min-h-[48px]"
           >
             <span>Show Answer</span>
-            <kbd className="text-[11px] px-1.5 py-0.5 bg-zinc-800 dark:bg-zinc-200 rounded font-mono text-zinc-300 dark:text-zinc-700">Space</kbd>
+            <kbd className="hidden sm:inline text-[11px] px-1.5 py-0.5 bg-zinc-800 dark:bg-zinc-200 rounded font-mono text-zinc-300 dark:text-zinc-700">Space</kbd>
           </button>
         )}
       </div>

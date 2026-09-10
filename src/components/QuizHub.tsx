@@ -706,12 +706,12 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         </div>
 
         {/* Configuration Card */}
-        <div className="max-w-2xl mx-auto rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 p-6 sm:p-8 shadow-xs space-y-6">
+        <div className="max-w-2xl mx-auto rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 p-4 sm:p-6 lg:p-8 shadow-xs space-y-6">
           {/* Category Multi-Select Grid */}
           <div>
             <div className="flex items-center justify-between gap-2 mb-2.5">
               <label className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Select Quiz Categories ({selectedDeckIds.length} of {decks.length} selected)
+                Select Categories ({selectedDeckIds.length} of {decks.length})
               </label>
               <div className="flex items-center gap-2">
                 <button
@@ -741,7 +741,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-3">
               {decks.map((deck) => {
                 const isSelected = selectedDeckIds.includes(deck.id);
                 const deckCardsCount = cards.filter((c) => c.deckId === deck.id).length;
@@ -758,15 +758,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                       setSelectedDeckIds(next);
                       setCookie("flashfire_quiz_categories", JSON.stringify(next), 365);
                     }}
-                    className={`p-3.5 rounded-xl border text-left transition-all flex items-center justify-between group cursor-pointer ${
+                    className={`p-3 sm:p-3.5 rounded-xl border text-left transition-all flex items-center justify-between group cursor-pointer min-h-[50px] ${
                       isSelected
                         ? "bg-zinc-900 dark:bg-zinc-100 border-zinc-900 dark:border-zinc-100 text-white dark:text-zinc-900 shadow-xs"
                         : "bg-white dark:bg-zinc-800/80 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 dark:hover:border-zinc-600"
                     }`}
                   >
-                    <div className="flex items-center gap-3 min-w-0">
+                    <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
                       <div
-                        className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${
+                        className={`w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${
                           isSelected
                             ? "bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-900"
                             : "bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 group-hover:text-zinc-900 dark:group-hover:text-zinc-100"
@@ -810,7 +810,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             <label className="block text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-2">
               Number of Questions
             </label>
-            <div className="grid grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
               {[5, 10, 20, -1].map((cnt) => (
                 <button
                   key={cnt}
@@ -820,7 +820,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     setQuestionCount(cnt);
                     setCookie("flashfire_quiz_count", String(cnt), 365);
                   }}
-                  className={`py-2.5 rounded-xl border text-xs font-semibold transition-all cursor-pointer ${
+                  className={`py-2.5 sm:py-2.5 rounded-xl border text-xs font-semibold transition-all cursor-pointer min-h-[44px] ${
                     questionCount === cnt
                       ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 border-zinc-900 dark:border-zinc-100 shadow-xs"
                       : "bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400"
@@ -865,9 +865,9 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             </div>
 
             {isTimed && (
-              <div className="flex items-center justify-between gap-3 pt-1">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-1">
                 <span className="text-xs text-zinc-500 font-medium">Timer duration:</span>
-                <div className="grid grid-cols-4 gap-1.5">
+                <div className="grid grid-cols-4 gap-1.5 w-full sm:w-auto">
                   {[15, 30, 45, 60].map((sec) => (
                     <button
                       key={sec}
@@ -877,9 +877,9 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                         setTimerSeconds(sec);
                         setCookie("flashfire_quiz_seconds", String(sec), 365);
                       }}
-                      className={`px-3 py-1.5 rounded-lg border text-xs font-mono font-semibold transition-all cursor-pointer ${
+                      className={`px-3 py-1.5 rounded-lg border text-xs font-mono font-semibold transition-all cursor-pointer text-center ${
                         timerSeconds === sec
-                          ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 border-zinc-900 dark:border-zinc-100"
+                          ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 border-zinc-900 dark:border-zinc-100 shadow-xs"
                           : "bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400"
                       }`}
                     >
@@ -975,30 +975,30 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         </div>
 
         {/* Score Cards */}
-        <div className="grid grid-cols-3 gap-3 mb-8">
-          <div className="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-center shadow-xs">
-            <div className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
+        <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-6 sm:mb-8">
+          <div className="p-3 sm:p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-center shadow-xs">
+            <div className="text-xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-100">
               {score} / {questions.length}
             </div>
-            <div className="text-xs text-zinc-400 mt-1">Total Score</div>
+            <div className="text-[11px] sm:text-xs text-zinc-400 mt-1">Total Score</div>
           </div>
-          <div className="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-center shadow-xs">
-            <div className="text-3xl font-bold text-emerald-600 dark:text-emerald-400">
+          <div className="p-3 sm:p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-center shadow-xs">
+            <div className="text-xl sm:text-3xl font-bold text-emerald-600 dark:text-emerald-400">
               {accuracy}%
             </div>
-            <div className="text-xs text-zinc-400 mt-1">Accuracy</div>
+            <div className="text-[11px] sm:text-xs text-zinc-400 mt-1">Accuracy</div>
           </div>
-          <div className="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-center shadow-xs">
-            <div className="text-3xl font-bold text-amber-500">
+          <div className="p-3 sm:p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-center shadow-xs">
+            <div className="text-xl sm:text-3xl font-bold text-amber-500">
               {streak}
             </div>
-            <div className="text-xs text-zinc-400 mt-1">Max Streak</div>
+            <div className="text-[11px] sm:text-xs text-zinc-400 mt-1">Max Streak</div>
           </div>
         </div>
 
         {/* Missed Questions Recovery Banner */}
         {missedQuestions.length > 0 && (
-          <div className="mb-8 p-5 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-left shadow-xs">
+          <div className="mb-6 sm:mb-8 p-4 sm:p-5 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-left shadow-xs">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div className="flex items-start gap-3">
                 <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
@@ -1017,7 +1017,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 </div>
               </div>
 
-              <div className="flex items-center gap-2 shrink-0">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 shrink-0 w-full sm:w-auto">
                 {onStartStudy && (
                   <button
                     onClick={() => {
@@ -1036,7 +1036,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                         };
                       onStartStudy(fallbackDeck, "srs", missedCards, `Review ${missedCards.length} Quiz Mistakes`);
                     }}
-                    className="px-4 py-2 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold text-xs hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center gap-1.5 shadow-xs cursor-pointer"
+                    className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold text-xs hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center justify-center gap-1.5 shadow-xs cursor-pointer min-h-[44px]"
                   >
                     <Sparkles className="w-3.5 h-3.5 text-amber-400" />
                     Review in 3D Cards
@@ -1044,7 +1044,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 )}
                 <button
                   onClick={handleSaveMissedAsDeck}
-                  className="px-3.5 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-medium text-xs hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors flex items-center gap-1.5 cursor-pointer"
+                  className="w-full sm:w-auto px-3.5 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-medium text-xs hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors flex items-center justify-center gap-1.5 cursor-pointer min-h-[44px]"
                 >
                   <FolderPlus className="w-3.5 h-3.5" />
                   Save as Deck
@@ -1062,10 +1062,10 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         )}
 
         {/* Action Controls */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2.5 sm:gap-3 mb-8 sm:mb-10 w-full">
           <button
             onClick={() => startQuiz()}
-            className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2 shadow-xs cursor-pointer"
+            className="w-full sm:w-auto px-6 py-3 sm:py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2 shadow-xs cursor-pointer min-h-[46px]"
           >
             <RotateCcw className="w-4 h-4" />
             Try Again
@@ -1075,14 +1075,14 @@ export const QuizHub: React.FC<QuizHubProps> = ({
               sounds.playSelect();
               setIsQuizActive(false);
             }}
-            className="w-full sm:w-auto px-6 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-medium text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+            className="w-full sm:w-auto px-6 py-3 sm:py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-medium text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors flex items-center justify-center cursor-pointer min-h-[46px]"
           >
             Configure New Quiz
           </button>
           {onExit && (
             <button
               onClick={onExit}
-              className="w-full sm:w-auto px-6 py-2.5 rounded-xl text-zinc-500 hover:text-zinc-900 text-sm font-medium transition-colors cursor-pointer"
+              className="w-full sm:w-auto px-6 py-3 sm:py-2.5 rounded-xl text-zinc-500 hover:text-zinc-900 text-sm font-medium transition-colors cursor-pointer flex items-center justify-center min-h-[46px]"
             >
               Exit to Decks
             </button>
@@ -1242,20 +1242,20 @@ export const QuizHub: React.FC<QuizHubProps> = ({
 
   // ================= 3. ACTIVE QUESTION SCREEN =================
   return (
-    <div className="max-w-2xl mx-auto px-4 py-6">
+    <div className="max-w-2xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
       {/* Top Header Bar */}
-      <div className="flex items-center justify-between gap-4 mb-4">
+      <div className="flex flex-wrap sm:flex-nowrap items-center justify-between gap-2.5 sm:gap-4 mb-3 sm:mb-4">
         <button
           onClick={() => {
             sounds.playSelect();
             setIsQuizActive(false);
           }}
-          className="text-xs font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors flex items-center gap-1.5 cursor-pointer"
+          className="text-xs font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors flex items-center gap-1.5 cursor-pointer min-h-[36px]"
         >
           ← Quit Quiz
         </button>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
           {/* Streak Counter */}
           {streak > 1 && (
             <div className="flex items-center gap-1 text-xs font-semibold text-amber-500 bg-amber-50 dark:bg-amber-950/40 px-2.5 py-1 rounded-full border border-amber-200 dark:border-amber-800">
@@ -1267,7 +1267,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           {/* Timed Circular / Glowing Progress Countdown */}
           {isTimed && (
             <div
-              className={`flex items-center gap-1.5 px-3 py-1 rounded-full border text-xs font-mono font-semibold shadow-xs transition-colors ${
+              className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full border text-xs font-mono font-semibold shadow-xs transition-colors ${
                 timeLeft <= 5
                   ? "bg-rose-50 text-rose-600 border-rose-300 dark:bg-rose-950/50 dark:border-rose-800 animate-pulse"
                   : timeLeft <= 10
@@ -1309,7 +1309,6 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             Score: {score}
           </div>
 
-
           <span className="text-xs font-mono text-zinc-400">
             {currentIndex + 1}/{questions.length}
           </span>
@@ -1317,7 +1316,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       </div>
 
       {/* Progress Bar */}
-      <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden mb-6">
+      <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden mb-4 sm:mb-6">
         <div
           className="h-full bg-zinc-900 dark:bg-zinc-100 transition-all duration-300"
           style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
@@ -1325,7 +1324,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       </div>
 
       {/* Question Card */}
-      <div className="p-6 sm:p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 shadow-sm mb-6">
+      <div className="p-4 sm:p-6 md:p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 shadow-sm mb-6">
         <div className="flex items-center justify-between gap-2 mb-2">
           <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400 flex items-center gap-1.5">
             <DeckIcon deckId={currentQ?.card.deckId || ""} className="w-3.5 h-3.5" />
@@ -1339,13 +1338,13 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           )}
         </div>
 
-        <div className="text-lg sm:text-xl font-medium text-zinc-900 dark:text-zinc-100 leading-relaxed mb-4">
+        <div className="text-base sm:text-lg md:text-xl font-medium text-zinc-900 dark:text-zinc-100 leading-relaxed mb-4">
           {currentQ && <FormattedText text={currentQ.prompt} />}
         </div>
 
         {/* Code Snippet View */}
         {currentQ?.card.codeSnippet && (
-          <div className="mb-6">
+          <div className="mb-5 sm:mb-6 overflow-x-auto">
             <CodeBlockView
               code={currentQ.card.codeSnippet}
               language={currentQ.card.codeLanguage || "pseudocode"}
@@ -1378,7 +1377,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 key={opt.id}
                 disabled={isAnswered}
                 onClick={() => handleSelectOption(opt.id)}
-                className={`p-3.5 rounded-xl border text-sm text-left transition-all flex items-center justify-between shadow-xs cursor-pointer ${btnStyle}`}
+                className={`p-3 sm:p-3.5 rounded-xl border text-sm text-left transition-all flex items-center justify-between shadow-xs cursor-pointer min-h-[48px] ${btnStyle}`}
               >
                 <div className="flex items-center gap-3">
                   <span className="w-6 h-6 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-mono font-medium flex items-center justify-center shrink-0">
@@ -1405,21 +1404,21 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             <motion.div
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 space-y-4"
+              className="mt-5 sm:mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 space-y-4"
             >
-              {/* Recall Self-Rating Controls (Requirement 12: Forgot / Hard / Good / Easy) */}
-              <div className="p-3.5 rounded-xl bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700/80 space-y-2">
+              {/* Recall Self-Rating Controls */}
+              <div className="p-3 sm:p-3.5 rounded-xl bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700/80 space-y-2">
                 <div className="flex items-center justify-between text-xs">
                   <span className="font-semibold text-zinc-800 dark:text-zinc-200 flex items-center gap-1.5">
                     <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                    Rate your recall for this question:
+                    Rate recall:
                   </span>
-                  <span className="text-[11px] text-zinc-400">
+                  <span className="hidden sm:inline text-[11px] text-zinc-400">
                     Keys <kbd className="px-1 py-0.2 bg-zinc-200 dark:bg-zinc-700 rounded font-mono text-[10px]">1</kbd>–<kbd className="px-1 py-0.2 bg-zinc-200 dark:bg-zinc-700 rounded font-mono text-[10px]">4</kbd>
                   </span>
                 </div>
 
-                <div className="grid grid-cols-4 gap-2">
+                <div className="grid grid-cols-4 gap-1.5 sm:gap-2">
                   <button
                     type="button"
                     onClick={() => handleUserSelfRate(1)}
@@ -1619,13 +1618,13 @@ export const QuizHub: React.FC<QuizHubProps> = ({
               </div>
 
               {/* Navigation & Next Button */}
-              <div className="pt-2 flex items-center justify-between">
-                <span className="text-xs text-zinc-400">
+              <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                <span className="hidden sm:inline text-xs text-zinc-400">
                   Press <kbd className="px-1.5 py-0.5 bg-zinc-100 dark:bg-zinc-800 rounded border border-zinc-200 dark:border-zinc-700 font-mono text-[10px]">Space</kbd> or <kbd className="px-1.5 py-0.5 bg-zinc-100 dark:bg-zinc-800 rounded border border-zinc-200 dark:border-zinc-700 font-mono text-[10px]">Enter</kbd> to continue
                 </span>
                 <button
                   onClick={handleNext}
-                  className="px-6 py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center gap-1.5 shadow-xs cursor-pointer"
+                  className="w-full sm:w-auto px-6 py-3 sm:py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex items-center justify-center gap-1.5 shadow-xs cursor-pointer min-h-[48px]"
                 >
                   <span>{currentIndex + 1 < questions.length ? "Next Question" : "View Summary"}</span>
                   <ArrowRight className="w-4 h-4" />

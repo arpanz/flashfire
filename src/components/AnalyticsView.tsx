@@ -262,27 +262,29 @@ export const AnalyticsView: React.FC<AnalyticsViewProps> = ({ stats, cards, acti
             7-Day Review Forecast
           </h3>
 
-          <div className="grid grid-cols-7 gap-2 text-center">
-            {forecast.map((f, i) => (
-              <div
-                key={f.dayName}
-                className={`p-3 rounded-xl border flex flex-col justify-between h-32 ${
-                  i === 0
-                    ? 'border-zinc-900 dark:border-zinc-100 bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 shadow-sm'
-                    : 'border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/50 text-zinc-800 dark:text-zinc-200'
-                }`}
-              >
-                <div className="text-[11px] font-semibold uppercase tracking-wider opacity-80">
-                  {f.dayName}
+          <div className="overflow-x-auto pb-2 no-scrollbar">
+            <div className="grid grid-cols-7 gap-1.5 sm:gap-2 text-center min-w-[340px]">
+              {forecast.map((f, i) => (
+                <div
+                  key={f.dayName}
+                  className={`p-2 sm:p-3 rounded-xl border flex flex-col justify-between h-28 sm:h-32 ${
+                    i === 0
+                      ? 'border-zinc-900 dark:border-zinc-100 bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 shadow-sm'
+                      : 'border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/50 text-zinc-800 dark:text-zinc-200'
+                  }`}
+                >
+                  <div className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider opacity-80">
+                    {f.dayName}
+                  </div>
+                  <div className="text-xl sm:text-2xl font-bold my-auto">
+                    {f.dueCount}
+                  </div>
+                  <div className="text-[9px] sm:text-[10px] opacity-70">
+                    {f.dateStr}
+                  </div>
                 </div>
-                <div className="text-2xl font-bold my-auto">
-                  {f.dueCount}
-                </div>
-                <div className="text-[10px] opacity-70">
-                  {f.dateStr}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

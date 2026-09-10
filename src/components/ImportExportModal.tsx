@@ -115,31 +115,31 @@ export const ImportExportModal: React.FC<ImportExportModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4 overflow-y-auto">
       <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.95 }}
-        className="w-full max-w-xl bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 20 }}
+        className="w-full max-w-xl bg-white dark:bg-zinc-900 rounded-t-3xl sm:rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden max-h-[92vh] flex flex-col my-0 sm:my-8 pb-safe sm:pb-0"
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-zinc-100 dark:border-zinc-800">
-          <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+        <div className="flex items-center justify-between px-4 sm:px-6 py-3.5 sm:py-4 border-b border-zinc-100 dark:border-zinc-800 shrink-0">
+          <h3 className="text-sm sm:text-base font-semibold text-zinc-900 dark:text-zinc-100">
             Import & Export Data
           </h3>
-          <button onClick={onClose} className="text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200">
+          <button onClick={onClose} className="p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 cursor-pointer">
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Tab pills */}
-        <div className="flex px-6 pt-4 gap-2 border-b border-zinc-100 dark:border-zinc-800 pb-3">
+        <div className="flex px-4 sm:px-6 pt-3 sm:pt-4 gap-2 border-b border-zinc-100 dark:border-zinc-800 pb-3 overflow-x-auto no-scrollbar shrink-0">
           <button
             onClick={() => {
               setActiveTab('export');
               setStatusMessage(null);
             }}
-            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-colors ${
+            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-colors cursor-pointer shrink-0 ${
               activeTab === 'export'
                 ? 'bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900'
                 : 'text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800'
@@ -152,7 +152,7 @@ export const ImportExportModal: React.FC<ImportExportModalProps> = ({
               setActiveTab('import-json');
               setStatusMessage(null);
             }}
-            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-colors ${
+            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-colors cursor-pointer shrink-0 ${
               activeTab === 'import-json'
                 ? 'bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900'
                 : 'text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800'
@@ -165,7 +165,7 @@ export const ImportExportModal: React.FC<ImportExportModalProps> = ({
               setActiveTab('import-csv');
               setStatusMessage(null);
             }}
-            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-colors ${
+            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-colors cursor-pointer shrink-0 ${
               activeTab === 'import-csv'
                 ? 'bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900'
                 : 'text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800'
@@ -176,7 +176,7 @@ export const ImportExportModal: React.FC<ImportExportModalProps> = ({
         </div>
 
         {/* Content */}
-        <div className="p-6 space-y-4">
+        <div className="p-4 sm:p-6 space-y-4 overflow-y-auto flex-1">
           {statusMessage && (
             <div
               className={`p-3 rounded-xl text-xs font-medium flex items-center gap-2 ${

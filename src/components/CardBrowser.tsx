@@ -126,7 +126,7 @@ export const CardBrowser: React.FC<CardBrowserProps> = ({
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search questions, answers, tags..."
-            className="w-full pl-10 pr-4 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-1 focus:ring-zinc-900 shadow-xs"
+            className="w-full pl-10 pr-4 py-2.5 sm:py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-base sm:text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-1 focus:ring-zinc-900 shadow-xs"
           />
         </div>
 
@@ -134,7 +134,7 @@ export const CardBrowser: React.FC<CardBrowserProps> = ({
         <select
           value={selectedDeckFilter}
           onChange={(e) => setSelectedDeckFilter(e.target.value)}
-          className="w-full sm:w-48 px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none shadow-xs"
+          className="w-full sm:w-48 px-3 py-2.5 sm:py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-base sm:text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none shadow-xs"
         >
           <option value="all">All Decks ({cards.length})</option>
           {decks.map((d) => (
@@ -148,7 +148,7 @@ export const CardBrowser: React.FC<CardBrowserProps> = ({
         <select
           value={selectedStateFilter}
           onChange={(e) => setSelectedStateFilter(e.target.value)}
-          className="w-full sm:w-36 px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none shadow-xs"
+          className="w-full sm:w-36 px-3 py-2.5 sm:py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-base sm:text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none shadow-xs"
         >
           <option value="all">All States</option>
           <option value="new">New</option>
@@ -222,32 +222,32 @@ export const CardBrowser: React.FC<CardBrowserProps> = ({
                   </div>
 
                   {/* Right: Actions */}
-                  <div className="flex items-center gap-2 shrink-0 self-end md:self-center">
+                  <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 self-end md:self-center">
                     <button
                       onClick={() => speak(card.front)}
                       title="Speak front"
-                      className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors"
+                      className="p-2 min-h-[38px] min-w-[38px] flex items-center justify-center rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors"
                     >
                       <Volume2 className="w-4 h-4" />
                     </button>
                     <button
                       onClick={() => handleResetSRS(card)}
                       title="Reset SRS progress to New"
-                      className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors"
+                      className="p-2 min-h-[38px] min-w-[38px] flex items-center justify-center rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors"
                     >
                       <RotateCcw className="w-4 h-4" />
                     </button>
                     <button
                       onClick={() => onEditCard(card)}
                       title="Edit card"
-                      className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors"
+                      className="p-2 min-h-[38px] min-w-[38px] flex items-center justify-center rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors"
                     >
                       <Edit className="w-4 h-4" />
                     </button>
                     <button
                       onClick={() => handleDelete(card.id)}
                       title="Delete card"
-                      className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-rose-50 dark:hover:bg-rose-950/40 text-zinc-500 hover:text-rose-600 transition-colors"
+                      className="p-2 min-h-[38px] min-w-[38px] flex items-center justify-center rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-rose-50 dark:hover:bg-rose-950/40 text-zinc-500 hover:text-rose-600 transition-colors"
                     >
                       <Trash2 className="w-4 h-4" />
                     </button>

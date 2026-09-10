@@ -223,7 +223,7 @@ export const DeckManager: React.FC<DeckManagerProps> = ({
                   onClick={() => onStartStudy(deck, 'srs')}
                   title="Spaced Repetition Study"
                   disabled={deckCards.length === 0}
-                  className="p-2 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex flex-col items-center justify-center gap-1 disabled:opacity-40"
+                  className="p-2 min-h-[44px] rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors flex flex-col items-center justify-center gap-1 disabled:opacity-40"
                 >
                   <Play className="w-3.5 h-3.5 fill-current" />
                   <span className="text-[10px]">Study</span>
@@ -234,7 +234,7 @@ export const DeckManager: React.FC<DeckManagerProps> = ({
                   onClick={() => onStartStudy(deck, 'cram')}
                   title="Cram All Cards"
                   disabled={deckCards.length === 0}
-                  className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-200 transition-colors flex flex-col items-center justify-center gap-1 disabled:opacity-40"
+                  className="p-2 min-h-[44px] rounded-xl border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-200 transition-colors flex flex-col items-center justify-center gap-1 disabled:opacity-40"
                 >
                   <Zap className="w-3.5 h-3.5" />
                   <span className="text-[10px]">Cram</span>
@@ -245,7 +245,7 @@ export const DeckManager: React.FC<DeckManagerProps> = ({
                   onClick={() => onStartMatch(deck)}
                   title="Speed Match Game"
                   disabled={deckCards.length === 0}
-                  className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-200 transition-colors flex flex-col items-center justify-center gap-1 disabled:opacity-40"
+                  className="p-2 min-h-[44px] rounded-xl border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-200 transition-colors flex flex-col items-center justify-center gap-1 disabled:opacity-40"
                 >
                   <Gamepad2 className="w-3.5 h-3.5" />
                   <span className="text-[10px]">Match</span>
@@ -256,7 +256,7 @@ export const DeckManager: React.FC<DeckManagerProps> = ({
                   onClick={() => onStartQuiz(deck)}
                   title="Multiple Choice Quiz"
                   disabled={deckCards.length === 0}
-                  className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-200 transition-colors flex flex-col items-center justify-center gap-1 disabled:opacity-40"
+                  className="p-2 min-h-[44px] rounded-xl border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-200 transition-colors flex flex-col items-center justify-center gap-1 disabled:opacity-40"
                 >
                   <ListOrdered className="w-3.5 h-3.5" />
                   <span className="text-[10px]">Quiz</span>
@@ -269,15 +269,27 @@ export const DeckManager: React.FC<DeckManagerProps> = ({
 
       {/* Create / Edit Deck Modal */}
       {isCreatingDeck && (
-        <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4">
-          <div className="w-full max-w-md bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 shadow-xl">
-            <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-              {editingDeck ? 'Edit Deck' : 'Create New Deck'}
-            </h3>
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4">
+          <div className="w-full max-w-md bg-white dark:bg-zinc-900 rounded-t-3xl sm:rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 shadow-2xl pb-safe sm:pb-6 max-h-[92vh] flex flex-col animate-in fade-in slide-in-from-bottom-6 sm:slide-in-from-bottom-0 duration-200">
+            {/* Mobile Sheet Drag Handle */}
+            <div className="w-10 h-1 rounded-full bg-zinc-300 dark:bg-zinc-700 mx-auto mb-4 sm:hidden shrink-0" />
 
-            <form onSubmit={handleSaveDeck} className="space-y-4">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                {editingDeck ? 'Edit Deck' : 'Create New Deck'}
+              </h3>
+              <button
+                type="button"
+                onClick={() => setIsCreatingDeck(false)}
+                className="p-1 rounded-lg text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors sm:hidden"
+              >
+                ✕
+              </button>
+            </div>
+
+            <form onSubmit={handleSaveDeck} className="space-y-4 overflow-y-auto no-scrollbar">
               <div className="flex gap-3">
-                <div className="w-16">
+                <div className="w-16 shrink-0">
                   <label className="block text-xs font-semibold uppercase text-zinc-500 mb-1">
                     Icon
                   </label>
@@ -285,11 +297,11 @@ export const DeckManager: React.FC<DeckManagerProps> = ({
                     type="text"
                     value={icon}
                     onChange={(e) => setIcon(e.target.value)}
-                    className="w-full text-center text-xl py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700"
+                    className="w-full text-center text-xl py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-1 focus:ring-zinc-900"
                     maxLength={2}
                   />
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <label className="block text-xs font-semibold uppercase text-zinc-500 mb-1">
                     Deck Title
                   </label>
@@ -298,7 +310,7 @@ export const DeckManager: React.FC<DeckManagerProps> = ({
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                     placeholder="e.g. Neuroscience, Spanish A1"
-                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-900 dark:text-zinc-100"
+                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-base sm:text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-1 focus:ring-zinc-900"
                     required
                   />
                 </div>
@@ -313,7 +325,7 @@ export const DeckManager: React.FC<DeckManagerProps> = ({
                   onChange={(e) => setDescription(e.target.value)}
                   rows={2}
                   placeholder="What is this deck about?"
-                  className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-900 dark:text-zinc-100"
+                  className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-base sm:text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-1 focus:ring-zinc-900"
                 />
               </div>
 
@@ -326,7 +338,7 @@ export const DeckManager: React.FC<DeckManagerProps> = ({
                   value={tagsInput}
                   onChange={(e) => setTagsInput(e.target.value)}
                   placeholder="Medicine, Exam, Anatomy"
-                  className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-900 dark:text-zinc-100"
+                  className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-base sm:text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-1 focus:ring-zinc-900"
                 />
               </div>
 
@@ -334,13 +346,13 @@ export const DeckManager: React.FC<DeckManagerProps> = ({
                 <button
                   type="button"
                   onClick={() => setIsCreatingDeck(false)}
-                  className="px-4 py-2 rounded-xl border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-600 dark:text-zinc-400"
+                  className="min-h-[44px] sm:min-h-0 px-4 py-2 rounded-xl border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-600 dark:text-zinc-400 font-medium hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-5 py-2 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium"
+                  className="min-h-[44px] sm:min-h-0 px-5 py-2 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors"
                 >
                   Save Deck
                 </button>

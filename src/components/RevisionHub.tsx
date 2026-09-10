@@ -279,25 +279,25 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-6 space-y-8">
+    <div className="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-6 space-y-6 sm:space-y-8">
       {/* Top Banner */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
         <div>
           <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-2.5">
-            <RotateCcw className="w-7 h-7 text-amber-500" />
+            <RotateCcw className="w-6 h-6 sm:w-7 sm:h-7 text-amber-500" />
             <span>Revision & Recall Hub</span>
           </h1>
-          <p className="text-zinc-500 dark:text-zinc-400 text-sm mt-1">
+          <p className="text-zinc-500 dark:text-zinc-400 text-xs sm:text-sm mt-1">
             Drill and re-test attempted questions filtered by retention confidence and syllabus module.
           </p>
         </div>
 
         {/* Action Drill Launchers */}
-        <div className="flex items-center gap-2.5 shrink-0">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-2.5 shrink-0 w-full sm:w-auto">
           <button
             onClick={handleDrillCards}
             disabled={filteredItems.length === 0}
-            className="px-4 py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-xs font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all flex items-center gap-2 disabled:opacity-40 shadow-xs cursor-pointer"
+            className="w-full sm:w-auto px-4 py-3 sm:py-2.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-xs font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all flex items-center justify-center gap-2 disabled:opacity-40 shadow-xs cursor-pointer min-h-[44px]"
           >
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
             <span>Drill in 3D Cards ({filteredItems.length})</span>
@@ -305,7 +305,7 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
           <button
             onClick={handleRetestQuiz}
             disabled={filteredItems.length === 0}
-            className="px-4 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 text-xs font-semibold hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-all flex items-center gap-2 disabled:opacity-40 shadow-xs cursor-pointer"
+            className="w-full sm:w-auto px-4 py-3 sm:py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 text-xs font-semibold hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-all flex items-center justify-center gap-2 disabled:opacity-40 shadow-xs cursor-pointer min-h-[44px]"
           >
             <Play className="w-3.5 h-3.5 fill-current text-blue-500" />
             <span>Retest in Quiz ({filteredItems.length})</span>
@@ -318,7 +318,7 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
         <label className="block text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-2.5">
           Filter by Retention Confidence
         </label>
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-2.5">
           {/* All Attempted */}
           <button
             type="button"
@@ -684,11 +684,11 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
                   <div className="text-[11px] font-medium text-zinc-400">
                     Update your recall confidence:
                   </div>
-                  <div className="grid grid-cols-4 gap-1.5 sm:w-80">
+                  <div className="grid grid-cols-4 gap-1.5 w-full sm:w-80">
                     <button
                       type="button"
                       onClick={() => handleInPlaceRate(card, 1)}
-                      className={`px-2 py-1 rounded-lg border text-xs font-semibold transition-all cursor-pointer ${
+                      className={`px-2 py-2 sm:py-1 rounded-lg border text-xs font-semibold transition-all cursor-pointer min-h-[38px] flex items-center justify-center ${
                         bucket === "forgot"
                           ? "bg-rose-600 text-white border-rose-600 shadow-2xs"
                           : "border-rose-200 dark:border-rose-900/60 text-rose-700 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40"
@@ -699,7 +699,7 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
                     <button
                       type="button"
                       onClick={() => handleInPlaceRate(card, 2)}
-                      className={`px-2 py-1 rounded-lg border text-xs font-semibold transition-all cursor-pointer ${
+                      className={`px-2 py-2 sm:py-1 rounded-lg border text-xs font-semibold transition-all cursor-pointer min-h-[38px] flex items-center justify-center ${
                         bucket === "hard"
                           ? "bg-amber-600 text-white border-amber-600 shadow-2xs"
                           : "border-amber-200 dark:border-amber-900/60 text-amber-700 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/40"
@@ -710,7 +710,7 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
                     <button
                       type="button"
                       onClick={() => handleInPlaceRate(card, 3)}
-                      className={`px-2 py-1 rounded-lg border text-xs font-semibold transition-all cursor-pointer ${
+                      className={`px-2 py-2 sm:py-1 rounded-lg border text-xs font-semibold transition-all cursor-pointer min-h-[38px] flex items-center justify-center ${
                         bucket === "good"
                           ? "bg-blue-600 text-white border-blue-600 shadow-2xs"
                           : "border-blue-200 dark:border-blue-900/60 text-blue-700 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40"
@@ -721,7 +721,7 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
                     <button
                       type="button"
                       onClick={() => handleInPlaceRate(card, 4)}
-                      className={`px-2 py-1 rounded-lg border text-xs font-semibold transition-all cursor-pointer ${
+                      className={`px-2 py-2 sm:py-1 rounded-lg border text-xs font-semibold transition-all cursor-pointer min-h-[38px] flex items-center justify-center ${
                         bucket === "easy"
                           ? "bg-emerald-600 text-white border-emerald-600 shadow-2xs"
                           : "border-emerald-200 dark:border-emerald-900/60 text-emerald-700 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40"
