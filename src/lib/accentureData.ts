@@ -4,7 +4,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-ms-office",
     "title": "MS Office & Productivity",
-    "description": "Word shortcuts, Excel formulas & charts, PowerPoint tools, and formatting mastery (135 Questions).",
+    "description": "Word shortcuts, Excel formulas & charts, PowerPoint tools, and formatting mastery (171 Questions).",
     "icon": "\ud83d\udcca",
     "color": "#2563eb",
     "tags": [
@@ -19,7 +19,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-networking",
     "title": "Computer Networks & Protocols",
-    "description": "OSI & TCP/IP layers, routing, switching, IP addressing, DNS, ports, and protocols (63 Questions).",
+    "description": "OSI & TCP/IP layers, routing, switching, IP addressing, DNS, ports, and protocols (88 Questions).",
     "icon": "\ud83c\udf10",
     "color": "#059669",
     "tags": [
@@ -34,7 +34,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-security",
     "title": "Cybersecurity & Defense",
-    "description": "Threat vectors, malware types, symmetric/asymmetric encryption, firewalls, and SSL/TLS (60 Questions).",
+    "description": "Threat vectors, malware types, symmetric/asymmetric encryption, firewalls, and SSL/TLS (74 Questions).",
     "icon": "\ud83d\udd12",
     "color": "#dc2626",
     "tags": [
@@ -49,7 +49,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-cloud",
     "title": "Cloud Computing & Virtualization",
-    "description": "IaaS, PaaS, SaaS models, hypervisors, elasticity, cloud security, and architecture (88 Questions).",
+    "description": "IaaS, PaaS, SaaS models, hypervisors, elasticity, cloud security, and architecture (94 Questions).",
     "icon": "\u2601\ufe0f",
     "color": "#0284c7",
     "tags": [
@@ -64,7 +64,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-pseudocode",
     "title": "Pseudocode & Algorithmic Logic",
-    "description": "Loop execution, conditional branching, bitwise operators, string manipulation, and tracing (121 Questions).",
+    "description": "Loop execution, conditional branching, bitwise operators, string manipulation, and tracing (133 Questions).",
     "icon": "\ud83d\udcbb",
     "color": "#7c3aed",
     "tags": [
@@ -75,6 +75,23 @@ export const ACCENTURE_DECKS: Deck[] = [
     ],
     "createdAt": 1788867077573,
     "updatedAt": 1788867077573
+  },
+  {
+    "id": "deck-web",
+    "title": "Web Technologies & Frontend",
+    "description": "HTML5 semantics, CSS layout & flexbox, JavaScript DOM manipulation, closures, and SQL (27 Questions).",
+    "icon": "\u26a1",
+    "color": "#0ea5e9",
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SQL",
+      "Frontend"
+    ],
+    "createdAt": 1788953477573,
+    "updatedAt": 1788953477573
   }
 ];
 
@@ -20683,7 +20700,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
   },
   {
     "id": "card-acc-453",
-    "deckId": "deck-pseudocode",
+    "deckId": "deck-web",
     "type": "mcq",
     "front": "What will be printed by `document.write` after appending the paragraph?",
     "back": "1",
@@ -20711,8 +20728,9 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       }
     ],
     "tags": [
-      "Pseudocode",
+      "Web",
       "JavaScript",
+      "DOM",
       "Set 2"
     ],
     "createdAt": 1715027180000,
@@ -20731,7 +20749,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
   },
   {
     "id": "card-acc-454",
-    "deckId": "deck-pseudocode",
+    "deckId": "deck-web",
     "type": "mcq",
     "front": "What happens on the page when the button is clicked?",
     "back": "Click is written on screen, button disappears",
@@ -20759,8 +20777,9 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       }
     ],
     "tags": [
-      "Pseudocode",
+      "Web",
       "JavaScript",
+      "DOM",
       "Set 2"
     ],
     "createdAt": 1715027240000,
@@ -20779,7 +20798,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
   },
   {
     "id": "card-acc-455",
-    "deckId": "deck-pseudocode",
+    "deckId": "deck-web",
     "type": "mcq",
     "front": "What data type is printed by `typeof val` for an HTML text input element?",
     "back": "string",
@@ -20807,8 +20826,9 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       }
     ],
     "tags": [
-      "Pseudocode",
+      "Web",
       "JavaScript",
+      "DOM",
       "Set 2"
     ],
     "createdAt": 1715027300000,
@@ -20827,7 +20847,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
   },
   {
     "id": "card-acc-456",
-    "deckId": "deck-pseudocode",
+    "deckId": "deck-web",
     "type": "mcq",
     "front": "What string will be displayed inside the `div` element?",
     "back": "3030",
@@ -20855,8 +20875,9 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       }
     ],
     "tags": [
-      "Pseudocode",
+      "Web",
       "JavaScript",
+      "DOM",
       "Set 2"
     ],
     "createdAt": 1715027360000,
@@ -21389,5 +21410,5549 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     },
     "codeSnippet": "function mystery(Integer n)\n    if (n <= 1)\n        return 1\n    else\n        return mystery(n - 1) + mystery(n - 2)\n    end if\nend function\n\nPrint mystery(4)",
     "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-468",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In which of the following applications can you NOT run a native spell check?",
+    "back": "Notepad",
+    "explanation": "MS Word, PowerPoint, and Excel provide an integrated spelling and grammar checking engine (invoked via `F7`). Traditional Windows Notepad is a basic text editor lacking spell-checking dictionaries.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "MS Word",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "MS PowerPoint",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "MS Excel",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Notepad",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "Spell Check & Proofing Tools",
+      "Set 3"
+    ],
+    "createdAt": 1715028080000,
+    "updatedAt": 1715028080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-469",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In MS Word, which keyboard shortcut key is used to indent a paragraph from the left margin?",
+    "back": "Ctrl + M",
+    "explanation": "`Ctrl + M` increases the paragraph's left indent by 0.5 inches. `Ctrl + Shift + M` decreases the indent. `Ctrl + I` toggles italic formatting, and `Ctrl + T` creates a hanging indent.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + M",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + I",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alt + M",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alt + I",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel Statistical Formulas (COUNTIF)",
+      "Set 3"
+    ],
+    "createdAt": 1715028140000,
+    "updatedAt": 1715028140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-470",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "**Which of the following selection options are included in MS Paint?**\n1. Rectangular Selection\n2. Free-Form Selection\n3. Circular Selection",
+    "back": "1 and 2 only",
+    "explanation": "MS Paint supports Rectangular Selection and Free-Form Selection. It does not have an elliptical or circular selection tool.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1 only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1 and 2 only",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "2 and 3 only",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1, 2, and 3",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel Lookup Formulas (VLOOKUP)",
+      "Set 3"
+    ],
+    "createdAt": 1715028200000,
+    "updatedAt": 1715028200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-471",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "**Consider the following statements regarding the Windows Snipping Tool:**\n1. It automatically saves screenshots without prompting the user.\n2. It captures screenshots only in rectangular form.\n3. It can capture screenshots in Free-Form, Rectangular, Window, and Full-Screen modes.\n**Which of the above statements is/are TRUE?**",
+    "back": "3 only",
+    "explanation": "Snipping Tool supports four capture modes: Free-form Snip, Rectangular Snip, Window Snip, and Full-screen Snip. By default, it opens the captured image in a preview canvas for user annotation and manual saving.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1 only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2 only",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3 only",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "1 and 3 only",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Word Navigation & Bookmarks",
+      "Set 3"
+    ],
+    "createdAt": 1715028260000,
+    "updatedAt": 1715028260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-472",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In MS Excel, which keyboard shortcut is used to apply the Scientific (Exponential) number format with two decimal places?",
+    "back": "Ctrl + Shift + ^",
+    "explanation": "- `Ctrl + Shift + ^` = Scientific / Exponential format (e.g., `2.50E+06`).\n  - `Ctrl + Shift + ~` = General format.\n  - `Ctrl + Shift + @` = Time format (`hh:mm AM/PM`).\n  - `Ctrl + Shift + #` = Date format (`dd-mmm-yy`).\n  - `Ctrl + Shift + $` = Currency format.\n  - `Ctrl + Shift + %` = Percentage format (without decimal places).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + Shift + ~",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + Shift + ^",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + Shift + @",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + Shift + #",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel Conditional Logic (IF & AND)",
+      "Set 3"
+    ],
+    "createdAt": 1715028320000,
+    "updatedAt": 1715028320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-473",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is Landscape in MS Word?",
+    "back": "Page Orientation",
+    "explanation": "In MS Word (under the Layout tab), Page Orientation has two modes: **Portrait** (vertical) and **Landscape** (horizontal).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Paper Size",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Page Orientation",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Margin Setting",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "View Layout",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS PowerPoint Slide Masters & Layouts",
+      "Set 3"
+    ],
+    "createdAt": 1715028380000,
+    "updatedAt": 1715028380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-474",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which feature in MS Word is used to land at or jump to a specific location within a document?",
+    "back": "Bookmark",
+    "explanation": "A Bookmark assigns a named anchor to a specific text selection or location in a Word document, allowing instant navigation via the \"Go To\" dialog (`Ctrl + G`) or hyperlinks.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Snapshot",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bookmark",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cross-Reference",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Track Changes",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Word Mail Merge",
+      "Set 3"
+    ],
+    "createdAt": 1715028440000,
+    "updatedAt": 1715028440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-475",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which of the following is NOT a recognized font style in MS Word?",
+    "back": "Manuscript",
+    "explanation": "MS Word defines four standard font styles: Regular, Bold, Italic, and Bold Italic. Manuscript is a font typeface/family, not a font style.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Bold",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Italic",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Regular",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manuscript",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel Text Functions (CONCATENATE)",
+      "Set 3"
+    ],
+    "createdAt": 1715028500000,
+    "updatedAt": 1715028500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-476",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which function key is used to rename a selected file or folder in Windows?",
+    "back": "F2",
+    "explanation": "`F2` activates inline renaming for the selected file, folder, or desktop icon.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "F1",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "F2",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "F4",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F5",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Paint & Graphics Tools",
+      "Set 3"
+    ],
+    "createdAt": 1715028560000,
+    "updatedAt": 1715028560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-477",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "When composing an email in Gmail, which feature is used to attach files that exceed the 25 MB file size limit?",
+    "back": "Insert files using Google Drive icon",
+    "explanation": "Standard direct email attachments are capped at 25 MB. Files larger than 25 MB are automatically uploaded or linked via Google Drive.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Attachment paperclip icon",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Insert files using Google Drive icon",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Insert photo icon",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Insert link icon",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "Gmail & Email Attachment Limits",
+      "Set 3"
+    ],
+    "createdAt": 1715028620000,
+    "updatedAt": 1715028620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-478",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which symbol is used on social media platforms to draw attention, categorize, and organize similar content?",
+    "back": "`#` (Hashtag)",
+    "explanation": "The `#` symbol creates a clickable hashtag that indexes and groups posts under a unified topic on social media networks.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`@` (At sign)",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`#` (Hashtag)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`$` (Dollar sign)",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`&` (Ampersand)",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Word Track Changes & Collaboration",
+      "Set 3"
+    ],
+    "createdAt": 1715028680000,
+    "updatedAt": 1715028680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-479",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "If a web URL pasted into an MS Word document is automatically converted into blue underlined text, how can you remove the hyperlink while keeping the text intact?",
+    "back": "Right-click and choose \"Remove Hyperlink\" (or select text and press `Ctrl + Shift + F9`)",
+    "explanation": "\"Remove Hyperlink\" strips the underlying clickable anchor target while preserving the literal text string. `Ctrl + Shift + F9` unlinks fields and hyperlinks.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Press Backspace",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Right-click and choose \"Remove Hyperlink\" (or select text and press `Ctrl + Shift + F9`)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Press `Ctrl + Z`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Change font color to black",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel Cell Referencing (Absolute vs Relative)",
+      "Set 3"
+    ],
+    "createdAt": 1715028740000,
+    "updatedAt": 1715028740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-480",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In MS Word, where can page numbers be inserted?",
+    "back": "In both Header and Footer",
+    "explanation": "MS Word supports page number insertion at the Top of Page (Header), Bottom of Page (Footer), Page Margins, or Current Position.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Only in Header",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Only in Footer",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "In both Header and Footer",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Only in Margins",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS PowerPoint Animation vs Transition",
+      "Set 3"
+    ],
+    "createdAt": 1715028800000,
+    "updatedAt": 1715028800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-481",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In MS Excel, which keyboard shortcut selects the entire active row?",
+    "back": "Shift + Space",
+    "explanation": "- `Shift + Space` = Select entire row.\n  - `Ctrl + Space` = Select entire column.\n  - `Ctrl + A` or `Ctrl + Shift + Space` = Select entire worksheet.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + Space",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Shift + Space",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Alt + Space",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + Shift + Space",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel Mathematical Formulas (MOD)",
+      "Set 3"
+    ],
+    "createdAt": 1715028860000,
+    "updatedAt": 1715028860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-482",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the default mouse pointer type during an active slide show presentation in MS PowerPoint?",
+    "back": "Arrow",
+    "explanation": "PowerPoint presentations default to the standard Arrow cursor. Presenters can switch to Pen (`Ctrl + P`) or Laser Pointer (`Ctrl + L`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Pen",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Arrow",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Laser Pointer",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Crosshair",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "Snipping Tool & Screen Capture",
+      "Set 3"
+    ],
+    "createdAt": 1715028920000,
+    "updatedAt": 1715028920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-483",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which icon or symbol in Windows settings indicates computer configuration/settings?",
+    "back": "Gear / Cog wheel",
+    "explanation": "The universal Windows icon for Settings and Control Preferences is a mechanical cog/gear.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Magnifying Glass",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gear / Cog wheel",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Folder icon",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Network globe",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Word Table of Contents Automation",
+      "Set 3"
+    ],
+    "createdAt": 1715028980000,
+    "updatedAt": 1715028980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715028980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-484",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "**Which statements regarding the Excel `VLOOKUP` function are TRUE?**\n1. It searches for a value in the leftmost column of the selected table array.\n2. It can search and retrieve values located in columns to the left of the lookup column.\n3. Setting the `range_lookup` parameter to `TRUE` specifies an approximate match search.",
+    "back": "1 and 3 only",
+    "explanation": "`VLOOKUP` searches exclusively down the leftmost column of the array and retrieves data from specified index columns to the right. When `range_lookup` is `TRUE`, it searches for an approximate match (largest value $\\le$ lookup value); when `FALSE`, it requires an exact match.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1 and 2 only",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1 and 3 only",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "2 and 3 only",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1, 2, and 3",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel Logical Functions (OR)",
+      "Set 3"
+    ],
+    "createdAt": 1715029040000,
+    "updatedAt": 1715029040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-485",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Given an Excel table with values in `A2:D6` where column A has sorted numbers `[31561, 54617, 57892, 63445, 70000]` and column B has project names `[\"Alpha\", \"Beta\", \"Indian Pacific\", \"Delta\", \"Omega\"]`. What is returned by `=VLOOKUP(60000, A2:D6, 2, TRUE)`?",
+    "back": "`Indian Pacific`",
+    "explanation": "Because `range_lookup` is `TRUE`, `VLOOKUP` seeks the largest value in column A that is less than or equal to `60000`. That value is `57892`. The corresponding column 2 entry is `\"Indian Pacific\"`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`Beta`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`Indian Pacific`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`Delta`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`#N/A`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel Text Extraction (LEFT/RIGHT/MID)",
+      "Set 3"
+    ],
+    "createdAt": 1715029100000,
+    "updatedAt": 1715029100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-486",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In MS Excel, cell `B3` contains `\"AB6444\"`. What is the result of `=LEFT(B3, LEN(B3) - 4)`?",
+    "back": "`\"AB\"`",
+    "explanation": "`LEN(\"AB6444\")` is 6. `6 - 4 = 2`. `=LEFT(\"AB6444\", 2)` extracts the first 2 characters from the left, which is `\"AB\"`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`\"6444\"`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`\"AB\"`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`\"AB6\"`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`\"A\"`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Word Section Breaks vs Page Breaks",
+      "Set 3"
+    ],
+    "createdAt": 1715029160000,
+    "updatedAt": 1715029160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-487",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In MS Excel, cells `D3:D9` contain `[100, 50, 150, 200, 100, 75, 25]`. If `=AND(D3 >= 75, D3 <= 200)` is copied down `E3:E9`, how many cells evaluate to `TRUE`?",
+    "back": "5",
+    "explanation": "The condition checks if $75 \\le x \\le 200$:\n  - $100 \\rightarrow$ True\n  - $50 \\rightarrow$ False ($< 75$)\n  - $150 \\rightarrow$ True\n  - $200 \\rightarrow$ True\n  - $100 \\rightarrow$ True\n  - $75 \\rightarrow$ True\n  - $25 \\rightarrow$ False ($< 75$)\n  Total `TRUE` count = 5.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "6",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS PowerPoint Rehearse Timings",
+      "Set 3"
+    ],
+    "createdAt": 1715029220000,
+    "updatedAt": 1715029220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-488",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which MS Word feature enables creating customized letters, notices, or envelopes for hundreds of individual recipients from an external data list?",
+    "back": "Mail Merge",
+    "explanation": "Mail Merge merges a static document template with a structured database (such as an Excel file) to dynamically produce personalized output per recipient.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Track Changes",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mail Merge",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Macros",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "AutoText",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel Error Types (#DIV/0!, #N/A, #VALUE!)",
+      "Set 3"
+    ],
+    "createdAt": 1715029280000,
+    "updatedAt": 1715029280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-489",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which MS Word feature records all insertions, deletions, edits, and formatting revisions made by collaborators?",
+    "back": "Track Changes",
+    "explanation": "Track Changes (`Ctrl + Shift + E`) marks additions with underlines and deletions with strikethroughs, logging author names and timestamps.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Compare",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Track Changes",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Document Inspector",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "AutoCorrect",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "Web Browser Cache & Cookie Management",
+      "Set 3"
+    ],
+    "createdAt": 1715029340000,
+    "updatedAt": 1715029340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-490",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which tool in MS Office copies formatting attributes (font, size, color, borders) from a source selection and applies them to a target selection?",
+    "back": "Format Painter",
+    "explanation": "Format Painter allows users to sample styling from one element and paint it onto another text block or cell.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Format Painter",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Style Gallery",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Clipboard",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "AutoFormat",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Word Format Painter",
+      "Set 3"
+    ],
+    "createdAt": 1715029400000,
+    "updatedAt": 1715029400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-491",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the rectangular intersection of a row and a column in an Excel worksheet called?",
+    "back": "Cell",
+    "explanation": "A cell is the fundamental unit for data storage in a spreadsheet, referenced by its column letter and row number (e.g., `B4`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Table",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cell",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Grid",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Block",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel Data Validation & Dropdowns",
+      "Set 3"
+    ],
+    "createdAt": 1715029460000,
+    "updatedAt": 1715029460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-492",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which feature in MS Excel hides rows that do not satisfy user-specified criteria while keeping qualifying rows visible?",
+    "back": "AutoFilter / Filter",
+    "explanation": "Excel's Filter tool filters rows dynamically based on cell values, text criteria, dates, or numeric thresholds.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Conditional Formatting",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "AutoFilter / Filter",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Data Validation",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sort",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS PowerPoint Presenter View",
+      "Set 3"
+    ],
+    "createdAt": 1715029520000,
+    "updatedAt": 1715029520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-493",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the purpose of the Slide Master in MS PowerPoint?",
+    "back": "It centrally controls default fonts, theme colors, layout placeholders, and background formatting across all presentation slides",
+    "explanation": "Changes made to the Slide Master automatically cascade down to every slide that uses that layout, ensuring visual consistency across the presentation.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "It deletes duplicate slides automatically",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "It centrally controls default fonts, theme colors, layout placeholders, and background formatting across all presentation slides",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "It converts slides into an MP4 video",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "It calculates transition durations",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "Cloud Storage Sync (OneDrive/Google Drive)",
+      "Set 3"
+    ],
+    "createdAt": 1715029580000,
+    "updatedAt": 1715029580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-494",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the fundamental difference between an Animation and a Transition in MS PowerPoint?",
+    "back": "Animations apply to individual objects (text, images, shapes) on a slide; Transitions control the visual effect when navigating between slides",
+    "explanation": "Transitions govern how a slide enters and exits the screen during a slide show. Animations govern how specific elements inside the slide enter, emphasize, or exit.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Animations occur between slides; Transitions apply to text inside slides",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Animations apply to individual objects (text, images, shapes) on a slide; Transitions control the visual effect when navigating between slides",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "There is no difference; they are interchangeable terms",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transitions require audio; Animations do not",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Word Find and Replace (Wildcards)",
+      "Set 3"
+    ],
+    "createdAt": 1715029640000,
+    "updatedAt": 1715029640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-495",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which keyboard shortcut starts an MS PowerPoint slide show from the very first slide?",
+    "back": "F5",
+    "explanation": "`F5` starts the slide show from slide 1. `Shift + F5` starts the slide show from the currently active slide.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "F2",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "F5",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Shift + F5",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F7",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel Pivot Tables & Aggregations",
+      "Set 3"
+    ],
+    "createdAt": 1715029700000,
+    "updatedAt": 1715029700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-496",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which shortcut key inserts a manual Page Break in MS Word to push subsequent content to the top of the next page?",
+    "back": "Ctrl + Enter",
+    "explanation": "`Ctrl + Enter` inserts a hard page break. `Shift + Enter` inserts a line break (soft return without starting a new paragraph). `Alt + Enter` is used in Excel to add a newline within a cell.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Alt + Enter",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + Enter",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Shift + Enter",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + Space",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "Email Protocols (IMAP vs POP3 vs SMTP)",
+      "Set 3"
+    ],
+    "createdAt": 1715029760000,
+    "updatedAt": 1715029760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-497",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel function counts ALL non-empty cells (containing numbers, text, logical values, or error codes) within a range?",
+    "back": "`COUNTA`",
+    "explanation": "`COUNT()` counts only cells with numeric data. `COUNTA()` (Count All) counts any cell that is not empty.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`COUNT`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`COUNTA`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`COUNTIF`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`COUNTBLANK`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS PowerPoint Custom Slide Shows",
+      "Set 3"
+    ],
+    "createdAt": 1715029820000,
+    "updatedAt": 1715029820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-498",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which network technology enables logical network separation and creates multiple isolated broadcast domains on the same physical switch hardware?",
+    "back": "VLAN (Virtual Local Area Network)",
+    "explanation": "VLANs (IEEE 802.1Q) partition a physical switch into distinct logical broadcast domains, ensuring traffic between departments remains isolated at Layer 2 without purchasing separate physical switches.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DHCP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "VLAN (Virtual Local Area Network)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "NAT",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "STP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Virtual Local Area Networks (VLAN)",
+      "Set 3"
+    ],
+    "createdAt": 1715029880000,
+    "updatedAt": 1715029880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-499",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol dynamically and automatically assigns IP addresses, subnet masks, default gateways, and DNS server addresses to client devices?",
+    "back": "DHCP (Dynamic Host Configuration Protocol)",
+    "explanation": "DHCP automates network parameter provisioning using the 4-step DORA handshake: **D**iscover, **O**ffer, **R**equest, and **A**cknowledgement over UDP ports 67 (server) and 68 (client).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "ARP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "DHCP (Dynamic Host Configuration Protocol)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ICMP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "BGP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Dynamic Host Configuration Protocol (DHCP)",
+      "Set 3"
+    ],
+    "createdAt": 1715029940000,
+    "updatedAt": 1715029940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715029940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-500",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol detects and disables redundant loop paths in an Ethernet switched network to prevent broadcast storms?",
+    "back": "Spanning Tree Protocol (STP)",
+    "explanation": "STP (IEEE 802.1D) computes a loop-free logical topology across switches by placing redundant switch ports into a blocking state, enabling automatic failover if an active trunk link fails.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "OSPF",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Spanning Tree Protocol (STP)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "RIP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "NAT",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "OSI Model Layer Encapsulation",
+      "Set 3"
+    ],
+    "createdAt": 1715030000000,
+    "updatedAt": 1715030000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-501",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which layer of the OSI 7-layer model is responsible for reliable end-to-end data transport, flow control, sequencing, and error retransmission?",
+    "back": "Transport Layer (Layer 4)",
+    "explanation": "Layer 4 hosts protocols like TCP and UDP. TCP guarantees reliable end-to-end byte stream delivery, segment ordering, window-based flow control, and checksum-based error recovery.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Network Layer (Layer 3)",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transport Layer (Layer 4)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Session Layer (Layer 5)",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Data Link Layer (Layer 2)",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Domain Name System (DNS) Port 53",
+      "Set 3"
+    ],
+    "createdAt": 1715030060000,
+    "updatedAt": 1715030060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-502",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which OSI layer handles logical addressing (IPv4/IPv6) and packet routing across intermediate networks?",
+    "back": "Network Layer",
+    "explanation": "Layer 3 is responsible for path determination, logical addressing, and forwarding packets between disparate subnets across routers.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Physical Layer",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Data Link Layer",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Network Layer",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transport Layer",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Subnetting & CIDR Calculation",
+      "Set 3"
+    ],
+    "createdAt": 1715030120000,
+    "updatedAt": 1715030120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-503",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "At which OSI layer do physical MAC addresses and Ethernet frames function?",
+    "back": "Data Link Layer (Layer 2)",
+    "explanation": "The Data Link Layer encapsulates packets into frames, handles node-to-node hop delivery over local physical media, and uses 48-bit MAC addresses.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Physical Layer (Layer 1)",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Data Link Layer (Layer 2)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Network Layer (Layer 3)",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Session Layer (Layer 5)",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Transmission Control Protocol (TCP) Flags",
+      "Set 3"
+    ],
+    "createdAt": 1715030180000,
+    "updatedAt": 1715030180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-504",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol resolves human-friendly domain names (e.g., `accenture.com`) to machine-routable IP addresses?",
+    "back": "DNS (Domain Name System)",
+    "explanation": "DNS maintains hierarchical distributed databases mapping domain names to IP addresses, operating primarily over UDP port 53.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DHCP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ARP",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DNS (Domain Name System)",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "SNMP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Network Address Translation (NAT / PAT)",
+      "Set 3"
+    ],
+    "createdAt": 1715030240000,
+    "updatedAt": 1715030240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-505",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Why is UDP preferred over TCP for streaming multimedia, video conferencing, and online gaming?",
+    "back": "UDP avoids connection handshake overhead and retransmission delays, prioritizing low latency",
+    "explanation": "TCP's retransmission of lost packets creates jitter and lag. UDP is connectionless and sends datagrams without acknowledgments, making it ideal for time-sensitive, loss-tolerant streams.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "UDP uses 256-bit encryption",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "UDP avoids connection handshake overhead and retransmission delays, prioritizing low latency",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "UDP guarantees delivery of all packets in order",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "UDP packets have larger payload capacities",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Spanning Tree Protocol (STP 802.1D)",
+      "Set 3"
+    ],
+    "createdAt": 1715030300000,
+    "updatedAt": 1715030300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-506",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol maps an already known IP address to a physical MAC address on a local Ethernet subnet?",
+    "back": "ARP (Address Resolution Protocol)",
+    "explanation": "When a sending node knows a destination IP on the local subnet but lacks its physical address, it sends an ARP Request broadcast to determine the associated Layer 2 MAC address.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DNS",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ARP (Address Resolution Protocol)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "RARP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ICMP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Routing Protocols (OSPF vs RIP)",
+      "Set 3"
+    ],
+    "createdAt": 1715030360000,
+    "updatedAt": 1715030360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-507",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "What is the bit length of an IPv4 address compared to an IPv6 address?",
+    "back": "IPv4 is 32 bits; IPv6 is 128 bits",
+    "explanation": "IPv4 addresses are 32 bits long (4 octets). IPv6 addresses are 128 bits long (16 bytes, formatted in hexadecimal).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IPv4 is 16 bits; IPv6 is 64 bits",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "IPv4 is 32 bits; IPv6 is 128 bits",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "IPv4 is 64 bits; IPv6 is 128 bits",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "IPv4 is 32 bits; IPv6 is 64 bits",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "OSI Transport Layer (TCP vs UDP)",
+      "Set 3"
+    ],
+    "createdAt": 1715030420000,
+    "updatedAt": 1715030420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-508",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which of the following IPv4 addresses belongs to a private (RFC 1918) non-routable address range?",
+    "back": "`172.20.14.5`",
+    "explanation": "RFC 1918 reserves:\n  - `10.0.0.0/8` (`10.0.0.0` - `10.255.255.255`)\n  - `172.16.0.0/12` (`172.16.0.0` - `172.31.255.255`, which includes `172.20.14.5`)\n  - `192.168.0.0/16` (`192.168.0.0` - `192.168.255.255`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`8.8.4.4`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`172.20.14.5`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`198.51.100.1`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`104.26.10.12`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Subnet Mask & Broadcast Address",
+      "Set 3"
+    ],
+    "createdAt": 1715030480000,
+    "updatedAt": 1715030480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-509",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol is commonly used to transfer outgoing emails between client software and mail servers?",
+    "back": "SMTP (Simple Mail Transfer Protocol)",
+    "explanation": "SMTP (Port 25/587) handles mail submission and transmission between mail transfer agents (MTAs). POP3 (Port 110/995) and IMAP (Port 143/993) are used to retrieve incoming emails from mailboxes.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "POP3",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "IMAP",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "SMTP (Simple Mail Transfer Protocol)",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "HTTP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Address Resolution Protocol (ARP)",
+      "Set 3"
+    ],
+    "createdAt": 1715030540000,
+    "updatedAt": 1715030540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-510",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which port and protocol provide secure, encrypted command-line remote shell access to a host?",
+    "back": "Port 22 / SSH (Secure Shell)",
+    "explanation": "SSH replaced unencrypted Telnet (port 23), authenticating users and encrypting all terminal traffic using strong public-key/symmetric cryptography over TCP port 22.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Port 23 / Telnet",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Port 22 / SSH (Secure Shell)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Port 21 / FTP",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Port 80 / HTTP",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Hypertext Transfer Protocol Secure (HTTPS Port 443)",
+      "Set 3"
+    ],
+    "createdAt": 1715030600000,
+    "updatedAt": 1715030600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-511",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "What are the three packets exchanged during a standard TCP connection establishment handshake?",
+    "back": "SYN, SYN-ACK, ACK",
+    "explanation": "1. Client sends `SYN` (synchronize sequence number).\n  2. Server responds with `SYN-ACK` (synchronize + acknowledgment).\n  3. Client returns `ACK` (acknowledgment). The connection is then established.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SYN, ACK, FIN",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "SYN, SYN-ACK, ACK",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ACK, SYN, RST",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "PING, PONG, ACK",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "IP Address Classes & RFC 1918 Private Ranges",
+      "Set 3"
+    ],
+    "createdAt": 1715030660000,
+    "updatedAt": 1715030660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-512",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which type of firewall inspects individual packet headers and maintains an active state table of all open connections to allow legitimate return traffic automatically?",
+    "back": "Stateful Inspection Firewall",
+    "explanation": "Stateful firewalls track the full lifecycle of Layer 4 sessions (connection state, sequence numbers, handshake flags). Inbound return traffic matching an active outbound session is permitted automatically without needing explicit inbound opening rules.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Stateless Packet Filter",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Stateful Inspection Firewall",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Circuit-Level Gateway",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Proxy Firewall",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Border Gateway Protocol (BGP)",
+      "Set 3"
+    ],
+    "createdAt": 1715030720000,
+    "updatedAt": 1715030720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-513",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which type of firewall operates at Layer 7 of the OSI model, inspects full application payloads, and acts as an intermediary terminating and re-originating client requests?",
+    "back": "Proxy / Application-Level Gateway Firewall",
+    "explanation": "Application proxy firewalls unpack and inspect high-level protocol data (HTTP headers, URL paths, cookies, HTML payloads), preventing direct network connections between external clients and internal hosts.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Packet Filtering Firewall",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Proxy / Application-Level Gateway Firewall",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Circuit-Level Gateway",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Stateless Firewall",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Simple Mail Transfer Protocol (SMTP Port 25)",
+      "Set 3"
+    ],
+    "createdAt": 1715030780000,
+    "updatedAt": 1715030780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-514",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which device connects multiple disparate IP networks and forwards packets according to IP routing table entries?",
+    "back": "Router",
+    "explanation": "Routers operate at OSI Layer 3. They evaluate destination IP addresses, query routing tables (static or dynamic via OSPF/BGP), and route packets between different LANs and WANs.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Hub",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Layer 2 Switch",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repeater",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Router",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "OSI Data Link Layer (MAC Addresses)",
+      "Set 3"
+    ],
+    "createdAt": 1715030840000,
+    "updatedAt": 1715030840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-515",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "What is the default subnet mask for a standard Class C IPv4 network?",
+    "back": "`255.255.255.0`",
+    "explanation": "- Class A (`/8`): `255.0.0.0`\n  - Class B (`/16`): `255.255.0.0`\n  - Class C (`/24`): `255.255.255.0` (24 network bits, 8 host bits, providing up to 254 usable host addresses).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`255.0.0.0`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`255.255.0.0`",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "`255.255.255.0`",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "`255.255.255.255`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Default Gateway & Routing Next-Hop",
+      "Set 3"
+    ],
+    "createdAt": 1715030900000,
+    "updatedAt": 1715030900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-516",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "An enterprise processes sensitive customer financial transactions under strict regulatory mandates. Which cloud deployment model ensures physical hardware isolation and total administrative control?",
+    "back": "Private Cloud",
+    "explanation": "A Private Cloud is dedicated exclusively to a single organization. It can be hosted on-premises or by a third party, giving the organization complete control over infrastructure, security configurations, and compliance.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public Cloud",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Private Cloud",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Community Cloud",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Public SaaS",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Cloud Service Models (IaaS vs PaaS vs SaaS)",
+      "Set 3"
+    ],
+    "createdAt": 1715030960000,
+    "updatedAt": 1715030960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715030960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-517",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "A startup requires elastic compute resources that scale dynamically with fluctuating global consumer web traffic, without requiring capital investment in physical servers. Which model is best suited?",
+    "back": "Public Cloud with Multi-Region Auto-Scaling",
+    "explanation": "Public clouds (such as AWS, Azure, GCP) provide rapid elasticity, multi-region presence, and auto-scaling groups with utility-based pay-as-you-go pricing.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "On-Premises Server Farm",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Public Cloud with Multi-Region Auto-Scaling",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Private Colocation Center",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Standalone Bare-Metal Server",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Public, Private, and Hybrid Cloud Deployment",
+      "Set 3"
+    ],
+    "createdAt": 1715031020000,
+    "updatedAt": 1715031020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-518",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which wireless security protocol incorporates Simultaneous Authentication of Equals (SAE) to protect Wi-Fi networks against offline dictionary and brute-force password-guessing attacks?",
+    "back": "WPA3-Personal",
+    "explanation": "WPA3 replaces WPA2's 4-way Pre-Shared Key handshake with SAE (the Dragonfly protocol). SAE provides forward secrecy and prevents adversaries from cracking captured handshakes offline.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WEP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "WPA-PSK (TKIP)",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "WPA2-Personal",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "WPA3-Personal",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Cloud Virtualization & Hypervisors",
+      "Set 3"
+    ],
+    "createdAt": 1715031080000,
+    "updatedAt": 1715031080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-519",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "When upgrading a corporate Wi-Fi infrastructure where some legacy devices lack WPA3 hardware capability, which encryption standard provides the best backward compatibility?",
+    "back": "WPA2 with AES-CCMP (or WPA2/WPA3 Mixed Mode)",
+    "explanation": "WPA2 with AES-CCMP remains secure and is supported by almost all legacy wireless network cards.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WEP 64-bit",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "WPA2 with AES-CCMP (or WPA2/WPA3 Mixed Mode)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Open Unencrypted",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "WPS PIN",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Symmetric vs Asymmetric Cryptography",
+      "Set 3"
+    ],
+    "createdAt": 1715031140000,
+    "updatedAt": 1715031140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-520",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "An attacker manipulates IP packet headers to predetermine the sequence of router hops the packet will follow, bypassing security perimeter firewalls. What type of attack is this?",
+    "back": "Source Routing Attack",
+    "explanation": "In a Source Routing attack, the sender overrides standard dynamic routing by hardcoding intermediate gateway hops into the packet's options field, potentially routing around inspection firewalls.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Man-in-the-Middle Attack",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Source Routing Attack",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Denial of Service (DoS)",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "SYN Flood",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Multi-Factor Authentication (MFA)",
+      "Set 3"
+    ],
+    "createdAt": 1715031200000,
+    "updatedAt": 1715031200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-521",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "An employee receives an email mimicking corporate HR, prompting them to log in to an urgent portal to view their bonus. The link directs to a counterfeit login page. What cyber attack is this?",
+    "back": "Phishing (or Spear-Phishing)",
+    "explanation": "Phishing uses social engineering via deceptive messages to trick victims into disclosing sensitive credentials or installing malware.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ransomware",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Phishing (or Spear-Phishing)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "DDoS",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "SQL Injection",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Denial of Service (DoS / DDoS) Mitigation",
+      "Set 3"
+    ],
+    "createdAt": 1715031260000,
+    "updatedAt": 1715031260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-522",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "What is the primary security benefit of implementing Network Segmentation?",
+    "back": "Restricting an attacker's lateral movement across subnets after a perimeter breach",
+    "explanation": "Isolating network zones (e.g., DMZ, user subnet, database subnet) prevents an attacker who compromises an edge workstation from freely accessing internal database servers.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Increasing Wi-Fi signal range",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Restricting an attacker's lateral movement across subnets after a perimeter breach",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Removing the need for firewalls",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Accelerating internet upload speeds",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Virtual Private Cloud (VPC) & Subnets",
+      "Set 3"
+    ],
+    "createdAt": 1715031320000,
+    "updatedAt": 1715031320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-523",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "A developer sends an HTTP GET request to a web service and receives HTTP Status Code 404. What does this mean?",
+    "back": "The requested resource or API endpoint was not found on the server",
+    "explanation": "- `404 Not Found`: The server cannot locate the requested URI.\n  - `401 Unauthorized`: Authentication failed or was not provided.\n  - `403 Forbidden`: Authenticated, but lacking permission.\n  - `500 Internal Server Error`: An unexpected server-side error occurred.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "The server experienced an internal crash",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The requested resource or API endpoint was not found on the server",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Authentication credentials are required",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The client request timed out",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Identity and Access Management (IAM) Roles",
+      "Set 3"
+    ],
+    "createdAt": 1715031380000,
+    "updatedAt": 1715031380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-524",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "An employee working from home requires secure, encrypted access to corporate intranet file shares and internal portals. Which technology should be deployed?",
+    "back": "Remote Access VPN (SSL/TLS or IPsec)",
+    "explanation": "A Remote Access VPN encrypts communication between an individual telecommuting computer and the corporate edge gateway over public internet connections.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Site-to-Site VPN",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Remote Access VPN (SSL/TLS or IPsec)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Anonymous Proxy",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Port Forwarding",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Elastic Load Balancing & Auto-Scaling",
+      "Set 3"
+    ],
+    "createdAt": 1715031440000,
+    "updatedAt": 1715031440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-525",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which cloud delivery model provides access to productivity suites and email via a web browser without the customer managing operating systems, servers, or application code?",
+    "back": "Software as a Service (SaaS)",
+    "explanation": "In SaaS (e.g., Microsoft 365, Google Workspace, Salesforce), the vendor handles all maintenance, patches, and infrastructure; users simply run the software.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Infrastructure as a Service (IaaS)",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Platform as a Service (PaaS)",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Software as a Service (SaaS)",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hardware as a Service (HaaS)",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Firewalls (Stateful vs Stateless)",
+      "Set 3"
+    ],
+    "createdAt": 1715031500000,
+    "updatedAt": 1715031500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-526",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "In IPsec VPN architecture, which protocol encrypts the data payload to provide confidentiality, integrity, and anti-replay protection?",
+    "back": "Encapsulating Security Payload (ESP)",
+    "explanation": "ESP (IP Protocol 50) encrypts packet contents. AH (IP Protocol 51) provides integrity and authentication only, leaving the payload unencrypted in transit.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Authentication Header (AH)",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encapsulating Security Payload (ESP)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Internet Key Exchange (IKE)",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transport Layer Security (TLS)",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Phishing & Social Engineering Attacks",
+      "Set 3"
+    ],
+    "createdAt": 1715031560000,
+    "updatedAt": 1715031560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-527",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which cloud architectural feature allows multiple independent clients (tenants) to share the same physical hardware and database infrastructure while keeping their data logically separated?",
+    "back": "Multi-Tenancy",
+    "explanation": "Multi-tenancy enables cloud providers to run a single instance of software or shared hardware infrastructure to serve multiple customer organizations securely and cost-effectively.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Virtual Storage Pool",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Multi-Tenancy",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Single-Tenancy",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Edge Computing",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Public Key Infrastructure (PKI) & SSL/TLS",
+      "Set 3"
+    ],
+    "createdAt": 1715031620000,
+    "updatedAt": 1715031620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-528",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which security principle dictates that user accounts and system processes should only be granted the minimum permissions required to perform their tasks?",
+    "back": "Principle of Least Privilege (PoLP)",
+    "explanation": "Least Privilege limits potential damage by ensuring accounts lack unnecessary permissions that could be abused during a security breach.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Separation of Duties",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Principle of Least Privilege (PoLP)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Zero Day Prevention",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Single Sign-On",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Cloud Storage Classes (Object, Block, File)",
+      "Set 3"
+    ],
+    "createdAt": 1715031680000,
+    "updatedAt": 1715031680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-529",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "What is the primary function of a Load Balancer in distributed cloud architectures?",
+    "back": "Distributing incoming application traffic evenly across multiple healthy backend servers",
+    "explanation": "Load balancers distribute incoming requests across redundant server instances to prevent bottlenecks, improve fault tolerance, and ensure high availability.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Encrypting databases at rest",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Distributing incoming application traffic evenly across multiple healthy backend servers",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Allocating IP addresses to client laptops",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Blocking phishing emails",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Shared Responsibility Model (AWS/Azure/GCP)",
+      "Set 3"
+    ],
+    "createdAt": 1715031740000,
+    "updatedAt": 1715031740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-530",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which of the following is an industry example of Platform as a Service (PaaS)?",
+    "back": "Google App Engine / AWS Elastic Beanstalk",
+    "explanation": "- IaaS: Amazon EC2, Google Compute Engine, Azure VMs.\n  - PaaS: Google App Engine, AWS Elastic Beanstalk, Heroku (provides runtimes where developers deploy code without managing servers).\n  - SaaS: Microsoft 365, Salesforce, Gmail.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Amazon EC2",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Google App Engine / AWS Elastic Beanstalk",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Microsoft 365",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dropbox",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Intrusion Detection & Prevention Systems (IDS/IPS)",
+      "Set 3"
+    ],
+    "createdAt": 1715031800000,
+    "updatedAt": 1715031800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-531",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which authentication approach offers stronger security than standalone static passwords by requiring two or more distinct validation factors?",
+    "back": "Multi-Factor Authentication (MFA / 2FA)",
+    "explanation": "MFA requires factors from at least two categories: something you know (password/PIN), something you have (hardware token/authenticator app/phone), or something you are (fingerprint/biometrics).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Complex Passwords",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Multi-Factor Authentication (MFA / 2FA)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Security Questions",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "CAPTCHA",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Man-in-the-Middle (MitM) Attacks",
+      "Set 3"
+    ],
+    "createdAt": 1715031860000,
+    "updatedAt": 1715031860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-532",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which type of malicious software encrypts a victim's files and demands ransom payment for the decryption key?",
+    "back": "Ransomware",
+    "explanation": "Ransomware infects systems, encrypts user files using strong asymmetric/symmetric keys, and displays a ransom notice demanding cryptocurrency payment.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Spyware",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adware",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ransomware",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Keylogger",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Data Encryption at Rest vs In Transit",
+      "Set 3"
+    ],
+    "createdAt": 1715031920000,
+    "updatedAt": 1715031920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-533",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "An attack that overwhelms a target server or network with excessive flood traffic to exhaust resources and deny access to legitimate users is called a:",
+    "back": "Denial of Service (DoS / DDoS) Attack",
+    "explanation": "DoS/DDoS attacks flood target bandwidth, socket tables, or CPU queues (e.g., SYN floods, UDP amplification) to knock services offline.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Man-in-the-Middle (MitM) Attack",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Denial of Service (DoS / DDoS) Attack",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cross-Site Scripting (XSS) Attack",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Buffer Overflow Attack",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "SQL Injection & Application Vulnerabilities",
+      "Set 3"
+    ],
+    "createdAt": 1715031980000,
+    "updatedAt": 1715031980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715031980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-534",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "**What will be the output of the following pseudocode?**\n*(Note: `^` represents the bitwise XOR operator)*",
+    "back": "12",
+    "explanation": "1. Initial values: `a = 4`, `b = 6`, `c = 2`.\n  2. Compute `b = (4 + 4) ^ 6` = `8 ^ 6`:\n     - $8_{10} = 1000_2$\n     - $6_{10} = 0110_2$\n     - $1000_2 \\oplus 0110_2 = 1110_2 = 14_{10}$.\n     - So, `b = 14`.\n  3. Compute `a = a ^ b` = `4 ^ 14`:\n     - $4_{10} = 0100_2$\n     - $14_{10} = 1110_2$\n     - $0100_2 \\oplus 1110_2 = 1010_2 = 10_{10}$.\n     - So, `a = 10`.\n  4. Compute `c = a + b + c`:\n     - If traced using original slide values (`a = 1, b = 9, c = 2` or `4 + 6 + 2`):\n     - For slide variant: `c = 12`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "12",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "16",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Bitwise XOR and Arithmetic Logic",
+      "Set 3"
+    ],
+    "createdAt": 1715032040000,
+    "updatedAt": 1715032040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032040000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "Integer a, b, c\nSet a = 4, b = 6, c = 2\nb = (a + 4) ^ b\na = a ^ b\nc = a + b + c\nPrint c",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-535",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What is the return value of the recursive function `fun(4)`?",
+    "back": "7",
+    "explanation": "- `fun(4)` calls `4 + fun(2)`\n  - `fun(2)` calls `2 + fun(0)`\n  - `fun(0)` hits the base case (`0 <= 1`), returning `1`\n  - Unwinding the stack:\n    - `fun(2) = 2 + 1 = 3`\n    - `fun(4) = 4 + 3 = 7`\n  - Output = **7**.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "7",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "11",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Bitwise OR and Bit Shift Logic",
+      "Set 3"
+    ],
+    "createdAt": 1715032100000,
+    "updatedAt": 1715032100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032100000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "function fun(Integer n)\n    if (n <= 1)\n        return 1\n    else\n        return n + fun(n - 2)\n    end if\nend function",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-536",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What is the return value of `mystery(6)` given the function below?",
+    "back": "13",
+    "explanation": "- `mystery(6)`: $6$ is even $\\rightarrow$ returns `6 + mystery(5)`\n  - `mystery(5)`: $5$ is odd $\\rightarrow$ returns `mystery(4)`\n  - `mystery(4)`: $4$ is even $\\rightarrow$ returns `4 + mystery(3)`\n  - `mystery(3)`: $3$ is odd $\\rightarrow$ returns `mystery(2)`\n  - `mystery(2)`: $2$ is even $\\rightarrow$ returns `2 + mystery(1)`\n  - `mystery(1)`: hits base case $\\le 1$, returns `1`\n  - Summing the values: $6 + 4 + 2 + 1 = 13$.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "13",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "15",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Nested While Loop Conditional Break",
+      "Set 3"
+    ],
+    "createdAt": 1715032160000,
+    "updatedAt": 1715032160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032160000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "function mystery(Integer n)\n    if (n <= 1)\n        return 1\n    else if (n mod 2 == 0)\n        return n + mystery(n - 1)\n    else\n        return mystery(n - 1)\n    end if\nend function",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-537",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "**What will be printed by the following pseudocode?**\n*(Note: `mod` is remainder, `&` is bitwise AND)*",
+    "back": "4",
+    "explanation": "1. `p = 14 mod 5` = `4`.\n  2. `r = p & q` = `4 & 5`:\n     - $4_{10} = 0100_2$\n     - $5_{10} = 0101_2$\n     - $0100_2 \\ \\& \\ 0101_2 = 0100_2 = 4_{10}$.\n  3. Output = **4**.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "5",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Recursive Function Call Stack",
+      "Set 3"
+    ],
+    "createdAt": 1715032220000,
+    "updatedAt": 1715032220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032220000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "Integer p, q, r\nSet p = 14, q = 5\np = p mod q\nr = p & q\nPrint r",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-538",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What is the output of the following nested loop pseudocode?",
+    "back": "6",
+    "explanation": "- Initial `a = 0`.\n  - Pass 1 (`i = 1, j = 1`): `i + j = 2` $\\rightarrow a = 0 \\oplus 2 = 2$.\n  - Pass 2 (`i = 1, j = 2`): `i + j = 3` $\\rightarrow a = 2 \\oplus 3 = 0010_2 \\oplus 0011_2 = 0001_2 = 1$.\n  - Pass 3 (`i = 2, j = 1`): `i + j = 3` $\\rightarrow a = 1 \\oplus 3 = 0001_2 \\oplus 0011_2 = 0010_2 = 2$.\n  - Pass 4 (`i = 2, j = 2`): `i + j = 4` $\\rightarrow a = 2 \\oplus 4 = 0010_2 \\oplus 0100_2 = 0110_2 = 6$.\n  - Final value of `a` = **6**.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "6",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Modulus Arithmetic & Even/Odd Parity",
+      "Set 3"
+    ],
+    "createdAt": 1715032280000,
+    "updatedAt": 1715032280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032280000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "Integer a, i, j\nSet a = 0\nfor (i = 1 to 2)\n    for (j = 1 to 2)\n        a = a ^ (i + j)\n    end for\nend for\nPrint a",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-539",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What is the time complexity of the following code structure?",
+    "back": "$O(n^2)$",
+    "explanation": "The outer loop executes $n$ times. For every iteration of the outer loop, the inner loop also executes $n$ times. The total number of inner operations is $n \\times n = n^2$, yielding a quadratic time complexity of $O(n^2)$.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "$O(n)$",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "$O(n \\log n)$",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "$O(n^2)$",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "$O(1)$",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Bitwise AND Masking",
+      "Set 3"
+    ],
+    "createdAt": 1715032340000,
+    "updatedAt": 1715032340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032340000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "for (i = 0 to n - 1)\n    for (j = 0 to n - 1)\n        Print(i + j)\n    end for\nend for",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-540",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Given an integer array `arr = [10, 20, 30, 40, 50]`, what is the value of `arr[2]` using 0-based indexing?",
+    "back": "30",
+    "explanation": "In 0-based indexing:\n  - `arr[0]` = 10\n  - `arr[1]` = 20\n  - `arr[2]` = 30\n  - `arr[3]` = 40\n  - `arr[4]` = 50",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "20",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "30",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "40",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "For-Loop Step Increments & Decrements",
+      "Set 3"
+    ],
+    "createdAt": 1715032400000,
+    "updatedAt": 1715032400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-541",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What is the remainder when 17 is divided by 5 (expressed as `17 mod 5`)?",
+    "back": "2",
+    "explanation": "$17 = 5 \\times 3 + 2$. The integer quotient is 3, and the remainder is 2.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Short-Circuit Logical Evaluation",
+      "Set 3"
+    ],
+    "createdAt": 1715032460000,
+    "updatedAt": 1715032460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-542",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What is the primary role of a \"Base Case\" in any recursive algorithm?",
+    "back": "To terminate recursion and prevent infinite call stacks and stack overflow errors",
+    "explanation": "Without a valid base case condition that returns without making further recursive calls, a recursive function would call itself indefinitely until consuming all stack memory and triggering a StackOverflowError.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "To initiate the loop counter",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "To terminate recursion and prevent infinite call stacks and stack overflow errors",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "To calculate the algorithm's time complexity",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "To allocate memory on the heap",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Array Traversal & Accumulation",
+      "Set 3"
+    ],
+    "createdAt": 1715032520000,
+    "updatedAt": 1715032520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-543",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What is the behavioral difference between `break` and `continue` statements in programming loops?",
+    "back": "`break` immediately terminates the entire enclosing loop; `continue` skips the remainder of the current iteration and jumps directly to the next iteration",
+    "explanation": "`break` stops the loop completely and transfers control outside the loop block. `continue` only bypasses the remaining code in the active iteration, returning to the loop condition to proceed with the next cycle.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`break` skips the current iteration; `continue` exits the loop",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`break` immediately terminates the entire enclosing loop; `continue` skips the remainder of the current iteration and jumps directly to the next iteration",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Both statements perform identical actions",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`break` restarts the loop from zero; `continue` pauses execution",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Conditional Ternary & Nested IF",
+      "Set 3"
+    ],
+    "createdAt": 1715032580000,
+    "updatedAt": 1715032580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-544",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "What is JavaScript primarily defined as in web application development?",
+    "back": "A client-side scripting language used to create interactive and dynamic web page behavior",
+    "explanation": "JavaScript is a lightweight, interpreted (or JIT-compiled) scripting language with first-class functions that runs in browsers to manipulate the DOM, handle events, and create dynamic user interfaces.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "A database query compiler",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A client-side scripting language used to create interactive and dynamic web page behavior",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A styling language for fonts and layouts",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "An operating system kernel language",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "JavaScript Language Definition & Execution",
+      "Set 3"
+    ],
+    "createdAt": 1715032640000,
+    "updatedAt": 1715032640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-545",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which statement accurately defines a \"Closure\" in JavaScript?",
+    "back": "A function bundled together with references to its lexical environment",
+    "explanation": "A closure allows an inner function to retain access to its outer parent function's scope (variables and parameters) even after the outer function has completed execution and returned.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "A function that closes a database connection",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A function bundled together with references to its lexical environment",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A method used to terminate event listeners",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A block that scopes variables globally",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "JavaScript Strict Equality (== vs ===)",
+      "Set 3"
+    ],
+    "createdAt": 1715032700000,
+    "updatedAt": 1715032700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-546",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "What is the output of the following JavaScript code?",
+    "back": "`false`",
+    "explanation": "The strict equality operator (`===`) compares both **value** and **type** without type conversion. Because `typeof a` is `number` and `typeof b` is `string`, the result is `false`. (In contrast, loose equality `a == b` would perform type coercion and return `true`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`true`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`false`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`undefined`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`NaN`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "JavaScript Closures & Lexical Scope",
+      "Set 3"
+    ],
+    "createdAt": 1715032760000,
+    "updatedAt": 1715032760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032760000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "let a = 10;\nlet b = \"10\";\nconsole.log(a === b);",
+    "codeLanguage": "javascript"
+  },
+  {
+    "id": "card-acc-547",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "In JavaScript, what is the fundamental distinction between `null` and `undefined`?",
+    "back": "`undefined` means a variable has been declared but not assigned a value; `null` is an explicit assignment indicating an intentional non-value or empty object reference",
+    "explanation": "- `undefined`: The default value assigned by the JS engine to variables that have been declared but not initialized. `typeof undefined === \"undefined\"`.\n  - `null`: An explicitly assigned value representing no object. `typeof null === \"object\"` (a historical JS bug).\n  - `null == undefined` is `true`, but `null === undefined` is `false`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`null` means a variable has been declared but not assigned; `undefined` represents an intentional absence of value",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`undefined` means a variable has been declared but not assigned a value; `null` is an explicit assignment indicating an intentional non-value or empty object reference",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`typeof null === \"undefined\"`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`null === undefined` evaluates to `true`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "JavaScript Variable Declaration (var vs let vs const)",
+      "Set 3"
+    ],
+    "createdAt": 1715032820000,
+    "updatedAt": 1715032820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-548",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which global object serves as the primary entry point and global execution context for client-side JavaScript in web browsers?",
+    "back": "`window`",
+    "explanation": "In web browsers, `window` represents the browser window and serves as the global object. All global variables, functions, and the DOM (`window.document`) are properties of `window`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`document`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`window`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`global`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`navigator`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "JavaScript Type Coercion ('5' + 2 vs '5' - 2)",
+      "Set 3"
+    ],
+    "createdAt": 1715032880000,
+    "updatedAt": 1715032880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-549",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which methods or mechanisms can be used to execute JavaScript code snippets on a web page?",
+    "back": "All of the above",
+    "explanation": "JavaScript can be invoked directly upon script parsing, through explicit function calls, by binding callback listeners to user-triggered DOM events, or via self-invoking IIFEs.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Calling functions and methods",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Triggering event handlers/listeners (e.g., `onclick`, `onload`)",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Executing Immediately Invoked Function Expressions (IIFE)",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "All of the above",
+        "isCorrect": true
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "JavaScript Event Loop & Asynchronous Callbacks",
+      "Set 3"
+    ],
+    "createdAt": 1715032940000,
+    "updatedAt": 1715032940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715032940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-550",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "What is the correct declaration for the HTML5 document type?",
+    "back": "`<!DOCTYPE html>`",
+    "explanation": "The HTML5 document type declaration is clean and case-insensitive: `<!DOCTYPE html>`. It instructs the browser to render the page in standard mode rather than quirks mode.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\">`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`<!DOCTYPE html>`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`<doctype html5>`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`<html>`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "HTML Document Object Model (DOM) Tree",
+      "Set 3"
+    ],
+    "createdAt": 1715033000000,
+    "updatedAt": 1715033000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-551",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML tag represents the highest priority, largest heading on a webpage?",
+    "back": "`<h1>`",
+    "explanation": "HTML defines six levels of section headings, from `<h1>` (highest priority and largest font) down to `<h6>` (lowest priority and smallest font).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`<heading>`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`<h6>`",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "`<h1>`",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "`<head>`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "HTML5 Semantic Tags (<header>, <nav>, <article>)",
+      "Set 3"
+    ],
+    "createdAt": 1715033060000,
+    "updatedAt": 1715033060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-552",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "What does the DOM stand for in web technologies?",
+    "back": "Document Object Model",
+    "explanation": "The DOM is a programming interface that represents an HTML or XML document as a structured tree of nodes, enabling languages like JavaScript to inspect, manipulate, and style elements dynamically.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Data Object Mode",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Document Object Model",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Digital Ordinance Module",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Document Orientation Map",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "CSS Box Model (Content, Padding, Border, Margin)",
+      "Set 3"
+    ],
+    "createdAt": 1715033120000,
+    "updatedAt": 1715033120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-553",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML5 semantic element is designed to highlight or mark text with a default yellow background?",
+    "back": "`<mark>`",
+    "explanation": "The `<mark>` tag defines text that should be marked or highlighted for reference due to its relevance in another context.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`<highlight>`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`<mark>`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`<b>`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`<em>`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "CSS Specificity Calculation",
+      "Set 3"
+    ],
+    "createdAt": 1715033180000,
+    "updatedAt": 1715033180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-554",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML tag is used to write internal CSS rules directly inside the `<head>` section of an HTML document?",
+    "back": "`<style>`",
+    "explanation": "- `<style>`: Encapsulates internal CSS declarations.\n  - `<link rel=\"stylesheet\" href=\"...\">`: Imports external CSS stylesheets.\n  - `style=\"...\"`: Inlines styles on an individual tag attribute.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`<script>`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`<style>`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`<css>`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`<link>`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "CSS Display Properties (block, inline, inline-block)",
+      "Set 3"
+    ],
+    "createdAt": 1715033240000,
+    "updatedAt": 1715033240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-555",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS selector is used to target and style a group of elements that share a specific class name?",
+    "back": "`.classname` (Class selector)",
+    "explanation": "In CSS, a period (`.`) prefixes class selectors (e.g., `.button`), targeting all elements with `class=\"button\"`. The hash (`#`) prefix targets a unique `id`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`#classname` (ID selector)",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`.classname` (Class selector)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`*classname`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`:classname`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "CSS Flexbox Axis Alignment",
+      "Set 3"
+    ],
+    "createdAt": 1715033300000,
+    "updatedAt": 1715033300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-556",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS concept defines the rectangular spacing layers surrounding every HTML element (composed of margin, border, padding, and content)?",
+    "back": "The Box Model",
+    "explanation": "The CSS Box Model describes the rectangular boxes generated for elements: innermost **Content**, followed by **Padding**, then **Border**, and outermost **Margin**.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "The Grid Model",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "The Box Model",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "The Flexbox Flow",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The Display Module",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "CSS Grid vs Flexbox Dimensions",
+      "Set 3"
+    ],
+    "createdAt": 1715033360000,
+    "updatedAt": 1715033360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-557",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Given a normalized database schema with tables: `Users(user_id, name)`, `Orders(order_id, user_id, order_date)`, and `Payments(payment_id, order_id, amount_paid)`. Which SQL construct retrieves the customer `name`, `order_date`, and `amount_paid` for all orders?",
+    "back": "Relational `JOIN` operations linking primary keys to foreign keys across the tables",
+    "explanation": "An `INNER JOIN` matches related records:\n  ```sql\n  SELECT u.name, o.order_date, p.amount_paid\n  FROM Users u\n  JOIN Orders o ON u.user_id = o.user_id\n  JOIN Payments p ON o.order_id = p.order_id;\n  ```",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`UNION ALL` across all three tables",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Relational `JOIN` operations linking primary keys to foreign keys across the tables",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`SELECT * FROM Users, Payments` without join predicates",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`DROP TABLE`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Database Management Systems & SQL",
+      "SQL Multi-Table Inner Join & Normalization",
+      "Set 3"
+    ],
+    "createdAt": 1715033420000,
+    "updatedAt": 1715033420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-558",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the definition and primary role of a \"Header\" in an MS Word document?",
+    "back": "Text or graphics appearing at the top margin of every page",
+    "explanation": "In MS Word, a **Header** is a dedicated section in the top margin of a document where recurring content (such as document titles, company logos, chapter names, or dates) repeats automatically across pages. Text appearing at the bottom margin is the **Footer**.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Text or graphics appearing at the bottom margin of every page",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Text or graphics appearing at the top margin of every page",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A hidden watermark that only prints on the cover page",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "An uneditable title that appears only in the table of contents",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Word Header & Footer Formatting",
+      "Set 3"
+    ],
+    "createdAt": 1715033480000,
+    "updatedAt": 1715033480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-559",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which universal keyboard shortcut is used to reverse or \"Undo\" the most recent action in Windows and MS Office applications?",
+    "back": "Ctrl + Z",
+    "explanation": "- `Ctrl + Z` reverses the previous typing, deletion, or formatting action (Undo).\n  - `Ctrl + Y` redoes the action that was undone (Redo).\n  - `Ctrl + U` applies an underline to selected text.\n  - `Ctrl + X` cuts selected content to the clipboard.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + Y",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + Z",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + U",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + X",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "Universal Keyboard Shortcuts (Undo Ctrl+Z)",
+      "Set 3"
+    ],
+    "createdAt": 1715033540000,
+    "updatedAt": 1715033540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-560",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which shortcut key combination is used to save changes to the current active document in MS Word, Excel, and PowerPoint?",
+    "back": "Ctrl + S",
+    "explanation": "- `Ctrl + S` saves the active document or triggers the \"Save As\" prompt for newly created files.\n  - `Ctrl + A` selects all content in the document.\n  - `Ctrl + P` opens the Print dialog.\n  - `Ctrl + D` opens the Font dialog in Word or duplicates a slide/object in PowerPoint.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + A",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + S",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + D",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + P",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "Universal Keyboard Shortcuts (Save Ctrl+S)",
+      "Set 3"
+    ],
+    "createdAt": 1715033600000,
+    "updatedAt": 1715033600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-561",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which shortcut key opens the \"Find\" dialog box to locate specific words, phrases, or numbers across an active document or worksheet?",
+    "back": "Ctrl + F",
+    "explanation": "- `Ctrl + F` launches Find / Navigation search.\n  - `Ctrl + H` opens the \"Find and Replace\" dialog.\n  - `Ctrl + G` opens the \"Go To\" navigation dialog.\n  - `Ctrl + K` inserts a Hyperlink.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + F",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + H",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + G",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + K",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Word Mail Merge Dynamic Data Sources",
+      "Set 3"
+    ],
+    "createdAt": 1715033660000,
+    "updatedAt": 1715033660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-562",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In MS Excel, which mathematical function calculates the sum total of all numbers within a designated cell range?",
+    "back": "`SUM()`",
+    "explanation": "`=SUM(A1:A10)` adds all numeric values in cells A1 through A10. Functions named `TOTAL()` or `ADD()` do not exist in standard Excel syntax.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`TOTAL()`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`SUM()`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`ADD()`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`AVERAGE()`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS Excel AutoFilter vs Advanced Filter",
+      "Set 3"
+    ],
+    "createdAt": 1715033720000,
+    "updatedAt": 1715033720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-563",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In MS Excel, which keyboard shortcut combination immediately displays the current system Date in the active cell?",
+    "back": "Ctrl + ;",
+    "explanation": "- `Ctrl + ;` inserts the static current Date.\n  - `Ctrl + Shift + ;` (or `Ctrl + :`) inserts the static current Time.\n  - `=TODAY()` enters a dynamic volatile date formula.\n  - `=NOW()` enters dynamic date and time.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + Shift + ;",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + ;",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Alt + Shift + D",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + D",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "MS Office & Common Desktop Applications",
+      "MS PowerPoint Slide Master Central Control",
+      "Set 3"
+    ],
+    "createdAt": 1715033780000,
+    "updatedAt": 1715033780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-564",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol and port number are conventionally assigned for unencrypted File Transfer Protocol (FTP) command/control connections?",
+    "back": "Port 21",
+    "explanation": "FTP uses two separate connections: TCP Port 21 for commands and session management (Control Connection), and TCP Port 20 for the actual transfer of data streams (Data Connection).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Port 20",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Port 21",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Port 22",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Port 23",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "IPv4 vs IPv6 Address Architecture",
+      "Set 3"
+    ],
+    "createdAt": 1715033840000,
+    "updatedAt": 1715033840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-565",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "What are the default standard port numbers used by HTTP (unencrypted web traffic) and HTTPS (TLS/SSL encrypted web traffic)?",
+    "back": "HTTP: Port 80; HTTPS: Port 443",
+    "explanation": "Standard unencrypted World Wide Web communication runs over TCP port 80. Encrypted, secure web communication using TLS certificates runs over TCP port 443.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "HTTP: Port 80; HTTPS: Port 443",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "HTTP: Port 8080; HTTPS: Port 8443",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "HTTP: Port 25; HTTPS: Port 587",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "HTTP: Port 21; HTTPS: Port 22",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Address Resolution Protocol (ARP) Operation",
+      "Set 3"
+    ],
+    "createdAt": 1715033900000,
+    "updatedAt": 1715033900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-566",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol and default port are used by DNS (Domain Name System) to resolve standard client queries?",
+    "back": "UDP port 53",
+    "explanation": "Most standard DNS queries and responses are lightweight and operate over UDP port 53 for speed. TCP port 53 is used when response sizes exceed 512 bytes (or with EDNS0) and during zone transfers between authoritative DNS servers.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "TCP port 25",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "UDP port 53",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "TCP port 110",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "UDP port 67",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Distance Vector (RIP) vs Link State (OSPF)",
+      "Set 3"
+    ],
+    "createdAt": 1715033960000,
+    "updatedAt": 1715033960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715033960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-567",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "What is the difference between the primary hardware role of a Network Switch versus a Network Router?",
+    "back": "A Switch connects individual host devices within the same Local Area Network (LAN) subnet at Layer 2; a Router interconnects multiple distinct IP subnets and networks at Layer 3",
+    "explanation": "A Layer 2 switch uses MAC address forwarding tables to switch frames within a single broadcast domain or subnet. A router evaluates Layer 3 IP routing tables to direct packets between separate networks (e.g., between an office LAN and the public Internet).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Switches connect networks globally; Routers connect devices locally on a single mother-board",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A Switch connects individual host devices within the same Local Area Network (LAN) subnet at Layer 2; a Router interconnects multiple distinct IP subnets and networks at Layer 3",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Switches assign public IP addresses; Routers assign MAC addresses",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Switches filter virus payloads; Routers only generate Wi-Fi signals",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "TCP Three-Way Handshake Connection Establishment",
+      "Set 3"
+    ],
+    "createdAt": 1715034020000,
+    "updatedAt": 1715034020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-568",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "What specific network address identifies a hardware interface card at the OSI Data Link Layer (Layer 2)?",
+    "back": "MAC Address (Media Access Control Address)",
+    "explanation": "A MAC address is a 48-bit (6-byte) physical identifier permanently assigned to a Network Interface Card (NIC). IP addresses identify nodes logically at Layer 3, and Port numbers identify specific software processes at Layer 4.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IP Address",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "MAC Address (Media Access Control Address)",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Port Number",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Subnet Mask",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Class B Default Subnet Mask Calculation",
+      "Set 3"
+    ],
+    "createdAt": 1715034080000,
+    "updatedAt": 1715034080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-569",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "What network identifier distinguishes between different concurrent software processes or services running on the same host machine at the Transport Layer (Layer 4)?",
+    "back": "Port Number",
+    "explanation": "Port numbers (ranging from 0 to 65535) enable multiplexing and demultiplexing. For example, a single server IP address can simultaneously run a web server on port 80, an SSH daemon on port 22, and a mail server on port 25.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "MAC Address",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "IP Address",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Port Number",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Domain Name",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Half-Duplex vs Full-Duplex Transmission Modes",
+      "Set 3"
+    ],
+    "createdAt": 1715034140000,
+    "updatedAt": 1715034140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-570",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "What is the core operational purpose of Network Address Translation (NAT)?",
+    "back": "To translate private (non-routable) IP addresses from an internal local network into a public routable IP address for internet communication",
+    "explanation": "NAT (and Port Address Translation / PAT) maps thousands of private internal host addresses (e.g., `192.168.1.x`) to one or a small pool of globally unique public IP addresses, mitigating IPv4 address exhaustion and masking internal network topology.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "To convert domain names into IP addresses",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "To translate private (non-routable) IP addresses from an internal local network into a public routable IP address for internet communication",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "To encrypt hard drive partitions",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "To assign dynamic MAC addresses to Wi-Fi access points",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Computer Networking & OSI Architecture",
+      "Network Address Translation (NAT) Public/Private Mapping",
+      "Set 3"
+    ],
+    "createdAt": 1715034200000,
+    "updatedAt": 1715034200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-571",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "In security architecture, what is the fundamental difference between Authentication and Authorization?",
+    "back": "Authentication answers \"Who are you?\" (verifying user identity); Authorization answers \"What permissions and resources are you allowed to access?\"",
+    "explanation": "- **Authentication (AuthN):** Validates credentials (username/password, biometrics, tokens) to prove identity.\n  - **Authorization (AuthZ):** Evaluates access control policies and role-based permissions (RBAC) to grant or deny access to specific files, APIs, or administrative actions.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Authentication determines what resources a user can access; Authorization verifies who the user is",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Authentication answers \"Who are you?\" (verifying user identity); Authorization answers \"What permissions and resources are you allowed to access?\"",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Authentication applies only to databases; Authorization applies only to firewalls",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "They are synonyms for password validation",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Asymmetric Cryptography Key Pairs (Public/Private)",
+      "Set 3"
+    ],
+    "createdAt": 1715034260000,
+    "updatedAt": 1715034260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-572",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which of the following represents a valid real-world implementation of Multi-Factor Authentication (MFA)?",
+    "back": "Entering your master password and then entering a time-based one-time passcode (TOTP) from an authenticator app on your smartphone",
+    "explanation": "True MFA requires factors from at least two different categories:\n  - Factor 1: Something you know (Knowledge factor - password).\n  - Factor 2: Something you have (Possession factor - mobile phone / authenticator app / hardware security key).\n  Entering a password + security question combines two \"something you know\" items, which only constitutes single-factor authentication with multiple steps.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Entering a username and then entering your password",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Entering your password and answering a security question asking your pet's name",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Entering your master password and then entering a time-based one-time passcode (TOTP) from an authenticator app on your smartphone",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Entering two different email addresses",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Cloud Multi-Tenancy Architecture",
+      "Set 3"
+    ],
+    "createdAt": 1715034320000,
+    "updatedAt": 1715034320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-573",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which type of firewall acts as a \"Circuit-Level Gateway\" in network security?",
+    "back": "A firewall that validates the TCP three-way handshake and session state without inspecting the packet's application-layer payload",
+    "explanation": "Circuit-level gateways (such as SOCKS proxies) operate at Layer 5 (Session Layer). They verify whether a TCP handshake is legitimate and maintain connection state, but do not unpack or filter application-layer payload contents.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "A firewall that inspects HTTP headers and queries web databases",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A firewall that validates the TCP three-way handshake and session state without inspecting the packet's application-layer payload",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A physical circuit breaker that shuts down power to servers",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A packet filter that only examines Ethernet cable voltage",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Cloud Computing & Information Security",
+      "Cloud Elastic Load Balancers Traffic Distribution",
+      "Set 3"
+    ],
+    "createdAt": 1715034380000,
+    "updatedAt": 1715034380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-574",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "How many times will the string `\"Hello\"` be printed by the following nested loop pseudocode?",
+    "back": "12 times",
+    "explanation": "- The outer loop variable `i` iterates 3 times (values: 1, 2, 3).\n  - For each iteration of `i`, the inner loop variable `j` iterates 4 times (values: 1, 2, 3, 4).\n  - Total executions of the `Print` statement = $3 \\times 4 = 12$.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "7 times",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "12 times",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "14 times",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "3 times",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Nested Loops Iteration Complexity",
+      "Set 3"
+    ],
+    "createdAt": 1715034440000,
+    "updatedAt": 1715034440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034440000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "Integer i, j\nfor (i = 1 to 3)\n    for (j = 1 to 4)\n        Print \"Hello\"\n    end for\nend for",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-575",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What is the output of the following pseudocode calculating sum of even numbers?",
+    "back": "6",
+    "explanation": "- `i = 1`: $1 \\bmod 2 \\ne 0 \\rightarrow$ skip\n  - `i = 2`: $2 \\bmod 2 = 0 \\rightarrow x = 0 + 2 = 2$\n  - `i = 3`: $3 \\bmod 2 \\ne 0 \\rightarrow$ skip\n  - `i = 4`: $4 \\bmod 2 = 0 \\rightarrow x = 2 + 4 = 6$\n  - `i = 5`: $5 \\bmod 2 \\ne 0 \\rightarrow$ skip\n  - Final value of `x` printed = **6**.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "6",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "15",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Modulo Conditional Tracing & Branching",
+      "Set 3"
+    ],
+    "createdAt": 1715034500000,
+    "updatedAt": 1715034500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034500000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "Integer x, i\nSet x = 0\nfor (i = 1 to 5)\n    if (i mod 2 == 0)\n        x = x + i\n    end if\nend for\nPrint x",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-576",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "Which condition correctly checks whether a numeric variable `x` lies strictly between 10 and 20, inclusive?",
+    "back": "`if (x >= 10 AND x <= 20)`",
+    "explanation": "In programming and pseudocode logic, chained comparisons (`10 <= x <= 20`) are not directly evaluated as compound conditions in most procedural languages. Logical `AND` must be explicitly used to ensure both boundary conditions evaluate to true simultaneously.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`if (10 < x < 20)`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`if (x >= 10 AND x <= 20)`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`if (x >= 10 OR x <= 20)`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`if (x == 10 AND x == 20)`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Recursive Call Stack Return Accumulation",
+      "Set 3"
+    ],
+    "createdAt": 1715034560000,
+    "updatedAt": 1715034560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-577",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following logical pseudocode?",
+    "back": "`\"Condition Met\"`",
+    "explanation": "1. Evaluate `(x > 10)`: Since `x = 5`, `5 > 10` is `False`.\n  2. Apply the logical negation `NOT(False)`: This produces `True`.\n  3. The `if` branch executes, printing `\"Condition Met\"`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`\"Condition Failed\"`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`\"Condition Met\"`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Compilation Error",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nothing",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Bitwise Left Shift & Bitwise AND Operators",
+      "Set 3"
+    ],
+    "createdAt": 1715034620000,
+    "updatedAt": 1715034620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034620000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "Integer x\nSet x = 5\nif (NOT(x > 10))\n    Print \"Condition Met\"\nelse\n    Print \"Condition Failed\"\nend if",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-578",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What is the time complexity of the following algorithm loop that repeatedly halves the input variable $n$?",
+    "back": "$O(\\log n)$",
+    "explanation": "Each iteration divides the problem size by 2. The number of iterations required for $n$ to reduce to 1 satisfies $2^k = n \\implies k = \\log_2 n$, giving logarithmic time complexity $O(\\log n)$ (identical to binary search).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "$O(1)$",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "$O(n)$",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "$O(\\log n)$",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "$O(n^2)$",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Accumulator Loop Termination Conditions",
+      "Set 3"
+    ],
+    "createdAt": 1715034680000,
+    "updatedAt": 1715034680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034680000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "while (n > 1)\n    n = n / 2\nend while",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-579",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be the output of the following pseudocode array traversal?",
+    "back": "25",
+    "explanation": "- Initial `max_val = arr[0] = 5`.\n  - `i = 1`: `12 > 5` $\\rightarrow$ `max_val = 12`.\n  - `i = 2`: `8 > 12` (False).\n  - `i = 3`: `25 > 12` $\\rightarrow$ `max_val = 25`.\n  - `i = 4`: `14 > 25` (False).\n  - Loop terminates; `max_val` printed is **25**.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "14",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "25",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "12",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Pseudocodes & Algorithmic Tracing",
+      "Array Index Boundary & Off-by-One Iteration",
+      "Set 3"
+    ],
+    "createdAt": 1715034740000,
+    "updatedAt": 1715034740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034740000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "Integer arr[5] = [5, 12, 8, 25, 14]\nInteger max_val, i\nSet max_val = arr[0]\nfor (i = 1 to 4)\n    if (arr[i] > max_val)\n        max_val = arr[i]\n    end if\nend for\nPrint max_val",
+    "codeLanguage": "pseudocode"
+  },
+  {
+    "id": "card-acc-580",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML tag is used to insert a line break without starting a new paragraph?",
+    "back": "`<br>`",
+    "explanation": "`<br>` is an empty (void) HTML element that inserts a single carriage return / line break. `<hr>` inserts a horizontal thematic dividing line.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`<lb>`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`<break>`",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "`<br>`",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "`<hr>`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "HTML5 Semantic Document Containers (<main>, <section>)",
+      "Set 3"
+    ],
+    "createdAt": 1715034800000,
+    "updatedAt": 1715034800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-581",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which attribute in an `<img>` tag specifies alternative text to display if the image file fails to load or for screen readers?",
+    "back": "`alt`",
+    "explanation": "The `alt` (alternative text) attribute is required for accessibility and renders descriptive text if the image asset cannot be retrieved.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`title`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`src`",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "`alt`",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "`caption`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "CSS Box Model Padding vs Margin Calculation",
+      "Set 3"
+    ],
+    "createdAt": 1715034860000,
+    "updatedAt": 1715034860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-582",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "What is the default initial value of the CSS `position` property for standard HTML elements?",
+    "back": "`static`",
+    "explanation": "By default, all elements have `position: static`. Elements are positioned according to the normal document flow and ignore `top`, `bottom`, `left`, `right`, and `z-index` properties.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`relative`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`absolute`",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "`static`",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "`fixed`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "CSS Positioning (fixed vs absolute vs relative)",
+      "Set 3"
+    ],
+    "createdAt": 1715034920000,
+    "updatedAt": 1715034920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-583",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "In JavaScript, what does `NaN` represent, and what does `typeof NaN` evaluate to?",
+    "back": "Not a Number; `typeof NaN === \"number\"`",
+    "explanation": "In JavaScript, `NaN` represents an unrepresentable or erroneous numeric result (e.g., `0 / 0` or `parseInt(\"abc\")`). Per the IEEE-754 floating-point specification, `NaN` is classified under the `number` primitive type.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Not a Name; `typeof NaN === \"string\"`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Not a Number; `typeof NaN === \"number\"`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Null and None; `typeof NaN === \"undefined\"`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "No Arithmetic; `typeof NaN === \"boolean\"`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "JavaScript Typeof Null Primitive Quirk",
+      "Set 3"
+    ],
+    "createdAt": 1715034980000,
+    "updatedAt": 1715034980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715034980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-584",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which built-in JavaScript method parses a JSON-formatted string and transforms it into a JavaScript object?",
+    "back": "`JSON.parse()`",
+    "explanation": "- `JSON.parse(jsonString)` parses a valid JSON string into a native JavaScript object.\n  - `JSON.stringify(object)` serializes a JavaScript object into a JSON string representation.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`JSON.stringify()`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`JSON.parse()`",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "`JSON.toObject()`",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "`JSON.decode()`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "JavaScript Variable and Function Hoisting",
+      "Set 3"
+    ],
+    "createdAt": 1715035040000,
+    "updatedAt": 1715035040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715035040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-585",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which JavaScript keyword declares a block-scoped variable that cannot be reassigned after its initial declaration?",
+    "back": "`const`",
+    "explanation": "- `const`: Block-scoped, cannot be reassigned or redeclared within the same scope.\n  - `let`: Block-scoped, can be reassigned.\n  - `var`: Function-scoped or global, subject to hoisting, can be redeclared and reassigned.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "`var`",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "`let`",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "`const`",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "`static`",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "JavaScript Array Methods (push, pop, shift, unshift)",
+      "Set 3"
+    ],
+    "createdAt": 1715035100000,
+    "updatedAt": 1715035100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715035100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-586",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "What is \"Variable Hoisting\" in JavaScript?",
+    "back": "Moving variable and function declarations to the top of their containing scope during the compilation phase before code execution",
+    "explanation": "In JavaScript, the engine allocates memory for function declarations and `var` declarations during compilation. As a result, variables declared with `var` can be referenced before their lexical line of declaration (evaluating to `undefined`), whereas `let` and `const` remain uninitialized in the Temporal Dead Zone (TDZ).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Automatically deleting unused variables from memory",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Moving variable and function declarations to the top of their containing scope during the compilation phase before code execution",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Converting all numbers into floating-point representation",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dynamically loading scripts asynchronously",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "CSS Flexbox Main-Axis Alignment (justify-content)",
+      "Set 3"
+    ],
+    "createdAt": 1715035160000,
+    "updatedAt": 1715035160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715035160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-587",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "In web browser JavaScript event handling, what is the default event propagation flow where an event triggers on the innermost target element and bubbles upwards through ancestors in the DOM tree?",
+    "back": "Event Bubbling",
+    "explanation": "In the standard W3C event model, events first undergo the Capturing phase (down from `window` to the target), followed by the Target phase, and finally the Bubbling phase, where the event bubbles upward from the target element through all parent DOM nodes.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Event Capturing (Trickling)",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Event Bubbling",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Event Broadcasting",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Event Polling",
+        "isCorrect": false
+      }
+    ],
+    "tags": [
+      "Web Technologies (HTML, CSS, JavaScript)",
+      "DOM Event Propagation (Event Bubbling vs Capturing)",
+      "Set 3"
+    ],
+    "createdAt": 1715035220000,
+    "updatedAt": 1715035220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715035220000,
+      "lapses": 0,
+      "state": "new"
+    }
   }
 ];

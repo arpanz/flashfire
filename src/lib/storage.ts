@@ -4,13 +4,13 @@ import { Deck, Flashcard, CardType, MCQOption, ReviewLog, DailyActivity, StudySt
 import { ACCENTURE_DECKS, ACCENTURE_CARDS } from './accentureData';
 
 const STORAGE_KEYS = {
-  DECKS: 'flashfire_decks_v5',
-  CARDS: 'flashfire_cards_v5',
-  LOGS: 'flashfire_review_logs_v5',
-  STATS: 'flashfire_stats_v5',
+  DECKS: 'flashfire_decks_v6',
+  CARDS: 'flashfire_cards_v6',
+  LOGS: 'flashfire_review_logs_v6',
+  STATS: 'flashfire_stats_v6',
 };
 
-// Initial Pre-loaded Decks & Cards: 467 Real Accenture Technical MCQs
+// Initial Pre-loaded Decks & Cards: 587 Real Accenture Technical MCQs across 6 Modules
 const INITIAL_DECKS: Deck[] = ACCENTURE_DECKS;
 const INITIAL_CARDS: Flashcard[] = ACCENTURE_CARDS;
 
@@ -32,6 +32,7 @@ export const storage = {
     let raw = localStorage.getItem(STORAGE_KEYS.DECKS);
     if (!raw) {
       const legacy =
+        localStorage.getItem('flashfire_decks_v5') ||
         localStorage.getItem('flashfire_decks_v4') ||
         localStorage.getItem('flashfire_decks_v3') ||
         localStorage.getItem('flashfire_decks_v2') ||
@@ -108,9 +109,10 @@ export const storage = {
     let raw = localStorage.getItem(STORAGE_KEYS.CARDS);
     let needWrite = false;
 
-    // Migrate from v4, v3, v2, or v1 if v5 is not yet created
+    // Migrate from v5, v4, v3, v2, or v1 if v6 is not yet created
     if (!raw) {
       const legacy =
+        localStorage.getItem('flashfire_cards_v5') ||
         localStorage.getItem('flashfire_cards_v4') ||
         localStorage.getItem('flashfire_cards_v3') ||
         localStorage.getItem('flashfire_cards_v2') ||
@@ -138,6 +140,12 @@ export const storage = {
         const initial = initialMap.get(c.id);
         if (!initial) return c;
 
+        // Ensure JS cards moved to deck-web are updated
+        if (['card-acc-453', 'card-acc-454', 'card-acc-455', 'card-acc-456'].includes(c.id) && c.deckId !== 'deck-web') {
+          c.deckId = 'deck-web';
+          needWrite = true;
+        }
+
         const isDummy =
           !c.explanation ||
           c.explanation.trim() === c.back.trim() ||
@@ -154,6 +162,7 @@ export const storage = {
           needWrite = true;
           return {
             ...c,
+            deckId: initial.deckId || c.deckId,
             explanation: initial.explanation || c.explanation,
             front: initial.front || c.front,
             back: initial.back || c.back,
@@ -176,6 +185,7 @@ export const storage = {
       if (needWrite) {
         localStorage.setItem(STORAGE_KEYS.CARDS, JSON.stringify(enrichedCards));
         try {
+          localStorage.removeItem('flashfire_cards_v5');
           localStorage.removeItem('flashfire_cards_v4');
           localStorage.removeItem('flashfire_cards_v3');
           localStorage.removeItem('flashfire_cards_v2');
@@ -217,6 +227,7 @@ export const storage = {
     let raw = localStorage.getItem(STORAGE_KEYS.LOGS);
     if (!raw) {
       const legacy =
+        localStorage.getItem('flashfire_review_logs_v5') ||
         localStorage.getItem('flashfire_review_logs_v4') ||
         localStorage.getItem('flashfire_review_logs_v3') ||
         localStorage.getItem('flashfire_review_logs_v2') ||
@@ -256,6 +267,7 @@ export const storage = {
     let raw = localStorage.getItem(STORAGE_KEYS.STATS);
     if (!raw) {
       const legacy =
+        localStorage.getItem('flashfire_stats_v5') ||
         localStorage.getItem('flashfire_stats_v4') ||
         localStorage.getItem('flashfire_stats_v3') ||
         localStorage.getItem('flashfire_stats_v2') ||

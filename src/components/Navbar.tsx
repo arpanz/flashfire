@@ -11,12 +11,13 @@ import {
   CreditCard,
   Download,
   HelpCircle,
+  Code2,
 } from 'lucide-react';
 import { sounds } from '../lib/sound';
 
 interface NavbarProps {
-  currentTab: 'decks' | 'cards' | 'quiz' | 'analytics';
-  onSelectTab: (tab: 'decks' | 'cards' | 'quiz' | 'analytics') => void;
+  currentTab: 'decks' | 'cards' | 'quiz' | 'analytics' | 'coding';
+  onSelectTab: (tab: 'decks' | 'cards' | 'quiz' | 'analytics' | 'coding') => void;
   streak: number;
   onOpenImportExport: () => void;
   onOpenShortcuts: () => void;
@@ -97,6 +98,18 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <CreditCard className="w-3.5 h-3.5" />
             <span>Cards</span>
+          </button>
+
+          <button
+            onClick={() => onSelectTab('coding')}
+            className={`px-3.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
+              currentTab === 'coding'
+                ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-semibold'
+                : 'text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200'
+            }`}
+          >
+            <Code2 className="w-3.5 h-3.5" />
+            <span>Coding</span>
           </button>
 
           <button

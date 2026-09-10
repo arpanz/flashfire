@@ -18,6 +18,7 @@ import {
   FolderPlus,
   BookOpen,
   Lightbulb,
+  Code2,
 } from "lucide-react";
 import { Deck, Flashcard, Rating } from "../lib/types";
 import { calculateNextReview, getDueCards } from "../lib/srs";
@@ -25,6 +26,7 @@ import { storage } from "../lib/storage";
 import { sounds } from "../lib/sound";
 import { FormattedText } from "./FormattedText";
 import { CodeBlockView } from "./CodeBlockView";
+import { ScratchpadModal } from "./ScratchpadModal";
 
 interface QuizHubProps {
   decks: Deck[];
@@ -98,6 +100,9 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   // Results Screen State
   const [resultsFilter, setResultsFilter] = useState<"all" | "missed" | "correct">("all");
   const [savedDeckNotice, setSavedDeckNotice] = useState<string | null>(null);
+
+  // Scratchpad State
+  const [isScratchpadOpen, setIsScratchpadOpen] = useState<boolean>(false);
 
   // Timer countdown
   const [timeLeft, setTimeLeft] = useState<number>(timerSeconds);
@@ -643,6 +648,33 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           </p>
         </div>
 
+        {/* Exam Coding Callout Banner */}
+        <div className="max-w-xl mx-auto mb-6 p-4 rounded-2xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200/80 dark:border-blue-800/60 flex items-center justify-between gap-3 shadow-2xs">
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0">
+              <Code2 className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="text-xs font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
+                <span>Accenture Coding Assessment</span>
+                <span className="px-1.5 py-0.2 rounded text-[10px] uppercase font-mono bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-semibold">
+                  Exam Ready
+                </span>
+              </div>
+              <p className="text-[11px] text-zinc-600 dark:text-zinc-400 mt-0.5">
+                Practice Shift 1 & 2 array transformations, smallest sum greedy algorithms, and DOM tasks in the Coding Arena.
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => setIsScratchpadOpen(true)}
+            className="px-3 py-1.5 rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-xs font-semibold text-zinc-800 dark:text-zinc-200 hover:border-zinc-400 shrink-0 transition-colors shadow-2xs cursor-pointer"
+          >
+            Scratchpad
+          </button>
+        </div>
+
         {/* Configuration Card */}
         <div className="max-w-xl mx-auto rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 p-6 sm:p-8 shadow-xs space-y-6">
           {/* Deck Selection */}
@@ -1064,6 +1096,20 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             Score: {score}
           </div>
 
+          {/* Scratchpad Button */}
+          <button
+            onClick={() => setIsScratchpadOpen((prev) => !prev)}
+            title="Open Live Code & Tracing Scratchpad"
+            className={`px-2.5 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer ${
+              isScratchpadOpen
+                ? 'bg-blue-600 text-white shadow-xs'
+                : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+            }`}
+          >
+            <Code2 className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">Scratchpad</span>
+          </button>
+
           <span className="text-xs font-mono text-zinc-400">
             {currentIndex + 1}/{questions.length}
           </span>
@@ -1324,6 +1370,12 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           )}
         </AnimatePresence>
       </div>
+
+      {/* Floating Coding & Tracing Scratchpad */}
+      <ScratchpadModal
+        isOpen={isScratchpadOpen}
+        onClose={() => setIsScratchpadOpen(false)}
+      />
     </div>
   );
 };

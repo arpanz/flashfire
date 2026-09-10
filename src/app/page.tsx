@@ -14,6 +14,7 @@ import { QuizHub } from '../components/QuizHub';
 import { CardEditorModal } from '../components/CardEditorModal';
 import { ImportExportModal } from '../components/ImportExportModal';
 import { KeyboardShortcutsModal } from '../components/KeyboardShortcutsModal';
+import { CodingArena } from '../components/CodingArena';
 
 export default function Home() {
   const [decks, setDecks] = useState<Deck[]>([]);
@@ -28,7 +29,7 @@ export default function Home() {
   const [activity, setActivity] = useState<DailyActivity[]>([]);
 
   // Navigation & Study States
-  const [currentTab, setCurrentTab] = useState<'quiz' | 'decks' | 'cards' | 'analytics'>('quiz');
+  const [currentTab, setCurrentTab] = useState<'quiz' | 'decks' | 'cards' | 'analytics' | 'coding'>('quiz');
   const [activeStudy, setActiveStudy] = useState<{
     deck: Deck;
     mode: 'srs' | 'cram';
@@ -215,6 +216,18 @@ export default function Home() {
                 transition={{ duration: 0.15 }}
               >
                 <AnalyticsView stats={stats} cards={cards} activity={activity} />
+              </motion.div>
+            )}
+
+            {currentTab === 'coding' && (
+              <motion.div
+                key="coding"
+                initial={{ opacity: 0, y: 4 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -4 }}
+                transition={{ duration: 0.15 }}
+              >
+                <CodingArena />
               </motion.div>
             )}
           </AnimatePresence>
