@@ -622,8 +622,8 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
                         {/* Option Breakdown & Distractor Meanings */}
                         {card.mcqOptions && card.mcqOptions.length > 1 && (() => {
                           const breakdown = getOptionBreakdown(card.front, card.mcqOptions);
-                          const meaningful = breakdown.filter((b) => !b.isCorrect && (b.meaning || b.whyIncorrect));
-                          if (meaningful.length === 0) return null;
+                          const meaningfulDistractors = breakdown.filter((b) => !b.isCorrect && b.meaning);
+                          if (meaningfulDistractors.length === 0) return null;
                           return (
                             <div className="mt-3 pt-2.5 border-t border-zinc-200/60 dark:border-zinc-700/60">
                               <div className="text-[11px] font-semibold text-zinc-600 dark:text-zinc-400 flex items-center gap-1.5 mb-2">
@@ -631,35 +631,37 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
                                 <span>Distractor Meanings & Roles:</span>
                               </div>
                               <div className="space-y-1.5">
-                                {breakdown.map((opt) => (
-                                  <div
-                                    key={opt.id}
-                                    className={`p-2.5 rounded-lg text-xs border leading-relaxed transition-all ${
-                                      opt.isCorrect
-                                        ? "bg-emerald-50/70 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-900/50 text-emerald-950 dark:text-emerald-200"
-                                        : "bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300"
-                                    }`}
-                                  >
-                                    <div className="font-medium flex items-center justify-between gap-1">
-                                      <span className="flex items-center gap-1.5">
-                                        <span className="font-mono text-[10px] px-1 py-0.2 rounded bg-zinc-100 dark:bg-zinc-800">
-                                          [{opt.id}]
+                                {breakdown
+                                  .filter((opt) => opt.isCorrect || opt.meaning)
+                                  .map((opt) => (
+                                    <div
+                                      key={opt.id}
+                                      className={`p-2.5 rounded-lg text-xs border leading-relaxed transition-all ${
+                                        opt.isCorrect
+                                          ? "bg-emerald-50/70 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-900/50 text-emerald-950 dark:text-emerald-200"
+                                          : "bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300"
+                                      }`}
+                                    >
+                                      <div className="font-medium flex items-center justify-between gap-1">
+                                        <span className="flex items-center gap-1.5">
+                                          <span className="font-mono text-[10px] px-1 py-0.2 rounded bg-zinc-100 dark:bg-zinc-800">
+                                            [{opt.id}]
+                                          </span>
+                                          <span>{opt.text}</span>
                                         </span>
-                                        <span>{opt.text}</span>
-                                      </span>
-                                      {opt.isCorrect && (
-                                        <span className="text-[10px] uppercase font-bold text-emerald-600 dark:text-emerald-400 px-1.5 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/40">
-                                          Correct
-                                        </span>
+                                        {opt.isCorrect && (
+                                          <span className="text-[10px] uppercase font-bold text-emerald-600 dark:text-emerald-400 px-1.5 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/40">
+                                            Correct
+                                          </span>
+                                        )}
+                                      </div>
+                                      {opt.meaning && (
+                                        <div className="mt-1 text-[11px] text-zinc-500 dark:text-zinc-400 leading-normal pl-4">
+                                          <FormattedText text={opt.meaning} />
+                                        </div>
                                       )}
                                     </div>
-                                    {(opt.meaning || opt.whyIncorrect) && (
-                                      <div className="mt-1 text-[11px] text-zinc-500 dark:text-zinc-400 leading-normal pl-4">
-                                        {opt.meaning || opt.whyIncorrect}
-                                      </div>
-                                    )}
-                                  </div>
-                                ))}
+                                  ))}
                               </div>
                             </div>
                           );

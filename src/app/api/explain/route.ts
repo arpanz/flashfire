@@ -184,30 +184,18 @@ export async function POST(req: NextRequest) {
       }
 
       if (mode === "deep") {
-        let distractorSection = "";
-        if (chosenOpt && !isUserCorrect) {
-          const distractor = resolveDistractorExplanation(question, chosenOpt, correctOpt);
-          distractorSection = `### ❌ Why Your Choice Was Incorrect\n${distractor.whyIncorrect}\n\n`;
-        }
-
         const breakdown = getOptionBreakdown(question, options);
         const optionsListBullets = breakdown
-          .filter((b) => !b.isCorrect && (b.meaning || b.whyIncorrect))
-          .map((b) => `- **[${b.id}] ${b.text}**: ${b.meaning || b.whyIncorrect}`)
+          .filter((b) => !b.isCorrect && b.meaning)
+          .map((b) => `- **[${b.id}] ${b.text}**: ${b.meaning}`)
           .join("\n");
 
         explanationText =
-          distractorSection +
           `### 💡 Core Concept\n**[${correctOpt.id}] ${correctOpt.text}** is correct. ${cleanFallback}\n\n` +
           (optionsListBullets ? `### 🎯 What Other Options Mean\n${optionsListBullets}\n\n` : "") +
           `### ⚡ Quick Memory Trick\nAssociate **"${question.slice(0, 45).replace(/"/g, '')}..."** directly with **${correctOpt.text}**.`;
       } else {
-        if (chosenOpt && !isUserCorrect) {
-          const distractor = resolveDistractorExplanation(question, chosenOpt, correctOpt);
-          explanationText = `❌ **[${chosenOpt.id}] ${chosenOpt.text}** is incorrect: ${distractor.meaning || distractor.whyIncorrect}\n\n✅ **Correct Answer:** ${cleanFallback}`;
-        } else {
-          explanationText = cleanFallback;
-        }
+        explanationText = cleanFallback;
       }
       usedModel = "offline-fallback";
     }

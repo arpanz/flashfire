@@ -141,16 +141,21 @@ const CONCEPT_DICTIONARY: Record<string, string> = {
   'hashing': 'One-way mathematical algorithm that converts input data into a fixed-length string to verify integrity; cannot be reversed.',
   'firewall': 'Network security device that monitors and filters incoming and outgoing traffic based on predefined security rules.',
 
-  // Cloud Computing Models
-  'iaas': 'Infrastructure as a Service: delivers virtualized computing resources, servers, storage, and networking over the cloud (e.g. AWS EC2, Azure VMs). User manages OS and runtime.',
-  'paas': 'Platform as a Service: provides a cloud hardware and software framework where developers build and run applications without managing underlying servers/OS (e.g. Heroku, App Engine).',
-  'saas': 'Software as a Service: fully managed end-user applications delivered over the internet via browser (e.g. Google Docs, Microsoft 365, Salesforce).',
-  'public cloud': 'Cloud infrastructure owned and operated by a third-party cloud service provider, shared across multiple tenants over the public internet.',
-  'private cloud': 'Cloud infrastructure provisioned and dedicated exclusively for a single organization, hosted on-premises or by a third party.',
-  'hybrid cloud': 'Computing environment that combines public and private cloud environments with data and application portability between them.',
+  // Cloud Computing Models & Types
+  'iaas': 'Infrastructure as a Service: Delivers virtualized computing infrastructure (servers, VMs, storage, networking).',
+  'paas': 'Platform as a Service: Development and runtime environment for building and running apps without managing underlying servers.',
+  'saas': 'Software as a Service: Fully managed applications delivered directly via web browser (e.g., Google Workspace, Microsoft 365).',
+  'public': 'Public Cloud: Multi-tenant cloud infrastructure owned by a third-party provider, shared over the public internet.',
+  'public cloud': 'Public Cloud: Multi-tenant cloud infrastructure owned by a third-party provider, shared over the public internet.',
+  'private': 'Private Cloud: Single-tenant infrastructure dedicated exclusively to one organization, providing highest security and isolation.',
+  'private cloud': 'Private Cloud: Single-tenant infrastructure dedicated exclusively to one organization, providing highest security and isolation.',
+  'hybrid': 'Hybrid Cloud: Combines private and public cloud environments, enabling data and workload portability between them.',
+  'hybrid cloud': 'Hybrid Cloud: Combines private and public cloud environments, enabling data and workload portability between them.',
+  'community': 'Community Cloud: Cloud infrastructure shared by multiple organizations with common compliance, security, or mission requirements.',
+  'community cloud': 'Community Cloud: Cloud infrastructure shared by multiple organizations with common compliance, security, or mission requirements.',
 
   // Programming & Pseudocode Traps
-  'xor': 'Bitwise XOR (exclusive OR, ^): outputs 1 only when the inputs differ. Note: ^ is NOT exponentiation in pseudocode.',
+  'xor': 'Bitwise XOR (exclusive OR, ^): outputs 1 only when bits differ. Note: ^ is NOT exponentiation in pseudocode.',
   'bitwise and': 'Bitwise AND (&): outputs 1 only when both corresponding input bits are 1.',
   'bitwise or': 'Bitwise OR (|): outputs 1 if either of the corresponding input bits is 1.',
   'bitwise not': 'Bitwise NOT (~): inverts all bits of a number (~x = -(x + 1) in two\'s complement).',
@@ -169,7 +174,12 @@ const CONCEPT_DICTIONARY: Record<string, string> = {
  * Normalizes text to lookup keys
  */
 function cleanKey(text: string): string {
-  return text.trim().toLowerCase().replace(/^option\s+[a-d]:\s*/i, '').replace(/[()]/g, '').trim();
+  return text
+    .trim()
+    .toLowerCase()
+    .replace(/^option\s+[a-d]:\s*/i, '')
+    .replace(/[()*`_]/g, '')
+    .trim();
 }
 
 /**
@@ -216,14 +226,14 @@ export function getOptionMeaning(optionText: string): string | null {
 }
 
 /**
- * Resolves a tailored, high-value explanation of why a chosen option is incorrect
- * and what that option actually does or represents.
+ * Resolves a tailored explanation of why a chosen option is incorrect
+ * or what that option actually does or represents.
  */
 export function resolveDistractorExplanation(
   question: string,
   chosenOption: MCQOption,
   correctOption: MCQOption
-): { meaning?: string; whyIncorrect: string } {
+): { meaning?: string; whyIncorrect?: string } {
   // If option already has custom authored reasons, respect them
   if (chosenOption.whyIncorrect) {
     return {
@@ -240,7 +250,7 @@ export function resolveDistractorExplanation(
   if (meaning) {
     return {
       meaning,
-      whyIncorrect: `**${chosenOption.text}** refers to: ${meaning} This does not answer what was asked in "${question.slice(0, 80).trim()}${question.length > 80 ? '...' : ''}".`,
+      whyIncorrect: meaning,
     };
   }
 
@@ -249,40 +259,37 @@ export function resolveDistractorExplanation(
   if (isNumeric) {
     if (qLower.includes('^') && (qLower.includes('xor') || qLower.includes('bitwise') || qLower.includes('integer'))) {
       return {
-        whyIncorrect: `**${chosenOption.text}** is a common distractor trap. It is typically calculated if bitwise \`^\` (XOR) was confused with exponentiation, or if arithmetic addition \`+\` was evaluated with incorrect operator precedence.`,
+        whyIncorrect: 'Bitwise trap: evaluating ^ (XOR) as exponentiation or using incorrect operator precedence (+ before ^).',
       };
     }
 
     if (qLower.includes('loop') || qLower.includes('for') || qLower.includes('while') || qLower.includes('iterations')) {
       return {
-        whyIncorrect: `**${chosenOption.text}** is an off-by-one boundary trap. It occurs if the loop was terminated one iteration too early or executed one extra time (evaluating \`<\` vs \`<=\`).`,
+        whyIncorrect: 'Loop boundary trap: off-by-one error from terminating one iteration too early or late (< vs <=).',
       };
     }
 
     if (qLower.includes('array') || qLower.includes('index') || qLower.includes('element')) {
       return {
-        whyIncorrect: `**${chosenOption.text}** occurs when mixing up 0-based indexing (where the first element is index 0) with 1-based indexing, or accessing an off-by-one array offset.`,
+        whyIncorrect: 'Array indexing trap: confusion between 0-based indexing and 1-based indexing.',
       };
     }
-
-    return {
-      whyIncorrect: `**${chosenOption.text}** is a calculated distractor value resulting from incorrect intermediate state accumulation or skipping an iteration step in the algorithm.`,
-    };
   }
 
-  // Case 3: General distractor fallback
+  // Case 3: No specific meaning or trap known -> return undefined
   return {
-    whyIncorrect: `**${chosenOption.text}** does not satisfy the requirements of this question. The correct answer is **${correctOption.text}**.`,
+    meaning: undefined,
+    whyIncorrect: undefined,
   };
 }
 
 /**
- * Builds a structured breakdown of all options for interactive review
+ * Builds a structured breakdown of options for interactive review
  */
 export function getOptionBreakdown(
   question: string,
   options: MCQOption[]
-): { id: string; text: string; isCorrect: boolean; meaning?: string; whyIncorrect?: string }[] {
+): { id: string; text: string; isCorrect: boolean; meaning?: string }[] {
   const correctOpt = options.find((o) => o.isCorrect) || options[0];
 
   return options.map((opt) => {
@@ -293,17 +300,17 @@ export function getOptionBreakdown(
         text: opt.text,
         isCorrect: true,
         meaning: meaning || undefined,
-        whyIncorrect: undefined,
       };
     }
 
     const { meaning, whyIncorrect } = resolveDistractorExplanation(question, opt, correctOpt);
+    const resolvedMeaning = meaning || whyIncorrect || undefined;
+
     return {
       id: opt.id,
       text: opt.text,
       isCorrect: false,
-      meaning,
-      whyIncorrect,
+      meaning: resolvedMeaning,
     };
   });
 }
