@@ -39,6 +39,10 @@ interface QuizQuestion {
   explanation?: string;
   selectedOptionId?: string;
   isUserCorrect?: boolean;
+  quickExplanation?: string;
+  deepExplanation?: string;
+  quickModel?: string;
+  deepModel?: string;
 }
 
 export const QuizHub: React.FC<QuizHubProps> = ({
@@ -64,6 +68,9 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   const [score, setScore] = useState<number>(0);
   const [streak, setStreak] = useState<number>(0);
   const [isFinished, setIsFinished] = useState<boolean>(false);
+
+  // Track the currently viewed card ID to prevent race conditions when navigating between questions
+  const activeQuestionIdRef = useRef<string | null>(null);
 
   // SRS Real-time tracking
   const [lastSrsStatus, setLastSrsStatus] = useState<{
@@ -107,28 +114,33 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   // Fetch AI explanation via GLM (4.7 Flash for quick, 5.3 Flash for deep breakdown)
   const fetchAiExplanation = useCallback(
     async (q: QuizQuestion, chosenOptionId: string | null | undefined, mode: "quick" | "deep") => {
+      const targetCardId = q.card.id;
       const effectiveOptionId = chosenOptionId || "none";
-      const cacheKey = `${q.card.id}_${effectiveOptionId}_${mode}`;
+      const cacheKey = `${targetCardId}__${q.prompt.trim().slice(0, 50)}__${effectiveOptionId}__${mode}`;
 
       // Check cache first
       if (aiCacheRef.current.has(cacheKey)) {
         const cached = aiCacheRef.current.get(cacheKey)!;
-        if (mode === "deep") {
-          setDeepExplanation(cached.explanation);
-          setDeepModelUsed(cached.model);
-          setIsDeepMode(true);
-        } else {
-          setQuickExplanation(cached.explanation);
-          setAiModelUsed(cached.model);
+        if (activeQuestionIdRef.current === targetCardId) {
+          if (mode === "deep") {
+            setDeepExplanation(cached.explanation);
+            setDeepModelUsed(cached.model);
+            setIsDeepMode(true);
+          } else {
+            setQuickExplanation(cached.explanation);
+            setAiModelUsed(cached.model);
+          }
         }
         return;
       }
 
-      if (mode === "deep") {
-        setIsDeepMode(true);
-        setIsDeepLoading(true);
-      } else {
-        setIsAiLoading(true);
+      if (activeQuestionIdRef.current === targetCardId) {
+        if (mode === "deep") {
+          setIsDeepMode(true);
+          setIsDeepLoading(true);
+        } else {
+          setIsAiLoading(true);
+        }
       }
 
       try {
@@ -139,7 +151,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             question: q.prompt,
             options: q.options,
             selectedOptionId: effectiveOptionId !== "none" ? effectiveOptionId : null,
-            cardId: q.card.id,
+            cardId: targetCardId,
             mode,
             fallbackExplanation: q.explanation || q.card.back,
           }),
@@ -147,17 +159,32 @@ export const QuizHub: React.FC<QuizHubProps> = ({
 
         const data = await res.json();
         if (data.success && data.explanation) {
-          if (mode === "deep") {
-            setDeepExplanation(data.explanation);
-            setDeepModelUsed(data.model);
-            if (data.model !== "offline-fallback") {
-              aiCacheRef.current.set(cacheKey, { explanation: data.explanation, model: data.model });
-            }
-          } else {
-            setQuickExplanation(data.explanation);
-            setAiModelUsed(data.model);
-            if (data.model !== "offline-fallback") {
-              aiCacheRef.current.set(cacheKey, { explanation: data.explanation, model: data.model });
+          if (data.model !== "offline-fallback") {
+            aiCacheRef.current.set(cacheKey, { explanation: data.explanation, model: data.model });
+          }
+
+          // Update question in questions list
+          setQuestions((prev) =>
+            prev.map((item) => {
+              if (item.card.id !== targetCardId) return item;
+              return {
+                ...item,
+                quickExplanation: mode === "quick" ? data.explanation : item.quickExplanation,
+                deepExplanation: mode === "deep" ? data.explanation : item.deepExplanation,
+                quickModel: mode === "quick" ? data.model : item.quickModel,
+                deepModel: mode === "deep" ? data.model : item.deepModel,
+              };
+            })
+          );
+
+          // ONLY update active view if the user is STILL on this card
+          if (activeQuestionIdRef.current === targetCardId) {
+            if (mode === "deep") {
+              setDeepExplanation(data.explanation);
+              setDeepModelUsed(data.model);
+            } else {
+              setQuickExplanation(data.explanation);
+              setAiModelUsed(data.model);
             }
           }
         } else {
@@ -166,23 +193,47 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       } catch (err) {
         console.warn("AI explanation fetch failed, using fallback:", err);
         const correctOpt = q.options.find((o) => o.isCorrect) || q.options[0];
+        const wrongOpts = q.options.filter((o) => !o.isCorrect);
 
-        if (mode === "deep") {
-          setDeepExplanation(
-            `### Core Concept\nOption **[${correctOpt.id}] ${correctOpt.text}** is the correct answer.\n\n` +
-            (q.explanation ? `### Context Details\n${q.explanation}\n\n` : "") +
-            `### Key Takeaway\nPractice this question in Spaced Repetition queue to lock in the pattern.`
-          );
-          setDeepModelUsed("offline-fallback");
-        } else {
-          setQuickExplanation(q.explanation || `Option [${correctOpt.id}] (${correctOpt.text}) is the correct answer.`);
-          setAiModelUsed("offline-fallback");
+        const fallbackText =
+          mode === "deep"
+            ? `### 💡 Simple Concept\nOption **[${correctOpt.id}] ${correctOpt.text}** is the correct answer. ${q.explanation || ""}\n\n` +
+              `### 🎯 Why Other Options Don't Work\n` +
+              wrongOpts.map((o) => `- **[${o.id}] ${o.text}**: Incorrect for this question.`).join("\n") +
+              `\n\n### ⚡ Quick Memory Trick\nRemember: **[${correctOpt.id}]** directly matches the required pattern.`
+            : q.explanation || `Option [${correctOpt.id}] (${correctOpt.text}) is the correct answer.`;
+
+        const fallbackModel = "offline-fallback";
+
+        setQuestions((prev) =>
+          prev.map((item) => {
+            if (item.card.id !== targetCardId) return item;
+            return {
+              ...item,
+              quickExplanation: mode === "quick" ? fallbackText : item.quickExplanation,
+              deepExplanation: mode === "deep" ? fallbackText : item.deepExplanation,
+              quickModel: mode === "quick" ? fallbackModel : item.quickModel,
+              deepModel: mode === "deep" ? fallbackModel : item.deepModel,
+            };
+          })
+        );
+
+        if (activeQuestionIdRef.current === targetCardId) {
+          if (mode === "deep") {
+            setDeepExplanation(fallbackText);
+            setDeepModelUsed(fallbackModel);
+          } else {
+            setQuickExplanation(fallbackText);
+            setAiModelUsed(fallbackModel);
+          }
         }
       } finally {
-        if (mode === "deep") {
-          setIsDeepLoading(false);
-        } else {
-          setIsAiLoading(false);
+        if (activeQuestionIdRef.current === targetCardId) {
+          if (mode === "deep") {
+            setIsDeepLoading(false);
+          } else {
+            setIsAiLoading(false);
+          }
         }
       }
     },
@@ -251,6 +302,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
 
       setQuestions(generated);
       setCurrentIndex(0);
+      activeQuestionIdRef.current = generated[0]?.card.id || null;
       setScore(0);
       setStreak(0);
       setSelectedOptionId(null);
@@ -453,14 +505,17 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   // Next Question
   const handleNext = useCallback(() => {
     if (currentIndex + 1 < questions.length) {
-      setCurrentIndex((prev) => prev + 1);
-      setSelectedOptionId(null);
-      setIsAnswered(false);
+      const nextIdx = currentIndex + 1;
+      const nextQ = questions[nextIdx];
+      setCurrentIndex(nextIdx);
+      activeQuestionIdRef.current = nextQ?.card.id || null;
+      setSelectedOptionId(nextQ?.selectedOptionId || null);
+      setIsAnswered(!!nextQ?.selectedOptionId);
       setLastSrsStatus(null);
-      setQuickExplanation(null);
-      setDeepExplanation(null);
-      setAiModelUsed(null);
-      setDeepModelUsed(null);
+      setQuickExplanation(nextQ?.quickExplanation || null);
+      setDeepExplanation(nextQ?.deepExplanation || null);
+      setAiModelUsed(nextQ?.quickModel || null);
+      setDeepModelUsed(nextQ?.deepModel || null);
       setIsAiLoading(false);
       setIsDeepMode(false);
       setIsDeepLoading(false);
@@ -475,7 +530,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         origin: { y: 0.6 },
       });
     }
-  }, [currentIndex, questions.length, timerSeconds]);
+  }, [currentIndex, questions, timerSeconds]);
 
   // Save missed questions as a dedicated focused deck
   const handleSaveMissedAsDeck = useCallback(() => {
@@ -1122,16 +1177,25 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                       {isDeepMode ? "Deep Concept Breakdown" : "AI Quick Explanation"}
                     </span>
                     <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-200/80 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-medium">
-                      {isDeepMode ? (deepModelUsed || "GLM 5.3 Flash") : (aiModelUsed || "GLM 4.7 Flash")}
+                      {isDeepMode
+                        ? (deepModelUsed || currentQ?.deepModel || "GLM 5.3 Flash")
+                        : (aiModelUsed || currentQ?.quickModel || "GLM 4.7 Flash")}
                     </span>
                   </div>
 
                   {/* Deeper / Quick Explanation Toggle Button */}
                   {!isDeepMode ? (
                     <button
-                      onClick={() =>
-                        currentQ && fetchAiExplanation(currentQ, selectedOptionId, "deep")
-                      }
+                      onClick={() => {
+                        if (!currentQ) return;
+                        if (currentQ.deepExplanation) {
+                          setDeepExplanation(currentQ.deepExplanation);
+                          setDeepModelUsed(currentQ.deepModel || "GLM 5.3 Flash");
+                          setIsDeepMode(true);
+                        } else {
+                          fetchAiExplanation(currentQ, selectedOptionId, "deep");
+                        }
+                      }}
                       disabled={isDeepLoading}
                       className="px-2.5 py-1 rounded-lg border border-amber-300/80 dark:border-amber-800/70 bg-amber-50 dark:bg-amber-950/40 text-[11px] font-medium text-amber-900 dark:text-amber-200 hover:bg-amber-100 dark:hover:bg-amber-900/60 transition-colors flex items-center gap-1.5 shadow-2xs disabled:opacity-50"
                     >
@@ -1180,7 +1244,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     <div className="h-3 bg-zinc-200 dark:bg-zinc-700 rounded-md w-full"></div>
                     <div className="h-3 bg-zinc-200 dark:bg-zinc-700 rounded-md w-5/6"></div>
                   </div>
-                ) : !isDeepMode && isAiLoading && !quickExplanation ? (
+                ) : !isDeepMode && isAiLoading && !quickExplanation && !currentQ?.quickExplanation ? (
                   <div className="flex items-center gap-2 py-2 text-xs text-zinc-500 animate-pulse">
                     <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-spin" />
                     <span>Analyzing with GLM 4.7 Flash...</span>
@@ -1189,7 +1253,9 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                   <div className="text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">
                     <FormattedText
                       text={
-                        (isDeepMode ? deepExplanation : quickExplanation) ||
+                        (isDeepMode
+                          ? (deepExplanation || currentQ?.deepExplanation)
+                          : (quickExplanation || currentQ?.quickExplanation)) ||
                         currentQ?.explanation ||
                         currentQ?.card.back ||
                         ""
