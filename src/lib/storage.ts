@@ -4,10 +4,10 @@ import { Deck, Flashcard, CardType, MCQOption, ReviewLog, DailyActivity, StudySt
 import { ACCENTURE_DECKS, ACCENTURE_CARDS } from './accentureData';
 
 const STORAGE_KEYS = {
-  DECKS: 'flashfire_decks_v2',
-  CARDS: 'flashfire_cards_v2',
-  LOGS: 'flashfire_review_logs_v2',
-  STATS: 'flashfire_stats_v2',
+  DECKS: 'flashfire_decks_v3',
+  CARDS: 'flashfire_cards_v3',
+  LOGS: 'flashfire_review_logs_v3',
+  STATS: 'flashfire_stats_v3',
 };
 
 // Initial Pre-loaded Decks & Cards: 200 Real Accenture Freshers Technical MCQs
@@ -29,13 +29,19 @@ export const storage = {
 
   getDecks(): Deck[] {
     if (typeof window === 'undefined') return INITIAL_DECKS;
-    const raw = localStorage.getItem(STORAGE_KEYS.DECKS);
+    let raw = localStorage.getItem(STORAGE_KEYS.DECKS);
+    if (!raw) {
+      const legacy = localStorage.getItem('flashfire_decks_v2') || localStorage.getItem('flashfire_decks');
+      if (legacy) raw = legacy;
+    }
     if (!raw) {
       localStorage.setItem(STORAGE_KEYS.DECKS, JSON.stringify(INITIAL_DECKS));
       return INITIAL_DECKS;
     }
     try {
-      return JSON.parse(raw);
+      const decks = JSON.parse(raw);
+      localStorage.setItem(STORAGE_KEYS.DECKS, JSON.stringify(decks));
+      return decks;
     } catch {
       return INITIAL_DECKS;
     }
@@ -68,14 +74,64 @@ export const storage = {
 
   getCards(): Flashcard[] {
     if (typeof window === 'undefined') return INITIAL_CARDS;
-    const raw = localStorage.getItem(STORAGE_KEYS.CARDS);
+    let raw = localStorage.getItem(STORAGE_KEYS.CARDS);
+    let needWrite = false;
+
+    // Migrate from v2 or v1 if v3 is not yet created
+    if (!raw) {
+      const legacy = localStorage.getItem('flashfire_cards_v2') || localStorage.getItem('flashfire_cards');
+      if (legacy) {
+        raw = legacy;
+        needWrite = true;
+      }
+    }
+
     if (!raw) {
       localStorage.setItem(STORAGE_KEYS.CARDS, JSON.stringify(INITIAL_CARDS));
       return INITIAL_CARDS;
     }
+
     try {
-      return JSON.parse(raw);
+      const cards: Flashcard[] = JSON.parse(raw);
+      const initialMap = new Map<string, Flashcard>();
+      INITIAL_CARDS.forEach((c) => initialMap.set(c.id, c));
+
+      // Auto-migrate any cards that still have dummy "Option X:" or empty explanations
+      const enrichedCards = cards.map((c) => {
+        const initial = initialMap.get(c.id);
+        if (!initial) return c;
+
+        const isDummy =
+          !c.explanation ||
+          c.explanation.trim() === c.back.trim() ||
+          /^Option [A-D]:/i.test(c.explanation.trim()) ||
+          c.explanation.includes('specifically satisfies the technical criteria') ||
+          (c.explanation.length < 50 && initial.explanation && initial.explanation.length > c.explanation.length);
+
+        if (isDummy && initial.explanation) {
+          needWrite = true;
+          return {
+            ...c,
+            explanation: initial.explanation,
+            front: initial.front || c.front,
+            back: initial.back || c.back,
+            mcqOptions: initial.mcqOptions && initial.mcqOptions.length ? initial.mcqOptions : c.mcqOptions,
+          };
+        }
+        return c;
+      });
+
+      if (needWrite) {
+        localStorage.setItem(STORAGE_KEYS.CARDS, JSON.stringify(enrichedCards));
+        try {
+          localStorage.removeItem('flashfire_cards_v2');
+          localStorage.removeItem('flashfire_cards');
+        } catch {}
+      }
+
+      return enrichedCards;
     } catch {
+      localStorage.setItem(STORAGE_KEYS.CARDS, JSON.stringify(INITIAL_CARDS));
       return INITIAL_CARDS;
     }
   },
@@ -104,10 +160,16 @@ export const storage = {
 
   getReviewLogs(): ReviewLog[] {
     if (typeof window === 'undefined') return [];
-    const raw = localStorage.getItem(STORAGE_KEYS.LOGS);
+    let raw = localStorage.getItem(STORAGE_KEYS.LOGS);
+    if (!raw) {
+      const legacy = localStorage.getItem('flashfire_review_logs_v2') || localStorage.getItem('flashfire_review_logs');
+      if (legacy) raw = legacy;
+    }
     if (!raw) return [];
     try {
-      return JSON.parse(raw);
+      const logs = JSON.parse(raw);
+      localStorage.setItem(STORAGE_KEYS.LOGS, JSON.stringify(logs));
+      return logs;
     } catch {
       return [];
     }
@@ -133,13 +195,19 @@ export const storage = {
       totalCardsMastered: 12,
     };
     if (typeof window === 'undefined') return defaultStats;
-    const raw = localStorage.getItem(STORAGE_KEYS.STATS);
+    let raw = localStorage.getItem(STORAGE_KEYS.STATS);
+    if (!raw) {
+      const legacy = localStorage.getItem('flashfire_stats_v2') || localStorage.getItem('flashfire_stats');
+      if (legacy) raw = legacy;
+    }
     if (!raw) {
       localStorage.setItem(STORAGE_KEYS.STATS, JSON.stringify(defaultStats));
       return defaultStats;
     }
     try {
-      return JSON.parse(raw);
+      const stats = JSON.parse(raw);
+      localStorage.setItem(STORAGE_KEYS.STATS, JSON.stringify(stats));
+      return stats;
     } catch {
       return defaultStats;
     }

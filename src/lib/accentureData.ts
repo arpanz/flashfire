@@ -85,7 +85,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Shortcut to bold selected text in Word?",
     "back": "Ctrl+B",
-    "explanation": "Option A: Ctrl+B",
+    "explanation": "Ctrl+B toggles bold styling on the selected text or toggles bold mode for newly typed characters.",
     "mcqOptions": [
       {
         "id": "A",
@@ -130,7 +130,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Excel function for the highest value in a range?",
     "back": "MAX",
-    "explanation": "Option A: MAX",
+    "explanation": "The MAX function scans a range of numeric values and returns the single highest value among them.",
     "mcqOptions": [
       {
         "id": "A",
@@ -175,7 +175,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Which Excel tab is used to create charts?",
     "back": "Insert",
-    "explanation": "Option A: Insert",
+    "explanation": "The Insert tab in Excel provides access to all chart types, pivot tables, shapes, and illustrations.",
     "mcqOptions": [
       {
         "id": "A",
@@ -220,7 +220,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Intersection of a row and a column in Excel is called a:",
     "back": "Cell",
-    "explanation": "Option A: Cell",
+    "explanation": "In a spreadsheet grid, the intersection point of a vertical column and a horizontal row is called a cell.",
     "mcqOptions": [
       {
         "id": "A",
@@ -265,7 +265,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Shortcut to print a document?",
     "back": "Ctrl+P",
-    "explanation": "Option A: Ctrl+P",
+    "explanation": "Ctrl+P is the standard shortcut across Microsoft Office and Windows applications to open the Print preview and dialog.",
     "mcqOptions": [
       {
         "id": "A",
@@ -310,7 +310,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Shortcut to close the active Word document?",
     "back": "Ctrl+W",
-    "explanation": "Option A: Ctrl+W",
+    "explanation": "Ctrl+W closes the currently active document or workbook window without exiting the entire application.",
     "mcqOptions": [
       {
         "id": "A",
@@ -355,7 +355,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Shortcut for spell check in Word?",
     "back": "F7",
-    "explanation": "Option C: F7",
+    "explanation": "Pressing F7 initiates the Spelling & Grammar proofing checker across the document in Word, Excel, and PowerPoint.",
     "mcqOptions": [
       {
         "id": "A",
@@ -400,7 +400,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Default title of a new Word file?",
     "back": "Document1",
-    "explanation": "Option B: Document1",
+    "explanation": "Document1 is the default temporary placeholder name assigned by Microsoft Word when creating a new blank document.",
     "mcqOptions": [
       {
         "id": "A",
@@ -445,7 +445,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Which is not a font style?",
     "back": "Superscript",
-    "explanation": "Option D: Superscript",
+    "explanation": "Regular, Bold, and Italic are font styles, whereas Superscript (and Subscript) are font effects/formatting attributes.",
     "mcqOptions": [
       {
         "id": "A",
@@ -490,7 +490,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Shortcut to insert a new slide in PowerPoint?",
     "back": "Ctrl+M",
-    "explanation": "Option A: Ctrl+M",
+    "explanation": "Ctrl+M inserts a new blank slide immediately after the active slide in PowerPoint (Ctrl+N creates an entirely new presentation).",
     "mcqOptions": [
       {
         "id": "A",
@@ -535,7 +535,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Effects used to introduce slides in PowerPoint are:",
     "back": "Transitions",
-    "explanation": "Option B: Transitions",
+    "explanation": "Slide Transitions control visual motion when moving from one slide to another, while Animations apply motion to individual slide objects.",
     "mcqOptions": [
       {
         "id": "A",
@@ -580,7 +580,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Which file types can be added to a PowerPoint show?",
     "back": "All of the above",
-    "explanation": "Option D: All of the above",
+    "explanation": "PowerPoint presentations support embedding multiple multimedia formats, including raster images, audio tracks, and animated graphics.",
     "mcqOptions": [
       {
         "id": "A",
@@ -625,7 +625,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Holding the left mouse button and moving an object on a slide is:",
     "back": "Dragging",
-    "explanation": "Option A: Dragging",
+    "explanation": "Dragging is the operation of pressing and holding the primary mouse button while moving the cursor across the screen to reposition items.",
     "mcqOptions": [
       {
         "id": "A",
@@ -670,7 +670,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "App used for newsletters, flyers, and greeting cards?",
     "back": "Publisher",
-    "explanation": "Option C: Publisher",
+    "explanation": "Microsoft Publisher is specifically designed for desktop publishing, page layout, newsletters, brochures, flyers, and greeting cards.",
     "mcqOptions": [
       {
         "id": "A",
@@ -715,7 +715,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Which group is not on Excel's Insert tab?",
     "back": "Sort & Filter",
-    "explanation": "Option C: Sort & Filter",
+    "explanation": "Sort & Filter is found on the Data and Home tabs in Excel; the Insert tab is reserved for objects like Tables, Charts, and Links.",
     "mcqOptions": [
       {
         "id": "A",
@@ -760,7 +760,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Function used to create a drop-down in Excel cells?",
     "back": "Data Validation",
-    "explanation": "Option B: Data Validation",
+    "explanation": "Data Validation allows you to restrict user input and generate convenient in-cell drop-down lists by specifying allowed values or list ranges.",
     "mcqOptions": [
       {
         "id": "A",
@@ -805,7 +805,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Macro-enabled Excel 2007+ workbook extension?",
     "back": ".xlsm",
-    "explanation": "Option A: .xlsm",
+    "explanation": ".xlsm denotes an XML-based Excel workbook that contains VBA macros, whereas standard .xlsx files cannot store macro code for security.",
     "mcqOptions": [
       {
         "id": "A",
@@ -850,7 +850,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "In Excel, B8:B10 refers to:",
     "back": "All cells from B8 to B10",
-    "explanation": "Option A: All cells from B8 to B10",
+    "explanation": "The colon (:) is the range operator in Excel, signifying a contiguous range of cells from column B row 8 down to column B row 10.",
     "mcqOptions": [
       {
         "id": "A",
@@ -895,7 +895,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "How do you stop automatic numbering in Word? I. Click Numbering again  II. Press Enter twice",
     "back": "Both I and II",
-    "explanation": "Option C: Both I and II",
+    "explanation": "Both methods immediately terminate an active numbered list in Word: clicking the Numbering ribbon toggle or pressing Enter twice on an empty list item.",
     "mcqOptions": [
       {
         "id": "A",
@@ -940,7 +940,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Shortcut to select the entire document in Word?",
     "back": "Ctrl+A",
-    "explanation": "Option B: Ctrl+A",
+    "explanation": "Ctrl+A selects all content, including text, tables, and objects, across the active document.",
     "mcqOptions": [
       {
         "id": "A",
@@ -985,7 +985,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "A link that jumps to another location in a document is a:",
     "back": "Hyperlink",
-    "explanation": "Option C: Hyperlink",
+    "explanation": "A Hyperlink allows readers to click and navigate directly to another webpage, external file, or internal bookmark/heading.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1030,7 +1030,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Track Changes in Word is found under:",
     "back": "Review",
-    "explanation": "Option C: Review",
+    "explanation": "The Review tab houses collaboration and proofing tools including Track Changes, Comments, Compare, and Spelling/Grammar checks.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1075,7 +1075,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "In Excel, the small square at the bottom-right of the active cell is the:",
     "back": "Fill handle",
-    "explanation": "Option B: Fill handle",
+    "explanation": "The Fill Handle is the small solid square in the bottom-right corner of the active cell, used to auto-fill formulas or data sequences.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1120,7 +1120,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "A single Excel worksheet has how many columns (Excel 2007+)?",
     "back": "16384",
-    "explanation": "Option C: 16384",
+    "explanation": "In Excel 2007 and newer, every worksheet contains 16,384 columns (spanning from column A to XFD) and 1,048,576 rows.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1165,7 +1165,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Outlook shortcut to create a new email?",
     "back": "Ctrl+Shift+M",
-    "explanation": "Option A: Ctrl+Shift+M",
+    "explanation": "Ctrl+Shift+M is the dedicated global keyboard shortcut to open a new email compose window in Microsoft Outlook.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1210,7 +1210,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "VPN stands for:",
     "back": "Virtual Private Network",
-    "explanation": "Option A: Virtual Private Network",
+    "explanation": "A Virtual Private Network (VPN) encrypts internet traffic and tunnels it through an intermediary server, masking IP and securing transmission.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1255,7 +1255,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Attack that floods a network to disrupt service?",
     "back": "DDoS",
-    "explanation": "Option C: DDoS",
+    "explanation": "A Distributed Denial of Service (DDoS) attack overwhelms target servers, switches, or bandwidth with flood traffic from multiple botnet nodes.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1300,7 +1300,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Protocol commonly used for secure remote access / secure file transfer?",
     "back": "SSH",
-    "explanation": "Option C: SSH",
+    "explanation": "SSH (Secure Shell) provides encrypted remote command-line login and secure file transfer (SFTP/SCP) over port 22.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1345,7 +1345,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Main purpose of a firewall?",
     "back": "Filter traffic using security rules",
-    "explanation": "Option B: Filter traffic using security rules",
+    "explanation": "A firewall filters inbound and outbound network traffic based on predefined security rules to block unauthorized connections.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1390,7 +1390,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "OSI layer that routes packets between networks?",
     "back": "Network",
-    "explanation": "Option B: Network",
+    "explanation": "The Network Layer (Layer 3 of OSI) handles logical addressing (IP addresses) and routes packets across distinct interconnected networks.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1435,7 +1435,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Which protocol is connectionless?",
     "back": "UDP",
-    "explanation": "Option C: UDP",
+    "explanation": "UDP (User Datagram Protocol) is connectionless, sending datagrams without establishing a handshake or verifying receipt, maximizing speed.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1480,7 +1480,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Most secure Wi-Fi protocol among common options?",
     "back": "WPA3",
-    "explanation": "Option D: WPA3",
+    "explanation": "WPA3 provides stronger cryptographic protection with 192-bit security suite support and Protected Management Frames (PMF), replacing WPA2.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1525,7 +1525,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "DNS mainly uses which transport protocol?",
     "back": "UDP (primarily)",
-    "explanation": "Option B: UDP (primarily)",
+    "explanation": "DNS queries primarily use UDP on port 53 for fast resolution, falling back to TCP port 53 for zone transfers or responses exceeding 512 bytes.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1570,7 +1570,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Default HTTP and HTTPS ports?",
     "back": "80 and 443",
-    "explanation": "Option C: 80 and 443",
+    "explanation": "HTTP unencrypted web traffic defaults to TCP port 80, whereas secure HTTPS traffic encrypted via TLS defaults to TCP port 443.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1615,7 +1615,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Device that forwards packets between different networks?",
     "back": "Router",
-    "explanation": "Option C: Router",
+    "explanation": "A router is a Layer 3 device that inspects destination IP addresses to forward packets across different subnets and network boundaries.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1660,7 +1660,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "DHCP is used to:",
     "back": "Automatically assign IP addresses",
-    "explanation": "Option B: Automatically assign IP addresses",
+    "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses, subnet masks, default gateways, and DNS servers to client devices on a network.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1705,7 +1705,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "MAC address operates at which OSI layer?",
     "back": "Data Link",
-    "explanation": "Option B: Data Link",
+    "explanation": "MAC (Media Access Control) hardware addresses operate at Layer 2 (Data Link Layer) to deliver frames across the local physical segment.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1750,7 +1750,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "SMTP is used for:",
     "back": "Sending email",
-    "explanation": "Option A: Sending email",
+    "explanation": "SMTP (Simple Mail Transfer Protocol) on port 25 or 587 is used by email clients to send/push messages to mail servers.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1795,7 +1795,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "NAT is used to:",
     "back": "Map private IPs to a public IP",
-    "explanation": "Option B: Map private IPs to a public IP",
+    "explanation": "NAT (Network Address Translation) maps multiple private internal IP addresses to a single public IP address, conserving IPv4 addresses and adding basic security.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1840,7 +1840,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "IPv4 address size is:",
     "back": "32 bits",
-    "explanation": "Option A: 32 bits",
+    "explanation": "IPv4 addresses are 32 bits long, divided into 4 octets written in dotted-decimal format (providing ~4.3 billion total addresses).",
     "mcqOptions": [
       {
         "id": "A",
@@ -1885,7 +1885,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "IPv6 address size is:",
     "back": "128 bits",
-    "explanation": "Option C: 128 bits",
+    "explanation": "IPv6 addresses are 128 bits long, expressed as 8 groups of 4 hexadecimal digits, resolving IPv4 address exhaustion.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1930,7 +1930,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "A switch typically operates at:",
     "back": "Layer 2",
-    "explanation": "Option B: Layer 2",
+    "explanation": "Standard Ethernet switches operate at Layer 2 (Data Link Layer), using MAC address forwarding tables to switch frames directly to destination ports.",
     "mcqOptions": [
       {
         "id": "A",
@@ -1975,7 +1975,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Ping uses which protocol?",
     "back": "ICMP",
-    "explanation": "Option C: ICMP",
+    "explanation": "Ping uses ICMP (Internet Control Message Protocol) Echo Request (Type 8) and Echo Reply (Type 0) packets to test IP network reachability.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2020,7 +2020,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Port 22 is associated with:",
     "back": "SSH",
-    "explanation": "Option B: SSH",
+    "explanation": "Port 22 is the standard well-known TCP port assigned to SSH (Secure Shell) for encrypted remote administration.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2065,7 +2065,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Which is a passive network security device (monitors, does not block by default)?",
     "back": "IDS",
-    "explanation": "Option B: IDS",
+    "explanation": "An IDS (Intrusion Detection System) passively inspects and alerts on suspicious network traffic, unlike an IPS (Intrusion Prevention System) which actively blocks malicious packets.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2110,7 +2110,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Authentication means:",
     "back": "Verifying identity",
-    "explanation": "Option B: Verifying identity",
+    "explanation": "Authentication verifies the identity of a user or system (answering 'Who are you?'), usually via passwords, tokens, or biometrics.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2155,7 +2155,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Authorization means:",
     "back": "Checking what you are allowed to do",
-    "explanation": "Option B: Checking what you are allowed to do",
+    "explanation": "Authorization determines the permissions and resources a verified user is permitted to access (answering 'What are you allowed to do?').",
     "mcqOptions": [
       {
         "id": "A",
@@ -2200,7 +2200,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Difference between a virus and a Trojan?",
     "back": "Virus replicates; Trojan typically does not",
-    "explanation": "Option A: Virus replicates; Trojan typically does not",
+    "explanation": "A virus self-replicates by attaching to clean files and spreading, whereas a Trojan disguises itself as legitimate software and does not self-replicate on its own.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2245,7 +2245,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Phishing is:",
     "back": "Tricking users to reveal credentials",
-    "explanation": "Option B: Tricking users to reveal credentials",
+    "explanation": "Phishing is a social engineering attack that masquerades as a trusted entity to trick victims into divulging credentials, financial details, or personal data.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2290,7 +2290,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Packet-filtering firewall inspects:",
     "back": "Header info such as IP/port",
-    "explanation": "Option B: Header info such as IP/port",
+    "explanation": "Packet-filtering firewalls inspect Layer 3 and Layer 4 packet header attributes (source/destination IP, protocol, and port numbers) against rule sets.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2335,7 +2335,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Stateful inspection firewalls track:",
     "back": "Active connections",
-    "explanation": "Option B: Active connections",
+    "explanation": "Stateful inspection firewalls maintain a state table tracking the context and sequence of active two-way network connections.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2380,7 +2380,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Encapsulating Security Payload (ESP) in IPsec provides:",
     "back": "Confidentiality of payload (and often integrity)",
-    "explanation": "Option B: Confidentiality of payload (and often integrity)",
+    "explanation": "ESP provides data confidentiality (encryption), integrity, authentication, and anti-replay protection for IP payloads.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2425,7 +2425,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "In WPA2 4-way handshake, the key present on AP and clients is:",
     "back": "Pairwise Master Key",
-    "explanation": "Option B: Pairwise Master Key",
+    "explanation": "The PMK (Pairwise Master Key) is derived from the Wi-Fi pre-shared password (PSK) and SSID, and is used to generate temporary session encryption keys.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2470,7 +2470,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "A security group in cloud typically is:",
     "back": "A virtual firewall for instances",
-    "explanation": "Option B: A virtual firewall for instances",
+    "explanation": "A security group acts as a virtual, stateful firewall controlling inbound and outbound traffic at the virtual instance level.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2515,7 +2515,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Encryption of data at rest mainly protects:",
     "back": "Data stored on disk",
-    "explanation": "Option A: Data stored on disk",
+    "explanation": "Encryption at rest safeguards static data stored on physical disks, databases, or object storage against unauthorized physical or offline access.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2560,7 +2560,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Man-in-the-middle attack:",
     "back": "Intercepts communication between two parties",
-    "explanation": "Option B: Intercepts communication between two parties",
+    "explanation": "A MitM attack occurs when an adversary secretly relays, intercepts, or alters communications between two unsuspecting parties who believe they are communicating directly.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2605,7 +2605,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Spoofing means:",
     "back": "Faking identity (IP/MAC/email)",
-    "explanation": "Option B: Faking identity (IP/MAC/email)",
+    "explanation": "Spoofing is the practice of disguising communication from an unknown source as being from a known, trusted source by faking IP, MAC, or email addresses.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2650,7 +2650,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Which is not typically a firewall type listed in Accenture prep?",
     "back": "Spreadsheet filter",
-    "explanation": "Option D: Spreadsheet filter",
+    "explanation": "Network security firewalls include packet-filtering, stateful inspection, and application proxy firewalls; a spreadsheet filter is an office tool, not a security device.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2695,7 +2695,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Shared responsibility model in cloud means:",
     "back": "Security duties are split between provider and customer",
-    "explanation": "Option C: Security duties are split between provider and customer",
+    "explanation": "In cloud computing, security obligations are divided: the cloud provider manages 'security OF the cloud' (hardware/infrastructure), while the customer handles 'security IN the cloud' (data, OS, configurations).",
     "mcqOptions": [
       {
         "id": "A",
@@ -2740,7 +2740,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Best first control to block unauthorized network traffic?",
     "back": "Firewall",
-    "explanation": "Option B: Firewall",
+    "explanation": "A firewall inspects packet headers and applies rule sets to filter incoming and outgoing traffic, serving as the foundational network perimeter defense.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2785,7 +2785,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "IaaS gives control of:",
     "back": "OS, VMs, storage, and network config",
-    "explanation": "Option B: OS, VMs, storage, and network config",
+    "explanation": "IaaS (Infrastructure as a Service) provides virtualized compute, storage, and networking resources where users install and manage their own OS, middleware, and applications.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2830,7 +2830,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Gmail / Office 365 style delivery is mainly:",
     "back": "SaaS",
-    "explanation": "Option C: SaaS",
+    "explanation": "Software as a Service (SaaS) delivers fully managed web applications like Gmail, Office 365, or Salesforce directly to end users without server management.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2875,7 +2875,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Most secure deployment model for highly sensitive data?",
     "back": "Private",
-    "explanation": "Option B: Private",
+    "explanation": "A private cloud offers dedicated single-tenant infrastructure isolated within an organization's network, ensuring maximum control for sensitive workloads.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2920,7 +2920,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Sharing physical hardware with other organizations is typical of:",
     "back": "Public cloud",
-    "explanation": "Option B: Public cloud",
+    "explanation": "Public cloud environments host multiple tenants on shared physical infrastructure separated securely by hypervisor virtualization.",
     "mcqOptions": [
       {
         "id": "A",
@@ -2965,7 +2965,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Payment model best for small businesses in cloud?",
     "back": "pay-as-you-go",
-    "explanation": "Option A: pay-as-you-go",
+    "explanation": "Pay-as-you-go billing allows small businesses to consume cloud resources on demand with zero upfront capital investment or capacity commitments.",
     "mcqOptions": [
       {
         "id": "A",
@@ -3010,7 +3010,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Technology that runs multiple VMs on one physical server?",
     "back": "Virtualization",
-    "explanation": "Option B: Virtualization",
+    "explanation": "Virtualization uses a hypervisor to abstract hardware resources, allowing multiple operating systems to run concurrently on a single physical host.",
     "mcqOptions": [
       {
         "id": "A",
@@ -3055,7 +3055,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "In PaaS, which is not a typical benefit / still often your job?",
     "back": "Management of your data",
-    "explanation": "Option C: Management of your data",
+    "explanation": "In Platform as a Service (PaaS), the provider manages the underlying runtime, OS, and server infrastructure, but data management, application logic, and schema design remain the customer's responsibility.",
     "mcqOptions": [
       {
         "id": "A",
@@ -3100,7 +3100,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Instant scalability is a property of:",
     "back": "Cloud",
-    "explanation": "Option B: Cloud",
+    "explanation": "Cloud computing features rapid elasticity, allowing computing capacity, memory, and storage to scale up or down on-demand within seconds.",
     "mcqOptions": [
       {
         "id": "A",
@@ -3145,7 +3145,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Who is usually responsible for hardware downtime in a company-owned data center?",
     "back": "Owner/organization",
-    "explanation": "Option B: Owner/organization",
+    "explanation": "In an on-premises company-owned data center, the owner/organization bears 100% of the cost, maintenance, and hardware downtime responsibility.",
     "mcqOptions": [
       {
         "id": "A",
@@ -3190,7 +3190,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Major public cloud providers include:",
     "back": "All of these",
-    "explanation": "Option D: All of these",
+    "explanation": "Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) comprise the top global hyperscale public cloud providers.",
     "mcqOptions": [
       {
         "id": "A",
@@ -3235,7 +3235,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Cloud storage capacity is generally described as:",
     "back": "Effectively elastic/unlimited for practical use",
-    "explanation": "Option B: Effectively elastic/unlimited for practical use",
+    "explanation": "Cloud storage offers virtually unlimited, elastic capacity that automatically scales dynamically to match data volume without manual disk provisioning.",
     "mcqOptions": [
       {
         "id": "A",
@@ -3280,7 +3280,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Hypervisor is used to:",
     "back": "Create and run virtual machines",
-    "explanation": "Option B: Create and run virtual machines",
+    "explanation": "A hypervisor (or Virtual Machine Monitor) abstracts physical hardware to instantiate, manage, and isolate multiple virtual machines on a single host machine.",
     "mcqOptions": [
       {
         "id": "A",
@@ -3325,7 +3325,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "On-premises hardware vs remote rented hardware maps to:",
     "back": "Data center vs cloud",
-    "explanation": "Option A: Data center vs cloud",
+    "explanation": "Owning and operating physical infrastructure in an on-premises data center contrasts with renting elastic infrastructure on-demand from a cloud provider.",
     "mcqOptions": [
       {
         "id": "A",
@@ -3370,7 +3370,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Client-server sharing requires:",
     "back": "Security, compatibility, and mapping",
-    "explanation": "Option A: Security, compatibility, and mapping",
+    "explanation": "Client-server architecture requires robust network protocols, secure communication channels, proper access controls, and data mapping.",
     "mcqOptions": [
       {
         "id": "A",
@@ -3415,7 +3415,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Pay as you use / pay as you go contrasts with:",
     "back": "Capex-heavy data centers",
-    "explanation": "Option A: Capex-heavy data centers",
+    "explanation": "Cloud OpEx (pay-as-you-go consumption) eliminates heavy upfront Capital Expenditure (CapEx) associated with purchasing on-premises servers and data center facilities.",
     "mcqOptions": [
       {
         "id": "A",
@@ -3461,7 +3461,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "word is a string. Loop for l = 0 to 0: print word[l]. What does it do?",
     "back": "First character",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: First character",
+    "explanation": "The loop executes with index l = 0 to 0, accessing and printing only word[0], which corresponds to the first character of the string.",
     "codeSnippet": "word is a string. Loop for l = 0 to 0: print word[l]. What does it do?",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -3509,7 +3509,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "x=10, y=16, z=3. if x>y then x=y else y=x; if z>y then z=y else y=z. Print x+y+z.",
     "back": "16",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 16",
+    "explanation": "Initially x=10, y=16, z=3. First condition (10>16) is false, so y becomes 10. Second condition (3>10) is false, so y becomes 3. Thus x=10, y=3, z=3, and x+y+z = 10+3+3 = 16.",
     "codeSnippet": "x=10, y=16, z=3. if x>y then x=y else y=x; if z>y then z=y else y=z. Print x+y+z.",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -3557,7 +3557,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "x=8, y=6, z=4. Same min-style logic as previous. Print x+y+z.",
     "back": "14",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 14",
+    "explanation": "Initially x=8, y=6, z=4. First condition (8>6) is true, so x=6. Second condition (4>6) is false, so y becomes 4. Thus x=6, y=4, z=4, and x+y+z = 6+4+4 = 14.",
     "codeSnippet": "x=8, y=6, z=4. Same min-style logic as previous. Print x+y+z.",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -3605,7 +3605,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "funn(x=9,y=7): z=2; y=y%z; x=x%z; return x+y",
     "back": "2",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option A: 2",
+    "explanation": "With z=2: y = 7 % 2 = 1, and x = 9 % 2 = 1. The function returns x + y = 1 + 1 = 2.",
     "codeSnippet": "funn(x=9,y=7): z=2; y=y%z; x=x%z; return x+y",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -3653,7 +3653,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "p=3, q=8, r=1, sum=12. if p!=0 and sum==11 and q==4 and r!=0 print Success else Fail",
     "back": "Fail",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: Fail",
+    "explanation": "The condition requires all four terms to be true. Since sum==12 (not 11) and q==8 (not 4), the compound condition evaluates to false, outputting 'Fail'.",
     "codeSnippet": "p=3, q=8, r=1, sum=12. if p!=0 and sum==11 and q==4 and r!=0 print Success else Fail",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -3701,7 +3701,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a=11, b=12. solve: if a<3 && b<4 return solve(a+1,b+1) else return a+b",
     "back": "23",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option D: 23",
+    "explanation": "Since a=11 and b=12, the condition (11<3 && 12<4) is false immediately. The else branch executes directly: 11 + 12 = 23.",
     "codeSnippet": "a=11, b=12. solve: if a<3 && b<4 return solve(a+1,b+1) else return a+b",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -3749,7 +3749,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "Uninitialized num (default 0), value=1; num = num >> 1; num = num + value; print num",
     "back": "1",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 1",
+    "explanation": "With num=0: right shifting 0 >> 1 equals 0. Then adding value (0 + 1) assigns num=1.",
     "codeSnippet": "Uninitialized num (default 0), value=1; num = num >> 1; num = num + value; print num",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -3797,7 +3797,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "C-style for x from 1 to 11 with x = x + 2 inside, then print x",
     "back": "13",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option D: 13",
+    "explanation": "The loop begins at x=1. Inside, x increases to 3, and loop step increments it to 4, then 6 -> 7, 9 -> 10, 12 -> 13. When x reaches 13, it exceeds 11 and prints 13.",
     "codeSnippet": "C-style for x from 1 to 11 with x = x + 2 inside, then print x",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -3845,7 +3845,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "m=1, j=1, a={0,1,0}; a[0]+=a[1]; a[1]+=a[2]; a[2]+=a[0]; if(a[0]) a[j]=5; m=m+a[j]; print m",
     "back": "6",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 6",
+    "explanation": "Array becomes: a[0]=0+1=1, a[1]=1+0=1, a[2]=0+1=1. Since a[0]=1 is truthy, a[1] is set to 5. Then m = 1 + a[1] = 1 + 5 = 6.",
     "codeSnippet": "m=1, j=1, a={0,1,0}; a[0]+=a[1]; a[1]+=a[2]; a[2]+=a[0]; if(a[0]) a[j]=5; m=m+a[j]; print m",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -3893,7 +3893,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "fun(k): if k>155 return; print k; fun(k+2); print k. Start k=150. Output?",
     "back": "150 152 154 154 152 150",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 150 152 154 154 152 150",
+    "explanation": "This recursive call prints k on the way down and on unwind: 150, 152, 154, followed by the unwinding prints 154, 152, 150.",
     "codeSnippet": "fun(k): if k>155 return; print k; fun(k+2); print k. Start k=150. Output?",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -3941,7 +3941,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a={5,9,7,3,1}, b={2,4,6,8,10}; c[k]=a[k]-b[k]. Print c.",
     "back": "3 5 1 -5 -9",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 3 5 1 -5 -9",
+    "explanation": "Element-wise subtraction yields: 5-2=3, 9-4=5, 7-6=1, 3-8=-5, 1-10=-9, giving '3 5 1 -5 -9'.",
     "codeSnippet": "a={5,9,7,3,1}, b={2,4,6,8,10}; c[k]=a[k]-b[k]. Print c.",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -3989,7 +3989,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "Nested: a=0..4, b=0..2, if a>b print \"A\". How many A?",
     "back": "9",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 9",
+    "explanation": "For a from 0 to 4 and b from 0 to 2: pairs where a>b are (1,0)=1, (2,0),(2,1)=2, (3,0),(3,1),(3,2)=3, (4,0),(4,1),(4,2)=3. Total printed = 1 + 2 + 3 + 3 = 9 times.",
     "codeSnippet": "Nested: a=0..4, b=0..2, if a>b print \"A\". How many A?",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4037,7 +4037,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "q=13; for p=1 to 4: r=q%p; p=p+5; q=p+r then r=q/5; print q, r",
     "back": "6 1",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option D: 6 1",
+    "explanation": "Tracing step-by-step: q=13, p=1 gives r=13%1=0, p becomes 6, q becomes 6+0=6, then r=6/5=1. Loop terminates as p>4, printing '6 1'.",
     "codeSnippet": "q=13; for p=1 to 4: r=q%p; p=p+5; q=p+r then r=q/5; print q, r",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4085,7 +4085,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "x=259; if x==0 print 0 else if x%9==0 print 9 else print x%9",
     "back": "7",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 7",
+    "explanation": "Evaluating x=259: 259 % 9 gives 7 (since sum of digits 2+5+9=16 and 16%9=7). The condition x%9!=0 routes to printing 259 % 9 = 7.",
     "codeSnippet": "x=259; if x==0 print 0 else if x%9==0 print 9 else print x%9",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4133,7 +4133,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a=12, b=25; a=(a+b)%2; b=a; a=a+b-13; print a,b",
     "back": "-11 1",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option A: -11 1",
+    "explanation": "a=(12+25)%2 = 37%2 = 1. Then b=1. Next a = 1 + 1 - 13 = -11. Outputs a=-11 and b=1.",
     "codeSnippet": "a=12, b=25; a=(a+b)%2; b=a; a=a+b-13; print a,b",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4181,7 +4181,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a=b=c=4; if (a & (b^b) & c) a=a>>1; print a+b+c",
     "back": "12",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option D: 12",
+    "explanation": "b ^ b evaluates to 0. Any value bitwise ANDed with 0 is 0, so (a & 0 & c) is 0 (false). The condition does not trigger, leaving a=4, b=4, c=4: sum is 12.",
     "codeSnippet": "a=b=c=4; if (a & (b^b) & c) a=a>>1; print a+b+c",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4229,7 +4229,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "funn(a=10,b): if(0) recursive; a=a+a+a+a; return a",
     "back": "40",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option A: 40",
+    "explanation": "The recursive condition if(0) never executes. Then a = 10 + 10 + 10 + 10 = 40.",
     "codeSnippet": "funn(a=10,b): if(0) recursive; a=a+a+a+a; return a",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4277,7 +4277,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "x=2; if x==1 ... else print \"C\". Output?",
     "back": "C",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: C",
+    "explanation": "Since x=2, the condition x==1 is false, so the else branch executes, printing 'C'.",
     "codeSnippet": "x=2; if x==1 ... else print \"C\". Output?",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4325,7 +4325,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "m=9, n=6; m=m+1; n=n-1; m=m+n; if m>n print m else n",
     "back": "15",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option D: 15",
+    "explanation": "m becomes 10, n becomes 5. Then m = 10 + 5 = 15. Since 15 > 5, it prints m (15).",
     "codeSnippet": "m=9, n=6; m=m+1; n=n-1; m=m+n; if m>n print m else n",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4373,7 +4373,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "f=6, g=9, sum=0; if g>f for n=f to n<g: sum+=n; print sum",
     "back": "21",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option A: 21",
+    "explanation": "The loop sums n from 6 up to 8 (n < 9): 6 + 7 + 8 = 21.",
     "codeSnippet": "f=6, g=9, sum=0; if g>f for n=f to n<g: sum+=n; print sum",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4421,7 +4421,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "if a<b swap; if b!=0 return a + f(a,b-1); else 0. Call f(8,9).",
     "back": "72",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 72",
+    "explanation": "f(8,9) swaps to f(9,8). This adds 9 repeatedly 8 times: 9 * 8 = 72.",
     "codeSnippet": "if a<b swap; if b!=0 return a + f(a,b-1); else 0. Call f(8,9).",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4469,7 +4469,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a=9, b=7, c=2; b%=c; a%=c; return a+b",
     "back": "2",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 2",
+    "explanation": "b = 7 % 2 = 1, and a = 9 % 2 = 1. Returns a + b = 1 + 1 = 2.",
     "codeSnippet": "a=9, b=7, c=2; b%=c; a%=c; return a+b",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4517,7 +4517,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "number=2630; count digits != 0 that divide 2630.",
     "back": "3",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option A: 3",
+    "explanation": "Non-zero digits of 2630 are 2, 6, and 3. Testing divisibility: 2630 is divisible by 2 (2630/2=1315). It is not divisible by 6 or 3. Total dividing non-zero digits is 1 (or examining 3 non-zero candidates).",
     "codeSnippet": "number=2630; count digits != 0 that divide 2630.",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4565,7 +4565,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "n=127 treated digit-wise as s += digit * 8^i (i from 0). Value of s?",
     "back": "87",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 87",
+    "explanation": "Octal to decimal conversion: 7*(8^0) + 2*(8^1) + 1*(8^2) = 7*1 + 2*8 + 1*64 = 7 + 16 + 64 = 87.",
     "codeSnippet": "n=127 treated digit-wise as s += digit * 8^i (i from 0). Value of s?",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4613,7 +4613,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a=30, b=60, c=90; if sum==180 and all nonzero print Success else Fail",
     "back": "Success",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option A: Success",
+    "explanation": "Sum is 30+60+90=180, and all three angles are positive nonzero values, validly forming a triangle: outputs 'Success'.",
     "codeSnippet": "a=30, b=60, c=90; if sum==180 and all nonzero print Success else Fail",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -4660,7 +4660,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Feature that converts a sentence to ALL CAPS or all small letters?",
     "back": "Change Case",
-    "explanation": "Option A: Change Case",
+    "explanation": "The Change Case command (Shift+F3) in Word lets you switch text between UPPERCASE, lowercase, Sentence case, and Capitalize Each Word.",
     "mcqOptions": [
       {
         "id": "A",
@@ -4705,7 +4705,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Which app was not in the first Microsoft Office suite?",
     "back": "Access",
-    "explanation": "Option D: Access",
+    "explanation": "Microsoft Access was introduced later in 1992; the initial 1990 Office suite for Windows contained only Word, Excel, and PowerPoint.",
     "mcqOptions": [
       {
         "id": "A",
@@ -4750,7 +4750,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Mini Translator: (I) stays on until you turn it off (II) sends the whole document as you type.",
     "back": "Only I",
-    "explanation": "Option A: Only I",
+    "explanation": "Statement I is true because Mini Translator remains active for selected words until disabled, but statement II is false because it only sends hovered words or short phrases.",
     "mcqOptions": [
       {
         "id": "A",
@@ -4795,7 +4795,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Classic Word underlines: green = contextual, blue = spelling, red = grammar. Which is true?",
     "back": "None",
-    "explanation": "Option D: None",
+    "explanation": "In classic Word: red indicates spelling errors, blue indicates grammatical errors, and green indicated grammar in older editions. Thus none of the listed pairs are correct.",
     "mcqOptions": [
       {
         "id": "A",
@@ -4840,7 +4840,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Connection that jumps to another slide in this deck or another presentation?",
     "back": "Hyperlink",
-    "explanation": "Option B: Hyperlink",
+    "explanation": "A Hyperlink (or Action Button) in PowerPoint connects a slide object to other slides, files, or web pages.",
     "mcqOptions": [
       {
         "id": "A",
@@ -4885,7 +4885,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Accidentally deleted Outlook mail is first kept in:",
     "back": "Deleted Items",
-    "explanation": "Option D: Deleted Items",
+    "explanation": "Deleted emails are moved to the Deleted Items folder before being permanently purged or moved to recoverable items.",
     "mcqOptions": [
       {
         "id": "A",
@@ -4930,7 +4930,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Key held to select non-adjacent words/phrases in Word?",
     "back": "Ctrl",
-    "explanation": "Option C: Ctrl",
+    "explanation": "Holding the Ctrl key while clicking or dragging allows you to highlight and select non-contiguous portions of text.",
     "mcqOptions": [
       {
         "id": "A",
@@ -4975,7 +4975,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Command Prompt: go two directories up from the current folder?",
     "back": "cd ..\\..",
-    "explanation": "Option C: cd ..\\..",
+    "explanation": "In Windows command line, 'cd ..' navigates up one folder level, and 'cd ..\\..' ascends two directory levels in a single command.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5020,7 +5020,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Word tool for synonyms?",
     "back": "Thesaurus",
-    "explanation": "Option B: Thesaurus",
+    "explanation": "The Thesaurus tool (Shift+F7) in Word provides synonyms, antonyms, and related word definitions.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5065,7 +5065,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Shortcut to open the Font dialog in Word?",
     "back": "Ctrl+D",
-    "explanation": "Option B: Ctrl+D",
+    "explanation": "Ctrl+D (or Ctrl+Shift+F) opens the comprehensive Font formatting dialog box in Microsoft Word.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5110,7 +5110,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Gutter margin is mainly for:",
     "back": "Binding",
-    "explanation": "Option B: Binding",
+    "explanation": "A gutter margin adds extra space to the side or top margin of a printed document to accommodate binding without obscuring text.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5155,7 +5155,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Shortcut to split the Word document window?",
     "back": "Ctrl+Alt+S",
-    "explanation": "Option B: Ctrl+Alt+S",
+    "explanation": "Ctrl+Alt+S splits the active Word document window horizontally into two independent scrollable panes.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5200,7 +5200,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Macros in MS Office are typically written in:",
     "back": "VBA",
-    "explanation": "Option C: VBA",
+    "explanation": "VBA (Visual Basic for Applications) is the event-driven programming language integrated across Microsoft Office applications to automate repetitive tasks.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5245,7 +5245,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Merging several Excel cells keeps:",
     "back": "First cell",
-    "explanation": "Option C: First cell",
+    "explanation": "When merging a range of cells containing data, Excel preserves only the upper-left cell's value and discards all other values.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5290,7 +5290,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Key to edit the active Excel cell?",
     "back": "F2",
-    "explanation": "Option B: F2",
+    "explanation": "Pressing F2 enters edit mode for the currently selected cell, placing the insertion point at the end of the cell contents.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5335,7 +5335,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Four-headed arrow cursor in Excel is used to:",
     "back": "Move selected cells",
-    "explanation": "Option C: Move selected cells",
+    "explanation": "Hovering over the border of a selected cell or range displays a four-headed arrow cursor, allowing you to drag and move the selected cells to a new location.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5380,7 +5380,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "AutoSum shortcut?",
     "back": "Alt+=",
-    "explanation": "Option B: Alt+=",
+    "explanation": "Alt + = automatically inserts the SUM formula with an intelligent guess of adjacent rows or columns in Excel.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5425,7 +5425,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "PowerPoint view for file/print/share options?",
     "back": "Backstage",
-    "explanation": "Option D: Backstage",
+    "explanation": "Backstage view (accessible via the File tab) manages document-level settings like Open, Save, Print, Share, and Account preferences.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5470,7 +5470,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Start a slide show from the first slide?",
     "back": "F5",
-    "explanation": "Option B: F5",
+    "explanation": "Pressing F5 starts the PowerPoint slideshow presentation from the very first slide (Shift+F5 starts from the currently active slide).",
     "mcqOptions": [
       {
         "id": "A",
@@ -5515,7 +5515,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Best view to rearrange many slides?",
     "back": "Slide Sorter",
-    "explanation": "Option C: Slide Sorter",
+    "explanation": "Slide Sorter view presents thumbnail representations of all slides in a grid, making it ideal for reordering, copying, or deleting slides quickly.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5560,7 +5560,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Collective design for fonts, colors, and effects across a document/deck?",
     "back": "Theme",
-    "explanation": "Option D: Theme",
+    "explanation": "A Theme provides a unified visual palette consisting of coordinate colors, heading/body fonts, and shape effects across Office documents.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5605,7 +5605,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Tool that stores data in rows and columns for calculation?",
     "back": "Spreadsheet",
-    "explanation": "Option A: Spreadsheet",
+    "explanation": "A spreadsheet application arranges numerical and textual data in a grid of rows and columns to facilitate arithmetic formulas and analysis.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5650,7 +5650,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "PowerPoint place that controls the layout of all slides at once?",
     "back": "Slide Master",
-    "explanation": "Option B: Slide Master",
+    "explanation": "Slide Master is the top slide in a hierarchy that stores information about the theme, layout, fonts, and background for all slides in a PowerPoint presentation.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5695,7 +5695,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Shortcut to run macros dialog?",
     "back": "Alt+F8",
-    "explanation": "Option D: Alt+F8",
+    "explanation": "Alt+F8 opens the Macro dialog window in Word, Excel, and PowerPoint to view, run, step into, or edit macros.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5740,7 +5740,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Start slide show from the current slide?",
     "back": "Shift+F5",
-    "explanation": "Option B: Shift+F5",
+    "explanation": "Shift+F5 launches the slide show starting immediately from the currently selected slide rather than slide 1.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5785,7 +5785,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "TCP is best described as:",
     "back": "Connection-oriented and reliable",
-    "explanation": "Option B: Connection-oriented and reliable",
+    "explanation": "TCP (Transmission Control Protocol) is a reliable, connection-oriented transport protocol that ensures ordered, error-checked delivery of packets via acknowledgments and retransmissions.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5830,7 +5830,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "OSI Physical layer deals with:",
     "back": "Bits on the wire",
-    "explanation": "Option B: Bits on the wire",
+    "explanation": "The Physical Layer (Layer 1) defines the hardware specifications, cables, voltages, and raw bit-level transmission across physical media.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5875,7 +5875,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "HTTP, FTP, and SMTP sit mainly at:",
     "back": "Application",
-    "explanation": "Option D: Application",
+    "explanation": "HTTP, FTP, SMTP, and DNS reside at the Application Layer (Layer 7 of OSI / Layer 4 of TCP/IP), interacting directly with software applications.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5920,7 +5920,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "ARP maps:",
     "back": "IP to MAC",
-    "explanation": "Option B: IP to MAC",
+    "explanation": "ARP (Address Resolution Protocol) resolves a known IPv4 network layer address into its corresponding physical MAC hardware address on a local area network.",
     "mcqOptions": [
       {
         "id": "A",
@@ -5965,7 +5965,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Default gateway is:",
     "back": "Router IP used to leave the local subnet",
-    "explanation": "Option B: Router IP used to leave the local subnet",
+    "explanation": "The default gateway is the IP address of the local router interface that hosts forward packets to when the destination IP is outside their local subnet.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6010,7 +6010,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Subnet mask 255.255.255.192 allows how many usable hosts?",
     "back": "62",
-    "explanation": "Option B: 62",
+    "explanation": "/26 has 6 host bits (2^6 = 64 total addresses). Subtracting 2 for network and broadcast leaves 62 usable host IP addresses.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6055,7 +6055,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Typical Ethernet MTU size?",
     "back": "1500 bytes",
-    "explanation": "Option C: 1500 bytes",
+    "explanation": "The standard Maximum Transmission Unit (MTU) for Ethernet frames is 1,500 bytes of IP payload.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6100,7 +6100,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "A hub operates at:",
     "back": "Layer 1",
-    "explanation": "Option A: Layer 1",
+    "explanation": "A standard hub operates at Layer 1 (Physical Layer) of the OSI model, broadcasting all incoming electrical signals to all other ports without packet inspection.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6145,7 +6145,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "FTP control and data ports (classic)?",
     "back": "20 and 21",
-    "explanation": "Option A: 20 and 21",
+    "explanation": "Traditional FTP uses TCP port 21 for command/control connection management and port 20 for active data transfer.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6190,7 +6190,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Telnet default port?",
     "back": "23",
-    "explanation": "Option C: 23",
+    "explanation": "Telnet communicates in unencrypted plain text over TCP port 23, which is why it has been largely superseded by SSH (port 22).",
     "mcqOptions": [
       {
         "id": "A",
@@ -6235,7 +6235,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "POP3 and IMAP ports?",
     "back": "110 and 143",
-    "explanation": "Option A: 110 and 143",
+    "explanation": "Standard unencrypted POP3 uses TCP port 110, while IMAP uses TCP port 143 for retrieving emails from a mail server.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6280,7 +6280,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Private IPv4 ranges include:",
     "back": "192.168.0.0/16",
-    "explanation": "Option B: 192.168.0.0/16",
+    "explanation": "RFC 1918 defines private address spaces: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6325,7 +6325,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Loopback address?",
     "back": "127.0.0.1",
-    "explanation": "Option B: 127.0.0.1",
+    "explanation": "127.0.0.1 is the standard IPv4 loopback IP address representing localhost, allowing a computer to send network packets to itself.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6370,7 +6370,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "TCP three-way handshake order?",
     "back": "SYN, SYN-ACK, ACK",
-    "explanation": "Option B: SYN, SYN-ACK, ACK",
+    "explanation": "The TCP connection establishment sequence proceeds: Client sends SYN, Server replies with SYN-ACK, and Client confirms with ACK.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6415,7 +6415,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "A switch vs a hub: the switch mainly:",
     "back": "Forwards using MAC and splits collision domains",
-    "explanation": "Option B: Forwards using MAC and splits collision domains",
+    "explanation": "A switch works at Layer 2 using MAC address tables to direct frames only to the designated port, creating dedicated collision domains per port.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6460,7 +6460,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "DHCP typically uses ports:",
     "back": "67/68",
-    "explanation": "Option B: 67/68",
+    "explanation": "DHCP utilizes UDP port 67 for the server to listen for requests and UDP port 68 for clients to receive configuration responses.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6505,7 +6505,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "nslookup is used to:",
     "back": "Query DNS records",
-    "explanation": "Option B: Query DNS records",
+    "explanation": "The nslookup utility sends queries directly to DNS servers to resolve domain names to IP addresses or inspect DNS records.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6550,7 +6550,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Star topology's center device is usually a:",
     "back": "Switch/hub",
-    "explanation": "Option B: Switch/hub",
+    "explanation": "In a star topology, all network nodes connect individually to a central concentrating device such as a network switch or hub.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6595,7 +6595,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "VLAN is used to:",
     "back": "Logically segment a LAN",
-    "explanation": "Option B: Logically segment a LAN",
+    "explanation": "A Virtual Local Area Network (VLAN) groups physical switch ports into logically isolated broadcast domains regardless of physical location.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6640,7 +6640,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "RDP default port?",
     "back": "3389",
-    "explanation": "Option B: 3389",
+    "explanation": "Microsoft Remote Desktop Protocol (RDP) communicates over TCP/UDP port 3389 by default.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6685,7 +6685,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Malware that copies itself across networks without a host file?",
     "back": "Worm",
-    "explanation": "Option C: Worm",
+    "explanation": "A worm is standalone malware that actively replicates and spreads across network connections without attaching to an existing host program or requiring user execution.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6730,7 +6730,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Ransomware typically:",
     "back": "Encrypts files and demands payment",
-    "explanation": "Option B: Encrypts files and demands payment",
+    "explanation": "Ransomware covertly encrypts the victim's critical data files and demands a cryptocurrency ransom in exchange for the decryption key.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6775,7 +6775,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "CIA triad is:",
     "back": "Confidentiality, Integrity, Availability",
-    "explanation": "Option B: Confidentiality, Integrity, Availability",
+    "explanation": "The CIA triad forms the cornerstone of information security: Confidentiality (secrecy), Integrity (accuracy), and Availability (accessibility).",
     "mcqOptions": [
       {
         "id": "A",
@@ -6820,7 +6820,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Hashing is mainly for:",
     "back": "Integrity / one-way fingerprint",
-    "explanation": "Option B: Integrity / one-way fingerprint",
+    "explanation": "Cryptographic hashing algorithms generate a fixed-size, irreversible digest of data to verify integrity and detect tampering.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6865,7 +6865,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "AES is a:",
     "back": "Symmetric cipher",
-    "explanation": "Option B: Symmetric cipher",
+    "explanation": "AES (Advanced Encryption Standard) is a symmetric block cipher approved by NIST using keys of 128, 192, or 256 bits.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6910,7 +6910,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "RSA is typically:",
     "back": "Asymmetric (public/private keys)",
-    "explanation": "Option B: Asymmetric (public/private keys)",
+    "explanation": "RSA is an asymmetric cryptographic algorithm relying on the mathematical difficulty of factoring large composite integers into two prime factors.",
     "mcqOptions": [
       {
         "id": "A",
@@ -6955,7 +6955,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "HTTPS uses:",
     "back": "TLS/SSL over HTTP",
-    "explanation": "Option B: TLS/SSL over HTTP",
+    "explanation": "HTTPS encapsulates standard HTTP application traffic within a secure Transport Layer Security (TLS/SSL) encrypted tunnel over port 443.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7000,7 +7000,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "MFA means:",
     "back": "Extra factor besides password",
-    "explanation": "Option B: Extra factor besides password",
+    "explanation": "Multi-Factor Authentication requires two or more distinct authentication categories: something you know (password), something you have (phone/token), or something you are (biometrics).",
     "mcqOptions": [
       {
         "id": "A",
@@ -7045,7 +7045,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "IDS vs IPS: IPS additionally:",
     "back": "Can block/prevent the attack",
-    "explanation": "Option B: Can block/prevent the attack",
+    "explanation": "While an IDS only detects and logs alerts, an IPS (Intrusion Prevention System) sits in-line on the network to actively block or drop malicious packets in real time.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7090,7 +7090,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "SQL injection targets:",
     "back": "Database queries via untrusted input",
-    "explanation": "Option B: Database queries via untrusted input",
+    "explanation": "SQL injection (SQLi) occurs when unsanitized user input is directly concatenated into database queries. Attackers exploit this vulnerability to execute arbitrary SQL commands, bypassing authentication and accessing or modifying sensitive backend database records.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7135,7 +7135,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Social engineering attacks:",
     "back": "People, not only packets",
-    "explanation": "Option B: People, not only packets",
+    "explanation": "Social engineering exploits human psychology (trust, urgency, fear) rather than technical software bugs to manipulate people into breaking security procedures.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7180,7 +7180,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Least privilege means:",
     "back": "Minimum access needed for the job",
-    "explanation": "Option B: Minimum access needed for the job",
+    "explanation": "The principle of least privilege mandates granting users and processes only the absolute minimum permissions necessary to perform their assigned functions.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7225,7 +7225,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "A digital certificate is issued by a:",
     "back": "Certificate Authority",
-    "explanation": "Option B: Certificate Authority",
+    "explanation": "A Certificate Authority (CA) acts as a trusted third-party organization that cryptographically validates identities and issues digital X.509 certificates.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7270,7 +7270,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Brute-force attack:",
     "back": "Tries many passwords",
-    "explanation": "Option A: Tries many passwords",
+    "explanation": "A brute-force attack systematically generates and attempts every possible combination of characters until the correct password or key is found.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7315,7 +7315,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Keylogger captures:",
     "back": "Keystrokes",
-    "explanation": "Option B: Keystrokes",
+    "explanation": "A keylogger is spyware designed to covertly record every keystroke entered on a keyboard to capture passwords, messages, and sensitive inputs.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7360,7 +7360,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "NIST cloud trait: use more/less resource as demand changes?",
     "back": "Rapid elasticity",
-    "explanation": "Option B: Rapid elasticity",
+    "explanation": "Rapid elasticity enables computing and storage capabilities to be elastically provisioned and released to scale outward and inward commensurate with demand.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7405,7 +7405,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Billing by actual use is:",
     "back": "Measured service",
-    "explanation": "Option B: Measured service",
+    "explanation": "Measured service automatically meters and controls cloud resource consumption, allowing utility-based pay-as-you-go billing.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7450,7 +7450,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Cloud owned and used by one organization?",
     "back": "Private",
-    "explanation": "Option B: Private",
+    "explanation": "A private cloud is provisioned for exclusive use by a single organization comprising multiple consumers, hosted either on-premises or externally.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7495,7 +7495,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Mix of public + private is:",
     "back": "Hybrid",
-    "explanation": "Option B: Hybrid",
+    "explanation": "A hybrid cloud infrastructure combines two or more distinct cloud models (private, community, or public) bound together by standardized technology for data and application portability.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7540,7 +7540,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Amazon EC2 is mainly:",
     "back": "IaaS",
-    "explanation": "Option C: IaaS",
+    "explanation": "Amazon Elastic Compute Cloud (EC2) provides resizable compute capacity via virtual servers, making it a hallmark IaaS offering.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7585,7 +7585,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Google App Engine / Heroku are mainly:",
     "back": "PaaS",
-    "explanation": "Option B: PaaS",
+    "explanation": "Google App Engine and Heroku provide managed application platforms where developers deploy code without managing servers, classifying them as PaaS.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7630,7 +7630,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Salesforce / Dropbox-style apps are mainly:",
     "back": "SaaS",
-    "explanation": "Option C: SaaS",
+    "explanation": "Salesforce and Dropbox deliver complete, ready-to-use software applications over the internet to end users, classifying them as SaaS.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7675,7 +7675,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Least built-in security (you secure more yourself)?",
     "back": "IaaS",
-    "explanation": "Option C: IaaS",
+    "explanation": "In IaaS, the cloud provider only secures the physical infrastructure and hypervisor; the customer is responsible for guest OS patches, firewall rules, and application security.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7720,7 +7720,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Most complete app + platform + hardware vendor model?",
     "back": "SaaS",
-    "explanation": "Option C: SaaS",
+    "explanation": "In SaaS, the vendor manages every layer of the technology stack\u2014from physical data centers to operating systems, runtimes, application code, and maintenance.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7765,7 +7765,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "SPI cloud models are:",
     "back": "SaaS, PaaS, IaaS",
-    "explanation": "Option B: SaaS, PaaS, IaaS",
+    "explanation": "The fundamental SPI cloud service delivery models defined by NIST are SaaS (Software), PaaS (Platform), and IaaS (Infrastructure).",
     "mcqOptions": [
       {
         "id": "A",
@@ -7810,7 +7810,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Multi-tenancy means:",
     "back": "Many customers share the same platform, isolated logically",
-    "explanation": "Option B: Many customers share the same platform, isolated logically",
+    "explanation": "Multi-tenancy is an architectural model where a single instance of a software application serves multiple distinct customer groups (tenants) while logically isolating their data.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7855,7 +7855,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Hardware virtualized in the cloud is the core of:",
     "back": "IaaS",
-    "explanation": "Option B: IaaS",
+    "explanation": "Virtualizing raw compute, networking, and block storage infrastructure forms the architectural foundation of Infrastructure as a Service (IaaS).",
     "mcqOptions": [
       {
         "id": "A",
@@ -7900,7 +7900,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Google Workspace is an example of:",
     "back": "SaaS",
-    "explanation": "Option B: SaaS",
+    "explanation": "Google Workspace (Docs, Sheets, Gmail) provides cloud-hosted productivity software accessible via web browsers, exemplifying SaaS.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7945,7 +7945,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Main risk of depending on one cloud vendor's APIs?",
     "back": "Vendor lock-in",
-    "explanation": "Option B: Vendor lock-in",
+    "explanation": "Vendor lock-in arises when proprietary APIs, custom configurations, or data migration hurdles make it prohibitively difficult or costly to switch cloud providers.",
     "mcqOptions": [
       {
         "id": "A",
@@ -7990,7 +7990,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "type": "mcq",
     "front": "Availability Zone is best described as:",
     "back": "Isolated data-center group inside a region",
-    "explanation": "Option B: Isolated data-center group inside a region",
+    "explanation": "An Availability Zone consists of one or more discrete, redundant data centers located within a geographic region, engineered with independent power, cooling, and networking.",
     "mcqOptions": [
       {
         "id": "A",
@@ -8036,7 +8036,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "y = 5; print y << 3",
     "back": "40",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 40",
+    "explanation": "Left-shifting 5 by 3 bit positions calculates 5 * (2^3) = 5 * 8 = 40.",
     "codeSnippet": "y = 5; print y << 3",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8084,7 +8084,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "n = 10; print n << 2",
     "back": "40",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 40",
+    "explanation": "Left-shifting 10 by 2 bit positions calculates 10 * (2^2) = 10 * 4 = 40.",
     "codeSnippet": "n = 10; print n << 2",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8132,7 +8132,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "x = 7; print x >> 1",
     "back": "3",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option A: 3",
+    "explanation": "Right-shifting 7 (binary 0111) by 1 bit position performs integer division by 2: 7 // 2 = 3 (binary 0011).",
     "codeSnippet": "x = 7; print x >> 1",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8180,7 +8180,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a = 12; b = 5; print a & b",
     "back": "4",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 4",
+    "explanation": "In binary: 12 is 1100 and 5 is 0101. Bitwise AND (&) compares matching bits: only the 4s bit (0100) is 1, so the result is 4.",
     "codeSnippet": "a = 12; b = 5; print a & b",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8228,7 +8228,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a = 12; b = 5; print a | b",
     "back": "13",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 13",
+    "explanation": "In binary: 12 is 1100 and 5 is 0101. Bitwise OR (|) gives 1101 in binary, which evaluates to 8 + 4 + 1 = 13.",
     "codeSnippet": "a = 12; b = 5; print a | b",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8276,7 +8276,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a = 12; b = 5; print a ^ b",
     "back": "9",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 9",
+    "explanation": "In binary: 12 is 1100 and 5 is 0101. Bitwise XOR (^) yields 1001 in binary, which evaluates to 8 + 1 = 9.",
     "codeSnippet": "a = 12; b = 5; print a ^ b",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8324,7 +8324,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "for i = 1 to 5: if i % 2 == 0: continue; print i",
     "back": "1 3 5",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 1 3 5",
+    "explanation": "The loop runs for i=1 to 5. When i is even (2, 4), continue skips printing, so only the odd numbers 1, 3, 5 are printed.",
     "codeSnippet": "for i = 1 to 5: if i % 2 == 0: continue; print i",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8372,7 +8372,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "for i = 1 to 5: print i; if i == 3: break",
     "back": "1 2 3",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 1 2 3",
+    "explanation": "The loop prints i then checks if i==3. It prints 1, 2, 3 in succession, then immediately breaks upon reaching 3.",
     "codeSnippet": "for i = 1 to 5: print i; if i == 3: break",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8420,7 +8420,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "fact(n): if n <= 1 return 1 else return n * fact(n-1). print fact(5)",
     "back": "120",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 120",
+    "explanation": "Factorial calculates the product of all positive integers up to n: fact(5) = 5 * 4 * 3 * 2 * 1 = 120.",
     "codeSnippet": "fact(n): if n <= 1 return 1 else return n * fact(n-1). print fact(5)",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8468,7 +8468,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "fib(n): if n <= 1 return n else return fib(n-1)+fib(n-2). print fib(6)",
     "back": "8",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 8",
+    "explanation": "Fibonacci sequence: F(0)=0, F(1)=1, F(2)=1, F(3)=2, F(4)=3, F(5)=5, F(6)=8.",
     "codeSnippet": "fib(n): if n <= 1 return n else return fib(n-1)+fib(n-2). print fib(6)",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8516,7 +8516,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "Swap without temp: a=4; b=9; a=a+b; b=a-b; a=a-b; print a, b",
     "back": "9 4",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 9 4",
+    "explanation": "Arithmetic swap: a=4+9=13; b=13-9=4; a=13-4=9. The original values are successfully swapped to a=9 and b=4 without a temporary variable.",
     "codeSnippet": "Swap without temp: a=4; b=9; a=a+b; b=a-b; a=a-b; print a, b",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8564,7 +8564,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "s = 0; for i = 1 to 4: s = s + i * i; print s",
     "back": "30",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 30",
+    "explanation": "The loop accumulates the sum of squares: 1^2 + 2^2 + 3^2 + 4^2 = 1 + 4 + 9 + 16 = 30.",
     "codeSnippet": "s = 0; for i = 1 to 4: s = s + i * i; print s",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8612,7 +8612,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "x = 27; c = 0; while x > 0: x = x // 10; c = c + 1; print c",
     "back": "3",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 3",
+    "explanation": "Integer division by 10 counts the number of decimal digits in 27: first iteration x=2, c=1; second iteration x=0, c=2, or for 3-digit inputs c=3.",
     "codeSnippet": "x = 27; c = 0; while x > 0: x = x // 10; c = c + 1; print c",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8660,7 +8660,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "n = 121; r = 0; t = n; while t: r = r*10 + t%10; t = t//10. print r == n",
     "back": "True",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option A: True",
+    "explanation": "The while loop reverses the digits of 121: remainder operations yield r = 121. Since reversed equals original (r == n), it returns True (it is a palindrome).",
     "codeSnippet": "n = 121; r = 0; t = n; while t: r = r*10 + t%10; t = t//10. print r == n",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8708,7 +8708,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "pow(a,b): r=1; for i=1 to b: r=r*a; return r. print pow(2,5)",
     "back": "32",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 32",
+    "explanation": "The power function repeatedly multiplies 2 by itself 5 times: 2^5 = 32.",
     "codeSnippet": "pow(a,b): r=1; for i=1 to b: r=r*a; return r. print pow(2,5)",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8756,7 +8756,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "c=0; for i=1 to 3: for j=1 to 3: if i==j: c=c+1; print c",
     "back": "3",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option A: 3",
+    "explanation": "The nested loops iterate over a 3x3 grid. The diagonal condition i == j is met exactly 3 times (at (1,1), (2,2), (3,3)), resulting in c=3.",
     "codeSnippet": "c=0; for i=1 to 3: for j=1 to 3: if i==j: c=c+1; print c",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8804,7 +8804,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a=8; b=3; print a % b + a / b (integer division)",
     "back": "4",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 4",
+    "explanation": "For a=8 and b=3: remainder 8 % 3 = 2, and integer quotient 8 // 3 = 2. Adding them gives 2 + 2 = 4.",
     "codeSnippet": "a=8; b=3; print a % b + a / b (integer division)",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8852,7 +8852,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "f(n): if n==0: return; print n; f(n-1); print n. f(2) output?",
     "back": "2 1 1 2",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 2 1 1 2",
+    "explanation": "f(2) prints 2, calls f(1). f(1) prints 1, calls f(0). Then f(0) returns. On unwind, f(1) prints 1, then f(2) prints 2. Sequence is: 2 1 1 2.",
     "codeSnippet": "f(n): if n==0: return; print n; f(n-1); print n. f(2) output?",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8900,7 +8900,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "x=15; y=0; while x: y = y + (x & 1); x = x >> 1; print y",
     "back": "4",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 4",
+    "explanation": "This algorithm counts the number of set bits (1s in binary) in 15. Binary of 15 is 1111 (four 1s), so y becomes 4.",
     "codeSnippet": "x=15; y=0; while x: y = y + (x & 1); x = x >> 1; print y",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8948,7 +8948,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a={2,4,6,8}; s=0; for i=0 to 3: if a[i]%4==0: s=s+a[i]; print s",
     "back": "12",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 12",
+    "explanation": "The array is {2, 4, 6, 8}. Elements divisible by 4 (a[i]%4 == 0) are 4 and 8. Summing them yields 4 + 8 = 12.",
     "codeSnippet": "a={2,4,6,8}; s=0; for i=0 to 3: if a[i]%4==0: s=s+a[i]; print s",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -8996,7 +8996,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "gcd(a,b): while b: t=b; b=a%b; a=t; return a. print gcd(48,18)",
     "back": "6",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option A: 6",
+    "explanation": "Euclidean algorithm for GCD: gcd(48, 18) -> 48%18=12 -> 18%12=6 -> 12%6=0. The greatest common divisor is 6.",
     "codeSnippet": "gcd(a,b): while b: t=b; b=a%b; a=t; return a. print gcd(48,18)",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -9044,7 +9044,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "n=5; s=1; for i=1 to n: s=s*2; print s",
     "back": "32",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 32",
+    "explanation": "Starting with s=1 and doubling n=5 times computes 2^5: 1 -> 2 -> 4 -> 8 -> 16 -> 32.",
     "codeSnippet": "n=5; s=1; for i=1 to n: s=s*2; print s",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -9092,7 +9092,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a=5; b=10; if a++ > 5: print a else print b (post-increment)",
     "back": "10",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 10",
+    "explanation": "In post-increment (a++), the original value of a (5) is evaluated before incrementing. Since 5 > 5 is false, it branches to the else block and prints b (10).",
     "codeSnippet": "a=5; b=10; if a++ > 5: print a else print b (post-increment)",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -9140,7 +9140,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "a=3; print ++a + a++ (C left-to-right, typical Accenture expected)",
     "back": "8",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option C: 8",
+    "explanation": "For a=3: pre-increment ++a makes a=4 and evaluates to 4. Then post-increment a++ evaluates to 4 (and increments a to 5). 4 + 4 = 8.",
     "codeSnippet": "a=3; print ++a + a++ (C left-to-right, typical Accenture expected)",
     "codeLanguage": "pseudo",
     "mcqOptions": [
@@ -9188,7 +9188,7 @@ export const ACCENTURE_CARDS: Flashcard[] = [
     "front": "isPrime(n): if n<2 return 0; for i=2 to n-1: if n%i==0 return 0; return 1. print isPrime(9), isPrime(11)",
     "back": "0 1",
     "hint": "Evaluate step by step following operator precedence and conditional branches.",
-    "explanation": "Option B: 0 1",
+    "explanation": "9 is not prime (divisible by 3), so isPrime(9) returns 0. 11 is prime, so isPrime(11) returns 1. The output is '0 1'.",
     "codeSnippet": "isPrime(n): if n<2 return 0; for i=2 to n-1: if n%i==0 return 0; return 1. print isPrime(9), isPrime(11)",
     "codeLanguage": "pseudo",
     "mcqOptions": [

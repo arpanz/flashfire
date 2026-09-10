@@ -17,6 +17,7 @@ import {
   Sparkles,
   FolderPlus,
   BookOpen,
+  Lightbulb,
 } from "lucide-react";
 import { Deck, Flashcard, Rating } from "../lib/types";
 import { calculateNextReview, getDueCards } from "../lib/srs";
@@ -113,13 +114,13 @@ export const QuizHub: React.FC<QuizHubProps> = ({
 
   // Fetch AI explanation via GLM (4.7 Flash for quick, 5.3 Flash for deep breakdown)
   const fetchAiExplanation = useCallback(
-    async (q: QuizQuestion, chosenOptionId: string | null | undefined, mode: "quick" | "deep") => {
+    async (q: QuizQuestion, chosenOptionId: string | null | undefined, mode: "quick" | "deep", force = false) => {
       const targetCardId = q.card.id;
       const effectiveOptionId = chosenOptionId || "none";
       const cacheKey = `${targetCardId}__${q.prompt.trim().slice(0, 50)}__${effectiveOptionId}__${mode}`;
 
       // Check cache first
-      if (aiCacheRef.current.has(cacheKey)) {
+      if (!force && aiCacheRef.current.has(cacheKey)) {
         const cached = aiCacheRef.current.get(cacheKey)!;
         if (activeQuestionIdRef.current === targetCardId) {
           if (mode === "deep") {
@@ -195,13 +196,22 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         const correctOpt = q.options.find((o) => o.isCorrect) || q.options[0];
         const wrongOpts = q.options.filter((o) => !o.isCorrect);
 
+        let cleanFallback = q.explanation ? q.explanation.trim() : "";
+        cleanFallback = cleanFallback
+          .replace(/^Option\s+[A-D]:\s*/i, "")
+          .replace(/^Option\s+\[[A-D]\]\s*\([^)]+\)\s*(?:is correct\.?)?\s*/i, "")
+          .trim();
+        if (!cleanFallback || cleanFallback.toLowerCase() === correctOpt.text.toLowerCase()) {
+          cleanFallback = `**${correctOpt.text}** is the correct answer because it directly satisfies "${q.prompt.trim()}".`;
+        }
+
         const fallbackText =
           mode === "deep"
-            ? `### 💡 Simple Concept\nOption **[${correctOpt.id}] ${correctOpt.text}** is the correct answer. ${q.explanation || ""}\n\n` +
+            ? `### 💡 Core Concept\n**[${correctOpt.id}] ${correctOpt.text}** is correct. ${cleanFallback}\n\n` +
               `### 🎯 Why Other Options Don't Work\n` +
-              wrongOpts.map((o) => `- **[${o.id}] ${o.text}**: Incorrect for this question.`).join("\n") +
-              `\n\n### ⚡ Quick Memory Trick\nRemember: **[${correctOpt.id}]** directly matches the required pattern.`
-            : q.explanation || `Option [${correctOpt.id}] (${correctOpt.text}) is the correct answer.`;
+              wrongOpts.map((o) => `- **[${o.id}] ${o.text}**: Does not satisfy this question's requirements.`).join("\n") +
+              `\n\n### ⚡ Quick Memory Trick\nAssociate **"${q.prompt.slice(0, 45).replace(/"/g, '')}..."** directly with **${correctOpt.text}**.`
+            : cleanFallback;
 
         const fallbackModel = "offline-fallback";
 
@@ -1170,17 +1180,40 @@ export const QuizHub: React.FC<QuizHubProps> = ({
               {/* AI Explanation Box (Powered by Z.ai GLM 4.7 Flash & 5.3 Flash) */}
               <div className="rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-800/40 p-4 transition-all">
                 {/* Header row */}
-                <div className="flex items-center justify-between gap-2 mb-2.5 pb-2 border-b border-zinc-200/60 dark:border-zinc-700/60">
-                  <div className="flex items-center gap-1.5">
+                <div className="flex items-center justify-between gap-2 mb-2.5 pb-2 border-b border-zinc-200/60 dark:border-zinc-700/60 flex-wrap">
+                  <div className="flex items-center gap-1.5 flex-wrap">
                     <Sparkles className="w-3.5 h-3.5 text-amber-500 fill-current" />
                     <span className="text-xs font-semibold text-zinc-900 dark:text-zinc-100">
-                      {isDeepMode ? "Deep Concept Breakdown" : "AI Quick Explanation"}
+                      {isDeepMode ? "Deep Concept Breakdown" : "Exam Concept & Explanation"}
                     </span>
-                    <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-200/80 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-medium">
-                      {isDeepMode
-                        ? (deepModelUsed || currentQ?.deepModel || "GLM 5.3 Flash")
-                        : (aiModelUsed || currentQ?.quickModel || "GLM 4.7 Flash")}
-                    </span>
+                    {(isDeepMode ? (deepModelUsed || currentQ?.deepModel) : (aiModelUsed || currentQ?.quickModel)) === "offline-fallback" ? (
+                      <span className="inline-flex items-center gap-1 text-[10px] font-medium px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60">
+                        <Lightbulb className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
+                        Smart Baseline
+                      </span>
+                    ) : (
+                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-200/80 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-medium">
+                        {isDeepMode
+                          ? (deepModelUsed || currentQ?.deepModel || "GLM 5.3 Flash")
+                          : (aiModelUsed || currentQ?.quickModel || "GLM 4.7 Flash")}
+                      </span>
+                    )}
+
+                    {/* Quick Retry AI button if currently showing offline fallback */}
+                    {((isDeepMode ? (deepModelUsed || currentQ?.deepModel) : (aiModelUsed || currentQ?.quickModel)) === "offline-fallback") && (
+                      <button
+                        onClick={() => {
+                          if (!currentQ) return;
+                          fetchAiExplanation(currentQ, selectedOptionId, isDeepMode ? "deep" : "quick", true);
+                        }}
+                        disabled={isAiLoading || isDeepLoading}
+                        className="text-[10px] text-amber-700 dark:text-amber-300 hover:text-amber-800 dark:hover:text-amber-200 underline flex items-center gap-0.5 ml-1 disabled:opacity-50 cursor-pointer"
+                        title="Re-query Z.ai GLM"
+                      >
+                        <RotateCcw className={`w-2.5 h-2.5 ${(isAiLoading || isDeepLoading) ? "animate-spin" : ""}`} />
+                        <span>{(isAiLoading || isDeepLoading) ? "Connecting..." : "Retry AI"}</span>
+                      </button>
+                    )}
                   </div>
 
                   {/* Deeper / Quick Explanation Toggle Button */}
@@ -1188,7 +1221,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     <button
                       onClick={() => {
                         if (!currentQ) return;
-                        if (currentQ.deepExplanation) {
+                        if (currentQ.deepExplanation && currentQ.deepModel !== "offline-fallback") {
                           setDeepExplanation(currentQ.deepExplanation);
                           setDeepModelUsed(currentQ.deepModel || "GLM 5.3 Flash");
                           setIsDeepMode(true);
@@ -1197,12 +1230,12 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                         }
                       }}
                       disabled={isDeepLoading}
-                      className="px-2.5 py-1 rounded-lg border border-amber-300/80 dark:border-amber-800/70 bg-amber-50 dark:bg-amber-950/40 text-[11px] font-medium text-amber-900 dark:text-amber-200 hover:bg-amber-100 dark:hover:bg-amber-900/60 transition-colors flex items-center gap-1.5 shadow-2xs disabled:opacity-50"
+                      className="px-2.5 py-1 rounded-lg border border-amber-300/80 dark:border-amber-800/70 bg-amber-50 dark:bg-amber-950/40 text-[11px] font-medium text-amber-900 dark:text-amber-200 hover:bg-amber-100 dark:hover:bg-amber-900/60 transition-colors flex items-center gap-1.5 shadow-2xs disabled:opacity-50 cursor-pointer"
                     >
                       {isDeepLoading ? (
                         <>
                           <RotateCcw className="w-3 h-3 animate-spin text-amber-600 dark:text-amber-400" />
-                          <span>Generating Deep Breakdown...</span>
+                          <span>Generating Breakdown...</span>
                         </>
                       ) : (
                         <>
@@ -1213,19 +1246,9 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     </button>
                   ) : (
                     <div className="flex items-center gap-2">
-                      {deepModelUsed === "offline-fallback" && (
-                        <button
-                          onClick={() => currentQ && fetchAiExplanation(currentQ, selectedOptionId, "deep")}
-                          disabled={isDeepLoading}
-                          className="px-2 py-0.5 text-[11px] font-medium text-rose-600 dark:text-rose-400 hover:underline flex items-center gap-1"
-                        >
-                          <RotateCcw className="w-3 h-3" />
-                          <span>Retry AI</span>
-                        </button>
-                      )}
                       <button
                         onClick={() => setIsDeepMode(false)}
-                        className="text-[11px] text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 font-medium transition-colors px-2 py-0.5 rounded hover:bg-zinc-200/60 dark:hover:bg-zinc-700/50"
+                        className="text-[11px] text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 font-medium transition-colors px-2 py-0.5 rounded hover:bg-zinc-200/60 dark:hover:bg-zinc-700/50 cursor-pointer"
                       >
                         Show Quick Summary
                       </button>
