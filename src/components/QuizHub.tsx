@@ -356,26 +356,36 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         return copy;
       });
 
+      const timeSpent = Date.now() - questionStartTime.current;
+      const srsUpdate = syncWithSRS
+        ? calculateNextReview(currentQ.card, rating, Date.now())
+        : {
+            ...currentQ.card.srs,
+            lastStudied: Date.now(),
+            reps: (currentQ.card.srs.reps || 0) + 1,
+            lapses: rating === 1 ? (currentQ.card.srs.lapses || 0) + 1 : (currentQ.card.srs.lapses || 0),
+            state: currentQ.card.srs.state === 'new' ? ('learning' as const) : currentQ.card.srs.state,
+          };
+
+      const updatedCard: Flashcard = {
+        ...currentQ.card,
+        srs: srsUpdate,
+        updatedAt: Date.now(),
+      };
+
+      storage.saveCard(updatedCard);
+      storage.addReviewLog({
+        id: `log-quiz-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+        cardId: currentQ.card.id,
+        deckId: currentQ.card.deckId,
+        timestamp: Date.now(),
+        rating,
+        timeSpentMs: timeSpent,
+        intervalBefore: currentQ.card.srs.interval,
+        intervalAfter: srsUpdate.interval,
+      });
+
       if (syncWithSRS) {
-        const srsUpdate = calculateNextReview(currentQ.card, rating, Date.now());
-        const updatedCard: Flashcard = {
-          ...currentQ.card,
-          srs: srsUpdate,
-          updatedAt: Date.now(),
-        };
-
-        storage.saveCard(updatedCard);
-        storage.addReviewLog({
-          id: `log-quiz-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
-          cardId: currentQ.card.id,
-          deckId: currentQ.card.deckId,
-          timestamp: Date.now(),
-          rating,
-          timeSpentMs: Date.now() - questionStartTime.current,
-          intervalBefore: currentQ.card.srs.interval,
-          intervalAfter: srsUpdate.interval,
-        });
-
         setLastSrsStatus({
           isLapse: rating === 1,
           interval: srsUpdate.interval,
@@ -417,27 +427,36 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         return copy;
       });
 
-      // Spaced Repetition (SRS) Integration if turned on
+      // Spaced Repetition (SRS) Integration & Review logging
+      const srsUpdate = syncWithSRS
+        ? calculateNextReview(currentQ.card, initialRating, Date.now())
+        : {
+            ...currentQ.card.srs,
+            lastStudied: Date.now(),
+            reps: (currentQ.card.srs.reps || 0) + 1,
+            lapses: !isCorrect ? (currentQ.card.srs.lapses || 0) + 1 : (currentQ.card.srs.lapses || 0),
+            state: currentQ.card.srs.state === 'new' ? ('learning' as const) : currentQ.card.srs.state,
+          };
+
+      const updatedCard: Flashcard = {
+        ...currentQ.card,
+        srs: srsUpdate,
+        updatedAt: Date.now(),
+      };
+
+      storage.saveCard(updatedCard);
+      storage.addReviewLog({
+        id: `log-quiz-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+        cardId: currentQ.card.id,
+        deckId: currentQ.card.deckId,
+        timestamp: Date.now(),
+        rating: initialRating,
+        timeSpentMs: timeSpent,
+        intervalBefore: currentQ.card.srs.interval,
+        intervalAfter: srsUpdate.interval,
+      });
+
       if (syncWithSRS) {
-        const srsUpdate = calculateNextReview(currentQ.card, initialRating, Date.now());
-        const updatedCard: Flashcard = {
-          ...currentQ.card,
-          srs: srsUpdate,
-          updatedAt: Date.now(),
-        };
-
-        storage.saveCard(updatedCard);
-        storage.addReviewLog({
-          id: `log-quiz-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
-          cardId: currentQ.card.id,
-          deckId: currentQ.card.deckId,
-          timestamp: Date.now(),
-          rating: initialRating,
-          timeSpentMs: timeSpent,
-          intervalBefore: currentQ.card.srs.interval,
-          intervalAfter: srsUpdate.interval,
-        });
-
         setLastSrsStatus({
           isLapse: !isCorrect,
           interval: srsUpdate.interval,
@@ -488,26 +507,35 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       return copy;
     });
 
+    const srsUpdate = syncWithSRS
+      ? calculateNextReview(currentQ.card, 1, Date.now())
+      : {
+          ...currentQ.card.srs,
+          lastStudied: Date.now(),
+          reps: (currentQ.card.srs.reps || 0) + 1,
+          lapses: (currentQ.card.srs.lapses || 0) + 1,
+          state: currentQ.card.srs.state === 'new' ? ('learning' as const) : currentQ.card.srs.state,
+        };
+
+    const updatedCard: Flashcard = {
+      ...currentQ.card,
+      srs: srsUpdate,
+      updatedAt: Date.now(),
+    };
+
+    storage.saveCard(updatedCard);
+    storage.addReviewLog({
+      id: `log-quiz-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+      cardId: currentQ.card.id,
+      deckId: currentQ.card.deckId,
+      timestamp: Date.now(),
+      rating: 1,
+      timeSpentMs: timerSeconds * 1000,
+      intervalBefore: currentQ.card.srs.interval,
+      intervalAfter: srsUpdate.interval,
+    });
+
     if (syncWithSRS) {
-      const srsUpdate = calculateNextReview(currentQ.card, 1, Date.now());
-      const updatedCard: Flashcard = {
-        ...currentQ.card,
-        srs: srsUpdate,
-        updatedAt: Date.now(),
-      };
-
-      storage.saveCard(updatedCard);
-      storage.addReviewLog({
-        id: `log-quiz-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
-        cardId: currentQ.card.id,
-        deckId: currentQ.card.deckId,
-        timestamp: Date.now(),
-        rating: 1,
-        timeSpentMs: timerSeconds * 1000,
-        intervalBefore: currentQ.card.srs.interval,
-        intervalAfter: srsUpdate.interval,
-      });
-
       setLastSrsStatus({
         isLapse: true,
         interval: srsUpdate.interval,

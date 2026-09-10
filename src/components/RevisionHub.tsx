@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo, useCallback } from "react";
+import React, { useState, useMemo, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   RotateCcw,
@@ -57,6 +57,14 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
   const [selectedDeckIds, setSelectedDeckIds] = useState<string[]>(() => decks.map((d) => d.id));
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [expandedCardIds, setExpandedCardIds] = useState<Set<string>>(new Set());
+  const [revisionSyncKey, setRevisionSyncKey] = useState<number>(0);
+
+  useEffect(() => {
+    const unsub = storage.subscribe(() => {
+      setRevisionSyncKey((k) => k + 1);
+    });
+    return () => unsub();
+  }, []);
 
   // Index attempted cards from review logs & SRS metadata
   const attemptedCards = useMemo(() => {
@@ -119,7 +127,7 @@ export const RevisionHub: React.FC<RevisionHubProps> = ({
     });
 
     return list;
-  }, [cards]);
+  }, [cards, revisionSyncKey]);
 
   // Counts per bucket
   const bucketCounts = useMemo(() => {
