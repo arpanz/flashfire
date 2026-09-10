@@ -110,25 +110,56 @@ export const FormattedText: React.FC<FormattedTextProps> = ({
       const displayLang = (lang || 'code').toUpperCase();
       const rawLines = code.trimEnd().split(/\r?\n/);
       
+      const TOKEN_REGEX = /(".*?"|'.*?'|\/\/.*$|#.*$|\b\d+\b|\b[a-zA-Z_]\w*\b|[+\-*/%^&|!<>=]+|[^\s\w"'+*/%^&|!<>=]+|\s+)/g;
+      const CONTROL_KEYWORDS = new Set(['if', 'else', 'then', 'while', 'for', 'to', 'down', 'do', 'return', 'function', 'def', 'break', 'continue', 'end']);
+      const TYPE_KEYWORDS = new Set(['integer', 'string', 'boolean', 'array', 'set', 'let', 'const', 'var', 'static', 'int', 'char', 'float', 'void']);
+      const OP_KEYWORDS = new Set(['AND', 'OR', 'XOR', 'NOT', 'MOD']);
+      const IO_KEYWORDS = new Set(['print', 'document', 'write', 'console', 'log', 'printf', 'alert']);
+
       const linesHtml = rawLines
         .map((line: string, i: number) => {
-          let escaped = line
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;');
-
-          if (/^\s*(\/\/|#)/.test(escaped)) {
-            escaped = `<span class="text-zinc-500 italic">${escaped}</span>`;
-          } else {
-            escaped = escaped.replace(/(["'])(.*?)\1/g, '<span class="text-amber-400 dark:text-amber-300">$&</span>');
-            escaped = escaped.replace(/\b(if|else|then|end if|endif|while|end while|for|to|down to|do|return|function|def|break|continue)\b/gi, '<span class="text-pink-400 font-semibold">$1</span>');
-            escaped = escaped.replace(/\b(Integer|String|Boolean|Array|Set|let|const|var|static int|int|char|float|void)\b/g, '<span class="text-purple-400 font-semibold">$1</span>');
-            escaped = escaped.replace(/\b(Print|print|document\.write|console\.log)\b/g, '<span class="text-sky-400 font-semibold">$1</span>');
-            escaped = escaped.replace(/\b(AND|OR|XOR|NOT|MOD)\b/g, '<span class="text-cyan-400 font-bold">$1</span>');
-            escaped = escaped.replace(/\b(\d+)\b/g, '<span class="text-emerald-400 font-mono">$1</span>');
+          if (!line.trim()) {
+            return `<tr><td class="w-7 pr-3 text-right select-none font-mono text-zinc-600 text-xs align-top border-r border-zinc-800">${i + 1}</td><td class="pl-3 text-zinc-200 font-mono whitespace-pre align-top">&nbsp;</td></tr>`;
           }
 
-          return `<tr><td class="w-7 pr-3 text-right select-none font-mono text-zinc-600 text-xs align-top border-r border-zinc-800">${i + 1}</td><td class="pl-3 text-zinc-200 font-mono whitespace-pre align-top">${escaped || '&nbsp;'}</td></tr>`;
+          if (/^\s*(\/\/|#)/.test(line)) {
+            const esc = line.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return `<tr><td class="w-7 pr-3 text-right select-none font-mono text-zinc-600 text-xs align-top border-r border-zinc-800">${i + 1}</td><td class="pl-3 text-zinc-500 italic font-mono whitespace-pre align-top">${esc}</td></tr>`;
+          }
+
+          const highlighted = line.replace(TOKEN_REGEX, (token) => {
+            if ((token.startsWith('"') && token.endsWith('"')) || (token.startsWith("'") && token.endsWith("'"))) {
+              const esc = token.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+              return `<span class="text-amber-300">${esc}</span>`;
+            }
+            if (token.startsWith('//') || token.startsWith('#')) {
+              const esc = token.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+              return `<span class="text-zinc-500 italic">${esc}</span>`;
+            }
+            if (/^\d+$/.test(token)) {
+              return `<span class="text-emerald-400 font-mono">${token}</span>`;
+            }
+            const lower = token.toLowerCase();
+            if (CONTROL_KEYWORDS.has(lower)) {
+              return `<span class="text-pink-400 font-semibold">${token}</span>`;
+            }
+            if (TYPE_KEYWORDS.has(lower)) {
+              return `<span class="text-purple-400 font-semibold">${token}</span>`;
+            }
+            if (OP_KEYWORDS.has(token.toUpperCase())) {
+              return `<span class="text-cyan-400 font-bold">${token}</span>`;
+            }
+            if (IO_KEYWORDS.has(lower)) {
+              return `<span class="text-sky-400 font-semibold">${token}</span>`;
+            }
+            if (/^[+\-*/%^&|!<>=]+$/.test(token)) {
+              const esc = token.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+              return `<span class="text-cyan-400 font-medium">${esc}</span>`;
+            }
+            return token.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          });
+
+          return `<tr><td class="w-7 pr-3 text-right select-none font-mono text-zinc-600 text-xs align-top border-r border-zinc-800">${i + 1}</td><td class="pl-3 text-zinc-200 font-mono whitespace-pre align-top">${highlighted}</td></tr>`;
         })
         .join('');
 

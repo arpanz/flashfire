@@ -10,54 +10,69 @@ interface CodeBlockViewProps {
   showLineNumbers?: boolean;
 }
 
-// Simple, clean syntax highlighter for pseudocode, JS, and algorithmic snippets
+// Robust single-pass syntax highlighter for pseudocode, JS, and algorithmic snippets
 function highlightCodeLine(line: string): string {
   if (!line.trim()) return '&nbsp;';
 
-  let escaped = line
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
-
-  // Comments (e.g. // ... or # ...)
-  if (/^\s*(\/\/|#)/.test(escaped)) {
-    return `<span class="text-zinc-500 dark:text-zinc-500 italic">${escaped}</span>`;
+  // Full-line comment
+  if (/^\s*(\/\/|#)/.test(line)) {
+    const escaped = line.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return `<span class="text-zinc-500 italic">${escaped}</span>`;
   }
 
-  // Strings: "..." or '...'
-  escaped = escaped.replace(/(["'])(.*?)\1/g, '<span class="text-amber-400 dark:text-amber-300">$&</span>');
+  // Single-pass tokenizer regex
+  const TOKEN_REGEX = /(".*?"|'.*?'|\/\/.*$|#.*$|\b\d+\b|\b[a-zA-Z_]\w*\b|[+\-*/%^&|!<>=]+|[^\s\w"'+*/%^&|!<>=]+|\s+)/g;
 
-  // Control Flow / Function Keywords: if, else, while, for, to, return, function, etc.
-  escaped = escaped.replace(
-    /\b(if|else|then|end if|endif|while|end while|endwhile|for|to|down to|end for|endfor|do|return|function|def|break|continue)\b/gi,
-    '<span class="text-pink-400 dark:text-pink-400 font-semibold">$1</span>'
-  );
+  return line.replace(TOKEN_REGEX, (token) => {
+    // Strings
+    if ((token.startsWith('"') && token.endsWith('"')) || (token.startsWith("'") && token.endsWith("'"))) {
+      const esc = token.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      return `<span class="text-amber-300">${esc}</span>`;
+    }
 
-  // Data Types & Variable Declarations: Integer, String, Boolean, Set, let, const, var
-  escaped = escaped.replace(
-    /\b(Integer|String|Boolean|Array|Set|let|const|var|static int|int|char|float|void)\b/g,
-    '<span class="text-purple-400 dark:text-purple-300 font-semibold">$1</span>'
-  );
+    // Trailing Comment
+    if (token.startsWith('//') || token.startsWith('#')) {
+      const esc = token.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      return `<span class="text-zinc-500 italic">${esc}</span>`;
+    }
 
-  // Built-in output/input commands: Print, print, document.write, alert
-  escaped = escaped.replace(
-    /\b(Print|print|document\.write|document\.body|document|console\.log|printf)\b/g,
-    '<span class="text-sky-400 dark:text-sky-300 font-semibold">$1</span>'
-  );
+    // Number
+    if (/^\d+$/.test(token)) {
+      return `<span class="text-emerald-400 font-mono">${token}</span>`;
+    }
 
-  // Logical & Bitwise Operator words: AND, OR, XOR, NOT, MOD
-  escaped = escaped.replace(
-    /\b(AND|OR|XOR|NOT|MOD)\b/g,
-    '<span class="text-cyan-400 dark:text-cyan-300 font-bold">$1</span>'
-  );
+    const lower = token.toLowerCase();
+    const CONTROL_KEYWORDS = new Set([
+      'if', 'else', 'then', 'while', 'for', 'to', 'down', 'do', 'return', 'function', 'def', 'break', 'continue', 'end'
+    ]);
+    const TYPE_KEYWORDS = new Set([
+      'integer', 'string', 'boolean', 'array', 'set', 'let', 'const', 'var', 'static', 'int', 'char', 'float', 'void'
+    ]);
+    const OP_KEYWORDS = new Set(['AND', 'OR', 'XOR', 'NOT', 'MOD']);
+    const IO_KEYWORDS = new Set(['print', 'document', 'write', 'console', 'log', 'printf', 'alert']);
 
-  // Numbers (standalone integers and decimals)
-  escaped = escaped.replace(
-    /\b(\d+)\b/g,
-    '<span class="text-emerald-400 dark:text-emerald-300 font-mono">$1</span>'
-  );
+    if (CONTROL_KEYWORDS.has(lower)) {
+      return `<span class="text-pink-400 font-semibold">${token}</span>`;
+    }
+    if (TYPE_KEYWORDS.has(lower)) {
+      return `<span class="text-purple-400 font-semibold">${token}</span>`;
+    }
+    if (OP_KEYWORDS.has(token.toUpperCase())) {
+      return `<span class="text-cyan-400 font-bold">${token}</span>`;
+    }
+    if (IO_KEYWORDS.has(lower)) {
+      return `<span class="text-sky-400 font-semibold">${token}</span>`;
+    }
 
-  return escaped;
+    // Operator symbols
+    if (/^[+\-*/%^&|!<>=]+$/.test(token)) {
+      const esc = token.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      return `<span class="text-cyan-400 font-medium">${esc}</span>`;
+    }
+
+    // Default: escape HTML characters
+    return token.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  });
 }
 
 export const CodeBlockView: React.FC<CodeBlockViewProps> = ({
