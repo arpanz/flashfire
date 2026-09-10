@@ -14,13 +14,14 @@ import {
   Sun,
   Moon,
   Zap,
+  RotateCcw,
 } from 'lucide-react';
 import { sounds } from '../lib/sound';
 import { getCookie, setCookie } from '../lib/cookies';
 
 interface NavbarProps {
-  currentTab: 'decks' | 'cards' | 'quiz' | 'analytics';
-  onSelectTab: (tab: 'decks' | 'cards' | 'quiz' | 'analytics') => void;
+  currentTab: 'decks' | 'cards' | 'quiz' | 'revision' | 'analytics';
+  onSelectTab: (tab: 'decks' | 'cards' | 'quiz' | 'revision' | 'analytics') => void;
   streak: number;
   onOpenImportExport: () => void;
   onOpenShortcuts: () => void;
@@ -113,6 +114,18 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <Layers className="w-3.5 h-3.5" />
             <span>Decks</span>
+          </button>
+
+          <button
+            onClick={() => onSelectTab('revision')}
+            className={`px-3.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
+              currentTab === 'revision'
+                ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-semibold'
+                : 'text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200'
+            }`}
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+            <span>Revision</span>
           </button>
 
           <button

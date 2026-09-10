@@ -8,6 +8,7 @@ interface CodeBlockViewProps {
   language?: string;
   className?: string;
   showLineNumbers?: boolean;
+  maxHeight?: string;
 }
 
 // Robust single-pass syntax highlighter for pseudocode, JS, and algorithmic snippets
@@ -80,6 +81,7 @@ export const CodeBlockView: React.FC<CodeBlockViewProps> = ({
   language = 'pseudocode',
   className = '',
   showLineNumbers = true,
+  maxHeight = 'max-h-80',
 }) => {
   const [copied, setCopied] = useState(false);
 
@@ -101,27 +103,32 @@ export const CodeBlockView: React.FC<CodeBlockViewProps> = ({
 
   return (
     <div
-      className={`w-full rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-950 shadow-xl text-left my-3 font-mono transition-all ${className}`}
+      className={`w-full rounded-2xl overflow-hidden border border-zinc-800/90 dark:border-zinc-700/80 bg-zinc-950 shadow-xl text-left my-3 font-mono transition-all ring-1 ring-white/5 ${className}`}
       onClick={(e) => e.stopPropagation()}
     >
       {/* Mac-style Top Window Chrome Bar */}
-      <div className="flex items-center justify-between px-4 py-2.5 bg-zinc-900/90 border-b border-zinc-800/80 select-none">
+      <div className="flex items-center justify-between px-4 py-2.5 bg-zinc-900/95 border-b border-zinc-800 select-none">
         {/* Traffic Light Dots */}
         <div className="flex items-center gap-2">
-          <span className="w-3 h-3 rounded-full bg-[#ff5f56] border border-[#e0443e] inline-block shadow-2xs"></span>
-          <span className="w-3 h-3 rounded-full bg-[#ffbd2e] border border-[#dea123] inline-block shadow-2xs"></span>
-          <span className="w-3 h-3 rounded-full bg-[#27c93f] border border-[#1aab29] inline-block shadow-2xs"></span>
-          <div className="ml-2 flex items-center gap-1.5 text-[11px] font-semibold tracking-wider text-zinc-400 uppercase">
-            <Terminal className="w-3.5 h-3.5 text-zinc-500" />
+          <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f56] border border-[#e0443e] inline-block shadow-2xs"></span>
+          <span className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] border border-[#dea123] inline-block shadow-2xs"></span>
+          <span className="w-2.5 h-2.5 rounded-full bg-[#27c93f] border border-[#1aab29] inline-block shadow-2xs"></span>
+          <div className="ml-2 flex items-center gap-1.5 text-[11px] font-semibold tracking-wider text-zinc-300 uppercase">
+            <Terminal className="w-3.5 h-3.5 text-zinc-400" />
             <span>{displayLang}</span>
           </div>
+          {lines.length > 0 && (
+            <span className="text-[10px] text-zinc-500 font-mono ml-1 px-1.5 py-0.2 rounded bg-zinc-800/70">
+              {lines.length} lines
+            </span>
+          )}
         </div>
 
         {/* Copy Snippet Button */}
         <button
           onClick={handleCopy}
           type="button"
-          className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-zinc-800/80 hover:bg-zinc-700/80 text-zinc-300 hover:text-white text-[11px] font-medium transition-all cursor-pointer border border-zinc-700/60 shadow-2xs active:scale-95"
+          className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-zinc-800/90 hover:bg-zinc-700 text-zinc-300 hover:text-white text-[11px] font-medium transition-all cursor-pointer border border-zinc-700/60 shadow-2xs active:scale-95"
           title="Copy code to clipboard"
         >
           {copied ? (
@@ -138,8 +145,8 @@ export const CodeBlockView: React.FC<CodeBlockViewProps> = ({
         </button>
       </div>
 
-      {/* Code Body with Line Numbers */}
-      <div className="p-4 overflow-x-auto text-xs sm:text-[13px] leading-relaxed">
+      {/* Code Body with Line Numbers & Scroll Optimization */}
+      <div className={`p-4 overflow-x-auto overflow-y-auto ${maxHeight} text-xs sm:text-[13px] leading-relaxed scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-transparent`}>
         <table className="w-full border-collapse">
           <tbody>
             {lines.map((line, idx) => (

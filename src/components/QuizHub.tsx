@@ -34,6 +34,8 @@ interface QuizHubProps {
   decks: Deck[];
   cards: Flashcard[];
   initialDeckId?: string | null;
+  customCards?: Flashcard[];
+  customTitle?: string;
   onExit?: () => void;
   onStartStudy?: (deck: Deck, mode: "srs" | "cram", customCards?: Flashcard[], title?: string) => void;
 }
@@ -64,6 +66,8 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   decks,
   cards,
   initialDeckId,
+  customCards,
+  customTitle,
   onExit,
   onStartStudy,
 }) => {
@@ -161,6 +165,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       setSelectedDeckIds([initialDeckId]);
     }
   }, [initialDeckId]);
+
 
   // Fetch explanation
   const fetchAiExplanation = useCallback(
@@ -290,11 +295,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       sounds.playSelect();
       let pool: Flashcard[] = [];
 
-      const activeCategoryIds =
-        customCategoryIds.length === 0 ? decks.map((d) => d.id) : customCategoryIds;
-      pool = cards.filter((c) => activeCategoryIds.includes(c.deckId));
+      if (customCards && customCards.length > 0) {
+        pool = [...customCards];
+      } else {
+        const activeCategoryIds =
+          customCategoryIds.length === 0 ? decks.map((d) => d.id) : customCategoryIds;
+        pool = cards.filter((c) => activeCategoryIds.includes(c.deckId));
 
-      if (pool.length === 0) pool = [...cards];
+        if (pool.length === 0) pool = [...cards];
+      }
 
       // Graceful Fisher-Yates shuffle across selected categories
       pool = shuffleArray(pool);
@@ -358,8 +367,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       setTimeLeft(timerSeconds);
       questionStartTime.current = Date.now();
     },
-    [cards, selectedDeckIds, decks, questionCount, timerSeconds]
+    [cards, selectedDeckIds, decks, questionCount, timerSeconds, customCards]
   );
+
+  // If customCards are passed (e.g. from Revision Hub)
+  useEffect(() => {
+    if (customCards && customCards.length > 0) {
+      startQuiz(undefined, customCards.length);
+    }
+  }, [customCards, startQuiz]);
 
   // Self-Rate Handler (Requirement 12: what user forgot / found hard / easy)
   const handleUserSelfRate = useCallback(

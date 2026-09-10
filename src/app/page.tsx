@@ -11,6 +11,7 @@ import { AnalyticsView } from '../components/AnalyticsView';
 import { StudySession } from '../components/StudySession';
 import { MatchGame } from '../components/MatchGame';
 import { QuizHub } from '../components/QuizHub';
+import { RevisionHub } from '../components/RevisionHub';
 import { CardEditorModal } from '../components/CardEditorModal';
 import { ImportExportModal } from '../components/ImportExportModal';
 import { KeyboardShortcutsModal } from '../components/KeyboardShortcutsModal';
@@ -28,7 +29,7 @@ export default function Home() {
   const [activity, setActivity] = useState<DailyActivity[]>([]);
 
   // Navigation & Study States
-  const [currentTab, setCurrentTab] = useState<'quiz' | 'decks' | 'cards' | 'analytics'>('quiz');
+  const [currentTab, setCurrentTab] = useState<'quiz' | 'decks' | 'revision' | 'cards' | 'analytics'>('quiz');
   const [activeStudy, setActiveStudy] = useState<{
     deck: Deck;
     mode: 'srs' | 'cram';
@@ -36,7 +37,11 @@ export default function Home() {
     sessionTitle?: string;
   } | null>(null);
   const [activeMatchDeck, setActiveMatchDeck] = useState<Deck | null>(null);
-  const [activeQuizDeck, setActiveQuizDeck] = useState<Deck | null>(null);
+  const [activeQuizConfig, setActiveQuizConfig] = useState<{
+    deck?: Deck | null;
+    customCards?: Flashcard[];
+    title?: string;
+  } | null>(null);
 
   // Modals
   const [isCardEditorOpen, setIsCardEditorOpen] = useState(false);
@@ -79,22 +84,22 @@ export default function Home() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  const handleStartStudy = (deck: Deck, mode: 'srs' | 'cram') => {
+  const handleStartStudy = (deck: Deck, mode: 'srs' | 'cram', customCards?: Flashcard[], sessionTitle?: string) => {
     setActiveMatchDeck(null);
-    setActiveQuizDeck(null);
-    setActiveStudy({ deck, mode });
+    setActiveQuizConfig(null);
+    setActiveStudy({ deck, mode, customCards, sessionTitle });
   };
 
   const handleStartMatch = (deck: Deck) => {
     setActiveStudy(null);
-    setActiveQuizDeck(null);
+    setActiveQuizConfig(null);
     setActiveMatchDeck(deck);
   };
 
-  const handleStartQuiz = (deck: Deck) => {
+  const handleStartQuiz = (deck: Deck, customCards?: Flashcard[], title?: string) => {
     setActiveStudy(null);
     setActiveMatchDeck(null);
-    setActiveQuizDeck(deck);
+    setActiveQuizConfig({ deck, customCards, title });
     setCurrentTab('quiz');
   };
 
@@ -118,7 +123,7 @@ export default function Home() {
         onSelectTab={(tab) => {
           setActiveStudy(null);
           setActiveMatchDeck(null);
-          setActiveQuizDeck(null);
+          setActiveQuizConfig(null);
           setCurrentTab(tab);
         }}
         streak={stats.currentStreak}
@@ -192,15 +197,38 @@ export default function Home() {
                 <QuizHub
                   decks={decks}
                   cards={cards}
-                  initialDeckId={activeQuizDeck?.id}
+                  initialDeckId={activeQuizConfig?.deck?.id}
+                  customCards={activeQuizConfig?.customCards}
+                  customTitle={activeQuizConfig?.title}
                   onStartStudy={(deck, mode, customCards, title) => {
-                    setActiveQuizDeck(null);
+                    setActiveQuizConfig(null);
                     setActiveMatchDeck(null);
                     setActiveStudy({ deck, mode, customCards, sessionTitle: title });
                   }}
                   onExit={() => {
-                    setActiveQuizDeck(null);
+                    setActiveQuizConfig(null);
                     setCurrentTab('decks');
+                  }}
+                />
+              </motion.div>
+            )}
+
+            {currentTab === 'revision' && (
+              <motion.div
+                key="revision"
+                initial={{ opacity: 0, y: 4 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -4 }}
+                transition={{ duration: 0.15 }}
+              >
+                <RevisionHub
+                  decks={decks}
+                  cards={cards}
+                  onStartStudy={handleStartStudy}
+                  onStartQuiz={handleStartQuiz}
+                  onSwitchToQuiz={() => {
+                    setActiveQuizConfig(null);
+                    setCurrentTab('quiz');
                   }}
                 />
               </motion.div>
