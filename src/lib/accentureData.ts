@@ -162,17 +162,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "HIGH",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Not a valid Excel function name; MAX is the correct formula."
       },
       {
         "id": "C",
         "text": "TOP",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Not a valid Excel function name; MAX is the correct formula."
       },
       {
         "id": "D",
         "text": "HIGHEST",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Not a valid Excel function name; MAX is the correct formula."
       }
     ],
     "tags": [
@@ -208,17 +211,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Data",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Data tab: Manages data connections, sorting, filtering, and data validation."
       },
       {
         "id": "C",
         "text": "Formulas",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Formulas tab: Contains function library, defined names, and formula auditing."
       },
       {
         "id": "D",
         "text": "Review",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Review tab: Handles spell checking, language translation, comments, and sheet protection."
       }
     ],
     "tags": [
@@ -254,17 +260,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Box",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Informal description; spreadsheet element at row/column intersection is a Cell."
       },
       {
         "id": "C",
         "text": "Square",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Geometric shape; spreadsheet element at row/column intersection is a Cell."
       },
       {
         "id": "D",
         "text": "Unit",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Generic term; spreadsheet intersection is specifically designated a Cell."
       }
     ],
     "tags": [
@@ -355,7 +364,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Shift+F",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not close active document; standard close shortcut is Ctrl+W or Ctrl+F4."
       },
       {
         "id": "D",
@@ -409,7 +419,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "F9",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Recalculates formulas in Excel or updates selected field codes in Word."
       }
     ],
     "tags": [
@@ -439,7 +450,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Doc1",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Word uses 'Document1' (not 'Doc1') as default name for new unsaved files."
       },
       {
         "id": "B",
@@ -450,12 +462,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Document",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Lacks the default numeric counter suffix; default title is 'Document1'."
       },
       {
         "id": "D",
         "text": "Doc",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "File format abbreviation; default unsaved title in Word is 'Document1'."
       }
     ],
     "tags": [
@@ -485,17 +499,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Bold",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Standard font weight styling used to emphasize text."
       },
       {
         "id": "B",
         "text": "Italics",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Standard font slant styling used for titles, citations, or emphasis."
       },
       {
         "id": "C",
         "text": "Regular",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Default normal font style without bolding or italic slant."
       },
       {
         "id": "D",
@@ -580,7 +597,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Effect",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Generic term; slide introduction in PowerPoint is specifically a Transition."
       },
       {
         "id": "B",
@@ -591,12 +609,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Slide animation",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Animates elements inside a slide; does not introduce the slide itself."
       },
       {
         "id": "D",
         "text": "Custom animation",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "PowerPoint feature for sequencing in-slide object entrance and exit effects."
       }
     ],
     "tags": [
@@ -626,17 +646,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": ".jpg",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which file types can be added to a PowerPoint show?...'."
       },
       {
         "id": "B",
         "text": ".gif",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which file types can be added to a PowerPoint show?...'."
       },
       {
         "id": "C",
         "text": ".wav",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which file types can be added to a PowerPoint show?...'."
       },
       {
         "id": "D",
@@ -678,17 +701,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Moving",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Holding the left mouse button and moving an object on a slid...'."
       },
       {
         "id": "C",
         "text": "Highlighting",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Holding the left mouse button and moving an object on a slid...'."
       },
       {
         "id": "D",
         "text": "None",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Represents null return value, empty evaluation, or absence of matching output."
       }
     ],
     "tags": [
@@ -767,12 +793,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Charts",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which group is not on Excel's Insert tab?...'."
       },
       {
         "id": "B",
         "text": "Text",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which group is not on Excel's Insert tab?...'."
       },
       {
         "id": "C",
@@ -783,7 +811,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Tables",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which group is not on Excel's Insert tab?...'."
       }
     ],
     "tags": [
@@ -831,7 +860,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Filter",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; Data Validation is the correct formula."
       }
     ],
     "tags": [
@@ -916,17 +946,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Product of B8 and B10",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, B8:B10 refers to:...'."
       },
       {
         "id": "C",
         "text": "Only B8 and B10",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "Column B only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -956,12 +989,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Neither",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'How do you stop automatic numbering in Word? I. Click Number...'."
       },
       {
         "id": "B",
         "text": "Only I",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
@@ -972,7 +1007,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Only II",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -1051,12 +1087,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Footer",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A link that jumps to another location in a document is a:...'."
       },
       {
         "id": "B",
         "text": "Header",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A link that jumps to another location in a document is a:...'."
       },
       {
         "id": "C",
@@ -1067,7 +1105,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Attachment",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A link that jumps to another location in a document is a:...'."
       }
     ],
     "tags": [
@@ -1097,12 +1136,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Home",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Home tab: Manages clipboard, font styling, paragraph alignment, and cell formats."
       },
       {
         "id": "B",
         "text": "Insert",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Insert tab: Used to add tables, charts, illustrations, equations, and hyperlinks."
       },
       {
         "id": "C",
@@ -1113,7 +1154,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "View",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "View tab: Configures workbook views, zoom levels, gridlines, and freeze panes."
       }
     ],
     "tags": [
@@ -1143,7 +1185,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Formula bar",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, the small square at the bottom-right of the active...'."
       },
       {
         "id": "B",
@@ -1154,12 +1197,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Name box",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Informal description; spreadsheet element at row/column intersection is a Cell."
       },
       {
         "id": "D",
         "text": "Status bar",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, the small square at the bottom-right of the active...'."
       }
     ],
     "tags": [
@@ -1305,7 +1350,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Virtual Protected Number",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect expansion; VPN stands for Virtual Private Network."
       }
     ],
     "tags": [
@@ -1341,7 +1387,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Spoofing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Falsifying an identity, IP address, or MAC address to masquerade as trusted host."
       },
       {
         "id": "C",
@@ -1352,7 +1399,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "MITM",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Man-in-the-Middle: Intercepts communications between parties without flooding bandwidth."
       }
     ],
     "tags": [
@@ -1431,7 +1479,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Speed up browsing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Firewalls filter traffic for security policy enforcement; they do not speed up throughput."
       },
       {
         "id": "B",
@@ -1442,12 +1491,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Assign IP addresses",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "IP assignment is performed by DHCP servers, not by firewalls."
       },
       {
         "id": "D",
         "text": "Store passwords",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Passwords and credentials are stored in directory services or password managers."
       }
     ],
     "tags": [
@@ -1673,12 +1724,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "21 and 22",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 21 and 22 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       },
       {
         "id": "B",
         "text": "25 and 110",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 25 and 110 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       },
       {
         "id": "C",
@@ -1689,7 +1742,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "53 and 67",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 53 and 67 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       }
     ],
     "tags": [
@@ -1768,7 +1822,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Encrypt packets",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'DHCP is used to:...'."
       },
       {
         "id": "B",
@@ -1779,12 +1834,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Block malware",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'DHCP is used to:...'."
       },
       {
         "id": "D",
         "text": "Compress files",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'DHCP is used to:...'."
       }
     ],
     "tags": [
@@ -1869,17 +1926,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Browsing web pages",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'SMTP is used for:...'."
       },
       {
         "id": "C",
         "text": "File transfer",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "File tab / Backstage view: Manages open, save, print, export, and account settings."
       },
       {
         "id": "D",
         "text": "Name resolution",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'SMTP is used for:...'."
       }
     ],
     "tags": [
@@ -1909,7 +1969,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Convert domain names",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'NAT is used to:...'."
       },
       {
         "id": "B",
@@ -1920,12 +1981,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Detect viruses",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'NAT is used to:...'."
       },
       {
         "id": "D",
         "text": "Create VLANs",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'NAT is used to:...'."
       }
     ],
     "tags": [
@@ -1961,17 +2024,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "64 bits",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv4 address size is:...'."
       },
       {
         "id": "C",
         "text": "128 bits",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv4 address size is:...'."
       },
       {
         "id": "D",
         "text": "16 bits",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv4 address size is:...'."
       }
     ],
     "tags": [
@@ -2001,12 +2067,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "32 bits",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv6 address size is:...'."
       },
       {
         "id": "B",
         "text": "64 bits",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv6 address size is:...'."
       },
       {
         "id": "C",
@@ -2017,7 +2085,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "256 bits",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IPv6 address size is:...'."
       }
     ],
     "tags": [
@@ -2047,7 +2116,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Layer 1",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A switch typically operates at:...'."
       },
       {
         "id": "B",
@@ -2058,12 +2128,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Layer 3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A switch typically operates at:...'."
       },
       {
         "id": "D",
         "text": "Layer 7",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A switch typically operates at:...'."
       }
     ],
     "tags": [
@@ -2240,7 +2312,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Granting permissions",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Describes Authorization, whereas Authentication verifies identity."
       },
       {
         "id": "B",
@@ -2251,12 +2324,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Encrypting disks",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Protects data at rest with cryptographic ciphers, not identity authentication."
       },
       {
         "id": "D",
         "text": "Backing up data",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Data resiliency and disaster recovery process, not access control."
       }
     ],
     "tags": [
@@ -2286,7 +2361,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Checking who you are",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Describes Authentication, whereas Authorization grants permissions to resources."
       },
       {
         "id": "B",
@@ -2297,12 +2373,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Scanning viruses",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Antivirus scanning detects malicious binaries, unrelated to user permissions."
       },
       {
         "id": "D",
         "text": "Assigning MAC addresses",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "MAC addresses are permanently assigned by hardware manufacturers."
       }
     ],
     "tags": [
@@ -2338,7 +2416,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Same thing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Difference between a virus and a Trojan?...'."
       },
       {
         "id": "C",
@@ -2380,7 +2459,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Flooding a server",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Phishing is:...'."
       },
       {
         "id": "B",
@@ -2391,7 +2471,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Guessing Wi-Fi keys by brute force only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
@@ -2439,12 +2520,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "User passwords only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "Disk files",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Packet-filtering firewall inspects:...'."
       }
     ],
     "tags": [
@@ -2474,7 +2557,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Only MAC addresses",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -2491,7 +2575,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Printer queues",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Stateful inspection firewalls track:...'."
       }
     ],
     "tags": [
@@ -2521,7 +2606,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Only name lookup",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -2532,7 +2618,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Email delivery",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Encapsulating Security Payload (ESP) in IPsec provides:...'."
       },
       {
         "id": "D",
@@ -2568,7 +2655,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Pairwise Transient Key",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In WPA2 4-way handshake, the key present on AP and clients i...'."
       },
       {
         "id": "B",
@@ -2579,7 +2667,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Group Temporal Key",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In WPA2 4-way handshake, the key present on AP and clients i...'."
       },
       {
         "id": "D",
@@ -2627,12 +2716,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "An email alias",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; A virtual firewall for instances is the intended model."
       },
       {
         "id": "D",
         "text": "A billing plan",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; A virtual firewall for instances is the intended model."
       }
     ],
     "tags": [
@@ -2668,7 +2759,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Data only in RAM",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
@@ -2679,7 +2771,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Cable length",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Encryption of data at rest mainly protects:...'."
       }
     ],
     "tags": [
@@ -2709,7 +2802,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Deletes backups",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Man-in-the-middle attack:...'."
       },
       {
         "id": "B",
@@ -2720,12 +2814,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Overheats CPUs",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Man-in-the-middle attack:...'."
       },
       {
         "id": "D",
         "text": "Changes screen resolution",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Man-in-the-middle attack:...'."
       }
     ],
     "tags": [
@@ -2755,7 +2851,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Compressing files",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Spoofing means:...'."
       },
       {
         "id": "B",
@@ -2766,12 +2863,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Defragmenting disks",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Spoofing means:...'."
       },
       {
         "id": "D",
         "text": "Load balancing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Spoofing means:...'."
       }
     ],
     "tags": [
@@ -2801,17 +2900,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Packet filtering",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not typically a firewall type listed in Accenture p...'."
       },
       {
         "id": "B",
         "text": "Proxy service",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not typically a firewall type listed in Accenture p...'."
       },
       {
         "id": "C",
         "text": "Stateful inspection",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not typically a firewall type listed in Accenture p...'."
       },
       {
         "id": "D",
@@ -2847,12 +2949,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Cloud vendor does everything",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Security duties are split between provider and customer is the intended model."
       },
       {
         "id": "B",
         "text": "Customer does everything",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Security duties are split between provider and customer is the intended model."
       },
       {
         "id": "C",
@@ -2863,7 +2967,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "No one is responsible",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Security duties are split between provider and customer is the intended model."
       }
     ],
     "tags": [
@@ -2893,7 +2998,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Screensaver",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Best first control to block unauthorized network traffic?...'."
       },
       {
         "id": "B",
@@ -2941,7 +3047,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Only the app UI",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Describes SaaS; IaaS provides low-level OS, compute, storage, and networking."
       },
       {
         "id": "B",
@@ -2952,12 +3059,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Only email",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Describes SaaS cloud software (e.g. Gmail); not infrastructure."
       },
       {
         "id": "D",
         "text": "Only office templates",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Describes application productivity software, not cloud infrastructure."
       }
     ],
     "tags": [
@@ -3097,12 +3206,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "On-prem exclusive rack",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Dedicated physical on-premise hardware; not multi-tenant cloud sharing."
       },
       {
         "id": "D",
         "text": "Air-gapped lab",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Isolated network physically disconnected from all external networks."
       }
     ],
     "tags": [
@@ -3138,17 +3249,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "lifetime license only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Traditional on-premises software model; cloud uses pay-as-you-go subscription."
       },
       {
         "id": "C",
         "text": "hardware purchase",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Capital expenditure (CapEx) model; cloud leverages operational expense (OpEx)."
       },
       {
         "id": "D",
         "text": "none",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Represents null return value, empty evaluation, or absence of matching output."
       }
     ],
     "tags": [
@@ -3178,7 +3292,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Compilation",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Technology that runs multiple VMs on one physical server?...'."
       },
       {
         "id": "B",
@@ -3189,12 +3304,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Pagination",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Technology that runs multiple VMs on one physical server?...'."
       },
       {
         "id": "D",
         "text": "Fragmentation",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Technology that runs multiple VMs on one physical server?...'."
       }
     ],
     "tags": [
@@ -3224,12 +3341,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Runtime managed",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In PaaS, which is not a typical benefit / still often your j...'."
       },
       {
         "id": "B",
         "text": "Middleware managed",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In PaaS, which is not a typical benefit / still often your j...'."
       },
       {
         "id": "C",
@@ -3240,7 +3359,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Platform patching",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In PaaS, which is not a typical benefit / still often your j...'."
       }
     ],
     "tags": [
@@ -3270,7 +3390,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Traditional data center",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Data tab: Manages data connections, sorting, filtering, and data validation."
       },
       {
         "id": "B",
@@ -3281,12 +3402,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Floppy disks",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Instant scalability is a property of:...'."
       },
       {
         "id": "D",
         "text": "CRT monitors",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Instant scalability is a property of:...'."
       }
     ],
     "tags": [
@@ -3316,7 +3439,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Cloud vendor",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Who is usually responsible for hardware downtime in a compan...'."
       },
       {
         "id": "B",
@@ -3327,12 +3451,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "ISP only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "End user",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Who is usually responsible for hardware downtime in a compan...'."
       }
     ],
     "tags": [
@@ -3362,17 +3488,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "AWS",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; All of these is the intended model."
       },
       {
         "id": "B",
         "text": "Azure",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; All of these is the intended model."
       },
       {
         "id": "C",
         "text": "Google Cloud",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; All of these is the intended model."
       },
       {
         "id": "D",
@@ -3408,7 +3537,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Strictly limited like a USB",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Effectively elastic/unlimited for practical use is the intended model."
       },
       {
         "id": "B",
@@ -3419,12 +3549,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Always 1 GB",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Effectively elastic/unlimited for practical use is the intended model."
       },
       {
         "id": "D",
         "text": "Only email-sized",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -3454,7 +3586,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Draw slides",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Hypervisor is used to:...'."
       },
       {
         "id": "B",
@@ -3471,7 +3604,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Check spelling",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Hypervisor is used to:...'."
       }
     ],
     "tags": [
@@ -3556,7 +3690,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Only a printer driver",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
@@ -3567,7 +3702,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "No authentication ever",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Client-server sharing requires:...'."
       }
     ],
     "tags": [
@@ -3609,7 +3745,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "MAC flooding",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Pay as you use / pay as you go contrasts with:...'."
       },
       {
         "id": "D",
@@ -3648,12 +3785,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Last character",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "String indexing logic resulting in the final character only."
       },
       {
         "id": "B",
         "text": "Increasing order",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Sorting algorithm resulting in ascending numerical or alphabetical sequence."
       },
       {
         "id": "C",
@@ -3664,7 +3803,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Reverse string",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Reversal algorithm output resulting in flipped character sequence."
       }
     ],
     "tags": [
@@ -3853,7 +3993,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Success",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Conditional branch execution indicating test evaluated to TRUE."
       },
       {
         "id": "B",
@@ -3864,12 +4005,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       },
       {
         "id": "D",
         "text": "None",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Represents null return value, empty evaluation, or absence of matching output."
       }
     ],
     "tags": [
@@ -4110,7 +4253,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "150 152 154",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete printed sequence when `fun(150)` is exe...'."
       },
       {
         "id": "B",
@@ -4127,7 +4271,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "None",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Represents null return value, empty evaluation, or absence of matching output."
       }
     ],
     "tags": [
@@ -4160,7 +4305,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "7 13 13 11 11",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What are the resulting values stored in array `c`?...'."
       },
       {
         "id": "B",
@@ -4171,12 +4317,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "-3 -5 -1 5 9",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What are the resulting values stored in array `c`?...'."
       },
       {
         "id": "D",
         "text": "None",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Represents null return value, empty evaluation, or absence of matching output."
       }
     ],
     "tags": [
@@ -4261,17 +4409,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "6 4",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `q` and `r`?...'."
       },
       {
         "id": "B",
         "text": "1 3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `q` and `r`?...'."
       },
       {
         "id": "C",
         "text": "7 2",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `q` and `r`?...'."
       },
       {
         "id": "D",
@@ -4368,17 +4519,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "-12 0",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `a` and `b`?...'."
       },
       {
         "id": "C",
         "text": "11 22",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `a` and `b`?...'."
       },
       {
         "id": "D",
         "text": "37 24",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the printed values of `a` and `b`?...'."
       }
     ],
     "tags": [
@@ -4515,7 +4669,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "B C",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the conditional branching?...'."
       },
       {
         "id": "B",
@@ -4526,12 +4681,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "A",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the conditional branching?...'."
       },
       {
         "id": "D",
         "text": "B",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the conditional branching?...'."
       }
     ],
     "tags": [
@@ -4882,17 +5039,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "None",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Represents null return value, empty evaluation, or absence of matching output."
       },
       {
         "id": "C",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       },
       {
         "id": "D",
         "text": "Fail",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the triangle angle validation logic?...'."
       }
     ],
     "tags": [
@@ -4928,12 +5088,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Font Color",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature that converts a sentence to ALL CAPS or all small le...'."
       },
       {
         "id": "C",
         "text": "Highlight",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature that converts a sentence to ALL CAPS or all small le...'."
       },
       {
         "id": "D",
@@ -5024,17 +5186,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Only II",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
         "text": "Both",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Mini Translator: (I) stays on until you turn it off (II) sen...'."
       },
       {
         "id": "D",
         "text": "Neither",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Mini Translator: (I) stays on until you turn it off (II) sen...'."
       }
     ],
     "tags": [
@@ -5064,17 +5229,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "I only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
         "text": "II only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
         "text": "All three",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Classic Word underlines: green = contextual, blue = spelling...'."
       },
       {
         "id": "D",
@@ -5110,7 +5278,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Bookmark",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Connection that jumps to another slide in this deck or anoth...'."
       },
       {
         "id": "B",
@@ -5121,12 +5290,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Footer",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Connection that jumps to another slide in this deck or anoth...'."
       },
       {
         "id": "D",
         "text": "Comment",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Connection that jumps to another slide in this deck or anoth...'."
       }
     ],
     "tags": [
@@ -5156,17 +5327,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Inbox",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Accidentally deleted Outlook mail is first kept in:...'."
       },
       {
         "id": "B",
         "text": "Drafts",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Accidentally deleted Outlook mail is first kept in:...'."
       },
       {
         "id": "C",
         "text": "Sent Items",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Accidentally deleted Outlook mail is first kept in:...'."
       },
       {
         "id": "D",
@@ -5202,12 +5376,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Alt",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Key held to select non-adjacent words/phrases in Word?...'."
       },
       {
         "id": "B",
         "text": "Shift",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Key held to select non-adjacent words/phrases in Word?...'."
       },
       {
         "id": "C",
@@ -5218,7 +5394,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Tab",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Key held to select non-adjacent words/phrases in Word?...'."
       }
     ],
     "tags": [
@@ -5248,12 +5425,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "cd .",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Command Prompt: go two directories up from the current folde...'."
       },
       {
         "id": "B",
         "text": "cd ..",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Command Prompt: go two directories up from the current folde...'."
       },
       {
         "id": "C",
@@ -5264,7 +5443,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "cd \\",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Command Prompt: go two directories up from the current folde...'."
       }
     ],
     "tags": [
@@ -5294,7 +5474,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Spell Check",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Word tool for synonyms?...'."
       },
       {
         "id": "B",
@@ -5311,7 +5492,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "SmartArt",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Word tool for synonyms?...'."
       }
     ],
     "tags": [
@@ -5390,7 +5572,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Decoration",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Gutter margin is mainly for:...'."
       },
       {
         "id": "B",
@@ -5401,12 +5584,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Alignment",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Gutter margin is mainly for:...'."
       },
       {
         "id": "D",
         "text": "Page numbering",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Gutter margin is mainly for:...'."
       }
     ],
     "tags": [
@@ -5454,7 +5639,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Alt+S",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Ctrl+Alt+S is the assigned shortcut."
       }
     ],
     "tags": [
@@ -5484,12 +5670,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Java",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Macros in MS Office are typically written in:...'."
       },
       {
         "id": "B",
         "text": "Python",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Macros in MS Office are typically written in:...'."
       },
       {
         "id": "C",
@@ -5500,7 +5688,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "C++",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Macros in MS Office are typically written in:...'."
       }
     ],
     "tags": [
@@ -5530,7 +5719,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "All values concatenated",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Merging several Excel cells keeps:...'."
       },
       {
         "id": "B",
@@ -5547,7 +5737,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Error always",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       }
     ],
     "tags": [
@@ -5644,7 +5835,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Fill a series",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Four-headed arrow cursor in Excel is used to:...'."
       }
     ],
     "tags": [
@@ -5692,7 +5884,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Shift+=",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Alt+= is the assigned shortcut."
       }
     ],
     "tags": [
@@ -5722,17 +5915,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Normal",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'PowerPoint view for file/print/share options?...'."
       },
       {
         "id": "B",
         "text": "Slide Show",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'PowerPoint view for file/print/share options?...'."
       },
       {
         "id": "C",
         "text": "Outline",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'PowerPoint view for file/print/share options?...'."
       },
       {
         "id": "D",
@@ -5817,12 +6013,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Normal",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Best view to rearrange many slides?...'."
       },
       {
         "id": "B",
         "text": "Reading",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Best view to rearrange many slides?...'."
       },
       {
         "id": "C",
@@ -5833,7 +6031,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Notes",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Best view to rearrange many slides?...'."
       }
     ],
     "tags": [
@@ -5863,17 +6062,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Highlight",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Collective design for fonts, colors, and effects across a do...'."
       },
       {
         "id": "B",
         "text": "Line spacing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Collective design for fonts, colors, and effects across a do...'."
       },
       {
         "id": "C",
         "text": "Formatting only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
@@ -5927,7 +6129,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Browser",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Tool that stores data in rows and columns for calculation?...'."
       }
     ],
     "tags": [
@@ -5975,7 +6178,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Handout Master only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -6005,17 +6209,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Alt+F5",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Alt+F8 is the assigned shortcut."
       },
       {
         "id": "B",
         "text": "Alt+F6",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Alt+F8 is the assigned shortcut."
       },
       {
         "id": "C",
         "text": "Alt+F7",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Alt+F8 is the assigned shortcut."
       },
       {
         "id": "D",
@@ -6100,7 +6307,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Connectionless and unreliable",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'TCP is best described as:...'."
       },
       {
         "id": "B",
@@ -6111,12 +6319,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Broadcast-only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "Analog signaling",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'TCP is best described as:...'."
       }
     ],
     "tags": [
@@ -6146,7 +6356,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "IP routing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not operate at this OSI/TCP-IP layer; Bits on the wire is the correct layer."
       },
       {
         "id": "B",
@@ -6157,12 +6368,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Sessions",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not operate at this OSI/TCP-IP layer; Bits on the wire is the correct layer."
       },
       {
         "id": "D",
         "text": "Encryption keys only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -6241,7 +6454,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Domain to IP",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'ARP maps:...'."
       },
       {
         "id": "B",
@@ -6252,7 +6466,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Port to process",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'ARP maps:...'."
       },
       {
         "id": "D",
@@ -6288,7 +6503,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "The printer IP",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default gateway is:...'."
       },
       {
         "id": "B",
@@ -6385,12 +6601,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "64 bytes",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Typical Ethernet MTU size?...'."
       },
       {
         "id": "B",
         "text": "512 bytes",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Typical Ethernet MTU size?...'."
       },
       {
         "id": "C",
@@ -6401,7 +6619,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "65535 bytes",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Typical Ethernet MTU size?...'."
       }
     ],
     "tags": [
@@ -6437,17 +6656,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Layer 2",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A hub operates at:...'."
       },
       {
         "id": "C",
         "text": "Layer 3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A hub operates at:...'."
       },
       {
         "id": "D",
         "text": "Layer 4",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A hub operates at:...'."
       }
     ],
     "tags": [
@@ -6483,17 +6705,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "22 and 23",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 22 and 23 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       },
       {
         "id": "C",
         "text": "25 and 110",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 25 and 110 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       },
       {
         "id": "D",
         "text": "53 and 80",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 53 and 80 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       }
     ],
     "tags": [
@@ -6578,17 +6803,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "25 and 80",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 25 and 80 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       },
       {
         "id": "C",
         "text": "67 and 68",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 67 and 68 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       },
       {
         "id": "D",
         "text": "443 and 993",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 443 and 993 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       }
     ],
     "tags": [
@@ -6618,7 +6846,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "8.8.8.8",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Private IPv4 ranges include:...'."
       },
       {
         "id": "B",
@@ -6629,7 +6858,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "1.1.1.1",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Private IPv4 ranges include:...'."
       },
       {
         "id": "D",
@@ -6677,12 +6907,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "192.168.1.1",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Loopback address?...'."
       },
       {
         "id": "D",
         "text": "255.0.0.0",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Loopback address?...'."
       }
     ],
     "tags": [
@@ -6712,7 +6944,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "ACK, SYN, FIN",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'TCP three-way handshake order?...'."
       },
       {
         "id": "B",
@@ -6723,12 +6956,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "FIN, ACK, SYN",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'TCP three-way handshake order?...'."
       },
       {
         "id": "D",
         "text": "RST, SYN, ACK",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'TCP three-way handshake order?...'."
       }
     ],
     "tags": [
@@ -6758,7 +6993,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Shares one collision domain for all ports",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A switch vs a hub: the switch mainly:...'."
       },
       {
         "id": "B",
@@ -6769,7 +7005,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Routes between WANs",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A switch vs a hub: the switch mainly:...'."
       },
       {
         "id": "D",
@@ -6805,7 +7042,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "53/54",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 53 and 54 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       },
       {
         "id": "B",
@@ -6816,12 +7054,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "80/443",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 80 and 443 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       },
       {
         "id": "D",
         "text": "20/21",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Port(s) 20 and 21 are reserved for other network services (e.g. FTP/SSH/SMTP/Telnet)."
       }
     ],
     "tags": [
@@ -6851,7 +7091,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Trace every hop's latency only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -6862,12 +7103,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Capture packets",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'nslookup is used to:...'."
       },
       {
         "id": "D",
         "text": "Compress files",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'nslookup is used to:...'."
       }
     ],
     "tags": [
@@ -6897,7 +7140,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Terminator",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Star topology's center device is usually a:...'."
       },
       {
         "id": "B",
@@ -6908,7 +7152,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Modem only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
@@ -6956,12 +7201,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Assign MAC to RAM",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'VLAN is used to:...'."
       },
       {
         "id": "D",
         "text": "Encrypt disks",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'VLAN is used to:...'."
       }
     ],
     "tags": [
@@ -7089,7 +7336,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Speeds the CPU",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ransomware typically:...'."
       },
       {
         "id": "B",
@@ -7100,12 +7348,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Fixes bugs",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ransomware typically:...'."
       },
       {
         "id": "D",
         "text": "Updates BIOS",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ransomware typically:...'."
       }
     ],
     "tags": [
@@ -7147,7 +7397,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Cipher, Index, Auth",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'CIA triad is:...'."
       },
       {
         "id": "D",
@@ -7183,7 +7434,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Hiding data so it can be decrypted with a key",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Data tab: Manages data connections, sorting, filtering, and data validation."
       },
       {
         "id": "B",
@@ -7200,7 +7452,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Drawing charts",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Hashing is mainly for:...'."
       }
     ],
     "tags": [
@@ -7230,7 +7483,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Hash only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -7241,12 +7495,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Routing protocol",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'AES is a:...'."
       },
       {
         "id": "D",
         "text": "Mail client",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'AES is a:...'."
       }
     ],
     "tags": [
@@ -7276,7 +7532,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Symmetric only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -7373,7 +7630,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "One password only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -7384,12 +7642,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "No login",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'MFA means:...'."
       },
       {
         "id": "D",
         "text": "MAC flooding",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'MFA means:...'."
       }
     ],
     "tags": [
@@ -7419,7 +7679,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Only logs",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -7436,7 +7697,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Draws slides",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IDS vs IPS: IPS additionally:...'."
       }
     ],
     "tags": [
@@ -7478,12 +7740,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "HDMI cables",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'SQL injection targets:...'."
       },
       {
         "id": "D",
         "text": "RAM clock",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'SQL injection targets:...'."
       }
     ],
     "tags": [
@@ -7513,7 +7777,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "CPUs",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Social engineering attacks:...'."
       },
       {
         "id": "B",
@@ -7524,7 +7789,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Fiber attenuation",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Social engineering attacks:...'."
       },
       {
         "id": "D",
@@ -7560,7 +7826,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Admin rights for everyone",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Least privilege means:...'."
       },
       {
         "id": "B",
@@ -7571,12 +7838,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Open all ports",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Least privilege means:...'."
       },
       {
         "id": "D",
         "text": "Share one password",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Least privilege means:...'."
       }
     ],
     "tags": [
@@ -7667,12 +7936,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Paints slides",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Brute-force attack:...'."
       },
       {
         "id": "D",
         "text": "Merges cells",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Brute-force attack:...'."
       }
     ],
     "tags": [
@@ -7702,7 +7973,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Packets at Layer 3 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -7713,12 +7985,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Subnet masks",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Keylogger captures:...'."
       },
       {
         "id": "D",
         "text": "Cloud regions",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Keylogger captures:...'."
       }
     ],
     "tags": [
@@ -7760,12 +8034,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Measured service",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Rapid elasticity is the intended model."
       },
       {
         "id": "D",
         "text": "Resource pooling",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Rapid elasticity is the intended model."
       }
     ],
     "tags": [
@@ -7795,7 +8071,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Resource pooling",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Billing by actual use is:...'."
       },
       {
         "id": "B",
@@ -7806,7 +8083,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "On-prem CAPEX only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
@@ -7860,7 +8138,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Multi-public",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Private is the intended model."
       }
     ],
     "tags": [
@@ -7902,12 +8181,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Bare metal only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "Mainframe",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Mix of public + private is:...'."
       }
     ],
     "tags": [
@@ -7955,7 +8236,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "IDaaS",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Amazon EC2 is mainly:...'."
       }
     ],
     "tags": [
@@ -8052,7 +8334,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Bare metal",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Salesforce / Dropbox-style apps are mainly:...'."
       }
     ],
     "tags": [
@@ -8100,7 +8383,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "All equal",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Least built-in security (you secure more yourself)?...'."
       }
     ],
     "tags": [
@@ -8148,7 +8432,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "CaaS",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Most complete app + platform + hardware vendor model?...'."
       }
     ],
     "tags": [
@@ -8178,7 +8463,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Switch, Port, IP",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; SaaS, PaaS, IaaS is the intended model."
       },
       {
         "id": "B",
@@ -8195,7 +8481,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "SYN, PSH, ACK",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; SaaS, PaaS, IaaS is the intended model."
       }
     ],
     "tags": [
@@ -8225,7 +8512,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "One VM per planet",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Multi-tenancy means:...'."
       },
       {
         "id": "B",
@@ -8236,12 +8524,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "No isolation",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Multi-tenancy means:...'."
       },
       {
         "id": "D",
         "text": "Only USB sharing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -8332,7 +8622,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Bare-metal colo",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Google Workspace is an example of:...'."
       },
       {
         "id": "D",
@@ -8368,7 +8659,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "VLAN hopping",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Vendor lock-in is the intended model."
       },
       {
         "id": "B",
@@ -8379,12 +8671,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Gutter margin",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Vendor lock-in is the intended model."
       },
       {
         "id": "D",
         "text": "Fill handle",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Vendor lock-in is the intended model."
       }
     ],
     "tags": [
@@ -8778,12 +9072,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1 2 3 4 5",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
       },
       {
         "id": "B",
         "text": "2 4",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
       },
       {
         "id": "C",
@@ -8794,7 +9090,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "1 2 3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
       }
     ],
     "tags": [
@@ -8827,7 +9124,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1 2 3 4 5",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
       },
       {
         "id": "B",
@@ -8838,12 +9136,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "3 4 5",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
       },
       {
         "id": "D",
         "text": "1 2",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
       }
     ],
     "tags": [
@@ -8980,7 +9280,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "4 9",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after executing the arithmetic swap wit...'."
       },
       {
         "id": "B",
@@ -8991,12 +9292,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "13 4",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after executing the arithmetic swap wit...'."
       },
       {
         "id": "D",
         "text": "9 13",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after executing the arithmetic swap wit...'."
       }
     ],
     "tags": [
@@ -9139,7 +9442,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "False",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Boolean false value indicating condition criteria are not met."
       },
       {
         "id": "C",
@@ -9150,7 +9454,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       }
     ],
     "tags": [
@@ -9339,7 +9644,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "2 1",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete sequence of numbers printed by `f(2)`?...'."
       },
       {
         "id": "B",
@@ -9350,12 +9656,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "1 2",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete sequence of numbers printed by `f(2)`?...'."
       },
       {
         "id": "D",
         "text": "2 2 1 1",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete sequence of numbers printed by `f(2)`?...'."
       }
     ],
     "tags": [
@@ -9700,7 +10008,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1 1",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by `isPrime(9)` and `isPrime(11)`?...'."
       },
       {
         "id": "B",
@@ -9711,12 +10020,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "1 0",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by `isPrime(9)` and `isPrime(11)`?...'."
       },
       {
         "id": "D",
         "text": "0 0",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by `isPrime(9)` and `isPrime(11)`?...'."
       }
     ],
     "tags": [
@@ -9856,12 +10167,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Offline-only storage",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "A type of antivirus",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Multiple users accessing the same application or database instance is the intended model."
       }
     ],
     "tags": [
@@ -9903,12 +10216,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Google Drive",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of PaaS?...'."
       },
       {
         "id": "D",
         "text": "Dropbox",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of PaaS?...'."
       }
     ],
     "tags": [
@@ -9938,7 +10253,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Encrypt disks",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Distribute network traffic evenly across servers is the intended model."
       },
       {
         "id": "B",
@@ -9949,12 +10265,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Assign MAC addresses",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Distribute network traffic evenly across servers is the intended model."
       },
       {
         "id": "D",
         "text": "Spell-check documents",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Distribute network traffic evenly across servers is the intended model."
       }
     ],
     "tags": [
@@ -10094,7 +10412,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "On-premises only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
@@ -10130,12 +10449,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Big data intelligence",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Data tab: Manages data connections, sorting, filtering, and data validation."
       },
       {
         "id": "B",
         "text": "Testing and building applications",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Hassle-free office productivity tools over the internet, no ...'."
       },
       {
         "id": "C",
@@ -10146,7 +10467,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Intelligent energy saving",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Hassle-free office productivity tools over the internet, no ...'."
       }
     ],
     "tags": [
@@ -10237,12 +10559,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Offline software",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Computing resources over the internet is the intended model."
       },
       {
         "id": "D",
         "text": "Antivirus protection",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Computing resources over the internet is the intended model."
       }
     ],
     "tags": [
@@ -10278,7 +10602,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Google App Engine",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of SaaS?...'."
       },
       {
         "id": "C",
@@ -10289,7 +10614,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Virtual machine",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of SaaS?...'."
       }
     ],
     "tags": [
@@ -10325,12 +10651,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Protocol as a Service",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Full form of PaaS?...'."
       },
       {
         "id": "C",
         "text": "Packet as a Service",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Full form of PaaS?...'."
       },
       {
         "id": "D",
@@ -10366,7 +10694,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Gmail",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of IaaS?...'."
       },
       {
         "id": "B",
@@ -10377,12 +10706,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Salesforce",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of IaaS?...'."
       },
       {
         "id": "D",
         "text": "Zoom",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is an example of IaaS?...'."
       }
     ],
     "tags": [
@@ -10522,12 +10853,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Bare metal only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "Mainframe",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Hybrid is the intended model."
       }
     ],
     "tags": [
@@ -10557,7 +10890,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Fixed unchangeable hardware",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Scalability is the intended model."
       },
       {
         "id": "B",
@@ -10568,12 +10902,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Must be physically at the laptop",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Scalability is the intended model."
       },
       {
         "id": "D",
         "text": "No security ever",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Scalability is the intended model."
       }
     ],
     "tags": [
@@ -10603,7 +10939,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Always buy more disks forever",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Increasing or decreasing resources based on demand is the intended model."
       },
       {
         "id": "B",
@@ -10614,12 +10951,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Deleting the internet",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Increasing or decreasing resources based on demand is the intended model."
       },
       {
         "id": "D",
         "text": "One VM per planet",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Increasing or decreasing resources based on demand is the intended model."
       }
     ],
     "tags": [
@@ -10661,12 +11000,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Encrypting files",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Virtualization is:...'."
       },
       {
         "id": "D",
         "text": "Connecting computers using cable",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Virtualization is:...'."
       }
     ],
     "tags": [
@@ -10708,7 +11049,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Compiler",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which component creates and manages virtual machines?...'."
       },
       {
         "id": "D",
@@ -10744,12 +11086,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Fixed annual payment only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
         "text": "Free cloud services",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Pay-as-you-go means:...'."
       },
       {
         "id": "C",
@@ -10760,7 +11104,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Pay before using, never after",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Pay-as-you-go means:...'."
       }
     ],
     "tags": [
@@ -10796,12 +11141,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Chrome",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Type-1 hypervisor example (runs on physical hardware)?...'."
       },
       {
         "id": "C",
         "text": "VLC",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Type-1 hypervisor example (runs on physical hardware)?...'."
       },
       {
         "id": "D",
@@ -10837,7 +11184,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "VMware ESXi",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Type-2 hypervisor example (runs on a host OS)?...'."
       },
       {
         "id": "B",
@@ -10848,7 +11196,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "BIOS",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Type-2 hypervisor example (runs on a host OS)?...'."
       },
       {
         "id": "D",
@@ -10884,7 +11233,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "EC2",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which AWS service is used for storage?...'."
       },
       {
         "id": "B",
@@ -10895,12 +11245,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "VPC",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which AWS service is used for storage?...'."
       },
       {
         "id": "D",
         "text": "IAM",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which AWS service is used for storage?...'."
       }
     ],
     "tags": [
@@ -10942,12 +11294,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Floppy backup",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Abstraction layer that unifies separate data sources is the intended model."
       },
       {
         "id": "D",
         "text": "Print to paper",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Abstraction layer that unifies separate data sources is the intended model."
       }
     ],
     "tags": [
@@ -11026,7 +11380,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "8.8.8.8",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following IP addresses is a private IP?...'."
       },
       {
         "id": "B",
@@ -11037,7 +11392,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "1.1.1.1",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following IP addresses is a private IP?...'."
       },
       {
         "id": "D",
@@ -11134,7 +11490,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Assign MAC addresses",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Main purpose of a subnet mask?...'."
       },
       {
         "id": "D",
@@ -11237,7 +11594,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "STP",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Segment a large physical network into distinct broadcast dom...'."
       }
     ],
     "tags": [
@@ -11285,7 +11643,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Application-level proxy",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Returning response traffic for internal users is allowed bac...'."
       }
     ],
     "tags": [
@@ -11431,7 +11790,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "WPA3-Enterprise only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -11473,7 +11833,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Open Wi-Fi",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect port assignment; WPA2 is the standard listening port."
       },
       {
         "id": "D",
@@ -11509,7 +11870,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "AES-CCMP",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Legacy devices cannot use AES; enable older mechanism that i...'."
       },
       {
         "id": "B",
@@ -11520,12 +11882,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "WPA3-SAE",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Legacy devices cannot use AES; enable older mechanism that i...'."
       },
       {
         "id": "D",
         "text": "SSL",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Legacy devices cannot use AES; enable older mechanism that i...'."
       }
     ],
     "tags": [
@@ -11555,7 +11919,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "IP address spoofing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Falsifying an identity, IP address, or MAC address to masquerade as trusted host."
       },
       {
         "id": "B",
@@ -11701,7 +12066,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Faster Wi-Fi only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -11712,7 +12078,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Bigger fonts",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Company divides network into isolated segments so a compromi...'."
       },
       {
         "id": "D",
@@ -11748,7 +12115,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "It removes the need for passwords",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Major security benefit of network segmentation?...'."
       },
       {
         "id": "B",
@@ -11759,7 +12127,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Assigns MAC to RAM",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Major security benefit of network segmentation?...'."
       },
       {
         "id": "D",
@@ -12040,7 +12409,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "AH only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -12498,7 +12868,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Page Break",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature that records modifications so they can be reviewed/a...'."
       }
     ],
     "tags": [
@@ -12528,17 +12899,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Left",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Alignment that makes both left and right edges of a paragrap...'."
       },
       {
         "id": "B",
         "text": "Right",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Alignment that makes both left and right edges of a paragrap...'."
       },
       {
         "id": "C",
         "text": "Center",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Alignment that makes both left and right edges of a paragrap...'."
       },
       {
         "id": "D",
@@ -12574,7 +12948,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Text at the bottom of the page",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Not a valid Excel function name; MIN is the correct formula."
       },
       {
         "id": "B",
@@ -12585,12 +12960,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "A document title only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "Hidden text",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is a header in MS Word?...'."
       }
     ],
     "tags": [
@@ -12638,7 +13015,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Autocorrect",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature used to copy formatting from one piece of content to...'."
       }
     ],
     "tags": [
@@ -12717,17 +13095,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Align text",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ctrl+A generally:...'."
       },
       {
         "id": "B",
         "text": "Open a file",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "File tab / Backstage view: Manages open, save, print, export, and account settings."
       },
       {
         "id": "C",
         "text": "Save a file",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "File tab / Backstage view: Manages open, save, print, export, and account settings."
       },
       {
         "id": "D",
@@ -12818,17 +13199,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "#",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; = is the correct formula."
       },
       {
         "id": "C",
         "text": "@",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; = is the correct formula."
       },
       {
         "id": "D",
         "text": "&",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; = is the correct formula."
       }
     ],
     "tags": [
@@ -12876,7 +13260,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "TOTAL",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Not a valid Excel function name; SUM is the correct formula."
       }
     ],
     "tags": [
@@ -12906,12 +13291,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Total",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Not a valid Excel function name; SUM is the correct formula."
       },
       {
         "id": "B",
         "text": "Maximum",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What does AVERAGE(A1:A5) calculate?...'."
       },
       {
         "id": "C",
@@ -12922,7 +13309,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Number of cells",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What does AVERAGE(A1:A5) calculate?...'."
       }
     ],
     "tags": [
@@ -12970,7 +13358,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "NUMCOUNT",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; COUNT is the correct formula."
       }
     ],
     "tags": [
@@ -13000,12 +13389,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Only numbers",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
         "text": "Only formulas",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
@@ -13016,7 +13407,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Empty cells",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What does COUNTA count?...'."
       }
     ],
     "tags": [
@@ -13046,7 +13438,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Relative",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What type of reference is $A$1?...'."
       },
       {
         "id": "B",
@@ -13057,12 +13450,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Mixed",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What type of reference is $A$1?...'."
       },
       {
         "id": "D",
         "text": "Invalid",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What type of reference is $A$1?...'."
       }
     ],
     "tags": [
@@ -13104,12 +13499,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "$A$1$",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which reference changes automatically when copied?...'."
       },
       {
         "id": "D",
         "text": "$$A$$1",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which reference changes automatically when copied?...'."
       }
     ],
     "tags": [
@@ -13139,7 +13536,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Always returns Pass",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'IF(A1>=50,\"Pass\",\"Fail\") does what?...'."
       },
       {
         "id": "B",
@@ -13242,12 +13640,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Merge",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature that displays only rows satisfying selected criteria...'."
       },
       {
         "id": "C",
         "text": "Wrap Text",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Feature that displays only rows satisfying selected criteria...'."
       },
       {
         "id": "D",
@@ -13283,7 +13683,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "HIGH",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Not a valid Excel function name; MAX is the correct formula."
       },
       {
         "id": "B",
@@ -13294,12 +13695,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "TOP",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Not a valid Excel function name; MAX is the correct formula."
       },
       {
         "id": "D",
         "text": "LARGEST",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; MAX is the correct formula."
       }
     ],
     "tags": [
@@ -13335,17 +13738,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "LOW",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Not a valid Excel function name; MIN is the correct formula."
       },
       {
         "id": "C",
         "text": "BOTTOM",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Not a valid Excel function name; MIN is the correct formula."
       },
       {
         "id": "D",
         "text": "SMALLEST",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; MIN is the correct formula."
       }
     ],
     "tags": [
@@ -13375,7 +13781,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "IFCOUNT",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; COUNTIF is the correct formula."
       },
       {
         "id": "B",
@@ -13386,12 +13793,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "COUNTWHEN",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; COUNTIF is the correct formula."
       },
       {
         "id": "D",
         "text": "SUMIFCOUNT",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; COUNTIF is the correct formula."
       }
     ],
     "tags": [
@@ -13421,7 +13830,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Worksheet",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Intersection of a row and a column is called a:...'."
       },
       {
         "id": "B",
@@ -13432,12 +13842,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Workbook",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Intersection of a row and a column is called a:...'."
       },
       {
         "id": "D",
         "text": "Range",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Intersection of a row and a column is called a:...'."
       }
     ],
     "tags": [
@@ -13473,7 +13885,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Range",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A collection of worksheets is called a:...'."
       },
       {
         "id": "C",
@@ -13484,7 +13897,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Database",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A collection of worksheets is called a:...'."
       }
     ],
     "tags": [
@@ -13514,7 +13928,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Deletes all slides",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Purpose of Slide Master in PowerPoint?...'."
       },
       {
         "id": "B",
@@ -13525,12 +13940,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Calculates formulas",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Formulas tab: Contains function library, defined names, and formula auditing."
       },
       {
         "id": "D",
         "text": "Inserts databases",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Purpose of Slide Master in PowerPoint?...'."
       }
     ],
     "tags": [
@@ -13560,7 +13977,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "They are identical",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Difference between animation and transition?...'."
       },
       {
         "id": "B",
@@ -13571,12 +13989,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Transition applies only to touch; animation only when printing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "Animation is a print effect",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Generic term; slide introduction in PowerPoint is specifically a Transition."
       }
     ],
     "tags": [
@@ -13661,7 +14081,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Reading View",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "View tab: Configures workbook views, zoom levels, gridlines, and freeze panes."
       },
       {
         "id": "C",
@@ -13672,7 +14093,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Outline only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -13702,7 +14124,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Sending without a subject",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is BCC used for in email?...'."
       },
       {
         "id": "B",
@@ -13713,12 +14136,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Encrypting mail",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is BCC used for in email?...'."
       },
       {
         "id": "D",
         "text": "Blocking spam",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is BCC used for in email?...'."
       }
     ],
     "tags": [
@@ -13803,12 +14228,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Alt+M",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Ctrl+M is the assigned shortcut."
       },
       {
         "id": "C",
         "text": "Alt+I",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Ctrl+M is the assigned shortcut."
       },
       {
         "id": "D",
@@ -13844,7 +14271,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -13855,12 +14283,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "1, 2 and 3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "3 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -13890,17 +14320,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "I only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
         "text": "II only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
         "text": "All",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Snipping Tool statements: (I) automatically saves screenshot...'."
       },
       {
         "id": "D",
@@ -13936,7 +14369,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "A layout type only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -13947,12 +14381,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "A font",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is Landscape?...'."
       },
       {
         "id": "D",
         "text": "A formula",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is Landscape?...'."
       }
     ],
     "tags": [
@@ -13982,17 +14418,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Snapchat",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of these can be used to land on a specific location of...'."
       },
       {
         "id": "B",
         "text": "Gmail",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of these can be used to land on a specific location of...'."
       },
       {
         "id": "C",
         "text": "Facebook",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of these can be used to land on a specific location of...'."
       },
       {
         "id": "D",
@@ -14028,7 +14467,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Bold",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Standard font weight styling used to emphasize text."
       },
       {
         "id": "B",
@@ -14039,12 +14479,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Italic",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not a font style?...'."
       },
       {
         "id": "D",
         "text": "Regular",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Default normal font style without bolding or italic slant."
       }
     ],
     "tags": [
@@ -14074,7 +14516,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "~",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, Ctrl+Shift plus which symbol applies scientific no...'."
       },
       {
         "id": "B",
@@ -14085,12 +14528,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "#",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, Ctrl+Shift plus which symbol applies scientific no...'."
       },
       {
         "id": "D",
         "text": "@",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In Excel, Ctrl+Shift plus which symbol applies scientific no...'."
       }
     ],
     "tags": [
@@ -14138,7 +14583,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Filter",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; Data Validation (List) is the correct formula."
       }
     ],
     "tags": [
@@ -14180,7 +14626,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "F3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; F2 is the correct formula."
       },
       {
         "id": "D",
@@ -14216,17 +14663,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1st icon",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'While composing Gmail, which control inserts files from Driv...'."
       },
       {
         "id": "B",
         "text": "2nd icon",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'While composing Gmail, which control inserts files from Driv...'."
       },
       {
         "id": "C",
         "text": "3rd icon",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'While composing Gmail, which control inserts files from Driv...'."
       },
       {
         "id": "D",
@@ -14262,17 +14712,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "@",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Symbol used to draw attention / organize similar content on ...'."
       },
       {
         "id": "B",
         "text": "*",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Symbol used to draw attention / organize similar content on ...'."
       },
       {
         "id": "C",
         "text": "&",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Symbol used to draw attention / organize similar content on ...'."
       },
       {
         "id": "D",
@@ -14308,7 +14761,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Change font only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -14319,7 +14773,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Print",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Copied web address pastes in Word as blue underlined. How to...'."
       },
       {
         "id": "D",
@@ -14355,12 +14810,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Header only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
         "text": "Footer only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
@@ -14371,7 +14828,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Neither",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In MS Word you can insert a page number in:...'."
       }
     ],
     "tags": [
@@ -14401,17 +14859,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "@",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ctrl+Shift plus which symbol changes cell format to General?...'."
       },
       {
         "id": "B",
         "text": "#",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ctrl+Shift plus which symbol changes cell format to General?...'."
       },
       {
         "id": "C",
         "text": "^",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Ctrl+Shift plus which symbol changes cell format to General?...'."
       },
       {
         "id": "D",
@@ -14447,7 +14908,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Alt+Space",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Shift+Space is the assigned shortcut."
       },
       {
         "id": "B",
@@ -14495,7 +14957,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Pen",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default pointer type in MS PowerPoint?...'."
       },
       {
         "id": "B",
@@ -14506,12 +14969,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Highlighter",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default pointer type in MS PowerPoint?...'."
       },
       {
         "id": "D",
         "text": "Eraser",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default pointer type in MS PowerPoint?...'."
       }
     ],
     "tags": [
@@ -14541,7 +15006,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Recycle",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which sign indicates computer settings?...'."
       },
       {
         "id": "B",
@@ -14552,12 +15018,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Printer",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which sign indicates computer settings?...'."
       },
       {
         "id": "D",
         "text": "Folder",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which sign indicates computer settings?...'."
       }
     ],
     "tags": [
@@ -14587,7 +15055,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "2 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -14598,12 +15067,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "2 and 3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "All",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'VLOOKUP: (1) looks in the leftmost column of the selected ta...'."
       }
     ],
     "tags": [
@@ -14651,7 +15122,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       }
     ],
     "tags": [
@@ -14687,7 +15159,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "B3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of '=LEFT(B3,LEN(B3)-4) filled down; value in C5?...'."
       },
       {
         "id": "C",
@@ -14698,7 +15171,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "LEFT",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of '=LEFT(B3,LEN(B3)-4) filled down; value in C5?...'."
       }
     ],
     "tags": [
@@ -14728,17 +15202,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "SUM(A1:A10)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; AVERAGE(A1:A10) is the correct formula."
       },
       {
         "id": "B",
         "text": "COUNT(A1:A10)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; AVERAGE(A1:A10) is the correct formula."
       },
       {
         "id": "C",
         "text": "MAX(A1:A10)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; AVERAGE(A1:A10) is the correct formula."
       },
       {
         "id": "D",
@@ -14876,7 +15353,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "abcd",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final string stored in `result`?...'."
       },
       {
         "id": "B",
@@ -14887,12 +15365,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "abdc",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final string stored in `result`?...'."
       },
       {
         "id": "D",
         "text": "a",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final string stored in `result`?...'."
       }
     ],
     "tags": [
@@ -15236,7 +15716,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "B",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the conditional branch?...'."
       },
       {
         "id": "C",
@@ -15247,7 +15728,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       }
     ],
     "tags": [
@@ -15279,7 +15761,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "odd",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the even/odd conditional check?...'."
       },
       {
         "id": "B",
@@ -15296,7 +15779,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       }
     ],
     "tags": [
@@ -15346,7 +15830,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "0 1 2 3 4",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the loop?...'."
       }
     ],
     "tags": [
@@ -15582,7 +16067,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "O(n)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the time complexity of the following nested loops?...'."
       },
       {
         "id": "B",
@@ -15593,12 +16079,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "O(1)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the time complexity of the following nested loops?...'."
       },
       {
         "id": "D",
         "text": "O(log n)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the time complexity of the following nested loops?...'."
       }
     ],
     "tags": [
@@ -15936,7 +16424,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1 2 3 4 5",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of values will be printed by the reverse loop?...'."
       },
       {
         "id": "B",
@@ -15947,12 +16436,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "1 5",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of values will be printed by the reverse loop?...'."
       },
       {
         "id": "D",
         "text": "4 3 2 1 0",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of values will be printed by the reverse loop?...'."
       }
     ],
     "tags": [
@@ -15984,7 +16475,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1 2 3 4 5",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers will be printed by the while loop?...'."
       },
       {
         "id": "B",
@@ -16136,7 +16628,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "x>10 or x<20",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which expression correctly tests if integer `x` is between 1...'."
       },
       {
         "id": "B",
@@ -16147,12 +16640,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "x>10 and x<20",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which expression correctly tests if integer `x` is between 1...'."
       },
       {
         "id": "D",
         "text": "x==10 and x==20",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which expression correctly tests if integer `x` is between 1...'."
       }
     ],
     "tags": [
@@ -16190,7 +16685,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "no",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the logical AND condition?...'."
       },
       {
         "id": "C",
@@ -16201,7 +16697,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       }
     ],
     "tags": [
@@ -16239,7 +16736,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "no",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the logical OR condition?...'."
       },
       {
         "id": "C",
@@ -16250,7 +16748,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       }
     ],
     "tags": [
@@ -16288,7 +16787,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "B",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the logical NOT condition?...'."
       },
       {
         "id": "C",
@@ -16299,7 +16799,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       }
     ],
     "tags": [
@@ -16745,17 +17246,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Rejected",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given regular expression pattern `^[A-Z]{2}[0-9]{3}[a-z]$`, ...'."
       },
       {
         "id": "C",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       },
       {
         "id": "D",
         "text": "Partial",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given regular expression pattern `^[A-Z]{2}[0-9]{3}[a-z]$`, ...'."
       }
     ],
     "tags": [
@@ -16844,7 +17348,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "15 27",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of values will be printed by the do-while loop...'."
       },
       {
         "id": "C",
@@ -16855,7 +17360,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "12 15 27",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of values will be printed by the do-while loop...'."
       }
     ],
     "tags": [
@@ -17091,7 +17597,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1, 0",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed for `y` and `z` by the logical NOT oper...'."
       },
       {
         "id": "B",
@@ -17102,12 +17609,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "11, 11",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed for `y` and `z` by the logical NOT oper...'."
       },
       {
         "id": "D",
         "text": "1, 1",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -17304,12 +17813,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "7 4",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete printed output of the recursive call `r...'."
       },
       {
         "id": "D",
         "text": "3 7",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the complete printed output of the recursive call `r...'."
       }
     ],
     "tags": [
@@ -17651,17 +18162,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "1 and 3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
         "text": "2 and 3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "All",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which apps require webcam access? 1) Google Meet  2) Skype  ...'."
       }
     ],
     "tags": [
@@ -17691,7 +18205,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Routing table",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Table that tracks active connections and their states (estab...'."
       },
       {
         "id": "B",
@@ -17708,7 +18223,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "MAC table",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Table that tracks active connections and their states (estab...'."
       }
     ],
     "tags": [
@@ -17750,7 +18266,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "TEXT",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; CONCATENATE is the correct formula."
       },
       {
         "id": "D",
@@ -17835,17 +18352,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
         "text": "1 and 2",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
         "text": "2 and 3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
@@ -17881,12 +18401,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Folder copied",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Single-click a folder icon. What happens?...'."
       },
       {
         "id": "B",
         "text": "Folder information shown",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Single-click a folder icon. What happens?...'."
       },
       {
         "id": "C",
@@ -17897,7 +18419,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Folder opens",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Single-click a folder icon. What happens?...'."
       }
     ],
     "tags": [
@@ -17976,7 +18499,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "SFTP",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not serve this protocol function; SSL is the standard protocol."
       },
       {
         "id": "B",
@@ -18024,17 +18548,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Slideshow view",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "View tab: Configures workbook views, zoom levels, gridlines, and freeze panes."
       },
       {
         "id": "B",
         "text": "Normal view",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "View tab: Configures workbook views, zoom levels, gridlines, and freeze panes."
       },
       {
         "id": "C",
         "text": "Outline view",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "View tab: Configures workbook views, zoom levels, gridlines, and freeze panes."
       },
       {
         "id": "D",
@@ -18070,12 +18597,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Title",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Two-column slide with two content boxes. Layout name?...'."
       },
       {
         "id": "B",
         "text": "Blank",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Two-column slide with two content boxes. Layout name?...'."
       },
       {
         "id": "C",
@@ -18086,7 +18615,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Section Header",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Two-column slide with two content boxes. Layout name?...'."
       }
     ],
     "tags": [
@@ -18116,7 +18646,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Paper sizes",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect port assignment; Page orientations is the standard listening port."
       },
       {
         "id": "B",
@@ -18127,12 +18658,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Fonts",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect port assignment; Page orientations is the standard listening port."
       },
       {
         "id": "D",
         "text": "Themes",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect port assignment; Page orientations is the standard listening port."
       }
     ],
     "tags": [
@@ -18162,12 +18695,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "2x2",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Minimum rows and columns in a Word table?...'."
       },
       {
         "id": "B",
         "text": "1x2",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Minimum rows and columns in a Word table?...'."
       },
       {
         "id": "C",
@@ -18276,7 +18811,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "SmartArt",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Display stats about a Word document (words, characters, para...'."
       }
     ],
     "tags": [
@@ -18306,12 +18842,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": ".pdf",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Word proprietary save extension?...'."
       },
       {
         "id": "B",
         "text": ".txt",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Word proprietary save extension?...'."
       },
       {
         "id": "C",
@@ -18322,7 +18860,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": ".ppt",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Word proprietary save extension?...'."
       }
     ],
     "tags": [
@@ -18401,12 +18940,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Times New Roman 12",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default font in modern Word (after ~2021)?...'."
       },
       {
         "id": "B",
         "text": "Arial 10",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default font in modern Word (after ~2021)?...'."
       },
       {
         "id": "C",
@@ -18417,7 +18958,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Calibri 12",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Default font in modern Word (after ~2021)?...'."
       }
     ],
     "tags": [
@@ -18453,7 +18995,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Shift+F",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not close active document; standard close shortcut is Ctrl+W or Ctrl+F4."
       },
       {
         "id": "C",
@@ -18464,7 +19007,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "None",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Represents null return value, empty evaluation, or absence of matching output."
       }
     ],
     "tags": [
@@ -18555,12 +19099,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "hubspot.com",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'URL https://blog.hubspot.com/marketing \u2014 which part is the s...'."
       },
       {
         "id": "D",
         "text": "marketing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'URL https://blog.hubspot.com/marketing \u2014 which part is the s...'."
       }
     ],
     "tags": [
@@ -18590,12 +19136,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Macintosh",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not an OS?...'."
       },
       {
         "id": "B",
         "text": "Unix",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not an OS?...'."
       },
       {
         "id": "C",
@@ -18606,7 +19154,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Android",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which is not an OS?...'."
       }
     ],
     "tags": [
@@ -18642,17 +19191,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "2 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
         "text": "Both",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'PowerPoint action button performs the action when? 1) Clicke...'."
       },
       {
         "id": "D",
         "text": "Neither",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'PowerPoint action button performs the action when? 1) Clicke...'."
       }
     ],
     "tags": [
@@ -18682,17 +19234,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Google Chrome",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Odd one out: Google Chrome, Mozilla Firefox, Safari, Android...'."
       },
       {
         "id": "B",
         "text": "Mozilla Firefox",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Odd one out: Google Chrome, Mozilla Firefox, Safari, Android...'."
       },
       {
         "id": "C",
         "text": "Safari",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Odd one out: Google Chrome, Mozilla Firefox, Safari, Android...'."
       },
       {
         "id": "D",
@@ -18728,7 +19283,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Attach as GIF",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Attach a whole folder with email \u2014 typical choice taught?...'."
       },
       {
         "id": "B",
@@ -18739,12 +19295,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Attach as WAV",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Attach a whole folder with email \u2014 typical choice taught?...'."
       },
       {
         "id": "D",
         "text": "Cannot attach folders ever",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Attach a whole folder with email \u2014 typical choice taught?...'."
       }
     ],
     "tags": [
@@ -18890,7 +19448,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Alt+F4",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Close all browser tabs (active or inactive)?...'."
       }
     ],
     "tags": [
@@ -18920,12 +19479,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Open-source",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'MS Office is?...'."
       },
       {
         "id": "B",
         "text": "Cloudsource",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'MS Office is?...'."
       },
       {
         "id": "C",
@@ -18936,7 +19497,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Firmware",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'MS Office is?...'."
       }
     ],
     "tags": [
@@ -18984,7 +19546,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Filter",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Values greater than 7 should auto-highlight in Excel. Featur...'."
       }
     ],
     "tags": [
@@ -19032,7 +19595,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Both change",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; A1 stays fixed (absolute); B2 changes (relative) is the correct formula."
       }
     ],
     "tags": [
@@ -19074,12 +19638,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Page color",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect port assignment; Styles + multilevel list is the standard listening port."
       },
       {
         "id": "D",
         "text": "Insert shape",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Insert tab: Used to add tables, charts, illustrations, equations, and hyperlinks."
       }
     ],
     "tags": [
@@ -19127,7 +19693,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Handout only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -19157,7 +19724,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "CLEAN",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; TRIM is the correct formula."
       },
       {
         "id": "B",
@@ -19303,7 +19871,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Style",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Predefined combination of colors, fonts, and effects for the...'."
       },
       {
         "id": "B",
@@ -19314,12 +19883,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Design tab",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Predefined combination of colors, fonts, and effects for the...'."
       },
       {
         "id": "D",
         "text": "Scheme only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -19398,7 +19969,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Load balancer only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -19464,7 +20036,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "On-prem only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -19512,7 +20085,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "TKIP",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Fault tolerance is the intended model."
       }
     ],
     "tags": [
@@ -19554,7 +20128,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "WPA2-Personal",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Government research Wi-Fi: most advanced encryption + authen...'."
       },
       {
         "id": "D",
@@ -19596,7 +20171,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "IP spoofing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Falsifying an identity, IP address, or MAC address to masquerade as trusted host."
       },
       {
         "id": "C",
@@ -19656,7 +20232,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Buffer overflow",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect port assignment; Evil twin attack is the standard listening port."
       }
     ],
     "tags": [
@@ -19704,7 +20281,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Spoofing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Falsifying an identity, IP address, or MAC address to masquerade as trusted host."
       }
     ],
     "tags": [
@@ -19948,7 +20526,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Gutter margin",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Storage from many vendors + next-gen storage; globally scala...'."
       }
     ],
     "tags": [
@@ -19978,7 +20557,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Wrong font",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Substitution cipher; some chars decrypt wrong / data loss. M...'."
       },
       {
         "id": "B",
@@ -19995,7 +20575,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Page break",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Substitution cipher; some chars decrypt wrong / data loss. M...'."
       }
     ],
     "tags": [
@@ -20184,12 +20765,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "On-prem only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "Mainframe",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Startup minimize cost, scale as users grow. Deployment?...'."
       }
     ],
     "tags": [
@@ -20329,7 +20912,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "USB backup",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'High availability + disaster recovery across regions and pro...'."
       },
       {
         "id": "D",
@@ -20426,12 +21010,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "On-prem forever",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Temporary HPC for large datasets, most cost-effective. Deplo...'."
       },
       {
         "id": "D",
         "text": "Air-gapped",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Temporary HPC for large datasets, most cost-effective. Deplo...'."
       }
     ],
     "tags": [
@@ -20479,7 +21065,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "No cloud",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Hybrid is the intended model."
       }
     ],
     "tags": [
@@ -20527,7 +21114,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "BaaS",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Small business virtual server, manage OS and middleware. Ser...'."
       }
     ],
     "tags": [
@@ -20624,7 +21212,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Bare metal",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Complete CRM in a browser. Model?...'."
       }
     ],
     "tags": [
@@ -20850,7 +21439,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Internet browser",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Software that protects a computer from viruses/malware?...'."
       },
       {
         "id": "B",
@@ -20898,7 +21488,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Backups",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Primary purpose of a firewall?...'."
       },
       {
         "id": "B",
@@ -20909,12 +21500,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Encrypt all traffic",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Primary purpose of a firewall?...'."
       },
       {
         "id": "D",
         "text": "Increase bandwidth",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Primary purpose of a firewall?...'."
       }
     ],
     "tags": [
@@ -20950,17 +21543,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "False",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Boolean false value indicating condition criteria are not met."
       },
       {
         "id": "C",
         "text": "Only for hashing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "Only for routing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -20990,17 +21586,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Amazon",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Microsoft is the intended model."
       },
       {
         "id": "B",
         "text": "Google",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Microsoft is the intended model."
       },
       {
         "id": "C",
         "text": "IBM",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Microsoft is the intended model."
       },
       {
         "id": "D",
@@ -21036,7 +21635,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Data centers more scalable than cloud",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Data tab: Manages data connections, sorting, filtering, and data validation."
       },
       {
         "id": "B",
@@ -21047,7 +21647,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Cloud = on-prem hardware management",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Data centers require users to manage/maintain hardware is the intended model."
       },
       {
         "id": "D",
@@ -21083,7 +21684,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Home Encryption and Privacy Service",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Home tab: Manages clipboard, font styling, paragraph alignment, and cell formats."
       },
       {
         "id": "B",
@@ -21094,7 +21696,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Hyperlink Transmission and Security Protocol",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'HTTPS stands for?...'."
       },
       {
         "id": "D",
@@ -21130,12 +21733,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Azure",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'EC2, S3, Lambda offered by?...'."
       },
       {
         "id": "B",
         "text": "Google Cloud",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'EC2, S3, Lambda offered by?...'."
       },
       {
         "id": "C",
@@ -21146,7 +21751,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "IBM Cloud",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'EC2, S3, Lambda offered by?...'."
       }
     ],
     "tags": [
@@ -21176,7 +21782,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Master key",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Key used for securing individual data packets on wireless fo...'."
       },
       {
         "id": "B",
@@ -21242,7 +21849,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Adware",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Malware that spreads through a network without user interven...'."
       }
     ],
     "tags": [
@@ -21278,7 +21886,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "OS",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In IaaS, which is managed by the provider among: application...'."
       },
       {
         "id": "C",
@@ -21289,7 +21898,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "All three",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In IaaS, which is managed by the provider among: application...'."
       }
     ],
     "tags": [
@@ -21331,12 +21941,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "On-prem exclusive",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Deployment typically owned/operated by a third-party provide...'."
       },
       {
         "id": "D",
         "text": "Air-gapped",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Deployment typically owned/operated by a third-party provide...'."
       }
     ],
     "tags": [
@@ -21525,12 +22137,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "VMware ESXi",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Example of SaaS application?...'."
       },
       {
         "id": "D",
         "text": "VirtualBox",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Example of SaaS application?...'."
       }
     ],
     "tags": [
@@ -21560,7 +22174,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Fixed hardware forever",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Automatic scaling of resources is the intended model."
       },
       {
         "id": "B",
@@ -21571,12 +22186,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Deleting VMs only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "Buying a laptop",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Automatic scaling of resources is the intended model."
       }
     ],
     "tags": [
@@ -21704,7 +22321,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "8.8.8.8",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which IP belongs to a private network (as given on slide)?...'."
       },
       {
         "id": "B",
@@ -21715,7 +22333,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "1.1.1.1",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which IP belongs to a private network (as given on slide)?...'."
       },
       {
         "id": "D",
@@ -21751,12 +22370,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Encryption",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Strong password + OTP is an example of?...'."
       },
       {
         "id": "B",
         "text": "Authentication",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Strong password + OTP is an example of?...'."
       },
       {
         "id": "C",
@@ -21767,7 +22388,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Authorization",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Strong password + OTP is an example of?...'."
       }
     ],
     "tags": [
@@ -21846,12 +22468,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Same password everywhere",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Practice that helps prevent cyber attacks?...'."
       },
       {
         "id": "B",
         "text": "Ignoring updates",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Practice that helps prevent cyber attacks?...'."
       },
       {
         "id": "C",
@@ -21905,12 +22529,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Dynamic Text",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by `document.write` after appending the...'."
       },
       {
         "id": "D",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       }
     ],
     "tags": [
@@ -21944,7 +22570,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Button text becomes Click and remains visible",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What happens on the page when the button is clicked?...'."
       },
       {
         "id": "B",
@@ -21955,12 +22582,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       },
       {
         "id": "D",
         "text": "Button shows no change",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What happens on the page when the button is clicked?...'."
       }
     ],
     "tags": [
@@ -21994,7 +22623,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "number",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What data type is printed by `typeof val` for an HTML text i...'."
       },
       {
         "id": "B",
@@ -22005,12 +22635,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "object",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What data type is printed by `typeof val` for an HTML text i...'."
       },
       {
         "id": "D",
         "text": "undefined",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What data type is printed by `typeof val` for an HTML text i...'."
       }
     ],
     "tags": [
@@ -22097,7 +22729,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "85 170",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after the bitwise operations and loop?...'."
       },
       {
         "id": "B",
@@ -22108,12 +22741,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "256 85",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after the bitwise operations and loop?...'."
       },
       {
         "id": "D",
         "text": "0 170",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed after the bitwise operations and loop?...'."
       }
     ],
     "tags": [
@@ -22145,12 +22780,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "7 7 10",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final printed values of `P`, `Q`, and `R`?...'."
       },
       {
         "id": "B",
         "text": "0 7 10",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final printed values of `P`, `Q`, and `R`?...'."
       },
       {
         "id": "C",
@@ -22161,7 +22798,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "10 7 14",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the final printed values of `P`, `Q`, and `R`?...'."
       }
     ],
     "tags": [
@@ -22193,7 +22831,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "4 5 6 7",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers is printed by the recursive call `f...'."
       },
       {
         "id": "B",
@@ -22204,7 +22843,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "3 4",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What sequence of numbers is printed by the recursive call `f...'."
       },
       {
         "id": "D",
@@ -22548,7 +23188,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "tech",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What word will be printed after reconstructing the character...'."
       },
       {
         "id": "B",
@@ -22559,12 +23200,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "chet",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What word will be printed after reconstructing the character...'."
       },
       {
         "id": "D",
         "text": "etch",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What word will be printed after reconstructing the character...'."
       }
     ],
     "tags": [
@@ -22709,12 +23352,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Alt + M",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Ctrl + M is the assigned shortcut."
       },
       {
         "id": "D",
         "text": "Alt + I",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Ctrl + M is the assigned shortcut."
       }
     ],
     "tags": [
@@ -22745,7 +23390,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -22756,12 +23402,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "2 and 3 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "1, 2, and 3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of '**Which of the following selection options are included in M...'."
       }
     ],
     "tags": [
@@ -22792,12 +23440,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
         "text": "2 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
@@ -22808,7 +23458,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "1 and 3 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -22889,7 +23540,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Paper Size",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is Landscape in MS Word?...'."
       },
       {
         "id": "B",
@@ -22900,12 +23552,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Margin Setting",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is Landscape in MS Word?...'."
       },
       {
         "id": "D",
         "text": "View Layout",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "View tab: Configures workbook views, zoom levels, gridlines, and freeze panes."
       }
     ],
     "tags": [
@@ -22936,7 +23590,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Snapshot",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which feature in MS Word is used to land at or jump to a spe...'."
       },
       {
         "id": "B",
@@ -22947,7 +23602,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Cross-Reference",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which feature in MS Word is used to land at or jump to a spe...'."
       },
       {
         "id": "D",
@@ -22984,17 +23640,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Bold",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Standard font weight styling used to emphasize text."
       },
       {
         "id": "B",
         "text": "Italic",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following is NOT a recognized font style in MS ...'."
       },
       {
         "id": "C",
         "text": "Regular",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Default normal font style without bolding or italic slant."
       },
       {
         "id": "D",
@@ -23081,7 +23740,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Attachment paperclip icon",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'When composing an email in Gmail, which feature is used to a...'."
       },
       {
         "id": "B",
@@ -23092,12 +23752,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Insert photo icon",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Insert tab: Used to add tables, charts, illustrations, equations, and hyperlinks."
       },
       {
         "id": "D",
         "text": "Insert link icon",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Insert tab: Used to add tables, charts, illustrations, equations, and hyperlinks."
       }
     ],
     "tags": [
@@ -23128,7 +23790,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`@` (At sign)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which symbol is used on social media platforms to draw atten...'."
       },
       {
         "id": "B",
@@ -23139,12 +23802,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`$` (Dollar sign)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which symbol is used on social media platforms to draw atten...'."
       },
       {
         "id": "D",
         "text": "`&` (Ampersand)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which symbol is used on social media platforms to draw atten...'."
       }
     ],
     "tags": [
@@ -23175,7 +23840,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Press Backspace",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'If a web URL pasted into an MS Word document is automaticall...'."
       },
       {
         "id": "B",
@@ -23186,12 +23852,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Press `Ctrl + Z`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'If a web URL pasted into an MS Word document is automaticall...'."
       },
       {
         "id": "D",
         "text": "Change font color to black",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'If a web URL pasted into an MS Word document is automaticall...'."
       }
     ],
     "tags": [
@@ -23222,12 +23890,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Only in Header",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
         "text": "Only in Footer",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "C",
@@ -23238,7 +23908,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Only in Margins",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -23281,7 +23952,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Alt + Space",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Shift + Space is the assigned shortcut."
       },
       {
         "id": "D",
@@ -23318,7 +23990,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Pen",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default mouse pointer type during an active slid...'."
       },
       {
         "id": "B",
@@ -23329,12 +24002,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Laser Pointer",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default mouse pointer type during an active slid...'."
       },
       {
         "id": "D",
         "text": "Crosshair",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default mouse pointer type during an active slid...'."
       }
     ],
     "tags": [
@@ -23365,7 +24040,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Magnifying Glass",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which icon or symbol in Windows settings indicates computer ...'."
       },
       {
         "id": "B",
@@ -23376,7 +24052,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Folder icon",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which icon or symbol in Windows settings indicates computer ...'."
       },
       {
         "id": "D",
@@ -23413,7 +24090,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "1 and 2 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "B",
@@ -23424,12 +24102,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "2 and 3 only",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "1, 2, and 3",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; 1 and 3 only is the correct formula."
       }
     ],
     "tags": [
@@ -23460,7 +24140,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`Beta`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given an Excel table with values in `A2:D6` where column A h...'."
       },
       {
         "id": "B",
@@ -23471,7 +24152,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`Delta`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given an Excel table with values in `A2:D6` where column A h...'."
       },
       {
         "id": "D",
@@ -23508,7 +24190,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`\"6444\"`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In MS Excel, cell `B3` contains `\"AB6444\"`. What is the resu...'."
       },
       {
         "id": "B",
@@ -23519,12 +24202,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`\"AB6\"`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In MS Excel, cell `B3` contains `\"AB6444\"`. What is the resu...'."
       },
       {
         "id": "D",
         "text": "`\"A\"`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In MS Excel, cell `B3` contains `\"AB6444\"`. What is the resu...'."
       }
     ],
     "tags": [
@@ -23617,12 +24302,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Macros",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which MS Word feature enables creating customized letters, n...'."
       },
       {
         "id": "D",
         "text": "AutoText",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which MS Word feature enables creating customized letters, n...'."
       }
     ],
     "tags": [
@@ -23653,7 +24340,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Compare",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which MS Word feature records all insertions, deletions, edi...'."
       },
       {
         "id": "B",
@@ -23664,12 +24352,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Document Inspector",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Lacks the default numeric counter suffix; default title is 'Document1'."
       },
       {
         "id": "D",
         "text": "AutoCorrect",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which MS Word feature records all insertions, deletions, edi...'."
       }
     ],
     "tags": [
@@ -23706,17 +24396,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Style Gallery",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which tool in MS Office copies formatting attributes (font, ...'."
       },
       {
         "id": "C",
         "text": "Clipboard",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which tool in MS Office copies formatting attributes (font, ...'."
       },
       {
         "id": "D",
         "text": "AutoFormat",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which tool in MS Office copies formatting attributes (font, ...'."
       }
     ],
     "tags": [
@@ -23747,7 +24440,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Table",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the rectangular intersection of a row and a column i...'."
       },
       {
         "id": "B",
@@ -23764,7 +24458,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Block",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the rectangular intersection of a row and a column i...'."
       }
     ],
     "tags": [
@@ -23813,7 +24508,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Sort",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which feature in MS Excel hides rows that do not satisfy use...'."
       }
     ],
     "tags": [
@@ -23844,7 +24540,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "It deletes duplicate slides automatically",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the purpose of the Slide Master in MS PowerPoint?...'."
       },
       {
         "id": "B",
@@ -23855,12 +24552,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "It converts slides into an MP4 video",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the purpose of the Slide Master in MS PowerPoint?...'."
       },
       {
         "id": "D",
         "text": "It calculates transition durations",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Animation effect that occurs when advancing from one slide to the next."
       }
     ],
     "tags": [
@@ -23891,7 +24590,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Animations occur between slides; Transitions apply to text inside slides",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the fundamental difference between an Animation and ...'."
       },
       {
         "id": "B",
@@ -23902,12 +24602,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "There is no difference; they are interchangeable terms",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the fundamental difference between an Animation and ...'."
       },
       {
         "id": "D",
         "text": "Transitions require audio; Animations do not",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the fundamental difference between an Animation and ...'."
       }
     ],
     "tags": [
@@ -23988,7 +24690,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Alt + Enter",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Ctrl + Enter is the assigned shortcut."
       },
       {
         "id": "B",
@@ -23999,7 +24702,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Shift + Enter",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Ctrl + Enter is the assigned shortcut."
       },
       {
         "id": "D",
@@ -24104,7 +24808,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "STP",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which network technology enables logical network separation ...'."
       }
     ],
     "tags": [
@@ -24403,7 +25108,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "SNMP",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not serve this protocol function; DNS (Domain Name System) is the standard protocol."
       }
     ],
     "tags": [
@@ -24584,7 +25290,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`8.8.4.4`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following IPv4 addresses belongs to a private (...'."
       },
       {
         "id": "B",
@@ -24595,12 +25302,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`198.51.100.1`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following IPv4 addresses belongs to a private (...'."
       },
       {
         "id": "D",
         "text": "`104.26.10.12`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following IPv4 addresses belongs to a private (...'."
       }
     ],
     "tags": [
@@ -24731,7 +25440,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "SYN, ACK, FIN",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What are the three packets exchanged during a standard TCP c...'."
       },
       {
         "id": "B",
@@ -24742,12 +25452,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "ACK, SYN, RST",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What are the three packets exchanged during a standard TCP c...'."
       },
       {
         "id": "D",
         "text": "PING, PONG, ACK",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What are the three packets exchanged during a standard TCP c...'."
       }
     ],
     "tags": [
@@ -24778,7 +25490,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Stateless Packet Filter",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which type of firewall inspects individual packet headers an...'."
       },
       {
         "id": "B",
@@ -24927,12 +25640,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`255.0.0.0`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default subnet mask for a standard Class C IPv4 ...'."
       },
       {
         "id": "B",
         "text": "`255.255.0.0`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default subnet mask for a standard Class C IPv4 ...'."
       },
       {
         "id": "C",
@@ -25025,7 +25740,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "On-Premises Server Farm",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A startup requires elastic compute resources that scale dyna...'."
       },
       {
         "id": "B",
@@ -25042,7 +25758,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Standalone Bare-Metal Server",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A startup requires elastic compute resources that scale dyna...'."
       }
     ],
     "tags": [
@@ -25079,12 +25796,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "WPA-PSK (TKIP)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not serve this protocol function; WPA3-Personal is the standard protocol."
       },
       {
         "id": "C",
         "text": "WPA2-Personal",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not serve this protocol function; WPA3-Personal is the standard protocol."
       },
       {
         "id": "D",
@@ -25133,12 +25852,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Open Unencrypted",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'When upgrading a corporate Wi-Fi infrastructure where some l...'."
       },
       {
         "id": "D",
         "text": "WPS PIN",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'When upgrading a corporate Wi-Fi infrastructure where some l...'."
       }
     ],
     "tags": [
@@ -25181,12 +25902,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Denial of Service (DoS)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'An attacker manipulates IP packet headers to predetermine th...'."
       },
       {
         "id": "D",
         "text": "SYN Flood",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'An attacker manipulates IP packet headers to predetermine th...'."
       }
     ],
     "tags": [
@@ -25267,7 +25990,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Increasing Wi-Fi signal range",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary security benefit of implementing Network...'."
       },
       {
         "id": "B",
@@ -25278,12 +26002,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Removing the need for firewalls",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary security benefit of implementing Network...'."
       },
       {
         "id": "D",
         "text": "Accelerating internet upload speeds",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary security benefit of implementing Network...'."
       }
     ],
     "tags": [
@@ -25314,7 +26040,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "The server experienced an internal crash",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A developer sends an HTTP GET request to a web service and r...'."
       },
       {
         "id": "B",
@@ -25325,12 +26052,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Authentication credentials are required",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A developer sends an HTTP GET request to a web service and r...'."
       },
       {
         "id": "D",
         "text": "The client request timed out",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'A developer sends an HTTP GET request to a web service and r...'."
       }
     ],
     "tags": [
@@ -25373,12 +26102,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Anonymous Proxy",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect port assignment; Remote Access VPN (SSL/TLS or IPsec) is the standard listening port."
       },
       {
         "id": "D",
         "text": "Port Forwarding",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect port assignment; Remote Access VPN (SSL/TLS or IPsec) is the standard listening port."
       }
     ],
     "tags": [
@@ -25409,12 +26140,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Infrastructure as a Service (IaaS)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Software as a Service (SaaS) is the intended model."
       },
       {
         "id": "B",
         "text": "Platform as a Service (PaaS)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Software as a Service (SaaS) is the intended model."
       },
       {
         "id": "C",
@@ -25425,7 +26158,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Hardware as a Service (HaaS)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Software as a Service (SaaS) is the intended model."
       }
     ],
     "tags": [
@@ -25456,7 +26190,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Authentication Header (AH)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not serve this protocol function; Encapsulating Security Payload (ESP) is the standard protocol."
       },
       {
         "id": "B",
@@ -25467,7 +26202,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Internet Key Exchange (IKE)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not serve this protocol function; Encapsulating Security Payload (ESP) is the standard protocol."
       },
       {
         "id": "D",
@@ -25504,7 +26240,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Virtual Storage Pool",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Multi-Tenancy is the intended model."
       },
       {
         "id": "B",
@@ -25515,12 +26252,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Single-Tenancy",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Multi-Tenancy is the intended model."
       },
       {
         "id": "D",
         "text": "Edge Computing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not match this cloud computing requirement; Multi-Tenancy is the intended model."
       }
     ],
     "tags": [
@@ -25551,7 +26290,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Separation of Duties",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which security principle dictates that user accounts and sys...'."
       },
       {
         "id": "B",
@@ -25562,12 +26302,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Zero Day Prevention",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which security principle dictates that user accounts and sys...'."
       },
       {
         "id": "D",
         "text": "Single Sign-On",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which security principle dictates that user accounts and sys...'."
       }
     ],
     "tags": [
@@ -25598,7 +26340,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Encrypting databases at rest",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; Distributing incoming application traffic evenly across multiple healthy backend servers is the correct formula."
       },
       {
         "id": "B",
@@ -25609,7 +26352,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Allocating IP addresses to client laptops",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; Distributing incoming application traffic evenly across multiple healthy backend servers is the correct formula."
       },
       {
         "id": "D",
@@ -25658,12 +26402,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Microsoft 365",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following is an industry example of Platform as...'."
       },
       {
         "id": "D",
         "text": "Dropbox",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following is an industry example of Platform as...'."
       }
     ],
     "tags": [
@@ -25694,7 +26440,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Complex Passwords",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which authentication approach offers stronger security than ...'."
       },
       {
         "id": "B",
@@ -25705,12 +26452,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Security Questions",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which authentication approach offers stronger security than ...'."
       },
       {
         "id": "D",
         "text": "CAPTCHA",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which authentication approach offers stronger security than ...'."
       }
     ],
     "tags": [
@@ -25747,7 +26496,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "Adware",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which type of malicious software encrypts a victim's files a...'."
       },
       {
         "id": "C",
@@ -25808,7 +26558,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Buffer Overflow Attack",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'An attack that overwhelms a target server or network with ex...'."
       }
     ],
     "tags": [
@@ -26251,7 +27002,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "To initiate the loop counter",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary role of a \"Base Case\" in any recursive a...'."
       },
       {
         "id": "B",
@@ -26262,12 +27014,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "To calculate the algorithm's time complexity",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary role of a \"Base Case\" in any recursive a...'."
       },
       {
         "id": "D",
         "text": "To allocate memory on the heap",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the primary role of a \"Base Case\" in any recursive a...'."
       }
     ],
     "tags": [
@@ -26298,7 +27052,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`break` skips the current iteration; `continue` exits the loop",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the behavioral difference between `break` and `conti...'."
       },
       {
         "id": "B",
@@ -26309,12 +27064,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Both statements perform identical actions",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the behavioral difference between `break` and `conti...'."
       },
       {
         "id": "D",
         "text": "`break` restarts the loop from zero; `continue` pauses execution",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the behavioral difference between `break` and `conti...'."
       }
     ],
     "tags": [
@@ -26345,7 +27102,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "A database query compiler",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is JavaScript primarily defined as in web application d...'."
       },
       {
         "id": "B",
@@ -26356,12 +27114,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "A styling language for fonts and layouts",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is JavaScript primarily defined as in web application d...'."
       },
       {
         "id": "D",
         "text": "An operating system kernel language",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is JavaScript primarily defined as in web application d...'."
       }
     ],
     "tags": [
@@ -26392,7 +27152,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "A function that closes a database connection",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which statement accurately defines a \"Closure\" in JavaScript...'."
       },
       {
         "id": "B",
@@ -26403,12 +27164,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "A method used to terminate event listeners",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which statement accurately defines a \"Closure\" in JavaScript...'."
       },
       {
         "id": "D",
         "text": "A block that scopes variables globally",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which statement accurately defines a \"Closure\" in JavaScript...'."
       }
     ],
     "tags": [
@@ -26439,7 +27202,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`true`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Boolean truth value indicating condition criteria are completely satisfied."
       },
       {
         "id": "B",
@@ -26450,12 +27214,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`undefined`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the output of the following JavaScript code?...'."
       },
       {
         "id": "D",
         "text": "`NaN`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the output of the following JavaScript code?...'."
       }
     ],
     "tags": [
@@ -26488,7 +27254,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`null` means a variable has been declared but not assigned; `undefined` represents an intentional absence of value",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In JavaScript, what is the fundamental distinction between `...'."
       },
       {
         "id": "B",
@@ -26499,12 +27266,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`typeof null === \"undefined\"`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In JavaScript, what is the fundamental distinction between `...'."
       },
       {
         "id": "D",
         "text": "`null === undefined` evaluates to `true`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Boolean truth value indicating condition criteria are completely satisfied."
       }
     ],
     "tags": [
@@ -26535,7 +27304,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`document`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Lacks the default numeric counter suffix; default title is 'Document1'."
       },
       {
         "id": "B",
@@ -26546,12 +27316,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`global`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which global object serves as the primary entry point and gl...'."
       },
       {
         "id": "D",
         "text": "`navigator`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which global object serves as the primary entry point and gl...'."
       }
     ],
     "tags": [
@@ -26582,17 +27354,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Calling functions and methods",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which methods or mechanisms can be used to execute JavaScrip...'."
       },
       {
         "id": "B",
         "text": "Triggering event handlers/listeners (e.g., `onclick`, `onload`)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which methods or mechanisms can be used to execute JavaScrip...'."
       },
       {
         "id": "C",
         "text": "Executing Immediately Invoked Function Expressions (IIFE)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which methods or mechanisms can be used to execute JavaScrip...'."
       },
       {
         "id": "D",
@@ -26641,12 +27416,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`<doctype html5>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the correct declaration for the HTML5 document type?...'."
       },
       {
         "id": "D",
         "text": "`<html>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the correct declaration for the HTML5 document type?...'."
       }
     ],
     "tags": [
@@ -26677,12 +27454,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`<heading>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag represents the highest priority, largest head...'."
       },
       {
         "id": "B",
         "text": "`<h6>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag represents the highest priority, largest head...'."
       },
       {
         "id": "C",
@@ -26693,7 +27472,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "`<head>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag represents the highest priority, largest head...'."
       }
     ],
     "tags": [
@@ -26724,7 +27504,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Data Object Mode",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Data tab: Manages data connections, sorting, filtering, and data validation."
       },
       {
         "id": "B",
@@ -26735,12 +27516,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Digital Ordinance Module",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What does the DOM stand for in web technologies?...'."
       },
       {
         "id": "D",
         "text": "Document Orientation Map",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Lacks the default numeric counter suffix; default title is 'Document1'."
       }
     ],
     "tags": [
@@ -26771,7 +27554,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`<highlight>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML5 semantic element is designed to highlight or mar...'."
       },
       {
         "id": "B",
@@ -26782,12 +27566,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`<b>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML5 semantic element is designed to highlight or mar...'."
       },
       {
         "id": "D",
         "text": "`<em>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML5 semantic element is designed to highlight or mar...'."
       }
     ],
     "tags": [
@@ -26818,7 +27604,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`<script>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to write internal CSS rules directly ...'."
       },
       {
         "id": "B",
@@ -26829,12 +27616,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`<css>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to write internal CSS rules directly ...'."
       },
       {
         "id": "D",
         "text": "`<link>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to write internal CSS rules directly ...'."
       }
     ],
     "tags": [
@@ -26865,7 +27654,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`#classname` (ID selector)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS selector is used to target and style a group of el...'."
       },
       {
         "id": "B",
@@ -26876,12 +27666,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`*classname`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS selector is used to target and style a group of el...'."
       },
       {
         "id": "D",
         "text": "`:classname`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS selector is used to target and style a group of el...'."
       }
     ],
     "tags": [
@@ -26930,7 +27722,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "The Display Module",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not operate at this OSI/TCP-IP layer; The Box Model is the correct layer."
       }
     ],
     "tags": [
@@ -26961,7 +27754,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`UNION ALL` across all three tables",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given a normalized database schema with tables: `Users(user_...'."
       },
       {
         "id": "B",
@@ -26978,7 +27772,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "`DROP TABLE`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Given a normalized database schema with tables: `Users(user_...'."
       }
     ],
     "tags": [
@@ -27009,7 +27804,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Text or graphics appearing at the bottom margin of every page",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Not a valid Excel function name; MIN is the correct formula."
       },
       {
         "id": "B",
@@ -27020,12 +27816,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "A hidden watermark that only prints on the cover page",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "An uneditable title that appears only in the table of contents",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -27206,7 +28004,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`TOTAL()`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; `SUM()` is the correct formula."
       },
       {
         "id": "B",
@@ -27217,12 +28016,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`ADD()`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; `SUM()` is the correct formula."
       },
       {
         "id": "D",
         "text": "`AVERAGE()`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; `SUM()` is the correct formula."
       }
     ],
     "tags": [
@@ -27265,7 +28066,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Alt + Shift + D",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect key combination for this action; Ctrl + ; is the assigned shortcut."
       },
       {
         "id": "D",
@@ -27452,7 +28254,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Switches connect networks globally; Routers connect devices locally on a single mother-board",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the difference between the primary hardware role of ...'."
       },
       {
         "id": "B",
@@ -27501,7 +28304,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "IP Address",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not operate at this OSI/TCP-IP layer; MAC Address (Media Access Control Address) is the correct layer."
       },
       {
         "id": "B",
@@ -27512,7 +28316,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Port Number",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not operate at this OSI/TCP-IP layer; MAC Address (Media Access Control Address) is the correct layer."
       },
       {
         "id": "D",
@@ -27555,7 +28360,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "IP Address",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect port assignment; Port Number is the standard listening port."
       },
       {
         "id": "C",
@@ -27566,7 +28372,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Domain Name",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect port assignment; Port Number is the standard listening port."
       }
     ],
     "tags": [
@@ -27597,7 +28404,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "To convert domain names into IP addresses",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the core operational purpose of Network Address Tran...'."
       },
       {
         "id": "B",
@@ -27608,7 +28416,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "To encrypt hard drive partitions",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the core operational purpose of Network Address Tran...'."
       },
       {
         "id": "D",
@@ -27657,12 +28466,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Authentication applies only to databases; Authorization applies only to firewalls",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       },
       {
         "id": "D",
         "text": "They are synonyms for password validation",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In security architecture, what is the fundamental difference...'."
       }
     ],
     "tags": [
@@ -27693,12 +28504,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Entering a username and then entering your password",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following represents a valid real-world impleme...'."
       },
       {
         "id": "B",
         "text": "Entering your password and answering a security question asking your pet's name",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following represents a valid real-world impleme...'."
       },
       {
         "id": "C",
@@ -27709,7 +28522,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "Entering two different email addresses",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which of the following represents a valid real-world impleme...'."
       }
     ],
     "tags": [
@@ -27758,7 +28572,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "A packet filter that only examines Ethernet cable voltage",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incomplete or incorrect combination of statements for this technical question."
       }
     ],
     "tags": [
@@ -27789,7 +28604,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "7 times",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'How many times will the string `\"Hello\"` be printed by the f...'."
       },
       {
         "id": "B",
@@ -27800,12 +28616,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "14 times",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'How many times will the string `\"Hello\"` be printed by the f...'."
       },
       {
         "id": "D",
         "text": "3 times",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'How many times will the string `\"Hello\"` be printed by the f...'."
       }
     ],
     "tags": [
@@ -27940,7 +28758,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`\"Condition Failed\"`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the following logical pseudocode?...'."
       },
       {
         "id": "B",
@@ -27951,12 +28770,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Compilation Error",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Execution exception resulting from syntax violation, division by zero, or out-of-bounds index."
       },
       {
         "id": "D",
         "text": "Nothing",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed by the following logical pseudocode?...'."
       }
     ],
     "tags": [
@@ -28093,12 +28914,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`<lb>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to insert a line break without starti...'."
       },
       {
         "id": "B",
         "text": "`<break>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to insert a line break without starti...'."
       },
       {
         "id": "C",
@@ -28109,7 +28932,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "`<hr>`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML tag is used to insert a line break without starti...'."
       }
     ],
     "tags": [
@@ -28140,12 +28964,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`title`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which attribute in an `<img>` tag specifies alternative text...'."
       },
       {
         "id": "B",
         "text": "`src`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which attribute in an `<img>` tag specifies alternative text...'."
       },
       {
         "id": "C",
@@ -28156,7 +28982,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "`caption`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which attribute in an `<img>` tag specifies alternative text...'."
       }
     ],
     "tags": [
@@ -28187,12 +29014,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`relative`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default initial value of the CSS `position` prop...'."
       },
       {
         "id": "B",
         "text": "`absolute`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default initial value of the CSS `position` prop...'."
       },
       {
         "id": "C",
@@ -28203,7 +29032,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "`fixed`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the default initial value of the CSS `position` prop...'."
       }
     ],
     "tags": [
@@ -28234,7 +29064,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Not a Name; `typeof NaN === \"string\"`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In JavaScript, what does `NaN` represent, and what does `typ...'."
       },
       {
         "id": "B",
@@ -28245,12 +29076,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Null and None; `typeof NaN === \"undefined\"`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Represents null return value, empty evaluation, or absence of matching output."
       },
       {
         "id": "D",
         "text": "No Arithmetic; `typeof NaN === \"boolean\"`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In JavaScript, what does `NaN` represent, and what does `typ...'."
       }
     ],
     "tags": [
@@ -28281,7 +29114,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`JSON.stringify()`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which built-in JavaScript method parses a JSON-formatted str...'."
       },
       {
         "id": "B",
@@ -28292,12 +29126,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "`JSON.toObject()`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which built-in JavaScript method parses a JSON-formatted str...'."
       },
       {
         "id": "D",
         "text": "`JSON.decode()`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which built-in JavaScript method parses a JSON-formatted str...'."
       }
     ],
     "tags": [
@@ -28328,12 +29164,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "`var`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which JavaScript keyword declares a block-scoped variable th...'."
       },
       {
         "id": "B",
         "text": "`let`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which JavaScript keyword declares a block-scoped variable th...'."
       },
       {
         "id": "C",
@@ -28344,7 +29182,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "D",
         "text": "`static`",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which JavaScript keyword declares a block-scoped variable th...'."
       }
     ],
     "tags": [
@@ -28375,7 +29214,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Automatically deleting unused variables from memory",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is \"Variable Hoisting\" in JavaScript?...'."
       },
       {
         "id": "B",
@@ -28386,12 +29226,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Converting all numbers into floating-point representation",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is \"Variable Hoisting\" in JavaScript?...'."
       },
       {
         "id": "D",
         "text": "Dynamically loading scripts asynchronously",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is \"Variable Hoisting\" in JavaScript?...'."
       }
     ],
     "tags": [
@@ -28422,7 +29264,8 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "A",
         "text": "Event Capturing (Trickling)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In web browser JavaScript event handling, what is the defaul...'."
       },
       {
         "id": "B",
@@ -28433,12 +29276,14 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "C",
         "text": "Event Broadcasting",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In web browser JavaScript event handling, what is the defaul...'."
       },
       {
         "id": "D",
         "text": "Event Polling",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'In web browser JavaScript event handling, what is the defaul...'."
       }
     ],
     "tags": [
@@ -28475,17 +29320,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "24, 42, 77",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed for arr[1], arr[4], and arr[7] after ex...'."
       },
       {
         "id": "C",
         "text": "21, 55, 88",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed for arr[1], arr[4], and arr[7] after ex...'."
       },
       {
         "id": "D",
         "text": "18, 43, 85",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be printed for arr[1], arr[4], and arr[7] after ex...'."
       }
     ],
     "tags": [
@@ -28524,17 +29372,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "[15, 24, 30, 36, 42, 48, 54, 88]",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the complete resulting array after applying the...'."
       },
       {
         "id": "C",
         "text": "[15, 21, 24, 30, 40, 50, 60, 88]",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the complete resulting array after applying the...'."
       },
       {
         "id": "D",
         "text": "[12, 18, 24, 30, 42, 52, 62, 70]",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What will be the complete resulting array after applying the...'."
       }
     ],
     "tags": [
@@ -28571,17 +29422,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "O(N log N) Time and O(N) Auxiliary Space",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the optimal time and auxiliary space complexity to p...'."
       },
       {
         "id": "C",
         "text": "O(N^2) Time and O(1) Auxiliary Space",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the optimal time and auxiliary space complexity to p...'."
       },
       {
         "id": "D",
         "text": "O(N) Time and O(N) Auxiliary Space",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'What is the optimal time and auxiliary space complexity to p...'."
       }
     ],
     "tags": [
@@ -28668,17 +29522,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "\"9999999999994\"",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; \"4999999999999\" is the correct formula."
       },
       {
         "id": "C",
         "text": "\"1129999999999\"",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; \"4999999999999\" is the correct formula."
       },
       {
         "id": "D",
         "text": "\"8888888888888\"",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; \"4999999999999\" is the correct formula."
       }
     ],
     "tags": [
@@ -28717,17 +29574,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "It guarantees the number is divisible by 9",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Why is greedy placement of '9' at the least significant posi...'."
       },
       {
         "id": "C",
         "text": "It converts decimal numbers directly into binary strings",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Why is greedy placement of '9' at the least significant posi...'."
       },
       {
         "id": "D",
         "text": "It prevents 32-bit floating-point precision loss",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Why is greedy placement of '9' at the least significant posi...'."
       }
     ],
     "tags": [
@@ -28764,17 +29624,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "document.getElementById(\"targetBox\").toggle()",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; Checks target.style.display and toggles between \"block\" and \"none\" is the correct formula."
       },
       {
         "id": "C",
         "text": "target.style.visibility = !target.style.visibility",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; Checks target.style.display and toggles between \"block\" and \"none\" is the correct formula."
       },
       {
         "id": "D",
         "text": "document.body.removeChild(targetBox)",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Does not execute the requested calculation; Checks target.style.display and toggles between \"block\" and \"none\" is the correct formula."
       }
     ],
     "tags": [
@@ -28813,17 +29676,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "#container { background-color: #f4f4f4; }",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS declaration correctly sets the background color of...'."
       },
       {
         "id": "C",
         "text": "container { bg-color: #f4f4f4; }",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS declaration correctly sets the background color of...'."
       },
       {
         "id": "D",
         "text": ".container { color: #f4f4f4; }",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which CSS declaration correctly sets the background color of...'."
       }
     ],
     "tags": [
@@ -28860,17 +29726,20 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       {
         "id": "B",
         "text": "<button classname=\"new\" click=\"toggleVisibility()\">Toggle Details</button>",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML markup correctly adds the class \"new\" to a button...'."
       },
       {
         "id": "C",
         "text": "<button new onpress=\"toggleVisibility()\">Toggle Details</button>",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML markup correctly adds the class \"new\" to a button...'."
       },
       {
         "id": "D",
         "text": "<button class=\"new\" trigger=\"toggleVisibility()\">Toggle Details</button>",
-        "isCorrect": false
+        "isCorrect": false,
+        "meaning": "Incorrect distractor; does not satisfy the requirements of 'Which HTML markup correctly adds the class \"new\" to a button...'."
       }
     ],
     "tags": [
