@@ -250,6 +250,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
 
   // Timer countdown
   const [timeLeft, setTimeLeft] = useState<number>(timerSeconds);
+  const [isTimedOut, setIsTimedOut] = useState<boolean>(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   // If initialDeckId changes
@@ -431,6 +432,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       setQuickExplanation(null);
       setIsAiLoading(false);
       setShowAllOptionsBreakdown(false);
+      setIsTimedOut(false);
       setIsQuizActive(true);
       setTimeLeft(timerSeconds);
       questionStartTime.current = Date.now();
@@ -596,6 +598,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
     if (!currentQ) return;
 
     setIsAnswered(true);
+    setIsTimedOut(true);
     sounds.playIncorrect();
     setStreak(0);
     storage.recordActivity(false);
@@ -686,6 +689,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       setQuickExplanation(nextQ?.quickExplanation || null);
       setIsAiLoading(false);
       setShowAllOptionsBreakdown(false);
+      setIsTimedOut(false);
       questionStartTime.current = Date.now();
       setTimeLeft(timerSeconds);
     } else {
@@ -1578,43 +1582,20 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             </div>
           )}
 
-          {/* Timed Circular / Glowing Progress Countdown */}
+          {/* Compact countdown label (replaces old circle pill) */}
           {isTimed && (
             <div
-              className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full border text-xs font-mono font-semibold shadow-xs transition-colors ${
-                timeLeft <= 5
-                  ? "bg-rose-50 text-rose-600 border-rose-300 dark:bg-rose-950/50 dark:border-rose-800 animate-pulse"
+              className={`text-xs font-mono font-semibold px-2.5 py-1 rounded-full transition-colors ${
+                isTimedOut
+                  ? "bg-rose-100 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300"
+                  : timeLeft <= 5
+                  ? "bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 animate-pulse"
                   : timeLeft <= 10
-                  ? "bg-amber-50 text-amber-700 border-amber-300 dark:bg-amber-950/40 dark:border-amber-800"
-                  : "bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200 border-zinc-200 dark:border-zinc-700"
+                  ? "bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-400"
+                  : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400"
               }`}
             >
-              <div className="relative w-3.5 h-3.5 flex items-center justify-center">
-                <svg className="w-3.5 h-3.5 -rotate-90" viewBox="0 0 20 20">
-                  <circle
-                    cx="10"
-                    cy="10"
-                    r="8"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    className="opacity-25"
-                  />
-                  <circle
-                    cx="10"
-                    cy="10"
-                    r="8"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeDasharray={2 * Math.PI * 8}
-                    strokeDashoffset={2 * Math.PI * 8 * (1 - timeLeft / timerSeconds)}
-                    strokeLinecap="round"
-                    className="transition-all duration-1000 ease-linear"
-                  />
-                </svg>
-              </div>
-              <span>{timeLeft}s</span>
+              {isTimedOut ? "0s" : `${timeLeft}s`}
             </div>
           )}
 
@@ -1630,12 +1611,32 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       </div>
 
       {/* Progress Bar */}
-      <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden mb-4 sm:mb-6">
+      <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden mb-3 sm:mb-4">
         <div
           className="h-full bg-zinc-900 dark:bg-zinc-100 transition-all duration-300"
           style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
         />
       </div>
+
+      {/* Timer Bar */}
+      {isTimed && (
+        <div className="w-full h-1 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden mb-4 sm:mb-6">
+          <div
+            className={`h-full rounded-full transition-all duration-1000 ease-linear ${
+              isTimedOut
+                ? "w-0 bg-rose-500"
+                : timeLeft <= 5
+                ? "bg-rose-500"
+                : timeLeft <= 10
+                ? "bg-amber-400"
+                : "bg-blue-500"
+            }`}
+            style={{ width: isTimedOut ? "0%" : `${(timeLeft / timerSeconds) * 100}%` }}
+          />
+        </div>
+      )}
+
+      {/* Timeout banner (only when no timer bar shown — inside question card below) */}
 
       {/* Question Card */}
       <div className="p-4 sm:p-6 md:p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 shadow-sm mb-6">
@@ -1691,6 +1692,14 @@ export const QuizHub: React.FC<QuizHubProps> = ({
         )}
 
         {/* Options */}
+        {/* Timeout Banner */}
+        {isTimedOut && (
+          <div className="mb-3 flex items-center gap-2 px-3 py-2.5 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/50 text-rose-700 dark:text-rose-300">
+            <Timer className="w-4 h-4 shrink-0" />
+            <span className="text-sm font-medium">Time's up — here's the correct answer</span>
+          </div>
+        )}
+
         <div className="flex flex-col gap-2.5">
           {currentQ?.options.map((opt, idx) => {
             const isSelected = selectedOptionId === opt.id;
