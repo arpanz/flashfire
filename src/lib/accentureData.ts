@@ -4,7 +4,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-ms-office",
     "title": "MS Office & Productivity",
-    "description": "Word shortcuts, Excel formulas & charts, PowerPoint tools, and formatting mastery (171 Questions).",
+    "description": "Word shortcuts, Excel formulas & charts, PowerPoint tools, and formatting mastery (231 Questions).",
     "icon": "\ud83d\udcca",
     "color": "#2563eb",
     "tags": [
@@ -19,7 +19,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-networking",
     "title": "Computer Networks & Protocols",
-    "description": "OSI & TCP/IP layers, routing, switching, IP addressing, DNS, ports, and protocols (88 Questions).",
+    "description": "OSI & TCP/IP layers, routing, switching, IP addressing, DNS, ports, and protocols (106 Questions).",
     "icon": "\ud83c\udf10",
     "color": "#059669",
     "tags": [
@@ -34,7 +34,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-security",
     "title": "Cybersecurity & Defense",
-    "description": "Threat vectors, malware types, symmetric/asymmetric encryption, firewalls, and SSL/TLS (74 Questions).",
+    "description": "Threat vectors, malware types, symmetric/asymmetric encryption, firewalls, and SSL/TLS (105 Questions).",
     "icon": "\ud83d\udd12",
     "color": "#dc2626",
     "tags": [
@@ -49,7 +49,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-cloud",
     "title": "Cloud Computing & Virtualization",
-    "description": "IaaS, PaaS, SaaS models, hypervisors, elasticity, cloud security, and architecture (94 Questions).",
+    "description": "IaaS, PaaS, SaaS models, hypervisors, elasticity, cloud security, and architecture (105 Questions).",
     "icon": "\u2601\ufe0f",
     "color": "#0284c7",
     "tags": [
@@ -64,7 +64,7 @@ export const ACCENTURE_DECKS: Deck[] = [
   {
     "id": "deck-pseudocode",
     "title": "Pseudocode & Algorithmic Logic",
-    "description": "Loop execution, conditional branching, bitwise operators, string manipulation, and tracing (139 Questions).",
+    "description": "Loop execution, conditional branching, bitwise operators, string manipulation, and tracing (199 Questions).",
     "icon": "\ud83d\udcbb",
     "color": "#7c3aed",
     "tags": [
@@ -77,9 +77,25 @@ export const ACCENTURE_DECKS: Deck[] = [
     "updatedAt": 1788867077573
   },
   {
+    "id": "deck-dbms",
+    "title": "DBMS & SQL Mastery",
+    "description": "Relational schemas, SQL queries, DDL/DML/DCL, ACID transactions, normalization, joins, and indexing (60 Questions).",
+    "icon": "\ud83d\uddc4\ufe0f",
+    "color": "#0891b2",
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1788960000000,
+    "updatedAt": 1788960000000
+  },
+  {
     "id": "deck-web",
     "title": "Web Technologies & Frontend",
-    "description": "HTML5 semantics, CSS layout & flexbox, JavaScript DOM manipulation, closures, and SQL (30 Questions).",
+    "description": "HTML5 semantics, CSS layout & flexbox, JavaScript DOM manipulation, closures, and modern web APIs (90 Questions).",
     "icon": "\u26a1",
     "color": "#0ea5e9",
     "tags": [
@@ -29755,6 +29771,15579 @@ export const ACCENTURE_CARDS: Flashcard[] = [
       "easeFactor": 2.5,
       "lastStudied": null,
       "dueDate": 1715036480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-597",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to insert the current date field in MS Word?",
+    "back": "Alt + Shift + D",
+    "explanation": "Alt + Shift + D automatically inserts Word's dynamic or static Date field code (`{ DATE }`) at the current cursor location, formatting it according to system locale settings.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Alt + Shift + D",
+        "isCorrect": true,
+        "meaning": "Inserts the current date field code into Word."
+      },
+      {
+        "id": "B",
+        "text": "Alt + Shift + T",
+        "isCorrect": false,
+        "meaning": "Inserts the current time field code into Word."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + Shift + D",
+        "isCorrect": false,
+        "meaning": "Applies double-underline formatting to selected text in Word."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + Alt + D",
+        "isCorrect": false,
+        "meaning": "Default shortcut for docking or developer functions."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050000000,
+    "updatedAt": 1715050000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-598",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to insert the current time field in MS Word?",
+    "back": "Alt + Shift + T",
+    "explanation": "Alt + Shift + T inserts the current Time field code (`{ TIME }`) in MS Word, allowing the document to display the current timestamp.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Alt + Shift + D",
+        "isCorrect": false,
+        "meaning": "Inserts the current date field code into Word."
+      },
+      {
+        "id": "B",
+        "text": "Alt + Shift + T",
+        "isCorrect": true,
+        "meaning": "Inserts the current time field code into Word."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + ; (semicolon)",
+        "isCorrect": false,
+        "meaning": "Excel shortcut for inserting current date, not Word."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + Shift + T",
+        "isCorrect": false,
+        "meaning": "Reopens the last closed browser tab; not Word time shortcut."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050060000,
+    "updatedAt": 1715050060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-599",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which function key repeats the last action performed in MS Word?",
+    "back": "F4",
+    "explanation": "The F4 key in Word repeats the most recent action or formatting command (such as applying a highlight, bolding, or inserting a row).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "F2",
+        "isCorrect": false,
+        "meaning": "Edits the active cell in Excel or renames files in Windows Explorer."
+      },
+      {
+        "id": "B",
+        "text": "F6",
+        "isCorrect": false,
+        "meaning": "Cycles through pane elements and ribbon tabs in Office windows."
+      },
+      {
+        "id": "C",
+        "text": "F4",
+        "isCorrect": true,
+        "meaning": "Repeats the last executed action in Word; toggles cell references in Excel."
+      },
+      {
+        "id": "D",
+        "text": "F9",
+        "isCorrect": false,
+        "meaning": "Refreshes/recalculates fields in Word or formulas in Excel."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050120000,
+    "updatedAt": 1715050120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-600",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the default file extension for a document created in Word 2016 or later?",
+    "back": ".docx",
+    "explanation": ".docx is the default OpenXML zipped document format introduced in Office 2007 and standard across modern Word releases (2016, 2019, 2021, and Microsoft 365).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ".doc",
+        "isCorrect": false,
+        "meaning": "Legacy binary document format used up to Word 2003."
+      },
+      {
+        "id": "B",
+        "text": ".docx",
+        "isCorrect": true,
+        "meaning": "Standard default OpenXML document format for Word 2007+."
+      },
+      {
+        "id": "C",
+        "text": ".dotx",
+        "isCorrect": false,
+        "meaning": "Word document template format without macros."
+      },
+      {
+        "id": "D",
+        "text": ".rtf",
+        "isCorrect": false,
+        "meaning": "Rich Text Format preserving basic styling without modern Word features."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050180000,
+    "updatedAt": 1715050180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-601",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the default file extension for a workbook created in Excel 2016 or later?",
+    "back": ".xlsx",
+    "explanation": ".xlsx is the default XML-based spreadsheet format for Excel 2007 and later, storing worksheets, charts, and styles without allowing VBA macros.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ".xlsx",
+        "isCorrect": true,
+        "meaning": "Standard OpenXML spreadsheet format for Excel 2007+."
+      },
+      {
+        "id": "B",
+        "text": ".xls",
+        "isCorrect": false,
+        "meaning": "Legacy binary spreadsheet format used up to Excel 2003."
+      },
+      {
+        "id": "C",
+        "text": ".xlsm",
+        "isCorrect": false,
+        "meaning": "Macro-enabled OpenXML Excel workbook containing VBA code."
+      },
+      {
+        "id": "D",
+        "text": ".csv",
+        "isCorrect": false,
+        "meaning": "Comma-Separated Values storing plain text tabular data without formatting."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050240000,
+    "updatedAt": 1715050240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-602",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which PowerPoint view displays all slides as thumbnails so you can easily reorder them?",
+    "back": "Slide Sorter",
+    "explanation": "Slide Sorter view displays horizontal thumbnail representations of all slides in a presentation, making it ideal for reorganizing, deleting, or grouping slides.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Normal",
+        "isCorrect": false,
+        "meaning": "Standard tri-pane editing view with thumbnails, slide canvas, and notes."
+      },
+      {
+        "id": "B",
+        "text": "Reading View",
+        "isCorrect": false,
+        "meaning": "Full-window slide view with simple navigation controls."
+      },
+      {
+        "id": "C",
+        "text": "Notes Page",
+        "isCorrect": false,
+        "meaning": "Displays the slide on the upper half and presenter notes on the lower half."
+      },
+      {
+        "id": "D",
+        "text": "Slide Sorter",
+        "isCorrect": true,
+        "meaning": "Displays all slides as thumbnails for convenient reordering and slide management."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050300000,
+    "updatedAt": 1715050300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-603",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel function sums the values in a range that meet a single specified condition?",
+    "back": "SUMIF",
+    "explanation": "SUMIF calculates the sum of cells in a given range that meet a single specified criterion (e.g. `=SUMIF(A1:A10, \">50\", B1:B10)`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SUM",
+        "isCorrect": false,
+        "meaning": "Adds all numbers across a specified range unconditionally."
+      },
+      {
+        "id": "B",
+        "text": "SUMIF",
+        "isCorrect": true,
+        "meaning": "Sums values matching a single specified condition."
+      },
+      {
+        "id": "C",
+        "text": "COUNTIF",
+        "isCorrect": false,
+        "meaning": "Counts the number of cells that meet a specified condition."
+      },
+      {
+        "id": "D",
+        "text": "AVERAGEIF",
+        "isCorrect": false,
+        "meaning": "Computes the arithmetic mean of cells meeting a condition."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050360000,
+    "updatedAt": 1715050360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-604",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel function looks up a value in the first column of a range and returns a value from a specified column in the same row?",
+    "back": "VLOOKUP",
+    "explanation": "VLOOKUP searches for a target value down the first column of a table array and returns a value from the same row in a designated column index.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "VLOOKUP",
+        "isCorrect": true,
+        "meaning": "Performs vertical lookup down the leftmost column of a table."
+      },
+      {
+        "id": "B",
+        "text": "HLOOKUP",
+        "isCorrect": false,
+        "meaning": "Performs horizontal lookup across the top row of a table."
+      },
+      {
+        "id": "C",
+        "text": "INDEX",
+        "isCorrect": false,
+        "meaning": "Returns the value of a cell at a given row and column intersection."
+      },
+      {
+        "id": "D",
+        "text": "MATCH",
+        "isCorrect": false,
+        "meaning": "Returns the relative position of an item in a range matching a value."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050420000,
+    "updatedAt": 1715050420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-605",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel feature lets you interactively summarize and analyze large datasets by dragging fields into rows, columns and values?",
+    "back": "PivotTable",
+    "explanation": "PivotTables allow users to dynamically aggregate, cross-tabulate, group, and analyze large datasets by dragging dimensions into Rows, Columns, Values, and Filters.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Conditional Formatting",
+        "isCorrect": false,
+        "meaning": "Applies visual colors, databars, and icons based on cell values."
+      },
+      {
+        "id": "B",
+        "text": "Data Validation",
+        "isCorrect": false,
+        "meaning": "Constrains user input values to specific ranges or dropdown choices."
+      },
+      {
+        "id": "C",
+        "text": "PivotTable",
+        "isCorrect": true,
+        "meaning": "Interactive summary tool aggregating large datasets by customizable dimensions."
+      },
+      {
+        "id": "D",
+        "text": "Goal Seek",
+        "isCorrect": false,
+        "meaning": "Backsolves formula inputs to produce a desired target output."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050480000,
+    "updatedAt": 1715050480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-606",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which MS Word feature records every insertion, deletion and formatting change made by reviewers?",
+    "back": "Track Changes",
+    "explanation": "Track Changes logs every textual edit, deletion, insertion, and formatting adjustment made to a document, displaying them as markup for review.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Track Changes",
+        "isCorrect": true,
+        "meaning": "Records all reviewer insertions, deletions, and formatting edits."
+      },
+      {
+        "id": "B",
+        "text": "Mail Merge",
+        "isCorrect": false,
+        "meaning": "Generates batches of personalized letters or emails from a data source."
+      },
+      {
+        "id": "C",
+        "text": "Compare",
+        "isCorrect": false,
+        "meaning": "Compares two document versions side-by-side highlighting differences."
+      },
+      {
+        "id": "D",
+        "text": "AutoCorrect",
+        "isCorrect": false,
+        "meaning": "Automatically corrects common typing and spelling mistakes."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050540000,
+    "updatedAt": 1715050540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-607",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which MS Word feature is used to send personalized letters or emails to a list of recipients from a data source?",
+    "back": "Mail Merge",
+    "explanation": "Mail Merge links a primary document (like a form letter, envelope, or email) to a structured data source (Excel spreadsheet, Access database) to generate personalized documents.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Track Changes",
+        "isCorrect": false,
+        "meaning": "Records all reviewer insertions, deletions, and formatting edits."
+      },
+      {
+        "id": "B",
+        "text": "Mail Merge",
+        "isCorrect": true,
+        "meaning": "Generates batches of personalized letters or emails from a data source."
+      },
+      {
+        "id": "C",
+        "text": "SmartArt",
+        "isCorrect": false,
+        "meaning": "Converts lists into professional organization and process diagrams."
+      },
+      {
+        "id": "D",
+        "text": "Quick Parts",
+        "isCorrect": false,
+        "meaning": "Stores and inserts reusable blocks of formatted text and document properties."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050600000,
+    "updatedAt": 1715050600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-608",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "On which ribbon tab is the 'Track Changes' command located in MS Word?",
+    "back": "Review",
+    "explanation": "Track Changes is located under the Review tab in Word's ribbon, alongside Comments, Proofing, and Document Protection tools.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Home",
+        "isCorrect": false,
+        "meaning": "Ribbon tab for basic clipboard, typography, alignment, and basic styles."
+      },
+      {
+        "id": "B",
+        "text": "Insert",
+        "isCorrect": false,
+        "meaning": "Ribbon tab for adding tables, media, illustrations, charts, and links."
+      },
+      {
+        "id": "C",
+        "text": "Review",
+        "isCorrect": true,
+        "meaning": "Ribbon tab containing Track Changes, comments, translation, and proofing tools."
+      },
+      {
+        "id": "D",
+        "text": "View",
+        "isCorrect": false,
+        "meaning": "Ribbon tab for configuring document display modes, zoom, and window layout."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050660000,
+    "updatedAt": 1715050660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-609",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to open the Find and Replace dialog box in MS Word?",
+    "back": "Ctrl + H",
+    "explanation": "Ctrl + H opens the Find and Replace dialog box in Word and Excel, allowing quick string replacement across the document.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + H",
+        "isCorrect": true,
+        "meaning": "Opens Find and Replace dialog box."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + F",
+        "isCorrect": false,
+        "meaning": "Opens the Navigation / Find pane."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + R",
+        "isCorrect": false,
+        "meaning": "Right-aligns text in Word or fills right in Excel."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + E",
+        "isCorrect": false,
+        "meaning": "Centers text in Word or invokes Flash Fill in Excel."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050720000,
+    "updatedAt": 1715050720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-610",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to insert a hyperlink in MS Office applications?",
+    "back": "Ctrl + K",
+    "explanation": "Ctrl + K opens the Insert Hyperlink dialog across Microsoft Office applications, allowing links to web URLs, email addresses, or document bookmarks.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + K",
+        "isCorrect": true,
+        "meaning": "Opens the Insert Hyperlink dialog."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + L",
+        "isCorrect": false,
+        "meaning": "Aligns paragraph to the left in Word, or creates a Table in Excel."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + H",
+        "isCorrect": false,
+        "meaning": "Opens Find and Replace dialog box."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + U",
+        "isCorrect": false,
+        "meaning": "Applies underline formatting to selected text."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050780000,
+    "updatedAt": 1715050780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-611",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel function counts the number of cells that meet a specified criterion?",
+    "back": "COUNTIF",
+    "explanation": "COUNTIF tallies the number of cells within a specified range that satisfy a single conditional rule (e.g. `=COUNTIF(A1:A20, \"Pass\")`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "COUNT",
+        "isCorrect": false,
+        "meaning": "Counts cells containing numeric values only."
+      },
+      {
+        "id": "B",
+        "text": "COUNTIF",
+        "isCorrect": true,
+        "meaning": "Counts the number of cells that meet a specified condition."
+      },
+      {
+        "id": "C",
+        "text": "SUMIF",
+        "isCorrect": false,
+        "meaning": "Sums values matching a single specified condition."
+      },
+      {
+        "id": "D",
+        "text": "IF",
+        "isCorrect": false,
+        "meaning": "Evaluates a logical condition and returns one value if true, another if false."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050840000,
+    "updatedAt": 1715050840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-612",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which chart type is best suited for showing the proportion of parts to a whole?",
+    "back": "Pie chart",
+    "explanation": "Pie charts visually represent proportional relationships and percentage contributions of individual components relative to a single whole (100%).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Line chart",
+        "isCorrect": false,
+        "meaning": "Displays trends and continuous changes over time intervals."
+      },
+      {
+        "id": "B",
+        "text": "Bar chart",
+        "isCorrect": false,
+        "meaning": "Compares discrete quantities using horizontal rectangles."
+      },
+      {
+        "id": "C",
+        "text": "Scatter chart",
+        "isCorrect": false,
+        "meaning": "Plots pairs of numerical variables to reveal correlations."
+      },
+      {
+        "id": "D",
+        "text": "Pie chart",
+        "isCorrect": true,
+        "meaning": "Circular chart showing proportional parts of a single whole dataset."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050900000,
+    "updatedAt": 1715050900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-613",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which PowerPoint feature reveals or animates elements within a single slide?",
+    "back": "Animation",
+    "explanation": "PowerPoint Animations apply visual motion effects (entrance, emphasis, exit, motion paths) to individual text boxes, shapes, or images within a single slide.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Transition",
+        "isCorrect": false,
+        "meaning": "Applies visual animation effect between consecutive slides."
+      },
+      {
+        "id": "B",
+        "text": "Animation",
+        "isCorrect": true,
+        "meaning": "Applies entrance, exit, or emphasis motion to objects on a slide."
+      },
+      {
+        "id": "C",
+        "text": "Slide Master",
+        "isCorrect": false,
+        "meaning": "Template hierarchy governing universal layout, fonts, and slide colors."
+      },
+      {
+        "id": "D",
+        "text": "Hyperlink",
+        "isCorrect": false,
+        "meaning": "Clickable link navigating to external sites, files, or internal slides."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715050960000,
+    "updatedAt": 1715050960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715050960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-614",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which PowerPoint feature applies a visual effect as you move from one slide to the next?",
+    "back": "Transition",
+    "explanation": "Transitions control the visual animation and timing when advancing from one slide to the next during a slide show presentation.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Transition",
+        "isCorrect": true,
+        "meaning": "Applies visual animation effect between consecutive slides."
+      },
+      {
+        "id": "B",
+        "text": "Animation",
+        "isCorrect": false,
+        "meaning": "Applies entrance, exit, or emphasis motion to objects on a slide."
+      },
+      {
+        "id": "C",
+        "text": "SmartArt",
+        "isCorrect": false,
+        "meaning": "Converts lists into professional organization and process diagrams."
+      },
+      {
+        "id": "D",
+        "text": "Morph",
+        "isCorrect": false,
+        "meaning": "Analyzes identical objects across slides to animate smooth transformation."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051020000,
+    "updatedAt": 1715051020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-615",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Office feature allows you to quickly turn a bulleted list into an organization chart or process diagram?",
+    "back": "SmartArt",
+    "explanation": "SmartArt graphics provide designer-quality visual diagrams (process flows, hierarchy charts, matrix diagrams, and cycles) converted directly from bulleted lists.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WordArt",
+        "isCorrect": false,
+        "meaning": "Decorative text styling with specialized fills, outlines, and effects."
+      },
+      {
+        "id": "B",
+        "text": "Clip Art",
+        "isCorrect": false,
+        "meaning": "Legacy library of static illustrations and photos."
+      },
+      {
+        "id": "C",
+        "text": "SmartArt",
+        "isCorrect": true,
+        "meaning": "Converts lists into professional organization and process diagrams."
+      },
+      {
+        "id": "D",
+        "text": "Icons",
+        "isCorrect": false,
+        "meaning": "Scalable vector graphics library included in modern Office."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051080000,
+    "updatedAt": 1715051080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-616",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which file format best preserves a document's formatting for distribution while making it difficult to edit?",
+    "back": "PDF (.pdf)",
+    "explanation": "PDF (Portable Document Format) preserves fixed-layout typography, fonts, and vector graphics across all devices and platforms while restricting accidental edits.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "PDF (.pdf)",
+        "isCorrect": true,
+        "meaning": "Portable Document Format preserving fixed formatting and font layout."
+      },
+      {
+        "id": "B",
+        "text": ".docx",
+        "isCorrect": false,
+        "meaning": "Standard default OpenXML document format for Word 2007+."
+      },
+      {
+        "id": "C",
+        "text": ".txt",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this question context."
+      },
+      {
+        "id": "D",
+        "text": ".rtf",
+        "isCorrect": false,
+        "meaning": "Rich Text Format preserving basic styling without modern Word features."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051140000,
+    "updatedAt": 1715051140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-617",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "In an Excel formula, which symbol is used to make a cell reference absolute (fixed)?",
+    "back": "$",
+    "explanation": "The dollar sign ($) locks row numbers and column letters into absolute references (e.g. `$A$1`), preventing them from shifting during formula copy/paste.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "#",
+        "isCorrect": false,
+        "meaning": "Excel error indicator prefix (e.g., `#VALUE!`); not reference lock."
+      },
+      {
+        "id": "B",
+        "text": "$",
+        "isCorrect": true,
+        "meaning": "Dollar sign locking column letters and row numbers in Excel cell references."
+      },
+      {
+        "id": "C",
+        "text": "&",
+        "isCorrect": false,
+        "meaning": "Concatenation operator in Excel formulas (e.g. `\"A\" & \"B\"`)."
+      },
+      {
+        "id": "D",
+        "text": "@",
+        "isCorrect": false,
+        "meaning": "Implicit intersection operator in modern Excel dynamic array formulas."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051200000,
+    "updatedAt": 1715051200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-618",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which function key toggles between relative, absolute and mixed cell references while editing an Excel formula?",
+    "back": "F4",
+    "explanation": "Pressing F4 while editing an Excel formula cycles through reference modes: relative (`A1`), absolute (`$A$1`), mixed row (`A$1`), and mixed column (`$A1`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "F2",
+        "isCorrect": false,
+        "meaning": "Edits the active cell in Excel or renames files in Windows Explorer."
+      },
+      {
+        "id": "B",
+        "text": "F5",
+        "isCorrect": false,
+        "meaning": "Opens the Go To dialog in Word and Excel."
+      },
+      {
+        "id": "C",
+        "text": "F9",
+        "isCorrect": false,
+        "meaning": "Refreshes/recalculates fields in Word or formulas in Excel."
+      },
+      {
+        "id": "D",
+        "text": "F4",
+        "isCorrect": true,
+        "meaning": "Repeats the last executed action in Word; toggles cell references in Excel."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051260000,
+    "updatedAt": 1715051260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-619",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to insert a new worksheet in Excel?",
+    "back": "Shift + F11",
+    "explanation": "Shift + F11 instantly inserts a new blank worksheet to the left of the currently active sheet in an Excel workbook.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Shift + F11",
+        "isCorrect": true,
+        "meaning": "Inserts a new worksheet into an Excel workbook."
+      },
+      {
+        "id": "B",
+        "text": "Shift + F5",
+        "isCorrect": false,
+        "meaning": "Restores cursor to the location of the last edit in Word."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + N",
+        "isCorrect": false,
+        "meaning": "Creates a new blank document or workbook."
+      },
+      {
+        "id": "D",
+        "text": "Alt + F1",
+        "isCorrect": false,
+        "meaning": "Automatically creates an embedded column chart in Excel from selected data."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051320000,
+    "updatedAt": 1715051320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-620",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which PowerPoint view lets the presenter see speaker notes and upcoming slides while the audience sees only the current slide?",
+    "back": "Presenter View",
+    "explanation": "Presenter View outputs the full-screen slide to the audience display while showing current slide, speaker notes, next preview, and elapsed timer to the presenter.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Slide Show",
+        "isCorrect": false,
+        "meaning": "Full-screen presentation view displayed to the audience."
+      },
+      {
+        "id": "B",
+        "text": "Presenter View",
+        "isCorrect": true,
+        "meaning": "Dual-monitor presenter screen displaying notes, preview, and timer."
+      },
+      {
+        "id": "C",
+        "text": "Reading View",
+        "isCorrect": false,
+        "meaning": "Full-window slide view with simple navigation controls."
+      },
+      {
+        "id": "D",
+        "text": "Outline View",
+        "isCorrect": false,
+        "meaning": "Displays slide text content in structured hierarchical outline form."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051380000,
+    "updatedAt": 1715051380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-621",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Windows keyboard shortcut minimizes all open windows to show the desktop?",
+    "back": "Win + D",
+    "explanation": "Win + D minimizes all active application windows to reveal the Windows desktop immediately (pressing it again restores them).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Win + D",
+        "isCorrect": true,
+        "meaning": "Minimizes all windows to display the Windows desktop."
+      },
+      {
+        "id": "B",
+        "text": "Win + M",
+        "isCorrect": false,
+        "meaning": "Minimizes all windows without the quick toggle-back feature of Win+D."
+      },
+      {
+        "id": "C",
+        "text": "Win + E",
+        "isCorrect": false,
+        "meaning": "Opens Windows File Explorer."
+      },
+      {
+        "id": "D",
+        "text": "Win + L",
+        "isCorrect": false,
+        "meaning": "Instantly locks the Windows computer workstation."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051440000,
+    "updatedAt": 1715051440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-622",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the file extension used for a PowerPoint template?",
+    "back": ".potx",
+    "explanation": ".potx is the default file extension for macro-free PowerPoint templates, used to create new presentations with predefined formatting and slide masters.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ".pptx",
+        "isCorrect": false,
+        "meaning": "Standard editable PowerPoint presentation format."
+      },
+      {
+        "id": "B",
+        "text": ".ppsx",
+        "isCorrect": false,
+        "meaning": "PowerPoint slide show file that opens straight into presentation mode."
+      },
+      {
+        "id": "C",
+        "text": ".potx",
+        "isCorrect": true,
+        "meaning": "PowerPoint template format for creating standardized presentations."
+      },
+      {
+        "id": "D",
+        "text": ".pptm",
+        "isCorrect": false,
+        "meaning": "Macro-enabled PowerPoint presentation containing VBA scripts."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051500000,
+    "updatedAt": 1715051500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-623",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which PowerPoint file extension opens a presentation directly in slide show mode?",
+    "back": ".ppsx",
+    "explanation": ".ppsx is the PowerPoint Slide Show file format, which bypasses the PowerPoint editor and launches directly into full-screen presentation mode when double-clicked.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ".ppsx",
+        "isCorrect": true,
+        "meaning": "PowerPoint slide show file that opens straight into presentation mode."
+      },
+      {
+        "id": "B",
+        "text": ".pptx",
+        "isCorrect": false,
+        "meaning": "Standard editable PowerPoint presentation format."
+      },
+      {
+        "id": "C",
+        "text": ".potx",
+        "isCorrect": false,
+        "meaning": "PowerPoint template format for creating standardized presentations."
+      },
+      {
+        "id": "D",
+        "text": ".pptm",
+        "isCorrect": false,
+        "meaning": "Macro-enabled PowerPoint presentation containing VBA scripts."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051560000,
+    "updatedAt": 1715051560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-624",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to lock a Windows computer?",
+    "back": "Win + L",
+    "explanation": "Win + L immediately locks the Windows workstation, requiring the user to re-enter credentials or biometric authentication to resume.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Win + L",
+        "isCorrect": true,
+        "meaning": "Instantly locks the Windows computer workstation."
+      },
+      {
+        "id": "B",
+        "text": "Win + K",
+        "isCorrect": false,
+        "meaning": "Opens the Cast/Connect quick settings pane in Windows."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + L",
+        "isCorrect": false,
+        "meaning": "Aligns paragraph to the left in Word, or creates a Table in Excel."
+      },
+      {
+        "id": "D",
+        "text": "Alt + L",
+        "isCorrect": false,
+        "meaning": "Activates the Developer ribbon tab shortcut key sequence."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051620000,
+    "updatedAt": 1715051620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-625",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Office proofing feature underlines potential spelling and grammar errors as you type?",
+    "back": "Spelling & Grammar check",
+    "explanation": "Spelling & Grammar check highlights suspect spelling (red wavy underline) and grammatical inconsistencies (blue wavy underline) in real time.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "AutoCorrect",
+        "isCorrect": false,
+        "meaning": "Automatically corrects common typing and spelling mistakes."
+      },
+      {
+        "id": "B",
+        "text": "Spelling & Grammar check",
+        "isCorrect": true,
+        "meaning": "Real-time proofing tool underlining typos and syntactic errors."
+      },
+      {
+        "id": "C",
+        "text": "AutoFormat",
+        "isCorrect": false,
+        "meaning": "Applies automatic bullets, fractions, and quotes as you type."
+      },
+      {
+        "id": "D",
+        "text": "Track Changes",
+        "isCorrect": false,
+        "meaning": "Records all reviewer insertions, deletions, and formatting edits."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051680000,
+    "updatedAt": 1715051680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-626",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel function returns the arithmetic mean of a range of numbers?",
+    "back": "AVERAGE",
+    "explanation": "The AVERAGE function calculates the arithmetic mean of numeric arguments or cell ranges, ignoring blank cells and text labels.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "AVG",
+        "isCorrect": false,
+        "meaning": "SQL function name for average; invalid in Excel."
+      },
+      {
+        "id": "B",
+        "text": "MEAN",
+        "isCorrect": false,
+        "meaning": "Statistical term; not a valid function name in Excel."
+      },
+      {
+        "id": "C",
+        "text": "SUM",
+        "isCorrect": false,
+        "meaning": "Adds all numbers across a specified range unconditionally."
+      },
+      {
+        "id": "D",
+        "text": "AVERAGE",
+        "isCorrect": true,
+        "meaning": "Returns the arithmetic mean of a range of numbers."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051740000,
+    "updatedAt": 1715051740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-627",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to switch between open applications on Windows?",
+    "back": "Alt + Tab",
+    "explanation": "Alt + Tab displays the Windows task switcher overlay, allowing rapid switching between running applications.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Alt + Tab",
+        "isCorrect": true,
+        "meaning": "Switches between currently open and active application windows."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + Tab",
+        "isCorrect": false,
+        "meaning": "Switches between document tabs inside an application."
+      },
+      {
+        "id": "C",
+        "text": "Win + Tab",
+        "isCorrect": false,
+        "meaning": "Opens Task View displaying desktop spaces and running windows."
+      },
+      {
+        "id": "D",
+        "text": "Shift + Tab",
+        "isCorrect": false,
+        "meaning": "Moves cursor/focus to the previous input control or cell."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051800000,
+    "updatedAt": 1715051800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-628",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What does the shortcut Ctrl + Shift + Esc open directly in Windows?",
+    "back": "Task Manager",
+    "explanation": "Ctrl + Shift + Esc directly opens Windows Task Manager without going through the intermediate Ctrl + Alt + Delete security screen.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Task Manager",
+        "isCorrect": true,
+        "meaning": "Correct answer: Ctrl + Shift + Esc directly opens Windows Task Manager without going through the intermediate Ctrl + Alt + Delete security screen."
+      },
+      {
+        "id": "B",
+        "text": "Control Panel",
+        "isCorrect": false,
+        "meaning": "Opens legacy administrative control settings."
+      },
+      {
+        "id": "C",
+        "text": "File Explorer",
+        "isCorrect": false,
+        "meaning": "Windows file management utility accessed via Win + E."
+      },
+      {
+        "id": "D",
+        "text": "Settings",
+        "isCorrect": false,
+        "meaning": "Windows Modern Settings application accessed via Win + I."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051860000,
+    "updatedAt": 1715051860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-629",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Word feature automatically generates a list of headings along with their page numbers?",
+    "back": "Table of Contents",
+    "explanation": "Table of Contents in Word automatically scans document heading styles (Heading 1, 2, 3) to build an organized outline with clickable page numbers.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Index",
+        "isCorrect": false,
+        "meaning": "Alphabetical listing of key terminology and associated document pages."
+      },
+      {
+        "id": "B",
+        "text": "Table of Contents",
+        "isCorrect": true,
+        "meaning": "Automated index generated from Heading styles with page numbers."
+      },
+      {
+        "id": "C",
+        "text": "Bookmark",
+        "isCorrect": false,
+        "meaning": "Named location in a document allowing quick navigation and cross-referencing."
+      },
+      {
+        "id": "D",
+        "text": "Cross-reference",
+        "isCorrect": false,
+        "meaning": "Links to numbered items, headings, bookmarks, or figures within the file."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051920000,
+    "updatedAt": 1715051920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-630",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the Excel keyboard shortcut to insert the current date as a static value?",
+    "back": "Ctrl + ;",
+    "explanation": "Ctrl + ; (semicolon) inserts the current system date as a static, unupdating value into the selected Excel cell.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + ;",
+        "isCorrect": true,
+        "meaning": "Inserts current static date into an Excel cell."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + Shift + ;",
+        "isCorrect": false,
+        "meaning": "Inserts current static time into an Excel cell."
+      },
+      {
+        "id": "C",
+        "text": "Alt + D",
+        "isCorrect": false,
+        "meaning": "Moves browser focus to the address bar; in Excel, initiates legacy data menu."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + D",
+        "isCorrect": false,
+        "meaning": "Fills down in Excel or duplicates shapes in PowerPoint."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715051980000,
+    "updatedAt": 1715051980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715051980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-631",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the Excel keyboard shortcut to insert the current time as a static value?",
+    "back": "Ctrl + Shift + ;",
+    "explanation": "Ctrl + Shift + ; (colon) inserts the current system time as a static value into the selected Excel cell.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + ;",
+        "isCorrect": false,
+        "meaning": "Inserts current static date into an Excel cell."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + Shift + ;",
+        "isCorrect": true,
+        "meaning": "Inserts current static time into an Excel cell."
+      },
+      {
+        "id": "C",
+        "text": "Alt + T",
+        "isCorrect": false,
+        "meaning": "Activates the Tools menu sequence in legacy Office."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + T",
+        "isCorrect": false,
+        "meaning": "Creates a structured Excel Table or adds a hanging indent in Word."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052040000,
+    "updatedAt": 1715052040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-632",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which file type is commonly used to compress and bundle multiple files together?",
+    "back": ".zip",
+    "explanation": ".zip is the standard compression archive format supported natively in Windows to bundle and compress multiple files into a single container.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ".exe",
+        "isCorrect": false,
+        "meaning": "Compiled binary executable program."
+      },
+      {
+        "id": "B",
+        "text": ".doc",
+        "isCorrect": false,
+        "meaning": "Legacy binary document format used up to Word 2003."
+      },
+      {
+        "id": "C",
+        "text": ".tmp",
+        "isCorrect": false,
+        "meaning": "Temporary cache file generated by operating systems and applications."
+      },
+      {
+        "id": "D",
+        "text": ".zip",
+        "isCorrect": true,
+        "meaning": "Compressed archive format bundling files with lossless compression."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052100000,
+    "updatedAt": 1715052100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-633",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which MS Office application is primarily used for managing email, calendars and contacts?",
+    "back": "Outlook",
+    "explanation": "Microsoft Outlook is the personal information manager in the Office suite dedicated to email communication, calendar appointments, task tracking, and contacts.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Outlook",
+        "isCorrect": true,
+        "meaning": "Office application for emails, calendaring, task management, and contacts."
+      },
+      {
+        "id": "B",
+        "text": "OneNote",
+        "isCorrect": false,
+        "meaning": "Digital notebook for capturing freeform notes, sketches, and audio."
+      },
+      {
+        "id": "C",
+        "text": "Access",
+        "isCorrect": false,
+        "meaning": "Relational database application for structured tables, forms, and queries."
+      },
+      {
+        "id": "D",
+        "text": "Publisher",
+        "isCorrect": false,
+        "meaning": "Desktop publishing application focused on page design and marketing layouts."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052160000,
+    "updatedAt": 1715052160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-634",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which MS Office application is best suited for creating and managing relational databases?",
+    "back": "Access",
+    "explanation": "Microsoft Access is a relational database management system (RDBMS) providing visual tables, queries, entry forms, and report generation for structured business data.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Excel",
+        "isCorrect": false,
+        "meaning": "Spreadsheet application for calculations, data analysis, and charting."
+      },
+      {
+        "id": "B",
+        "text": "Access",
+        "isCorrect": true,
+        "meaning": "Relational database application for structured tables, forms, and queries."
+      },
+      {
+        "id": "C",
+        "text": "OneNote",
+        "isCorrect": false,
+        "meaning": "Digital notebook for capturing freeform notes, sketches, and audio."
+      },
+      {
+        "id": "D",
+        "text": "Publisher",
+        "isCorrect": false,
+        "meaning": "Desktop publishing application focused on page design and marketing layouts."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052220000,
+    "updatedAt": 1715052220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-635",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Office 365 feature allows multiple users to edit the same document at the same time in real time?",
+    "back": "Co-authoring",
+    "explanation": "Co-authoring enables simultaneous multi-user real-time editing and presence indicators on Word, Excel, and PowerPoint documents stored in OneDrive or SharePoint.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Track Changes",
+        "isCorrect": false,
+        "meaning": "Records all reviewer insertions, deletions, and formatting edits."
+      },
+      {
+        "id": "B",
+        "text": "Compare",
+        "isCorrect": false,
+        "meaning": "Compares two document versions side-by-side highlighting differences."
+      },
+      {
+        "id": "C",
+        "text": "Co-authoring",
+        "isCorrect": true,
+        "meaning": "Cloud collaboration feature enabling simultaneous live multi-user editing."
+      },
+      {
+        "id": "D",
+        "text": "Mail Merge",
+        "isCorrect": false,
+        "meaning": "Generates batches of personalized letters or emails from a data source."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052280000,
+    "updatedAt": 1715052280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-636",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Word view shows how a document will look on the printed page, including margins and page breaks?",
+    "back": "Print Layout",
+    "explanation": "Print Layout view in Word displays headers, footers, margins, and page breaks exactly as they will appear when physically printed or exported to PDF.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Print Layout",
+        "isCorrect": true,
+        "meaning": "Displays the exact visual appearance of pages as they will be printed."
+      },
+      {
+        "id": "B",
+        "text": "Web Layout",
+        "isCorrect": false,
+        "meaning": "Displays document as an unpaginated web page."
+      },
+      {
+        "id": "C",
+        "text": "Outline View",
+        "isCorrect": false,
+        "meaning": "Displays slide text content in structured hierarchical outline form."
+      },
+      {
+        "id": "D",
+        "text": "Draft View",
+        "isCorrect": false,
+        "meaning": "Simplified editing view removing margins, headers, and footers."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052340000,
+    "updatedAt": 1715052340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-637",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to create a new blank document in MS Word?",
+    "back": "Ctrl + N",
+    "explanation": "Ctrl + N creates a new blank document based on the default Normal template in Word.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + N",
+        "isCorrect": true,
+        "meaning": "Creates a new blank document or workbook."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + O",
+        "isCorrect": false,
+        "meaning": "Opens the Open File dialog/pane."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + S",
+        "isCorrect": false,
+        "meaning": "Saves the active document or file."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + P",
+        "isCorrect": false,
+        "meaning": "Opens the Print dialog and backstage print preview."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052400000,
+    "updatedAt": 1715052400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-638",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to open the Print dialog box in MS Office applications?",
+    "back": "Ctrl + P",
+    "explanation": "Ctrl + P opens the Print dialog / Backstage Print preview tab across all Microsoft Office applications.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + N",
+        "isCorrect": false,
+        "meaning": "Creates a new blank document or workbook."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + P",
+        "isCorrect": true,
+        "meaning": "Opens the Print dialog and backstage print preview."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + S",
+        "isCorrect": false,
+        "meaning": "Saves the active document or file."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + A",
+        "isCorrect": false,
+        "meaning": "Selects all content in the document, sheet, or text frame."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052460000,
+    "updatedAt": 1715052460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-639",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to save the current document?",
+    "back": "Ctrl + S",
+    "explanation": "Ctrl + S immediately saves modifications made to the active document or triggers Save As for an unsaved file.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + N",
+        "isCorrect": false,
+        "meaning": "Creates a new blank document or workbook."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + P",
+        "isCorrect": false,
+        "meaning": "Opens the Print dialog and backstage print preview."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + S",
+        "isCorrect": true,
+        "meaning": "Saves the active document or file."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + A",
+        "isCorrect": false,
+        "meaning": "Selects all content in the document, sheet, or text frame."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052520000,
+    "updatedAt": 1715052520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-640",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to select all content in the current document?",
+    "back": "Ctrl + A",
+    "explanation": "Ctrl + A selects the entirety of document text, table data, or worksheet cells depending on current context.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + S",
+        "isCorrect": false,
+        "meaning": "Saves the active document or file."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + P",
+        "isCorrect": false,
+        "meaning": "Opens the Print dialog and backstage print preview."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + N",
+        "isCorrect": false,
+        "meaning": "Creates a new blank document or workbook."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + A",
+        "isCorrect": true,
+        "meaning": "Selects all content in the document, sheet, or text frame."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052580000,
+    "updatedAt": 1715052580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-641",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel feature restricts the values that can be typed into a cell to a defined list or range?",
+    "back": "Data Validation",
+    "explanation": "Data Validation in Excel restricts user input to predefined criteria such as whole numbers, date ranges, decimal values, or dropdown lists.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Data Validation",
+        "isCorrect": true,
+        "meaning": "Constrains user input values to specific ranges or dropdown choices."
+      },
+      {
+        "id": "B",
+        "text": "Conditional Formatting",
+        "isCorrect": false,
+        "meaning": "Applies visual colors, databars, and icons based on cell values."
+      },
+      {
+        "id": "C",
+        "text": "Goal Seek",
+        "isCorrect": false,
+        "meaning": "Backsolves formula inputs to produce a desired target output."
+      },
+      {
+        "id": "D",
+        "text": "Freeze Panes",
+        "isCorrect": false,
+        "meaning": "Locks specific rows and columns visible during sheet scrolling."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052640000,
+    "updatedAt": 1715052640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-642",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel tool works backward from a desired result to find the input value needed to achieve it?",
+    "back": "Goal Seek",
+    "explanation": "Goal Seek is an Excel What-If Analysis tool that calculates the required input variable needed to achieve a specific target formula result.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Data Validation",
+        "isCorrect": false,
+        "meaning": "Constrains user input values to specific ranges or dropdown choices."
+      },
+      {
+        "id": "B",
+        "text": "Goal Seek",
+        "isCorrect": true,
+        "meaning": "Backsolves formula inputs to produce a desired target output."
+      },
+      {
+        "id": "C",
+        "text": "Solver",
+        "isCorrect": false,
+        "meaning": "Advanced optimization add-in solving for multiple constraints."
+      },
+      {
+        "id": "D",
+        "text": "What-If Analysis table",
+        "isCorrect": false,
+        "meaning": "Data table showing how changing variables affects formula outcomes."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052700000,
+    "updatedAt": 1715052700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-643",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Word feature automatically generates a list of figures and their captions used throughout a document?",
+    "back": "Table of Figures",
+    "explanation": "Table of Figures compiles a formatted index of figure/table captions along with corresponding page numbers throughout the document.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Table of Contents",
+        "isCorrect": false,
+        "meaning": "Automated index generated from Heading styles with page numbers."
+      },
+      {
+        "id": "B",
+        "text": "Index",
+        "isCorrect": false,
+        "meaning": "Alphabetical listing of key terminology and associated document pages."
+      },
+      {
+        "id": "C",
+        "text": "Table of Figures",
+        "isCorrect": true,
+        "meaning": "Lists captions and page locations of illustrations and diagrams."
+      },
+      {
+        "id": "D",
+        "text": "Cross-reference",
+        "isCorrect": false,
+        "meaning": "Links to numbered items, headings, bookmarks, or figures within the file."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052760000,
+    "updatedAt": 1715052760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-644",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which area of the Office 'File' tab (Backstage view) shows document properties such as author and permissions?",
+    "back": "Info",
+    "explanation": "The Info section in the File tab (Backstage view) displays file size, word count, dates, author metadata, compatibility modes, and document protection settings.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Home",
+        "isCorrect": false,
+        "meaning": "Ribbon tab for basic clipboard, typography, alignment, and basic styles."
+      },
+      {
+        "id": "B",
+        "text": "Export",
+        "isCorrect": false,
+        "meaning": "Backstage option for converting files to PDF/XPS or changing file types."
+      },
+      {
+        "id": "C",
+        "text": "Options",
+        "isCorrect": false,
+        "meaning": "Backstage configuration dialog for application preferences and ribbon customization."
+      },
+      {
+        "id": "D",
+        "text": "Info",
+        "isCorrect": true,
+        "meaning": "Backstage section detailing file size, author, permissions, and properties."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052820000,
+    "updatedAt": 1715052820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-645",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which PowerPoint transition smoothly animates objects between two duplicated slides to simulate movement?",
+    "back": "Morph",
+    "explanation": "The Morph transition detects identical or named objects between successive slides and automatically animates their position, scale, and color seamlessly.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Morph",
+        "isCorrect": true,
+        "meaning": "Analyzes identical objects across slides to animate smooth transformation."
+      },
+      {
+        "id": "B",
+        "text": "Fade",
+        "isCorrect": false,
+        "meaning": "Gradually dissolves slide into the subsequent slide."
+      },
+      {
+        "id": "C",
+        "text": "Push",
+        "isCorrect": false,
+        "meaning": "Sliding transition pushing current slide offscreen."
+      },
+      {
+        "id": "D",
+        "text": "Wipe",
+        "isCorrect": false,
+        "meaning": "Uncovers the next slide in a directional sweep."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052880000,
+    "updatedAt": 1715052880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-646",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to insert a manual page break in MS Word?",
+    "back": "Ctrl + Enter",
+    "explanation": "Ctrl + Enter inserts a hard manual page break in Word, pushing all subsequent text immediately to the top of the next page.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Shift + Enter",
+        "isCorrect": false,
+        "meaning": "Inserts a manual line break (soft return) without starting a new paragraph."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + Enter",
+        "isCorrect": true,
+        "meaning": "Inserts a hard manual page break in Word."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + Shift + Enter",
+        "isCorrect": false,
+        "meaning": "Inserts a column break in Word or completes an array formula in legacy Excel."
+      },
+      {
+        "id": "D",
+        "text": "Alt + Enter",
+        "isCorrect": false,
+        "meaning": "Starts a new text line within the same cell in Excel."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715052940000,
+    "updatedAt": 1715052940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715052940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-647",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the file extension for a macro-enabled Word document?",
+    "back": ".docm",
+    "explanation": ".docm is the file extension designating an OpenXML Word document containing enabled VBA macros or automation scripts.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ".docx",
+        "isCorrect": false,
+        "meaning": "Standard default OpenXML document format for Word 2007+."
+      },
+      {
+        "id": "B",
+        "text": ".dotm",
+        "isCorrect": false,
+        "meaning": "Macro-enabled Word template format."
+      },
+      {
+        "id": "C",
+        "text": ".docm",
+        "isCorrect": true,
+        "meaning": "Macro-enabled Word document capable of executing VBA macros."
+      },
+      {
+        "id": "D",
+        "text": ".dotx",
+        "isCorrect": false,
+        "meaning": "Word document template format without macros."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715053000000,
+    "updatedAt": 1715053000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-648",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the Excel keyboard shortcut that automatically inserts the SUM function for a selected range?",
+    "back": "Alt + =",
+    "explanation": "Alt + = is the AutoSum keyboard shortcut in Excel, which automatically generates a `=SUM(...)` formula targeting adjacent contiguous numeric cells.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + =",
+        "isCorrect": false,
+        "meaning": "Applies subscript formatting in Microsoft Word."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + Shift + S",
+        "isCorrect": false,
+        "meaning": "Opens the Apply Styles floating window in Word."
+      },
+      {
+        "id": "C",
+        "text": "Alt + S",
+        "isCorrect": false,
+        "meaning": "Activates the References tab key sequence."
+      },
+      {
+        "id": "D",
+        "text": "Alt + =",
+        "isCorrect": true,
+        "meaning": "AutoSum shortcut in Excel that inserts the SUM formula."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715053060000,
+    "updatedAt": 1715053060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-649",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel view shows exactly where page breaks fall when the worksheet is printed?",
+    "back": "Page Break Preview",
+    "explanation": "Page Break Preview displays blue boundary lines indicating automatic and manual page breaks, allowing drag-and-drop pagination adjustments.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Page Break Preview",
+        "isCorrect": true,
+        "meaning": "Visual spreadsheet layout showing adjustable page break boundaries."
+      },
+      {
+        "id": "B",
+        "text": "Normal view",
+        "isCorrect": false,
+        "meaning": "Standard default spreadsheet grid view."
+      },
+      {
+        "id": "C",
+        "text": "Page Layout view",
+        "isCorrect": false,
+        "meaning": "Spreadsheet view displaying margins, page headers, and footers."
+      },
+      {
+        "id": "D",
+        "text": "Print Preview",
+        "isCorrect": false,
+        "meaning": "Shows printable output in Backstage view prior to sending to printer."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715053120000,
+    "updatedAt": 1715053120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-650",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Office feature stores frequently used pieces of text or graphics for quick reuse across documents?",
+    "back": "Quick Parts",
+    "explanation": "Quick Parts (Building Blocks) stores reusable boilerplate text, fields, document properties, and formatted paragraphs for instant insertion.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "AutoCorrect",
+        "isCorrect": false,
+        "meaning": "Automatically corrects common typing and spelling mistakes."
+      },
+      {
+        "id": "B",
+        "text": "Quick Parts",
+        "isCorrect": true,
+        "meaning": "Stores and inserts reusable blocks of formatted text and document properties."
+      },
+      {
+        "id": "C",
+        "text": "Building Blocks Organizer",
+        "isCorrect": false,
+        "meaning": "Dialog for previewing and managing all reusable document building blocks."
+      },
+      {
+        "id": "D",
+        "text": "Clipboard",
+        "isCorrect": false,
+        "meaning": "Temporary system storage holding copied or cut items."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715053180000,
+    "updatedAt": 1715053180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-651",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to apply italic formatting to selected text?",
+    "back": "Ctrl + I",
+    "explanation": "Ctrl + I applies or removes italic formatting from the currently selected text.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + B",
+        "isCorrect": false,
+        "meaning": "Applies bold formatting to selected text."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + U",
+        "isCorrect": false,
+        "meaning": "Applies underline formatting to selected text."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + I",
+        "isCorrect": true,
+        "meaning": "Applies italic formatting to selected text."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + E",
+        "isCorrect": false,
+        "meaning": "Centers text in Word or invokes Flash Fill in Excel."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715053240000,
+    "updatedAt": 1715053240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-652",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "What is the keyboard shortcut to apply underline formatting to selected text?",
+    "back": "Ctrl + U",
+    "explanation": "Ctrl + U applies or removes underline formatting from the currently selected text.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Ctrl + I",
+        "isCorrect": false,
+        "meaning": "Applies italic formatting to selected text."
+      },
+      {
+        "id": "B",
+        "text": "Ctrl + B",
+        "isCorrect": false,
+        "meaning": "Applies bold formatting to selected text."
+      },
+      {
+        "id": "C",
+        "text": "Ctrl + E",
+        "isCorrect": false,
+        "meaning": "Centers text in Word or invokes Flash Fill in Excel."
+      },
+      {
+        "id": "D",
+        "text": "Ctrl + U",
+        "isCorrect": true,
+        "meaning": "Applies underline formatting to selected text."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715053300000,
+    "updatedAt": 1715053300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-653",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Outlook feature displays attendees' free/busy times to help you pick a suitable meeting slot?",
+    "back": "Scheduling Assistant",
+    "explanation": "The Scheduling Assistant in Outlook overlays attendees' free, busy, and tentative calendar commitments to identify conflict-free meeting slots.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Scheduling Assistant",
+        "isCorrect": true,
+        "meaning": "Calendar tool displaying attendee availability for conflict-free meetings."
+      },
+      {
+        "id": "B",
+        "text": "Quick Steps",
+        "isCorrect": false,
+        "meaning": "Applies multiple actions (e.g. move to folder and mark read) with one click."
+      },
+      {
+        "id": "C",
+        "text": "Focused Inbox",
+        "isCorrect": false,
+        "meaning": "Splits email into Focused and Other tabs based on message priority."
+      },
+      {
+        "id": "D",
+        "text": "Rules Wizard",
+        "isCorrect": false,
+        "meaning": "Automates filtering, moving, and tagging of incoming emails."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715053360000,
+    "updatedAt": 1715053360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-654",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Word feature lets you lock a document so only specific types of edits, such as filling in form fields, are allowed?",
+    "back": "Restrict Editing",
+    "explanation": "Restrict Editing allows document authors to enforce password protection while limiting user interactions strictly to track changes, comments, or form filling.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Track Changes",
+        "isCorrect": false,
+        "meaning": "Records all reviewer insertions, deletions, and formatting edits."
+      },
+      {
+        "id": "B",
+        "text": "Restrict Editing",
+        "isCorrect": true,
+        "meaning": "Locks down document modifications to specific designated permissions."
+      },
+      {
+        "id": "C",
+        "text": "Mark as Final",
+        "isCorrect": false,
+        "meaning": "Sets document to read-only advisory mode to deter casual changes."
+      },
+      {
+        "id": "D",
+        "text": "Document Inspector",
+        "isCorrect": false,
+        "meaning": "Scans documents for hidden metadata, personal information, and revisions."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715053420000,
+    "updatedAt": 1715053420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-655",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel function returns the row number of a given cell reference?",
+    "back": "ROW()",
+    "explanation": "The ROW() function returns the row index number corresponding to a cell reference (or the current formula cell if omitted).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "ROWS()",
+        "isCorrect": false,
+        "meaning": "Returns the total count of rows across an entire range."
+      },
+      {
+        "id": "B",
+        "text": "INDEX()",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this question context."
+      },
+      {
+        "id": "C",
+        "text": "ROW()",
+        "isCorrect": true,
+        "meaning": "Returns the row number of a referenced cell."
+      },
+      {
+        "id": "D",
+        "text": "ADDRESS()",
+        "isCorrect": false,
+        "meaning": "Returns a cell address as text given row and column numbers."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715053480000,
+    "updatedAt": 1715053480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-656",
+    "deckId": "deck-ms-office",
+    "type": "mcq",
+    "front": "Which Excel function joins the text from multiple cells into a single text string?",
+    "back": "CONCATENATE()",
+    "explanation": "CONCATENATE() (or its modern equivalent CONCAT) merges multiple text strings, numbers, or cell contents into a unified string output.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "MERGE()",
+        "isCorrect": false,
+        "meaning": "Spreadsheet cell formatting action; not an Excel formula function."
+      },
+      {
+        "id": "B",
+        "text": "JOIN()",
+        "isCorrect": false,
+        "meaning": "Database operation; not a standard native Excel function."
+      },
+      {
+        "id": "C",
+        "text": "COMBINE()",
+        "isCorrect": false,
+        "meaning": "Not a standard Excel function name."
+      },
+      {
+        "id": "D",
+        "text": "CONCATENATE()",
+        "isCorrect": true,
+        "meaning": "Joins multiple text strings into a single string."
+      }
+    ],
+    "tags": [
+      "MS Office",
+      "Productivity",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "createdAt": 1715053540000,
+    "updatedAt": 1715053540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-657",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "In the context of IT governance and cloud security, which cloud deployment model is typically the most secure choice for organizations with highly sensitive data?",
+    "back": "Private Cloud",
+    "explanation": "A Private Cloud is dedicated solely to a single organization, offering maximum control, customization, and physical/logical isolation over infrastructure and sensitive compliance data.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Private Cloud",
+        "isCorrect": true,
+        "meaning": "Dedicated infrastructure exclusively provisioned for a single organization."
+      },
+      {
+        "id": "B",
+        "text": "Public Cloud",
+        "isCorrect": false,
+        "meaning": "Multi-tenant cloud infrastructure owned by a third-party provider and open to public use."
+      },
+      {
+        "id": "C",
+        "text": "Hybrid Cloud",
+        "isCorrect": false,
+        "meaning": "Composite infrastructure bridging private on-premise resources and public cloud services."
+      },
+      {
+        "id": "D",
+        "text": "Community Cloud",
+        "isCorrect": false,
+        "meaning": "Cloud infrastructure shared among organizations with common mission or regulatory needs."
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Cloud Computing",
+      "Virtualization",
+      "Infrastructure"
+    ],
+    "createdAt": 1715053600000,
+    "updatedAt": 1715053600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-658",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "A network administrator needs to select the most secure wireless encryption protocol available for a new Wi-Fi network. Which should be chosen?",
+    "back": "WPA3",
+    "explanation": "WPA3 (Wi-Fi Protected Access 3) provides cutting-edge wireless encryption utilizing 128-bit or 192-bit security suites with Simultaneous Authentication of Equals (SAE) to resist offline dictionary attacks.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WEP",
+        "isCorrect": false,
+        "meaning": "Legacy, heavily broken wireless protocol with weak RC4 encryption susceptible to trivial cracking."
+      },
+      {
+        "id": "B",
+        "text": "WPA2",
+        "isCorrect": false,
+        "meaning": "Standard Wi-Fi security protocol utilizing AES-CCMP encryption."
+      },
+      {
+        "id": "C",
+        "text": "TKIP",
+        "isCorrect": false,
+        "meaning": "Temporary Key Integrity Protocol; legacy wrapper introduced to patch WEP, now deprecated."
+      },
+      {
+        "id": "D",
+        "text": "WPA3",
+        "isCorrect": true,
+        "meaning": "Latest Wi-Fi security standard featuring SAE authentication and strong 192-bit cryptographic suites."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715053660000,
+    "updatedAt": 1715053660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-659",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "An employee working from home needs to securely access their company's internal network to retrieve files. Which type of VPN is best suited for this scenario?",
+    "back": "Remote-access VPN",
+    "explanation": "Remote-Access VPN connects individual remote workers (telecommuters) securely over the public internet to an organization's internal private corporate network.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Remote-access VPN",
+        "isCorrect": true,
+        "meaning": "Secure VPN tunnel connecting individual remote users into a corporate private LAN."
+      },
+      {
+        "id": "B",
+        "text": "Site-to-site VPN",
+        "isCorrect": false,
+        "meaning": "Permanent encrypted tunnel linking two geographic branch office networks together."
+      },
+      {
+        "id": "C",
+        "text": "MPLS VPN",
+        "isCorrect": false,
+        "meaning": "Carrier-managed multiprotocol label-switched private WAN connection."
+      },
+      {
+        "id": "D",
+        "text": "PPTP VPN",
+        "isCorrect": false,
+        "meaning": "Point-to-Point Tunneling Protocol; obsolete legacy VPN protocol with known vulnerabilities."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715053720000,
+    "updatedAt": 1715053720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-660",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "A company needs to permanently connect two branch office networks so they behave as one network. Which VPN type is most appropriate?",
+    "back": "Site-to-site VPN",
+    "explanation": "Site-to-Site VPN connects two or more fixed geographic network locations (such as a branch office to headquarters) transparently across the internet.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Remote-access VPN",
+        "isCorrect": false,
+        "meaning": "Secure VPN tunnel connecting individual remote users into a corporate private LAN."
+      },
+      {
+        "id": "B",
+        "text": "Site-to-site VPN",
+        "isCorrect": true,
+        "meaning": "Permanent encrypted tunnel linking two geographic branch office networks together."
+      },
+      {
+        "id": "C",
+        "text": "SSL VPN",
+        "isCorrect": false,
+        "meaning": "Browser-based or client-based VPN using TLS encryption over standard web ports."
+      },
+      {
+        "id": "D",
+        "text": "Client VPN",
+        "isCorrect": false,
+        "meaning": "Client-software terminated remote access connection."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715053780000,
+    "updatedAt": 1715053780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-661",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "In a cloud-based application where scalability is crucial, which cloud storage option allows dynamic scaling for large volumes of unstructured data without manual intervention?",
+    "back": "Object Storage",
+    "explanation": "Object Storage manages unstructured data (images, media, backups, logs) as distinct objects with customizable metadata and global unique identifiers, enabling massive, virtually infinite horizontal scaling.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Block Storage",
+        "isCorrect": false,
+        "meaning": "Low-level raw storage volumes partitioned into fixed blocks for OS file systems."
+      },
+      {
+        "id": "B",
+        "text": "File Storage",
+        "isCorrect": false,
+        "meaning": "Hierarchical network-attached storage presenting standard shared file folders (NFS/SMB)."
+      },
+      {
+        "id": "C",
+        "text": "Tape Storage",
+        "isCorrect": false,
+        "meaning": "Magnetic tape archive used for cold, offline disaster recovery backups."
+      },
+      {
+        "id": "D",
+        "text": "Object Storage",
+        "isCorrect": true,
+        "meaning": "Highly scalable storage architecture managing data as discrete objects with metadata."
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Cloud Computing",
+      "Virtualization",
+      "Infrastructure"
+    ],
+    "createdAt": 1715053840000,
+    "updatedAt": 1715053840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-662",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "A hacker steals data by specifying the exact route packets should take through a network in order to bypass security measures. What is this attack called?",
+    "back": "Source Routing Attack",
+    "explanation": "In a Source Routing attack, the sender specifies the explicit packet route through intermediate routers, allowing malicious traffic to bypass firewalls or security filters along standard routes.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IP Address Spoofing",
+        "isCorrect": false,
+        "meaning": "Faking source IP addresses to disguise origin or impersonate a trusted host."
+      },
+      {
+        "id": "B",
+        "text": "Source Routing Attack",
+        "isCorrect": true,
+        "meaning": "Exploiting packet routing options to dictate explicit transit paths bypassing firewalls."
+      },
+      {
+        "id": "C",
+        "text": "Tiny Fragment Attack",
+        "isCorrect": false,
+        "meaning": "Fragmenting TCP headers into tiny packets to sneak past packet filters."
+      },
+      {
+        "id": "D",
+        "text": "Drive-by Attack",
+        "isCorrect": false,
+        "meaning": "Unintentional malware download executed simply by visiting a malicious website."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715053900000,
+    "updatedAt": 1715053900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-663",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Attackers insert malicious routing information to redirect network traffic through their own systems, allowing them to eavesdrop undetected. What is this attack called?",
+    "back": "Routing Table Poisoning",
+    "explanation": "Routing Table Poisoning (or route poisoning) injects fraudulent routing updates into routers, causing packets to be blackholed or redirected through an attacker's eavesdropping interception point.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Packet Sniffing",
+        "isCorrect": false,
+        "meaning": "Capturing data packets off a network segment using an analyzer tool."
+      },
+      {
+        "id": "B",
+        "text": "IP Spoofing",
+        "isCorrect": false,
+        "meaning": "Forging packet source IP addresses to bypass access controls or hide origin."
+      },
+      {
+        "id": "C",
+        "text": "Routing Table Poisoning",
+        "isCorrect": true,
+        "meaning": "Injecting false routing advertisements to hijack or reroute network traffic."
+      },
+      {
+        "id": "D",
+        "text": "DNS Spoofing",
+        "isCorrect": false,
+        "meaning": "Injecting fraudulent IP entries into DNS caches to divert users to malicious sites."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715053960000,
+    "updatedAt": 1715053960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715053960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-664",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which protocol is commonly used to secure data as it travels over the internet, such as during online banking?",
+    "back": "SSL/TLS",
+    "explanation": "SSL/TLS (Secure Sockets Layer / Transport Layer Security) cryptographic protocols provide end-to-end encryption, authentication, and data integrity for internet communications such as HTTPS.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SSL/TLS",
+        "isCorrect": true,
+        "meaning": "Cryptographic protocols providing end-to-end transport encryption over the internet."
+      },
+      {
+        "id": "B",
+        "text": "HTTP",
+        "isCorrect": false,
+        "meaning": "Plaintext Hypertext Transfer Protocol lacking confidentiality or encryption."
+      },
+      {
+        "id": "C",
+        "text": "FTP",
+        "isCorrect": false,
+        "meaning": "File Transfer Protocol that transmits credentials and files unencrypted over port 21."
+      },
+      {
+        "id": "D",
+        "text": "SMTP",
+        "isCorrect": false,
+        "meaning": "Simple Mail Transfer Protocol used for sending email messages across networks."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715054020000,
+    "updatedAt": 1715054020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-665",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "A company wants employees to access its cloud-based webmail securely through a browser. Which protocol secures this browser-based access?",
+    "back": "HTTPS",
+    "explanation": "HTTPS (Hypertext Transfer Protocol Secure) encrypts web browser communications using TLS over port 443, securing sensitive webmail logins and credentials against sniffing.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IMAP",
+        "isCorrect": false,
+        "meaning": "Internet Message Access Protocol for retrieving and syncing emails from servers."
+      },
+      {
+        "id": "B",
+        "text": "POP3",
+        "isCorrect": false,
+        "meaning": "Post Office Protocol for downloading emails to local clients from a server."
+      },
+      {
+        "id": "C",
+        "text": "SMTP",
+        "isCorrect": false,
+        "meaning": "Simple Mail Transfer Protocol used for sending email messages across networks."
+      },
+      {
+        "id": "D",
+        "text": "HTTPS",
+        "isCorrect": true,
+        "meaning": "Encrypted HTTP protocol securing web transactions using TLS over port 443."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715054080000,
+    "updatedAt": 1715054080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-666",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which cloud service model provides virtualized computing infrastructure such as servers, storage and networking, while the customer manages the OS and applications?",
+    "back": "IaaS (Infrastructure as a Service)",
+    "explanation": "IaaS (Infrastructure as a Service) delivers fundamental compute, storage, and networking resources on-demand, where the consumer manages operating systems, middleware, and applications.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IaaS (Infrastructure as a Service)",
+        "isCorrect": true,
+        "meaning": "Provides virtualized compute, storage, and networking; user manages OS and apps."
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this question context."
+      },
+      {
+        "id": "C",
+        "text": "SaaS",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this question context."
+      },
+      {
+        "id": "D",
+        "text": "FaaS",
+        "isCorrect": false,
+        "meaning": "Function-as-a-Service (Serverless) executing code in response to ephemeral events."
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Cloud Computing",
+      "Virtualization",
+      "Infrastructure"
+    ],
+    "createdAt": 1715054140000,
+    "updatedAt": 1715054140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-667",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which cloud service model provides a platform for developers to build and deploy applications without managing the underlying infrastructure?",
+    "back": "PaaS (Platform as a Service)",
+    "explanation": "PaaS (Platform as a Service) provides cloud development environments, runtime engines, and database backends, freeing developers from hardware, OS, and server patching overhead.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IaaS",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this question context."
+      },
+      {
+        "id": "B",
+        "text": "PaaS (Platform as a Service)",
+        "isCorrect": true,
+        "meaning": "Provides managed runtime environment and development tools without OS overhead."
+      },
+      {
+        "id": "C",
+        "text": "SaaS",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this question context."
+      },
+      {
+        "id": "D",
+        "text": "DaaS",
+        "isCorrect": false,
+        "meaning": "Desktop-as-a-Service delivering cloud-hosted virtual desktops."
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Cloud Computing",
+      "Virtualization",
+      "Infrastructure"
+    ],
+    "createdAt": 1715054200000,
+    "updatedAt": 1715054200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-668",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which cloud service model delivers ready-to-use software applications over the internet on a subscription basis?",
+    "back": "SaaS (Software as a Service)",
+    "explanation": "SaaS (Software as a Service) provides complete, ready-to-use software hosted in the cloud and accessible through a web browser or lightweight client on a subscription basis.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IaaS",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this question context."
+      },
+      {
+        "id": "B",
+        "text": "PaaS",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this question context."
+      },
+      {
+        "id": "C",
+        "text": "SaaS (Software as a Service)",
+        "isCorrect": true,
+        "meaning": "Delivers ready-to-run applications over the internet to end users on demand."
+      },
+      {
+        "id": "D",
+        "text": "BaaS",
+        "isCorrect": false,
+        "meaning": "Backend-as-a-Service providing pre-built mobile app backends and authentication."
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Cloud Computing",
+      "Virtualization",
+      "Infrastructure"
+    ],
+    "createdAt": 1715054260000,
+    "updatedAt": 1715054260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-669",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which layer of the OSI model is responsible for routing packets between different networks?",
+    "back": "Network layer",
+    "explanation": "The Network Layer (Layer 3 of OSI) handles logical addressing (IPv4/IPv6), packet routing, fragmentation, and traffic steering across multiple interconnected networks.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Data Link layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 2 responsible for node-to-node frame delivery and MAC addressing."
+      },
+      {
+        "id": "B",
+        "text": "Transport layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 4 responsible for reliable end-to-end transport, flow control, and error correction."
+      },
+      {
+        "id": "C",
+        "text": "Session layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 5 responsible for opening, managing, and terminating communication sessions."
+      },
+      {
+        "id": "D",
+        "text": "Network layer",
+        "isCorrect": true,
+        "meaning": "OSI Layer 3 responsible for packet routing, logical IP addressing, and path determination."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715054320000,
+    "updatedAt": 1715054320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-670",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which layer of the OSI model is responsible for reliable, end-to-end delivery of data between hosts?",
+    "back": "Transport layer",
+    "explanation": "The Transport Layer (Layer 4 of OSI) manages end-to-end communication, segmentation, flow control, error recovery, and reliable transmission (TCP) or fast datagram delivery (UDP).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Network layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 3 responsible for packet routing, logical IP addressing, and path determination."
+      },
+      {
+        "id": "B",
+        "text": "Session layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 5 responsible for opening, managing, and terminating communication sessions."
+      },
+      {
+        "id": "C",
+        "text": "Transport layer",
+        "isCorrect": true,
+        "meaning": "OSI Layer 4 responsible for reliable end-to-end transport, flow control, and error correction."
+      },
+      {
+        "id": "D",
+        "text": "Presentation layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 6 responsible for syntax translation, data compression, and encryption."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715054380000,
+    "updatedAt": 1715054380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-671",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which network device operates at the Data Link layer and forwards frames based on MAC addresses?",
+    "back": "Switch",
+    "explanation": "A Network Switch functions at Layer 2 (Data Link layer) and intelligently forwards frames directly to destination ports based on hardware MAC addresses stored in its CAM table.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Switch",
+        "isCorrect": true,
+        "meaning": "Layer 2 device forwarding frames based on hardware MAC addresses."
+      },
+      {
+        "id": "B",
+        "text": "Router",
+        "isCorrect": false,
+        "meaning": "Layer 3 device routing packets between distinct IP networks."
+      },
+      {
+        "id": "C",
+        "text": "Hub",
+        "isCorrect": false,
+        "meaning": "Legacy Layer 1 multiport repeater that blindly broadcasts incoming signals to all ports."
+      },
+      {
+        "id": "D",
+        "text": "Gateway",
+        "isCorrect": false,
+        "meaning": "Device or node converting protocols between disparate network architectures."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715054440000,
+    "updatedAt": 1715054440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-672",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which network device operates at the Network layer and forwards traffic between different networks using IP addresses?",
+    "back": "Router",
+    "explanation": "A Router operates at Layer 3 (Network layer) and examines destination IP addresses to forward network packets across distinct subnets and networks.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Switch",
+        "isCorrect": false,
+        "meaning": "Layer 2 device forwarding frames based on hardware MAC addresses."
+      },
+      {
+        "id": "B",
+        "text": "Router",
+        "isCorrect": true,
+        "meaning": "Layer 3 device routing packets between distinct IP networks."
+      },
+      {
+        "id": "C",
+        "text": "Hub",
+        "isCorrect": false,
+        "meaning": "Legacy Layer 1 multiport repeater that blindly broadcasts incoming signals to all ports."
+      },
+      {
+        "id": "D",
+        "text": "Repeater",
+        "isCorrect": false,
+        "meaning": "Layer 1 physical device that regenerates and amplifies electrical signals."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715054500000,
+    "updatedAt": 1715054500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-673",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "An attacker floods a web server with an overwhelming volume of traffic so legitimate users cannot access it. What type of attack is this?",
+    "back": "DDoS (Distributed Denial of Service)",
+    "explanation": "A DDoS (Distributed Denial of Service) attack harnesses a distributed botnet of compromised devices to flood a server's network bandwidth or processing capacity, rendering services unavailable.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Phishing",
+        "isCorrect": false,
+        "meaning": "Fraudulent communications masquerading as trustworthy entities to steal user credentials."
+      },
+      {
+        "id": "B",
+        "text": "SQL Injection",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this question context."
+      },
+      {
+        "id": "C",
+        "text": "Man-in-the-middle",
+        "isCorrect": false,
+        "meaning": "Eavesdropping and tampering with in-flight transmissions between two hosts."
+      },
+      {
+        "id": "D",
+        "text": "DDoS (Distributed Denial of Service)",
+        "isCorrect": true,
+        "meaning": "Flooding a target server with distributed botnet traffic to disrupt availability."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715054560000,
+    "updatedAt": 1715054560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-674",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "An attacker secretly intercepts and possibly alters communication between two parties who believe they are communicating directly with each other. What is this attack called?",
+    "back": "Man-in-the-middle attack",
+    "explanation": "A Man-in-the-Middle (MitM) attack occurs when an adversary secretly relays, intercepts, or alters messages between two parties who believe they are communicating directly.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Phishing",
+        "isCorrect": false,
+        "meaning": "Fraudulent communications masquerading as trustworthy entities to steal user credentials."
+      },
+      {
+        "id": "B",
+        "text": "DDoS",
+        "isCorrect": false,
+        "meaning": "Distributed Denial of Service traffic flood knocking targets offline."
+      },
+      {
+        "id": "C",
+        "text": "Man-in-the-middle attack",
+        "isCorrect": true,
+        "meaning": "Secretly intercepting and potentially modifying communications between two parties."
+      },
+      {
+        "id": "D",
+        "text": "Ransomware",
+        "isCorrect": false,
+        "meaning": "Malware that encrypts target files and demands extortion payments for decryption."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715054620000,
+    "updatedAt": 1715054620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-675",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "An attacker sends fraudulent emails that appear to come from a trusted source to trick users into revealing sensitive information. What is this attack called?",
+    "back": "Phishing",
+    "explanation": "Phishing uses deceptive social engineering emails impersonating legitimate entities (banks, employers) to harvest passwords, credit cards, or sensitive corporate credentials.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Phishing",
+        "isCorrect": true,
+        "meaning": "Fraudulent communications masquerading as trustworthy entities to steal user credentials."
+      },
+      {
+        "id": "B",
+        "text": "DDoS",
+        "isCorrect": false,
+        "meaning": "Distributed Denial of Service traffic flood knocking targets offline."
+      },
+      {
+        "id": "C",
+        "text": "Man-in-the-middle",
+        "isCorrect": false,
+        "meaning": "Eavesdropping and tampering with in-flight transmissions between two hosts."
+      },
+      {
+        "id": "D",
+        "text": "Brute force attack",
+        "isCorrect": false,
+        "meaning": "Systematic automated trial of all password combinations."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715054680000,
+    "updatedAt": 1715054680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-676",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which type of malware encrypts a victim's files and demands payment in exchange for the decryption key?",
+    "back": "Ransomware",
+    "explanation": "Ransomware is malicious software that encrypts user documents and system files using strong cryptography, demanding cryptocurrency payments in exchange for decryption keys.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Worm",
+        "isCorrect": false,
+        "meaning": "Standalone self-replicating malware propagating across networks without user execution."
+      },
+      {
+        "id": "B",
+        "text": "Ransomware",
+        "isCorrect": true,
+        "meaning": "Malware that encrypts target files and demands extortion payments for decryption."
+      },
+      {
+        "id": "C",
+        "text": "Trojan",
+        "isCorrect": false,
+        "meaning": "Malware masquerading as legitimate software to trick users into installation."
+      },
+      {
+        "id": "D",
+        "text": "Spyware",
+        "isCorrect": false,
+        "meaning": "Malware secretly tracking user activity, keystrokes, and personal data."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715054740000,
+    "updatedAt": 1715054740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-677",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which type of malware self-replicates and spreads across a network without requiring any user action?",
+    "back": "Worm",
+    "explanation": "A Computer Worm is self-propagating malware that replicates independently across networks by exploiting system vulnerabilities without needing a host file or user execution.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Virus",
+        "isCorrect": false,
+        "meaning": "Malware that requires user activation and attaches itself to clean host files to spread."
+      },
+      {
+        "id": "B",
+        "text": "Trojan",
+        "isCorrect": false,
+        "meaning": "Malware masquerading as legitimate software to trick users into installation."
+      },
+      {
+        "id": "C",
+        "text": "Adware",
+        "isCorrect": false,
+        "meaning": "Software that automatically renders unwanted advertising material."
+      },
+      {
+        "id": "D",
+        "text": "Worm",
+        "isCorrect": true,
+        "meaning": "Standalone self-replicating malware propagating across networks without user execution."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715054800000,
+    "updatedAt": 1715054800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-678",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which type of malware disguises itself as legitimate software to trick users into installing it?",
+    "back": "Trojan",
+    "explanation": "A Trojan horse disguises itself as benign, legitimate utility software (like a game or cracked program) to entice users into executing malicious payload routines.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Trojan",
+        "isCorrect": true,
+        "meaning": "Malware masquerading as legitimate software to trick users into installation."
+      },
+      {
+        "id": "B",
+        "text": "Worm",
+        "isCorrect": false,
+        "meaning": "Standalone self-replicating malware propagating across networks without user execution."
+      },
+      {
+        "id": "C",
+        "text": "Virus",
+        "isCorrect": false,
+        "meaning": "Malware that requires user activation and attaches itself to clean host files to spread."
+      },
+      {
+        "id": "D",
+        "text": "Rootkit",
+        "isCorrect": false,
+        "meaning": "Stealth malware granting privileged administrative control while hiding from OS detection."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715054860000,
+    "updatedAt": 1715054860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-679",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which security mechanism filters incoming and outgoing network traffic based on a defined set of rules?",
+    "back": "Firewall",
+    "explanation": "A Firewall inspects and filters incoming and outgoing network traffic based on configured security rules (stateful inspection, port blocking, IP filtering).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Antivirus",
+        "isCorrect": false,
+        "meaning": "Software designed to detect, quarantine, and eliminate known malicious software signatures."
+      },
+      {
+        "id": "B",
+        "text": "VPN",
+        "isCorrect": false,
+        "meaning": "Encrypted tunnel protecting network traffic across untrusted public networks."
+      },
+      {
+        "id": "C",
+        "text": "Firewall",
+        "isCorrect": true,
+        "meaning": "Security barrier filtering incoming/outgoing packets according to security policies."
+      },
+      {
+        "id": "D",
+        "text": "IDS",
+        "isCorrect": false,
+        "meaning": "Intrusion Detection System monitoring traffic and logging security policy alerts."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715054920000,
+    "updatedAt": 1715054920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-680",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which system continuously monitors network traffic for suspicious activity and alerts administrators, without necessarily blocking it?",
+    "back": "Intrusion Detection System (IDS)",
+    "explanation": "An Intrusion Detection System (IDS) passively monitors packet traffic and system logs for known malicious signatures or policy violations, triggering alerts for security personnel.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Firewall",
+        "isCorrect": false,
+        "meaning": "Security barrier filtering incoming/outgoing packets according to security policies."
+      },
+      {
+        "id": "B",
+        "text": "Intrusion Detection System (IDS)",
+        "isCorrect": true,
+        "meaning": "Passive monitoring appliance raising alarms on malicious network traffic."
+      },
+      {
+        "id": "C",
+        "text": "VPN",
+        "isCorrect": false,
+        "meaning": "Encrypted tunnel protecting network traffic across untrusted public networks."
+      },
+      {
+        "id": "D",
+        "text": "DNS server",
+        "isCorrect": false,
+        "meaning": "Server dedicated to resolving domain queries into IP addresses."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715054980000,
+    "updatedAt": 1715054980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715054980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-681",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which encryption approach uses the same key for both encrypting and decrypting data?",
+    "back": "Symmetric encryption",
+    "explanation": "Symmetric encryption utilizes a single shared secret cryptographic key for both encryption and decryption operations (e.g. AES, DES, ChaCha20).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Symmetric encryption",
+        "isCorrect": true,
+        "meaning": "Encryption system using the identical secret key for encrypting and decrypting."
+      },
+      {
+        "id": "B",
+        "text": "Asymmetric encryption",
+        "isCorrect": false,
+        "meaning": "Cryptographic system using paired public and private mathematical keys."
+      },
+      {
+        "id": "C",
+        "text": "Hashing",
+        "isCorrect": false,
+        "meaning": "Deterministic one-way algorithm generating a fixed-size checksum to prove integrity."
+      },
+      {
+        "id": "D",
+        "text": "Digital signature",
+        "isCorrect": false,
+        "meaning": "Cryptographic mechanism proving authenticity and non-repudiation of messages."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715055040000,
+    "updatedAt": 1715055040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-682",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which encryption approach uses a mathematically linked public key and private key pair?",
+    "back": "Asymmetric encryption",
+    "explanation": "Asymmetric encryption uses mathematically bound key pairs: a public key for encryption/signature verification and a private secret key for decryption/signing (e.g. RSA, ECC).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Symmetric encryption",
+        "isCorrect": false,
+        "meaning": "Encryption system using the identical secret key for encrypting and decrypting."
+      },
+      {
+        "id": "B",
+        "text": "Hashing",
+        "isCorrect": false,
+        "meaning": "Deterministic one-way algorithm generating a fixed-size checksum to prove integrity."
+      },
+      {
+        "id": "C",
+        "text": "Salting",
+        "isCorrect": false,
+        "meaning": "Appending random characters to passwords prior to hashing to defeat rainbow table attacks."
+      },
+      {
+        "id": "D",
+        "text": "Asymmetric encryption",
+        "isCorrect": true,
+        "meaning": "Cryptographic system using paired public and private mathematical keys."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715055100000,
+    "updatedAt": 1715055100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-683",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which process converts data into a fixed-size, irreversible output primarily used to verify data integrity?",
+    "back": "Hashing",
+    "explanation": "Cryptographic Hashing transforms arbitrary-length input data into a fixed-length mathematical digest (e.g. SHA-256) through a deterministic, one-way function used for integrity verification.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Encryption",
+        "isCorrect": false,
+        "meaning": "Scrambling plaintext into ciphertext using cryptographic algorithms."
+      },
+      {
+        "id": "B",
+        "text": "Hashing",
+        "isCorrect": true,
+        "meaning": "Deterministic one-way algorithm generating a fixed-size checksum to prove integrity."
+      },
+      {
+        "id": "C",
+        "text": "Compression",
+        "isCorrect": false,
+        "meaning": "Reducing the binary footprint of files without providing cryptographic security."
+      },
+      {
+        "id": "D",
+        "text": "Encoding",
+        "isCorrect": false,
+        "meaning": "Transforming data into standard representations (e.g. Base64) for transmission; easily reversible."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715055160000,
+    "updatedAt": 1715055160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-684",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which cloud deployment model is shared by several organizations that have common concerns, such as compliance requirements?",
+    "back": "Community Cloud",
+    "explanation": "A Community Cloud is shared among several organizations possessing common regulatory, security, or mission requirements (e.g. healthcare consortiums or government agencies).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public Cloud",
+        "isCorrect": false,
+        "meaning": "Multi-tenant cloud infrastructure owned by a third-party provider and open to public use."
+      },
+      {
+        "id": "B",
+        "text": "Community Cloud",
+        "isCorrect": true,
+        "meaning": "Cloud infrastructure shared among organizations with common mission or regulatory needs."
+      },
+      {
+        "id": "C",
+        "text": "Private Cloud",
+        "isCorrect": false,
+        "meaning": "Dedicated infrastructure exclusively provisioned for a single organization."
+      },
+      {
+        "id": "D",
+        "text": "Hybrid Cloud",
+        "isCorrect": false,
+        "meaning": "Composite infrastructure bridging private on-premise resources and public cloud services."
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Cloud Computing",
+      "Virtualization",
+      "Infrastructure"
+    ],
+    "createdAt": 1715055220000,
+    "updatedAt": 1715055220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-685",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which cloud deployment model combines private and public cloud resources, allowing data and applications to move between them?",
+    "back": "Hybrid Cloud",
+    "explanation": "Hybrid Cloud architectures blend on-premise private infrastructure or private cloud with public cloud providers, allowing automated workload portability via orchestration.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Public Cloud",
+        "isCorrect": false,
+        "meaning": "Multi-tenant cloud infrastructure owned by a third-party provider and open to public use."
+      },
+      {
+        "id": "B",
+        "text": "Private Cloud",
+        "isCorrect": false,
+        "meaning": "Dedicated infrastructure exclusively provisioned for a single organization."
+      },
+      {
+        "id": "C",
+        "text": "Community Cloud",
+        "isCorrect": false,
+        "meaning": "Cloud infrastructure shared among organizations with common mission or regulatory needs."
+      },
+      {
+        "id": "D",
+        "text": "Hybrid Cloud",
+        "isCorrect": true,
+        "meaning": "Composite infrastructure bridging private on-premise resources and public cloud services."
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Cloud Computing",
+      "Virtualization",
+      "Infrastructure"
+    ],
+    "createdAt": 1715055280000,
+    "updatedAt": 1715055280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-686",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol is used to securely transfer files over a network, encrypting both commands and data?",
+    "back": "SFTP",
+    "explanation": "SFTP (SSH File Transfer Protocol) runs securely over an SSH channel (port 22), encrypting both control instructions and transferred payload files.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "FTP",
+        "isCorrect": false,
+        "meaning": "File Transfer Protocol that transmits credentials and files unencrypted over port 21."
+      },
+      {
+        "id": "B",
+        "text": "SFTP",
+        "isCorrect": true,
+        "meaning": "SSH File Transfer Protocol providing encrypted file management and transport over port 22."
+      },
+      {
+        "id": "C",
+        "text": "Telnet",
+        "isCorrect": false,
+        "meaning": "Legacy unencrypted command-line protocol sending usernames and passwords in cleartext."
+      },
+      {
+        "id": "D",
+        "text": "SNMP",
+        "isCorrect": false,
+        "meaning": "Simple Network Management Protocol used for monitoring network devices."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715055340000,
+    "updatedAt": 1715055340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-687",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which port number is conventionally used by HTTPS traffic?",
+    "back": "443",
+    "explanation": "TCP port 443 is the standard default port assigned by IANA for encrypted HTTPS traffic.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "21",
+        "isCorrect": false,
+        "meaning": "Standard port for FTP command control."
+      },
+      {
+        "id": "B",
+        "text": "25",
+        "isCorrect": false,
+        "meaning": "Standard port for plain SMTP mail transfer."
+      },
+      {
+        "id": "C",
+        "text": "80",
+        "isCorrect": false,
+        "meaning": "Standard port for unencrypted HTTP web traffic."
+      },
+      {
+        "id": "D",
+        "text": "443",
+        "isCorrect": true,
+        "meaning": "Standard port for encrypted HTTPS traffic."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715055400000,
+    "updatedAt": 1715055400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-688",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which port number is conventionally used by unencrypted HTTP traffic?",
+    "back": "80",
+    "explanation": "TCP port 80 is the standard default port assigned for unencrypted HTTP traffic.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "21",
+        "isCorrect": false,
+        "meaning": "Standard port for FTP command control."
+      },
+      {
+        "id": "B",
+        "text": "80",
+        "isCorrect": true,
+        "meaning": "Standard port for unencrypted HTTP web traffic."
+      },
+      {
+        "id": "C",
+        "text": "443",
+        "isCorrect": false,
+        "meaning": "Standard port for encrypted HTTPS traffic."
+      },
+      {
+        "id": "D",
+        "text": "110",
+        "isCorrect": false,
+        "meaning": "Standard port for unencrypted POP3 email retrieval."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715055460000,
+    "updatedAt": 1715055460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-689",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol translates human-readable domain names into IP addresses?",
+    "back": "DNS",
+    "explanation": "DNS (Domain Name System) acts as the phonebook of the internet, resolving human-readable domain names (e.g. `example.com`) into routable IP addresses.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DHCP",
+        "isCorrect": false,
+        "meaning": "Dynamically allocates IP addresses and configuration settings to network devices."
+      },
+      {
+        "id": "B",
+        "text": "ARP",
+        "isCorrect": false,
+        "meaning": "Address Resolution Protocol resolving Layer 3 IP addresses to Layer 2 MAC addresses."
+      },
+      {
+        "id": "C",
+        "text": "DNS",
+        "isCorrect": true,
+        "meaning": "Translates human-readable domain names into numerical IP addresses."
+      },
+      {
+        "id": "D",
+        "text": "SNMP",
+        "isCorrect": false,
+        "meaning": "Simple Network Management Protocol used for monitoring network devices."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715055520000,
+    "updatedAt": 1715055520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-690",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol automatically assigns IP addresses to devices when they join a network?",
+    "back": "DHCP",
+    "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically allocates and leases IP addresses, subnet masks, default gateways, and DNS servers to client devices on network connection.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DHCP",
+        "isCorrect": true,
+        "meaning": "Dynamically allocates IP addresses and configuration settings to network devices."
+      },
+      {
+        "id": "B",
+        "text": "DNS",
+        "isCorrect": false,
+        "meaning": "Translates human-readable domain names into numerical IP addresses."
+      },
+      {
+        "id": "C",
+        "text": "ARP",
+        "isCorrect": false,
+        "meaning": "Address Resolution Protocol resolving Layer 3 IP addresses to Layer 2 MAC addresses."
+      },
+      {
+        "id": "D",
+        "text": "NAT",
+        "isCorrect": false,
+        "meaning": "Network Address Translation mapping private addresses to a public internet address."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715055580000,
+    "updatedAt": 1715055580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-691",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "An attacker forges the source IP address of packets to impersonate a trusted host. What is this attack called?",
+    "back": "IP Spoofing",
+    "explanation": "IP Spoofing involves modifying the source IP header of a packet to mimic an authorized machine, bypassing IP-based access controls or masking DDoS origin.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IP Spoofing",
+        "isCorrect": true,
+        "meaning": "Forging packet source IP addresses to bypass access controls or hide origin."
+      },
+      {
+        "id": "B",
+        "text": "Packet Sniffing",
+        "isCorrect": false,
+        "meaning": "Capturing data packets off a network segment using an analyzer tool."
+      },
+      {
+        "id": "C",
+        "text": "Phishing",
+        "isCorrect": false,
+        "meaning": "Fraudulent communications masquerading as trustworthy entities to steal user credentials."
+      },
+      {
+        "id": "D",
+        "text": "Traffic Flooding",
+        "isCorrect": false,
+        "meaning": "Generic transmission of high volumes of packets to consume capacity."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715055640000,
+    "updatedAt": 1715055640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-692",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which technology allows multiple devices on a private network to share a single public IP address when accessing the internet?",
+    "back": "NAT (Network Address Translation)",
+    "explanation": "NAT (Network Address Translation) remaps multiple private RFC 1918 IPv4 addresses onto a single public IP address when communicating over the internet.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "VPN",
+        "isCorrect": false,
+        "meaning": "Encrypted tunnel protecting network traffic across untrusted public networks."
+      },
+      {
+        "id": "B",
+        "text": "DHCP",
+        "isCorrect": false,
+        "meaning": "Dynamically allocates IP addresses and configuration settings to network devices."
+      },
+      {
+        "id": "C",
+        "text": "DNS",
+        "isCorrect": false,
+        "meaning": "Translates human-readable domain names into numerical IP addresses."
+      },
+      {
+        "id": "D",
+        "text": "NAT (Network Address Translation)",
+        "isCorrect": true,
+        "meaning": "Translates private network IP addresses into a public internet IP address."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715055700000,
+    "updatedAt": 1715055700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-693",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which core information security principle ensures that data has not been altered by an unauthorized party while in transit?",
+    "back": "Integrity",
+    "explanation": "Integrity (the 'I' in the CIA triad) guarantees that information remains accurate, unaltered, and complete during transmission or storage.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Confidentiality",
+        "isCorrect": false,
+        "meaning": "Security principle preventing unauthorized viewing of private data."
+      },
+      {
+        "id": "B",
+        "text": "Availability",
+        "isCorrect": false,
+        "meaning": "Security principle ensuring authorized users have timely access to resources."
+      },
+      {
+        "id": "C",
+        "text": "Authentication",
+        "isCorrect": false,
+        "meaning": "Process of verifying that an identity claim is valid."
+      },
+      {
+        "id": "D",
+        "text": "Integrity",
+        "isCorrect": true,
+        "meaning": "Security principle guaranteeing data remains unmodified and authentic."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715055760000,
+    "updatedAt": 1715055760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-694",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which core information security principle ensures that systems and data are accessible to authorized users whenever needed?",
+    "back": "Availability",
+    "explanation": "Availability (the 'A' in the CIA triad) ensures that systems, services, and data are timely and reliably accessible to authorized personnel whenever required.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Availability",
+        "isCorrect": true,
+        "meaning": "Security principle ensuring authorized users have timely access to resources."
+      },
+      {
+        "id": "B",
+        "text": "Confidentiality",
+        "isCorrect": false,
+        "meaning": "Security principle preventing unauthorized viewing of private data."
+      },
+      {
+        "id": "C",
+        "text": "Integrity",
+        "isCorrect": false,
+        "meaning": "Security principle guaranteeing data remains unmodified and authentic."
+      },
+      {
+        "id": "D",
+        "text": "Non-repudiation",
+        "isCorrect": false,
+        "meaning": "Assurance that the author of a message or transaction cannot deny their authorship."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715055820000,
+    "updatedAt": 1715055820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-695",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which core information security principle ensures that only authorized parties can view sensitive data?",
+    "back": "Confidentiality",
+    "explanation": "Confidentiality (the 'C' in the CIA triad) ensures that private information is shielded from unauthorized observation or disclosure.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Integrity",
+        "isCorrect": false,
+        "meaning": "Security principle guaranteeing data remains unmodified and authentic."
+      },
+      {
+        "id": "B",
+        "text": "Confidentiality",
+        "isCorrect": true,
+        "meaning": "Security principle preventing unauthorized viewing of private data."
+      },
+      {
+        "id": "C",
+        "text": "Availability",
+        "isCorrect": false,
+        "meaning": "Security principle ensuring authorized users have timely access to resources."
+      },
+      {
+        "id": "D",
+        "text": "Authentication",
+        "isCorrect": false,
+        "meaning": "Process of verifying that an identity claim is valid."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715055880000,
+    "updatedAt": 1715055880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-696",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Multi-factor authentication typically combines which two categories of authentication factors?",
+    "back": "Something you know and something you have",
+    "explanation": "Multi-Factor Authentication (MFA) requires two or more distinct validation categories: something you know (password/PIN) and something you have (security key/SMS token).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Something you know and something you have",
+        "isCorrect": true,
+        "meaning": "Standard two-factor pairing combining a secret credential with a physical token."
+      },
+      {
+        "id": "B",
+        "text": "Only passwords, used twice",
+        "isCorrect": false,
+        "meaning": "Flawed single-factor scheme relying solely on knowledge factors."
+      },
+      {
+        "id": "C",
+        "text": "Only biometric scans",
+        "isCorrect": false,
+        "meaning": "Single-factor biometric authentication ('something you are')."
+      },
+      {
+        "id": "D",
+        "text": "Only one-time tokens",
+        "isCorrect": false,
+        "meaning": "Single-factor possession token without password knowledge factor."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715055940000,
+    "updatedAt": 1715055940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715055940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-697",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which security concept ensures that the sender of a message cannot later deny having sent it?",
+    "back": "Non-repudiation",
+    "explanation": "Non-repudiation provides indisputable cryptographic proof (typically via digital signatures) that a sender originated a transmission, preventing subsequent denial.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Non-repudiation",
+        "isCorrect": true,
+        "meaning": "Assurance that the author of a message or transaction cannot deny their authorship."
+      },
+      {
+        "id": "B",
+        "text": "Confidentiality",
+        "isCorrect": false,
+        "meaning": "Security principle preventing unauthorized viewing of private data."
+      },
+      {
+        "id": "C",
+        "text": "Availability",
+        "isCorrect": false,
+        "meaning": "Security principle ensuring authorized users have timely access to resources."
+      },
+      {
+        "id": "D",
+        "text": "Anonymity",
+        "isCorrect": false,
+        "meaning": "Concealing the real identity of a user across transactions."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715056000000,
+    "updatedAt": 1715056000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-698",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which protocol provides secure, encrypted remote command-line access to a server, replacing the insecure Telnet?",
+    "back": "SSH",
+    "explanation": "SSH (Secure Shell) provides encrypted command-line shell access, port forwarding, and cryptographic server management over port 22, superseding plaintext Telnet.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Telnet",
+        "isCorrect": false,
+        "meaning": "Legacy unencrypted command-line protocol sending usernames and passwords in cleartext."
+      },
+      {
+        "id": "B",
+        "text": "SSH",
+        "isCorrect": true,
+        "meaning": "Secure Shell providing encrypted command-line login and administration."
+      },
+      {
+        "id": "C",
+        "text": "RDP",
+        "isCorrect": false,
+        "meaning": "Remote Desktop Protocol providing graphical remote desktop access to Windows systems."
+      },
+      {
+        "id": "D",
+        "text": "SNMP",
+        "isCorrect": false,
+        "meaning": "Simple Network Management Protocol used for monitoring network devices."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715056060000,
+    "updatedAt": 1715056060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-699",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which OSI layer is responsible for the physical transmission of raw bits over a cable or wireless medium?",
+    "back": "Physical layer",
+    "explanation": "The Physical Layer (Layer 1 of OSI) deals with raw bit transmission over physical media, specifications of cables, connectors, pinouts, and electrical/radio signaling.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Data Link layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 2 responsible for node-to-node frame delivery and MAC addressing."
+      },
+      {
+        "id": "B",
+        "text": "Network layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 3 responsible for packet routing, logical IP addressing, and path determination."
+      },
+      {
+        "id": "C",
+        "text": "Physical layer",
+        "isCorrect": true,
+        "meaning": "OSI Layer 1 responsible for bit-level transmission across physical media."
+      },
+      {
+        "id": "D",
+        "text": "Transport layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 4 responsible for reliable end-to-end transport, flow control, and error correction."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715056120000,
+    "updatedAt": 1715056120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-700",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which OSI layer establishes, manages and terminates communication sessions between applications?",
+    "back": "Session layer",
+    "explanation": "The Session Layer (Layer 5 of OSI) initiates, synchronizes, checkpoints, and terminates dialogues and communication connections between distributed applications.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Presentation layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 6 responsible for syntax translation, data compression, and encryption."
+      },
+      {
+        "id": "B",
+        "text": "Application layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 7 providing network services directly to end-user software."
+      },
+      {
+        "id": "C",
+        "text": "Transport layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 4 responsible for reliable end-to-end transport, flow control, and error correction."
+      },
+      {
+        "id": "D",
+        "text": "Session layer",
+        "isCorrect": true,
+        "meaning": "OSI Layer 5 responsible for opening, managing, and terminating communication sessions."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715056180000,
+    "updatedAt": 1715056180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-701",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which OSI layer translates, encrypts or compresses data so the Application layer can interpret it correctly?",
+    "back": "Presentation layer",
+    "explanation": "The Presentation Layer (Layer 6 of OSI) translates data formats (e.g. ASCII to EBCDIC), serializes data structures, and handles cryptographic encryption/compression.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Presentation layer",
+        "isCorrect": true,
+        "meaning": "OSI Layer 6 responsible for syntax translation, data compression, and encryption."
+      },
+      {
+        "id": "B",
+        "text": "Session layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 5 responsible for opening, managing, and terminating communication sessions."
+      },
+      {
+        "id": "C",
+        "text": "Physical layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 1 responsible for bit-level transmission across physical media."
+      },
+      {
+        "id": "D",
+        "text": "Data Link layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 2 responsible for node-to-node frame delivery and MAC addressing."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715056240000,
+    "updatedAt": 1715056240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-702",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which OSI layer is the one that end-user protocols like HTTP, FTP and SMTP operate at?",
+    "back": "Application layer",
+    "explanation": "The Application Layer (Layer 7 of OSI) interfaces directly with software applications, containing user-level protocols like HTTP, SMTP, FTP, and DNS.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Presentation layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 6 responsible for syntax translation, data compression, and encryption."
+      },
+      {
+        "id": "B",
+        "text": "Application layer",
+        "isCorrect": true,
+        "meaning": "OSI Layer 7 providing network services directly to end-user software."
+      },
+      {
+        "id": "C",
+        "text": "Session layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 5 responsible for opening, managing, and terminating communication sessions."
+      },
+      {
+        "id": "D",
+        "text": "Network layer",
+        "isCorrect": false,
+        "meaning": "OSI Layer 3 responsible for packet routing, logical IP addressing, and path determination."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715056300000,
+    "updatedAt": 1715056300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-703",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which attack systematically tries every possible password combination until the correct one is found?",
+    "back": "Brute Force Attack",
+    "explanation": "A Brute Force attack methodically iterates through every permutation of character strings until finding the correct password or cryptographic key.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Phishing",
+        "isCorrect": false,
+        "meaning": "Fraudulent communications masquerading as trustworthy entities to steal user credentials."
+      },
+      {
+        "id": "B",
+        "text": "Man-in-the-middle",
+        "isCorrect": false,
+        "meaning": "Eavesdropping and tampering with in-flight transmissions between two hosts."
+      },
+      {
+        "id": "C",
+        "text": "Brute Force Attack",
+        "isCorrect": true,
+        "meaning": "Exhaustively testing every character sequence to crack credentials."
+      },
+      {
+        "id": "D",
+        "text": "DNS Spoofing",
+        "isCorrect": false,
+        "meaning": "Injecting fraudulent IP entries into DNS caches to divert users to malicious sites."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715056360000,
+    "updatedAt": 1715056360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-704",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which type of authorized security testing simulates a real attack against a system to uncover vulnerabilities?",
+    "back": "Penetration Testing",
+    "explanation": "Penetration Testing (pen-testing or ethical hacking) is an authorized simulated cyberattack assessing the security posture and exploitable weaknesses of an IT infrastructure.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Load Testing",
+        "isCorrect": false,
+        "meaning": "Performance testing measuring system stability under extreme traffic volume."
+      },
+      {
+        "id": "B",
+        "text": "Regression Testing",
+        "isCorrect": false,
+        "meaning": "Software testing verifying that new code changes have not broken existing features."
+      },
+      {
+        "id": "C",
+        "text": "Unit Testing",
+        "isCorrect": false,
+        "meaning": "Testing individual functions or modules in software isolation."
+      },
+      {
+        "id": "D",
+        "text": "Penetration Testing",
+        "isCorrect": true,
+        "meaning": "Authorized simulated attack against infrastructure to uncover exploitable flaws."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715056420000,
+    "updatedAt": 1715056420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-705",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "What term describes a previously unknown software vulnerability for which no patch yet exists?",
+    "back": "Zero-day vulnerability",
+    "explanation": "A Zero-Day vulnerability is a security flaw that is known to developers or actively exploited by attackers but has no vendor-issued security patch available yet.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Zero-day vulnerability",
+        "isCorrect": true,
+        "meaning": "Software security vulnerability unknown to developers with no patch released."
+      },
+      {
+        "id": "B",
+        "text": "Legacy bug",
+        "isCorrect": false,
+        "meaning": "Known historical software bug that remains unaddressed."
+      },
+      {
+        "id": "C",
+        "text": "Known exploit",
+        "isCorrect": false,
+        "meaning": "Documented exploit code targeting an existing, published vulnerability."
+      },
+      {
+        "id": "D",
+        "text": "Patch gap",
+        "isCorrect": false,
+        "meaning": "Time period between vendor patch release and customer application."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715056480000,
+    "updatedAt": 1715056480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-706",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which cloud security concept defines which security tasks belong to the cloud provider versus the customer?",
+    "back": "Shared Responsibility Model",
+    "explanation": "The Shared Responsibility Model defines the division of security obligations between cloud service providers (security OF the cloud) and customers (security IN the cloud).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Zero Trust Model",
+        "isCorrect": false,
+        "meaning": "Security concept requiring continuous authentication ('never trust, always verify')."
+      },
+      {
+        "id": "B",
+        "text": "Shared Responsibility Model",
+        "isCorrect": true,
+        "meaning": "Framework detailing security responsibilities split between cloud vendor and customer."
+      },
+      {
+        "id": "C",
+        "text": "Least Privilege Model",
+        "isCorrect": false,
+        "meaning": "Principle granting users only the minimum access rights needed for their role."
+      },
+      {
+        "id": "D",
+        "text": "Defense in Depth",
+        "isCorrect": false,
+        "meaning": "Multilayered defense strategy ensuring secondary safeguards hold if one perimeter fails."
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Cloud Computing",
+      "Virtualization",
+      "Infrastructure"
+    ],
+    "createdAt": 1715056540000,
+    "updatedAt": 1715056540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-707",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which lightweight virtualization technology packages an application with its dependencies while sharing the host OS kernel?",
+    "back": "Containers",
+    "explanation": "Containers (e.g. Docker) share the host operating system kernel and isolate applications into lightweight user-space packages, offering faster boot times than virtual machines.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Virtual Machines",
+        "isCorrect": false,
+        "meaning": "Hardware-level virtualization running full independent guest operating systems via hypervisor."
+      },
+      {
+        "id": "B",
+        "text": "Bare-metal servers",
+        "isCorrect": false,
+        "meaning": "Dedicated physical servers without any hypervisor virtualization layer."
+      },
+      {
+        "id": "C",
+        "text": "Containers",
+        "isCorrect": true,
+        "meaning": "Lightweight virtualized packages sharing the host kernel for rapid microservice deployment."
+      },
+      {
+        "id": "D",
+        "text": "Hypervisors",
+        "isCorrect": false,
+        "meaning": "Software or firmware that creates and manages virtual machines."
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Cloud Computing",
+      "Virtualization",
+      "Infrastructure"
+    ],
+    "createdAt": 1715056600000,
+    "updatedAt": 1715056600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-708",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which technology uses a hypervisor to run multiple independent operating systems on a single physical machine?",
+    "back": "Virtual Machines",
+    "explanation": "Virtual Machines (VMs) run full independent guest operating systems on virtualized hardware abstracted by a Type 1 or Type 2 hypervisor.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Containers",
+        "isCorrect": false,
+        "meaning": "Lightweight virtualized packages sharing the host kernel for rapid microservice deployment."
+      },
+      {
+        "id": "B",
+        "text": "Serverless functions",
+        "isCorrect": false,
+        "meaning": "Event-driven stateless compute blocks managed entirely by cloud providers."
+      },
+      {
+        "id": "C",
+        "text": "Microservices",
+        "isCorrect": false,
+        "meaning": "Architectural approach structuring applications into small autonomous services."
+      },
+      {
+        "id": "D",
+        "text": "Virtual Machines",
+        "isCorrect": true,
+        "meaning": "Hardware-level virtualization running full independent guest operating systems via hypervisor."
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Cloud Computing",
+      "Virtualization",
+      "Infrastructure"
+    ],
+    "createdAt": 1715056660000,
+    "updatedAt": 1715056660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-709",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "A DDoS attack that overwhelms a specific application resource, such as repeatedly requesting a slow web page, is known as what?",
+    "back": "Application-layer DDoS attack",
+    "explanation": "An Application-Layer DDoS (Layer 7 attack) targets web servers by sending legitimate-appearing HTTP requests (e.g. HTTP GET floods) that exhaust backend CPU and database worker pools.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Application-layer DDoS attack",
+        "isCorrect": true,
+        "meaning": "Targeted attack sending resource-heavy requests against application logic."
+      },
+      {
+        "id": "B",
+        "text": "Network-layer flood",
+        "isCorrect": false,
+        "meaning": "Volumetric attack (SYN/UDP flood) saturating network interface bandwidth."
+      },
+      {
+        "id": "C",
+        "text": "ARP poisoning",
+        "isCorrect": false,
+        "meaning": "Sending forged ARP responses to redirect local subnet traffic to an attacker."
+      },
+      {
+        "id": "D",
+        "text": "DNS cache poisoning",
+        "isCorrect": false,
+        "meaning": "Corrupting DNS resolver caches with false IP addresses."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715056720000,
+    "updatedAt": 1715056720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-710",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which authentication factor category is satisfied by a physical hardware token or key fob the user carries?",
+    "back": "Something you have",
+    "explanation": "'Something you have' refers to a possession-based authentication factor, such as a hardware FIDO2 token, smartcard, or phone-based authenticator app.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Something you know",
+        "isCorrect": false,
+        "meaning": "Knowledge authentication factor such as passwords, passphrases, or PINs."
+      },
+      {
+        "id": "B",
+        "text": "Something you have",
+        "isCorrect": true,
+        "meaning": "Possession authentication factor such as a hardware token, key fob, or phone."
+      },
+      {
+        "id": "C",
+        "text": "Something you are",
+        "isCorrect": false,
+        "meaning": "Inherent biometric authentication factor like fingerprints or facial recognition."
+      },
+      {
+        "id": "D",
+        "text": "Somewhere you are",
+        "isCorrect": false,
+        "meaning": "Location authentication factor verified via GPS, IP geolocation, or cell tower."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715056780000,
+    "updatedAt": 1715056780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-711",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "What is it called when an attacker uses a phone call to trick someone into revealing confidential information?",
+    "back": "Vishing",
+    "explanation": "Vishing (Voice Phishing) is social engineering conducted over telephone calls or VoIP, where attackers impersonate officials or technicians to extract credentials.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Smishing",
+        "isCorrect": false,
+        "meaning": "SMS text message phishing tricking recipients into revealing credentials or clicking links."
+      },
+      {
+        "id": "B",
+        "text": "Spear phishing",
+        "isCorrect": false,
+        "meaning": "Highly personalized phishing attack targeting a specific individual or organization."
+      },
+      {
+        "id": "C",
+        "text": "Vishing",
+        "isCorrect": true,
+        "meaning": "Voice phishing utilizing telephone communications to deceive victims."
+      },
+      {
+        "id": "D",
+        "text": "Whaling",
+        "isCorrect": false,
+        "meaning": "Spear phishing aimed at high-profile executives or corporate board members."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715056840000,
+    "updatedAt": 1715056840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-712",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "What is it called when an attacker uses SMS text messages to trick someone into revealing confidential information or clicking a malicious link?",
+    "back": "Smishing",
+    "explanation": "Smishing (SMS Phishing) utilizes deceptive text messages with phishing links or urgent financial warnings to lure victims into revealing credentials.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Vishing",
+        "isCorrect": false,
+        "meaning": "Voice phishing utilizing telephone communications to deceive victims."
+      },
+      {
+        "id": "B",
+        "text": "Pharming",
+        "isCorrect": false,
+        "meaning": "Redirecting website traffic to bogus spoofed sites by altering DNS records."
+      },
+      {
+        "id": "C",
+        "text": "Baiting",
+        "isCorrect": false,
+        "meaning": "Leaving infected physical media (USB drives) in public to entice curious victims."
+      },
+      {
+        "id": "D",
+        "text": "Smishing",
+        "isCorrect": true,
+        "meaning": "SMS text message phishing tricking recipients into revealing credentials or clicking links."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715056900000,
+    "updatedAt": 1715056900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-713",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which Wi-Fi security standard replaced the weaker TKIP cipher with the stronger AES-CCMP encryption scheme?",
+    "back": "WPA2",
+    "explanation": "WPA2 replaced the vulnerable RC4-based TKIP cipher with robust AES (Advanced Encryption Standard) encryption operating in Counter Mode with CBC-MAC (CCMP).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WPA2",
+        "isCorrect": true,
+        "meaning": "Standard Wi-Fi security protocol utilizing AES-CCMP encryption."
+      },
+      {
+        "id": "B",
+        "text": "WEP",
+        "isCorrect": false,
+        "meaning": "Legacy, heavily broken wireless protocol with weak RC4 encryption susceptible to trivial cracking."
+      },
+      {
+        "id": "C",
+        "text": "WPA",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this question context."
+      },
+      {
+        "id": "D",
+        "text": "TKIP-only mode",
+        "isCorrect": false,
+        "meaning": "Legacy insecure mode lacking AES hardware acceleration and security guarantees."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715056960000,
+    "updatedAt": 1715056960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715056960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-714",
+    "deckId": "deck-networking",
+    "type": "mcq",
+    "front": "Which network topology connects every device to a central hub or switch?",
+    "back": "Star topology",
+    "explanation": "In a Star topology, all network endpoints connect via individual point-to-point links to a central network switch or hub.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Bus topology",
+        "isCorrect": false,
+        "meaning": "Linear network architecture connecting all devices along a single shared backbone cable."
+      },
+      {
+        "id": "B",
+        "text": "Star topology",
+        "isCorrect": true,
+        "meaning": "Network architecture connecting all devices directly to a central hub or switch."
+      },
+      {
+        "id": "C",
+        "text": "Ring topology",
+        "isCorrect": false,
+        "meaning": "Network architecture where each device connects to two neighbors forming a closed loop."
+      },
+      {
+        "id": "D",
+        "text": "Mesh topology",
+        "isCorrect": false,
+        "meaning": "Redundant network architecture connecting devices to multiple other nodes."
+      }
+    ],
+    "tags": [
+      "Networking",
+      "Protocols",
+      "OSI Model",
+      "TCP/IP"
+    ],
+    "createdAt": 1715057020000,
+    "updatedAt": 1715057020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-715",
+    "deckId": "deck-cloud",
+    "type": "mcq",
+    "front": "Which essential characteristic of cloud computing allows a customer to provision computing resources automatically without human interaction from the provider?",
+    "back": "On-demand self-service",
+    "explanation": "On-demand self-service allows cloud consumers to unilaterally provision server compute time, storage, and networking without requiring human interaction from the cloud provider.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Resource pooling",
+        "isCorrect": false,
+        "meaning": "Provider resources pooled to serve multiple consumers using a multi-tenant model."
+      },
+      {
+        "id": "B",
+        "text": "Measured service",
+        "isCorrect": false,
+        "meaning": "Cloud resource usage monitored, controlled, and billed based on consumption."
+      },
+      {
+        "id": "C",
+        "text": "On-demand self-service",
+        "isCorrect": true,
+        "meaning": "Cloud capability allowing users to provision resources automatically without provider assistance."
+      },
+      {
+        "id": "D",
+        "text": "Rapid elasticity",
+        "isCorrect": false,
+        "meaning": "Capabilities elastically provisioned and scaled automatically to match demand."
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Cloud Computing",
+      "Virtualization",
+      "Infrastructure"
+    ],
+    "createdAt": 1715057080000,
+    "updatedAt": 1715057080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-716",
+    "deckId": "deck-security",
+    "type": "mcq",
+    "front": "Which security strategy layers multiple independent defenses (firewall, encryption, access control, monitoring) so that if one fails, others still protect the system?",
+    "back": "Defense in Depth",
+    "explanation": "Defense in Depth is a comprehensive security strategy deploying multiple redundant defense layers (perimeter firewalls, endpoint EDR, least privilege, encryption) so no single failure compromises the system.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Defense in Depth",
+        "isCorrect": true,
+        "meaning": "Multilayered defense strategy ensuring secondary safeguards hold if one perimeter fails."
+      },
+      {
+        "id": "B",
+        "text": "Single Sign-On",
+        "isCorrect": false,
+        "meaning": "Authentication session permitting a user to access multiple systems with one login."
+      },
+      {
+        "id": "C",
+        "text": "Zero Trust",
+        "isCorrect": false,
+        "meaning": "Security paradigm requiring continuous verification for every access request."
+      },
+      {
+        "id": "D",
+        "text": "Least Privilege",
+        "isCorrect": false,
+        "meaning": "Enforcing the minimum authorization necessary for users to perform job functions."
+      }
+    ],
+    "tags": [
+      "Security",
+      "Cybersecurity",
+      "Threats",
+      "Encryption",
+      "Defense"
+    ],
+    "createdAt": 1715057140000,
+    "updatedAt": 1715057140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-717",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "10 15",
+    "codeSnippet": "Integer a, b\\nSet a = 5, b = 10\\nb = a + b\\na = b - a\\nPrint a, b",
+    "codeLanguage": "pseudocode",
+    "explanation": "1. Initially `a = 5`, `b = 10`.\n2. `b = a + b` => `b = 5 + 10 = 15`.\n3. `a = b - a` => `a = 15 - 5 = 10`.\n4. Output: `a, b` prints `10 15`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "15 10",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "10 15",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "C",
+        "text": "5 15",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "15 15",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057200000,
+    "updatedAt": 1715057200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-718",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "16",
+    "codeSnippet": "Integer x = 2\\nFor i = 1 to 3\\n    x = x * 2\\nEnd For\\nPrint x",
+    "codeLanguage": "pseudocode",
+    "explanation": "1. Initially `x = 2`.\n2. Loop `i = 1`: `x = 2 * 2 = 4`.\n3. Loop `i = 2`: `x = 4 * 2 = 8`.\n4. Loop `i = 3`: `x = 8 * 2 = 16`.\n5. Output: `16`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "16",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "32",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "12",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057260000,
+    "updatedAt": 1715057260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-719",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "6",
+    "codeSnippet": "Integer sum = 0\\nFor i = 1 to 5\\n    If i MOD 2 = 0 Then\\n        sum = sum + i\\n    End If\\nEnd For\\nPrint sum",
+    "codeLanguage": "pseudocode",
+    "explanation": "1. Loop `i` runs from 1 to 5.\n2. When `i = 2`: `2 MOD 2 = 0` => `sum = 0 + 2 = 2`.\n3. When `i = 4`: `4 MOD 2 = 0` => `sum = 2 + 4 = 6`.\n4. Odd numbers (1, 3, 5) fail the check.\n5. Output: `6`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "9",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "15",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "6",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057320000,
+    "updatedAt": 1715057320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-720",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "24",
+    "codeSnippet": "Integer n = 4\\nInteger fact = 1\\nFor i = 1 to n\\n    fact = fact * i\\nEnd For\\nPrint fact",
+    "codeLanguage": "pseudocode",
+    "explanation": "1. Computes factorial of 4: `fact = 1 * 2 * 3 * 4 = 24`.\n2. Output: `24`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "12",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "16",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "24",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "D",
+        "text": "20",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057380000,
+    "updatedAt": 1715057380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-721",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (bitwise AND)",
+    "back": "3",
+    "codeSnippet": "Integer a = 3, b = 7, c\\nc = a AND b\\nPrint c",
+    "codeLanguage": "pseudocode",
+    "explanation": "Bitwise AND operation on `3` and `7`:\n`3` in binary is `0011`\n`7` in binary is `0111`\n`0011 AND 0111 = 0011` (which is decimal 3).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "7",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "10",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057440000,
+    "updatedAt": 1715057440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-722",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (bitwise OR)",
+    "back": "7",
+    "codeSnippet": "Integer a = 5, b = 3, c\\nc = a OR b\\nPrint c",
+    "codeLanguage": "pseudocode",
+    "explanation": "Bitwise OR operation on `5` and `3`:\n`5` in binary is `0101`\n`3` in binary is `0011`\n`0101 OR 0011 = 0111` (which is decimal 7).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "7",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "C",
+        "text": "3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057500000,
+    "updatedAt": 1715057500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-723",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (bitwise XOR)",
+    "back": "5",
+    "codeSnippet": "Integer a = 6, b = 3, c\\nc = a XOR b\\nPrint c",
+    "codeLanguage": "pseudocode",
+    "explanation": "Bitwise XOR operation on `6` and `3`:\n`6` in binary is `0110`\n`3` in binary is `0011`\n`0110 XOR 0011 = 0101` (which is decimal 5).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "9",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "D",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057560000,
+    "updatedAt": 1715057560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-724",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "-2",
+    "codeSnippet": "Integer x = 10\\nWhile x > 0\\n    x = x - 3\\nEnd While\\nPrint x",
+    "codeLanguage": "pseudocode",
+    "explanation": "1. `x = 10`.\n2. Iteration 1: `x > 0` => `x = 10 - 3 = 7`.\n3. Iteration 2: `x > 0` => `x = 7 - 3 = 4`.\n4. Iteration 3: `x > 0` => `x = 4 - 3 = 1`.\n5. Iteration 4: `x > 0` => `x = 1 - 3 = -2`.\n6. `x <= 0`, loop terminates. Output: `-2`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "0",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "-3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "-2",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057620000,
+    "updatedAt": 1715057620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-725",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "3",
+    "codeSnippet": "Integer count = 0\\nFor i = 1 to 10\\n    If i MOD 3 = 0 Then\\n        count = count + 1\\n    End If\\nEnd For\\nPrint count",
+    "codeLanguage": "pseudocode",
+    "explanation": "Counts multiples of 3 between 1 and 10:\nNumbers divisible by 3 are `3, 6, 9` (total 3 numbers).\nOutput: `3`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "4",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "2",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057680000,
+    "updatedAt": 1715057680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-726",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "9",
+    "codeSnippet": "String s = \\\"Accenture\\\"\\nPrint LENGTH(s)",
+    "codeLanguage": "pseudocode",
+    "explanation": "String `\"Accenture\"` has 9 characters: `A-c-c-e-n-t-u-r-e`. `LENGTH(\"Accenture\")` returns `9`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "9",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "C",
+        "text": "10",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "7",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057740000,
+    "updatedAt": 1715057740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-727",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "5 2",
+    "codeSnippet": "Integer a = 2, b = 5\\nInteger temp\\ntemp = a\\na = b\\nb = temp\\nPrint a, b",
+    "codeLanguage": "pseudocode",
+    "explanation": "Standard 3-variable swap:\n`temp = a` (2)\n`a = b` (5)\n`b = temp` (2)\nOutput: `a, b` prints `5 2`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "2 5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "2 2",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "5 2",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "D",
+        "text": "5 5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057800000,
+    "updatedAt": 1715057800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-728",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "15",
+    "codeSnippet": "Integer arr[5] = {1,2,3,4,5}\\nInteger sum = 0\\nFor i = 0 to 4\\n    sum = sum + arr[i]\\nEnd For\\nPrint sum",
+    "codeLanguage": "pseudocode",
+    "explanation": "Sum of array `{1, 2, 3, 4, 5}`:\n`1 + 2 + 3 + 4 + 5 = 15`.\nOutput: `15`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "10",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "20",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "14",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "15",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057860000,
+    "updatedAt": 1715057860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-729",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "20",
+    "codeSnippet": "Function square(x)\\n    Return x * x\\nEnd Function\\nPrint square(4) + square(2)",
+    "codeLanguage": "pseudocode",
+    "explanation": "`square(4) = 4 * 4 = 16`\n`square(2) = 2 * 2 = 4`\nSum = `16 + 4 = 20`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "20",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "16",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "24",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "18",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057920000,
+    "updatedAt": 1715057920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-730",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "11",
+    "codeSnippet": "Integer a = 1\\nFor i = 1 to 4\\n    a = a + i\\nEnd For\\nPrint a",
+    "codeLanguage": "pseudocode",
+    "explanation": "1. `a = 1` initially.\n2. `i = 1`: `a = 1 + 1 = 2`.\n3. `i = 2`: `a = 2 + 2 = 4`.\n4. `i = 3`: `a = 4 + 3 = 7`.\n5. `i = 4`: `a = 7 + 4 = 11`.\n6. Output: `11`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "10",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "11",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "C",
+        "text": "12",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "9",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715057980000,
+    "updatedAt": 1715057980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715057980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-731",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "Valid",
+    "codeSnippet": "Integer x = 15\\nIf x > 10 AND x < 20 Then\\n    Print \\\"Valid\\\"\\nElse\\n    Print \\\"Invalid\\\"\\nEnd If",
+    "codeLanguage": "pseudocode",
+    "explanation": "`x = 15`. Condition `(15 > 10 AND 15 < 20)` evaluates to `True AND True = True`.\nHence, prints `\"Valid\"`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Invalid",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "Error",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "Valid",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "D",
+        "text": "Null",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058040000,
+    "updatedAt": 1715058040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-732",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "Positive",
+    "codeSnippet": "Integer x = 5, y = 0\\nIf x > 0 OR y > 0 Then\\n    Print \\\"Positive\\\"\\nElse\\n    Print \\\"NonPositive\\\"\\nEnd If",
+    "codeLanguage": "pseudocode",
+    "explanation": "`x = 5, y = 0`. Condition `(5 > 0 OR 0 > 0)` evaluates to `True OR False = True`.\nHence, prints `\"Positive\"`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "NonPositive",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "Both",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "Error",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "Positive",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058100000,
+    "updatedAt": 1715058100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-733",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "10",
+    "codeSnippet": "Integer i = 0, sum = 0\\nWhile i < 5\\n    sum = sum + i\\n    i = i + 1\\nEnd While\\nPrint sum",
+    "codeLanguage": "pseudocode",
+    "explanation": "Sum of first 5 non-negative integers (`0 + 1 + 2 + 3 + 4 = 10`).\nWhen `i = 5`, loop terminates. Output: `10`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "10",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "15",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "9",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058160000,
+    "updatedAt": 1715058160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-734",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "4",
+    "codeSnippet": "Integer n = 7\\nInteger result = 0\\nDo\\n    result = result + 1\\n    n = n - 2\\nWhile n > 0\\nPrint result",
+    "codeLanguage": "pseudocode",
+    "explanation": "1. Do-While loop executes body before checking condition.\n2. Iter 1: `result = 1`, `n = 7 - 2 = 5` (5 > 0: continue).\n3. Iter 2: `result = 2`, `n = 5 - 2 = 3` (3 > 0: continue).\n4. Iter 3: `result = 3`, `n = 3 - 2 = 1` (1 > 0: continue).\n5. Iter 4: `result = 4`, `n = 1 - 2 = -1` (-1 <= 0: terminate).\nOutput: `4`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "4",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "7",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058220000,
+    "updatedAt": 1715058220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-735",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "30",
+    "codeSnippet": "Integer a = 10, b = 20, c = 30\\nInteger max\\nmax = a\\nIf b > max Then max = b\\nIf c > max Then max = c\\nPrint max",
+    "codeLanguage": "pseudocode",
+    "explanation": "Finds the maximum of `a = 10, b = 20, c = 30`.\nInitial `max = 10` -> updated to `20` -> updated to `30`.\nOutput: `30`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "20",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "10",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "30",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058280000,
+    "updatedAt": 1715058280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-736",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (exponent operator)",
+    "back": "8",
+    "codeSnippet": "Integer x = 2\\nx = x ^ 3\\nPrint x",
+    "codeLanguage": "pseudocode",
+    "explanation": "`^` denotes exponentiation here: `2 ^ 3 = 2 * 2 * 2 = 8`.\nOutput: `8`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "9",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "16",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058340000,
+    "updatedAt": 1715058340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-737",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (integer division)",
+    "back": "1",
+    "codeSnippet": "Integer a = 100\\nWhile a > 1\\n    a = a / 2\\nEnd While\\nPrint a",
+    "codeLanguage": "pseudocode",
+    "explanation": "Repeated integer halving starting at `100`:\n100 -> 50 -> 25 -> 12 -> 6 -> 3 -> 1.\nWhen `a = 1`, condition `a > 1` is False. Loop terminates. Output: `1`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "0",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "2",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058400000,
+    "updatedAt": 1715058400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-738",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "5",
+    "codeSnippet": "Integer count = 0\\nFor i = 10 downto 1 step -2\\n    count = count + 1\\nEnd For\\nPrint count",
+    "codeLanguage": "pseudocode",
+    "explanation": "Loop counts down from 10 to 1 with step `-2`:\nValues of `i`: `10, 8, 6, 4, 2` (5 iterations).\nOutput: `5`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "4",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "5",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "10",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058460000,
+    "updatedAt": 1715058460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-739",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "Right Triangle",
+    "codeSnippet": "Integer a = 3, b = 4, c = 5\\nIf (a*a + b*b) = (c*c) Then\\n    Print \\\"Right Triangle\\\"\\nElse\\n    Print \\\"Not Right Triangle\\\"\\nEnd If",
+    "codeLanguage": "pseudocode",
+    "explanation": "Checks the Pythagorean theorem: `(3*3 + 4*4) = (9 + 16) = 25`, and `(5*5) = 25`.\nSince `25 = 25`, prints `\"Right Triangle\"`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Not Right Triangle",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "Equal",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "Right Triangle",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "D",
+        "text": "Error",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058520000,
+    "updatedAt": 1715058520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-740",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "1",
+    "codeSnippet": "Integer x = 7\\nPrint x MOD 2",
+    "codeLanguage": "pseudocode",
+    "explanation": "`7 MOD 2` computes the remainder of 7 divided by 2:\n`7 = 3 * 2 + 1`, remainder is `1`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "0",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "7",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "1",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058580000,
+    "updatedAt": 1715058580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-741",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (integer division)",
+    "back": "2",
+    "codeSnippet": "Integer a = 8, b = 3\\nPrint a DIV b",
+    "codeLanguage": "pseudocode",
+    "explanation": "`a DIV b` computes integer quotient:\n`8 / 3 = 2` with remainder 2. Integer division returns `2`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "2",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "1",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058640000,
+    "updatedAt": 1715058640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-742",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "Hello World",
+    "codeSnippet": "String s = \\\"Hello\\\"\\nPrint s + \\\" World\\\"",
+    "codeLanguage": "pseudocode",
+    "explanation": "String concatenation: `\"Hello\" + \" World\" = \"Hello World\"`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "HelloWorld",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "Hello World",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "C",
+        "text": "World Hello",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "Hello",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058700000,
+    "updatedAt": 1715058700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-743",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "6",
+    "codeSnippet": "Integer total = 0\\nFor i = 1 to 3\\n    For j = 1 to 2\\n        total = total + 1\\n    End For\\nEnd For\\nPrint total",
+    "codeLanguage": "pseudocode",
+    "explanation": "Nested loops: outer loop runs 3 times (`i = 1 to 3`), inner loop runs 2 times (`j = 1 to 2`).\nTotal iterations = `3 * 2 = 6`.\nOutput: `6`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "9",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "D",
+        "text": "3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058760000,
+    "updatedAt": 1715058760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-744",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "Yes",
+    "codeSnippet": "Boolean flag = True\\nIf NOT flag Then\\n    Print \\\"No\\\"\\nElse\\n    Print \\\"Yes\\\"\\nEnd If",
+    "codeLanguage": "pseudocode",
+    "explanation": "`flag = True`. `NOT flag` evaluates to `False`. The Else branch executes and prints `\"Yes\"`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "No",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "True",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "False",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "Yes",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058820000,
+    "updatedAt": 1715058820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-745",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (left shift)",
+    "back": "10",
+    "codeSnippet": "Integer a = 5\\na = a << 1\\nPrint a",
+    "codeLanguage": "pseudocode",
+    "explanation": "Bitwise left shift: `5 << 1` shifts binary `0101` left by 1 bit to `1010` (equivalent to multiplying by 2: `5 * 2 = 10`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "10",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "2",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "20",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058880000,
+    "updatedAt": 1715058880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-746",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (right shift)",
+    "back": "2",
+    "codeSnippet": "Integer a = 8\\na = a >> 2\\nPrint a",
+    "codeLanguage": "pseudocode",
+    "explanation": "Bitwise right shift: `8 >> 2` shifts binary `1000` right by 2 bits to `0010` (equivalent to dividing by 4: `8 / 4 = 2`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "4",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "2",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "C",
+        "text": "1",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715058940000,
+    "updatedAt": 1715058940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715058940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-747",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "120",
+    "codeSnippet": "Integer x = 1\\nFor i = 1 to 5\\n    x = x * i\\nEnd For\\nPrint x",
+    "codeLanguage": "pseudocode",
+    "explanation": "Calculates factorial of 5: `1 * 1 * 2 * 3 * 4 * 5 = 120`.\nOutput: `120`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "60",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "24",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "120",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "D",
+        "text": "100",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059000000,
+    "updatedAt": 1715059000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-748",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "8",
+    "codeSnippet": "Integer arr[4] = {2,4,6,8}\\nInteger max = arr[0]\\nFor i = 1 to 3\\n    If arr[i] > max Then\\n        max = arr[i]\\n    End If\\nEnd For\\nPrint max",
+    "codeLanguage": "pseudocode",
+    "explanation": "Finds the maximum element in array `{2, 4, 6, 8}`:\nScans through array and identifies `8` as the largest element.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "4",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "2",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059060000,
+    "updatedAt": 1715059060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-749",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "120",
+    "codeSnippet": "Integer n = 5, result = 1\\nInteger i = n\\nWhile i > 1\\n    result = result * i\\n    i = i - 1\\nEnd While\\nPrint result",
+    "codeLanguage": "pseudocode",
+    "explanation": "Computes `5 * 4 * 3 * 2 = 120` using a descending while loop.\nOutput: `120`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "120",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "24",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "60",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "20",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059120000,
+    "updatedAt": 1715059120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-750",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "10",
+    "codeSnippet": "Integer x = 4, y = 2, z\\nz = x / y + x * y\\nPrint z",
+    "codeLanguage": "pseudocode",
+    "explanation": "Operator precedence: Division and Multiplication have higher precedence than Addition.\n`x / y = 4 / 2 = 2`\n`x * y = 4 * 2 = 8`\n`z = 2 + 8 = 10`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "10",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "12",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059180000,
+    "updatedAt": 1715059180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-751",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "4",
+    "codeSnippet": "Integer count = 0\\nFor i = 1 to 20\\n    If i MOD 5 = 0 Then\\n        count = count + 1\\n    End If\\nEnd For\\nPrint count",
+    "codeLanguage": "pseudocode",
+    "explanation": "Counts numbers divisible by 5 between 1 and 20:\nMultiples are `5, 10, 15, 20` (total 4 numbers).\nOutput: `4`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "4",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "D",
+        "text": "2",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059240000,
+    "updatedAt": 1715059240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-752",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "30",
+    "codeSnippet": "Integer a = 0\\nFor i = 1 to 4\\n    a = a + (i * i)\\nEnd For\\nPrint a",
+    "codeLanguage": "pseudocode",
+    "explanation": "Sum of squares of 1 to 4:\n`1\u00b2 + 2\u00b2 + 3\u00b2 + 4\u00b2 = 1 + 4 + 9 + 16 = 30`.\nOutput: `30`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "20",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "25",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "16",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "30",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059300000,
+    "updatedAt": 1715059300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-753",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "10",
+    "codeSnippet": "String s = \\\"12345\\\"\\nPrint LENGTH(s) * 2",
+    "codeLanguage": "pseudocode",
+    "explanation": "`LENGTH(\"12345\") = 5`. `5 * 2 = 10`.\nOutput: `10`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "10",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "12",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059360000,
+    "updatedAt": 1715059360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-754",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "6",
+    "codeSnippet": "Integer a = 15, b = 4\\nPrint (a MOD b) + (a DIV b)",
+    "codeLanguage": "pseudocode",
+    "explanation": "`a = 15, b = 4`:\n`15 MOD 4 = 3` (remainder)\n`15 DIV 4 = 3` (integer quotient)\n`3 + 3 = 6`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "7",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "6",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "4",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059420000,
+    "updatedAt": 1715059420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-755",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "10",
+    "codeSnippet": "Integer x = 3\\nInteger y = (x + 2) * (x - 1)\\nPrint y",
+    "codeLanguage": "pseudocode",
+    "explanation": "Given `x = 3`:\n`(x + 2) = (3 + 2) = 5`\n`(x - 1) = (3 - 1) = 2`\n`y = 5 * 2 = 10`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "12",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "10",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "D",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059480000,
+    "updatedAt": 1715059480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-756",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "18",
+    "codeSnippet": "Integer a = 2, b = 3, c = 4\\nPrint (a + b) * c - a",
+    "codeLanguage": "pseudocode",
+    "explanation": "Given `a = 2, b = 3, c = 4`:\n`(a + b) * c - a = (2 + 3) * 4 - 2 = 5 * 4 - 2 = 20 - 2 = 18`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "20",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "B",
+        "text": "16",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "22",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "18",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059540000,
+    "updatedAt": 1715059540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-757",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "2",
+    "codeSnippet": "Integer a = 10, b = 4\\nPrint a - b * 2",
+    "codeLanguage": "pseudocode",
+    "explanation": "Operator precedence: multiplication before subtraction.\n`b * 2 = 4 * 2 = 8`\n`a - 8 = 10 - 8 = 2`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "2",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "12",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059600000,
+    "updatedAt": 1715059600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-758",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "25",
+    "codeSnippet": "Integer x = 2, y = 3, z\\nz = (x + y) * (x + y)\\nPrint z",
+    "codeLanguage": "pseudocode",
+    "explanation": "Given `x = 2, y = 3`:\n`(x + y) = (2 + 3) = 5`\n`z = 5 * 5 = 25`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "25",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "15",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "10",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "30",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059660000,
+    "updatedAt": 1715059660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-759",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "9",
+    "codeSnippet": "Integer count = 0\\nFor i = 1 to 6\\n    If i MOD 2 = 0 Then\\n        count = count + 2\\n    Else\\n        count = count + 1\\n    End If\\nEnd For\\nPrint count",
+    "codeLanguage": "pseudocode",
+    "explanation": "Loop `i = 1 to 6`:\nWhen `i` is odd (1, 3, 5): count increases by 1 each time (+3 total).\nWhen `i` is even (2, 4, 6): count increases by 2 each time (+6 total).\nTotal `count = 3 + 6 = 9`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "9",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "12",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059720000,
+    "updatedAt": 1715059720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-760",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (Fibonacci trace)",
+    "back": "13",
+    "codeSnippet": "Integer a = 1, b = 1, c\\nFor i = 1 to 5\\n    c = a + b\\n    a = b\\n    b = c\\nEnd For\\nPrint c",
+    "codeLanguage": "pseudocode",
+    "explanation": "Fibonacci sequence tracing:\nInitial: `a = 1, b = 1`\n`i = 1`: `c = 1 + 1 = 2`, `a = 1`, `b = 2`\n`i = 2`: `c = 1 + 2 = 3`, `a = 2`, `b = 3`\n`i = 3`: `c = 2 + 3 = 5`, `a = 3`, `b = 5`\n`i = 4`: `c = 3 + 5 = 8`, `a = 5`, `b = 8`\n`i = 5`: `c = 5 + 8 = 13`, `a = 8`, `b = 13`\nOutput: `13`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "13",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "21",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059780000,
+    "updatedAt": 1715059780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-761",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (integer division)",
+    "back": "4",
+    "codeSnippet": "Integer x = 20\\nInteger y = 0\\nWhile x > 1\\n    x = x / 2\\n    y = y + 1\\nEnd While\\nPrint y",
+    "codeLanguage": "pseudocode",
+    "explanation": "Halving loop with counter:\n1. `x = 20, y = 0`\n2. `x = 10, y = 1`\n3. `x = 5, y = 2`\n4. `x = 2, y = 3`\n5. `x = 1, y = 4`\nWhen `x = 1`, `x > 1` is False. Loop ends. Output: `4`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "4",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059840000,
+    "updatedAt": 1715059840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-762",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "120",
+    "codeSnippet": "Integer arr[3] = {10,20,30}\\nInteger sum = 0\\nFor i = 0 to 2\\n    sum = sum + arr[i] * 2\\nEnd For\\nPrint sum",
+    "codeLanguage": "pseudocode",
+    "explanation": "Array elements `{10, 20, 30}`, each multiplied by 2 and summed:\n`sum = (10 * 2) + (20 * 2) + (30 * 2) = 20 + 40 + 60 = 120`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "120",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "60",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "90",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "100",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059900000,
+    "updatedAt": 1715059900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-763",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "8",
+    "codeSnippet": "String s = \\\"Programming\\\"\\nPrint LENGTH(s) - 3",
+    "codeLanguage": "pseudocode",
+    "explanation": "`\"Programming\"` has 11 characters. `LENGTH(s) - 3 = 11 - 3 = 8`.\nOutput: `8`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "9",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "7",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "11",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715059960000,
+    "updatedAt": 1715059960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715059960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-764",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (bitwise XOR)",
+    "back": "5",
+    "codeSnippet": "Integer a = 7, b = 2\\nPrint a XOR b",
+    "codeLanguage": "pseudocode",
+    "explanation": "Bitwise XOR between 7 and 2:\n`7 = 0111` in binary\n`2 = 0010` in binary\n`0111 XOR 0010 = 0101` in binary (decimal 5).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "5",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "9",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "7",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060020000,
+    "updatedAt": 1715060020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-765",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "27",
+    "codeSnippet": "Integer x = 3\\nInteger y = 1\\nFor i = 1 to 3\\n    y = y * x\\nEnd For\\nPrint y",
+    "codeLanguage": "pseudocode",
+    "explanation": "Powers of 3 loop:\nInitial: `y = 1, x = 3`\n`i = 1`: `y = 1 * 3 = 3`\n`i = 2`: `y = 3 * 3 = 9`\n`i = 3`: `y = 9 * 3 = 27`\nOutput: `27`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "27",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "9",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "81",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "18",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060080000,
+    "updatedAt": 1715060080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-766",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "0 5",
+    "codeSnippet": "Integer a = 50, b = 0\\nWhile a >= 10\\n    a = a - 10\\n    b = b + 1\\nEnd While\\nPrint a, b",
+    "codeLanguage": "pseudocode",
+    "explanation": "Repeated subtraction representing integer division:\nSubtracts 10 from 50 five times until `a = 0` and `b = 5`.\nCondition `a >= 10` is False when `a = 0`.\nOutput: `0 5`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "0 5",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "10 4",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "0 4",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "10 5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060140000,
+    "updatedAt": 1715060140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-767",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "35",
+    "codeSnippet": "Integer total = 0\\nFor i = 1 to 5\\n    If i MOD 2 <> 0 Then\\n        total = total + (i*i)\\n    End If\\nEnd For\\nPrint total",
+    "codeLanguage": "pseudocode",
+    "explanation": "Sum of squares of odd numbers from 1 to 5:\nOdd numbers: 1, 3, 5\n`1\u00b2 + 3\u00b2 + 5\u00b2 = 1 + 9 + 25 = 35`.\nOutput: `35`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "35",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "30",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "25",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "40",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060200000,
+    "updatedAt": 1715060200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-768",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (Euclid's GCD)",
+    "back": "4",
+    "codeSnippet": "Integer a = 8, b = 12\\nWhile b <> 0\\n    Integer temp = b\\n    b = a MOD b\\n    a = temp\\nEnd While\\nPrint a",
+    "codeLanguage": "pseudocode",
+    "explanation": "Euclidean algorithm for Greatest Common Divisor (GCD) of 8 and 12:\nIter 1: `temp = 12`, `b = 8 MOD 12 = 8`, `a = 12`\nIter 2: `temp = 8`, `b = 12 MOD 8 = 4`, `a = 8`\nIter 3: `temp = 4`, `b = 8 MOD 4 = 0`, `a = 4`\nWhen `b = 0`, loop ends. Output: `4`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "4",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "2",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "12",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060260000,
+    "updatedAt": 1715060260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-769",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "True",
+    "codeSnippet": "Integer x = 5\\nPrint (x > 0) AND (x < 10)",
+    "codeLanguage": "pseudocode",
+    "explanation": "`x = 5`. `(5 > 0) AND (5 < 10)` evaluates to `True AND True = True`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "True",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "False",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060320000,
+    "updatedAt": 1715060320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-770",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "False",
+    "codeSnippet": "Integer n = 6\\nBoolean isPrime = True\\nFor i = 2 to n - 1\\n    If n MOD i = 0 Then\\n        isPrime = False\\n    End If\\nEnd For\\nPrint isPrime",
+    "codeLanguage": "pseudocode",
+    "explanation": "Primality test on `n = 6`:\nLoop checks `i = 2`: `6 MOD 2 = 0`, so `isPrime` is set to `False`.\nPrints `False`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "False",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "True",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "Error",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060380000,
+    "updatedAt": 1715060380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-771",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "65536",
+    "codeSnippet": "Integer a = 2\\nFor i = 1 to 4\\n    a = a * a\\nEnd For\\nPrint a",
+    "codeLanguage": "pseudocode",
+    "explanation": "Repeated squaring:\nInitial: `a = 2`\n`i = 1`: `a = 2 * 2 = 4`\n`i = 2`: `a = 4 * 4 = 16`\n`i = 3`: `a = 16 * 16 = 256`\n`i = 4`: `a = 256 * 256 = 65536`\nOutput: `65536`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "65536",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "256",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "16",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "1024",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060440000,
+    "updatedAt": 1715060440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-772",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (integer division)",
+    "back": "7",
+    "codeSnippet": "Integer count = 0\\nInteger i = 100\\nWhile i > 0\\n    count = count + 1\\n    i = i / 2\\nEnd While\\nPrint count",
+    "codeLanguage": "pseudocode",
+    "explanation": "Integer division by 2 loop starting from 100:\nValues of `i`: 100 (c=1), 50 (c=2), 25 (c=3), 12 (c=4), 6 (c=5), 3 (c=6), 1 (c=7), 0 (loop ends).\nTotal iterations = 7. Output: `7`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "7",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060500000,
+    "updatedAt": 1715060500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-773",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "3",
+    "codeSnippet": "Integer a = 3, b = 5, c = 7\\nPrint (a + b + c) MOD 4",
+    "codeLanguage": "pseudocode",
+    "explanation": "`a + b + c = 3 + 5 + 7 = 15`.\n`15 MOD 4 = 3` (since `15 = 3 * 4 + 3`).\nOutput: `3`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "2",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "1",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060560000,
+    "updatedAt": 1715060560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-774",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "6",
+    "codeSnippet": "Integer x = 10, y = 3\\nPrint (x MOD y) * y + (x DIV y)",
+    "codeLanguage": "pseudocode",
+    "explanation": "`x = 10, y = 3`:\n`10 MOD 3 = 1`\n`10 DIV 3 = 3`\n`(1 * 3) + 3 = 3 + 3 = 6`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "6",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "9",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "10",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060620000,
+    "updatedAt": 1715060620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-775",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode?",
+    "back": "1",
+    "codeSnippet": "Integer arr[4] = {5,3,8,1}\\nInteger min = arr[0]\\nFor i = 1 to 3\\n    If arr[i] < min Then\\n        min = arr[i]\\n    End If\\nEnd For\\nPrint min",
+    "codeLanguage": "pseudocode",
+    "explanation": "Finds minimum value in array `{5, 3, 8, 1}`:\nCompares values and identifies `1` as the minimum.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "1",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "3",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060680000,
+    "updatedAt": 1715060680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-776",
+    "deckId": "deck-pseudocode",
+    "type": "mcq",
+    "front": "What will be printed by the following pseudocode? (nested loop)",
+    "back": "10",
+    "codeSnippet": "Integer total = 0\\nFor i = 1 to 4\\n    For j = 1 to i\\n        total = total + 1\\n    End For\\nEnd For\\nPrint total",
+    "codeLanguage": "pseudocode",
+    "explanation": "Nested loop calculating triangular number for `i = 1 to 4`:\n`1 + 2 + 3 + 4 = 10`.\nOutput: `10`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "10",
+        "isCorrect": true,
+        "meaning": "Correct output resulting from accurate execution of the pseudocode logic."
+      },
+      {
+        "id": "B",
+        "text": "8",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "C",
+        "text": "12",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      },
+      {
+        "id": "D",
+        "text": "6",
+        "isCorrect": false,
+        "meaning": "Common trap: incorrect loop limit, arithmetic error, or mistaken operator precedence."
+      }
+    ],
+    "tags": [
+      "Pseudocode",
+      "Algorithms",
+      "Logic",
+      "Tracing"
+    ],
+    "createdAt": 1715060740000,
+    "updatedAt": 1715060740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-777",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which of the following statements will you use to retrieve items in an ascending order from a table in SQL?",
+    "back": "SELECT * FROM [table] ORDER BY [tbl_clm] ASC;",
+    "explanation": "In SQL, `ORDER BY [column] ASC;` explicitly sorts retrieved records in ascending order (A-Z, lowest to highest). `ASC` is also the default order if omitted.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SELECT * FROM [table] ORDER BY [tbl_clm] ASC;",
+        "isCorrect": true,
+        "meaning": "Standard SQL syntax for ordering query results in ascending order."
+      },
+      {
+        "id": "B",
+        "text": "SELECT * FROM [table] SORT BY [tbl_clm];",
+        "isCorrect": false,
+        "meaning": "Invalid SQL; SQL uses ORDER BY, not SORT BY."
+      },
+      {
+        "id": "C",
+        "text": "SELECT * FROM [table] ORDER BY [tbl_clm];",
+        "isCorrect": false,
+        "meaning": "Defaults to ascending order, but does not explicitly specify the ASC keyword."
+      },
+      {
+        "id": "D",
+        "text": "SELECT * FROM [table] GROUP BY [tbl_clm] ASC;",
+        "isCorrect": false,
+        "meaning": "GROUP BY aggregates rows; it does not sort individual items."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715060800000,
+    "updatedAt": 1715060800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-778",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which set of names will be displayed by the query: SELECT emp_name FROM employees WHERE emp_name LIKE '%a%';",
+    "back": "Names containing the letter 'a' anywhere",
+    "explanation": "In SQL `LIKE` pattern matching, `%` matches zero, one, or multiple characters. Hence, `'%a%'` matches any employee name that contains the letter 'a' at any position.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Names containing the letter 'a' anywhere",
+        "isCorrect": true,
+        "meaning": "The `%a%` pattern matches any string with 'a' at any index."
+      },
+      {
+        "id": "B",
+        "text": "Names starting with 'a'",
+        "isCorrect": false,
+        "meaning": "Matched by pattern `a%`, not `%a%`."
+      },
+      {
+        "id": "C",
+        "text": "Names starting with 'A' only",
+        "isCorrect": false,
+        "meaning": "Matched by pattern `A%` in case-sensitive collation."
+      },
+      {
+        "id": "D",
+        "text": "Names ending with 'a'",
+        "isCorrect": false,
+        "meaning": "Matched by pattern `%a`, not `%a%`."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715060860000,
+    "updatedAt": 1715060860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-779",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL keyword removes duplicate rows from a SELECT result?",
+    "back": "DISTINCT",
+    "explanation": "The `DISTINCT` keyword eliminates duplicate rows from the query result set, returning only unique values across selected columns.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DISTINCT",
+        "isCorrect": true,
+        "meaning": "Eliminates duplicate rows across query output columns."
+      },
+      {
+        "id": "B",
+        "text": "UNIQUE",
+        "isCorrect": false,
+        "meaning": "Table integrity constraint enforcing uniqueness; not a query deduplication clause."
+      },
+      {
+        "id": "C",
+        "text": "REMOVE DUP",
+        "isCorrect": false,
+        "meaning": "Not a valid standard SQL keyword."
+      },
+      {
+        "id": "D",
+        "text": "FILTER",
+        "isCorrect": false,
+        "meaning": "SQL window function clause or generic term; not row deduplication."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715060920000,
+    "updatedAt": 1715060920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-780",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL clause is used to filter groups of rows after a GROUP BY has been applied?",
+    "back": "HAVING",
+    "explanation": "`HAVING` filters grouped rows created by `GROUP BY` based on aggregate conditions (e.g. `HAVING COUNT(*) > 5`). `WHERE` cannot filter on aggregates.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WHERE",
+        "isCorrect": false,
+        "meaning": "Filters individual row records before grouping or aggregation."
+      },
+      {
+        "id": "B",
+        "text": "HAVING",
+        "isCorrect": true,
+        "meaning": "Filters aggregated group records produced by GROUP BY."
+      },
+      {
+        "id": "C",
+        "text": "FILTER",
+        "isCorrect": false,
+        "meaning": "SQL window function clause or generic term; not row deduplication."
+      },
+      {
+        "id": "D",
+        "text": "ORDER BY",
+        "isCorrect": false,
+        "meaning": "Sorts output records by column expressions."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715060980000,
+    "updatedAt": 1715060980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715060980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-781",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which type of key uniquely identifies each record in a database table?",
+    "back": "Primary Key",
+    "explanation": "A Primary Key uniquely identifies each row (tuple) in a database table. It enforces entity integrity and must contain unique, non-null values.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Primary Key",
+        "isCorrect": true,
+        "meaning": "Uniquely identifies each table row; forbids duplicate or NULL values."
+      },
+      {
+        "id": "B",
+        "text": "Foreign Key",
+        "isCorrect": false,
+        "meaning": "References a Primary Key in another table to enforce referential integrity."
+      },
+      {
+        "id": "C",
+        "text": "Candidate Key",
+        "isCorrect": false,
+        "meaning": "Minimal superkey capable of uniquely identifying rows; eligible to be Primary Key."
+      },
+      {
+        "id": "D",
+        "text": "Composite Key",
+        "isCorrect": false,
+        "meaning": "Key constructed from two or more columns combined together."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061040000,
+    "updatedAt": 1715061040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-782",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which type of key is used in one table to reference the primary key of another table?",
+    "back": "Foreign Key",
+    "explanation": "A Foreign Key is a field (or collection of fields) in one table that uniquely references the Primary Key of another table, establishing referential integrity.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Primary Key",
+        "isCorrect": false,
+        "meaning": "Uniquely identifies each table row; forbids duplicate or NULL values."
+      },
+      {
+        "id": "B",
+        "text": "Foreign Key",
+        "isCorrect": true,
+        "meaning": "References a Primary Key in another table to enforce referential integrity."
+      },
+      {
+        "id": "C",
+        "text": "Unique Key",
+        "isCorrect": false,
+        "meaning": "Constraint ensuring all values in a column are distinct, allowing one NULL."
+      },
+      {
+        "id": "D",
+        "text": "Super Key",
+        "isCorrect": false,
+        "meaning": "Set of attributes that uniquely identifies tuples, including possible redundant columns."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061100000,
+    "updatedAt": 1715061100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-783",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "What is the process of organizing data in a database to reduce redundancy called?",
+    "back": "Normalization",
+    "explanation": "Normalization is the systematic design process of decomposing relational tables to eliminate data redundancy and prevent insert, update, and delete anomalies.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Normalization",
+        "isCorrect": true,
+        "meaning": "Systematic process of organizing tables to eliminate data redundancy."
+      },
+      {
+        "id": "B",
+        "text": "Denormalization",
+        "isCorrect": false,
+        "meaning": "Introducing controlled redundancy into a schema to optimize read speed."
+      },
+      {
+        "id": "C",
+        "text": "Indexing",
+        "isCorrect": false,
+        "meaning": "Building data structures (B-trees) to speed up search lookups."
+      },
+      {
+        "id": "D",
+        "text": "Replication",
+        "isCorrect": false,
+        "meaning": "Copying data across multiple database servers for redundancy and high availability."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061160000,
+    "updatedAt": 1715061160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-784",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which normal form eliminates partial dependency of non-key attributes on part of a composite primary key?",
+    "back": "Second Normal Form (2NF)",
+    "explanation": "Second Normal Form (2NF) requires 1NF and mandates that all non-key attributes are fully functionally dependent on the entire primary key, eliminating partial dependencies.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "First Normal Form (1NF)",
+        "isCorrect": false,
+        "meaning": "Enforces atomic, single-valued column attributes and unique rows."
+      },
+      {
+        "id": "B",
+        "text": "Second Normal Form (2NF)",
+        "isCorrect": true,
+        "meaning": "Requires 1NF and eliminates partial dependencies on composite keys."
+      },
+      {
+        "id": "C",
+        "text": "Third Normal Form (3NF)",
+        "isCorrect": false,
+        "meaning": "Requires 2NF and eliminates transitive functional dependencies."
+      },
+      {
+        "id": "D",
+        "text": "BCNF",
+        "isCorrect": false,
+        "meaning": "Boyce-Codd Normal Form; stricter 3NF where every determinant must be a candidate key."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061220000,
+    "updatedAt": 1715061220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-785",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which normal form eliminates transitive dependency between non-key attributes?",
+    "back": "Third Normal Form (3NF)",
+    "explanation": "Third Normal Form (3NF) requires 2NF and mandates that no non-key attribute is transitively dependent on the primary key (X -> Y and Y -> Z where Z is non-key).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "First Normal Form (1NF)",
+        "isCorrect": false,
+        "meaning": "Enforces atomic, single-valued column attributes and unique rows."
+      },
+      {
+        "id": "B",
+        "text": "Second Normal Form (2NF)",
+        "isCorrect": false,
+        "meaning": "Requires 1NF and eliminates partial dependencies on composite keys."
+      },
+      {
+        "id": "C",
+        "text": "Third Normal Form (3NF)",
+        "isCorrect": true,
+        "meaning": "Requires 2NF and eliminates transitive functional dependencies."
+      },
+      {
+        "id": "D",
+        "text": "BCNF",
+        "isCorrect": false,
+        "meaning": "Boyce-Codd Normal Form; stricter 3NF where every determinant must be a candidate key."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061280000,
+    "updatedAt": 1715061280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-786",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which ACID property guarantees that a transaction executes completely or not at all?",
+    "back": "Atomicity",
+    "explanation": "Atomicity ('all or nothing') ensures that all operations within a database transaction complete successfully, or all changes are completely rolled back upon error.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Atomicity",
+        "isCorrect": true,
+        "meaning": "Transaction property guaranteeing all operations commit or none do."
+      },
+      {
+        "id": "B",
+        "text": "Consistency",
+        "isCorrect": false,
+        "meaning": "Transaction property ensuring database transitions between valid schema states."
+      },
+      {
+        "id": "C",
+        "text": "Isolation",
+        "isCorrect": false,
+        "meaning": "Transaction property ensuring concurrent executions do not interfere."
+      },
+      {
+        "id": "D",
+        "text": "Durability",
+        "isCorrect": false,
+        "meaning": "Transaction property ensuring committed updates survive system crashes."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061340000,
+    "updatedAt": 1715061340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-787",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which ACID property ensures the database moves from one valid state to another valid state?",
+    "back": "Consistency",
+    "explanation": "Consistency guarantees that a transaction moves the database from one valid state to another, strictly adhering to all constraints, cascades, and schema rules.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Atomicity",
+        "isCorrect": false,
+        "meaning": "Transaction property guaranteeing all operations commit or none do."
+      },
+      {
+        "id": "B",
+        "text": "Consistency",
+        "isCorrect": true,
+        "meaning": "Transaction property ensuring database transitions between valid schema states."
+      },
+      {
+        "id": "C",
+        "text": "Isolation",
+        "isCorrect": false,
+        "meaning": "Transaction property ensuring concurrent executions do not interfere."
+      },
+      {
+        "id": "D",
+        "text": "Durability",
+        "isCorrect": false,
+        "meaning": "Transaction property ensuring committed updates survive system crashes."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061400000,
+    "updatedAt": 1715061400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-788",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which ACID property ensures that concurrently executing transactions do not interfere with one another?",
+    "back": "Isolation",
+    "explanation": "Isolation ensures that concurrent transactions execute independently without interfering with each other's intermediate uncommitted states.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Atomicity",
+        "isCorrect": false,
+        "meaning": "Transaction property guaranteeing all operations commit or none do."
+      },
+      {
+        "id": "B",
+        "text": "Consistency",
+        "isCorrect": false,
+        "meaning": "Transaction property ensuring database transitions between valid schema states."
+      },
+      {
+        "id": "C",
+        "text": "Isolation",
+        "isCorrect": true,
+        "meaning": "Transaction property ensuring concurrent executions do not interfere."
+      },
+      {
+        "id": "D",
+        "text": "Durability",
+        "isCorrect": false,
+        "meaning": "Transaction property ensuring committed updates survive system crashes."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061460000,
+    "updatedAt": 1715061460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-789",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which ACID property guarantees that once a transaction is committed, its changes persist even after a system crash?",
+    "back": "Durability",
+    "explanation": "Durability guarantees that once a transaction commits, its recorded changes permanently survive even in the event of subsequent power loss or server crash.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Atomicity",
+        "isCorrect": false,
+        "meaning": "Transaction property guaranteeing all operations commit or none do."
+      },
+      {
+        "id": "B",
+        "text": "Consistency",
+        "isCorrect": false,
+        "meaning": "Transaction property ensuring database transitions between valid schema states."
+      },
+      {
+        "id": "C",
+        "text": "Isolation",
+        "isCorrect": false,
+        "meaning": "Transaction property ensuring concurrent executions do not interfere."
+      },
+      {
+        "id": "D",
+        "text": "Durability",
+        "isCorrect": true,
+        "meaning": "Transaction property ensuring committed updates survive system crashes."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061520000,
+    "updatedAt": 1715061520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-790",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL command is used to add a new column to an existing table?",
+    "back": "ALTER TABLE ... ADD COLUMN",
+    "explanation": "The `ALTER TABLE table_name ADD COLUMN column_name datatype;` DDL statement adds a new attribute column to an existing table schema.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "ALTER TABLE ... ADD COLUMN",
+        "isCorrect": true,
+        "meaning": "Standard DDL command for adding new column attributes to tables."
+      },
+      {
+        "id": "B",
+        "text": "UPDATE TABLE ... ADD",
+        "isCorrect": false,
+        "meaning": "Invalid SQL command; UPDATE modifies rows, not schema columns."
+      },
+      {
+        "id": "C",
+        "text": "INSERT COLUMN",
+        "isCorrect": false,
+        "meaning": "Invalid SQL syntax."
+      },
+      {
+        "id": "D",
+        "text": "MODIFY TABLE",
+        "isCorrect": false,
+        "meaning": "Vendor-specific command variation; standard command uses ALTER TABLE."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061580000,
+    "updatedAt": 1715061580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-791",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL command permanently removes an entire table, including its structure, from the database?",
+    "back": "DROP TABLE",
+    "explanation": "`DROP TABLE` permanently deletes the entire table definition, schema metadata, constraints, triggers, and all stored row data from the database.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DELETE TABLE",
+        "isCorrect": false,
+        "meaning": "Incorrect syntax; DELETE removes rows (DELETE FROM table), not the table object."
+      },
+      {
+        "id": "B",
+        "text": "DROP TABLE",
+        "isCorrect": true,
+        "meaning": "Permanently destroys table schema, constraints, and all contained records."
+      },
+      {
+        "id": "C",
+        "text": "TRUNCATE TABLE",
+        "isCorrect": false,
+        "meaning": "Deallocates all row data while preserving the table schema and columns."
+      },
+      {
+        "id": "D",
+        "text": "REMOVE TABLE",
+        "isCorrect": false,
+        "meaning": "Invalid SQL command."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061640000,
+    "updatedAt": 1715061640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-792",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL command removes all rows from a table but keeps the table structure intact?",
+    "back": "TRUNCATE TABLE",
+    "explanation": "`TRUNCATE TABLE` rapidly empties all row records from a table by deallocating data pages, preserving the table structure, columns, and constraints for future use.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "TRUNCATE TABLE",
+        "isCorrect": true,
+        "meaning": "Deallocates all row data while preserving the table schema and columns."
+      },
+      {
+        "id": "B",
+        "text": "DELETE TABLE",
+        "isCorrect": false,
+        "meaning": "Incorrect syntax; DELETE removes rows (DELETE FROM table), not the table object."
+      },
+      {
+        "id": "C",
+        "text": "DROP TABLE",
+        "isCorrect": false,
+        "meaning": "Permanently destroys table schema, constraints, and all contained records."
+      },
+      {
+        "id": "D",
+        "text": "ALTER TABLE",
+        "isCorrect": false,
+        "meaning": "Modifies table definitions, column types, and constraints."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061700000,
+    "updatedAt": 1715061700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-793",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL clause combines rows from two or more tables based on a related column?",
+    "back": "JOIN",
+    "explanation": "A `JOIN` clause combines columns from two or more tables based on a related logical predicate (typically primary key = foreign key).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "UNION",
+        "isCorrect": false,
+        "meaning": "Set operator combining result rows from two queries with duplicate elimination."
+      },
+      {
+        "id": "B",
+        "text": "JOIN",
+        "isCorrect": true,
+        "meaning": "Relational operator combining columns from related tables."
+      },
+      {
+        "id": "C",
+        "text": "MERGE",
+        "isCorrect": false,
+        "meaning": "Upsert statement combining INSERT, UPDATE, and DELETE actions."
+      },
+      {
+        "id": "D",
+        "text": "LINK",
+        "isCorrect": false,
+        "meaning": "Non-standard database keyword."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061760000,
+    "updatedAt": 1715061760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-794",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which type of join returns only the rows that have matching values in both tables?",
+    "back": "INNER JOIN",
+    "explanation": "`INNER JOIN` returns only records that have matching join keys in both joined tables, discarding unmatched rows from either side.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "INNER JOIN",
+        "isCorrect": true,
+        "meaning": "Returns only records having matching keys in both joined tables."
+      },
+      {
+        "id": "B",
+        "text": "LEFT JOIN",
+        "isCorrect": false,
+        "meaning": "Returns all rows from the left table with matched right table data or NULLs."
+      },
+      {
+        "id": "C",
+        "text": "RIGHT JOIN",
+        "isCorrect": false,
+        "meaning": "Returns all rows from the right table with matched left table data or NULLs."
+      },
+      {
+        "id": "D",
+        "text": "FULL JOIN",
+        "isCorrect": false,
+        "meaning": "Returns all records from both tables, filling unmatched fields with NULLs."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061820000,
+    "updatedAt": 1715061820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-795",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which type of join returns all rows from the left table and the matched rows from the right table (with NULLs where there is no match)?",
+    "back": "LEFT JOIN",
+    "explanation": "`LEFT JOIN` (or LEFT OUTER JOIN) returns all records from the left table, matched with corresponding records from the right table, placing NULLs where matches do not exist.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "INNER JOIN",
+        "isCorrect": false,
+        "meaning": "Returns only records having matching keys in both joined tables."
+      },
+      {
+        "id": "B",
+        "text": "LEFT JOIN",
+        "isCorrect": true,
+        "meaning": "Returns all rows from the left table with matched right table data or NULLs."
+      },
+      {
+        "id": "C",
+        "text": "RIGHT JOIN",
+        "isCorrect": false,
+        "meaning": "Returns all rows from the right table with matched left table data or NULLs."
+      },
+      {
+        "id": "D",
+        "text": "FULL JOIN",
+        "isCorrect": false,
+        "meaning": "Returns all records from both tables, filling unmatched fields with NULLs."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061880000,
+    "updatedAt": 1715061880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-796",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL aggregate function returns the number of rows that match a specified condition?",
+    "back": "COUNT",
+    "explanation": "The `COUNT()` aggregate function returns the total number of rows satisfying the query criteria or non-null values in a specified column.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "COUNT",
+        "isCorrect": true,
+        "meaning": "Aggregate function counting rows or non-null values."
+      },
+      {
+        "id": "B",
+        "text": "SUM",
+        "isCorrect": false,
+        "meaning": "Aggregate function adding numeric values across a column."
+      },
+      {
+        "id": "C",
+        "text": "AVG",
+        "isCorrect": false,
+        "meaning": "Aggregate function computing the arithmetic mean of a column."
+      },
+      {
+        "id": "D",
+        "text": "TOTAL",
+        "isCorrect": false,
+        "meaning": "Informal term; standard SQL uses SUM()."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715061940000,
+    "updatedAt": 1715061940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715061940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-797",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL aggregate function returns the highest value in a column?",
+    "back": "MAX",
+    "explanation": "The `MAX()` aggregate function evaluates an expression across records and returns the maximum numerical, alphabetic, or chronological value.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "TOP",
+        "isCorrect": false,
+        "meaning": "T-SQL clause limiting row count; not an aggregate function."
+      },
+      {
+        "id": "B",
+        "text": "MAX",
+        "isCorrect": true,
+        "meaning": "Aggregate function returning the greatest value in an expression."
+      },
+      {
+        "id": "C",
+        "text": "HIGH",
+        "isCorrect": false,
+        "meaning": "Invalid SQL aggregate function."
+      },
+      {
+        "id": "D",
+        "text": "LARGEST",
+        "isCorrect": false,
+        "meaning": "Invalid SQL aggregate function."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062000000,
+    "updatedAt": 1715062000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-798",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL statement is used to add a new record into a table?",
+    "back": "INSERT INTO",
+    "explanation": "The `INSERT INTO` DML statement appends one or more new row records into a database table.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "ADD INTO",
+        "isCorrect": false,
+        "meaning": "Invalid SQL command."
+      },
+      {
+        "id": "B",
+        "text": "CREATE INTO",
+        "isCorrect": false,
+        "meaning": "Invalid SQL command."
+      },
+      {
+        "id": "C",
+        "text": "INSERT INTO",
+        "isCorrect": true,
+        "meaning": "DML statement adding new record tuples into a table."
+      },
+      {
+        "id": "D",
+        "text": "PUT INTO",
+        "isCorrect": false,
+        "meaning": "Invalid SQL command."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062060000,
+    "updatedAt": 1715062060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-799",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL statement is used to modify existing records in a table?",
+    "back": "UPDATE",
+    "explanation": "The `UPDATE` DML statement modifies existing column values within records satisfying an optional `WHERE` predicate.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "MODIFY",
+        "isCorrect": false,
+        "meaning": "Subclause used in ALTER TABLE to change column definitions."
+      },
+      {
+        "id": "B",
+        "text": "ALTER",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this database context."
+      },
+      {
+        "id": "C",
+        "text": "CHANGE",
+        "isCorrect": false,
+        "meaning": "MySQL ALTER TABLE subclause for renaming/redefining columns."
+      },
+      {
+        "id": "D",
+        "text": "UPDATE",
+        "isCorrect": true,
+        "meaning": "DML statement modifying existing column values in table records."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062120000,
+    "updatedAt": 1715062120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-800",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL command is used to create a new table in a database?",
+    "back": "CREATE TABLE",
+    "explanation": "The `CREATE TABLE` DDL statement defines and registers a new table structure, specifying column names, data types, and integrity constraints.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "CREATE TABLE",
+        "isCorrect": true,
+        "meaning": "DDL statement defining and registering a new database table."
+      },
+      {
+        "id": "B",
+        "text": "NEW TABLE",
+        "isCorrect": false,
+        "meaning": "Invalid SQL command."
+      },
+      {
+        "id": "C",
+        "text": "MAKE TABLE",
+        "isCorrect": false,
+        "meaning": "Access-specific query type; not standard SQL."
+      },
+      {
+        "id": "D",
+        "text": "BUILD TABLE",
+        "isCorrect": false,
+        "meaning": "Invalid SQL command."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062180000,
+    "updatedAt": 1715062180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-801",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which constraint ensures that a column cannot contain NULL values?",
+    "back": "NOT NULL",
+    "explanation": "The `NOT NULL` constraint enforces that an attribute column cannot accept missing or null values during INSERT or UPDATE operations.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "UNIQUE",
+        "isCorrect": false,
+        "meaning": "Table integrity constraint enforcing uniqueness; not a query deduplication clause."
+      },
+      {
+        "id": "B",
+        "text": "NOT NULL",
+        "isCorrect": true,
+        "meaning": "Constraint preventing null/missing values in an attribute."
+      },
+      {
+        "id": "C",
+        "text": "CHECK",
+        "isCorrect": false,
+        "meaning": "Constraint enforcing a logical boolean condition on column values."
+      },
+      {
+        "id": "D",
+        "text": "DEFAULT",
+        "isCorrect": false,
+        "meaning": "Specifies a fallback default value for a column if omitted on INSERT."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062240000,
+    "updatedAt": 1715062240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-802",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which constraint ensures that values entered into a column satisfy a specific logical condition?",
+    "back": "CHECK",
+    "explanation": "The `CHECK` constraint limits the value range or condition that can be entered into a column (e.g. `CHECK (age >= 18)`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "UNIQUE",
+        "isCorrect": false,
+        "meaning": "Table integrity constraint enforcing uniqueness; not a query deduplication clause."
+      },
+      {
+        "id": "B",
+        "text": "DEFAULT",
+        "isCorrect": false,
+        "meaning": "Specifies a fallback default value for a column if omitted on INSERT."
+      },
+      {
+        "id": "C",
+        "text": "CHECK",
+        "isCorrect": true,
+        "meaning": "Constraint enforcing a logical boolean condition on column values."
+      },
+      {
+        "id": "D",
+        "text": "FOREIGN KEY",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this database context."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062300000,
+    "updatedAt": 1715062300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-803",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which type of index is automatically created on a table's primary key column?",
+    "back": "Clustered Index",
+    "explanation": "A Clustered Index physically determines the storage order of table data pages on disk, and relational databases automatically generate one on the Primary Key.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Non-clustered Index",
+        "isCorrect": false,
+        "meaning": "Secondary index maintaining separate logical pointers to disk rows."
+      },
+      {
+        "id": "B",
+        "text": "Bitmap Index",
+        "isCorrect": false,
+        "meaning": "Index utilizing bit arrays suited for low-cardinality analytical queries."
+      },
+      {
+        "id": "C",
+        "text": "Hash Index",
+        "isCorrect": false,
+        "meaning": "Index using hash tables for direct O(1) equality lookups."
+      },
+      {
+        "id": "D",
+        "text": "Clustered Index",
+        "isCorrect": true,
+        "meaning": "Index that dictates the physical disk sorting order of table rows."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062360000,
+    "updatedAt": 1715062360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-804",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "In SQL, which wildcard character represents exactly one single character in a LIKE pattern?",
+    "back": "_ (underscore)",
+    "explanation": "In SQL `LIKE` patterns, the underscore wildcard (`_`) substitutes for exactly one single character.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "_ (underscore)",
+        "isCorrect": true,
+        "meaning": "Wildcard matching exactly one single character in SQL LIKE patterns."
+      },
+      {
+        "id": "B",
+        "text": "% (percent)",
+        "isCorrect": false,
+        "meaning": "Wildcard matching zero or more characters in SQL LIKE patterns."
+      },
+      {
+        "id": "C",
+        "text": "* (asterisk)",
+        "isCorrect": false,
+        "meaning": "Wildcard in MS Access or file systems; SQL LIKE uses `%` and `_`."
+      },
+      {
+        "id": "D",
+        "text": "? (question mark)",
+        "isCorrect": false,
+        "meaning": "Single-character wildcard in MS Access or shell regex; SQL uses `_`."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062420000,
+    "updatedAt": 1715062420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-805",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "In SQL, which wildcard character represents zero or more characters in a LIKE pattern?",
+    "back": "% (percent)",
+    "explanation": "In SQL `LIKE` patterns, the percent wildcard (`%`) represents zero, one, or an arbitrary number of characters.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "_ (underscore)",
+        "isCorrect": false,
+        "meaning": "Wildcard matching exactly one single character in SQL LIKE patterns."
+      },
+      {
+        "id": "B",
+        "text": "% (percent)",
+        "isCorrect": true,
+        "meaning": "Wildcard matching zero or more characters in SQL LIKE patterns."
+      },
+      {
+        "id": "C",
+        "text": "* (asterisk)",
+        "isCorrect": false,
+        "meaning": "Wildcard in MS Access or file systems; SQL LIKE uses `%` and `_`."
+      },
+      {
+        "id": "D",
+        "text": "? (question mark)",
+        "isCorrect": false,
+        "meaning": "Single-character wildcard in MS Access or shell regex; SQL uses `_`."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062480000,
+    "updatedAt": 1715062480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-806",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL keyword is used to sort the rows of a result set?",
+    "back": "ORDER BY",
+    "explanation": "`ORDER BY` sorts the final result set rows by one or more designated columns in either ascending (`ASC`) or descending (`DESC`) order.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "SORT BY",
+        "isCorrect": false,
+        "meaning": "Invalid standard SQL; ORDER BY is used for sorting."
+      },
+      {
+        "id": "B",
+        "text": "GROUP BY",
+        "isCorrect": false,
+        "meaning": "Collates rows sharing attribute values into summary groups for aggregation."
+      },
+      {
+        "id": "C",
+        "text": "ORDER BY",
+        "isCorrect": true,
+        "meaning": "Sorts output records by column expressions."
+      },
+      {
+        "id": "D",
+        "text": "ARRANGE BY",
+        "isCorrect": false,
+        "meaning": "Invalid SQL syntax."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062540000,
+    "updatedAt": 1715062540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-807",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL keyword groups rows that share a common value so aggregate functions can be applied to each group?",
+    "back": "GROUP BY",
+    "explanation": "`GROUP BY` collates identical data across specified columns into summary groups, allowing aggregate functions (`COUNT`, `SUM`, `AVG`) to run per group.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "ORDER BY",
+        "isCorrect": false,
+        "meaning": "Sorts output records by column expressions."
+      },
+      {
+        "id": "B",
+        "text": "HAVING",
+        "isCorrect": false,
+        "meaning": "Filters aggregated group records produced by GROUP BY."
+      },
+      {
+        "id": "C",
+        "text": "WHERE",
+        "isCorrect": false,
+        "meaning": "Filters individual row records before grouping or aggregation."
+      },
+      {
+        "id": "D",
+        "text": "GROUP BY",
+        "isCorrect": true,
+        "meaning": "Collates rows sharing attribute values into summary groups for aggregation."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062600000,
+    "updatedAt": 1715062600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-808",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL clause filters individual rows before any grouping takes place?",
+    "back": "WHERE",
+    "explanation": "`WHERE` filters individual rows prior to grouping, aggregation, or windowing calculations.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "WHERE",
+        "isCorrect": true,
+        "meaning": "Filters individual row records before grouping or aggregation."
+      },
+      {
+        "id": "B",
+        "text": "HAVING",
+        "isCorrect": false,
+        "meaning": "Filters aggregated group records produced by GROUP BY."
+      },
+      {
+        "id": "C",
+        "text": "GROUP BY",
+        "isCorrect": false,
+        "meaning": "Collates rows sharing attribute values into summary groups for aggregation."
+      },
+      {
+        "id": "D",
+        "text": "ORDER BY",
+        "isCorrect": false,
+        "meaning": "Sorts output records by column expressions."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062660000,
+    "updatedAt": 1715062660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-809",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which database object improves the speed of data retrieval operations on a table, at the cost of additional storage?",
+    "back": "Index",
+    "explanation": "An Index is a B-tree or hash-based database structure that accelerates query lookups and joins, trading off additional storage and write overhead.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "View",
+        "isCorrect": false,
+        "meaning": "Virtual table derived dynamically from an underlying SQL query."
+      },
+      {
+        "id": "B",
+        "text": "Index",
+        "isCorrect": true,
+        "meaning": "Auxiliary data structure accelerating query retrieval speeds."
+      },
+      {
+        "id": "C",
+        "text": "Trigger",
+        "isCorrect": false,
+        "meaning": "Stored procedure executing automatically in response to DML table events."
+      },
+      {
+        "id": "D",
+        "text": "Procedure",
+        "isCorrect": false,
+        "meaning": "Stored named sequence of procedural SQL statements callable on demand."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062720000,
+    "updatedAt": 1715062720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-810",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which database object is a virtual table based on the result-set of a stored SQL query?",
+    "back": "View",
+    "explanation": "A View is a virtual table defined by an underlying stored SQL query; it contains no physical data rows of its own unless materialized.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Index",
+        "isCorrect": false,
+        "meaning": "Auxiliary data structure accelerating query retrieval speeds."
+      },
+      {
+        "id": "B",
+        "text": "Trigger",
+        "isCorrect": false,
+        "meaning": "Stored procedure executing automatically in response to DML table events."
+      },
+      {
+        "id": "C",
+        "text": "View",
+        "isCorrect": true,
+        "meaning": "Virtual table derived dynamically from an underlying SQL query."
+      },
+      {
+        "id": "D",
+        "text": "Cursor",
+        "isCorrect": false,
+        "meaning": "Database pointer iterating through query result rows sequentially."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062780000,
+    "updatedAt": 1715062780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-811",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which database object automatically executes in response to specific events, such as an INSERT or UPDATE, on a table?",
+    "back": "Trigger",
+    "explanation": "A Trigger is a procedural program stored in the database that automatically fires before or after an `INSERT`, `UPDATE`, or `DELETE` event.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Index",
+        "isCorrect": false,
+        "meaning": "Auxiliary data structure accelerating query retrieval speeds."
+      },
+      {
+        "id": "B",
+        "text": "View",
+        "isCorrect": false,
+        "meaning": "Virtual table derived dynamically from an underlying SQL query."
+      },
+      {
+        "id": "C",
+        "text": "Procedure",
+        "isCorrect": false,
+        "meaning": "Stored named sequence of procedural SQL statements callable on demand."
+      },
+      {
+        "id": "D",
+        "text": "Trigger",
+        "isCorrect": true,
+        "meaning": "Stored procedure executing automatically in response to DML table events."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062840000,
+    "updatedAt": 1715062840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-812",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL command grants specific privileges on database objects to a user or role?",
+    "back": "GRANT",
+    "explanation": "The `GRANT` DCL command bestows database access privileges (SELECT, INSERT, EXECUTE) upon specific database users or security roles.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "GRANT",
+        "isCorrect": true,
+        "meaning": "DCL statement conferring database access privileges to users."
+      },
+      {
+        "id": "B",
+        "text": "ALLOW",
+        "isCorrect": false,
+        "meaning": "Non-standard keyword; SQL uses GRANT."
+      },
+      {
+        "id": "C",
+        "text": "PERMIT",
+        "isCorrect": false,
+        "meaning": "Non-standard keyword; SQL uses GRANT."
+      },
+      {
+        "id": "D",
+        "text": "ENABLE",
+        "isCorrect": false,
+        "meaning": "Command altering trigger or constraint states; not access authorization."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062900000,
+    "updatedAt": 1715062900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-813",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL command removes previously granted privileges from a user or role?",
+    "back": "REVOKE",
+    "explanation": "The `REVOKE` DCL command rescinds previously granted permissions from database users or roles.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "REMOVE",
+        "isCorrect": false,
+        "meaning": "Invalid SQL DCL permission command."
+      },
+      {
+        "id": "B",
+        "text": "REVOKE",
+        "isCorrect": true,
+        "meaning": "DCL statement withdrawing previously conferred access permissions."
+      },
+      {
+        "id": "C",
+        "text": "DENY",
+        "isCorrect": false,
+        "meaning": "Explicitly blocks access permissions in certain RDBMS (e.g. SQL Server)."
+      },
+      {
+        "id": "D",
+        "text": "CANCEL",
+        "isCorrect": false,
+        "meaning": "Invalid SQL permission keyword."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715062960000,
+    "updatedAt": 1715062960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715062960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-814",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which type of relationship exists when a single row in Table A can relate to many rows in Table B?",
+    "back": "One-to-Many",
+    "explanation": "A One-to-Many (1:N) relationship exists when one row in Table A can relate to multiple rows in Table B (e.g., one Department has many Employees).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "One-to-One",
+        "isCorrect": false,
+        "meaning": "Relationship where each row in Table A corresponds to at most one row in Table B."
+      },
+      {
+        "id": "B",
+        "text": "Many-to-Many",
+        "isCorrect": false,
+        "meaning": "Relationship where multiple rows in Table A relate to multiple rows in Table B."
+      },
+      {
+        "id": "C",
+        "text": "One-to-Many",
+        "isCorrect": true,
+        "meaning": "Relationship where one row in Table A corresponds to multiple rows in Table B."
+      },
+      {
+        "id": "D",
+        "text": "Self-referencing",
+        "isCorrect": false,
+        "meaning": "Table relationship linking a row back to another row in the same table."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063020000,
+    "updatedAt": 1715063020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-815",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which type of relationship typically requires an intermediate junction (bridge) table to implement correctly?",
+    "back": "Many-to-Many",
+    "explanation": "A Many-to-Many (M:N) relationship requires a junction (bridge/associative) table holding foreign keys referencing both primary tables.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "One-to-One",
+        "isCorrect": false,
+        "meaning": "Relationship where each row in Table A corresponds to at most one row in Table B."
+      },
+      {
+        "id": "B",
+        "text": "One-to-Many",
+        "isCorrect": false,
+        "meaning": "Relationship where one row in Table A corresponds to multiple rows in Table B."
+      },
+      {
+        "id": "C",
+        "text": "Hierarchical",
+        "isCorrect": false,
+        "meaning": "Tree-structured database organization."
+      },
+      {
+        "id": "D",
+        "text": "Many-to-Many",
+        "isCorrect": true,
+        "meaning": "Relationship where multiple rows in Table A relate to multiple rows in Table B."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063080000,
+    "updatedAt": 1715063080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-816",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "What does the acronym DBMS stand for?",
+    "back": "Database Management System",
+    "explanation": "DBMS stands for Database Management System, software that manages data storage, retrieval, concurrency, security, and integrity.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Database Management System",
+        "isCorrect": true,
+        "meaning": "Full formal name for DBMS software."
+      },
+      {
+        "id": "B",
+        "text": "Data Base Model System",
+        "isCorrect": false,
+        "meaning": "Incorrect expansion of DBMS."
+      },
+      {
+        "id": "C",
+        "text": "Distributed Base Management System",
+        "isCorrect": false,
+        "meaning": "Incorrect expansion of DBMS."
+      },
+      {
+        "id": "D",
+        "text": "Data Backup Management System",
+        "isCorrect": false,
+        "meaning": "Incorrect expansion of DBMS."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063140000,
+    "updatedAt": 1715063140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-817",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL command undoes all changes made during the current transaction that have not yet been committed?",
+    "back": "ROLLBACK",
+    "explanation": "The `ROLLBACK` TCL command undoes all modifications executed during the current transaction back to the previous COMMIT or savepoint.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "ROLLBACK",
+        "isCorrect": true,
+        "meaning": "TCL statement undoing uncommitted changes in current transaction."
+      },
+      {
+        "id": "B",
+        "text": "COMMIT",
+        "isCorrect": false,
+        "meaning": "TCL statement saving uncommitted transaction updates permanently."
+      },
+      {
+        "id": "C",
+        "text": "UNDO",
+        "isCorrect": false,
+        "meaning": "General application action; SQL uses ROLLBACK."
+      },
+      {
+        "id": "D",
+        "text": "RESTORE",
+        "isCorrect": false,
+        "meaning": "Database administrator recovery command from backup."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063200000,
+    "updatedAt": 1715063200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-818",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL command permanently saves all changes made during the current transaction?",
+    "back": "COMMIT",
+    "explanation": "The `COMMIT` TCL command permanently writes all transactional updates to disk and releases database locks.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "ROLLBACK",
+        "isCorrect": false,
+        "meaning": "TCL statement undoing uncommitted changes in current transaction."
+      },
+      {
+        "id": "B",
+        "text": "COMMIT",
+        "isCorrect": true,
+        "meaning": "TCL statement saving uncommitted transaction updates permanently."
+      },
+      {
+        "id": "C",
+        "text": "SAVE",
+        "isCorrect": false,
+        "meaning": "Generic term; SQL uses COMMIT or SAVEPOINT."
+      },
+      {
+        "id": "D",
+        "text": "CHECKPOINT",
+        "isCorrect": false,
+        "meaning": "Database engine process flushing dirty memory pages to disk."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063260000,
+    "updatedAt": 1715063260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-819",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL clause restricts the number of rows returned by a query?",
+    "back": "LIMIT",
+    "explanation": "The `LIMIT` clause (or `TOP` / `FETCH FIRST` in various SQL dialects) constrains the maximum number of row tuples returned by a query.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "TOP ONLY",
+        "isCorrect": false,
+        "meaning": "Invalid SQL syntax."
+      },
+      {
+        "id": "B",
+        "text": "MAX ROWS",
+        "isCorrect": false,
+        "meaning": "Invalid standard SQL clause."
+      },
+      {
+        "id": "C",
+        "text": "LIMIT",
+        "isCorrect": true,
+        "meaning": "SQL clause restricting total rows returned in query output."
+      },
+      {
+        "id": "D",
+        "text": "RESTRICT",
+        "isCorrect": false,
+        "meaning": "Foreign key constraint action preventing parent deletion; not query row limit."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063320000,
+    "updatedAt": 1715063320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-820",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL function commonly returns the current system date and time?",
+    "back": "NOW()",
+    "explanation": "`NOW()` (or `CURRENT_TIMESTAMP` / `GETDATE()`) returns the current date and time of the database server.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "TODAY()",
+        "isCorrect": false,
+        "meaning": "Excel formula; not standard SQL date function."
+      },
+      {
+        "id": "B",
+        "text": "CURRENT()",
+        "isCorrect": false,
+        "meaning": "Invalid standard SQL function name."
+      },
+      {
+        "id": "C",
+        "text": "TIME()",
+        "isCorrect": false,
+        "meaning": "Extracts time component or converts string to time datatype."
+      },
+      {
+        "id": "D",
+        "text": "NOW()",
+        "isCorrect": true,
+        "meaning": "Built-in SQL function returning current date and time timestamp."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063380000,
+    "updatedAt": 1715063380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-821",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "SELECT statements belong to which category of SQL commands?",
+    "back": "DQL (Data Query Language)",
+    "explanation": "`SELECT` statements belong to DQL (Data Query Language), specialized for fetching and querying data without altering table schemas or contents.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DQL (Data Query Language)",
+        "isCorrect": true,
+        "meaning": "Category of SQL commands focused on querying data (SELECT)."
+      },
+      {
+        "id": "B",
+        "text": "DDL (Data Definition Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands modifying schema objects (CREATE, ALTER, DROP)."
+      },
+      {
+        "id": "C",
+        "text": "DML (Data Manipulation Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands updating table rows (INSERT, UPDATE, DELETE)."
+      },
+      {
+        "id": "D",
+        "text": "DCL (Data Control Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands governing security permissions (GRANT, REVOKE)."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063440000,
+    "updatedAt": 1715063440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-822",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "CREATE, ALTER and DROP statements belong to which category of SQL commands?",
+    "back": "DDL (Data Definition Language)",
+    "explanation": "`CREATE`, `ALTER`, and `DROP` belong to DDL (Data Definition Language), which defines, alters, and manages database schema structures.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DQL (Data Query Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands focused on querying data (SELECT)."
+      },
+      {
+        "id": "B",
+        "text": "DDL (Data Definition Language)",
+        "isCorrect": true,
+        "meaning": "Category of SQL commands modifying schema objects (CREATE, ALTER, DROP)."
+      },
+      {
+        "id": "C",
+        "text": "DML (Data Manipulation Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands updating table rows (INSERT, UPDATE, DELETE)."
+      },
+      {
+        "id": "D",
+        "text": "DCL (Data Control Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands governing security permissions (GRANT, REVOKE)."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063500000,
+    "updatedAt": 1715063500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-823",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "INSERT, UPDATE and DELETE statements belong to which category of SQL commands?",
+    "back": "DML (Data Manipulation Language)",
+    "explanation": "`INSERT`, `UPDATE`, and `DELETE` belong to DML (Data Manipulation Language), which modifies and manages table data rows.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DQL (Data Query Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands focused on querying data (SELECT)."
+      },
+      {
+        "id": "B",
+        "text": "DDL (Data Definition Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands modifying schema objects (CREATE, ALTER, DROP)."
+      },
+      {
+        "id": "C",
+        "text": "DML (Data Manipulation Language)",
+        "isCorrect": true,
+        "meaning": "Category of SQL commands updating table rows (INSERT, UPDATE, DELETE)."
+      },
+      {
+        "id": "D",
+        "text": "DCL (Data Control Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands governing security permissions (GRANT, REVOKE)."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063560000,
+    "updatedAt": 1715063560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-824",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "GRANT and REVOKE statements belong to which category of SQL commands?",
+    "back": "DCL (Data Control Language)",
+    "explanation": "`GRANT` and `REVOKE` belong to DCL (Data Control Language), governing user authorizations, rights, and security permissions.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "DQL (Data Query Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands focused on querying data (SELECT)."
+      },
+      {
+        "id": "B",
+        "text": "DDL (Data Definition Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands modifying schema objects (CREATE, ALTER, DROP)."
+      },
+      {
+        "id": "C",
+        "text": "DML (Data Manipulation Language)",
+        "isCorrect": false,
+        "meaning": "Category of SQL commands updating table rows (INSERT, UPDATE, DELETE)."
+      },
+      {
+        "id": "D",
+        "text": "DCL (Data Control Language)",
+        "isCorrect": true,
+        "meaning": "Category of SQL commands governing security permissions (GRANT, REVOKE)."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063620000,
+    "updatedAt": 1715063620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-825",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL keyword combines the results of two SELECT statements and automatically removes duplicate rows?",
+    "back": "UNION",
+    "explanation": "`UNION` combines the result sets of two SELECT queries and automatically runs duplicate elimination to return only distinct rows.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "UNION",
+        "isCorrect": true,
+        "meaning": "Set operator combining result rows from two queries with duplicate elimination."
+      },
+      {
+        "id": "B",
+        "text": "UNION ALL",
+        "isCorrect": false,
+        "meaning": "Combines query results preserving all duplicate rows."
+      },
+      {
+        "id": "C",
+        "text": "JOIN",
+        "isCorrect": false,
+        "meaning": "Relational operator combining columns from related tables."
+      },
+      {
+        "id": "D",
+        "text": "MERGE",
+        "isCorrect": false,
+        "meaning": "Upsert statement combining INSERT, UPDATE, and DELETE actions."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063680000,
+    "updatedAt": 1715063680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-826",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL keyword combines the results of two SELECT statements and keeps all duplicate rows?",
+    "back": "UNION ALL",
+    "explanation": "`UNION ALL` merges the result sets of two SELECT queries while preserving all duplicate rows, executing faster because it skips deduplication sorting.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "UNION",
+        "isCorrect": false,
+        "meaning": "Set operator combining result rows from two queries with duplicate elimination."
+      },
+      {
+        "id": "B",
+        "text": "UNION ALL",
+        "isCorrect": true,
+        "meaning": "Combines query results preserving all duplicate rows."
+      },
+      {
+        "id": "C",
+        "text": "INTERSECT",
+        "isCorrect": false,
+        "meaning": "Returns only rows that appear in both query result sets."
+      },
+      {
+        "id": "D",
+        "text": "JOIN",
+        "isCorrect": false,
+        "meaning": "Relational operator combining columns from related tables."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063740000,
+    "updatedAt": 1715063740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-827",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "What term describes the logical structure or blueprint that defines the tables, columns and relationships of a database?",
+    "back": "Schema",
+    "explanation": "A Database Schema is the formal structural blueprint defining the organization of tables, fields, relationships, constraints, and views.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Instance",
+        "isCorrect": false,
+        "meaning": "Operational execution environment and memory structures of a running database."
+      },
+      {
+        "id": "B",
+        "text": "Catalog",
+        "isCorrect": false,
+        "meaning": "Metadata directory describing database schemas and objects."
+      },
+      {
+        "id": "C",
+        "text": "Schema",
+        "isCorrect": true,
+        "meaning": "Logical structural architecture and blueprint defining tables and constraints."
+      },
+      {
+        "id": "D",
+        "text": "Index",
+        "isCorrect": false,
+        "meaning": "Auxiliary data structure accelerating query retrieval speeds."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063800000,
+    "updatedAt": 1715063800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-828",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Unlike a primary key, which type of key is allowed to contain NULL values?",
+    "back": "Foreign key",
+    "explanation": "Unlike a Primary Key (which forbids NULLs), a Foreign Key can hold NULL values if the relationship is optional (e.g. an employee without an assigned department).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Candidate key",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this database context."
+      },
+      {
+        "id": "B",
+        "text": "Composite key",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this database context."
+      },
+      {
+        "id": "C",
+        "text": "Surrogate key",
+        "isCorrect": false,
+        "meaning": "Artificially generated numeric key (e.g. auto-increment) with no business meaning."
+      },
+      {
+        "id": "D",
+        "text": "Foreign key",
+        "isCorrect": true,
+        "meaning": "Correct answer: Unlike a Primary Key (which forbids NULLs), a Foreign Key can hold NULL values if the relationship is optional (e.g. an employee without an assigned department)."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063860000,
+    "updatedAt": 1715063860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-829",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "What is denormalization primarily used to achieve?",
+    "back": "Improved read performance by introducing controlled redundancy",
+    "explanation": "Denormalization deliberately introduces controlled redundancy into normalized schemas to reduce expensive joins and boost read query performance in analytical workloads.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Improved read performance by introducing controlled redundancy",
+        "isCorrect": true,
+        "meaning": "Core justification for denormalizing relational schemas."
+      },
+      {
+        "id": "B",
+        "text": "Elimination of all redundancy",
+        "isCorrect": false,
+        "meaning": "Goal of normalization, the opposite of denormalization."
+      },
+      {
+        "id": "C",
+        "text": "Stricter referential integrity",
+        "isCorrect": false,
+        "meaning": "Achieved through normalized foreign keys, not denormalization."
+      },
+      {
+        "id": "D",
+        "text": "Smaller storage footprint",
+        "isCorrect": false,
+        "meaning": "Normalization minimizes footprint; denormalization increases storage."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063920000,
+    "updatedAt": 1715063920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-830",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "What is a composite key?",
+    "back": "A key formed by combining two or more columns to uniquely identify a row",
+    "explanation": "A Composite Key is a candidate or primary key consisting of two or more combined columns required together to uniquely identify a record.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "A key that is always auto-incremented",
+        "isCorrect": false,
+        "meaning": "Describes an identity or surrogate key."
+      },
+      {
+        "id": "B",
+        "text": "A key formed by combining two or more columns to uniquely identify a row",
+        "isCorrect": true,
+        "meaning": "Formal definition of a composite key."
+      },
+      {
+        "id": "C",
+        "text": "A key that references another table",
+        "isCorrect": false,
+        "meaning": "Describes a foreign key."
+      },
+      {
+        "id": "D",
+        "text": "A key with no constraints",
+        "isCorrect": false,
+        "meaning": "Invalid key description."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715063980000,
+    "updatedAt": 1715063980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715063980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-831",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL keyword is used to give a column or table a temporary alternative name in a query?",
+    "back": "AS",
+    "explanation": "The `AS` keyword creates a temporary alias for a table or column name within query results, improving readability.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "ALIAS",
+        "isCorrect": false,
+        "meaning": "Generic descriptive term; SQL uses keyword `AS`."
+      },
+      {
+        "id": "B",
+        "text": "RENAME",
+        "isCorrect": false,
+        "meaning": "DDL command changing object names permanently."
+      },
+      {
+        "id": "C",
+        "text": "AS",
+        "isCorrect": true,
+        "meaning": "SQL keyword assigning a temporary column or table alias."
+      },
+      {
+        "id": "D",
+        "text": "LIKE",
+        "isCorrect": false,
+        "meaning": "Pattern matching comparison operator using wildcards."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715064040000,
+    "updatedAt": 1715064040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-832",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL construct checks that a correlated subquery returns no matching rows?",
+    "back": "NOT EXISTS",
+    "explanation": "`NOT EXISTS` evaluates to True if the correlated subquery returns zero matching rows, often outperforming `NOT IN` when handling nullable columns.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "NOT IN",
+        "isCorrect": false,
+        "meaning": "Checks if value does not match any items in list; sensitive to NULLs."
+      },
+      {
+        "id": "B",
+        "text": "EXCEPT",
+        "isCorrect": false,
+        "meaning": "Set operator returning rows in first query that do not exist in second query."
+      },
+      {
+        "id": "C",
+        "text": "IS NULL",
+        "isCorrect": false,
+        "meaning": "Comparison operator checking for missing or null value."
+      },
+      {
+        "id": "D",
+        "text": "NOT EXISTS",
+        "isCorrect": true,
+        "meaning": "Predicate evaluating True when correlated subquery yields zero rows."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715064100000,
+    "updatedAt": 1715064100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-833",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL operator checks whether a value matches any value within a specified list?",
+    "back": "IN",
+    "explanation": "The `IN` operator checks whether a specified operand value matches any value within a comma-separated list or subquery result.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IN",
+        "isCorrect": true,
+        "meaning": "Membership operator checking against a list or subquery."
+      },
+      {
+        "id": "B",
+        "text": "BETWEEN",
+        "isCorrect": false,
+        "meaning": "Range comparison operator matching inclusive boundaries."
+      },
+      {
+        "id": "C",
+        "text": "LIKE",
+        "isCorrect": false,
+        "meaning": "Pattern matching comparison operator using wildcards."
+      },
+      {
+        "id": "D",
+        "text": "ANY",
+        "isCorrect": false,
+        "meaning": "Compares value to each value returned by a subquery."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715064160000,
+    "updatedAt": 1715064160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-834",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which SQL operator checks whether a value falls within a specified inclusive range?",
+    "back": "BETWEEN",
+    "explanation": "The `BETWEEN` operator matches values within an inclusive range (`value >= low AND value <= high`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "IN",
+        "isCorrect": false,
+        "meaning": "Membership operator checking against a list or subquery."
+      },
+      {
+        "id": "B",
+        "text": "BETWEEN",
+        "isCorrect": true,
+        "meaning": "Range comparison operator matching inclusive boundaries."
+      },
+      {
+        "id": "C",
+        "text": "LIKE",
+        "isCorrect": false,
+        "meaning": "Pattern matching comparison operator using wildcards."
+      },
+      {
+        "id": "D",
+        "text": "EXISTS",
+        "isCorrect": false,
+        "meaning": "Predicate evaluating True when subquery returns one or more rows."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715064220000,
+    "updatedAt": 1715064220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-835",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "Which term describes a database that stores data as flexible, JSON-like documents rather than fixed rows and columns?",
+    "back": "NoSQL / document database",
+    "explanation": "NoSQL document databases (e.g. MongoDB) store semi-structured data as flexible BSON/JSON documents without rigid predefined schemas.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Relational database",
+        "isCorrect": false,
+        "meaning": "Tabular database governed by relations, foreign keys, and SQL."
+      },
+      {
+        "id": "B",
+        "text": "Columnar database",
+        "isCorrect": false,
+        "meaning": "Database organizing data storage by columns to accelerate aggregation."
+      },
+      {
+        "id": "C",
+        "text": "NoSQL / document database",
+        "isCorrect": true,
+        "meaning": "Database storing unstructured or semi-structured JSON-like documents."
+      },
+      {
+        "id": "D",
+        "text": "Graph database",
+        "isCorrect": false,
+        "meaning": "Database storing entities as nodes and relationships as edges."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715064280000,
+    "updatedAt": 1715064280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-836",
+    "deckId": "deck-dbms",
+    "type": "mcq",
+    "front": "What term describes a system's ability to handle increasing workload by adding more resources?",
+    "back": "Scalability",
+    "explanation": "Scalability is the architecture's capacity to accommodate growing transactional throughput by scaling up (vertical) or scaling out (horizontal).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "Redundancy",
+        "isCorrect": false,
+        "meaning": "Duplication of components or data to ensure continuous availability."
+      },
+      {
+        "id": "B",
+        "text": "Latency",
+        "isCorrect": false,
+        "meaning": "Time delay experienced in data transmission or transaction execution."
+      },
+      {
+        "id": "C",
+        "text": "Concurrency",
+        "isCorrect": false,
+        "meaning": "Ability to execute multiple transactions simultaneously without conflict."
+      },
+      {
+        "id": "D",
+        "text": "Scalability",
+        "isCorrect": true,
+        "meaning": "Ability of a system to handle increased load by adding resources."
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database",
+      "Queries",
+      "Transactions"
+    ],
+    "createdAt": 1715064340000,
+    "updatedAt": 1715064340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-837",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML tag is used to define an internal (embedded) style sheet within a page?",
+    "back": "<style>",
+    "explanation": "The `<style>` HTML tag embeds internal CSS styling rules directly within an HTML document, typically placed inside the `<head>` block.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<style>",
+        "isCorrect": true,
+        "meaning": "HTML tag embedding internal CSS declarations in document head."
+      },
+      {
+        "id": "B",
+        "text": "<css>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML tag name."
+      },
+      {
+        "id": "C",
+        "text": "<script>",
+        "isCorrect": false,
+        "meaning": "HTML tag used for embedding or linking JavaScript code."
+      },
+      {
+        "id": "D",
+        "text": "<link>",
+        "isCorrect": false,
+        "meaning": "HTML element connecting external resources like stylesheets."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715064400000,
+    "updatedAt": 1715064400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-838",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML tag is used to link an external CSS stylesheet to an HTML document?",
+    "back": "<link>",
+    "explanation": "The `<link>` tag connects an external stylesheet (`.css` file) to the HTML document via the `rel=\"stylesheet\"` attribute, placed in the `<head>` section.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<style>",
+        "isCorrect": false,
+        "meaning": "HTML tag embedding internal CSS declarations in document head."
+      },
+      {
+        "id": "B",
+        "text": "<link>",
+        "isCorrect": true,
+        "meaning": "HTML element connecting external resources like stylesheets."
+      },
+      {
+        "id": "C",
+        "text": "<script>",
+        "isCorrect": false,
+        "meaning": "HTML tag used for embedding or linking JavaScript code."
+      },
+      {
+        "id": "D",
+        "text": "<css>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML tag name."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715064460000,
+    "updatedAt": 1715064460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-839",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML attribute specifies alternate text to display if an image cannot be loaded?",
+    "back": "alt",
+    "explanation": "The `alt` attribute on `<img>` elements supplies descriptive alternative text rendered if the image fails to load and read aloud by screen readers for accessibility.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "title",
+        "isCorrect": false,
+        "meaning": "Supplies supplementary advisory tooltip text on hover."
+      },
+      {
+        "id": "B",
+        "text": "src",
+        "isCorrect": false,
+        "meaning": "Specifies the URL source path for external media or scripts."
+      },
+      {
+        "id": "C",
+        "text": "alt",
+        "isCorrect": true,
+        "meaning": "Specifies alternative text for accessibility and broken images."
+      },
+      {
+        "id": "D",
+        "text": "longdesc",
+        "isCorrect": false,
+        "meaning": "Obsolete HTML4 attribute for long accessibility descriptions."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715064520000,
+    "updatedAt": 1715064520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-840",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Dustin wants to create an HTML video element with a source, controls, and fallback text for browsers that don't support <video>. Which markup is correct?",
+    "back": "This markup is correct as written",
+    "explanation": "In HTML5, `<video controls>` with nested `<source>` tags and fallback text inside the `<video>` container is the standard, valid markup syntax.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "This markup is correct as written",
+        "isCorrect": true,
+        "meaning": "Valid HTML5 video syntax with controls, source, and browser fallback text."
+      },
+      {
+        "id": "B",
+        "text": "The fallback text must be placed before <source>",
+        "isCorrect": false,
+        "meaning": "Incorrect; fallback text belongs after <source> elements inside <video>."
+      },
+      {
+        "id": "C",
+        "text": "The controls attribute is invalid on <video>",
+        "isCorrect": false,
+        "meaning": "Incorrect; `controls` is a standard boolean attribute on `<video>`."
+      },
+      {
+        "id": "D",
+        "text": "The <source> tag must be replaced with <src>",
+        "isCorrect": false,
+        "meaning": "Incorrect; `<source>` is the standard element for specifying video media paths."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715064580000,
+    "updatedAt": 1715064580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064580000,
+      "lapses": 0,
+      "state": "new"
+    },
+    "codeSnippet": "<video controls>\\n  <source src=\\\"video.mp4\\\" type=\\\"video/mp4\\\">\\n  <p>Sorry, your browser doesn't support the video element.</p>\\n</video>",
+    "codeLanguage": "html"
+  },
+  {
+    "id": "card-acc-841",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML5 semantic element is intended for defining a page's primary navigation links?",
+    "back": "<nav>",
+    "explanation": "The `<nav>` semantic element marks a major section of navigation links intended for site-wide or page-level navigation menus.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<navigation>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML5 tag name."
+      },
+      {
+        "id": "B",
+        "text": "<nav>",
+        "isCorrect": true,
+        "meaning": "HTML5 semantic element representing page navigation links."
+      },
+      {
+        "id": "C",
+        "text": "<menu>",
+        "isCorrect": false,
+        "meaning": "HTML element representing an interactive toolbar menu."
+      },
+      {
+        "id": "D",
+        "text": "<links>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML tag name."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715064640000,
+    "updatedAt": 1715064640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-842",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS property is used to change the color of text?",
+    "back": "color",
+    "explanation": "The `color` CSS property sets the foreground color of text elements (specified by name, hex, rgb, or hsl).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "font-color",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name; use `color`."
+      },
+      {
+        "id": "B",
+        "text": "text-color",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name; use `color`."
+      },
+      {
+        "id": "C",
+        "text": "fgcolor",
+        "isCorrect": false,
+        "meaning": "Obsolete legacy HTML attribute; not valid CSS."
+      },
+      {
+        "id": "D",
+        "text": "color",
+        "isCorrect": true,
+        "meaning": "CSS property specifying text foreground color."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715064700000,
+    "updatedAt": 1715064700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-843",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS property is used to change the background color of an element?",
+    "back": "background-color",
+    "explanation": "The `background-color` CSS property specifies the solid fill background color of an element's rendering box.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "background-color",
+        "isCorrect": true,
+        "meaning": "CSS property specifying background fill color."
+      },
+      {
+        "id": "B",
+        "text": "bgcolor",
+        "isCorrect": false,
+        "meaning": "Obsolete HTML attribute; CSS uses `background-color`."
+      },
+      {
+        "id": "C",
+        "text": "color",
+        "isCorrect": false,
+        "meaning": "CSS property specifying text foreground color."
+      },
+      {
+        "id": "D",
+        "text": "back-color",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715064760000,
+    "updatedAt": 1715064760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-844",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS property controls the space between an element's content and its border?",
+    "back": "padding",
+    "explanation": "The `padding` CSS property creates internal breathing room between the element's content box and its outer border line.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "margin",
+        "isCorrect": false,
+        "meaning": "CSS property creating clearance outside element borders."
+      },
+      {
+        "id": "B",
+        "text": "padding",
+        "isCorrect": true,
+        "meaning": "CSS property creating clearance between content and border."
+      },
+      {
+        "id": "C",
+        "text": "spacing",
+        "isCorrect": false,
+        "meaning": "Non-standard CSS property name."
+      },
+      {
+        "id": "D",
+        "text": "border-space",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name; table spacing uses `border-spacing`."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715064820000,
+    "updatedAt": 1715064820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-845",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS property controls the space outside an element's border, separating it from neighboring elements?",
+    "back": "margin",
+    "explanation": "The `margin` CSS property clears space outside an element's outer border, pushing neighboring sibling elements away.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "padding",
+        "isCorrect": false,
+        "meaning": "CSS property creating clearance between content and border."
+      },
+      {
+        "id": "B",
+        "text": "spacing",
+        "isCorrect": false,
+        "meaning": "Non-standard CSS property name."
+      },
+      {
+        "id": "C",
+        "text": "margin",
+        "isCorrect": true,
+        "meaning": "CSS property creating clearance outside element borders."
+      },
+      {
+        "id": "D",
+        "text": "border-space",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name; table spacing uses `border-spacing`."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715064880000,
+    "updatedAt": 1715064880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-846",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "In the CSS box model, what is the correct order of layers from the innermost to the outermost?",
+    "back": "content \u2192 padding \u2192 border \u2192 margin",
+    "explanation": "In the CSS Box Model, the layers from innermost to outermost are: Content box -> Padding -> Border -> Margin.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "content \u2192 border \u2192 padding \u2192 margin",
+        "isCorrect": false,
+        "meaning": "Incorrect order; padding sits inside the border."
+      },
+      {
+        "id": "B",
+        "text": "margin \u2192 border \u2192 padding \u2192 content",
+        "isCorrect": false,
+        "meaning": "Outside-in order, not inside-out."
+      },
+      {
+        "id": "C",
+        "text": "padding \u2192 content \u2192 border \u2192 margin",
+        "isCorrect": false,
+        "meaning": "Incorrect; content is the innermost layer."
+      },
+      {
+        "id": "D",
+        "text": "content \u2192 padding \u2192 border \u2192 margin",
+        "isCorrect": true,
+        "meaning": "Standard CSS box model hierarchy from inside out."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715064940000,
+    "updatedAt": 1715064940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715064940000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-847",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS declaration turns an element into a flexible container for its child items?",
+    "back": "display: flex;",
+    "explanation": "`display: flex;` establishes a flex formatting context, turning the element into a flex container and its direct children into flexible items.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "display: flex;",
+        "isCorrect": true,
+        "meaning": "Turns an element into a CSS Flexbox container."
+      },
+      {
+        "id": "B",
+        "text": "display: block;",
+        "isCorrect": false,
+        "meaning": "Standard block-level layout element starting on new line."
+      },
+      {
+        "id": "C",
+        "text": "display: inline;",
+        "isCorrect": false,
+        "meaning": "Inline element flowing alongside text without box sizing."
+      },
+      {
+        "id": "D",
+        "text": "position: relative;",
+        "isCorrect": false,
+        "meaning": "Positions element relative to its normal position without flex container."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065000000,
+    "updatedAt": 1715065000000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065000000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-848",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "In Flexbox, which is the default direction items are laid out in along the main axis?",
+    "back": "flex-direction: row;",
+    "explanation": "In CSS Flexbox, the default `flex-direction` value is `row`, which arranges flex child items horizontally from left to right (in LTR writing mode).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "flex-direction: column;",
+        "isCorrect": false,
+        "meaning": "Lays out flex items vertically top to bottom."
+      },
+      {
+        "id": "B",
+        "text": "flex-direction: row;",
+        "isCorrect": true,
+        "meaning": "Default Flexbox direction laying out items horizontally."
+      },
+      {
+        "id": "C",
+        "text": "justify-content: row;",
+        "isCorrect": false,
+        "meaning": "Invalid syntax; `row` is a `flex-direction` value."
+      },
+      {
+        "id": "D",
+        "text": "align-items: row;",
+        "isCorrect": false,
+        "meaning": "Invalid syntax; `row` is a `flex-direction` value."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065060000,
+    "updatedAt": 1715065060000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065060000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-849",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which Flexbox property aligns flex items along the main axis of the container?",
+    "back": "justify-content",
+    "explanation": "`justify-content` distributes flex items along the main axis of the flex container (horizontal in row layout, vertical in column layout).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "align-items",
+        "isCorrect": false,
+        "meaning": "Aligns flex items along the cross axis."
+      },
+      {
+        "id": "B",
+        "text": "align-content",
+        "isCorrect": false,
+        "meaning": "Aligns multi-line flex tracks along cross axis."
+      },
+      {
+        "id": "C",
+        "text": "justify-content",
+        "isCorrect": true,
+        "meaning": "Aligns flex items along the main axis."
+      },
+      {
+        "id": "D",
+        "text": "flex-wrap",
+        "isCorrect": false,
+        "meaning": "Controls whether flex items wrap onto multiple lines."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065120000,
+    "updatedAt": 1715065120000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065120000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-850",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which Flexbox property aligns flex items along the cross axis of the container?",
+    "back": "align-items",
+    "explanation": "`align-items` aligns flex items along the cross axis (perpendicular to the main axis) within the current flex line.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "justify-content",
+        "isCorrect": false,
+        "meaning": "Aligns flex items along the main axis."
+      },
+      {
+        "id": "B",
+        "text": "flex-direction",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this HTML/CSS context."
+      },
+      {
+        "id": "C",
+        "text": "order",
+        "isCorrect": false,
+        "meaning": "Controls individual order sequence of flex items."
+      },
+      {
+        "id": "D",
+        "text": "align-items",
+        "isCorrect": true,
+        "meaning": "Aligns flex items along the cross axis."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065180000,
+    "updatedAt": 1715065180000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065180000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-851",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS Grid property defines the number and size of the columns in a grid container?",
+    "back": "grid-template-columns",
+    "explanation": "`grid-template-columns` defines the track sizing functions and column count for a CSS Grid container (e.g. `repeat(3, 1fr)`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "grid-template-columns",
+        "isCorrect": true,
+        "meaning": "Defines column tracks and widths in CSS Grid."
+      },
+      {
+        "id": "B",
+        "text": "grid-columns",
+        "isCorrect": false,
+        "meaning": "Obsolete/non-standard CSS grid property."
+      },
+      {
+        "id": "C",
+        "text": "column-count",
+        "isCorrect": false,
+        "meaning": "Multi-column layout property dividing text into newspaper columns."
+      },
+      {
+        "id": "D",
+        "text": "grid-column-size",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065240000,
+    "updatedAt": 1715065240000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065240000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-852",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS selector targets a single element with a specific id attribute?",
+    "back": "#id",
+    "explanation": "The `#id` selector matches the unique element having an `id` attribute matching the selector string.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ".class",
+        "isCorrect": false,
+        "meaning": "Class selector matching elements with specific class attribute."
+      },
+      {
+        "id": "B",
+        "text": "#id",
+        "isCorrect": true,
+        "meaning": "ID selector matching element with specific id attribute."
+      },
+      {
+        "id": "C",
+        "text": "*element",
+        "isCorrect": false,
+        "meaning": "Invalid selector syntax; universal selector is `*`."
+      },
+      {
+        "id": "D",
+        "text": "[attr]",
+        "isCorrect": false,
+        "meaning": "Attribute selector matching elements with specified attribute."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065300000,
+    "updatedAt": 1715065300000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065300000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-853",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS selector targets every element that has been assigned a specific class?",
+    "back": ".class",
+    "explanation": "The `.class` selector matches all HTML elements that have the specified class name listed in their `class` attribute.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ".class",
+        "isCorrect": true,
+        "meaning": "Class selector matching elements with specific class attribute."
+      },
+      {
+        "id": "B",
+        "text": "#id",
+        "isCorrect": false,
+        "meaning": "ID selector matching element with specific id attribute."
+      },
+      {
+        "id": "C",
+        "text": "element",
+        "isCorrect": false,
+        "meaning": "Type/tag selector matching elements by HTML tag name."
+      },
+      {
+        "id": "D",
+        "text": ":hover",
+        "isCorrect": false,
+        "meaning": "Pseudo-class triggered when pointer hovers over element."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065360000,
+    "updatedAt": 1715065360000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065360000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-854",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS pseudo-class applies a style while the mouse pointer is hovering over an element?",
+    "back": ":hover",
+    "explanation": "The `:hover` pseudo-class applies conditional styles whenever the user points at an element with an interactive pointing device without activating it.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ":active",
+        "isCorrect": false,
+        "meaning": "Pseudo-class active while element is being clicked/pressed."
+      },
+      {
+        "id": "B",
+        "text": ":focus",
+        "isCorrect": false,
+        "meaning": "Pseudo-class active when element gains keyboard focus."
+      },
+      {
+        "id": "C",
+        "text": ":visited",
+        "isCorrect": false,
+        "meaning": "Pseudo-class styling visited hyperlinks."
+      },
+      {
+        "id": "D",
+        "text": ":hover",
+        "isCorrect": true,
+        "meaning": "Pseudo-class triggered when pointer hovers over element."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065420000,
+    "updatedAt": 1715065420000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065420000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-855",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS property is used to create rounded corners on an element's border?",
+    "back": "border-radius",
+    "explanation": "The `border-radius` CSS property curves the outer and inner corners of an element's border box.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "border-radius",
+        "isCorrect": true,
+        "meaning": "CSS property creating rounded corners."
+      },
+      {
+        "id": "B",
+        "text": "corner-radius",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      },
+      {
+        "id": "C",
+        "text": "round-corner",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      },
+      {
+        "id": "D",
+        "text": "box-radius",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065480000,
+    "updatedAt": 1715065480000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065480000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-856",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS rule produces a box with a rounded top-left corner and a rounded bottom-right corner only?",
+    "back": "border-radius: 20px 0 20px 0;",
+    "explanation": "The 4-value syntax for `border-radius: [top-left] [top-right] [bottom-right] [bottom-left];` applies clockwise starting from top-left. Therefore, `border-radius: 20px 0 20px 0;` curves top-left and bottom-right to 20px while leaving top-right and bottom-left square (0).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "border-radius: 10px;",
+        "isCorrect": false,
+        "meaning": "Curves all four corners equally by 10px."
+      },
+      {
+        "id": "B",
+        "text": "border-radius: 20px 0 20px 0;",
+        "isCorrect": true,
+        "meaning": "Curves top-left and bottom-right corners by 20px, leaving others square."
+      },
+      {
+        "id": "C",
+        "text": "border-radius: 0 20px 0 20px;",
+        "isCorrect": false,
+        "meaning": "Curves top-right and bottom-left corners only."
+      },
+      {
+        "id": "D",
+        "text": "border-radius: 20px 20px 0 0;",
+        "isCorrect": false,
+        "meaning": "Curves top-left and top-right (both top corners) only."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065540000,
+    "updatedAt": 1715065540000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065540000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-857",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML element is used to create a numbered (ordered) list?",
+    "back": "<ol>",
+    "explanation": "The `<ol>` tag generates an ordered (numbered) list of items, each marked by an `<li>` element.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<ul>",
+        "isCorrect": false,
+        "meaning": "Unordered list element with bullet points."
+      },
+      {
+        "id": "B",
+        "text": "<li>",
+        "isCorrect": false,
+        "meaning": "List item element nested inside `<ol>` or `<ul>`."
+      },
+      {
+        "id": "C",
+        "text": "<ol>",
+        "isCorrect": true,
+        "meaning": "Ordered list element with numbered markers."
+      },
+      {
+        "id": "D",
+        "text": "<dl>",
+        "isCorrect": false,
+        "meaning": "Description/definition list container."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065600000,
+    "updatedAt": 1715065600000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065600000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-858",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML element is used to create a bulleted (unordered) list?",
+    "back": "<ul>",
+    "explanation": "The `<ul>` tag generates an unordered (bulleted) list of items, each marked by an `<li>` element.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<ul>",
+        "isCorrect": true,
+        "meaning": "Unordered list element with bullet points."
+      },
+      {
+        "id": "B",
+        "text": "<ol>",
+        "isCorrect": false,
+        "meaning": "Ordered list element with numbered markers."
+      },
+      {
+        "id": "C",
+        "text": "<li>",
+        "isCorrect": false,
+        "meaning": "List item element nested inside `<ol>` or `<ul>`."
+      },
+      {
+        "id": "D",
+        "text": "<dl>",
+        "isCorrect": false,
+        "meaning": "Description/definition list container."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065660000,
+    "updatedAt": 1715065660000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065660000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-859",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML attribute makes a hyperlink open its target in a new browser tab?",
+    "back": "target=\\\"_blank\\\"",
+    "explanation": "The `target=\"_blank\"` attribute instructs the browser to open the linked URL in a new browsing context (new tab or window).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "target=\\\"_new\\\"",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this HTML/CSS context."
+      },
+      {
+        "id": "B",
+        "text": "target=\\\"_blank\\\"",
+        "isCorrect": true,
+        "meaning": "Correct answer: The `target=\"_blank\"` attribute instructs the browser to open the linked URL in a new browsing context (new tab or window)."
+      },
+      {
+        "id": "C",
+        "text": "rel=\\\"new\\\"",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this HTML/CSS context."
+      },
+      {
+        "id": "D",
+        "text": "open=\\\"tab\\\"",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this HTML/CSS context."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065720000,
+    "updatedAt": 1715065720000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065720000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-860",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML element represents the largest, most important heading on a page?",
+    "back": "<h1>",
+    "explanation": "The `<h1>` tag represents the top-level, most significant heading on an HTML document according to document hierarchy.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<h6>",
+        "isCorrect": false,
+        "meaning": "Lowest-level heading tag in HTML heading hierarchy."
+      },
+      {
+        "id": "B",
+        "text": "<head>",
+        "isCorrect": false,
+        "meaning": "Metadata container for page document headers and links."
+      },
+      {
+        "id": "C",
+        "text": "<header>",
+        "isCorrect": false,
+        "meaning": "Semantic landmark container for page or section introductory banner."
+      },
+      {
+        "id": "D",
+        "text": "<h1>",
+        "isCorrect": true,
+        "meaning": "Top-level most important section heading."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065780000,
+    "updatedAt": 1715065780000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065780000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-861",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML element defines a row within a table?",
+    "back": "<tr>",
+    "explanation": "The `<tr>` (table row) HTML element defines a horizontal row of cells within an HTML table.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<tr>",
+        "isCorrect": true,
+        "meaning": "Table row container element."
+      },
+      {
+        "id": "B",
+        "text": "<td>",
+        "isCorrect": false,
+        "meaning": "Standard table data cell element."
+      },
+      {
+        "id": "C",
+        "text": "<th>",
+        "isCorrect": false,
+        "meaning": "Table header cell element, centered and bold by default."
+      },
+      {
+        "id": "D",
+        "text": "<table>",
+        "isCorrect": false,
+        "meaning": "Table root container element."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065840000,
+    "updatedAt": 1715065840000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065840000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-862",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML element defines a header cell within a table row?",
+    "back": "<th>",
+    "explanation": "The `<th>` (table header) HTML element defines a header cell within a table row, rendered bold and centered by default.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<tr>",
+        "isCorrect": false,
+        "meaning": "Table row container element."
+      },
+      {
+        "id": "B",
+        "text": "<th>",
+        "isCorrect": true,
+        "meaning": "Table header cell element, centered and bold by default."
+      },
+      {
+        "id": "C",
+        "text": "<td>",
+        "isCorrect": false,
+        "meaning": "Standard table data cell element."
+      },
+      {
+        "id": "D",
+        "text": "<thead>",
+        "isCorrect": false,
+        "meaning": "Table head row group container."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065900000,
+    "updatedAt": 1715065900000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065900000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-863",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML element defines a standard data cell within a table row?",
+    "back": "<td>",
+    "explanation": "The `<td>` (table data) HTML element represents a standard data cell within an HTML table row.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<tr>",
+        "isCorrect": false,
+        "meaning": "Table row container element."
+      },
+      {
+        "id": "B",
+        "text": "<th>",
+        "isCorrect": false,
+        "meaning": "Table header cell element, centered and bold by default."
+      },
+      {
+        "id": "C",
+        "text": "<td>",
+        "isCorrect": true,
+        "meaning": "Standard table data cell element."
+      },
+      {
+        "id": "D",
+        "text": "<caption>",
+        "isCorrect": false,
+        "meaning": "Title caption element for a table."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715065960000,
+    "updatedAt": 1715065960000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715065960000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-864",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS length unit is relative to the font size of the root (html) element?",
+    "back": "rem",
+    "explanation": "The `rem` (root em) unit is relative to the computed `font-size` of the root element (`<html>`), typically defaulting to 16px.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "em",
+        "isCorrect": false,
+        "meaning": "Unit relative to font size of the parent element."
+      },
+      {
+        "id": "B",
+        "text": "px",
+        "isCorrect": false,
+        "meaning": "Fixed absolute screen pixel measurement."
+      },
+      {
+        "id": "C",
+        "text": "vh",
+        "isCorrect": false,
+        "meaning": "Viewport height unit equal to 1% of viewport height."
+      },
+      {
+        "id": "D",
+        "text": "rem",
+        "isCorrect": true,
+        "meaning": "Unit relative to font size of the root `<html>` element."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066020000,
+    "updatedAt": 1715066020000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066020000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-865",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS length unit is relative to the font size of the element's parent?",
+    "back": "em",
+    "explanation": "The `em` unit is relative to the font-size of the element's direct parent element in typography calculations.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "em",
+        "isCorrect": true,
+        "meaning": "Unit relative to font size of the parent element."
+      },
+      {
+        "id": "B",
+        "text": "rem",
+        "isCorrect": false,
+        "meaning": "Unit relative to font size of the root `<html>` element."
+      },
+      {
+        "id": "C",
+        "text": "px",
+        "isCorrect": false,
+        "meaning": "Fixed absolute screen pixel measurement."
+      },
+      {
+        "id": "D",
+        "text": "vw",
+        "isCorrect": false,
+        "meaning": "Viewport width unit equal to 1% of viewport width."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066080000,
+    "updatedAt": 1715066080000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066080000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-866",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS technique hides an element visually while it still occupies space in the page layout?",
+    "back": "visibility: hidden;",
+    "explanation": "`visibility: hidden;` renders the element completely invisible while preserving its calculated dimensions, geometry, and space in the layout.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "display: none;",
+        "isCorrect": false,
+        "meaning": "Completely removes element from rendering layout flow."
+      },
+      {
+        "id": "B",
+        "text": "visibility: hidden;",
+        "isCorrect": true,
+        "meaning": "Hides element visually while retaining its spatial footprint."
+      },
+      {
+        "id": "C",
+        "text": "opacity: 0; with pointer-events removed",
+        "isCorrect": false,
+        "meaning": "Makes transparent; still participates in box layout."
+      },
+      {
+        "id": "D",
+        "text": "position: absolute; off-screen",
+        "isCorrect": false,
+        "meaning": "Moves element coordinates outside screen boundary."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066140000,
+    "updatedAt": 1715066140000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066140000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-867",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS technique removes an element from the document flow entirely so it takes up no space at all?",
+    "back": "display: none;",
+    "explanation": "`display: none;` completely removes the element from the document render tree, causing it to occupy zero space as if it did not exist.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "visibility: hidden;",
+        "isCorrect": false,
+        "meaning": "Hides element visually while retaining its spatial footprint."
+      },
+      {
+        "id": "B",
+        "text": "opacity: 0;",
+        "isCorrect": false,
+        "meaning": "Makes element completely transparent while retaining full layout presence."
+      },
+      {
+        "id": "C",
+        "text": "display: none;",
+        "isCorrect": true,
+        "meaning": "Completely removes element from rendering layout flow."
+      },
+      {
+        "id": "D",
+        "text": "z-index: -1;",
+        "isCorrect": false,
+        "meaning": "Pushes element behind background; does not remove from layout."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066200000,
+    "updatedAt": 1715066200000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066200000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-868",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML5 semantic element represents independent, self-contained content that could stand alone, such as a blog post?",
+    "back": "<article>",
+    "explanation": "The `<article>` semantic element encapsulates an autonomous, self-contained composition (blog post, news article, forum comment) intended for independent syndication.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<section>",
+        "isCorrect": false,
+        "meaning": "Semantic thematic grouping container with heading."
+      },
+      {
+        "id": "B",
+        "text": "<div>",
+        "isCorrect": false,
+        "meaning": "Generic block-level division container."
+      },
+      {
+        "id": "C",
+        "text": "<span>",
+        "isCorrect": false,
+        "meaning": "Generic inline container."
+      },
+      {
+        "id": "D",
+        "text": "<article>",
+        "isCorrect": true,
+        "meaning": "Semantic self-contained independent syndicatable content block."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066260000,
+    "updatedAt": 1715066260000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066260000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-869",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML5 semantic element groups related content together, typically under its own heading?",
+    "back": "<section>",
+    "explanation": "The `<section>` semantic element groups generic thematic content together, typically introduced by an explanatory heading.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<section>",
+        "isCorrect": true,
+        "meaning": "Semantic thematic grouping container with heading."
+      },
+      {
+        "id": "B",
+        "text": "<article>",
+        "isCorrect": false,
+        "meaning": "Semantic self-contained independent syndicatable content block."
+      },
+      {
+        "id": "C",
+        "text": "<aside>",
+        "isCorrect": false,
+        "meaning": "Semantic container for tangentially related sidebar content."
+      },
+      {
+        "id": "D",
+        "text": "<footer>",
+        "isCorrect": false,
+        "meaning": "Semantic container for page or section footer."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066320000,
+    "updatedAt": 1715066320000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066320000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-870",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML attribute makes a form input mandatory before the form can be submitted?",
+    "back": "required",
+    "explanation": "The `required` boolean attribute on form inputs forces user completion before the form can pass native HTML5 validation and submit.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "mandatory",
+        "isCorrect": false,
+        "meaning": "Invalid HTML attribute name."
+      },
+      {
+        "id": "B",
+        "text": "required",
+        "isCorrect": true,
+        "meaning": "Boolean attribute mandating input completion before submit."
+      },
+      {
+        "id": "C",
+        "text": "validate",
+        "isCorrect": false,
+        "meaning": "Non-standard attribute name."
+      },
+      {
+        "id": "D",
+        "text": "must",
+        "isCorrect": false,
+        "meaning": "Invalid HTML attribute name."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066380000,
+    "updatedAt": 1715066380000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066380000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-871",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML input type displays a built-in calendar/date picker to the user?",
+    "back": "type=\\\"date\\\"",
+    "explanation": "`<input type=\"date\">` generates an interactive browser-native date picker input control configured to select calendar days, months, and years.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "type=\\\"calendar\\\"",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this HTML/CSS context."
+      },
+      {
+        "id": "B",
+        "text": "type=\\\"datetime\\\"",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this HTML/CSS context."
+      },
+      {
+        "id": "C",
+        "text": "type=\\\"date\\\"",
+        "isCorrect": true,
+        "meaning": "Correct answer: `<input type=\"date\">` generates an interactive browser-native date picker input control configured to select calendar days, months, and years."
+      },
+      {
+        "id": "D",
+        "text": "type=\\\"time\\\"",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this HTML/CSS context."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066440000,
+    "updatedAt": 1715066440000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066440000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-872",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS property controls the front-to-back stacking order of positioned elements that overlap?",
+    "back": "z-index",
+    "explanation": "The `z-index` CSS property controls the third-dimensional stacking order of positioned elements (`relative`, `absolute`, `fixed`, `sticky`) along the Z-axis.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "stack-order",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      },
+      {
+        "id": "B",
+        "text": "layer",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      },
+      {
+        "id": "C",
+        "text": "position-order",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      },
+      {
+        "id": "D",
+        "text": "z-index",
+        "isCorrect": true,
+        "meaning": "Controls front-to-back 3D stacking order of positioned elements."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066500000,
+    "updatedAt": 1715066500000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066500000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-873",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS position value removes an element from normal flow and positions it relative to its nearest positioned ancestor?",
+    "back": "absolute",
+    "explanation": "`position: absolute;` removes the element from the normal document flow and positions it relative to its closest non-static ancestor.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "absolute",
+        "isCorrect": true,
+        "meaning": "Positions element relative to nearest positioned ancestor."
+      },
+      {
+        "id": "B",
+        "text": "static",
+        "isCorrect": false,
+        "meaning": "Default normal document flow positioning."
+      },
+      {
+        "id": "C",
+        "text": "relative",
+        "isCorrect": false,
+        "meaning": "Positions element relative to its own normal position."
+      },
+      {
+        "id": "D",
+        "text": "fixed",
+        "isCorrect": false,
+        "meaning": "Positions element relative to the browser viewport window."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066560000,
+    "updatedAt": 1715066560000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066560000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-874",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS position value keeps an element fixed in the same place within the browser viewport, even while the page is scrolled?",
+    "back": "fixed",
+    "explanation": "`position: fixed;` removes the element from normal flow and pins it relative to the initial browser viewport, maintaining position during page scroll.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "static",
+        "isCorrect": false,
+        "meaning": "Default normal document flow positioning."
+      },
+      {
+        "id": "B",
+        "text": "fixed",
+        "isCorrect": true,
+        "meaning": "Positions element relative to the browser viewport window."
+      },
+      {
+        "id": "C",
+        "text": "relative",
+        "isCorrect": false,
+        "meaning": "Positions element relative to its own normal position."
+      },
+      {
+        "id": "D",
+        "text": "absolute",
+        "isCorrect": false,
+        "meaning": "Positions element relative to nearest positioned ancestor."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066620000,
+    "updatedAt": 1715066620000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066620000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-875",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML element is used to embed JavaScript directly into a web page?",
+    "back": "<script>",
+    "explanation": "The `<script>` tag embeds client-side JavaScript executable code or references external scripts via the `src` attribute.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<js>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML tag name."
+      },
+      {
+        "id": "B",
+        "text": "<javascript>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML tag name."
+      },
+      {
+        "id": "C",
+        "text": "<script>",
+        "isCorrect": true,
+        "meaning": "HTML tag used for embedding or linking JavaScript code."
+      },
+      {
+        "id": "D",
+        "text": "<code>",
+        "isCorrect": false,
+        "meaning": "Inline phrasing tag indicating computer code fragment."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066680000,
+    "updatedAt": 1715066680000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066680000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-876",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS at-rule is used to apply different styles based on the screen width, enabling responsive design?",
+    "back": "@media",
+    "explanation": "The `@media` CSS at-rule specifies conditional media queries to apply distinct styling rules based on device viewport width, resolution, and orientation.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "@responsive",
+        "isCorrect": false,
+        "meaning": "Invalid CSS at-rule."
+      },
+      {
+        "id": "B",
+        "text": "@screen",
+        "isCorrect": false,
+        "meaning": "Tailwind directive; not a standard native CSS at-rule."
+      },
+      {
+        "id": "C",
+        "text": "@viewport",
+        "isCorrect": false,
+        "meaning": "Obsolete proposed CSS at-rule; standard uses `@media`."
+      },
+      {
+        "id": "D",
+        "text": "@media",
+        "isCorrect": true,
+        "meaning": "CSS at-rule applying conditional styles based on media queries."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066740000,
+    "updatedAt": 1715066740000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066740000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-877",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML5 semantic element identifies the main, dominant content of the document body?",
+    "back": "<main>",
+    "explanation": "The `<main>` semantic element encapsulates the central, unique content of the `<body>`, excluding repeating headers, footers, and sidebars.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<main>",
+        "isCorrect": true,
+        "meaning": "Semantic landmark containing unique primary document content."
+      },
+      {
+        "id": "B",
+        "text": "<content>",
+        "isCorrect": false,
+        "meaning": "Deprecated Web Components element; not standard semantic main."
+      },
+      {
+        "id": "C",
+        "text": "<body-main>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML tag name."
+      },
+      {
+        "id": "D",
+        "text": "<primary>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML tag name."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066800000,
+    "updatedAt": 1715066800000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066800000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-878",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML5 semantic element defines the footer for its nearest sectioning parent or the page?",
+    "back": "<footer>",
+    "explanation": "The `<footer>` semantic element defines the footer block for its nearest sectioning ancestor or the entire page, typically containing copyright and links.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<bottom>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML tag name."
+      },
+      {
+        "id": "B",
+        "text": "<footer>",
+        "isCorrect": true,
+        "meaning": "Semantic container for page or section footer."
+      },
+      {
+        "id": "C",
+        "text": "<end>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML tag name."
+      },
+      {
+        "id": "D",
+        "text": "<section-end>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML tag name."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066860000,
+    "updatedAt": 1715066860000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066860000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-879",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS property specifies the typeface used to render text?",
+    "back": "font-family",
+    "explanation": "The `font-family` CSS property specifies a prioritized fallback list of font family names used to render text glyphs.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "font-style",
+        "isCorrect": false,
+        "meaning": "Specifies italic, normal, or oblique font styling."
+      },
+      {
+        "id": "B",
+        "text": "text-family",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      },
+      {
+        "id": "C",
+        "text": "font-family",
+        "isCorrect": true,
+        "meaning": "CSS property specifying font face priorities."
+      },
+      {
+        "id": "D",
+        "text": "font-face",
+        "isCorrect": false,
+        "meaning": "CSS at-rule is `@font-face`; property is `font-family`."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066920000,
+    "updatedAt": 1715066920000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066920000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-880",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS property controls the size of rendered text?",
+    "back": "font-size",
+    "explanation": "The `font-size` CSS property sets the dimension/height of text characters in length units (e.g. `px`, `rem`, `%`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "text-size",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      },
+      {
+        "id": "B",
+        "text": "font-weight",
+        "isCorrect": false,
+        "meaning": "Controls font thickness/boldness (e.g. 400, 700)."
+      },
+      {
+        "id": "C",
+        "text": "text-scale",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      },
+      {
+        "id": "D",
+        "text": "font-size",
+        "isCorrect": true,
+        "meaning": "CSS property controlling text glyph dimensions."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715066980000,
+    "updatedAt": 1715066980000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715066980000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-881",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS property controls the vertical spacing between lines of text?",
+    "back": "line-height",
+    "explanation": "The `line-height` CSS property sets the vertical distance between baselines of adjacent lines of text.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "line-height",
+        "isCorrect": true,
+        "meaning": "Controls vertical leading space between text lines."
+      },
+      {
+        "id": "B",
+        "text": "letter-spacing",
+        "isCorrect": false,
+        "meaning": "Controls tracking space between individual characters."
+      },
+      {
+        "id": "C",
+        "text": "word-spacing",
+        "isCorrect": false,
+        "meaning": "Controls space between words in a line."
+      },
+      {
+        "id": "D",
+        "text": "text-indent",
+        "isCorrect": false,
+        "meaning": "Indents first line of text in paragraph."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067040000,
+    "updatedAt": 1715067040000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067040000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-882",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS pseudo-class selects an element that is the first child of its parent?",
+    "back": ":first-child",
+    "explanation": "The `:first-child` pseudo-class targets an element that is the first child element of its immediate parent container.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ":first-of-type",
+        "isCorrect": false,
+        "meaning": "Selects first sibling of its element type."
+      },
+      {
+        "id": "B",
+        "text": ":first-child",
+        "isCorrect": true,
+        "meaning": "Pseudo-class selecting the first child element of parent."
+      },
+      {
+        "id": "C",
+        "text": "::before",
+        "isCorrect": false,
+        "meaning": "Pseudo-element inserting generated content before element text."
+      },
+      {
+        "id": "D",
+        "text": ":nth-child(0)",
+        "isCorrect": false,
+        "meaning": "Invalid selector; `:nth-child` is 1-indexed in CSS."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067100000,
+    "updatedAt": 1715067100000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067100000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-883",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS pseudo-element inserts generated content immediately before an element's actual content?",
+    "back": "::before",
+    "explanation": "The `::before` pseudo-element generates a cosmetic inline pseudo-element rendered immediately before the element's actual content.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": ":before-content",
+        "isCorrect": false,
+        "meaning": "Invalid CSS pseudo-element name."
+      },
+      {
+        "id": "B",
+        "text": "::first-line",
+        "isCorrect": false,
+        "meaning": "Pseudo-element styling only the first formatted line of text."
+      },
+      {
+        "id": "C",
+        "text": "::before",
+        "isCorrect": true,
+        "meaning": "Pseudo-element inserting generated content before element text."
+      },
+      {
+        "id": "D",
+        "text": ":pre",
+        "isCorrect": false,
+        "meaning": "Invalid CSS selector."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067160000,
+    "updatedAt": 1715067160000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067160000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-884",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML attribute applies inline CSS directly to a single element?",
+    "back": "style",
+    "explanation": "The `style` HTML attribute allows inline CSS declarations applied directly to a single specific HTML element.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "css",
+        "isCorrect": false,
+        "meaning": "Invalid HTML attribute name."
+      },
+      {
+        "id": "B",
+        "text": "class",
+        "isCorrect": false,
+        "meaning": "Assigns CSS class names to an element."
+      },
+      {
+        "id": "C",
+        "text": "design",
+        "isCorrect": false,
+        "meaning": "Invalid HTML attribute name."
+      },
+      {
+        "id": "D",
+        "text": "style",
+        "isCorrect": true,
+        "meaning": "HTML attribute applying inline styles directly to an element."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067220000,
+    "updatedAt": 1715067220000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067220000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-885",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML element is an inline container used to group text or other inline elements without adding semantic meaning?",
+    "back": "<span>",
+    "explanation": "The `<span>` tag is a generic inline container for text or phrased content that carries no inherent semantic meaning.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<span>",
+        "isCorrect": true,
+        "meaning": "Generic inline container."
+      },
+      {
+        "id": "B",
+        "text": "<div>",
+        "isCorrect": false,
+        "meaning": "Generic block-level division container."
+      },
+      {
+        "id": "C",
+        "text": "<section>",
+        "isCorrect": false,
+        "meaning": "Semantic thematic grouping container with heading."
+      },
+      {
+        "id": "D",
+        "text": "<p>",
+        "isCorrect": false,
+        "meaning": "Standard paragraph text block element."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067280000,
+    "updatedAt": 1715067280000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067280000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-886",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML element is a generic block-level container with no inherent semantic meaning?",
+    "back": "<div>",
+    "explanation": "The `<div>` (division) tag is a generic block-level container without semantic meaning, commonly used for grouping elements for styling or layout.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<span>",
+        "isCorrect": false,
+        "meaning": "Generic inline container."
+      },
+      {
+        "id": "B",
+        "text": "<div>",
+        "isCorrect": true,
+        "meaning": "Generic block-level division container."
+      },
+      {
+        "id": "C",
+        "text": "<article>",
+        "isCorrect": false,
+        "meaning": "Semantic self-contained independent syndicatable content block."
+      },
+      {
+        "id": "D",
+        "text": "<body>",
+        "isCorrect": false,
+        "meaning": "Root document body container enclosing all rendered content."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067340000,
+    "updatedAt": 1715067340000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067340000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-887",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS property specifies the width of an element's content box?",
+    "back": "width",
+    "explanation": "The `width` CSS property sets the horizontal width dimension of an element's content area (or border box under `border-box`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "size",
+        "isCorrect": false,
+        "meaning": "HTML attribute for select dropdowns/inputs; not CSS box width."
+      },
+      {
+        "id": "B",
+        "text": "block-size",
+        "isCorrect": false,
+        "meaning": "CSS logical property for dimension perpendicular to inline direction."
+      },
+      {
+        "id": "C",
+        "text": "width",
+        "isCorrect": true,
+        "meaning": "CSS property defining horizontal width of content/border box."
+      },
+      {
+        "id": "D",
+        "text": "dimension",
+        "isCorrect": false,
+        "meaning": "Invalid CSS property name."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067400000,
+    "updatedAt": 1715067400000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067400000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-888",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS length unit is relative to 1% of the viewport's width?",
+    "back": "vw",
+    "explanation": "The `vw` (viewport width) unit represents 1% of the total width of the browser's viewport.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "vh",
+        "isCorrect": false,
+        "meaning": "Viewport height unit equal to 1% of viewport height."
+      },
+      {
+        "id": "B",
+        "text": "rem",
+        "isCorrect": false,
+        "meaning": "Unit relative to font size of the root `<html>` element."
+      },
+      {
+        "id": "C",
+        "text": "em",
+        "isCorrect": false,
+        "meaning": "Unit relative to font size of the parent element."
+      },
+      {
+        "id": "D",
+        "text": "vw",
+        "isCorrect": true,
+        "meaning": "Viewport width unit equal to 1% of viewport width."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067460000,
+    "updatedAt": 1715067460000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067460000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-889",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS length unit is relative to 1% of the viewport's height?",
+    "back": "vh",
+    "explanation": "The `vh` (viewport height) unit represents 1% of the total height of the browser's viewport.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "vh",
+        "isCorrect": true,
+        "meaning": "Viewport height unit equal to 1% of viewport height."
+      },
+      {
+        "id": "B",
+        "text": "vw",
+        "isCorrect": false,
+        "meaning": "Viewport width unit equal to 1% of viewport width."
+      },
+      {
+        "id": "C",
+        "text": "rem",
+        "isCorrect": false,
+        "meaning": "Unit relative to font size of the root `<html>` element."
+      },
+      {
+        "id": "D",
+        "text": "em",
+        "isCorrect": false,
+        "meaning": "Unit relative to font size of the parent element."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067520000,
+    "updatedAt": 1715067520000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067520000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-890",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS declaration makes an element's declared width and height include its padding and border, rather than adding them on top?",
+    "back": "box-sizing: border-box;",
+    "explanation": "`box-sizing: border-box;` configures the element box model so that declared `width` and `height` encompass padding and border dimensions.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "box-sizing: content-box;",
+        "isCorrect": false,
+        "meaning": "Default box model where padding and borders add onto declared width."
+      },
+      {
+        "id": "B",
+        "text": "box-sizing: border-box;",
+        "isCorrect": true,
+        "meaning": "Includes padding and border within declared width and height."
+      },
+      {
+        "id": "C",
+        "text": "box-model: border;",
+        "isCorrect": false,
+        "meaning": "Invalid CSS declaration."
+      },
+      {
+        "id": "D",
+        "text": "display: box;",
+        "isCorrect": false,
+        "meaning": "Obsolete 2009 Flexbox specification value."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067580000,
+    "updatedAt": 1715067580000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067580000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-891",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML5 input type automatically validates that entered text matches an email address format?",
+    "back": "type=\\\"email\\\"",
+    "explanation": "`<input type=\"email\">` automatically checks that user text adheres to standard internet email address syntax (`user@domain.tld`).",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "type=\\\"text\\\"",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this HTML/CSS context."
+      },
+      {
+        "id": "B",
+        "text": "type=\\\"validate\\\"",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this HTML/CSS context."
+      },
+      {
+        "id": "C",
+        "text": "type=\\\"email\\\"",
+        "isCorrect": true,
+        "meaning": "Correct answer: `<input type=\"email\">` automatically checks that user text adheres to standard internet email address syntax (`user@domain.tld`)."
+      },
+      {
+        "id": "D",
+        "text": "type=\\\"mail\\\"",
+        "isCorrect": false,
+        "meaning": "Incorrect option for this HTML/CSS context."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067640000,
+    "updatedAt": 1715067640000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067640000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-892",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML attribute displays faint hint text inside an empty input field?",
+    "back": "placeholder",
+    "explanation": "The `placeholder` attribute specifies a short, temporary hint text displayed within an input control when empty.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "value",
+        "isCorrect": false,
+        "meaning": "Sets the actual current form control data value."
+      },
+      {
+        "id": "B",
+        "text": "hint",
+        "isCorrect": false,
+        "meaning": "Non-standard HTML attribute."
+      },
+      {
+        "id": "C",
+        "text": "default",
+        "isCorrect": false,
+        "meaning": "Non-standard HTML input attribute."
+      },
+      {
+        "id": "D",
+        "text": "placeholder",
+        "isCorrect": true,
+        "meaning": "Displays temporary light text inside input before typing."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067700000,
+    "updatedAt": 1715067700000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067700000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-893",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS property specifies whether an element's overflowing content is clipped, scrolled, or shown?",
+    "back": "overflow",
+    "explanation": "The `overflow` CSS property determines behavior (`visible`, `hidden`, `scroll`, `auto`) when content exceeds its box boundary.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "overflow",
+        "isCorrect": true,
+        "meaning": "Controls clipping and scrollbars when content exceeds boundary."
+      },
+      {
+        "id": "B",
+        "text": "clip",
+        "isCorrect": false,
+        "meaning": "Deprecated CSS property for SVG clipping masks."
+      },
+      {
+        "id": "C",
+        "text": "display",
+        "isCorrect": false,
+        "meaning": "Specifies inner and outer rendering display types."
+      },
+      {
+        "id": "D",
+        "text": "visibility",
+        "isCorrect": false,
+        "meaning": "Toggles visual visibility without altering layout geometry."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067760000,
+    "updatedAt": 1715067760000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067760000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-894",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML element is used to embed another full webpage within the current page?",
+    "back": "<iframe>",
+    "explanation": "The `<iframe>` (inline frame) tag embeds an independent external HTML document context directly inside the current webpage.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<embed>",
+        "isCorrect": false,
+        "meaning": "Container for external resources or legacy plug-ins."
+      },
+      {
+        "id": "B",
+        "text": "<iframe>",
+        "isCorrect": true,
+        "meaning": "Embeds a nested browsing context (webpage) inside current document."
+      },
+      {
+        "id": "C",
+        "text": "<object>",
+        "isCorrect": false,
+        "meaning": "General container for external multimedia resources or PDFs."
+      },
+      {
+        "id": "D",
+        "text": "<frame>",
+        "isCorrect": false,
+        "meaning": "Obsolete HTML4 frameset element removed in HTML5."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067820000,
+    "updatedAt": 1715067820000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067820000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-895",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which CSS combinator selects only the direct children of a specified element?",
+    "back": "> (child combinator)",
+    "explanation": "The child combinator (`>`) selects only direct child nodes of the preceding selector, ignoring deeper descendant generations.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "(space) descendant combinator",
+        "isCorrect": false,
+        "meaning": "Selects all matching descendants at any nested depth."
+      },
+      {
+        "id": "B",
+        "text": "+ (adjacent sibling)",
+        "isCorrect": false,
+        "meaning": "Selects immediate next sibling sharing same parent."
+      },
+      {
+        "id": "C",
+        "text": "> (child combinator)",
+        "isCorrect": true,
+        "meaning": "Selects immediate direct child elements only."
+      },
+      {
+        "id": "D",
+        "text": "~ (general sibling)",
+        "isCorrect": false,
+        "meaning": "Selects subsequent siblings sharing same parent."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067880000,
+    "updatedAt": 1715067880000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067880000,
+      "lapses": 0,
+      "state": "new"
+    }
+  },
+  {
+    "id": "card-acc-896",
+    "deckId": "deck-web",
+    "type": "mcq",
+    "front": "Which HTML element groups related form controls together, often paired with a <legend>?",
+    "back": "<fieldset>",
+    "explanation": "The `<fieldset>` element groups logically related form controls and labels together within an HTML form, typically titled by a `<legend>`.",
+    "mcqOptions": [
+      {
+        "id": "A",
+        "text": "<formgroup>",
+        "isCorrect": false,
+        "meaning": "Bootstrap CSS utility class; not an HTML element."
+      },
+      {
+        "id": "B",
+        "text": "<groupbox>",
+        "isCorrect": false,
+        "meaning": "Windows desktop UI control; not an HTML element."
+      },
+      {
+        "id": "C",
+        "text": "<controlset>",
+        "isCorrect": false,
+        "meaning": "Invalid HTML tag name."
+      },
+      {
+        "id": "D",
+        "text": "<fieldset>",
+        "isCorrect": true,
+        "meaning": "Groups related form controls with optional `<legend>` caption."
+      }
+    ],
+    "tags": [
+      "Web",
+      "HTML",
+      "CSS",
+      "Frontend"
+    ],
+    "createdAt": 1715067940000,
+    "updatedAt": 1715067940000,
+    "srs": {
+      "reps": 0,
+      "interval": 0,
+      "easeFactor": 2.5,
+      "lastStudied": null,
+      "dueDate": 1715067940000,
       "lapses": 0,
       "state": "new"
     }

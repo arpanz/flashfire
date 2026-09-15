@@ -8,6 +8,7 @@ import {
   Cloud,
   Code2,
   Globe,
+  Database,
   Target,
   Layers,
 } from 'lucide-react';
@@ -33,6 +34,8 @@ export const DeckIcon: React.FC<DeckIconProps> = ({ deckId, className = 'w-5 h-5
       return <Cloud className={className} />;
     case 'deck-pseudocode':
       return <Code2 className={className} />;
+    case 'deck-dbms':
+      return <Database className={className} />;
     case 'deck-web':
       return <Globe className={className} />;
     default:
