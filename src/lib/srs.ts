@@ -1,7 +1,61 @@
-import { Flashcard, Rating } from './types';
+import { Flashcard, Rating, ReviewLog } from './types';
 
 const MIN_EASE_FACTOR = 1.3;
 const DEFAULT_EASE_FACTOR = 2.5;
+
+export type RecallDifficulty = 'forgot' | 'hard' | 'good' | 'easy' | 'new';
+
+export interface CardRecallMetadata {
+  difficulty: RecallDifficulty;
+  latestLog?: ReviewLog;
+  attemptCount: number;
+}
+
+/**
+ * Classifies a flashcard into a recall difficulty bucket based on previous review logs and SRS state.
+ */
+export function getCardRecallMetadata(
+  card: Flashcard,
+  logsByCard?: Map<string, ReviewLog[]>
+): CardRecallMetadata {
+  const cardLogs = logsByCard?.get(card.id) || [];
+  const latestLog = cardLogs[0];
+
+  const reps = card.srs.reps || 0;
+  const lapses = card.srs.lapses || 0;
+  const attemptCount = cardLogs.length || reps + lapses;
+  const isAttempted =
+    attemptCount > 0 ||
+    card.srs.lastStudied !== null ||
+    lapses > 0 ||
+    card.srs.state !== 'new';
+
+  if (!isAttempted) {
+    return {
+      difficulty: 'new',
+      latestLog: undefined,
+      attemptCount: 0,
+    };
+  }
+
+  if (latestLog) {
+    if (latestLog.rating === 1) return { difficulty: 'forgot', latestLog, attemptCount };
+    if (latestLog.rating === 2) return { difficulty: 'hard', latestLog, attemptCount };
+    if (latestLog.rating === 3) return { difficulty: 'good', latestLog, attemptCount };
+    if (latestLog.rating === 4) return { difficulty: 'easy', latestLog, attemptCount };
+  }
+
+  if (lapses > 0 && card.srs.interval === 0) {
+    return { difficulty: 'forgot', latestLog: undefined, attemptCount };
+  }
+  if ((card.srs.easeFactor || 2.5) < 2.3) {
+    return { difficulty: 'hard', latestLog: undefined, attemptCount };
+  }
+  if (card.srs.state === 'mastered' || (card.srs.interval || 0) >= 6) {
+    return { difficulty: 'easy', latestLog: undefined, attemptCount };
+  }
+  return { difficulty: 'good', latestLog: undefined, attemptCount };
+}
 
 export interface SRSResult {
   reps: number;

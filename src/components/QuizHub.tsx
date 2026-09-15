@@ -20,9 +20,10 @@ import {
   ChevronDown,
   ChevronUp,
   Info,
+  Brain,
 } from "lucide-react";
-import { Deck, Flashcard, Rating, MCQOption } from "../lib/types";
-import { calculateNextReview } from "../lib/srs";
+import { Deck, Flashcard, Rating, MCQOption, ReviewLog } from "../lib/types";
+import { calculateNextReview, RecallDifficulty, getCardRecallMetadata } from "../lib/srs";
 import { storage } from "../lib/storage";
 import { sounds } from "../lib/sound";
 import { getCookie, setCookie } from "../lib/cookies";
@@ -62,6 +63,65 @@ function shuffleArray<T>(items: T[]): T[] {
   return result;
 }
 
+const ALL_DIFFICULTIES: RecallDifficulty[] = ["forgot", "hard", "good", "easy", "new"];
+
+interface DifficultyConfigItem {
+  key: RecallDifficulty;
+  label: string;
+  desc: string;
+  dotClass: string;
+  activeClass: string;
+  badgeClass: string;
+}
+
+const DIFFICULTY_CONFIG: DifficultyConfigItem[] = [
+  {
+    key: "forgot",
+    label: "Forgot",
+    desc: "Rating 1 (Again)",
+    dotClass: "bg-rose-500",
+    activeClass:
+      "bg-rose-50 dark:bg-rose-950/40 border-rose-400 dark:border-rose-600 text-rose-900 dark:text-rose-100 shadow-xs ring-1 ring-rose-400/40",
+    badgeClass: "bg-rose-100 dark:bg-rose-900/60 text-rose-700 dark:text-rose-300",
+  },
+  {
+    key: "hard",
+    label: "Hard",
+    desc: "Rating 2 (Hesitated)",
+    dotClass: "bg-amber-500",
+    activeClass:
+      "bg-amber-50 dark:bg-amber-950/40 border-amber-400 dark:border-amber-600 text-amber-900 dark:text-amber-100 shadow-xs ring-1 ring-amber-400/40",
+    badgeClass: "bg-amber-100 dark:bg-amber-900/60 text-amber-800 dark:text-amber-300",
+  },
+  {
+    key: "good",
+    label: "Good",
+    desc: "Rating 3 (Recalled)",
+    dotClass: "bg-blue-500",
+    activeClass:
+      "bg-blue-50 dark:bg-blue-950/40 border-blue-400 dark:border-blue-600 text-blue-900 dark:text-blue-100 shadow-xs ring-1 ring-blue-400/40",
+    badgeClass: "bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300",
+  },
+  {
+    key: "easy",
+    label: "Easy",
+    desc: "Rating 4 (Mastered)",
+    dotClass: "bg-emerald-500",
+    activeClass:
+      "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-400 dark:border-emerald-600 text-emerald-900 dark:text-emerald-100 shadow-xs ring-1 ring-emerald-400/40",
+    badgeClass: "bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300",
+  },
+  {
+    key: "new",
+    label: "Unseen",
+    desc: "Not yet rated",
+    dotClass: "bg-zinc-400 dark:bg-zinc-500",
+    activeClass:
+      "bg-zinc-100 dark:bg-zinc-800 border-zinc-900 dark:border-zinc-300 text-zinc-900 dark:text-zinc-100 shadow-xs ring-1 ring-zinc-900/20 dark:ring-zinc-300/20",
+    badgeClass: "bg-zinc-200 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-300",
+  },
+];
+
 export const QuizHub: React.FC<QuizHubProps> = ({
   decks,
   cards,
@@ -71,6 +131,28 @@ export const QuizHub: React.FC<QuizHubProps> = ({
   onExit,
   onStartStudy,
 }) => {
+  // Review logs listener for reactive difficulty classification
+  const [reviewLogs, setReviewLogs] = useState<ReviewLog[]>(() => storage.getReviewLogs());
+
+  useEffect(() => {
+    setReviewLogs(storage.getReviewLogs());
+    const unsub = storage.subscribe(() => {
+      setReviewLogs(storage.getReviewLogs());
+    });
+    return () => unsub();
+  }, []);
+
+  const logsByCard = useMemo(() => {
+    const map = new Map<string, ReviewLog[]>();
+    reviewLogs.forEach((log) => {
+      const arr = map.get(log.cardId) || [];
+      arr.push(log);
+      map.set(log.cardId, arr);
+    });
+    map.forEach((arr) => arr.sort((a, b) => b.timestamp - a.timestamp));
+    return map;
+  }, [reviewLogs]);
+
   // Setup Configuration State with Cookies Persistence
   const [selectedDeckIds, setSelectedDeckIds] = useState<string[]>(() => {
     if (initialDeckId && initialDeckId !== "all") return [initialDeckId];
@@ -82,6 +164,20 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       } catch {}
     }
     return decks.map((d) => d.id);
+  });
+
+  const [selectedDifficulties, setSelectedDifficulties] = useState<RecallDifficulty[]>(() => {
+    const saved = getCookie("flashfire_quiz_difficulties");
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          const valid = parsed.filter((d: RecallDifficulty) => ALL_DIFFICULTIES.includes(d));
+          if (valid.length > 0) return valid;
+        }
+      } catch {}
+    }
+    return [...ALL_DIFFICULTIES];
   });
 
   const [questionCount, setQuestionCount] = useState<number>(() => {
@@ -264,8 +360,18 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       } else {
         const activeCategoryIds =
           customCategoryIds.length === 0 ? decks.map((d) => d.id) : customCategoryIds;
-        pool = cards.filter((c) => activeCategoryIds.includes(c.deckId));
+        
+        // Filter by active category AND selected recall difficulties
+        pool = cards.filter((c) => {
+          if (!activeCategoryIds.includes(c.deckId)) return false;
+          const meta = getCardRecallMetadata(c, logsByCard);
+          return selectedDifficulties.includes(meta.difficulty);
+        });
 
+        // Fallback: If no cards match selected difficulty, fallback to all category cards
+        if (pool.length === 0) {
+          pool = cards.filter((c) => activeCategoryIds.includes(c.deckId));
+        }
         if (pool.length === 0) pool = [...cards];
       }
 
@@ -329,7 +435,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       setTimeLeft(timerSeconds);
       questionStartTime.current = Date.now();
     },
-    [cards, selectedDeckIds, decks, questionCount, timerSeconds, customCards]
+    [cards, selectedDeckIds, decks, questionCount, timerSeconds, customCards, logsByCard, selectedDifficulties]
   );
 
   // If customCards are passed (e.g. from Revision Hub)
@@ -680,13 +786,40 @@ export const QuizHub: React.FC<QuizHubProps> = ({
 
   const currentQ = questions[currentIndex] || null;
 
-  // Total matching cards for the selected categories
-  const totalSelectedCards = useMemo(() => {
-    if (selectedDeckIds.length === 0 || selectedDeckIds.length === decks.length) {
-      return cards.length;
-    }
-    return cards.filter((c) => selectedDeckIds.includes(c.deckId)).length;
-  }, [cards, selectedDeckIds, decks]);
+  // Active Category Cards
+  const categoryCards = useMemo(() => {
+    if (customCards && customCards.length > 0) return customCards;
+    const activeDeckIds =
+      selectedDeckIds.length === 0 ? decks.map((d) => d.id) : selectedDeckIds;
+    return cards.filter((c) => activeDeckIds.includes(c.deckId));
+  }, [cards, selectedDeckIds, decks, customCards]);
+
+  // Breakdown of counts for each difficulty inside currently selected categories
+  const difficultyCounts = useMemo(() => {
+    const counts: Record<RecallDifficulty, number> = {
+      forgot: 0,
+      hard: 0,
+      good: 0,
+      easy: 0,
+      new: 0,
+    };
+    categoryCards.forEach((c) => {
+      const meta = getCardRecallMetadata(c, logsByCard);
+      counts[meta.difficulty] = (counts[meta.difficulty] || 0) + 1;
+    });
+    return counts;
+  }, [categoryCards, logsByCard]);
+
+  // Eligible cards matching category AND difficulty filter
+  const eligibleCards = useMemo(() => {
+    if (customCards && customCards.length > 0) return customCards;
+    return categoryCards.filter((c) => {
+      const meta = getCardRecallMetadata(c, logsByCard);
+      return selectedDifficulties.includes(meta.difficulty);
+    });
+  }, [categoryCards, logsByCard, selectedDifficulties, customCards]);
+
+  const totalSelectedCards = eligibleCards.length;
 
   // ================= 1. SETUP / HUB SCREEN =================
   if (!isQuizActive) {
@@ -803,6 +936,168 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                 );
               })}
             </div>
+          </div>
+
+          {/* Recall Difficulty Multi-Select Section */}
+          <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+              <div>
+                <label className="text-xs font-semibold uppercase tracking-wider text-zinc-500 flex items-center gap-1.5">
+                  <Brain className="w-3.5 h-3.5 text-zinc-500" />
+                  Filter by Previous Recall ({selectedDifficulties.length} of 5 selected)
+                </label>
+                <div className="text-xs text-zinc-400 mt-0.5">
+                  Select questions based on your past confidence ratings and review history
+                </div>
+              </div>
+
+              {/* Quick Presets */}
+              <div className="flex items-center gap-1.5 flex-wrap self-start sm:self-auto">
+                <button
+                  type="button"
+                  onClick={() => {
+                    sounds.playSelect();
+                    const all = [...ALL_DIFFICULTIES];
+                    setSelectedDifficulties(all);
+                    setCookie("flashfire_quiz_difficulties", JSON.stringify(all), 365);
+                  }}
+                  className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-colors cursor-pointer ${
+                    selectedDifficulties.length === ALL_DIFFICULTIES.length
+                      ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold shadow-xs"
+                      : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200"
+                  }`}
+                >
+                  All
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    sounds.playSelect();
+                    const weak: RecallDifficulty[] = ["forgot", "hard"];
+                    setSelectedDifficulties(weak);
+                    setCookie("flashfire_quiz_difficulties", JSON.stringify(weak), 365);
+                  }}
+                  className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-colors cursor-pointer ${
+                    selectedDifficulties.length === 2 &&
+                    selectedDifficulties.includes("forgot") &&
+                    selectedDifficulties.includes("hard")
+                      ? "bg-rose-600 text-white font-semibold shadow-xs"
+                      : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-400"
+                  }`}
+                >
+                  Weak Spots Only
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    sounds.playSelect();
+                    const mastered: RecallDifficulty[] = ["good", "easy"];
+                    setSelectedDifficulties(mastered);
+                    setCookie("flashfire_quiz_difficulties", JSON.stringify(mastered), 365);
+                  }}
+                  className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-colors cursor-pointer ${
+                    selectedDifficulties.length === 2 &&
+                    selectedDifficulties.includes("good") &&
+                    selectedDifficulties.includes("easy")
+                      ? "bg-emerald-600 text-white font-semibold shadow-xs"
+                      : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-emerald-600 dark:hover:text-emerald-400"
+                  }`}
+                >
+                  Mastered Only
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    sounds.playSelect();
+                    const unseen: RecallDifficulty[] = ["new"];
+                    setSelectedDifficulties(unseen);
+                    setCookie("flashfire_quiz_difficulties", JSON.stringify(unseen), 365);
+                  }}
+                  className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-colors cursor-pointer ${
+                    selectedDifficulties.length === 1 && selectedDifficulties[0] === "new"
+                      ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold shadow-xs"
+                      : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200"
+                  }`}
+                >
+                  Unseen Only
+                </button>
+              </div>
+            </div>
+
+            {/* 5-Column Difficulty Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+              {DIFFICULTY_CONFIG.map((item) => {
+                const isSelected = selectedDifficulties.includes(item.key);
+                const count = difficultyCounts[item.key] || 0;
+
+                return (
+                  <button
+                    key={item.key}
+                    type="button"
+                    onClick={() => {
+                      sounds.playSelect();
+                      const next = isSelected
+                        ? selectedDifficulties.filter((k) => k !== item.key)
+                        : [...selectedDifficulties, item.key];
+                      setSelectedDifficulties(next);
+                      setCookie("flashfire_quiz_difficulties", JSON.stringify(next), 365);
+                    }}
+                    className={`p-2.5 sm:p-3 rounded-xl border text-left transition-all flex flex-col justify-between min-h-[66px] cursor-pointer group relative ${
+                      isSelected
+                        ? item.activeClass
+                        : "bg-white dark:bg-zinc-800/70 border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:border-zinc-400 dark:hover:border-zinc-600"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between w-full mb-1">
+                      <span className="text-xs font-semibold flex items-center gap-1.5 leading-none">
+                        <span className={`w-2 h-2 rounded-full shrink-0 ${item.dotClass}`} />
+                        <span>{item.label}</span>
+                      </span>
+                      <div
+                        className={`w-4 h-4 rounded-md flex items-center justify-center text-[10px] transition-all shrink-0 ${
+                          isSelected
+                            ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
+                            : "border border-zinc-300 dark:border-zinc-600 bg-transparent"
+                        }`}
+                      >
+                        {isSelected && <Check className="w-3 h-3 stroke-[3]" />}
+                      </div>
+                    </div>
+
+                    <div className="flex items-center justify-between mt-auto pt-1 gap-1">
+                      <span
+                        className={`text-[10px] truncate leading-tight ${
+                          isSelected ? "opacity-90 font-medium" : "text-zinc-400 dark:text-zinc-500"
+                        }`}
+                      >
+                        {item.desc}
+                      </span>
+                      <span
+                        className={`text-xs font-mono font-bold px-1.5 py-0.5 rounded-md shrink-0 ${
+                          isSelected
+                            ? item.badgeClass
+                            : count > 0
+                            ? "bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-300"
+                            : "bg-zinc-50 dark:bg-zinc-800/50 text-zinc-400 opacity-60"
+                        }`}
+                      >
+                        {count}
+                      </span>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Empty Warning */}
+            {totalSelectedCards === 0 && (
+              <div className="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 text-amber-800 dark:text-amber-200 text-xs flex items-start gap-2 animate-in fade-in duration-200">
+                <Info className="w-4 h-4 shrink-0 mt-0.5 text-amber-600 dark:text-amber-400" />
+                <span>
+                  No questions match your current combination of categories and difficulty levels. Select more difficulties or categories above to continue.
+                </span>
+              </div>
+            )}
           </div>
 
           {/* Question Count Pills */}
@@ -927,10 +1222,14 @@ export const QuizHub: React.FC<QuizHubProps> = ({
             <button
               onClick={() => startQuiz()}
               disabled={totalSelectedCards === 0}
-              className="w-full py-3.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all flex items-center justify-center gap-2 disabled:opacity-40 shadow-xs active:scale-98 cursor-pointer"
+              className="w-full py-3.5 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all flex items-center justify-center gap-2 disabled:opacity-40 shadow-xs active:scale-98 cursor-pointer min-h-[48px]"
             >
               <Play className="w-4 h-4 fill-current" />
-              <span>Start Quiz ({totalSelectedCards} questions ready)</span>
+              <span>
+                {totalSelectedCards === 0
+                  ? "No questions match selected filters"
+                  : `Start Quiz (${Math.min(questionCount === -1 ? totalSelectedCards : questionCount, totalSelectedCards)} of ${totalSelectedCards} questions ready)`}
+              </span>
             </button>
           </div>
         </div>
@@ -1225,9 +1524,24 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                       <DeckIcon deckId={q.card.deckId} className="w-3 h-3" />
                       <span>{decks.find((d) => d.id === q.card.deckId)?.title || "Accenture Technical"}</span>
                     </span>
+                    {(() => {
+                      const meta = getCardRecallMetadata(q.card, logsByCard);
+                      const styles = {
+                        forgot: "bg-rose-100 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300",
+                        hard: "bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300",
+                        good: "bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300",
+                        easy: "bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300",
+                        new: "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400",
+                      }[meta.difficulty];
+                      return (
+                        <span className={`px-2 py-0.5 rounded-md text-[10px] font-medium ${styles}`}>
+                          Past: {meta.difficulty === "new" ? "Unseen" : meta.difficulty.toUpperCase()}
+                        </span>
+                      );
+                    })()}
                     {q.userRating && (
-                      <span className="px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-medium">
-                        Rating: {q.userRating === 1 ? "Forgot" : q.userRating === 2 ? "Hard" : q.userRating === 3 ? "Good" : "Easy"}
+                      <span className="px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 font-medium">
+                        New: {q.userRating === 1 ? "Forgot" : q.userRating === 2 ? "Hard" : q.userRating === 3 ? "Good" : "Easy"}
                       </span>
                     )}
                   </div>
@@ -1326,9 +1640,33 @@ export const QuizHub: React.FC<QuizHubProps> = ({
       {/* Question Card */}
       <div className="p-4 sm:p-6 md:p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 shadow-sm mb-6">
         <div className="flex items-center justify-between gap-2 mb-2">
-          <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400 flex items-center gap-1.5">
-            <DeckIcon deckId={currentQ?.card.deckId || ""} className="w-3.5 h-3.5" />
-            <span>Question {currentIndex + 1}</span>
+          <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400 flex items-center gap-2 flex-wrap">
+            <span className="flex items-center gap-1.5">
+              <DeckIcon deckId={currentQ?.card.deckId || ""} className="w-3.5 h-3.5" />
+              <span>Question {currentIndex + 1}</span>
+            </span>
+            {(() => {
+              if (!currentQ) return null;
+              const meta = getCardRecallMetadata(currentQ.card, logsByCard);
+              if (meta.difficulty === "new") {
+                return (
+                  <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
+                    Unseen
+                  </span>
+                );
+              }
+              const styles = {
+                forgot: "bg-rose-100 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-900/60",
+                hard: "bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-900/60",
+                good: "bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900/60",
+                easy: "bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-900/60",
+              }[meta.difficulty];
+              return (
+                <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${styles}`}>
+                  Past: {meta.difficulty.toUpperCase()}
+                </span>
+              );
+            })()}
           </div>
           {syncWithSRS && (
             <div className="flex items-center gap-1 text-[11px] font-medium text-zinc-400">
