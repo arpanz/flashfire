@@ -943,20 +943,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
           </div>
 
           {/* Recall Difficulty Multi-Select Section */}
-          <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-              <div>
-                <label className="text-xs font-semibold uppercase tracking-wider text-zinc-500 flex items-center gap-1.5">
-                  <Brain className="w-3.5 h-3.5 text-zinc-500" />
-                  Filter by Previous Recall ({selectedDifficulties.length} of 5 selected)
-                </label>
-                <div className="text-xs text-zinc-400 mt-0.5">
-                  Select questions based on your past confidence ratings and review history
-                </div>
-              </div>
+          <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-2.5">
+            <div className="flex items-center justify-between gap-2 flex-wrap">
+              <label className="text-xs font-semibold uppercase tracking-wider text-zinc-500 flex items-center gap-1.5">
+                <Brain className="w-3.5 h-3.5 text-zinc-500" />
+                Previous Recall
+              </label>
 
               {/* Quick Presets */}
-              <div className="flex items-center gap-1.5 flex-wrap self-start sm:self-auto">
+              <div className="flex items-center gap-1 flex-wrap">
                 <button
                   type="button"
                   onClick={() => {
@@ -965,10 +960,10 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     setSelectedDifficulties(all);
                     setCookie("flashfire_quiz_difficulties", JSON.stringify(all), 365);
                   }}
-                  className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-colors cursor-pointer ${
+                  className={`px-2 py-0.5 rounded-md text-[11px] font-medium transition-colors cursor-pointer ${
                     selectedDifficulties.length === ALL_DIFFICULTIES.length
-                      ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold shadow-xs"
-                      : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200"
+                      ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900"
+                      : "text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200"
                   }`}
                 >
                   All
@@ -981,15 +976,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     setSelectedDifficulties(weak);
                     setCookie("flashfire_quiz_difficulties", JSON.stringify(weak), 365);
                   }}
-                  className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-colors cursor-pointer ${
+                  className={`px-2 py-0.5 rounded-md text-[11px] font-medium transition-colors cursor-pointer ${
                     selectedDifficulties.length === 2 &&
                     selectedDifficulties.includes("forgot") &&
                     selectedDifficulties.includes("hard")
-                      ? "bg-rose-600 text-white font-semibold shadow-xs"
-                      : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-400"
+                      ? "bg-rose-600 text-white"
+                      : "text-zinc-500 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-400"
                   }`}
                 >
-                  Weak Spots Only
+                  Weak
                 </button>
                 <button
                   type="button"
@@ -999,15 +994,15 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     setSelectedDifficulties(mastered);
                     setCookie("flashfire_quiz_difficulties", JSON.stringify(mastered), 365);
                   }}
-                  className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-colors cursor-pointer ${
+                  className={`px-2 py-0.5 rounded-md text-[11px] font-medium transition-colors cursor-pointer ${
                     selectedDifficulties.length === 2 &&
                     selectedDifficulties.includes("good") &&
                     selectedDifficulties.includes("easy")
-                      ? "bg-emerald-600 text-white font-semibold shadow-xs"
-                      : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-emerald-600 dark:hover:text-emerald-400"
+                      ? "bg-emerald-600 text-white"
+                      : "text-zinc-500 dark:text-zinc-400 hover:text-emerald-600 dark:hover:text-emerald-400"
                   }`}
                 >
-                  Mastered Only
+                  Mastered
                 </button>
                 <button
                   type="button"
@@ -1017,19 +1012,19 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                     setSelectedDifficulties(unseen);
                     setCookie("flashfire_quiz_difficulties", JSON.stringify(unseen), 365);
                   }}
-                  className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-colors cursor-pointer ${
+                  className={`px-2 py-0.5 rounded-md text-[11px] font-medium transition-colors cursor-pointer ${
                     selectedDifficulties.length === 1 && selectedDifficulties[0] === "new"
-                      ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold shadow-xs"
-                      : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200"
+                      ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900"
+                      : "text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200"
                   }`}
                 >
-                  Unseen Only
+                  Unseen
                 </button>
               </div>
             </div>
 
-            {/* 5-Column Difficulty Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+            {/* Compact chip row */}
+            <div className="flex flex-wrap gap-1.5">
               {DIFFICULTY_CONFIG.map((item) => {
                 const isSelected = selectedDifficulties.includes(item.key);
                 const count = difficultyCounts[item.key] || 0;
@@ -1046,48 +1041,21 @@ export const QuizHub: React.FC<QuizHubProps> = ({
                       setSelectedDifficulties(next);
                       setCookie("flashfire_quiz_difficulties", JSON.stringify(next), 365);
                     }}
-                    className={`p-2.5 sm:p-3 rounded-xl border text-left transition-all flex flex-col justify-between min-h-[66px] cursor-pointer group relative ${
+                    className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-xs font-medium transition-all cursor-pointer ${
                       isSelected
-                        ? item.activeClass
-                        : "bg-white dark:bg-zinc-800/70 border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:border-zinc-400 dark:hover:border-zinc-600"
+                        ? "border-transparent bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900"
+                        : "border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:border-zinc-400 dark:hover:border-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 bg-transparent"
                     }`}
                   >
-                    <div className="flex items-center justify-between w-full mb-1">
-                      <span className="text-xs font-semibold flex items-center gap-1.5 leading-none">
-                        <span className={`w-2 h-2 rounded-full shrink-0 ${item.dotClass}`} />
-                        <span>{item.label}</span>
-                      </span>
-                      <div
-                        className={`w-4 h-4 rounded-md flex items-center justify-center text-[10px] transition-all shrink-0 ${
-                          isSelected
-                            ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
-                            : "border border-zinc-300 dark:border-zinc-600 bg-transparent"
-                        }`}
-                      >
-                        {isSelected && <Check className="w-3 h-3 stroke-[3]" />}
-                      </div>
-                    </div>
-
-                    <div className="flex items-center justify-between mt-auto pt-1 gap-1">
-                      <span
-                        className={`text-[10px] truncate leading-tight ${
-                          isSelected ? "opacity-90 font-medium" : "text-zinc-400 dark:text-zinc-500"
-                        }`}
-                      >
-                        {item.desc}
-                      </span>
-                      <span
-                        className={`text-xs font-mono font-bold px-1.5 py-0.5 rounded-md shrink-0 ${
-                          isSelected
-                            ? item.badgeClass
-                            : count > 0
-                            ? "bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-300"
-                            : "bg-zinc-50 dark:bg-zinc-800/50 text-zinc-400 opacity-60"
-                        }`}
-                      >
-                        {count}
-                      </span>
-                    </div>
+                    <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${item.dotClass}`} />
+                    <span>{item.label}</span>
+                    <span
+                      className={`font-mono text-[10px] ${
+                        isSelected ? "opacity-70" : "opacity-50"
+                      }`}
+                    >
+                      {count}
+                    </span>
                   </button>
                 );
               })}
@@ -1098,7 +1066,7 @@ export const QuizHub: React.FC<QuizHubProps> = ({
               <div className="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 text-amber-800 dark:text-amber-200 text-xs flex items-start gap-2 animate-in fade-in duration-200">
                 <Info className="w-4 h-4 shrink-0 mt-0.5 text-amber-600 dark:text-amber-400" />
                 <span>
-                  No questions match your current combination of categories and difficulty levels. Select more difficulties or categories above to continue.
+                  No questions match your current filters. Select more difficulties or categories to continue.
                 </span>
               </div>
             )}
